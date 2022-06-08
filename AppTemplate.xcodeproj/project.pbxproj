@@ -11,6 +11,7 @@
 		12E4A74A285027F600B2380B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
 		12E4A74C285027F700B2380B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74B285027F700B2380B /* Assets.xcassets */; };
 		12E4A74F285027F700B2380B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74E285027F700B2380B /* Preview Assets.xcassets */; };
+		12E4A75728502A2D00B2380B /* 📱Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		12E4A74B285027F700B2380B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12E4A74E285027F700B2380B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12E4A755285028C800B2380B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		12E4A75628502A2D00B2380B /* 📱Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱Model.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,8 @@
 			children = (
 				12E4A747285027F600B2380B /* AppTemplateApp.swift */,
 				12E4A749285027F600B2380B /* ContentView.swift */,
+				12E4A75628502A2D00B2380B /* 📱Model.swift */,
+				12E4A75828502AF800B2380B /* ⚙️Menu */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
@@ -67,6 +71,13 @@
 				12E4A74E285027F700B2380B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		12E4A75828502AF800B2380B /* ⚙️Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "⚙️Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E4A75728502A2D00B2380B /* 📱Model.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */,
 			);
