@@ -15,7 +15,7 @@ struct 🛠MenuList: View {
                     Text("Option")
                 }
                     
-                //📄DocumentMenu()
+                📄DocumentMenu()
             }
             .navigationTitle("AAAA")
             .toolbar {
