@@ -11,9 +11,7 @@ struct 📄DocumentMenu: View {
                 
                 Section {
                     NavigationLink {
-                        ScrollView {
-                            📋TextView(📄About, "About App")
-                        }
+                        📋TextView(📄About, "About App")
                     } label: {
                         Text(📄About)
                             .font(.subheadline)
@@ -59,16 +57,16 @@ struct 📄DocumentMenu: View {
                 }
                 
                 
-//                Section {
-//                    NavigationLink {
-//                        💸TextAboutAD()
-//                            .padding()
-//                            .navigationTitle("About self-AD")
-//                            .textSelection(.enabled)
-//                    } label: {
-//                        Label("About self-AD", systemImage: "exclamationmark.bubble")
-//                    }
-//                }
+                Section {
+                    NavigationLink {
+                        💸TextAboutAD()
+                            .padding()
+                            .navigationTitle("About self-AD")
+                            .textSelection(.enabled)
+                    } label: {
+                        Label("About self-AD", systemImage: "exclamationmark.bubble")
+                    }
+                }
                 
                 
                 NavigationLink {

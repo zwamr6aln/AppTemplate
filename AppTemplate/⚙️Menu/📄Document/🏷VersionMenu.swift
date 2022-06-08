@@ -5,9 +5,7 @@ struct 🏷VersionMenu: View {
     var body: some View {
         Section {
             NavigationLink {
-                ScrollView {
-                    📋TextView(🕒VersionHistory, "Version History")
-                }
+                📋TextView(🕒VersionHistory, "Version History")
             } label: {
                 Label("1.0" , systemImage: "signpost.left")
             }
