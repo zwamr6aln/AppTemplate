@@ -104,7 +104,7 @@
 				12E4A75628502A2D00B2380B /* 📱Model.swift */,
 				12E4A75828502AF800B2380B /* ⚙️Menu */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
-				12E4A77528502FF800B2380B /* AD */,
+				12E4A77528502FF800B2380B /* 💸AD */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
@@ -148,16 +148,16 @@
 			path = "🌏Localization";
 			sourceTree = "<group>";
 		};
-		12E4A77528502FF800B2380B /* AD */ = {
+		12E4A77528502FF800B2380B /* 💸AD */ = {
 			isa = PBXGroup;
 			children = (
+				12E4A7792850301300B2380B /* 💸AppName.swift */,
+				12E4A7782850301300B2380B /* 💸AdView.swift */,
 				12E4A7762850301300B2380B /* 💸AdBanner.swift */,
 				12E4A77A2850301300B2380B /* 💸AdSection.swift */,
-				12E4A7782850301300B2380B /* 💸AdView.swift */,
-				12E4A7792850301300B2380B /* 💸AppName.swift */,
 				12E4A7772850301300B2380B /* 💸TextAboutAD.swift */,
 			);
-			path = AD;
+			path = "💸AD";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

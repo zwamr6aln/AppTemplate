@@ -16,6 +16,8 @@ struct 🛠MenuList: View {
                 }
                     
                 📄DocumentMenu()
+                
+                💸AdSection()
             }
             .navigationTitle("AAAA")
             .toolbar {
