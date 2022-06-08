@@ -6,8 +6,23 @@ struct ContentView: View {
     @EnvironmentObject var 📱:📱Model
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Button {
+                UISelectionFeedbackGenerator().selectionChanged()
+                📱.🚩ShowMenu = true
+            } label: {
+                Image(systemName: "gear")
+                    .font(.largeTitle)
+                    .padding(24)
+            }
+            .accessibilityLabel("Open menu")
+            .sheet(isPresented: $📱.🚩ShowMenu) {
+                🛠MenuList()
+                    .onDisappear {
+                        📱.🚩ShowMenu = false
+                    }
+            }
+        }
     }
 }
 
