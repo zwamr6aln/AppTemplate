@@ -14,20 +14,7 @@ struct 📓SourceCodeMenu: View {
             
             📑BundleMainInfoDictionary()
             
-            let Repository🔗 = "https://github.com/FlipByBlink/AAAA"
-            Section {
-                Link(destination: URL(string: Repository🔗)!) {
-                    HStack {
-                        Label("Web Repository link", systemImage: "link")
-                        
-                        Spacer()
-                        
-                        Image(systemName: "arrow.up.forward.app")
-                    }
-                }
-            } footer: {
-                Text(Repository🔗)
-            }
+            🔗RepositoryLink()
         }
         .navigationTitle("Source code")
     }
@@ -70,6 +57,42 @@ struct 📑BundleMainInfoDictionary: View {
             NavigationLink("Bundle.main.infoDictionary") {
                 📋TextView(🄱undleMainInfoDictionary, "Bundle.main.infoDictionary")
             }
+        }
+    }
+}
+
+
+struct 🔗RepositoryLink: View {
+    var body: some View {
+        let 🔗 = "https://github.com/FlipByBlink/AAAA"
+        Section {
+            Link(destination: URL(string: 🔗)!) {
+                HStack {
+                    Label("Web Repository link", systemImage: "link")
+                    
+                    Spacer()
+                    
+                    Image(systemName: "arrow.up.forward.app")
+                }
+            }
+        } footer: {
+            Text(🔗)
+        }
+        
+        
+        let Mirror🔗 = "https://gitlab.com/FlipByBlink/AAAA"
+        Section {
+            Link(destination: URL(string: Mirror🔗)!) {
+                HStack {
+                    Label("Web Mirror Repository link", systemImage: "link")
+                    
+                    Spacer()
+                    
+                    Image(systemName: "arrow.up.forward.app")
+                }
+            }
+        } footer: {
+            Text(Mirror🔗)
         }
     }
 }
