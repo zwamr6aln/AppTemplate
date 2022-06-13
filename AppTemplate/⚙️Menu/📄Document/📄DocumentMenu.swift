@@ -12,11 +12,13 @@ struct 📄DocumentMenu: View {
                 Section {
                     NavigationLink {
                         📋TextView(📄About, "About App")
+                            .redacted(reason: .placeholder)
                     } label: {
                         Text(📄About)
                             .font(.subheadline)
                             .lineLimit(4)
                             .padding(8)
+                            .redacted(reason: .placeholder)
                     }
                 } header: {
                     Text("About")
@@ -84,5 +86,5 @@ struct 📄DocumentMenu: View {
 
 
 let 📄About = """
-AAAA
+AAAAAAAAAAAA
 """

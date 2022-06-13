@@ -68,7 +68,7 @@ struct 🔗RepositoryLink: View {
         Section {
             Link(destination: URL(string: 🔗)!) {
                 HStack {
-                    Label("Web Repository link", systemImage: "link")
+                    Label("Web Repository", systemImage: "link")
                     
                     Spacer()
                     
@@ -84,7 +84,7 @@ struct 🔗RepositoryLink: View {
         Section {
             Link(destination: URL(string: Mirror🔗)!) {
                 HStack {
-                    Label("Web Mirror Repository link", systemImage: "link")
+                    Label("Web Repository (Mirror)", systemImage: "link")
                     
                     Spacer()
                     

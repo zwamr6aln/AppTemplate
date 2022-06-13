@@ -10,7 +10,8 @@ struct 🛠MenuList: View {
         NavigationView {
             List {
                 Section {
-                    Text("AAAA")
+                    Toggle("placeholder", isOn: .constant(false))
+                        .redacted(reason: .placeholder)
                 } header: {
                     Text("Option")
                 }
@@ -19,7 +20,7 @@ struct 🛠MenuList: View {
                 
                 💸AdSection()
             }
-            .navigationTitle("AAAA")
+            .navigationTitle("AppName")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
