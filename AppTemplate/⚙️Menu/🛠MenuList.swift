@@ -10,7 +10,7 @@ struct 🛠MenuList: View {
         NavigationView {
             List {
                 Section {
-                    Toggle("placeholder", isOn: .constant(false))
+                    Toggle("    placeholder    ", isOn: .constant(false))
                         .redacted(reason: .placeholder)
                 } header: {
                     Text("Option")

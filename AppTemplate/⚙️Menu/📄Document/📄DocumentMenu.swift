@@ -86,5 +86,7 @@ struct 📄DocumentMenu: View {
 
 
 let 📄About = """
-AAAAAAAAAAAA
+                                placeholder
+                                placeholder
+                                placeholder
 """
