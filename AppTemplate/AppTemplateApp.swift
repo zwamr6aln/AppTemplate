@@ -5,7 +5,7 @@ import SwiftUI
 @main
 struct AppTemplateApp: App {
     
-    let 📱 = 📱Model()
+    let 📱 = 📱AppModel()
     
     var body: some Scene {
         WindowGroup {

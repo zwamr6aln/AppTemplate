@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-class 📱Model: ObservableObject {
+class 📱AppModel: ObservableObject {
     
     @AppStorage("placeholder") var 🚩placeholder: Bool = false
     

@@ -3,7 +3,7 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @EnvironmentObject var 📱:📱Model
+    @EnvironmentObject var 📱:📱AppModel
     
     var body: some View {
         VStack {
@@ -30,7 +30,7 @@ struct ContentView: View {
 
 
 struct ContentView_Previews: PreviewProvider {
-    static let 📱 = 📱Model()
+    static let 📱 = 📱AppModel()
     
     static var previews: some View {
         ContentView()
