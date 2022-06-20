@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12C6712F286069E800FE4C06 /* 🛠MenuList.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75928502B5200B2380B /* 🛠MenuList.swift */; };
+		12C67130286069E800FE4C06 /* 📋TextView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75B28502C4000B2380B /* 📋TextView.swift */; };
+		12C67131286069ED00FE4C06 /* 🏷VersionMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75E28502C9F00B2380B /* 🏷VersionMenu.swift */; };
+		12C67132286069ED00FE4C06 /* 📄DocumentMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* 📄DocumentMenu.swift */; };
+		12C67133286069ED00FE4C06 /* 📓SourceCodeMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */; };
 		12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
 		12E4A74A285027F600B2380B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
 		12E4A74C285027F700B2380B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74B285027F700B2380B /* Assets.xcassets */; };
@@ -30,10 +35,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		12C6712D286069CA00FE4C06 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "⚙️Menu";
+			dstSubfolderSpec = 7;
+			files = (
+				12C6712F286069E800FE4C06 /* 🛠MenuList.swift in CopyFiles */,
+				12C67130286069E800FE4C06 /* 📋TextView.swift in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C6712E286069CE00FE4C06 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "📄Document";
+			dstSubfolderSpec = 7;
+			files = (
+				12C67131286069ED00FE4C06 /* 🏷VersionMenu.swift in CopyFiles */,
+				12C67132286069ED00FE4C06 /* 📄DocumentMenu.swift in CopyFiles */,
+				12C67133286069ED00FE4C06 /* 📓SourceCodeMenu.swift in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12E4A76428502D5E00B2380B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "📁0";
+			dstPath = main;
 			dstSubfolderSpec = 7;
 			files = (
 				12E4A76528502D7200B2380B /* AppTemplateApp.swift in CopyFiles */,
@@ -171,6 +199,8 @@
 				12E4A741285027F600B2380B /* Frameworks */,
 				12E4A742285027F600B2380B /* Resources */,
 				12E4A76428502D5E00B2380B /* CopyFiles */,
+				12C6712D286069CA00FE4C06 /* CopyFiles */,
+				12C6712E286069CE00FE4C06 /* CopyFiles */,
 			);
 			buildRules = (
 			);
