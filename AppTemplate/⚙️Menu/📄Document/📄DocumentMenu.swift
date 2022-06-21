@@ -61,6 +61,11 @@ struct 📄DocumentMenu: View {
                 }
                 
                 
+                // Transparency Report section ?
+                // - Background
+                // - Bussiness model
+                
+                
                 NavigationLink {
                     📓SourceCodeMenu()
                 } label: {
