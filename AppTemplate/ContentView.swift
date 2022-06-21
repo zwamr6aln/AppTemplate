@@ -46,7 +46,7 @@ struct ContentView: View {
                     }
                     .accessibilityLabel("Open menu")
                     .sheet(isPresented: $📱.🚩ShowMenu) {
-                        🛠MenuList()
+                        🛠Menu()
                             .onDisappear {
                                 📱.🚩ShowMenu = false
                             }
