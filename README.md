@@ -88,6 +88,11 @@ Korean:
 [github.com/FlipByBlink/AAAA](https://github.com/FlipByBlink/AAAA)
 
 
+### Source code (Mirror) link
+
+[https://gitlab.com/FlipByBlink/AAAA_Mirror](https://gitlab.com/FlipByBlink/AAAA_Mirror)
+
+
 ## ✉️ Contact
 
 sear_pandora_0x@icloud.com

@@ -31,7 +31,7 @@ struct 💸ADView: View {
                 }
                 .padding(.vertical)
             }
-            .accessibilityLabel(🄰ppName.rawValue)
+            .accessibilityLabel("Open AD link")
         }
         .padding(.leading, 4)
     }

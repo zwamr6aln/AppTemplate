@@ -9,6 +9,7 @@ struct 🏷VersionMenu: View {
             } label: {
                 Label("1.0" , systemImage: "signpost.left")
             }
+            .accessibilityLabel("Open version history")
         } header: {
             Text("Version")
         } footer: {

@@ -1,5 +1,21 @@
 
 "Open menu" = "メニューを開く";
+"Option" = "オプション";
+"Dismiss" = "閉じる";
+"Cancel" = "取り消す";
+
+
+// ======== Document =========
+"App Document" = "アプリ資料";
+"Version" = "バージョン";
+//"builded on \(📅)" = "\(📅)にビルドしました";
+"Open version history" = "バージョン履歴を開く";
+"Version History" = "バージョン履歴";
+"About" = "概要";
+"About App" = "アプリについて";
+"Open AppStore page" = "AppStoreページを開く";
+"Privacy Policy" = "プライバシーポリシー";
+"Source code" = "ソースコード";
 
 
 // ======== AD =========
@@ -8,6 +24,7 @@
 "About AD" = "広告について";
 "In App Purchase" = "アプリ内課金";
 "Restore Purchase" = "購入情報を復元する";
+"Open AD link" = "広告のリンクを開く";
 "OK" = "了解しました";
 
 //"This App shows banner advertisement about applications on AppStore. These are Apps by TapWeight developer. AD banner is rarely presented on result screen. It appears one in every 4 times." = "広告としてAppStoreアプリケーションに関するバナーを表示します。「体重登録」デベロッパーによるアプリ群が表示対象となります。入力完了画面では、たまに広告が表示されます。それは4回表示する度に一時的に有効になります。";

@@ -3,7 +3,7 @@ import SwiftUI
 
 struct 📋TextView: View {
     var 🅃ext: String
-    var 🅃itle: String
+    var 🅃itle: LocalizedStringKey
     
     var 🚩HorizonScroll: Bool
     
@@ -31,7 +31,7 @@ struct 📋TextView: View {
     
     init(_ ⓣext: String, _ ⓣitle: String, ⓗorizonScroll: Bool = false) {
         🅃ext = ⓣext
-        🅃itle = ⓣitle
+        🅃itle = LocalizedStringKey(ⓣitle)
         🚩HorizonScroll = ⓗorizonScroll
     }
 }
