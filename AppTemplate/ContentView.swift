@@ -7,6 +7,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Spacer()
+            
             Button {
                 UISelectionFeedbackGenerator().selectionChanged()
                 📱.🚩ShowMenu = true
@@ -22,8 +24,9 @@ struct ContentView: View {
                         📱.🚩ShowMenu = false
                     }
             }
+            
+            Spacer()
         }
-        .frame(width: 300, height: 500)
         .overlay(alignment: .bottom) {
             💸ADBanner()
         }

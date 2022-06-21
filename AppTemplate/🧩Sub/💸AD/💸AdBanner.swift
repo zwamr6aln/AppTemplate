@@ -43,12 +43,13 @@ struct 💸ADBanner: View {
                         }
                         .padding()
                         .transition(.move(edge: .bottom))
+                        .frame(minWidth: 300)
                 }
             }
         }
         .animation(.easeOut.speed(1.5), value: 🚩ShowBanner)
         .animation(.easeOut.speed(1.5), value: 🏬.🚩Purchased)
-        .task {
+        .onAppear {
             🄻aunchCount += 1
             
             Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in

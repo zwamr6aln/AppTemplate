@@ -7,6 +7,4 @@ class 📱AppModel: ObservableObject {
     
     
     @Published var 🚩ShowMenu: Bool = false
-    
-    @Published var 🚩AdBanner: Bool = false
 }
