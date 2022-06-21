@@ -14,7 +14,7 @@ struct 🏷VersionMenu: View {
             Text("Version")
         } footer: {
             let 📅 = Date.now.formatted(date: .numeric, time: .omitted)
-            Text("builded on \(📅)")
+            Text(LocalizedStringKey("builded on \(📅)"))
         }
     }
 }
