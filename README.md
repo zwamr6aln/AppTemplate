@@ -10,7 +10,7 @@
 
 [apps.apple.com/app/id1111](https://apps.apple.com/app/id1111)
 
-<!-- Manually sync below text between "🛠Menu.swift/📄About" and "/README.md(here)" and "AppStoreConnect/AAAA/Description". -->
+<!-- Manually sync below text between "📄AboutText.swift" and "/README.md(here)" and "AppStoreConnect/AAAA/Description". -->
 
 ## 📄 Description
 

@@ -11,10 +11,10 @@ struct 📄DocumentMenu: View {
                 
                 Section {
                     NavigationLink {
-                        📋TextView(📄About, "About App")
+                        📋TextView(📄AboutText, "About App")
                             .redacted(reason: .placeholder)
                     } label: {
-                        Text(📄About)
+                        Text(📄AboutText)
                             .font(.subheadline)
                             .lineLimit(4)
                             .padding(8)
@@ -83,10 +83,3 @@ struct 📄DocumentMenu: View {
         }
     }
 }
-
-
-let 📄About = """
-                                placeholder
-                                placeholder
-                                placeholder
-"""

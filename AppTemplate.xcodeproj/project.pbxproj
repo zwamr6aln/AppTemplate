@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		127ECB24286148F900CB1BC3 /* 📄AboutText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB23286148F900CB1BC3 /* 📄AboutText.swift */; };
 		12C6712F286069E800FE4C06 /* 🛠MenuList.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75928502B5200B2380B /* 🛠MenuList.swift */; };
 		12C67130286069E800FE4C06 /* 📋TextView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75B28502C4000B2380B /* 📋TextView.swift */; };
 		12C67131286069ED00FE4C06 /* 🏷VersionMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75E28502C9F00B2380B /* 🏷VersionMenu.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		127ECB23286148F900CB1BC3 /* 📄AboutText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📄AboutText.swift"; sourceTree = "<group>"; };
 		12E4A744285027F600B2380B /* AppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E4A747285027F600B2380B /* AppTemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTemplateApp.swift; sourceTree = "<group>"; };
 		12E4A749285027F600B2380B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				12E4A75E28502C9F00B2380B /* 🏷VersionMenu.swift */,
 				12E4A76028502C9F00B2380B /* 📄DocumentMenu.swift */,
+				127ECB23286148F900CB1BC3 /* 📄AboutText.swift */,
 				12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */,
 			);
 			path = "📄Document";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				127ECB24286148F900CB1BC3 /* 📄AboutText.swift in Sources */,
 				12E4A77B2850301300B2380B /* 💸AdBanner.swift in Sources */,
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
 				12E4A77D2850301300B2380B /* 💸AdView.swift in Sources */,
