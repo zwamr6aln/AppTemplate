@@ -19,6 +19,13 @@
 		12C67133286069ED00FE4C06 /* 📓SourceCodeMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */; };
 		12DDD5432861D363004F59A0 /* 🛠MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDD5422861D363004F59A0 /* 🛠MenuButton.swift */; };
 		12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */; };
+		12DDD5712861DB5D004F59A0 /* 🏬PurchaseSection.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🏬PurchaseSection.swift */; };
+		12DDD5722861DB5D004F59A0 /* 🏬StoreModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🏬StoreModel.swift */; };
+		12DDD5732861DB63004F59A0 /* 💸ADSection.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 💸ADSection.swift */; };
+		12DDD5742861DB63004F59A0 /* 💸AppName.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 💸AppName.swift */; };
+		12DDD5752861DB63004F59A0 /* 💸ADView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 💸ADView.swift */; };
+		12DDD5762861DB63004F59A0 /* 💸ADBanner.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 💸ADBanner.swift */; };
+		12DDD5772861DB63004F59A0 /* 💸TextAboutAD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7772850301300B2380B /* 💸TextAboutAD.swift */; };
 		12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
 		12E4A74A285027F600B2380B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
 		12E4A74C285027F700B2380B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74B285027F700B2380B /* Assets.xcassets */; };
@@ -44,7 +51,7 @@
 		12C6712D286069CA00FE4C06 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "⚙️Menu";
+			dstPath = "🛠Menu";
 			dstSubfolderSpec = 7;
 			files = (
 				12C6712F286069E800FE4C06 /* 🛠MenuSheet.swift in CopyFiles */,
@@ -61,6 +68,40 @@
 				12C67131286069ED00FE4C06 /* 🏷VersionSection.swift in CopyFiles */,
 				12C67132286069ED00FE4C06 /* 📄DocumentMenu.swift in CopyFiles */,
 				12C67133286069ED00FE4C06 /* 📓SourceCodeMenu.swift in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12DDD56D2861DAF5004F59A0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "🧩Sub";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12DDD56E2861DAFA004F59A0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "🏬InAppPurchase";
+			dstSubfolderSpec = 7;
+			files = (
+				12DDD5712861DB5D004F59A0 /* 🏬PurchaseSection.swift in CopyFiles */,
+				12DDD5722861DB5D004F59A0 /* 🏬StoreModel.swift in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12DDD56F2861DAFC004F59A0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "💸AD";
+			dstSubfolderSpec = 7;
+			files = (
+				12DDD5732861DB63004F59A0 /* 💸ADSection.swift in CopyFiles */,
+				12DDD5742861DB63004F59A0 /* 💸AppName.swift in CopyFiles */,
+				12DDD5752861DB63004F59A0 /* 💸ADView.swift in CopyFiles */,
+				12DDD5762861DB63004F59A0 /* 💸ADBanner.swift in CopyFiles */,
+				12DDD5772861DB63004F59A0 /* 💸TextAboutAD.swift in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +204,7 @@
 				12E4A749285027F600B2380B /* ContentView.swift */,
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
 				127ECB25286149B400CB1BC3 /* 🧩Sub */,
-				12E4A75828502AF800B2380B /* ⚙️Menu */,
+				12E4A75828502AF800B2380B /* 🛠Menu */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
 				12E4A74D285027F700B2380B /* Preview Content */,
@@ -179,7 +220,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		12E4A75828502AF800B2380B /* ⚙️Menu */ = {
+		12E4A75828502AF800B2380B /* 🛠Menu */ = {
 			isa = PBXGroup;
 			children = (
 				12DDD5422861D363004F59A0 /* 🛠MenuButton.swift */,
@@ -187,7 +228,7 @@
 				12E4A75B28502C4000B2380B /* 📋TextView.swift */,
 				12E4A75D28502C6400B2380B /* 📄Document */,
 			);
-			path = "⚙️Menu";
+			path = "🛠Menu";
 			sourceTree = "<group>";
 		};
 		12E4A75D28502C6400B2380B /* 📄Document */ = {
@@ -233,8 +274,11 @@
 				12E4A741285027F600B2380B /* Frameworks */,
 				12E4A742285027F600B2380B /* Resources */,
 				12E4A76428502D5E00B2380B /* CopyFiles */,
+				12DDD56D2861DAF5004F59A0 /* CopyFiles */,
 				12C6712D286069CA00FE4C06 /* CopyFiles */,
 				12C6712E286069CE00FE4C06 /* CopyFiles */,
+				12DDD56E2861DAFA004F59A0 /* CopyFiles */,
+				12DDD56F2861DAFC004F59A0 /* CopyFiles */,
 			);
 			buildRules = (
 			);

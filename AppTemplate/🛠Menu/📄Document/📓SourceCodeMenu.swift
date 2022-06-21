@@ -1,22 +1,23 @@
 
 import SwiftUI
 
+enum 📁SourceFolder: String, CaseIterable, Identifiable {
+    case main
+    case 🧩Sub
+    case 🛠Menu
+    case 📄Document
+    case 🏬InAppPurchase
+    case 💸AD
+    
+    var id: String { self.rawValue }
+}
+
 struct 📓SourceCodeMenu: View {
     var body: some View {
         List {
-            📰CodeSection("main")
-            
-            //📰CodeSection("🧩Sub")
-            
-            📰CodeSection("⚙️Menu")
-            
-            📰CodeSection("📄Document")
-            
-            //📰CodeSection("🏬InAppPurchase")
-            
-            //📰CodeSection("💸AD")
-            
-            //📰CodeSection("")
+            ForEach(📁SourceFolder.allCases) { 📁 in
+                📰CodeSection(📁.rawValue)
+            }
             
             📑BundleMainInfoDictionary()
             
