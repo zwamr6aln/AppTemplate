@@ -3,7 +3,7 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @EnvironmentObject var 📱:📱AppModel
+    @EnvironmentObject var 📱: 📱AppModel
     @EnvironmentObject var 🏬: 🏬StoreModel
     
     var body: some View {

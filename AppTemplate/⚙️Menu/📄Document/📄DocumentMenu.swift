@@ -2,8 +2,6 @@
 import SwiftUI
 
 struct 📄DocumentMenu: View {
-    @EnvironmentObject var 📱:📱AppModel
-    
     var body: some View {
         NavigationLink {
             List {

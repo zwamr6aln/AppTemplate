@@ -6,7 +6,7 @@ struct 🏬PurchaseSection: View {
     @EnvironmentObject var 🏬: 🏬StoreModel
     
     @State var 🚨ErrorTitle = ""
-    @State var 🚨ShowError: Bool = false
+    @State var 🚨ShowError = false
     
     @State private var 🚩BuyingNow = false
     
