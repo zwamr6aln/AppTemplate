@@ -16,6 +16,7 @@ struct ContentView: View {
                     Label("Open system Setting", systemImage: "gear")
                 }
                 
+                
                 Section {
                     HStack {
                         Text("displayName")
@@ -33,24 +34,19 @@ struct ContentView: View {
                 } header: {
                     Text("Product")
                 }
+                
+                
+                Section {
+                    🛠MenuButton()
+                } header: {
+                    Text("🛠MenuButton")
+                }
             }
             .listStyle(.plain)
             .navigationTitle("AppTemplate")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        UISelectionFeedbackGenerator().selectionChanged()
-                        📱.🚩ShowMenu = true
-                    } label: {
-                        Image(systemName: "gear")
-                    }
-                    .accessibilityLabel("Open menu")
-                    .sheet(isPresented: $📱.🚩ShowMenu) {
-                        🛠Menu()
-                            .onDisappear {
-                                📱.🚩ShowMenu = false
-                            }
-                    }
+                    🛠MenuButton()
                 }
             }
         }
