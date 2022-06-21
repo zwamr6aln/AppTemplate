@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct 🏷VersionMenu: View {
+struct 🏷VersionSection: View {
     var body: some View {
         Section {
             NavigationLink {
@@ -23,7 +23,7 @@ let 🕒LatestVersion = "1.0"
 
 let 🕒VersionHistory = """
 🕒 Version 1.1 : (2022-AA-AA?)
-==== English Description ====
+==== English description ====
 - AAAA
 ==== Japanese(native) description ====
 - AAAA

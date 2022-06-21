@@ -9,6 +9,13 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                Button {
+                    let 📍 = URL(string: UIApplication.openSettingsURLString)!
+                    UIApplication.shared.open(📍)
+                } label: {
+                    Label("Open system Setting", systemImage: "gear")
+                }
+                
                 Section {
                     HStack {
                         Text("displayName")
@@ -25,13 +32,6 @@ struct ContentView: View {
                     }
                 } header: {
                     Text("Product")
-                }
-                
-                Button {
-                    let 📍 = URL(string: UIApplication.openSettingsURLString)!
-                    UIApplication.shared.open(📍)
-                } label: {
-                    Label("Open system Setting", systemImage: "gear")
                 }
             }
             .listStyle(.plain)

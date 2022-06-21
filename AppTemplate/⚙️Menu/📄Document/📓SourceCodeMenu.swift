@@ -94,7 +94,11 @@ struct 🔗RepositoryLink: View {
         Section {
             Link(destination: URL(string: Mirror🔗)!) {
                 HStack {
-                    Label("Web Repository (Mirror)", systemImage: "link")
+                    Label("Web Repository", systemImage: "link")
+                    
+                    Text("(Mirror)")
+                        .font(.subheadline.bold())
+                        .foregroundStyle(.secondary)
                     
                     Spacer()
                     

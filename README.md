@@ -14,7 +14,7 @@
 
 ## 📄 Description
 
-<!--==== English Description ====-->
+<!--==== English description ====-->
 
 AAAA.
 
@@ -31,7 +31,7 @@ AAAA.
 - AAAA
 
 
-==== Japanese(native) Description ====
+==== Japanese(native) description ====
 
 ああああ。
 

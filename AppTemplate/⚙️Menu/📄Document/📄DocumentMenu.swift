@@ -7,8 +7,6 @@ struct 📄DocumentMenu: View {
     var body: some View {
         NavigationLink {
             List {
-                🏷VersionMenu()
-                
                 Section {
                     NavigationLink {
                         📋TextView(📄AboutText, "About App")
@@ -23,6 +21,9 @@ struct 📄DocumentMenu: View {
                 } header: {
                     Text("About")
                 }
+                
+                
+                🏷VersionSection()
                 
                 
                 let 🔗 = "https://apps.apple.com/app/id1111"
