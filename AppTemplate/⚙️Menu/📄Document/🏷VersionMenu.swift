@@ -7,7 +7,7 @@ struct 🏷VersionMenu: View {
             NavigationLink {
                 📋TextView(🕒VersionHistory, "Version History")
             } label: {
-                Label("1.0" , systemImage: "signpost.left")
+                Label(🕒LatestVersion, systemImage: "signpost.left")
             }
             .accessibilityLabel("Open version history")
         } header: {
@@ -18,6 +18,8 @@ struct 🏷VersionMenu: View {
         }
     }
 }
+
+let 🕒LatestVersion = "1.0"
 
 let 🕒VersionHistory = """
 🕒 Version 1.1 : (2022-AA-AA?)

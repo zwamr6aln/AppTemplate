@@ -10,7 +10,7 @@
 		127ECB24286148F900CB1BC3 /* 📄AboutText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB23286148F900CB1BC3 /* 📄AboutText.swift */; };
 		127ECB29286149EF00CB1BC3 /* 🏬StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🏬StoreModel.swift */; };
 		127ECB2A286149EF00CB1BC3 /* 🏬PurchaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🏬PurchaseSection.swift */; };
-		127ECB2C28614B8B00CB1BC3 /* 💸AboutADSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 💸AboutADSection.swift */; };
+		127ECB2C28614B8B00CB1BC3 /* 💸ADSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 💸ADSection.swift */; };
 		127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 127ECB2D28614C0200CB1BC3 /* Configuration.storekit */; };
 		12C6712F286069E800FE4C06 /* 🛠MenuList.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75928502B5200B2380B /* 🛠MenuList.swift */; };
 		12C67130286069E800FE4C06 /* 📋TextView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75B28502C4000B2380B /* 📋TextView.swift */; };
@@ -80,7 +80,7 @@
 		127ECB23286148F900CB1BC3 /* 📄AboutText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📄AboutText.swift"; sourceTree = "<group>"; };
 		127ECB27286149EF00CB1BC3 /* 🏬StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🏬StoreModel.swift"; sourceTree = "<group>"; };
 		127ECB28286149EF00CB1BC3 /* 🏬PurchaseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🏬PurchaseSection.swift"; sourceTree = "<group>"; };
-		127ECB2B28614B8B00CB1BC3 /* 💸AboutADSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸AboutADSection.swift"; sourceTree = "<group>"; };
+		127ECB2B28614B8B00CB1BC3 /* 💸ADSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸ADSection.swift"; sourceTree = "<group>"; };
 		127ECB2D28614C0200CB1BC3 /* Configuration.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		12E4A744285027F600B2380B /* AppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E4A747285027F600B2380B /* AppTemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTemplateApp.swift; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 		12E4A77528502FF800B2380B /* 💸AD */ = {
 			isa = PBXGroup;
 			children = (
-				127ECB2B28614B8B00CB1BC3 /* 💸AboutADSection.swift */,
+				127ECB2B28614B8B00CB1BC3 /* 💸ADSection.swift */,
 				12E4A7792850301300B2380B /* 💸AppName.swift */,
 				12E4A7782850301300B2380B /* 💸ADView.swift */,
 				12E4A7762850301300B2380B /* 💸ADBanner.swift */,
@@ -307,7 +307,7 @@
 				12E4A76128502C9F00B2380B /* 🏷VersionMenu.swift in Sources */,
 				12E4A77E2850301300B2380B /* 💸AppName.swift in Sources */,
 				12E4A76228502C9F00B2380B /* 📓SourceCodeMenu.swift in Sources */,
-				127ECB2C28614B8B00CB1BC3 /* 💸AboutADSection.swift in Sources */,
+				127ECB2C28614B8B00CB1BC3 /* 💸ADSection.swift in Sources */,
 				12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
