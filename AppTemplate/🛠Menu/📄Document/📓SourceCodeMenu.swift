@@ -48,8 +48,8 @@ struct 📰CodeSection: View {
         Section {
             ForEach(🏷FileName, id: \.self) { 🏷 in
                 NavigationLink(🏷) {
-                    let 📍 = 📁URL.appendingPathComponent(🏷)
-                    📋TextView(try! String(contentsOf: 📍), 🏷, ⓗorizonScroll: true)
+                    let 📃 = try? String(contentsOf: 📁URL.appendingPathComponent(🏷))
+                    📋TextView(📃 ?? "🐛Bug", 🏷, ⓗorizonScroll: true)
                 }
             }
             
