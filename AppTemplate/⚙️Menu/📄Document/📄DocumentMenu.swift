@@ -38,6 +38,7 @@ struct 📄DocumentMenu: View {
                     }
                 } footer: {
                     Text(🔗)
+                        .textSelection(.enabled)
                 }
                 
                 
