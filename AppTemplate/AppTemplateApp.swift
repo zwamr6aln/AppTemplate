@@ -5,12 +5,15 @@ import SwiftUI
 @main
 struct AppTemplateApp: App {
     
-    let 📱 = 📱AppModel()
+    @StateObject var 📱 = 📱AppModel()
+    
+    @StateObject var 🏬 = 🏬StoreModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(📱)
+                .environmentObject(🏬)
         }
     }
 }

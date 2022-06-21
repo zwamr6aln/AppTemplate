@@ -18,6 +18,8 @@ struct 🛠MenuList: View {
                     
                 📄DocumentMenu()
                 
+                🏬PurchaseSection()
+                
                 💸AdSection()
             }
             .navigationTitle("AppName")

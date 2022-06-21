@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		127ECB24286148F900CB1BC3 /* 📄AboutText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB23286148F900CB1BC3 /* 📄AboutText.swift */; };
+		127ECB29286149EF00CB1BC3 /* 🏬StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🏬StoreModel.swift */; };
+		127ECB2A286149EF00CB1BC3 /* 🏬PurchaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🏬PurchaseSection.swift */; };
 		12C6712F286069E800FE4C06 /* 🛠MenuList.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75928502B5200B2380B /* 🛠MenuList.swift */; };
 		12C67130286069E800FE4C06 /* 📋TextView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75B28502C4000B2380B /* 📋TextView.swift */; };
 		12C67131286069ED00FE4C06 /* 🏷VersionMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75E28502C9F00B2380B /* 🏷VersionMenu.swift */; };
@@ -75,6 +77,8 @@
 
 /* Begin PBXFileReference section */
 		127ECB23286148F900CB1BC3 /* 📄AboutText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📄AboutText.swift"; sourceTree = "<group>"; };
+		127ECB27286149EF00CB1BC3 /* 🏬StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🏬StoreModel.swift"; sourceTree = "<group>"; };
+		127ECB28286149EF00CB1BC3 /* 🏬PurchaseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🏬PurchaseSection.swift"; sourceTree = "<group>"; };
 		12E4A744285027F600B2380B /* AppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E4A747285027F600B2380B /* AppTemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTemplateApp.swift; sourceTree = "<group>"; };
 		12E4A749285027F600B2380B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +113,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		127ECB25286149B400CB1BC3 /* 🧩Sub */ = {
+			isa = PBXGroup;
+			children = (
+				127ECB26286149C900CB1BC3 /* 🏬InAppPurchase */,
+				12E4A77528502FF800B2380B /* 💸AD */,
+			);
+			path = "🧩Sub";
+			sourceTree = "<group>";
+		};
+		127ECB26286149C900CB1BC3 /* 🏬InAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				127ECB28286149EF00CB1BC3 /* 🏬PurchaseSection.swift */,
+				127ECB27286149EF00CB1BC3 /* 🏬StoreModel.swift */,
+			);
+			path = "🏬InAppPurchase";
+			sourceTree = "<group>";
+		};
 		12E4A73B285027F600B2380B = {
 			isa = PBXGroup;
 			children = (
@@ -132,9 +154,9 @@
 				12E4A747285027F600B2380B /* AppTemplateApp.swift */,
 				12E4A749285027F600B2380B /* ContentView.swift */,
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
+				127ECB25286149B400CB1BC3 /* 🧩Sub */,
 				12E4A75828502AF800B2380B /* ⚙️Menu */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
-				12E4A77528502FF800B2380B /* 💸AD */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
@@ -271,11 +293,13 @@
 				12E4A77B2850301300B2380B /* 💸AdBanner.swift in Sources */,
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
 				12E4A77D2850301300B2380B /* 💸AdView.swift in Sources */,
+				127ECB29286149EF00CB1BC3 /* 🏬StoreModel.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				12E4A75A28502B5200B2380B /* 🛠MenuList.swift in Sources */,
 				12E4A77F2850301300B2380B /* 💸AdSection.swift in Sources */,
 				12E4A77C2850301300B2380B /* 💸TextAboutAD.swift in Sources */,
 				12E4A75C28502C4000B2380B /* 📋TextView.swift in Sources */,
+				127ECB2A286149EF00CB1BC3 /* 🏬PurchaseSection.swift in Sources */,
 				12E4A76328502C9F00B2380B /* 📄DocumentMenu.swift in Sources */,
 				12E4A76128502C9F00B2380B /* 🏷VersionMenu.swift in Sources */,
 				12E4A77E2850301300B2380B /* 💸AppName.swift in Sources */,
