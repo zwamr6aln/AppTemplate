@@ -4,28 +4,48 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var 📱:📱AppModel
+    @EnvironmentObject var 🏬: 🏬StoreModel
     
     var body: some View {
-        VStack {
-            Spacer()
-            
-            Button {
-                UISelectionFeedbackGenerator().selectionChanged()
-                📱.🚩ShowMenu = true
-            } label: {
-                Image(systemName: "gear")
-                    .font(.largeTitle)
-                    .padding(24)
-            }
-            .accessibilityLabel("Open menu")
-            .sheet(isPresented: $📱.🚩ShowMenu) {
-                🛠MenuList()
-                    .onDisappear {
-                        📱.🚩ShowMenu = false
+        NavigationView {
+            List {
+                Section {
+                    HStack {
+                        Text("displayName")
+                        Spacer()
+                        Text(🏬.🎫Name)
+                            .foregroundStyle(.secondary)
                     }
+                    
+                    NavigationLink("debugDescription") {
+                        Text(🏬.🎫Product.debugDescription)
+                            .padding()
+                            .minimumScaleFactor(0.1)
+                            .navigationTitle("debugDescription")
+                    }
+                } header: {
+                    Text("Product")
+                }
             }
-            
-            Spacer()
+            .listStyle(.plain)
+            .navigationTitle("AppTemplate")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        UISelectionFeedbackGenerator().selectionChanged()
+                        📱.🚩ShowMenu = true
+                    } label: {
+                        Image(systemName: "gear")
+                    }
+                    .accessibilityLabel("Open menu")
+                    .sheet(isPresented: $📱.🚩ShowMenu) {
+                        🛠MenuList()
+                            .onDisappear {
+                                📱.🚩ShowMenu = false
+                            }
+                    }
+                }
+            }
         }
         .overlay(alignment: .bottom) {
             💸ADBanner()
