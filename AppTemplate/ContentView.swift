@@ -9,13 +9,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                Button {
-                    let 📍 = URL(string: UIApplication.openSettingsURLString)!
-                    UIApplication.shared.open(📍)
-                } label: {
-                    Label("Open system Setting", systemImage: "gear")
-                }
-                
+                🔗OpenSystemSetting()
                 
                 Section {
                     HStack {

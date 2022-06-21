@@ -6,11 +6,6 @@ import StoreKit
 typealias Transaction = StoreKit.Transaction
 
 
-public enum 🚨StoreError: Error {
-    case failedVerification
-}
-
-
 class 🏬StoreModel: ObservableObject {
     
     @Published var 🎫Product: Product?
@@ -142,4 +137,9 @@ class 🏬StoreModel: ObservableObject {
         guard let 🎫 = 🎫Product else { return "🐛" }
         return 🎫.displayPrice
     }
+}
+
+
+public enum 🚨StoreError: Error {
+    case failedVerification
 }
