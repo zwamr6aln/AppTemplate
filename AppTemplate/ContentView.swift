@@ -26,6 +26,13 @@ struct ContentView: View {
                 } header: {
                     Text("Product")
                 }
+                
+                Button {
+                    let 📍 = URL(string: UIApplication.openSettingsURLString)!
+                    UIApplication.shared.open(📍)
+                } label: {
+                    Label("Open system Setting", systemImage: "gear")
+                }
             }
             .listStyle(.plain)
             .navigationTitle("AppTemplate")
