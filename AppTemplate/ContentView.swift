@@ -23,6 +23,10 @@ struct ContentView: View {
                     }
             }
         }
+        .frame(width: 300, height: 500)
+        .overlay(alignment: .bottom) {
+            💸ADBanner()
+        }
     }
 }
 

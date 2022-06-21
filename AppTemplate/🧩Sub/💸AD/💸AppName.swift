@@ -1,13 +1,15 @@
 
 import SwiftUI
 
-enum 💸AppName: String {
+//TODO: Remove App-self case
+enum 💸AppName: String, CaseIterable, Identifiable {
     case FlipByBlink
     case FadeInAlarm
     case Plain将棋盤
     case TapWeight
     case TapTemperature
     
+    var id: String { self.rawValue }
     
     var 🔗URL: URL {
         switch self {
@@ -18,7 +20,6 @@ enum 💸AppName: String {
             case .TapTemperature: return URL(string: "https://apps.apple.com/app/id1626760566")!
         }
     }
-    
     
     var 📄About: LocalizedStringKey {
         switch self {
