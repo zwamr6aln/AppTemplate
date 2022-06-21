@@ -18,9 +18,7 @@ struct 🛠MenuList: View {
                     
                 📄DocumentMenu()
                 
-                🏬PurchaseSection()
-                
-                💸AboutADView()
+                💸AboutADSection()
             }
             .navigationTitle("AppName")
             .toolbar {

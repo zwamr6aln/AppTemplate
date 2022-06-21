@@ -1,6 +1,6 @@
 
 let 📄AboutText = """
                                 placeholder
-                                placeholder
+<!-- Manually sync below text between "📄AboutText.swift" and "/README.md(here)" and "AppStoreConnect/AAAA/Description". -->
                                 placeholder
 """

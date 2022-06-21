@@ -2,7 +2,7 @@
 import SwiftUI
 import StoreKit
 
-struct 💸AboutADView: View {
+struct 💸AboutADSection: View {
     @EnvironmentObject var 🏬: 🏬StoreModel
     
     var body: some View {
