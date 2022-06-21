@@ -12,6 +12,7 @@ enum 📁SourceFolder: String, CaseIterable, Identifiable {
     var id: String { self.rawValue }
 }
 
+
 struct 📓SourceCodeMenu: View {
     var body: some View {
         List {
@@ -35,18 +36,25 @@ struct 📰CodeSection: View {
         Bundle.main.bundleURL.appendingPathComponent(🄳irectoryPath)
     }
     
-    var 🏷Name: [String] {
-        try! FileManager.default.contentsOfDirectory(atPath: 📁URL.path)
+    var 🏷FileName: [String] {
+        do {
+            return try FileManager.default.contentsOfDirectory(atPath: 📁URL.path)
+        } catch {
+            return []
+        }
     }
     
     var body: some View {
         Section {
-            ForEach(🏷Name, id: \.self) { 🏷 in
+            ForEach(🏷FileName, id: \.self) { 🏷 in
                 NavigationLink(🏷) {
                     let 📍 = 📁URL.appendingPathComponent(🏷)
-                    
                     📋TextView(try! String(contentsOf: 📍), 🏷, ⓗorizonScroll: true)
                 }
+            }
+            
+            if 🏷FileName.isEmpty {
+                Text("🐛Bug")
             }
         } header: {
             Text(🄳irectoryPath)
