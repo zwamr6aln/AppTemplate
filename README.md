@@ -1,4 +1,4 @@
-# iPhoneApp AAAA / ああああ
+# iPhoneApp AppName / アプリ名
 
 <br>
 
