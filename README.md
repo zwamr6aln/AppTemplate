@@ -1,10 +1,32 @@
-# iPhoneApp AppName / アプリ名
+# 📱 iPhoneApp AppTemplate / アプリテンプレート
 
 <br>
 
 ![](AppTemplate/Assets.xcassets/LaunchIcon.imageset/LaunchIcon.png)
 
 <br>
+
+
+## 👆 Handiwork MEMO
+
+### Localization
+
+#### LocalizedStringKey
+
+#### DisplayName
+
+
+### Source code bundle
+
+
+### Icon size
+
+
+### In App Purchase
+
+
+### HealthKit
+
 
 ## 🔗 AppStore link
 
