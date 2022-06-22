@@ -1,7 +1,6 @@
 
 import SwiftUI
 
-
 struct 💸ADBanner: View {
     @EnvironmentObject var 🏬: 🏬StoreModel
     

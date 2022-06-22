@@ -2,9 +2,7 @@
 import Foundation
 import StoreKit
 
-
 typealias Transaction = StoreKit.Transaction
-
 
 class 🏬StoreModel: ObservableObject {
     

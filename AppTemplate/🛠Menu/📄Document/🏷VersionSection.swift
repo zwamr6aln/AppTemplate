@@ -23,9 +23,9 @@ struct 🏷VersionSection: View {
 let 🕒LatestVersionNumber = "1.1"
 
 let 🕒LatestVersionDescription = """
-==== English description ====
+==== English ====
 - AAAA
-==== Japanese(native) description ====
+==== Japanese(native) ====
 - AAAA
 """
 

@@ -1,7 +1,6 @@
 
 import SwiftUI
 
-
 struct 💸ADView: View {
     
     @State private var 🄰ppName: 💸AppName

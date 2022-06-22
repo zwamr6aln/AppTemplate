@@ -1,7 +1,6 @@
 
 import SwiftUI
 
-
 struct ContentView: View {
     @EnvironmentObject var 📱: 📱AppModel
     @EnvironmentObject var 🏬: 🏬StoreModel

@@ -1,7 +1,6 @@
 
 import SwiftUI
 
-
 @main
 struct AppTemplateApp: App {
     

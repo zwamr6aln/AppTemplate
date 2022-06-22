@@ -25,7 +25,6 @@
 		12DDD5742861DB63004F59A0 /* 💸AppName.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 💸AppName.swift */; };
 		12DDD5752861DB63004F59A0 /* 💸ADView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 💸ADView.swift */; };
 		12DDD5762861DB63004F59A0 /* 💸ADBanner.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 💸ADBanner.swift */; };
-		12DDD5772861DB63004F59A0 /* 💸TextAboutAD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7772850301300B2380B /* 💸TextAboutAD.swift */; };
 		12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
 		12E4A74A285027F600B2380B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
 		12E4A74C285027F700B2380B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74B285027F700B2380B /* Assets.xcassets */; };
@@ -42,7 +41,6 @@
 		12E4A76B28502EDE00B2380B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
 		12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
 		12E4A77B2850301300B2380B /* 💸ADBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 💸ADBanner.swift */; };
-		12E4A77C2850301300B2380B /* 💸TextAboutAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7772850301300B2380B /* 💸TextAboutAD.swift */; };
 		12E4A77D2850301300B2380B /* 💸ADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 💸ADView.swift */; };
 		12E4A77E2850301300B2380B /* 💸AppName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 💸AppName.swift */; };
 /* End PBXBuildFile section */
@@ -101,7 +99,6 @@
 				12DDD5742861DB63004F59A0 /* 💸AppName.swift in CopyFiles */,
 				12DDD5752861DB63004F59A0 /* 💸ADView.swift in CopyFiles */,
 				12DDD5762861DB63004F59A0 /* 💸ADBanner.swift in CopyFiles */,
-				12DDD5772861DB63004F59A0 /* 💸TextAboutAD.swift in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +141,6 @@
 		12E4A77228502F3A00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A77428502F3B00B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A7762850301300B2380B /* 💸ADBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸ADBanner.swift"; sourceTree = "<group>"; };
-		12E4A7772850301300B2380B /* 💸TextAboutAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸TextAboutAD.swift"; sourceTree = "<group>"; };
 		12E4A7782850301300B2380B /* 💸ADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸ADView.swift"; sourceTree = "<group>"; };
 		12E4A7792850301300B2380B /* 💸AppName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸AppName.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -258,7 +254,6 @@
 				12E4A7792850301300B2380B /* 💸AppName.swift */,
 				12E4A7782850301300B2380B /* 💸ADView.swift */,
 				12E4A7762850301300B2380B /* 💸ADBanner.swift */,
-				12E4A7772850301300B2380B /* 💸TextAboutAD.swift */,
 			);
 			path = "💸AD";
 			sourceTree = "<group>";
@@ -350,7 +345,6 @@
 				127ECB29286149EF00CB1BC3 /* 🏬StoreModel.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				12E4A75A28502B5200B2380B /* 🛠MenuSheet.swift in Sources */,
-				12E4A77C2850301300B2380B /* 💸TextAboutAD.swift in Sources */,
 				12E4A75C28502C4000B2380B /* 📋TextView.swift in Sources */,
 				12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */,
 				12DDD5432861D363004F59A0 /* 🛠MenuButton.swift in Sources */,
