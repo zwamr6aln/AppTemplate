@@ -9,7 +9,7 @@
 ## 👆 Handiwork MEMO
 
 ### Localization
-PROJECTS / Localizations / ☑Base
+PROJECTS / Localizations / ✓Base
 
 #### LocalizedStringKey
 Localizable.strings
@@ -19,11 +19,13 @@ InfoPlist.strings / CFBundleDisplayName = "AAAA";
 
 #### Glossaries
 translations of strings from Apple OS
+
 https://developer.apple.com/download/all/?q=Glossaries
 
 
 ### Source code bundle
 TARGETS / Build Phases / Copy Files
+
 Resources / (SubPath)
 
 
@@ -35,6 +37,7 @@ Resources / (SubPath)
 Capabilities / In-App Purchase
 
 Edit Scheme / StoreKit Configuration
+
 Configuration.storekit
 
 ProductID: AAAA.adfree
@@ -42,13 +45,17 @@ ProductID: AAAA.adfree
 
 ### Launch screen
 Info.plist / Image Name
+
 LaunchIcon
 
 
 ### HealthKit
 Capabilities / HealthKit
+
 Info.plist / Privacy - Health Share Usage Description
+
 Info.plist / Privacy - Health Update Usage Description
+
 "Activate HeakthKit permission to record data."
 
 
