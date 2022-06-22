@@ -6,31 +6,56 @@
 
 <br>
 
-
 ## 👆 Handiwork MEMO
 
 ### Localization
+PROJECTS / Localizations / ☑Base
 
 #### LocalizedStringKey
+Localizable.strings
 
 #### DisplayName
+InfoPlist.strings / CFBundleDisplayName = "AAAA";
+
+#### Glossaries
+translations of strings from Apple OS
+https://developer.apple.com/download/all/?q=Glossaries
 
 
 ### Source code bundle
+TARGETS / Build Phases / Copy Files
+Resources / (SubPath)
 
 
 ### Icon size
+120 152 167 1024
 
 
 ### In App Purchase
+Capabilities / In-App Purchase
+
+Edit Scheme / StoreKit Configuration
+Configuration.storekit
+
+ProductID: AAAA.adfree
+
+
+### Launch screen
+Info.plist / Image Name
+LaunchIcon
 
 
 ### HealthKit
+Capabilities / HealthKit
+Info.plist / Privacy - Health Share Usage Description
+Info.plist / Privacy - Health Update Usage Description
+"Activate HeakthKit permission to record data."
 
 
 ## 🔗 AppStore link
 
 [apps.apple.com/app/id1111](https://apps.apple.com/app/id1111)
+
 
 <!-- Manually sync below text between "📄AppDescription.swift" and "/README.md(here)" and "AppStoreConnect/AAAA/Description". -->
 
