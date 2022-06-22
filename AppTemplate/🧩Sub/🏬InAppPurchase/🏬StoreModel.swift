@@ -11,6 +11,10 @@ class 🏬StoreModel: ObservableObject {
     @Published var 🎫Product: Product?
     @Published var 🎫PurchasedProduct: Product?
     
+    var 🚩Unconnected: Bool {
+        🎫Product == nil
+    }
+    
     var 🚩Purchased: Bool {
         🎫PurchasedProduct != nil
     }
@@ -128,7 +132,7 @@ class 🏬StoreModel: ObservableObject {
     
     
     var 🎫Name: String {
-        guard let 🎫 = 🎫Product else { return "…" }
+        guard let 🎫 = 🎫Product else { return "(Hide AD banner)" }
         return 🎫.displayName
     }
     

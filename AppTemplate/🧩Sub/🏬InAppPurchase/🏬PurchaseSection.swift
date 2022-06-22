@@ -32,10 +32,11 @@ struct 🏬PurchaseSection: View {
                     }
                 }
                 .disabled(🚩BuyingNow)
-                .disabled(🏬.🚩Purchased)
                 .buttonStyle(.borderedProminent)
             }
             .padding(.vertical, 8)
+            .disabled(🏬.🚩Unconnected)
+            .disabled(🏬.🚩Purchased)
             
             
             Button {
@@ -46,6 +47,7 @@ struct 🏬PurchaseSection: View {
                 Label("Restore Purchase", systemImage: "arrow.uturn.backward")
                     .font(.subheadline)
                     .foregroundStyle(🏬.🚩Purchased ? .secondary : .primary)
+                    .opacity(🏬.🚩Unconnected ? 0.5 : 1)
             }
         } header: {
             Text("In App Purchase")
