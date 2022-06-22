@@ -49,6 +49,16 @@ Info.plist / Image Name
 LaunchIcon
 
 
+### "Preview Content" Folder
+Delete: "Preview Content" Folder
+
+Delete: TARGETS / Build Settings / Development Assets
+
+
+### Move info.plist to folder
+Edit: TARGETS / Build Settings / Packaging / Info.plist File
+
+
 ### HealthKit
 Capabilities / HealthKit
 
