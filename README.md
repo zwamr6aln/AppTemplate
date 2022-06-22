@@ -52,8 +52,6 @@ AAAA.
 
 English
 
-==== Localization: Almost all ====
-
 Japanese(native)
 
 ==== Localization: Main 3 keywords only ====

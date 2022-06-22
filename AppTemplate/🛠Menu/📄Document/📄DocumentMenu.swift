@@ -7,8 +7,14 @@ struct 📄DocumentMenu: View {
             List {
                 Section {
                     NavigationLink {
-                        📋TextView(📄AboutText, "About")
-                            .redacted(reason: .placeholder)
+                        ScrollView {
+                            Text(📄AboutText)
+                                .padding()
+                        }
+                        .navigationBarTitle("About")
+                        .navigationBarTitleDisplayMode(.inline)
+                        .textSelection(.enabled)
+                        .redacted(reason: .placeholder)
                     } label: {
                         Text(📄AboutText)
                             .font(.subheadline)

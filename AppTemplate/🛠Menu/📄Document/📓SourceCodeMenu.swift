@@ -17,7 +17,7 @@ struct 📓SourceCodeMenu: View {
     var body: some View {
         List {
             ForEach(📁SourceFolder.allCases) { 📁 in
-                📰CodeSection(📁.rawValue)
+                📓CodeSection(📁.rawValue)
             }
             
             📑BundleMainInfoDictionary()
@@ -29,7 +29,7 @@ struct 📓SourceCodeMenu: View {
 }
 
 
-struct 📰CodeSection: View {
+struct 📓CodeSection: View {
     var 🄳irectoryPath: String
     
     var 📁URL: URL {
@@ -49,7 +49,7 @@ struct 📰CodeSection: View {
             ForEach(🏷FileName, id: \.self) { 🏷 in
                 NavigationLink(🏷) {
                     let 📃 = try? String(contentsOf: 📁URL.appendingPathComponent(🏷))
-                    📋TextView(📃 ?? "🐛Bug", 🏷, ⓗorizonScroll: true)
+                    📰SourceCodeView(📃 ?? "🐛Bug", 🏷)
                 }
             }
             
@@ -73,7 +73,13 @@ struct 📑BundleMainInfoDictionary: View {
     var body: some View {
         Section {
             NavigationLink("Bundle.main.infoDictionary") {
-                📋TextView(🄱undleMainInfoDictionary, "Bundle.main.infoDictionary")
+                ScrollView {
+                    Text(🄱undleMainInfoDictionary)
+                        .padding()
+                }
+                .navigationBarTitle("Bundle.main.infoDictionary")
+                .navigationBarTitleDisplayMode(.inline)
+                .textSelection(.enabled)
             }
         }
     }
@@ -118,5 +124,29 @@ struct 🔗RepositoryLink: View {
             Text(Mirror🔗)
                 .textSelection(.enabled)
         }
+    }
+}
+
+
+struct 📰SourceCodeView: View {
+    var 🅃ext: String
+    var 🅃itle: LocalizedStringKey
+    
+    var body: some View {
+        ScrollView {
+            ScrollView(.horizontal, showsIndicators: false) {
+                Text(🅃ext)
+                    .padding()
+            }
+        }
+        .navigationBarTitle(🅃itle)
+        .navigationBarTitleDisplayMode(.inline)
+        .font(.caption.monospaced())
+        .textSelection(.enabled)
+    }
+    
+    init(_ ⓣext: String, _ ⓣitle: String) {
+        🅃ext = ⓣext
+        🅃itle = LocalizedStringKey(ⓣitle)
     }
 }

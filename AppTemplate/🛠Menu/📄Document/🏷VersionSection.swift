@@ -5,7 +5,13 @@ struct 🏷VersionSection: View {
     var body: some View {
         Section {
             NavigationLink {
-                📋TextView(🕒VersionHistory, "Version History")
+                ScrollView {
+                    Text(🕒VersionHistory)
+                        .padding()
+                }
+                .navigationBarTitle("Version History")
+                .navigationBarTitleDisplayMode(.inline)
+                .textSelection(.enabled)
             } label: {
                 Label(🕒LatestVersionNumber, systemImage: "signpost.left")
             }
