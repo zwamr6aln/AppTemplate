@@ -94,16 +94,9 @@ struct 🏬RestoreButton: View {
                     try? await AppStore.sync()
                 }
             } label: {
-                if 🏬.🚩Purchased {
-                    Text("Restore purchase")
-                        .strikethrough()
-                        .foregroundStyle(.secondary)
-                        .foregroundStyle(.secondary)
-                } else {
-                    Label("Restore purchase", systemImage: "arrow.clockwise")
-                        .font(.subheadline)
-                        .foregroundStyle(🏬.🚩Unconnected ? .secondary : .primary)
-                }
+                Label("Restore purchase", systemImage: "arrow.clockwise")
+                    .font(.footnote)
+                    .foregroundColor(🏬.🚩Unconnected || 🏬.🚩Purchased ? .secondary : nil)
             }
         }
     }
