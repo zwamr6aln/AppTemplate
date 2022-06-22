@@ -8,7 +8,7 @@ struct 📄DocumentMenu: View {
                 Section {
                     NavigationLink {
                         ScrollView {
-                            Text(📄AboutText)
+                            Text(📄AppDescription)
                                 .padding()
                         }
                         .navigationBarTitle("About")
@@ -16,7 +16,7 @@ struct 📄DocumentMenu: View {
                         .textSelection(.enabled)
                         .redacted(reason: .placeholder)
                     } label: {
-                        Text(📄AboutText)
+                        Text(📄AppDescription)
                             .font(.subheadline)
                             .lineLimit(4)
                             .padding(8)

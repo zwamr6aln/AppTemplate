@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		127ECB24286148F900CB1BC3 /* 📄AboutText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB23286148F900CB1BC3 /* 📄AboutText.swift */; };
+		127ECB24286148F900CB1BC3 /* 📄AppDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB23286148F900CB1BC3 /* 📄AppDescription.swift */; };
 		127ECB29286149EF00CB1BC3 /* 🏬StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🏬StoreModel.swift */; };
 		127ECB2A286149EF00CB1BC3 /* 🏬PurchaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🏬PurchaseSection.swift */; };
 		127ECB2C28614B8B00CB1BC3 /* 💸ADSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 💸ADSection.swift */; };
@@ -114,7 +114,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		127ECB23286148F900CB1BC3 /* 📄AboutText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📄AboutText.swift"; sourceTree = "<group>"; };
+		127ECB23286148F900CB1BC3 /* 📄AppDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📄AppDescription.swift"; sourceTree = "<group>"; };
 		127ECB27286149EF00CB1BC3 /* 🏬StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🏬StoreModel.swift"; sourceTree = "<group>"; };
 		127ECB28286149EF00CB1BC3 /* 🏬PurchaseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🏬PurchaseSection.swift"; sourceTree = "<group>"; };
 		127ECB2B28614B8B00CB1BC3 /* 💸ADSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸ADSection.swift"; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				12E4A76028502C9F00B2380B /* 📄DocumentMenu.swift */,
-				127ECB23286148F900CB1BC3 /* 📄AboutText.swift */,
+				127ECB23286148F900CB1BC3 /* 📄AppDescription.swift */,
 				12E4A75E28502C9F00B2380B /* 🏷VersionSection.swift */,
 				12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */,
 			);
@@ -333,7 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				127ECB24286148F900CB1BC3 /* 📄AboutText.swift in Sources */,
+				127ECB24286148F900CB1BC3 /* 📄AppDescription.swift in Sources */,
 				12E4A77B2850301300B2380B /* 💸ADBanner.swift in Sources */,
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
 				12E4A77D2850301300B2380B /* 💸ADView.swift in Sources */,
