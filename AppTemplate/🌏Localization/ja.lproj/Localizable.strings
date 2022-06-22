@@ -5,8 +5,8 @@
 "Cancel" = "取り消す";
 
 
-// ======== Document =========
-"App Document" = "アプリ資料";
+// ======== Information =========
+"Information" = "情報";
 "Version" = "バージョン";
 "builded on %@" = "%@ にビルドしました";
 "Version History" = "バージョン履歴";
@@ -23,7 +23,7 @@
 "About AD" = "広告について";
 "In App Purchase" = "アプリ内課金";
 "Hide AD banner" = "広告を非表示にする";
-"Restore Purchase" = "購入情報を復元する";
+"Restore purchase" = "購入情報を復元する";
 "Open AD link" = "広告のリンクを開く";
 "OK" = "了解しました";
 

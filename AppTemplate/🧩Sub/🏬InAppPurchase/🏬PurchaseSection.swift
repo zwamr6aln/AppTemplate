@@ -44,7 +44,7 @@ struct 🏬PurchaseSection: View {
                     try? await AppStore.sync()
                 }
             } label: {
-                Label("Restore Purchase", systemImage: "arrow.uturn.backward")
+                Label("Restore purchase", systemImage: "arrow.uturn.backward")
                     .font(.subheadline)
                     .foregroundStyle(🏬.🚩Purchased ? .secondary : .primary)
                     .opacity(🏬.🚩Unconnected ? 0.5 : 1)

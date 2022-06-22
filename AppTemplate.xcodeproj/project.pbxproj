@@ -10,17 +10,17 @@
 		127ECB24286148F900CB1BC3 /* 📄AppDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB23286148F900CB1BC3 /* 📄AppDescription.swift */; };
 		127ECB29286149EF00CB1BC3 /* 🏬StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🏬StoreModel.swift */; };
 		127ECB2A286149EF00CB1BC3 /* 🏬PurchaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🏬PurchaseSection.swift */; };
-		127ECB2C28614B8B00CB1BC3 /* 💸ADSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 💸ADSection.swift */; };
+		127ECB2C28614B8B00CB1BC3 /* 💸ADMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 💸ADMenu.swift */; };
 		127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 127ECB2D28614C0200CB1BC3 /* Configuration.storekit */; };
 		12C6712F286069E800FE4C06 /* 🛠MenuSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75928502B5200B2380B /* 🛠MenuSheet.swift */; };
 		12C67131286069ED00FE4C06 /* 🏷VersionSection.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75E28502C9F00B2380B /* 🏷VersionSection.swift */; };
-		12C67132286069ED00FE4C06 /* 📄DocumentMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* 📄DocumentMenu.swift */; };
+		12C67132286069ED00FE4C06 /* 📄InformationMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* 📄InformationMenu.swift */; };
 		12C67133286069ED00FE4C06 /* 📓SourceCodeMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */; };
 		12DDD5432861D363004F59A0 /* 🛠MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDD5422861D363004F59A0 /* 🛠MenuButton.swift */; };
 		12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */; };
 		12DDD5712861DB5D004F59A0 /* 🏬PurchaseSection.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🏬PurchaseSection.swift */; };
 		12DDD5722861DB5D004F59A0 /* 🏬StoreModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🏬StoreModel.swift */; };
-		12DDD5732861DB63004F59A0 /* 💸ADSection.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 💸ADSection.swift */; };
+		12DDD5732861DB63004F59A0 /* 💸ADMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 💸ADMenu.swift */; };
 		12DDD5742861DB63004F59A0 /* 💸AppName.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 💸AppName.swift */; };
 		12DDD5752861DB63004F59A0 /* 💸ADView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 💸ADView.swift */; };
 		12DDD5762861DB63004F59A0 /* 💸ADBanner.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 💸ADBanner.swift */; };
@@ -32,7 +32,7 @@
 		12E4A75A28502B5200B2380B /* 🛠MenuSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75928502B5200B2380B /* 🛠MenuSheet.swift */; };
 		12E4A76128502C9F00B2380B /* 🏷VersionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75E28502C9F00B2380B /* 🏷VersionSection.swift */; };
 		12E4A76228502C9F00B2380B /* 📓SourceCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */; };
-		12E4A76328502C9F00B2380B /* 📄DocumentMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* 📄DocumentMenu.swift */; };
+		12E4A76328502C9F00B2380B /* 📄InformationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* 📄InformationMenu.swift */; };
 		12E4A76528502D7200B2380B /* AppTemplateApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
 		12E4A76628502D7200B2380B /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
 		12E4A76728502D7200B2380B /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
@@ -57,11 +57,11 @@
 		12C6712E286069CE00FE4C06 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "📄Document";
+			dstPath = "📄Information";
 			dstSubfolderSpec = 7;
 			files = (
 				12C67131286069ED00FE4C06 /* 🏷VersionSection.swift in CopyFiles */,
-				12C67132286069ED00FE4C06 /* 📄DocumentMenu.swift in CopyFiles */,
+				12C67132286069ED00FE4C06 /* 📄InformationMenu.swift in CopyFiles */,
 				12C67133286069ED00FE4C06 /* 📓SourceCodeMenu.swift in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,7 +92,7 @@
 			dstPath = "💸AD";
 			dstSubfolderSpec = 7;
 			files = (
-				12DDD5732861DB63004F59A0 /* 💸ADSection.swift in CopyFiles */,
+				12DDD5732861DB63004F59A0 /* 💸ADMenu.swift in CopyFiles */,
 				12DDD5742861DB63004F59A0 /* 💸AppName.swift in CopyFiles */,
 				12DDD5752861DB63004F59A0 /* 💸ADView.swift in CopyFiles */,
 				12DDD5762861DB63004F59A0 /* 💸ADBanner.swift in CopyFiles */,
@@ -118,7 +118,7 @@
 		127ECB23286148F900CB1BC3 /* 📄AppDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📄AppDescription.swift"; sourceTree = "<group>"; };
 		127ECB27286149EF00CB1BC3 /* 🏬StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🏬StoreModel.swift"; sourceTree = "<group>"; };
 		127ECB28286149EF00CB1BC3 /* 🏬PurchaseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🏬PurchaseSection.swift"; sourceTree = "<group>"; };
-		127ECB2B28614B8B00CB1BC3 /* 💸ADSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸ADSection.swift"; sourceTree = "<group>"; };
+		127ECB2B28614B8B00CB1BC3 /* 💸ADMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸ADMenu.swift"; sourceTree = "<group>"; };
 		127ECB2D28614C0200CB1BC3 /* Configuration.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		12DDD5422861D363004F59A0 /* 🛠MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛠MenuButton.swift"; sourceTree = "<group>"; };
 		12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🔗OpenSystemSetting.swift"; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		12E4A75928502B5200B2380B /* 🛠MenuSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛠MenuSheet.swift"; sourceTree = "<group>"; };
 		12E4A75E28502C9F00B2380B /* 🏷VersionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🏷VersionSection.swift"; sourceTree = "<group>"; };
 		12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📓SourceCodeMenu.swift"; sourceTree = "<group>"; };
-		12E4A76028502C9F00B2380B /* 📄DocumentMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📄DocumentMenu.swift"; sourceTree = "<group>"; };
+		12E4A76028502C9F00B2380B /* 📄InformationMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📄InformationMenu.swift"; sourceTree = "<group>"; };
 		12E4A76C28502EDE00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		12E4A76E28502EE100B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		12E4A77228502F3A00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -219,20 +219,20 @@
 			children = (
 				12DDD5422861D363004F59A0 /* 🛠MenuButton.swift */,
 				12E4A75928502B5200B2380B /* 🛠MenuSheet.swift */,
-				12E4A75D28502C6400B2380B /* 📄Document */,
+				12E4A75D28502C6400B2380B /* 📄Information */,
 			);
 			path = "🛠Menu";
 			sourceTree = "<group>";
 		};
-		12E4A75D28502C6400B2380B /* 📄Document */ = {
+		12E4A75D28502C6400B2380B /* 📄Information */ = {
 			isa = PBXGroup;
 			children = (
-				12E4A76028502C9F00B2380B /* 📄DocumentMenu.swift */,
+				12E4A76028502C9F00B2380B /* 📄InformationMenu.swift */,
 				127ECB23286148F900CB1BC3 /* 📄AppDescription.swift */,
 				12E4A75E28502C9F00B2380B /* 🏷VersionSection.swift */,
 				12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */,
 			);
-			path = "📄Document";
+			path = "📄Information";
 			sourceTree = "<group>";
 		};
 		12E4A76828502EA600B2380B /* 🌏Localization */ = {
@@ -247,7 +247,7 @@
 		12E4A77528502FF800B2380B /* 💸AD */ = {
 			isa = PBXGroup;
 			children = (
-				127ECB2B28614B8B00CB1BC3 /* 💸ADSection.swift */,
+				127ECB2B28614B8B00CB1BC3 /* 💸ADMenu.swift */,
 				12E4A7792850301300B2380B /* 💸AppName.swift */,
 				12E4A7782850301300B2380B /* 💸ADView.swift */,
 				12E4A7762850301300B2380B /* 💸ADBanner.swift */,
@@ -345,11 +345,11 @@
 				12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */,
 				12DDD5432861D363004F59A0 /* 🛠MenuButton.swift in Sources */,
 				127ECB2A286149EF00CB1BC3 /* 🏬PurchaseSection.swift in Sources */,
-				12E4A76328502C9F00B2380B /* 📄DocumentMenu.swift in Sources */,
+				12E4A76328502C9F00B2380B /* 📄InformationMenu.swift in Sources */,
 				12E4A76128502C9F00B2380B /* 🏷VersionSection.swift in Sources */,
 				12E4A77E2850301300B2380B /* 💸AppName.swift in Sources */,
 				12E4A76228502C9F00B2380B /* 📓SourceCodeMenu.swift in Sources */,
-				127ECB2C28614B8B00CB1BC3 /* 💸ADSection.swift in Sources */,
+				127ECB2C28614B8B00CB1BC3 /* 💸ADMenu.swift in Sources */,
 				12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

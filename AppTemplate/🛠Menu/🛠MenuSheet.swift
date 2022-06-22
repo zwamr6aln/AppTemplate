@@ -15,10 +15,12 @@ struct 🛠MenuSheet: View {
                 } header: {
                     Text("Option")
                 }
-                    
-                📄DocumentMenu()
                 
-                💸ADSection()
+                
+                💸ADMenu()
+                
+                
+                📄InformationMenu()
             }
             .navigationTitle("AppName")
             .toolbar {

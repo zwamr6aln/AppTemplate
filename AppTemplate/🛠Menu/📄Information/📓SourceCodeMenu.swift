@@ -5,7 +5,8 @@ enum 📁SourceFolder: String, CaseIterable, Identifiable {
     case main
     case 🧩Sub
     case 🛠Menu
-    case 📄Document
+    case 📄Information
+    
     case 🏬InAppPurchase
     case 💸AD
     

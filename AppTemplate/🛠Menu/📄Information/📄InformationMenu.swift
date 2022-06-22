@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct 📄DocumentMenu: View {
+struct 📄InformationMenu: View {
     var body: some View {
         NavigationLink {
             List {
@@ -76,9 +76,9 @@ struct 📄DocumentMenu: View {
                     Label("Source code", systemImage: "doc.plaintext")
                 }
             }
-            .navigationTitle("App Document")
+            .navigationTitle("Information")
         } label: {
-            Label("App Document", systemImage: "doc")
+            Label("Information", systemImage: "doc")
         }
     }
 }
