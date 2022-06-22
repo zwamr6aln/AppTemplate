@@ -36,7 +36,7 @@ SubPath
 120 152 167 1024
 
 
-### In App Purchase
+### In-App Purchase
 Capabilities / In-App Purchase
 
 Edit Scheme / StoreKit Configuration
@@ -58,7 +58,7 @@ Move: "AAAA/🧩Sub/Preview Content"
 Edit: TARGETS / Build Settings / Development Assets
 
 
-### Move info.plist
+### Move "info.plist"
 Move: "AAAA/🧩Sub/Info.plist"
 
 Edit: TARGETS / Build Settings / Packaging / Info.plist File
