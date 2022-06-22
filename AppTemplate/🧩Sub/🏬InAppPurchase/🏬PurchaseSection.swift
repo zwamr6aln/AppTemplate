@@ -36,16 +36,12 @@ struct 🏬PurchaseSection: View {
                     .disabled(🚩BuyingNow)
                     .buttonStyle(.borderedProminent)
                 }
-                .padding(.vertical, 8)
+                .padding(.vertical)
                 .disabled(🏬.🚩Unconnected)
                 .disabled(🏬.🚩Purchased)
                 
                 
-                Image(systemName: "rectangle.dashed")
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundStyle(.tertiary)
-                    .padding()
+                🏬ProductPreview()
             } header: {
                 Text("In-App Purchase")
             }
@@ -59,6 +55,31 @@ struct 🏬PurchaseSection: View {
                   dismissButton: .default(Text("OK")))
         }
         .animation(.default, value: 🏬.🚩Purchased)
+    }
+}
+
+
+struct 🏬ProductPreview: View {
+    @EnvironmentObject var 🏬: 🏬StoreModel
+    
+    var body: some View {
+        HStack {
+            Image("ProductPreview_Before")
+                .resizable()
+                .scaledToFit()
+                .shadow(radius: 2)
+            
+            Image(systemName: "arrow.right")
+                .font(.title2.bold())
+                .foregroundStyle(.tertiary)
+            
+            Image("ProductPreview_After")
+                .resizable()
+                .scaledToFit()
+                .shadow(radius: 2)
+        }
+        .padding(.horizontal)
+        .padding(24)
     }
 }
 
