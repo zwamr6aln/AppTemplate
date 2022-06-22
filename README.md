@@ -50,13 +50,15 @@ LaunchIcon
 
 
 ### "Preview Content" Folder
-Delete: "Preview Content" Folder
+Move: "AAAA/🧩Sub/Preview Content"
 
-Delete: TARGETS / Build Settings / Development Assets
+Edit: TARGETS / Build Settings / Development Assets
 
 
 ### Move info.plist to folder
-Edit: TARGETS / Build Settings / Packaging / Info.plist File / "AAAA/🧩Sub/Info.plist"
+Move: "AAAA/🧩Sub/Info.plist"
+
+Edit: TARGETS / Build Settings / Packaging / Info.plist File
 
 
 ### HealthKit

@@ -171,6 +171,7 @@
 				127ECB26286149C900CB1BC3 /* 🏬InAppPurchase */,
 				12E4A77528502FF800B2380B /* 💸AD */,
 				12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */,
+				12E4A74D285027F700B2380B /* Preview Content */,
 			);
 			path = "🧩Sub";
 			sourceTree = "<group>";
@@ -213,7 +214,6 @@
 				12E4A75828502AF800B2380B /* 🛠Menu */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
-				12E4A74D285027F700B2380B /* Preview Content */,
 			);
 			path = AppTemplate;
 			sourceTree = "<group>";
@@ -511,7 +511,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppTemplate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppTemplate/🧩Sub/Preview Content\"";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -540,7 +540,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppTemplate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppTemplate/🧩Sub/Preview Content\"";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
