@@ -56,7 +56,7 @@ Delete: TARGETS / Build Settings / Development Assets
 
 
 ### Move info.plist to folder
-Edit: TARGETS / Build Settings / Packaging / Info.plist File
+Edit: TARGETS / Build Settings / Packaging / Info.plist File / "AAAA/🧩Sub/Info.plist"
 
 
 ### HealthKit

@@ -167,6 +167,7 @@
 		127ECB25286149B400CB1BC3 /* 🧩Sub */ = {
 			isa = PBXGroup;
 			children = (
+				12724D532862BF0F008471AB /* Info.plist */,
 				127ECB26286149C900CB1BC3 /* 🏬InAppPurchase */,
 				12E4A77528502FF800B2380B /* 💸AD */,
 				12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */,
@@ -205,7 +206,6 @@
 		12E4A746285027F600B2380B /* AppTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				12724D532862BF0F008471AB /* Info.plist */,
 				12E4A747285027F600B2380B /* AppTemplateApp.swift */,
 				12E4A749285027F600B2380B /* ContentView.swift */,
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
@@ -515,7 +515,7 @@
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppTemplate/Info.plist;
+				INFOPLIST_FILE = "AppTemplate/🧩Sub/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -544,7 +544,7 @@
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppTemplate/Info.plist;
+				INFOPLIST_FILE = "AppTemplate/🧩Sub/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
