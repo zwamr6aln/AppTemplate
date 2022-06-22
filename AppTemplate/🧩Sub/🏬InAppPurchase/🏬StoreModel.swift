@@ -128,13 +128,13 @@ class 🏬StoreModel: ObservableObject {
     
     
     var 🎫Name: String {
-        guard let 🎫 = 🎫Product else { return "🐛Bug" }
+        guard let 🎫 = 🎫Product else { return "…" }
         return 🎫.displayName
     }
     
     
     var 🎫Price: String {
-        guard let 🎫 = 🎫Product else { return "🐛Bug" }
+        guard let 🎫 = 🎫Product else { return "…" }
         return 🎫.displayPrice
     }
 }
