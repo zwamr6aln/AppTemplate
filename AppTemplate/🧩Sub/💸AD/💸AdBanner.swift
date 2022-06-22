@@ -27,14 +27,6 @@ struct 💸ADBanner: View {
                             }
                             .foregroundStyle(.tertiary)
                         }
-                        .overlay(alignment: .bottomLeading) {
-                            Text("AD")
-                                .scaleEffect(x: 1.2)
-                                .font(.subheadline.weight(.black))
-                                .padding(.leading)
-                                .padding(.bottom, 5)
-                                .foregroundStyle(.quaternary)
-                        }
                         .background {
                             RoundedRectangle(cornerRadius: 16, style: .continuous)
                                 .foregroundStyle(.background)
