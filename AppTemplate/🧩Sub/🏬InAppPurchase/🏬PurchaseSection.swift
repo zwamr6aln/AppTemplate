@@ -29,6 +29,7 @@ struct 🏬PurchaseSection: View {
                             } catch {
                                 print("Failed purchase for AD Free: \(error)")
                             }
+                            
                             🚩BuyingNow = false
                         }
                     }
@@ -46,28 +47,11 @@ struct 🏬PurchaseSection: View {
                     .foregroundStyle(.tertiary)
                     .padding()
             } header: {
-                Text("In App Purchase")
+                Text("In-App Purchase")
             }
             
             
-            Section {
-                Button {
-                    Task {
-                        try? await AppStore.sync()
-                    }
-                } label: {
-                    if 🏬.🚩Purchased {
-                        Text("Restore purchase")
-                            .strikethrough()
-                            .foregroundStyle(.secondary)
-                            .foregroundStyle(.secondary)
-                    } else {
-                        Label("Restore purchase", systemImage: "arrow.clockwise")
-                            .font(.subheadline)
-                            .foregroundStyle(🏬.🚩Unconnected ? .secondary : .primary)
-                    }
-                }
-            }
+            🏬RestoreButton()
         }
         .alert(isPresented: $🚨ShowError) {
             Alert(title: Text(🚨ErrorTitle),
@@ -75,5 +59,31 @@ struct 🏬PurchaseSection: View {
                   dismissButton: .default(Text("OK")))
         }
         .animation(.default, value: 🏬.🚩Purchased)
+    }
+}
+
+
+struct 🏬RestoreButton: View {
+    @EnvironmentObject var 🏬: 🏬StoreModel
+    
+    var body: some View {
+        Section {
+            Button {
+                Task {
+                    try? await AppStore.sync()
+                }
+            } label: {
+                if 🏬.🚩Purchased {
+                    Text("Restore purchase")
+                        .strikethrough()
+                        .foregroundStyle(.secondary)
+                        .foregroundStyle(.secondary)
+                } else {
+                    Label("Restore purchase", systemImage: "arrow.clockwise")
+                        .font(.subheadline)
+                        .foregroundStyle(🏬.🚩Unconnected ? .secondary : .primary)
+                }
+            }
+        }
     }
 }
