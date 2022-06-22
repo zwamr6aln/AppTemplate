@@ -6,10 +6,11 @@
 
 <br>
 
+
 ## 👆 Handiwork MEMO
 
 ### Localization
-PROJECTS / Localizations / ✓Base
+PROJECTS / Localizations
 
 #### LocalizedStringKey
 Localizable.strings
@@ -26,7 +27,9 @@ https://developer.apple.com/download/all/?q=Glossaries
 ### Source code bundle
 TARGETS / Build Phases / Copy Files
 
-Resources / (SubPath)
+Resources
+
+SubPath
 
 
 ### Icon size
@@ -49,13 +52,13 @@ Info.plist / Image Name
 LaunchIcon
 
 
-### "Preview Content" Folder
+### Move "Preview Content"
 Move: "AAAA/🧩Sub/Preview Content"
 
 Edit: TARGETS / Build Settings / Development Assets
 
 
-### Move info.plist to folder
+### Move info.plist
 Move: "AAAA/🧩Sub/Info.plist"
 
 Edit: TARGETS / Build Settings / Packaging / Info.plist File
