@@ -9,10 +9,8 @@
 "App Document" = "アプリ資料";
 "Version" = "バージョン";
 "builded on %@" = "%@ にビルドしました";
-"Open version history" = "バージョン履歴を開く";
 "Version History" = "バージョン履歴";
 "About" = "概要";
-"About App" = "アプリについて";
 "Open AppStore page" = "AppStoreページを開く";
 "Privacy Policy" = "プライバシーポリシー";
 "Source code" = "ソースコード";
@@ -22,7 +20,6 @@
 
 // ======== AD =========
 "AD" = "広告";
-"self-AD" = "セルフ広告";
 "About AD" = "広告について";
 "In App Purchase" = "アプリ内課金";
 "Hide AD banner" = "広告を非表示にする";

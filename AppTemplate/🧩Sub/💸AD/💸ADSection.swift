@@ -30,7 +30,7 @@ struct 💸ADSection: View {
                         }
                     }
                 }
-                .navigationTitle("self-AD")
+                .navigationTitle("About AD")
             } label: {
                 Label("About AD", systemImage: "exclamationmark.bubble")
             }

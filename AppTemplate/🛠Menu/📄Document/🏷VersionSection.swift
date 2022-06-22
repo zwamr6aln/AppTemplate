@@ -9,7 +9,7 @@ struct 🏷VersionSection: View {
             } label: {
                 Label(🕒LatestVersionNumber, systemImage: "signpost.left")
             }
-            .accessibilityLabel("Open version history")
+            .accessibilityLabel("Version History")
         } header: {
             Text("Version")
         } footer: {

@@ -7,7 +7,7 @@ struct 📄DocumentMenu: View {
             List {
                 Section {
                     NavigationLink {
-                        📋TextView(📄AboutText, "About App")
+                        📋TextView(📄AboutText, "About")
                             .redacted(reason: .placeholder)
                     } label: {
                         Text(📄AboutText)
