@@ -2,8 +2,6 @@
 import SwiftUI
 import StoreKit
 
-
-//Errorアラートが機能してない
 struct 🏬PurchaseSection: View {
     @EnvironmentObject var 🏬: 🏬StoreModel
     
@@ -29,7 +27,7 @@ struct 🏬PurchaseSection: View {
                                 🚨ErrorMessage = "Your purchase could not be verified by the App Store."
                                 🚨ShowError = true
                             } catch {
-                                print("Failed purchase for AD Free: \(error)")
+                                print("Failed purchase: \(error)")
                                 🚨ErrorMessage = error.localizedDescription
                                 🚨ShowError = true
                             }
@@ -43,6 +41,11 @@ struct 🏬PurchaseSection: View {
                         if 🚩BuyingNow {
                             ProgressView()
                         }
+                    }
+                    .alert(isPresented: $🚨ShowError) {
+                        Alert(title: Text("Error"),
+                              message: Text(🚨ErrorMessage),
+                              dismissButton: .default(Text("OK")))
                     }
                 }
                 .padding(.vertical)
@@ -61,11 +64,6 @@ struct 🏬PurchaseSection: View {
             
             
             🏬RestoreButton()
-        }
-        .alert(isPresented: $🚨ShowError) {
-            Alert(title: Text("Error"),
-                  message: Text(🚨ErrorMessage),
-                  dismissButton: .default(Text("OK")))
         }
         .animation(.default, value: 🏬.🚩Purchased)
     }
@@ -117,6 +115,7 @@ struct 🏬RestoreButton: View {
                         🚩RestoringNow = true
                         try await AppStore.sync()
                     } catch {
+                        print("Failed purchase: \(error)")
                         🚨ShowError = true
                         🚨ErrorMessage = error.localizedDescription
                     }
@@ -137,11 +136,11 @@ struct 🏬RestoreButton: View {
                 }
             }
             .disabled(🚩RestoringNow)
-        }
-        .alert(isPresented: $🚨ShowError) {
-            Alert(title: Text("Error"),
-                  message: Text(🚨ErrorMessage),
-                  dismissButton: .default(Text("OK")))
+            .alert(isPresented: $🚨ShowError) {
+                Alert(title: Text("Error"),
+                      message: Text(🚨ErrorMessage),
+                      dismissButton: .default(Text("OK")))
+            }
         }
     }
 }
