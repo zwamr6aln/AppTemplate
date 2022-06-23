@@ -44,6 +44,10 @@ struct 🏬PurchaseSection: View {
                 🏬ProductPreview()
             } header: {
                 Text("In-App Purchase")
+            } footer: {
+                if 🏬.🚩Purchased {
+                    Text("Purchased")
+                }
             }
             
             
