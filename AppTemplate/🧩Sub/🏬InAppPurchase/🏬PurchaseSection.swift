@@ -8,7 +8,7 @@ struct 🏬PurchaseSection: View {
     @State private var 🚩BuyingNow = false
     
     @State var 🚨ShowError = false
-    @State var 🚨ErrorTitle = ""
+    @State var 🚨ErrorMessage = ""
     
     var body: some View {
         Group {
@@ -24,10 +24,12 @@ struct 🏬PurchaseSection: View {
                                 🚩BuyingNow = true
                                 try await 🏬.👆Purchase()
                             } catch 🚨StoreError.failedVerification {
-                                🚨ErrorTitle = "Your purchase could not be verified by the App Store."
+                                🚨ErrorMessage = "Your purchase could not be verified by the App Store."
                                 🚨ShowError = true
                             } catch {
                                 print("Failed purchase for AD Free: \(error)")
+                                🚨ErrorMessage = error.localizedDescription
+                                🚨ShowError = true
                             }
                             
                             🚩BuyingNow = false
@@ -59,8 +61,8 @@ struct 🏬PurchaseSection: View {
             🏬RestoreButton()
         }
         .alert(isPresented: $🚨ShowError) {
-            Alert(title: Text(🚨ErrorTitle),
-                  message: nil,
+            Alert(title: Text("Error"),
+                  message: Text(🚨ErrorMessage),
                   dismissButton: .default(Text("OK")))
         }
         .animation(.default, value: 🏬.🚩Purchased)
@@ -99,7 +101,7 @@ struct 🏬RestoreButton: View {
     @State private var 🚩RestoringNow = false
     
     @State var 🚨ShowError = false
-    @State var 🚨ErrorTitle = ""
+    @State var 🚨ErrorMessage = ""
     
     var body: some View {
         Section {
@@ -111,7 +113,7 @@ struct 🏬RestoreButton: View {
                         🚩RestoringNow = false
                     } catch {
                         🚨ShowError = true
-                        🚨ErrorTitle = error.localizedDescription
+                        🚨ErrorMessage = error.localizedDescription
                         🚩RestoringNow = false
                     }
                 }
@@ -131,8 +133,8 @@ struct 🏬RestoreButton: View {
             .disabled(🚩RestoringNow)
         }
         .alert(isPresented: $🚨ShowError) {
-            Alert(title: Text(🚨ErrorTitle),
-                  message: nil,
+            Alert(title: Text("Error"),
+                  message: Text(🚨ErrorMessage),
                   dismissButton: .default(Text("OK")))
         }
     }
