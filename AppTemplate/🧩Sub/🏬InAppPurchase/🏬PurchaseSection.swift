@@ -2,6 +2,8 @@
 import SwiftUI
 import StoreKit
 
+
+//Errorアラートが機能してない
 struct 🏬PurchaseSection: View {
     @EnvironmentObject var 🏬: 🏬StoreModel
     
@@ -70,6 +72,8 @@ struct 🏬PurchaseSection: View {
 }
 
 
+
+
 struct 🏬ProductPreview: View {
     @EnvironmentObject var 🏬: 🏬StoreModel
     
@@ -95,6 +99,8 @@ struct 🏬ProductPreview: View {
 }
 
 
+
+
 struct 🏬RestoreButton: View {
     @EnvironmentObject var 🏬: 🏬StoreModel
     
@@ -110,12 +116,12 @@ struct 🏬RestoreButton: View {
                     do {
                         🚩RestoringNow = true
                         try await AppStore.sync()
-                        🚩RestoringNow = false
                     } catch {
                         🚨ShowError = true
                         🚨ErrorMessage = error.localizedDescription
-                        🚩RestoringNow = false
                     }
+                    
+                    🚩RestoringNow = false
                 }
             } label: {
                 HStack {
