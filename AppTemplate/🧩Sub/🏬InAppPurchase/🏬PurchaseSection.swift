@@ -5,10 +5,10 @@ import StoreKit
 struct 🏬PurchaseSection: View {
     @EnvironmentObject var 🏬: 🏬StoreModel
     
-    @State var 🚨ErrorTitle = ""
-    @State var 🚨ShowError = false
-    
     @State private var 🚩BuyingNow = false
+    
+    @State var 🚨ShowError = false
+    @State var 🚨ErrorTitle = ""
     
     var body: some View {
         Group {
@@ -91,17 +91,44 @@ struct 🏬ProductPreview: View {
 struct 🏬RestoreButton: View {
     @EnvironmentObject var 🏬: 🏬StoreModel
     
+    @State private var 🚩RestoringNow = false
+    
+    @State var 🚨ShowError = false
+    @State var 🚨ErrorTitle = ""
+    
     var body: some View {
         Section {
             Button {
                 Task {
-                    try? await AppStore.sync()
+                    do {
+                        🚩RestoringNow = true
+                        try await AppStore.sync()
+                        🚩RestoringNow = false
+                    } catch {
+                        🚨ShowError = true
+                        🚨ErrorTitle = error.localizedDescription
+                        🚩RestoringNow = false
+                    }
                 }
             } label: {
-                Label("Restore purchase", systemImage: "arrow.clockwise")
-                    .font(.footnote)
-                    .foregroundColor(🏬.🚩Unconnected || 🏬.🚩Purchased ? .secondary : nil)
+                HStack {
+                    Label("Restore purchase", systemImage: "arrow.clockwise")
+                        .font(.footnote)
+                        .foregroundColor(🏬.🚩Unconnected || 🏬.🚩Purchased ? .secondary : nil)
+                    
+                    if 🚩RestoringNow {
+                        Spacer()
+                        
+                        ProgressView()
+                    }
+                }
             }
+            .disabled(🚩RestoringNow)
+        }
+        .alert(isPresented: $🚨ShowError) {
+            Alert(title: Text(🚨ErrorTitle),
+                  message: nil,
+                  dismissButton: .default(Text("OK")))
         }
     }
 }
