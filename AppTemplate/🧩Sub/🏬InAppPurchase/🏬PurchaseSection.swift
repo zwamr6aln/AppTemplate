@@ -35,6 +35,11 @@ struct 🏬PurchaseSection: View {
                     }
                     .disabled(🚩BuyingNow)
                     .buttonStyle(.borderedProminent)
+                    .overlay {
+                        if 🚩BuyingNow {
+                            ProgressView()
+                        }
+                    }
                 }
                 .padding(.vertical)
                 .disabled(🏬.🚩Unconnected)
@@ -74,7 +79,7 @@ struct 🏬ProductPreview: View {
                 .shadow(radius: 2)
             
             Image(systemName: "arrow.right")
-                .font(.title2.bold())
+                .font(.title2.weight(.semibold))
                 .foregroundStyle(.tertiary)
             
             Image("ProductPreview_After")
