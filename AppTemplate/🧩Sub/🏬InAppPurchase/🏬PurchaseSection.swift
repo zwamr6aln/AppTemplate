@@ -114,8 +114,10 @@ struct 🏬RestoreButton: View {
                     do {
                         🚩RestoringNow = true
                         try await AppStore.sync()
+                        await 🏬.🅁equestProducts()
+                        await 🏬.🅄pdateCustomerProductStatus()
                     } catch {
-                        print("Failed purchase: \(error)")
+                        print("Failed sync: \(error)")
                         🚨ShowError = true
                         🚨ErrorMessage = error.localizedDescription
                     }
