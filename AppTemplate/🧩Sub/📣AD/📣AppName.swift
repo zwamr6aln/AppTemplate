@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-//TODO: Remove App-self case
+//FIXME: Remove App-self case
 enum 📣AppName: String, CaseIterable, Identifiable {
     case FlipByBlink
     case FadeInAlarm

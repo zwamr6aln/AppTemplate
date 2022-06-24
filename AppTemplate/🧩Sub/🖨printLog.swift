@@ -27,7 +27,7 @@ struct 🖨printLog: View {
                     Text(📃)
                 }
             }
-            .navigationTitle("printログ")
+            .navigationTitle("print-Log")
             .onAppear {
                 🄻oad()
             }
@@ -46,7 +46,7 @@ struct 🖨printLog: View {
                 }
             }
         } label: {
-            Label("printログを確認する", systemImage: "printer")
+            Label("Check print-Log", systemImage: "printer")
         }
         .onAppear {
             print́("onAppered")
@@ -57,7 +57,7 @@ struct 🖨printLog: View {
         if let 💾 = UserDefaults.standard.stringArray(forKey: "print") {
             🗒 = 💾
         } else {
-            🗒 = ["empty"]
+            🗒 = ["Empty"]
         }
     }
 }

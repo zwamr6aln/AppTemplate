@@ -30,7 +30,7 @@ struct 📄InformationMenu: View {
                 🏷VersionSection()
                 
                 
-                let 🔗 = "https://apps.apple.com/app/id1111"
+                let 🔗 = "https://apps.apple.com/app/id1111" //FIXME: AppStore URL
                 Section {
                     Link(destination: URL(string: 🔗)!) {
                         HStack {
@@ -55,7 +55,7 @@ struct 📄InformationMenu: View {
                             (English)This application don't collect user infomation.
                             
                             (Japanese)このアプリ自身において、ユーザーの情報を一切収集しません。
-                            """)
+                            """) //FIXME: Privacy Policy
                         .padding(32)
                         .textSelection(.enabled)
                         .navigationTitle("Privacy Policy")

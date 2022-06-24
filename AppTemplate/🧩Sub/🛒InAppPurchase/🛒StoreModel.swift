@@ -1,5 +1,4 @@
 
-import Foundation
 import StoreKit
 
 typealias Transaction = StoreKit.Transaction
@@ -62,7 +61,7 @@ class 🛒StoreModel: ObservableObject {
     @MainActor
     func 🅁equestProducts() async {
         do {
-            if let 📦 = try await Product.products(for: ["PLACEHOLDER.adfree"]).first { //TODO: Edit AppName
+            if let 📦 = try await Product.products(for: ["PLACEHOLDER.adfree"]).first { //FIXME: ID
                 🎫Product = 📦
             }
         } catch {
@@ -93,6 +92,7 @@ class 🛒StoreModel: ObservableObject {
                 return
         }
     }
+    
     
     func 🔍CheckVerified<T>(_ 📦Result: VerificationResult<T>) throws -> T {
         //Check whether the JWS passes StoreKit verification.

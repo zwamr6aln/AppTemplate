@@ -89,7 +89,7 @@ struct 📑BundleMainInfoDictionary: View {
 
 struct 🔗RepositoryLink: View {
     var body: some View {
-        let 🔗 = "https://github.com/FlipByBlink/AAAA"
+        let 🔗 = "https://github.com/FlipByBlink/AAAA" //FIXME: GitHub URL
         Section {
             Link(destination: URL(string: 🔗)!) {
                 HStack {
@@ -106,7 +106,7 @@ struct 🔗RepositoryLink: View {
         }
         
         
-        let Mirror🔗 = "https://gitlab.com/FlipByBlink/AAAA"
+        let Mirror🔗 = "https://gitlab.com/FlipByBlink/AAAA" //FIXME: GitLab URL
         Section {
             Link(destination: URL(string: Mirror🔗)!) {
                 HStack {

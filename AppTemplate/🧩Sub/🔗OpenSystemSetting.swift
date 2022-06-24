@@ -7,7 +7,7 @@ struct 🔗OpenSystemSetting: View {
             let 🔗 = URL(string: UIApplication.openSettingsURLString)!
             UIApplication.shared.open(🔗)
         } label: {
-            Label("Open system Setting", systemImage: "gearshape")
+            Label("Open \"Setting\" app", systemImage: "gearshape")
         }
     }
 }

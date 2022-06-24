@@ -22,7 +22,7 @@ struct 🛠MenuSheet: View {
                 
                 📄InformationMenu()
             }
-            .navigationTitle("AppName")
+            .navigationTitle("AppName") //FIXME: App DisplayName
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {

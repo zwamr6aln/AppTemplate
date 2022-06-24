@@ -3,8 +3,7 @@ import SwiftUI
 
 class 📱AppModel: ObservableObject {
     
-    @Published var 🚩ShowMenu: Bool = false
-    
+    // AppModel
     
     @AppStorage("placeholder") var 🚩placeholder: Bool = false
 }

@@ -8,7 +8,7 @@ struct 📣ADBanner: View {
     
     @AppStorage("🄻aunchCount") var 🄻aunchCount: Int = 0
     
-    let 🅃iming: Int = 1 //TODO: Edit
+    let 🅃iming: Int = 1 //FIXME: Change
     
     var body: some View {
         Group {
@@ -27,8 +27,8 @@ struct 📣ADBanner: View {
                                     .symbolRenderingMode(.hierarchical)
                                     .imageScale(.large)
                                     .background {
-                                        Color.white
-                                            .clipShape(Circle())
+                                        Circle()
+                                            .foregroundStyle(.background)
                                             .opacity(0.5)
                                     }
                                     .padding(6)
