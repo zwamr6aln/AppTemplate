@@ -57,46 +57,6 @@ struct ContentView: View {
 }
 
 
-struct 🖨printLog: View {
-    @State private var 🗒: [String] = []
-    
-    var body: some View {
-        NavigationLink("printログを確認する") {
-            List {
-                ForEach(🗒.reversed(), id: \.self) { 📃 in
-                    Text(📃)
-                }
-            }
-            .navigationTitle("printログ")
-            .onAppear {
-                syncLog()
-            }
-            .refreshable {
-                syncLog()
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        UserDefaults.standard.removeObject(forKey: "print")
-                        syncLog()
-                    } label: {
-                        Label("delete", systemImage: "trash")
-                    }
-                    .tint(.red)
-                }
-            }
-        }
-    }
-    
-    func syncLog() {
-        if let 💾 = UserDefaults.standard.stringArray(forKey: "print") {
-            🗒 = 💾
-        } else {
-            🗒 = ["empty"]
-        }
-    }
-}
-
 
 
 struct ContentView_Previews: PreviewProvider {
