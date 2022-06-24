@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct 💸ADBanner: View {
+struct 📣ADBanner: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     
     @State private var 🚩ShowBanner = false
@@ -16,7 +16,7 @@ struct 💸ADBanner: View {
                 EmptyView()
             } else {
                 if 🚩ShowBanner {
-                    💸ADView()
+                    📣ADView()
                         .padding(.horizontal)
                         .overlay(alignment: .topLeading) {
                             Button {

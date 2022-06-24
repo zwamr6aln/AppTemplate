@@ -11,7 +11,7 @@
 		127ECB24286148F900CB1BC3 /* 📄AppDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB23286148F900CB1BC3 /* 📄AppDescription.swift */; };
 		127ECB29286149EF00CB1BC3 /* 🛒StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🛒StoreModel.swift */; };
 		127ECB2A286149EF00CB1BC3 /* 🛒PurchaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒PurchaseSection.swift */; };
-		127ECB2C28614B8B00CB1BC3 /* 💸ADMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 💸ADMenu.swift */; };
+		127ECB2C28614B8B00CB1BC3 /* 📣ADMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADMenu.swift */; };
 		127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 127ECB2D28614C0200CB1BC3 /* Configuration.storekit */; };
 		12C6712F286069E800FE4C06 /* 🛠MenuSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75928502B5200B2380B /* 🛠MenuSheet.swift */; };
 		12C67131286069ED00FE4C06 /* 🏷VersionSection.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75E28502C9F00B2380B /* 🏷VersionSection.swift */; };
@@ -21,10 +21,10 @@
 		12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */; };
 		12DDD5712861DB5D004F59A0 /* 🛒PurchaseSection.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒PurchaseSection.swift */; };
 		12DDD5722861DB5D004F59A0 /* 🛒StoreModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🛒StoreModel.swift */; };
-		12DDD5732861DB63004F59A0 /* 💸ADMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 💸ADMenu.swift */; };
-		12DDD5742861DB63004F59A0 /* 💸AppName.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 💸AppName.swift */; };
-		12DDD5752861DB63004F59A0 /* 💸ADView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 💸ADView.swift */; };
-		12DDD5762861DB63004F59A0 /* 💸ADBanner.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 💸ADBanner.swift */; };
+		12DDD5732861DB63004F59A0 /* 📣ADMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADMenu.swift */; };
+		12DDD5742861DB63004F59A0 /* 📣AppName.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 📣AppName.swift */; };
+		12DDD5752861DB63004F59A0 /* 📣ADView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 📣ADView.swift */; };
+		12DDD5762861DB63004F59A0 /* 📣ADBanner.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 📣ADBanner.swift */; };
 		12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
 		12E4A74A285027F600B2380B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
 		12E4A74C285027F700B2380B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74B285027F700B2380B /* Assets.xcassets */; };
@@ -39,9 +39,9 @@
 		12E4A76728502D7200B2380B /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
 		12E4A76B28502EDE00B2380B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
 		12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
-		12E4A77B2850301300B2380B /* 💸ADBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 💸ADBanner.swift */; };
-		12E4A77D2850301300B2380B /* 💸ADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 💸ADView.swift */; };
-		12E4A77E2850301300B2380B /* 💸AppName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 💸AppName.swift */; };
+		12E4A77B2850301300B2380B /* 📣ADBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 📣ADBanner.swift */; };
+		12E4A77D2850301300B2380B /* 📣ADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 📣ADView.swift */; };
+		12E4A77E2850301300B2380B /* 📣AppName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 📣AppName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,13 +90,13 @@
 		12DDD56F2861DAFC004F59A0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "💸AD";
+			dstPath = "📣AD";
 			dstSubfolderSpec = 7;
 			files = (
-				12DDD5732861DB63004F59A0 /* 💸ADMenu.swift in CopyFiles */,
-				12DDD5742861DB63004F59A0 /* 💸AppName.swift in CopyFiles */,
-				12DDD5752861DB63004F59A0 /* 💸ADView.swift in CopyFiles */,
-				12DDD5762861DB63004F59A0 /* 💸ADBanner.swift in CopyFiles */,
+				12DDD5732861DB63004F59A0 /* 📣ADMenu.swift in CopyFiles */,
+				12DDD5742861DB63004F59A0 /* 📣AppName.swift in CopyFiles */,
+				12DDD5752861DB63004F59A0 /* 📣ADView.swift in CopyFiles */,
+				12DDD5762861DB63004F59A0 /* 📣ADBanner.swift in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,7 @@
 		127ECB23286148F900CB1BC3 /* 📄AppDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📄AppDescription.swift"; sourceTree = "<group>"; };
 		127ECB27286149EF00CB1BC3 /* 🛒StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒StoreModel.swift"; sourceTree = "<group>"; };
 		127ECB28286149EF00CB1BC3 /* 🛒PurchaseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒PurchaseSection.swift"; sourceTree = "<group>"; };
-		127ECB2B28614B8B00CB1BC3 /* 💸ADMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸ADMenu.swift"; sourceTree = "<group>"; };
+		127ECB2B28614B8B00CB1BC3 /* 📣ADMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADMenu.swift"; sourceTree = "<group>"; };
 		127ECB2D28614C0200CB1BC3 /* Configuration.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		12DDD5422861D363004F59A0 /* 🛠MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛠MenuButton.swift"; sourceTree = "<group>"; };
 		12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🔗OpenSystemSetting.swift"; sourceTree = "<group>"; };
@@ -139,9 +139,9 @@
 		12E4A76E28502EE100B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		12E4A77228502F3A00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A77428502F3B00B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		12E4A7762850301300B2380B /* 💸ADBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸ADBanner.swift"; sourceTree = "<group>"; };
-		12E4A7782850301300B2380B /* 💸ADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸ADView.swift"; sourceTree = "<group>"; };
-		12E4A7792850301300B2380B /* 💸AppName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "💸AppName.swift"; sourceTree = "<group>"; };
+		12E4A7762850301300B2380B /* 📣ADBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADBanner.swift"; sourceTree = "<group>"; };
+		12E4A7782850301300B2380B /* 📣ADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADView.swift"; sourceTree = "<group>"; };
+		12E4A7792850301300B2380B /* 📣AppName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣AppName.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +169,7 @@
 			children = (
 				12724D532862BF0F008471AB /* Info.plist */,
 				127ECB26286149C900CB1BC3 /* 🛒InAppPurchase */,
-				12E4A77528502FF800B2380B /* 💸AD */,
+				12E4A77528502FF800B2380B /* 📣AD */,
 				12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */,
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
@@ -256,15 +256,15 @@
 			path = "🌏Localization";
 			sourceTree = "<group>";
 		};
-		12E4A77528502FF800B2380B /* 💸AD */ = {
+		12E4A77528502FF800B2380B /* 📣AD */ = {
 			isa = PBXGroup;
 			children = (
-				127ECB2B28614B8B00CB1BC3 /* 💸ADMenu.swift */,
-				12E4A7792850301300B2380B /* 💸AppName.swift */,
-				12E4A7782850301300B2380B /* 💸ADView.swift */,
-				12E4A7762850301300B2380B /* 💸ADBanner.swift */,
+				127ECB2B28614B8B00CB1BC3 /* 📣ADMenu.swift */,
+				12E4A7792850301300B2380B /* 📣AppName.swift */,
+				12E4A7782850301300B2380B /* 📣ADView.swift */,
+				12E4A7762850301300B2380B /* 📣ADBanner.swift */,
 			);
-			path = "💸AD";
+			path = "📣AD";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,9 +348,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				127ECB24286148F900CB1BC3 /* 📄AppDescription.swift in Sources */,
-				12E4A77B2850301300B2380B /* 💸ADBanner.swift in Sources */,
+				12E4A77B2850301300B2380B /* 📣ADBanner.swift in Sources */,
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
-				12E4A77D2850301300B2380B /* 💸ADView.swift in Sources */,
+				12E4A77D2850301300B2380B /* 📣ADView.swift in Sources */,
 				127ECB29286149EF00CB1BC3 /* 🛒StoreModel.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				12E4A75A28502B5200B2380B /* 🛠MenuSheet.swift in Sources */,
@@ -359,9 +359,9 @@
 				127ECB2A286149EF00CB1BC3 /* 🛒PurchaseSection.swift in Sources */,
 				12E4A76328502C9F00B2380B /* 📄InformationMenu.swift in Sources */,
 				12E4A76128502C9F00B2380B /* 🏷VersionSection.swift in Sources */,
-				12E4A77E2850301300B2380B /* 💸AppName.swift in Sources */,
+				12E4A77E2850301300B2380B /* 📣AppName.swift in Sources */,
 				12E4A76228502C9F00B2380B /* 📓SourceCodeMenu.swift in Sources */,
-				127ECB2C28614B8B00CB1BC3 /* 💸ADMenu.swift in Sources */,
+				127ECB2C28614B8B00CB1BC3 /* 📣ADMenu.swift in Sources */,
 				12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

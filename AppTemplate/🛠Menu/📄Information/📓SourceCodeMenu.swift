@@ -8,7 +8,7 @@ enum 📁SourceFolder: String, CaseIterable, Identifiable {
     case 📄Information
     
     case 🛒InAppPurchase
-    case 💸AD
+    case 📣AD
     
     var id: String { self.rawValue }
 }

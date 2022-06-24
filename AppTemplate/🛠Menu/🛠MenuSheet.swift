@@ -17,7 +17,7 @@ struct 🛠MenuSheet: View {
                 }
                 
                 
-                💸ADMenu()
+                📣ADMenu()
                 
                 
                 📄InformationMenu()

@@ -44,7 +44,7 @@ struct ContentView: View {
             }
         }
         .overlay(alignment: .bottom) {
-            💸ADBanner()
+            📣ADBanner()
         }
     }
 }

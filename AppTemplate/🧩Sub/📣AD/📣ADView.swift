@@ -1,9 +1,9 @@
 
 import SwiftUI
 
-struct 💸ADView: View {
+struct 📣ADView: View {
     
-    @State private var 🄰ppName: 💸AppName
+    @State private var 🄰ppName: 📣AppName
     
     var body: some View {
         HStack(spacing: 12) {
@@ -43,11 +43,11 @@ struct 💸ADView: View {
     }
     
     
-    init(_ ⓐppName: 💸AppName? = nil) {
+    init(_ ⓐppName: 📣AppName? = nil) {
         if let 🏷 = ⓐppName {
             🄰ppName = 🏷
         } else {
-            🄰ppName = 💸AppName.allCases.randomElement()!
+            🄰ppName = 📣AppName.allCases.randomElement()!
         }
     }
 }

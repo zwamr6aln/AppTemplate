@@ -2,13 +2,13 @@
 import SwiftUI
 import StoreKit
 
-struct 💸ADMenu: View {
+struct 📣ADMenu: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     
     var body: some View {
         Section {
             if 🛒.🚩Purchased == false {
-                💸ADView()
+                📣ADView()
             }
             
             NavigationLink {
@@ -25,14 +25,14 @@ struct 💸ADMenu: View {
                     
                     
                     Section {
-                        ForEach(💸AppName.allCases) { 🏷 in
-                            💸ADView(🏷)
+                        ForEach(📣AppName.allCases) { 🏷 in
+                            📣ADView(🏷)
                         }
                     }
                 }
                 .navigationTitle("About AD")
             } label: {
-                Label("About AD", systemImage: "exclamationmark.bubble")
+                Label("About AD", systemImage: "megaphone")
             }
         }
     }
