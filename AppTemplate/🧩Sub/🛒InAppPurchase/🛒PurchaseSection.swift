@@ -21,7 +21,7 @@ struct 🛒PurchaseSection: View {
                     if 🛒.🚩Purchased {
                         Image(systemName: "checkmark")
                             .imageScale(.small)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(.tertiary)
                             .transition(.slide)
                     }
                     

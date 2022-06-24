@@ -8,7 +8,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                🔗OpenSystemSetting()
+                Section {
+                    🛠MenuButton()
+                } header: {
+                    Text("🛠MenuButton")
+                }
+                
                 
                 Section {
                     HStack {
@@ -25,21 +30,21 @@ struct ContentView: View {
                             .navigationTitle("debugDescription")
                     }
                 } header: {
-                    Text("Product")
-                }
-                
-                
-                Section {
-                    🛠MenuButton()
-                } header: {
-                    Text("🛠MenuButton")
+                    Text("🛒Product")
                 }
                 
                 
                 Section {
                     🖨printLog()
                 } header: {
-                    Text("printLog")
+                    Text("🖨printLog")
+                }
+                
+                
+                Section {
+                    🔗OpenSystemSetting()
+                } header: {
+                    Text("🔗OpenSystemSetting")
                 }
             }
             .listStyle(.plain)
