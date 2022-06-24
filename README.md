@@ -64,7 +64,7 @@ Move: "AAAA/🧩Sub/Info.plist"
 Edit: TARGETS / Build Settings / Packaging / Info.plist File
 
 
-### HealthKit
+### (HealthKit)
 Capabilities / HealthKit
 
 Info.plist / Privacy - Health Share Usage Description

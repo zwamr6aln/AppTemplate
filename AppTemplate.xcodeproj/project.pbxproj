@@ -168,8 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				12724D532862BF0F008471AB /* Info.plist */,
-				127ECB26286149C900CB1BC3 /* 🛒InAppPurchase */,
 				12E4A77528502FF800B2380B /* 📣AD */,
+				127ECB26286149C900CB1BC3 /* 🛒InAppPurchase */,
 				12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */,
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
