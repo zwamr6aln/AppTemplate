@@ -21,7 +21,7 @@ struct 🖨printLog: View {
     @State private var 🗒: [String] = []
     
     var body: some View {
-        NavigationLink("printログを確認する") {
+        NavigationLink {
             List {
                 ForEach(🗒.reversed(), id: \.self) { 📃 in
                     Text(📃)
@@ -45,6 +45,11 @@ struct 🖨printLog: View {
                     .tint(.red)
                 }
             }
+        } label: {
+            Label("printログを確認する", systemImage: "printer")
+        }
+        .onAppear {
+            print́("onAppered")
         }
     }
     
