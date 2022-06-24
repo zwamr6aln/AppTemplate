@@ -14,7 +14,7 @@ struct 🏬PurchaseSection: View {
         Group {
             Section {
                 HStack {
-                    Label(🏬.🎫Name, systemImage: 🏬.🚩Purchased ? "checkmark" : "questionmark")
+                    Label(🏬.🎫Name, systemImage: "cart")
                     
                     Spacer()
                     
@@ -40,6 +40,10 @@ struct 🏬PurchaseSection: View {
                     .overlay {
                         if 🚩BuyingNow {
                             ProgressView()
+                        }
+                        
+                        if 🏬.🚩Purchased {
+                            Image(systemName: "checkmark")
                         }
                     }
                     .alert(isPresented: $🚨ShowError) {
