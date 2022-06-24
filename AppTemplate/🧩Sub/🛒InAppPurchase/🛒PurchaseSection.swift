@@ -128,8 +128,6 @@ struct 🛒RestoreButton: View {
                         🚨Message = error.localizedDescription
                     }
                     
-                    print́(🚨Message)
-                    
                     🚨ShowAlert = true
                     🚩RestoringNow = false
                 }

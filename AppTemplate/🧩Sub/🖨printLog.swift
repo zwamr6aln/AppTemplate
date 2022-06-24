@@ -29,16 +29,16 @@ struct 🖨printLog: View {
             }
             .navigationTitle("printログ")
             .onAppear {
-                syncLog()
+                🄻oad()
             }
             .refreshable {
-                syncLog()
+                🄻oad()
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         UserDefaults.standard.removeObject(forKey: "print")
-                        syncLog()
+                        🄻oad()
                     } label: {
                         Label("delete", systemImage: "trash")
                     }
@@ -48,7 +48,7 @@ struct 🖨printLog: View {
         }
     }
     
-    func syncLog() {
+    func 🄻oad() {
         if let 💾 = UserDefaults.standard.stringArray(forKey: "print") {
             🗒 = 💾
         } else {
