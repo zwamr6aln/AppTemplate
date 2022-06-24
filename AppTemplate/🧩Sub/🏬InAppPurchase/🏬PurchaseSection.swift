@@ -104,8 +104,9 @@ struct 🏬RestoreButton: View {
     
     @State private var 🚩RestoringNow = false
     
-    @State var 🚨ShowError = false
-    @State var 🚨ErrorMessage = ""
+    @State var 🚨ShowAlert = false
+    @State var 🚨SyncSuccess = false
+    @State var 🚨Message = ""
     
     var body: some View {
         Section {
@@ -114,19 +115,20 @@ struct 🏬RestoreButton: View {
                     do {
                         🚩RestoringNow = true
                         try await AppStore.sync()
-                        await 🏬.🅁equestProducts()
-                        await 🏬.🅄pdateCustomerProductStatus()
+                        🚨SyncSuccess = true
+                        🚨Message = "Restored transactions"
                     } catch {
                         print("Failed sync: \(error)")
-                        🚨ShowError = true
-                        🚨ErrorMessage = error.localizedDescription
+                        🚨SyncSuccess = false
+                        🚨Message = error.localizedDescription
                     }
                     
+                    🚨ShowAlert = true
                     🚩RestoringNow = false
                 }
             } label: {
                 HStack {
-                    Label("Restore purchase", systemImage: "arrow.clockwise")
+                    Label("Restore Purchases", systemImage: "arrow.clockwise")
                         .font(.footnote)
                         .foregroundColor(🏬.🚩Unconnected || 🏬.🚩Purchased ? .secondary : nil)
                     
@@ -138,9 +140,9 @@ struct 🏬RestoreButton: View {
                 }
             }
             .disabled(🚩RestoringNow)
-            .alert(isPresented: $🚨ShowError) {
-                Alert(title: Text("Error"),
-                      message: Text(🚨ErrorMessage),
+            .alert(isPresented: $🚨ShowAlert) {
+                Alert(title: Text(🚨SyncSuccess ? "Done" : "Error"),
+                      message: Text(LocalizedStringKey(🚨Message)),
                       dismissButton: .default(Text("OK")))
             }
         }
