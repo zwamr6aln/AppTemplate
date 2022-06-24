@@ -157,7 +157,7 @@ Korean:
 
 ### Source code (Mirror) link
 
-[https://gitlab.com/FlipByBlink/AAAA_Mirror](https://gitlab.com/FlipByBlink/AAAA_Mirror)
+[gitlab.com/FlipByBlink/AAAA_Mirror](https://gitlab.com/FlipByBlink/AAAA_Mirror)
 
 
 ## ✉️ Contact
@@ -209,4 +209,4 @@ This application don't collect user infomation.
 <!-- https://flipbyblink.github.io/AAAA/ -->
 
 <!-- URL "Privacy Policy for AppStore" -->
-<!-- https://github.com/FlipByBlink/AAAA#privacy-policy-for-appstore -->
+<!-- https://flipbyblink.github.io/AAAA/#privacy-policy-for-appstore -->
