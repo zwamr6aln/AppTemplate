@@ -5,7 +5,6 @@ class 📱AppModel: ObservableObject {
     
     @Published var 🚩ShowMenu: Bool = false
     
-    @AppStorage("print") var 📃printLog: String = ""
     
     @AppStorage("placeholder") var 🚩placeholder: Bool = false
 }
@@ -16,8 +15,14 @@ class 📱AppModel: ObservableObject {
 func print́(_ 📦: Any) {
     print(📦)
     
-    var 📃 = ""
-    📃 += UserDefaults.standard.string(forKey: "print") ?? ""
-    print(📦, to: &📃)
-    UserDefaults.standard.set(📃, forKey: "print")
+    var 🖨 = Date.now.formatted(date: .abbreviated, time: .shortened) + " "
+    print(📦, terminator: "", to: &🖨)
+    
+    if let 💾 = UserDefaults.standard.array(forKey: "print") as? [String] {
+        var 📃: [String] = 💾
+        📃.append(🖨)
+        UserDefaults.standard.set(📃, forKey: "print")
+    } else {
+        UserDefaults.standard.set([🖨], forKey: "print")
+    }
 }

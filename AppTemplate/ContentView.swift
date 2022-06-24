@@ -36,11 +36,7 @@ struct ContentView: View {
                 }
                 
                 
-                Section {
-                    Text(📱.📃printLog)
-                } header: {
-                    Text("print log")
-                }
+                🖨printLog()
             }
             .listStyle(.plain)
             .navigationTitle("AppTemplate")
@@ -56,6 +52,46 @@ struct ContentView: View {
     }
 }
 
+
+struct 🖨printLog: View {
+    @State private var printLog: [String] = []
+    
+    var body: some View {
+        NavigationLink("print log") {
+            List {
+                ForEach(printLog.reversed(), id: \.self) { a in
+                    Text(a)
+                }
+            }
+            .navigationTitle("print log")
+            .onAppear {
+                syncLog()
+            }
+            .refreshable {
+                syncLog()
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        UserDefaults.standard.removeObject(forKey: "print")
+                        syncLog()
+                    } label: {
+                        Label("delete", systemImage: "trash")
+                    }
+                    .tint(.red)
+                }
+            }
+        }
+    }
+    
+    func syncLog() {
+        if let LOG = UserDefaults.standard.stringArray(forKey: "print") {
+            printLog = LOG
+        } else {
+            printLog = ["empty"]
+        }
+    }
+}
 
 
 
