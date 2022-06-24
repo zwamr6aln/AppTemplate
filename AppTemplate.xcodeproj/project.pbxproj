@@ -19,6 +19,8 @@
 		12C67133286069ED00FE4C06 /* 📓SourceCodeMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */; };
 		12D4368528656B4400B707F5 /* 🖨printLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D4368428656B4400B707F5 /* 🖨printLog.swift */; };
 		12D4368628656CC800B707F5 /* 🖨printLog.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12D4368428656B4400B707F5 /* 🖨printLog.swift */; };
+		12D436872865766300B707F5 /* 🔗OpenSystemSetting.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */; };
+		12D436882865766D00B707F5 /* 🛠MenuButton.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12DDD5422861D363004F59A0 /* 🛠MenuButton.swift */; };
 		12DDD5432861D363004F59A0 /* 🛠MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDD5422861D363004F59A0 /* 🛠MenuButton.swift */; };
 		12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */; };
 		12DDD5712861DB5D004F59A0 /* 🛒PurchaseSection.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒PurchaseSection.swift */; };
@@ -53,6 +55,7 @@
 			dstPath = "🛠Menu";
 			dstSubfolderSpec = 7;
 			files = (
+				12D436882865766D00B707F5 /* 🛠MenuButton.swift in CopyFiles */,
 				12C6712F286069E800FE4C06 /* 🛠MenuSheet.swift in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +78,7 @@
 			dstPath = "🧩Sub";
 			dstSubfolderSpec = 7;
 			files = (
+				12D436872865766300B707F5 /* 🔗OpenSystemSetting.swift in CopyFiles */,
 				12D4368628656CC800B707F5 /* 🖨printLog.swift in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,7 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"AppTemplate/🧩Sub/Preview Content\"";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
@@ -546,7 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"AppTemplate/🧩Sub/Preview Content\"";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
