@@ -15,13 +15,13 @@ class 📱AppModel: ObservableObject {
 func print́(_ 📦: Any) {
     print(📦)
     
-    var 🖨 = Date.now.formatted(date: .abbreviated, time: .shortened) + " "
+    var 🖨 = Date.now.formatted() + " "
     print(📦, terminator: "", to: &🖨)
     
     if let 💾 = UserDefaults.standard.array(forKey: "print") as? [String] {
-        var 📃: [String] = 💾
-        📃.append(🖨)
-        UserDefaults.standard.set(📃, forKey: "print")
+        var 🗒: [String] = 💾
+        🗒.append(🖨)
+        UserDefaults.standard.set(🗒, forKey: "print")
     } else {
         UserDefaults.standard.set([🖨], forKey: "print")
     }

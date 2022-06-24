@@ -36,7 +36,11 @@ struct ContentView: View {
                 }
                 
                 
-                🖨printLog()
+                Section {
+                    🖨printLog()
+                } header: {
+                    Text("printLog")
+                }
             }
             .listStyle(.plain)
             .navigationTitle("AppTemplate")
@@ -54,16 +58,16 @@ struct ContentView: View {
 
 
 struct 🖨printLog: View {
-    @State private var printLog: [String] = []
+    @State private var 🗒: [String] = []
     
     var body: some View {
-        NavigationLink("print log") {
+        NavigationLink("printログを確認する") {
             List {
-                ForEach(printLog.reversed(), id: \.self) { a in
-                    Text(a)
+                ForEach(🗒.reversed(), id: \.self) { 📃 in
+                    Text(📃)
                 }
             }
-            .navigationTitle("print log")
+            .navigationTitle("printログ")
             .onAppear {
                 syncLog()
             }
@@ -85,10 +89,10 @@ struct 🖨printLog: View {
     }
     
     func syncLog() {
-        if let LOG = UserDefaults.standard.stringArray(forKey: "print") {
-            printLog = LOG
+        if let 💾 = UserDefaults.standard.stringArray(forKey: "print") {
+            🗒 = 💾
         } else {
-            printLog = ["empty"]
+            🗒 = ["empty"]
         }
     }
 }
