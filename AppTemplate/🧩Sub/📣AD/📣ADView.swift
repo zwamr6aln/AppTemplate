@@ -33,11 +33,12 @@ struct 📣ADView: View {
             .accessibilityLabel("Open AD link")
         }
         .padding(.leading, 4)
-        .overlay(alignment: .topTrailing) {
+        .overlay(alignment: .topLeading) {
             Text("AD")
                 .scaleEffect(x: 1.2)
                 .font(.subheadline.weight(.black))
-                .padding(7)
+                .padding(.top, 8)
+                .padding(.leading, 3)
                 .foregroundStyle(.quaternary)
         }
     }

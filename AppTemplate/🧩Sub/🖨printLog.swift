@@ -4,7 +4,7 @@ import SwiftUI
 func print́(_ 📦: Any) {
     print(📦)
     
-    var 🖨 = Date.now.formatted() + " "
+    var 🖨 = Date.now.formatted(date: .numeric, time: .standard) + " "
     print(📦, terminator: "", to: &🖨)
     
     if let 💾 = UserDefaults.standard.array(forKey: "print") as? [String] {

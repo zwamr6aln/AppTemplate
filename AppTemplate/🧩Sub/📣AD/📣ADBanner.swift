@@ -18,14 +18,18 @@ struct 📣ADBanner: View {
                 if 🚩ShowBanner {
                     📣ADView()
                         .padding(.horizontal)
-                        .overlay(alignment: .topLeading) {
+                        .overlay(alignment: .topTrailing) {
                             Button {
                                 🚩ShowBanner = false
+                                UISelectionFeedbackGenerator().selectionChanged()
                             } label: {
                                 Image(systemName: "xmark.circle")
+                                    .symbolRenderingMode(.hierarchical)
+                                    .imageScale(.large)
                                     .padding(8)
+                                    .padding(.trailing, 2)
                             }
-                            .foregroundStyle(.tertiary)
+                            .tint(.pink)
                         }
                         .background {
                             RoundedRectangle(cornerRadius: 16, style: .continuous)
