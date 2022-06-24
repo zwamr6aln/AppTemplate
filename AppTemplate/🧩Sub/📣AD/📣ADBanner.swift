@@ -26,7 +26,12 @@ struct 📣ADBanner: View {
                                 Image(systemName: "xmark.circle")
                                     .symbolRenderingMode(.hierarchical)
                                     .imageScale(.large)
-                                    .padding(8)
+                                    .background {
+                                        Color.white
+                                            .clipShape(Circle())
+                                            .opacity(0.5)
+                                    }
+                                    .padding(6)
                                     .padding(.trailing, 2)
                             }
                             .tint(.pink)

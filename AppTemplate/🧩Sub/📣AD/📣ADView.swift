@@ -19,14 +19,18 @@ struct 📣ADView: View {
                     HStack {
                         Text(🄰ppName.rawValue)
                             .font(.headline)
+                            .lineLimit(1)
                         
                         Image(systemName: "arrow.up.forward.app")
                             .imageScale(.small)
                     }
+                    .minimumScaleFactor(0.1)
+                    .padding(.trailing, 32)
                     
                     Text(🄰ppName.📄About)
                         .font(.subheadline)
                         .multilineTextAlignment(.leading)
+                        .minimumScaleFactor(0.1)
                 }
                 .padding(.vertical)
             }
