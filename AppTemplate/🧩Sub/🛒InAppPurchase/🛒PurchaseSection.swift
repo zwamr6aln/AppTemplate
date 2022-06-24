@@ -18,6 +18,13 @@ struct 🛒PurchaseSection: View {
                     
                     Spacer()
                     
+                    if 🛒.🚩Purchased {
+                        Image(systemName: "checkmark")
+                            .imageScale(.small)
+                            .foregroundStyle(.secondary)
+                            .transition(.slide)
+                    }
+                    
                     Button(🛒.🎫Price) {
                         Task {
                             do {
@@ -40,12 +47,6 @@ struct 🛒PurchaseSection: View {
                     .overlay {
                         if 🚩BuyingNow {
                             ProgressView()
-                        }
-                        
-                        if 🛒.🚩Purchased {
-                            Image(systemName: "checkmark")
-                                .font(.body.weight(.medium))
-                                .foregroundStyle(.secondary)
                         }
                     }
                     .alert(isPresented: $🚨ShowError) {
