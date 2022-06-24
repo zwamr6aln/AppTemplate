@@ -34,6 +34,13 @@ struct ContentView: View {
                 } header: {
                     Text("🛠MenuButton")
                 }
+                
+                
+                Section {
+                    Text(📱.📃printLog)
+                } header: {
+                    Text("print log")
+                }
             }
             .listStyle(.plain)
             .navigationTitle("AppTemplate")
