@@ -44,6 +44,8 @@ struct 🛒PurchaseSection: View {
                         
                         if 🛒.🚩Purchased {
                             Image(systemName: "checkmark")
+                                .font(.body.weight(.medium))
+                                .foregroundStyle(.secondary)
                         }
                     }
                     .alert(isPresented: $🚨ShowError) {
