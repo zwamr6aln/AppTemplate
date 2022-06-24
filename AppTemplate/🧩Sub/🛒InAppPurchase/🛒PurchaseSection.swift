@@ -2,8 +2,8 @@
 import SwiftUI
 import StoreKit
 
-struct 🏬PurchaseSection: View {
-    @EnvironmentObject var 🏬: 🏬StoreModel
+struct 🛒PurchaseSection: View {
+    @EnvironmentObject var 🛒: 🛒StoreModel
     
     @State private var 🚩BuyingNow = false
     
@@ -14,15 +14,15 @@ struct 🏬PurchaseSection: View {
         Group {
             Section {
                 HStack {
-                    Label(🏬.🎫Name, systemImage: "cart")
+                    Label(🛒.🎫Name, systemImage: "cart")
                     
                     Spacer()
                     
-                    Button(🏬.🎫Price) {
+                    Button(🛒.🎫Price) {
                         Task {
                             do {
                                 🚩BuyingNow = true
-                                try await 🏬.👆Purchase()
+                                try await 🛒.👆Purchase()
                             } catch 🚨StoreError.failedVerification {
                                 🚨ErrorMessage = "Your purchase could not be verified by the App Store."
                                 🚨ShowError = true
@@ -42,7 +42,7 @@ struct 🏬PurchaseSection: View {
                             ProgressView()
                         }
                         
-                        if 🏬.🚩Purchased {
+                        if 🛒.🚩Purchased {
                             Image(systemName: "checkmark")
                         }
                     }
@@ -53,32 +53,30 @@ struct 🏬PurchaseSection: View {
                     }
                 }
                 .padding(.vertical)
-                .disabled(🏬.🚩Unconnected)
-                .disabled(🏬.🚩Purchased)
+                .disabled(🛒.🚩Unconnected)
+                .disabled(🛒.🚩Purchased)
                 
                 
-                🏬ProductPreview()
+                🛒ProductPreview()
             } header: {
                 Text("In-App Purchase")
             } footer: {
-                if 🏬.🚩Purchased {
+                if 🛒.🚩Purchased {
                     Text("Purchased")
                 }
             }
             
             
-            🏬RestoreButton()
+            🛒RestoreButton()
         }
-        .animation(.default, value: 🏬.🚩Purchased)
+        .animation(.default, value: 🛒.🚩Purchased)
     }
 }
 
 
 
 
-struct 🏬ProductPreview: View {
-    @EnvironmentObject var 🏬: 🏬StoreModel
-    
+struct 🛒ProductPreview: View {
     var body: some View {
         HStack {
             Image("ProductPreview_Before")
@@ -103,8 +101,8 @@ struct 🏬ProductPreview: View {
 
 
 
-struct 🏬RestoreButton: View {
-    @EnvironmentObject var 🏬: 🏬StoreModel
+struct 🛒RestoreButton: View {
+    @EnvironmentObject var 🛒: 🛒StoreModel
     
     @State private var 🚩RestoringNow = false
     
@@ -134,7 +132,7 @@ struct 🏬RestoreButton: View {
                 HStack {
                     Label("Restore Purchases", systemImage: "arrow.clockwise")
                         .font(.footnote)
-                        .foregroundColor(🏬.🚩Unconnected || 🏬.🚩Purchased ? .secondary : nil)
+                        .foregroundColor(🛒.🚩Unconnected || 🛒.🚩Purchased ? .secondary : nil)
                     
                     if 🚩RestoringNow {
                         Spacer()

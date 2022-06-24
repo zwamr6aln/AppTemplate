@@ -3,11 +3,11 @@ import SwiftUI
 import StoreKit
 
 struct 💸ADMenu: View {
-    @EnvironmentObject var 🏬: 🏬StoreModel
+    @EnvironmentObject var 🛒: 🛒StoreModel
     
     var body: some View {
         Section {
-            if 🏬.🚩Purchased == false {
+            if 🛒.🚩Purchased == false {
                 💸ADView()
             }
             
@@ -21,7 +21,7 @@ struct 💸ADMenu: View {
                     }
                     
                     
-                    🏬PurchaseSection()
+                    🛒PurchaseSection()
                     
                     
                     Section {

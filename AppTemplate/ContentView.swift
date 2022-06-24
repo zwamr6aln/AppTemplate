@@ -3,7 +3,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var 📱: 📱AppModel
-    @EnvironmentObject var 🏬: 🏬StoreModel
+    @EnvironmentObject var 🛒: 🛒StoreModel
     
     var body: some View {
         NavigationView {
@@ -14,12 +14,12 @@ struct ContentView: View {
                     HStack {
                         Text("displayName")
                         Spacer()
-                        Text(🏬.🎫Name)
+                        Text(🛒.🎫Name)
                             .foregroundStyle(.secondary)
                     }
                     
                     NavigationLink("debugDescription") {
-                        Text(🏬.🎫Product.debugDescription)
+                        Text(🛒.🎫Product.debugDescription)
                             .padding()
                             .minimumScaleFactor(0.1)
                             .navigationTitle("debugDescription")

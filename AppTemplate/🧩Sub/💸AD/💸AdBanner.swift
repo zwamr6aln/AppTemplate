@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct 💸ADBanner: View {
-    @EnvironmentObject var 🏬: 🏬StoreModel
+    @EnvironmentObject var 🛒: 🛒StoreModel
     
     @State private var 🚩ShowBanner = false
     
@@ -12,7 +12,7 @@ struct 💸ADBanner: View {
     
     var body: some View {
         Group {
-            if 🏬.🚩Purchased {
+            if 🛒.🚩Purchased {
                 EmptyView()
             } else {
                 if 🚩ShowBanner {
@@ -39,7 +39,7 @@ struct 💸ADBanner: View {
             }
         }
         .animation(.easeOut.speed(1.5), value: 🚩ShowBanner)
-        .animation(.easeOut.speed(1.5), value: 🏬.🚩Purchased)
+        .animation(.easeOut.speed(1.5), value: 🛒.🚩Purchased)
         .onAppear {
             🄻aunchCount += 1
             

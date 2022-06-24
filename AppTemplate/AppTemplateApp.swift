@@ -6,13 +6,13 @@ struct AppTemplateApp: App {
     
     @StateObject var 📱 = 📱AppModel()
     
-    @StateObject var 🏬 = 🏬StoreModel()
+    @StateObject var 🛒 = 🛒StoreModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(📱)
-                .environmentObject(🏬)
+                .environmentObject(🛒)
         }
     }
 }
