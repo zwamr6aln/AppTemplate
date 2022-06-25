@@ -21,6 +21,7 @@ struct 📄InformationMenu: View {
                             .lineLimit(4)
                             .padding(8)
                             .redacted(reason: .placeholder)
+                            .accessibilityLabel("About")
                     }
                 } header: {
                     Text("About")
