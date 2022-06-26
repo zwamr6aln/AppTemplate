@@ -31,8 +31,10 @@ let 🕒LatestVersionNumber = "1.1"
 let 🕒LatestVersionDescription = """
 ==== English ====
 - AAAA
+- Various bugfixes and improvements.
 ==== Japanese(native) ====
-- AAAA
+- ああああ
+- いくつかの改善やバグ修正を行いました。
 """
 
 var 🕒VersionHistory: String {
