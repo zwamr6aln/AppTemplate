@@ -105,7 +105,7 @@ struct 🔗RepositoryLink: View {
         }
         
         
-        let Mirror🔗 = "https://gitlab.com/FlipByBlink/AAAA" //FIXME: GitLab URL
+        let Mirror🔗 = "https://gitlab.com/FlipByBlink/AAAA_Mirror" //FIXME: GitLab URL
         Section {
             Link(destination: URL(string: Mirror🔗)!) {
                 HStack {

@@ -4,15 +4,13 @@ import SwiftUI
 struct 🛠MenuSheet: View {
     @EnvironmentObject var 📱: 📱AppModel
     
-    @AppStorage("placeholder") var 🚩placeholder: Bool = false
-    
     @Environment(\.dismiss) var 🔙: DismissAction
     
     var body: some View {
         NavigationView {
             List {
                 Section {
-                    Toggle("    placeholder    ", isOn: $🚩placeholder)
+                    Toggle("    placeholder    ", isOn: .constant(false))
                         .redacted(reason: .placeholder)
                 } header: {
                     Text("Option")
