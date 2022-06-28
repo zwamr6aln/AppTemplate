@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
+		1256A340286B180C002AF08A /* 🛠AppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
 		12724D702862DEB0008471AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12724D6F2862DEB0008471AB /* StoreKit.framework */; };
 		127ECB24286148F900CB1BC3 /* 📄AppDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB23286148F900CB1BC3 /* 📄AppDescription.swift */; };
 		127ECB29286149EF00CB1BC3 /* 🛒StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🛒StoreModel.swift */; };
@@ -78,6 +80,7 @@
 			dstPath = "🧩Sub";
 			dstSubfolderSpec = 7;
 			files = (
+				1256A340286B180C002AF08A /* 🛠AppMenu.swift in CopyFiles */,
 				12D436872865766300B707F5 /* 🔗OpenSystemSetting.swift in CopyFiles */,
 				12D4368628656CC800B707F5 /* 🖨printLog.swift in CopyFiles */,
 			);
@@ -122,6 +125,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1256A33E286B174D002AF08A /* 🛠AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛠AppMenu.swift"; sourceTree = "<group>"; };
 		12724D532862BF0F008471AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12724D6F2862DEB0008471AB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		127ECB23286148F900CB1BC3 /* 📄AppDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📄AppDescription.swift"; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 			children = (
 				12D4368428656B4400B707F5 /* 🖨printLog.swift */,
 				12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */,
+				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
 				12E4A77528502FF800B2380B /* 📣AD */,
 				127ECB26286149C900CB1BC3 /* 🛒InAppPurchase */,
 				12724D532862BF0F008471AB /* Info.plist */,
@@ -362,6 +367,7 @@
 				12E4A77D2850301300B2380B /* 📣ADView.swift in Sources */,
 				127ECB29286149EF00CB1BC3 /* 🛒StoreModel.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
+				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
 				12E4A75A28502B5200B2380B /* 🛠MenuSheet.swift in Sources */,
 				12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */,
 				12D4368528656B4400B707F5 /* 🖨printLog.swift in Sources */,

@@ -2,23 +2,14 @@
 import SwiftUI
 
 struct 🛠MenuSheet: View {
-    @EnvironmentObject var 📱: 📱AppModel
-    
     @Environment(\.dismiss) var 🔙: DismissAction
     
     var body: some View {
         NavigationView {
             List {
-                Section {
-                    Toggle("    placeholder    ", isOn: .constant(false))
-                        .redacted(reason: .placeholder)
-                } header: {
-                    Text("Option")
-                }
-                
+                🛠AppMenu()
                 
                 📣ADMenu()
-                
                 
                 📄InformationMenu()
             }
