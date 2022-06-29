@@ -65,7 +65,7 @@ struct 📄InformationMenu: View {
                 }
                 
                 
-                TransparencyReportLink()
+                🩻TransparencyReportLink()
                 
                 
                 NavigationLink {

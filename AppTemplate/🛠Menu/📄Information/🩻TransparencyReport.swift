@@ -3,14 +3,13 @@ import SwiftUI
 
 //TODO: ソースコードも透明性レポート内に配置するか検討する
 //TODO: グラフィックデザイン資料セクションを実装、もしくは再検討
-//TODO: "identity/circumstance/background"
-//TODO: "TransparencyReport"用の先頭絵文字を検討
+//TODO: ローカイライズ対応する
 
-struct TransparencyReportLink: View {
+struct 🩻TransparencyReportLink: View {
     var body: some View {
         Section {
             NavigationLink {
-                TransparencyReportMenu()
+                🩻TransparencyReportMenu()
             } label: {
                 Label("Transparency Report", systemImage: "questionmark.app.dashed")
             }
@@ -19,23 +18,29 @@ struct TransparencyReportLink: View {
 }
 
 
-struct TransparencyReportMenu: View {
+struct 🩻TransparencyReportMenu: View {
     var body: some View {
         List {
             NavigationLink {
-                AboutDeveloperPublisher()
+                📓SourceCodeMenu()
+            } label: {
+                Label("Source code", systemImage: "doc.plaintext")
+            }
+            
+            NavigationLink {
+                📃AboutDeveloperPublisher()
             } label: {
                 Label("Developer / Publisher", systemImage: "person")
             }
             
             NavigationLink {
-                AboutAppStoreRelease()
+                📃AboutAppStoreRelease()
             } label: {
                 Label("AppStore Release", systemImage: "a.square")
             }
             
             NavigationLink {
-                AboutGraphicDesignEtc()
+                📃AboutGraphicDesignEtc()
             } label: {
                 Label("Graphic Design etc", systemImage: "paintbrush")
             }
@@ -45,9 +50,16 @@ struct TransparencyReportMenu: View {
 }
 
 
-struct AboutDeveloperPublisher: View {
+struct 📃AboutDeveloperPublisher: View {
     var body: some View {
         List {
+            Section {
+                Text("Individual")
+            } header: {
+                Text("The System")
+            }
+            
+            
             Section {
                 Text("山下 亮")
                 
@@ -64,21 +76,6 @@ struct AboutDeveloperPublisher: View {
                 Text("only one person")
             }
             
-            
-            Section {
-                Image("Developer_Publisher")
-                    .resizable()
-                    .frame(width: 90, height: 90)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .padding()
-                    .opacity(0.5)
-            } header: {
-                Text("Image")
-            } footer: {
-                Text("Date: 2021-11-??") //FIXME: 正確な日付
-            }
-            
-            
             Section {
                 HStack {
                     Text("age")
@@ -93,8 +90,28 @@ struct AboutDeveloperPublisher: View {
                     Text("Japan")
                         .foregroundStyle(.secondary)
                 }
+                
+                HStack {
+                    Text("income")
+                    Spacer()
+                    Text("almost nothing")
+                        .foregroundStyle(.secondary)
+                }
             } header: {
-                Text("identity/circumstance/background")
+                Text("identity / circumstance / background")
+            }
+            
+            Section {
+                Image("Developer_Publisher")
+                    .resizable()
+                    .frame(width: 90, height: 90)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .padding()
+                    .opacity(0.66)
+            } header: {
+                Text("Image")
+            } footer: {
+                Text("Date: 2021-11-??") //FIXME: 正確な日付
             }
         }
         .navigationTitle("Developer / Publisher")
@@ -102,7 +119,7 @@ struct AboutDeveloperPublisher: View {
 }
 
 
-struct AboutAppStoreRelease: View {
+struct 📃AboutAppStoreRelease: View {
     var body: some View {
         List {
             Section {
@@ -130,7 +147,7 @@ struct AboutAppStoreRelease: View {
 }
 
 
-struct AboutGraphicDesignEtc: View {
+struct 📃AboutGraphicDesignEtc: View {
     var body: some View {
         List {
             Text("placeholder")
@@ -140,22 +157,24 @@ struct AboutGraphicDesignEtc: View {
 }
 
 
-struct TransparencySection_Previews: PreviewProvider {
+
+
+struct 🩻TransparencySection_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            TransparencyReportMenu()
+            🩻TransparencyReportMenu()
         }
         
         NavigationView {
-            AboutDeveloperPublisher()
+            📃AboutDeveloperPublisher()
         }
         
         NavigationView {
-            AboutAppStoreRelease()
+            📃AboutAppStoreRelease()
         }
         
         NavigationView {
-            AboutGraphicDesignEtc()
+            📃AboutGraphicDesignEtc()
         }
     }
 }

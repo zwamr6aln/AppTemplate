@@ -48,4 +48,5 @@ var 🕒VersionHistory: String {
 let 🕒PastVersionHistory = """
 🕒 Version 1.0 : 2022-AA-AA
 Initial release
+最初のリリース
 """

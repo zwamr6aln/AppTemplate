@@ -8,7 +8,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                TransparencyReportLink()
+                🩻TransparencyReportLink()
                 
                 
                 Section {
