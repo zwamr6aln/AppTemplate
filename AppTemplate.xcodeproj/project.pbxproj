@@ -56,7 +56,7 @@
 		12C6712D286069CA00FE4C06 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "🛠Menu";
+			dstPath = "🧰Others";
 			dstSubfolderSpec = 7;
 			files = (
 				12D436882865766D00B707F5 /* 🛠MenuButton.swift in CopyFiles */,
@@ -186,8 +186,6 @@
 				12D4368428656B4400B707F5 /* 🖨printLog.swift */,
 				12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */,
 				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
-				12E4A77528502FF800B2380B /* 📣AD */,
-				127ECB26286149C900CB1BC3 /* 🛒InAppPurchase */,
 				12724D532862BF0F008471AB /* Info.plist */,
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
@@ -229,7 +227,7 @@
 				12E4A749285027F600B2380B /* ContentView.swift */,
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
 				127ECB25286149B400CB1BC3 /* 🧩Sub */,
-				12E4A75828502AF800B2380B /* 🛠Menu */,
+				12E4A75828502AF800B2380B /* 🧰Others */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
 			);
@@ -244,14 +242,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		12E4A75828502AF800B2380B /* 🛠Menu */ = {
+		12E4A75828502AF800B2380B /* 🧰Others */ = {
 			isa = PBXGroup;
 			children = (
 				12DDD5422861D363004F59A0 /* 🛠MenuButton.swift */,
 				12E4A75928502B5200B2380B /* 🛠MenuSheet.swift */,
 				12E4A75D28502C6400B2380B /* 📄Information */,
+				12E4A77528502FF800B2380B /* 📣AD */,
+				127ECB26286149C900CB1BC3 /* 🛒InAppPurchase */,
 			);
-			path = "🛠Menu";
+			path = "🧰Others";
 			sourceTree = "<group>";
 		};
 		12E4A75D28502C6400B2380B /* 📄Information */ = {
