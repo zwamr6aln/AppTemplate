@@ -1,6 +1,11 @@
 
 import SwiftUI
 
+//TODO: ソースコードも透明性レポート内に配置するか検討する
+//TODO: グラフィックデザイン資料セクションを実装
+//TODO: "identity/circumstance/background"
+//TODO: "TransparencyReport"用の先頭絵文字を検討
+
 struct TransparencyReportLink: View {
     var body: some View {
         Section {
@@ -92,7 +97,7 @@ struct Developer_Publisher: View {
                 Text("identity/circumstance/background")
             }
         }
-        .navigationTitle("Developer/Publisher")
+        .navigationTitle("Developer / Publisher")
     }
 }
 
@@ -136,8 +141,6 @@ struct GraphicDesignResource: View {
 
 struct TransparencySection_Previews: PreviewProvider {
     static var previews: some View {
-        TransparencyReportLink()
-        
         NavigationView {
             TransparencyReportMenu()
         }
