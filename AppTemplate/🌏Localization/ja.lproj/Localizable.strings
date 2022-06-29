@@ -19,6 +19,34 @@
 "(Mirror)" = "(ミラー)";
 
 
+// ======== Transparency Report ========
+"Transparency Report" = "透明性レポート";
+"Developer / Publisher" = "開発 / パブリッシャー";
+"AppStore Release" = "AppStore リリース";
+"Individual" = "個人系";
+"The System" = "構成";
+"Name" = "名前";
+"only one person" = "1人のみ";
+"age" = "年齢";
+"about 28" = "約28才";
+"country" = "国";
+"Japan" = "日本";
+"native language" = "ネイティブ言語";
+"Japanese" = "日本語";
+"income" = "収入";
+"almost nothing" = "ほぼ無し";
+"As of 2021" = "2021年時点";
+"Image" = "写真";
+"Taken on 2021-11" = "2021年11月に撮影";
+"identity / circumstance / background" = "身元 / 素性 / 境遇";
+"Age rating" = "年齢制限指定";
+"It is distributed to all (175) available countries or regions. It will also be automatically published to any new countries or regions that become available for distribution on AppStore." = "全て(175)の配信可能な国または地域を対象に配信しています。また、AppStoreで新しく配信可能になる国または地域にも自動的に公開されます。";
+"Availability" = "配信地域";
+"Compatibility with Apple Silicon mac" = "Appleシリコンmacとの互換性";
+"eable" = "可";
+"disable" = "不可";
+
+
 // ======== AD =========
 "AD" = "広告";
 "About AD" = "広告について";

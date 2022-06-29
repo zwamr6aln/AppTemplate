@@ -1,10 +1,6 @@
 
 import SwiftUI
 
-//TODO: ソースコードも透明性レポート内に配置するか検討する
-//TODO: グラフィックデザイン資料セクションを実装、もしくは再検討
-//TODO: ローカイライズ対応する
-
 struct 🩻TransparencyReportLink: View {
     var body: some View {
         Section {
@@ -38,12 +34,6 @@ struct 🩻TransparencyReportMenu: View {
             } label: {
                 Label("AppStore Release", systemImage: "a.square")
             }
-            
-            NavigationLink {
-                📃AboutGraphicDesignEtc()
-            } label: {
-                Label("Graphic Design etc", systemImage: "paintbrush")
-            }
         }
         .navigationTitle("Transparency Report")
     }
@@ -76,11 +66,12 @@ struct 📃AboutDeveloperPublisher: View {
                 Text("only one person")
             }
             
+            
             Section {
                 HStack {
                     Text("age")
                     Spacer()
-                    Text("about 27")
+                    Text("about 28")
                         .foregroundStyle(.secondary)
                 }
                 
@@ -92,6 +83,13 @@ struct 📃AboutDeveloperPublisher: View {
                 }
                 
                 HStack {
+                    Text("native language")
+                    Spacer()
+                    Text("Japanese")
+                        .foregroundStyle(.secondary)
+                }
+                
+                HStack {
                     Text("income")
                     Spacer()
                     Text("almost nothing")
@@ -99,7 +97,10 @@ struct 📃AboutDeveloperPublisher: View {
                 }
             } header: {
                 Text("identity / circumstance / background")
+            } footer: {
+                Text("As of 2021")
             }
+            
             
             Section {
                 Image("Developer_Publisher")
@@ -111,7 +112,7 @@ struct 📃AboutDeveloperPublisher: View {
             } header: {
                 Text("Image")
             } footer: {
-                Text("Date: 2021-11-??") //FIXME: 正確な日付
+                Text("Taken on 2021-11")
             }
         }
         .navigationTitle("Developer / Publisher")
@@ -119,13 +120,13 @@ struct 📃AboutDeveloperPublisher: View {
 }
 
 
-struct 📃AboutAppStoreRelease: View {
+struct 📃AboutAppStoreRelease: View { //TODO: 再検討
     var body: some View {
         List {
             Section {
                 Text("4+")
             } header: {
-                Text("AppStore age rating")
+                Text("Age rating")
             }
             
             Section {
@@ -136,23 +137,13 @@ struct 📃AboutAppStoreRelease: View {
             }
             
             Section {
-                Text("placeholder") // "enable", "disable"
+                Text("placeholder") //FIXME: "enable", "disable"
                     .redacted(reason: .placeholder)
             } header: {
                 Text("Compatibility with Apple Silicon mac")
             }
         }
         .navigationTitle("AppStore Release")
-    }
-}
-
-
-struct 📃AboutGraphicDesignEtc: View {
-    var body: some View {
-        List {
-            Text("placeholder")
-        }
-        .navigationTitle("Graphic Design etc")
     }
 }
 
@@ -171,10 +162,6 @@ struct 🩻TransparencySection_Previews: PreviewProvider {
         
         NavigationView {
             📃AboutAppStoreRelease()
-        }
-        
-        NavigationView {
-            📃AboutGraphicDesignEtc()
         }
     }
 }
