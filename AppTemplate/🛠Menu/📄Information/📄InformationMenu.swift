@@ -28,7 +28,7 @@ struct 📄InformationMenu: View {
                 }
                 
                 
-                🏷VersionSection()
+                🕒VersionHistoryLink()
                 
                 
                 let 🔗 = "https://apps.apple.com/app/id1111" //FIXME: AppStore URL
@@ -63,6 +63,9 @@ struct 📄InformationMenu: View {
                         Label("Privacy Policy", systemImage: "person.text.rectangle")
                     }
                 }
+                
+                
+                TransparencyReportLink()
                 
                 
                 NavigationLink {

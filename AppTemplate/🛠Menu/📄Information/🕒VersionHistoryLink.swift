@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct 🏷VersionSection: View {
+struct 🕒VersionHistoryLink: View {
     var body: some View {
         Section {
             NavigationLink {
