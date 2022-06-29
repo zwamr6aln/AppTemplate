@@ -2,7 +2,7 @@
 import SwiftUI
 
 //TODO: ソースコードも透明性レポート内に配置するか検討する
-//TODO: グラフィックデザイン資料セクションを実装
+//TODO: グラフィックデザイン資料セクションを実装、もしくは再検討
 //TODO: "identity/circumstance/background"
 //TODO: "TransparencyReport"用の先頭絵文字を検討
 
@@ -23,7 +23,7 @@ struct TransparencyReportMenu: View {
     var body: some View {
         List {
             NavigationLink {
-                Developer_Publisher()
+                AboutDeveloperPublisher()
             } label: {
                 Label("Developer / Publisher", systemImage: "person")
             }
@@ -35,9 +35,9 @@ struct TransparencyReportMenu: View {
             }
             
             NavigationLink {
-                Text("placeholder")
+                AboutGraphicDesignEtc()
             } label: {
-                Label("Graphic design resource", systemImage: "paintbrush")
+                Label("Graphic Design etc", systemImage: "paintbrush")
             }
         }
         .navigationTitle("Transparency Report")
@@ -45,7 +45,7 @@ struct TransparencyReportMenu: View {
 }
 
 
-struct Developer_Publisher: View {
+struct AboutDeveloperPublisher: View {
     var body: some View {
         List {
             Section {
@@ -71,11 +71,11 @@ struct Developer_Publisher: View {
                     .frame(width: 90, height: 90)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     .padding()
-                    .opacity(0.66)
+                    .opacity(0.5)
             } header: {
                 Text("Image")
             } footer: {
-                Text("Date: 2021-11-??")
+                Text("Date: 2021-11-??") //FIXME: 正確な日付
             }
             
             
@@ -113,6 +113,7 @@ struct AboutAppStoreRelease: View {
             
             Section {
                 Text("It is distributed to all (175) available countries or regions. It will also be automatically published to any new countries or regions that become available for distribution on AppStore.")
+                    .padding()
             } header: {
                 Text("Availability")
             }
@@ -129,12 +130,12 @@ struct AboutAppStoreRelease: View {
 }
 
 
-struct GraphicDesignResource: View {
+struct AboutGraphicDesignEtc: View {
     var body: some View {
         List {
             Text("placeholder")
         }
-        .navigationTitle("Graphic design resource")
+        .navigationTitle("Graphic Design etc")
     }
 }
 
@@ -146,7 +147,7 @@ struct TransparencySection_Previews: PreviewProvider {
         }
         
         NavigationView {
-            Developer_Publisher()
+            AboutDeveloperPublisher()
         }
         
         NavigationView {
@@ -154,7 +155,7 @@ struct TransparencySection_Previews: PreviewProvider {
         }
         
         NavigationView {
-            GraphicDesignResource()
+            AboutGraphicDesignEtc()
         }
     }
 }
