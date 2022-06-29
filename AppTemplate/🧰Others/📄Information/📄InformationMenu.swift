@@ -28,9 +28,6 @@ struct 📄InformationMenu: View {
                 }
                 
                 
-                🕒VersionHistoryLink()
-                
-                
                 let 🔗 = "https://apps.apple.com/app/id1111" //FIXME: AppStore URL
                 Section {
                     Link(destination: URL(string: 🔗)!) {
@@ -65,13 +62,20 @@ struct 📄InformationMenu: View {
                 }
                 
                 
-                🩻TransparencyReportLink()
+                🕒VersionHistoryLink()
                 
                 
                 NavigationLink {
                     📓SourceCodeMenu()
                 } label: {
                     Label("Source code", systemImage: "doc.plaintext")
+                }
+                
+                
+                NavigationLink {
+                    🧑‍💻AboutDeveloperPublisher()
+                } label: {
+                    Label("Developer / Publisher", systemImage: "person")
                 }
             }
             .navigationTitle("Information")

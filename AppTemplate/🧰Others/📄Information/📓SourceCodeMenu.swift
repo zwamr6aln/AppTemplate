@@ -135,6 +135,8 @@ struct 🔗RepositoryLink: View {
                     
                     Image(systemName: "arrow.up.forward.app")
                 }
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
             }
         } footer: {
             Text(Template🔗)

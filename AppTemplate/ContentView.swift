@@ -8,14 +8,14 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                🩻TransparencyReportLink()
-                
-                
                 Section {
                     🛠MenuButton()
                 } header: {
                     Text("🛠MenuButton")
                 }
+                
+                
+                🩻TransparencyReportLink()
                 
                 
                 Section {

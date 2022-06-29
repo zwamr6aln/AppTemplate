@@ -9,6 +9,8 @@ struct 🩻TransparencyReportLink: View {
             } label: {
                 Label("Transparency Report", systemImage: "questionmark.app.dashed")
             }
+        } header: {
+            Text("🩻TransparencyReport")
         }
     }
 }
@@ -24,7 +26,7 @@ struct 🩻TransparencyReportMenu: View {
             }
             
             NavigationLink {
-                📃AboutDeveloperPublisher()
+                🧑‍💻AboutDeveloperPublisher()
             } label: {
                 Label("Developer / Publisher", systemImage: "person")
             }
@@ -40,7 +42,7 @@ struct 🩻TransparencyReportMenu: View {
 }
 
 
-struct 📃AboutDeveloperPublisher: View {
+struct 🧑‍💻AboutDeveloperPublisher: View {
     var body: some View {
         List {
             Section {
@@ -108,7 +110,7 @@ struct 📃AboutDeveloperPublisher: View {
                     .frame(width: 90, height: 90)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     .padding()
-                    .opacity(0.66)
+                    .opacity(0.5)
             } header: {
                 Text("Image")
             } footer: {
@@ -128,14 +130,14 @@ struct 📃AboutAppStoreRelease: View { //TODO: 再検討
             } header: {
                 Text("Age rating")
             }
-            
+
             Section {
                 Text("It is distributed to all (175) available countries or regions. It will also be automatically published to any new countries or regions that become available for distribution on AppStore.")
                     .padding()
             } header: {
                 Text("Availability")
             }
-            
+
             Section {
                 Text("placeholder") //FIXME: "enable", "disable"
                     .redacted(reason: .placeholder)
@@ -144,24 +146,5 @@ struct 📃AboutAppStoreRelease: View { //TODO: 再検討
             }
         }
         .navigationTitle("AppStore Release")
-    }
-}
-
-
-
-
-struct 🩻TransparencySection_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            🩻TransparencyReportMenu()
-        }
-        
-        NavigationView {
-            📃AboutDeveloperPublisher()
-        }
-        
-        NavigationView {
-            📃AboutAppStoreRelease()
-        }
     }
 }
