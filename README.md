@@ -79,7 +79,7 @@ Info.plist / Privacy - Health Update Usage Description
 [apps.apple.com/app/id1111](https://apps.apple.com/app/id1111)
 
 
-<!-- Manually sync below text between "📄AppDescription.swift" and "/README.md(here)" and "AppStoreConnect/_/Description". -->
+<!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
 
 ## 📄 Description
 

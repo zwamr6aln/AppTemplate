@@ -1,13 +1,8 @@
+// work in progress
 
 import Foundation
 
-//Manually sync below text between "🔩UniqueData.swift" and "/README.md(here)" and "AppStoreConnect/AAAA/Description".
 
-let 📄AppStoreDescription = """
-
-placeholder
-
-"""
 
 
 // ======== App Version =========

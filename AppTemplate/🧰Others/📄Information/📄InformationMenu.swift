@@ -15,7 +15,7 @@ struct 📄InformationMenu: View {
                         .navigationBarTitleDisplayMode(.inline)
                         .textSelection(.enabled)
                     } label: {
-                        Text(📄AppDescription)
+                        Text("🌏AppStoreDescription")
                             .font(.subheadline)
                             .lineLimit(4)
                             .padding(8)
