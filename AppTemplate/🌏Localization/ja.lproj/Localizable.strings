@@ -71,3 +71,22 @@
 "Register weight data to the Apple \"Health\" application pre-installed on iPhone in the fastest possible way (as manual)." = "「ヘルスケア」アプリに体重データを(手動としては)最速で登録するためのアプリ。";
 
 "Register body temperature data to the \"Health\" app pre-installed on iPhone in the fastest possible way (as manual)." = "「ヘルスケア」アプリに体温データを(手動としては)最速で登録するためのアプリ。";
+
+
+
+// ======== AppStore Description ========
+"🌏AppStoreDescription" = "
+ああああ。
+
+【想定ユーザー/ユースケース】
+
+- ああああ
+
+【オプション】
+
+- ああああ
+
+【その他】
+
+- ああああ
+";

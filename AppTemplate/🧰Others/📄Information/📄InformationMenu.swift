@@ -8,19 +8,17 @@ struct 📄InformationMenu: View {
                 Section {
                     NavigationLink {
                         ScrollView {
-                            Text(📄AppDescription)
+                            Text("🌏AppStoreDescription")
                                 .padding()
                         }
                         .navigationBarTitle("About")
                         .navigationBarTitleDisplayMode(.inline)
                         .textSelection(.enabled)
-                        .redacted(reason: .placeholder)
                     } label: {
                         Text(📄AppDescription)
                             .font(.subheadline)
                             .lineLimit(4)
                             .padding(8)
-                            .redacted(reason: .placeholder)
                             .accessibilityLabel("About")
                     }
                 } header: {
