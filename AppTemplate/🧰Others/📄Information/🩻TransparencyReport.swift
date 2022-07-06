@@ -92,12 +92,12 @@ struct 🧑‍💻AboutDeveloperPublisher: View {
                         .foregroundStyle(.secondary)
                 }
                 
-                HStack {
-                    Text("income")
-                    Spacer()
-                    Text("almost nothing")
-                        .foregroundStyle(.secondary)
-                }
+//                HStack {
+//                    Text("income")
+//                    Spacer()
+//                    Text("almost nothing")
+//                        .foregroundStyle(.secondary)
+//                }
             } header: {
                 Text("identity / circumstance / background")
             } footer: {
@@ -148,17 +148,17 @@ struct 📆TimelineSection: View {
 
 let 📆TimelineText: [[String]] =
 [["2013-04","岡山県の高校から沖縄県の琉球大学工学部情報工学科に進学。"],
- ["2018-06","大学学部生として最終学年。卒業研究を行い、「FlipByBlink」の元となるアプリ開発を行う。"],
+ ["2018-06","大学学部生として最終学年。卒業研究にて「FlipByBlink」の元となるアプリ開発を行う。"],
  ["2019-01","特殊なまばたきでページめくりができる電子書籍リーダーアプリ「FlipByBlink」をver1.0としてAppStoreにリリース。"],
- ["2019-03","琉球大学卒業。"],
+ ["2019-03","琉球大学を卒業。"],
  ["2019-05","「FlipByBlink」ver1.0は非常に使い辛いものだったため、ユーザーインターフェイスを中心に改修し、ver2.0としてリリース。"],
- ["2019-05","時間をかけて徐々に音が大きくなるアラームアプリ「FadeInAlarm」、ver1.0をリリース。初めての有料アプリ。"],
+ ["2019-05","時間をかけて徐々に音が大きくなるアラームアプリ「FadeInAlarm」ver1.0をリリース。初めてとなる有料アプリ。"],
  ["2019-07","岡山に移住。"],
- ["2021-12","FlipByBlink、周知改善を目的としてアプリを大幅に改修し、ver2.0以来 約3年ぶりとなるver3.0をリリース。"],
- ["2022-02","FadeInAlarmについて、アプリ設計を見直しを行い大幅に改修して、ver1.0以来 約3年ぶりとなるver2.0をリリース。"],
- ["2022-04","シンプルな将棋盤アプリ「Plain将棋盤」、ver1.0をリリース。"],
- ["2022-05","体重登録アプリ「TapWeight」、ver1.0をリリース。"],
- ["2022-06","体温登録アプリ「TapTemperature」、ver1.0をリリース。"],
+ ["2021-12","FlipByBlink、ver2.0以来 約3年ぶりとなるver3.0をリリース。"],
+ ["2022-02","FadeInAlarm、ver1.0以来 約3年ぶりとなるver2.0をリリース。"],
+ ["2022-04","シンプルな将棋盤アプリ「Plain将棋盤」ver1.0をリリース。"],
+ ["2022-05","体重登録アプリ「TapWeight」ver1.0をリリース。"],
+ ["2022-06","体温登録アプリ「TapTemperature」ver1.0をリリース。"],
  ["2022-06","TapWeight、有料課金モデルを初めて採用したver1.1.1をリリース。"]]
 //["2022-0",""],
 
