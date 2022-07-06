@@ -37,7 +37,7 @@ struct 📣ADBanner: View {
                                 .foregroundStyle(.background)
                                 .shadow(radius: 3)
                         }
-                        .padding()
+                        .padding(12)
                         .transition(.move(edge: .bottom))
                         .frame(minWidth: 250)
                 }

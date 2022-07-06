@@ -43,7 +43,7 @@ struct 📣ADView: View {
                 .font(.subheadline.weight(.black))
                 .padding(.top, 8)
                 .padding(.leading, 3)
-                .foregroundStyle(.quaternary)
+                .foregroundStyle(.tertiary)
         }
     }
     
