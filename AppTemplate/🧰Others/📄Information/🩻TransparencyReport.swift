@@ -134,10 +134,10 @@ struct 📆TimelineSection: View {
 }
 
 let 📆TimelineText: [[String]] =
-[["2013-04","Finished from high school in Okayama Prefecture. Entranced into University of the Ryukyus / faculty of engineering."],
+[["2013-04","Finished from high school in Okayama Prefecture. Entranced into University-of-the-Ryukyus/faculty-of-engineering in Okinawa Prefecture."],
  ["2018-06","Final year as an undergraduate student. Developed an iOS application(FlipByBlink) as software for the purpose of research experiments."],
  ["2019-01","Released ebook reader app \"FlipByBlink\" ver 1.0 on AppStore. Special feature is to turn a page by slightly-longish-voluntary-blink."],
- ["2019-03","Graduated from University of the Ryukyus."],
+ ["2019-03","Graduated from University-of-the-Ryukyus."],
  ["2019-05","Released alarm clock app with taking a long time \"FadeInAlarm\" ver 1.0. First paid app."],
  ["2019-07","Migrated to Okayama Prefecture."],
  ["2021-12","Released FlipByBlink ver 3.0 for the first time in three years since ver 2.0."],
