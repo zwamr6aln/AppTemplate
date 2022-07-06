@@ -58,17 +58,17 @@
 "native language" = "ネイティブ言語";
 "Japanese" = "日本語";
 "income" = "収入";
-"almost nothing" = "ほぼ無し";
+//"almost nothing" = "ほぼ無し";
 "As of 2021" = "2021年時点";
 "Image" = "写真";
 "Taken on 2021-11" = "2021年11月に撮影";
 "identity / circumstance / background" = "身元 / 素性 / 境遇";
-"Age rating" = "年齢制限指定";
-"It is distributed to all (175) available countries or regions. It will also be automatically published to any new countries or regions that become available for distribution on AppStore." = "全て(175)の配信可能な国または地域を対象に配信しています。また、AppStoreで新しく配信可能になる国または地域にも自動的に公開されます。";
-"Availability" = "配信地域";
-"Compatibility with Apple Silicon mac" = "Appleシリコンmacとの互換性";
-"eable" = "可";
-"disable" = "不可";
+//"Age rating" = "年齢制限指定";
+//"It is distributed to all (175) available countries or regions. It will also be automatically published to any new countries or regions that become available for distribution on AppStore." = "全て(175)の配信可能な国または地域を対象に配信しています。また、AppStoreで新しく配信可能になる国または地域にも自動的に公開されます。";
+//"Availability" = "配信地域";
+//"Compatibility with Apple Silicon mac" = "Appleシリコンmacとの互換性";
+//"eable" = "可";
+//"disable" = "不可";
 
 
 // ======== AD =========
@@ -84,7 +84,7 @@
 "Open AD link" = "広告のリンクを開く";
 "OK" = "了解しました";
 
-//"This App shows banner advertisement about applications on AppStore. These are Apps by TapWeight developer. AD banner is rarely presented on result screen. It appears one in every 4 times." = "広告としてAppStoreアプリケーションに関するバナーを表示します。「体重登録」デベロッパーによるアプリ群が表示対象となります。入力完了画面では、たまに広告が表示されます。それは4回表示する度に一時的に有効になります。";
+//"This App shows banner advertisement about applications on AppStore. These are Apps by AAAA developer. AD banner is presented on result screen. It is activated after you launch this app 5 times." = "広告としてAppStoreアプリケーションに関するバナーを表示します。「体温登録」デベロッパーによるアプリ群が表示対象となります。入力完了画面でバナー広告が表示されます。それはアプリを5回起動すると有効になります。";
 
 "Simple and normal ebook reader (for fixed-layout). Only a special feature. Turn a page with slightly longish voluntary blink." = "シンプルで一般的な電子書籍リーダー(固定レイアウト向け)。特殊な機能は1つだけ。目を閉じる時間を意識的にわずかに長くさせた瞬きでページめくりができます。";
 
