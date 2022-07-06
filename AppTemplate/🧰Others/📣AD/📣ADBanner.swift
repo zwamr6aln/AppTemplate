@@ -23,27 +23,23 @@ struct 📣ADBanner: View {
                                 🚩ShowBanner = false
                                 UISelectionFeedbackGenerator().selectionChanged()
                             } label: {
-                                Image(systemName: "xmark.circle")
-                                    .symbolRenderingMode(.hierarchical)
-                                    .imageScale(.large)
-                                    .background {
-                                        Circle()
-                                            .foregroundStyle(.background)
-                                            .opacity(0.5)
-                                    }
-                                    .padding(6)
-                                    .padding(.trailing, 2)
+                                Image(systemName: "xmark.circle.fill")
+                                    .symbolRenderingMode(.palette)
+                                    .font(.title)
+                                    .foregroundStyle(.white, .pink)
+                                    .offset(y: -26)
+                                    .shadow(radius: 1.5)
+                                    .padding()
                             }
-                            .tint(.pink)
                         }
                         .background {
-                            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                            RoundedRectangle(cornerRadius: 12, style: .continuous)
                                 .foregroundStyle(.background)
                                 .shadow(radius: 3)
                         }
                         .padding()
                         .transition(.move(edge: .bottom))
-                        .frame(minWidth: 300)
+                        .frame(minWidth: 250)
                 }
             }
         }
@@ -52,7 +48,7 @@ struct 📣ADBanner: View {
         .onAppear {
             🄻aunchCount += 1
             
-            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
                 if 🄻aunchCount % 🅃iming == 0 {
                     🚩ShowBanner = true
                 }
