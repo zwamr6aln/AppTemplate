@@ -24,10 +24,9 @@ struct 📣ADBanner: View {
                                 UISelectionFeedbackGenerator().selectionChanged()
                             } label: {
                                 Image(systemName: "xmark.circle.fill")
-                                    .symbolRenderingMode(.palette)
+                                    .symbolRenderingMode(.multicolor)
                                     .font(.title)
-                                    .foregroundStyle(.white, .pink)
-                                    .offset(y: -26)
+                                    .offset(y: -27)
                                     .shadow(radius: 1.5)
                                     .padding()
                             }
