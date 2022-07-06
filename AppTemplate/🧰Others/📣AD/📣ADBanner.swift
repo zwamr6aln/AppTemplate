@@ -26,15 +26,15 @@ struct 📣ADBanner: View {
                                 Image(systemName: "xmark.circle.fill")
                                     .symbolRenderingMode(.multicolor)
                                     .font(.title)
-                                    .offset(y: -27)
+                                    .offset(y: -26)
                                     .shadow(radius: 1.5)
                                     .padding()
                             }
                         }
                         .background {
-                            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            RoundedRectangle(cornerRadius: 16, style: .continuous)
                                 .foregroundStyle(.background)
-                                .shadow(radius: 3)
+                                .shadow(radius: 3, y: 0.5)
                         }
                         .padding(12)
                         .transition(.move(edge: .bottom))
