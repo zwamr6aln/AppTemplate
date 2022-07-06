@@ -32,11 +32,11 @@ struct 🩻TransparencyReportMenu: View {
                 Label("Developer / Publisher", systemImage: "person")
             }
             
-            NavigationLink {
-                📃AboutAppStoreRelease()
-            } label: {
-                Label("AppStore Release", systemImage: "a.square")
-            }
+//            NavigationLink {
+//                📃AboutAppStoreRelease()
+//            } label: {
+//                Label("AppStore Release", systemImage: "a.square")
+//            }
         }
         .navigationTitle("Transparency Report")
     }

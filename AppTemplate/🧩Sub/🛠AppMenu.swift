@@ -3,14 +3,31 @@ import SwiftUI
 
 struct 🛠AppMenu: View {
     @EnvironmentObject var 📱: 📱AppModel
+    @Binding var 🚩ShowMenu: Bool
     
     var body: some View {
-        Section {
-            Toggle(isOn: .constant(false)) {
-                Label("placeholder", systemImage: "questionmark")
+        NavigationView {
+            List {
+                Section {
+                    Toggle(isOn: .constant(false)) {
+                        Label("placeholder", systemImage: "questionmark")
+                    }
+                } header: {
+                    Text("Option")
+                }
+                
+                
+                📣ADMenuLink()
+                📄InformationMenuLink()
             }
-        } header: {
-            Text("Option")
+            .navigationTitle("AppName") //FIXME: App DisplayName
+            .toolbar {
+                ﹀CloseMenuButton($🚩ShowMenu)
+            }
         }
+    }
+    
+    init(_ 🚩: Binding<Bool>) {
+        _🚩ShowMenu = 🚩
     }
 }
