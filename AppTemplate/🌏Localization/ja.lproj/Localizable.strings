@@ -64,18 +64,18 @@
 "Image" = "写真";
 "Taken on 2021-11" = "2021年11月に撮影";
 "Timeline" = "タイムライン";
-//"岡山県の高校から沖縄県の琉球大学工学部情報工学科へ進学。" = "";
-//"大学学部生として最終学年。卒業研究にて「FlipByBlink」の元となるアプリ開発を行う。" = "";
-//"特殊なまばたきでページめくりができる電子書籍リーダーアプリ「FlipByBlink」をver1.0としてAppStoreにリリース。" = "";
-//"琉球大学を卒業。" = "";
-//"時間をかけて徐々に音が大きくなるアラームアプリ「FadeInAlarm」ver1.0をリリース。初めてとなる有料アプリ。" = "";
-//"岡山に移住。" = "";
-//"FlipByBlink、ver2.0以来 約3年ぶりとなるver3.0をリリース。" = "";
-//"FadeInAlarm、ver1.0以来 約3年ぶりとなるver2.0をリリース。" = "";
-//"シンプルな将棋盤アプリ「Plain将棋盤」ver1.0をリリース。" = "";
-//"体重登録アプリ「TapWeight」ver1.0をリリース。" = "";
-//"体温登録アプリ「TapTemperature」ver1.0をリリース。" = "";
-//"TapWeight、有料課金モデルを初めて採用したver1.1.1をリリース。" = "";
+"Finished from high school in Okayama Prefecture. Entranced into University of the Ryukyus / faculty of engineering." = "岡山県の高等学校を卒業。沖縄県の琉球大学工学部情報工学科に入学。";
+"Final year as an undergraduate student. Developed an iOS application(FlipByBlink) as software for the purpose of research experiments." = "大学学部生として最終学年。研究実験を目的としたiOSアプリ(FlipByBlink)の開発を行う。";
+"Released ebook reader app \"FlipByBlink\" ver 1.0 on AppStore. Special feature is to turn a page by slightly-longish-voluntary-blink." = "特殊なまばたきでページめくりができる電子書籍リーダーアプリ「FlipByBlink」をver1.0としてAppStoreにリリース。";
+"Graduated from University of the Ryukyus." = "琉球大学を卒業。";
+"Released alarm clock app with taking a long time \"FadeInAlarm\" ver 1.0. First paid app." = "時間をかけて徐々に音が大きくなるアラームアプリ「FadeInAlarm」ver1.0をリリース。初めてとなる有料アプリ。";
+"Migrated to Okayama Prefecture." = "岡山に移住。";
+"Released FlipByBlink ver 3.0 for the first time in three years since ver 2.0." = "FlipByBlink、ver2.0以来 約3年ぶりとなるver3.0をリリース。";
+"Released FadeInAlarm ver 2.0 for the first time in three years since ver 1.0." = "FadeInAlarm、ver1.0以来 約3年ぶりとなるver2.0をリリース。";
+"Released simple shogi board app \"PlainShogiBoard\" ver 1.0." = "シンプルな将棋盤アプリ「Plain将棋盤」ver1.0をリリース。";
+"Released body weight registration app \"TapWeight\" ver 1.0." = "体重登録アプリ「TapWeight」ver1.0をリリース。";
+"Released body temperature registration app \"TapTemperature\" ver 1.0." = "体温登録アプリ「TapTemperature」ver1.0をリリース。";
+"Adopted In-App Purchase model for the first time on TapWeight ver 1.1.1" = "TapWeight、有料課金モデルを初めて採用したver1.1.1をリリース。";
 
 
 //"Age rating" = "年齢制限指定";

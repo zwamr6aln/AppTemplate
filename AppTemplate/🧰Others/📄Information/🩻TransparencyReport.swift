@@ -123,7 +123,7 @@ struct 📆TimelineSection: View {
                 Text(📃.first ?? "🐛")
                     .font(.caption2)
                     .padding(8)
-                Text(📃.last ?? "🐛")
+                Text(LocalizedStringKey(📃.last ?? "🐛"))
                     .font(.caption)
             }
         }
@@ -134,18 +134,18 @@ struct 📆TimelineSection: View {
 }
 
 let 📆TimelineText: [[String]] =
-[["2013-04","岡山県の高校から沖縄県の琉球大学工学部情報工学科へ進学。"],
- ["2018-06","大学学部生として最終学年。卒業研究にて「FlipByBlink」の元となるアプリ開発を行う。"],
- ["2019-01","特殊なまばたきでページめくりができる電子書籍リーダーアプリ「FlipByBlink」をver1.0としてAppStoreにリリース。"],
- ["2019-03","琉球大学を卒業。"],
- ["2019-05","時間をかけて徐々に音が大きくなるアラームアプリ「FadeInAlarm」ver1.0をリリース。初めてとなる有料アプリ。"],
- ["2019-07","岡山に移住。"],
- ["2021-12","FlipByBlink、ver2.0以来 約3年ぶりとなるver3.0をリリース。"],
- ["2022-02","FadeInAlarm、ver1.0以来 約3年ぶりとなるver2.0をリリース。"],
- ["2022-04","シンプルな将棋盤アプリ「Plain将棋盤」ver1.0をリリース。"],
- ["2022-05","体重登録アプリ「TapWeight」ver1.0をリリース。"],
- ["2022-06","体温登録アプリ「TapTemperature」ver1.0をリリース。"],
- ["2022-06","TapWeight、有料課金モデルを初めて採用したver1.1.1をリリース。"]]
+[["2013-04","Finished from high school in Okayama Prefecture. Entranced into University of the Ryukyus / faculty of engineering."],
+ ["2018-06","Final year as an undergraduate student. Developed an iOS application(FlipByBlink) as software for the purpose of research experiments."],
+ ["2019-01","Released ebook reader app \"FlipByBlink\" ver 1.0 on AppStore. Special feature is to turn a page by slightly-longish-voluntary-blink."],
+ ["2019-03","Graduated from University of the Ryukyus."],
+ ["2019-05","Released alarm clock app with taking a long time \"FadeInAlarm\" ver 1.0. First paid app."],
+ ["2019-07","Migrated to Okayama Prefecture."],
+ ["2021-12","Released FlipByBlink ver 3.0 for the first time in three years since ver 2.0."],
+ ["2022-02","Released FadeInAlarm ver 2.0 for the first time in three years since ver 1.0."],
+ ["2022-04","Released simple shogi board app \"PlainShogiBoard\" ver 1.0."],
+ ["2022-05","Released body weight registration app \"TapWeight\" ver 1.0."],
+ ["2022-06","Released body temperature registration app \"TapTemperature\" ver 1.0."],
+ ["2022-06","Adopted In-App Purchase model for the first time on TapWeight ver 1.1.1"]]
 //["2022-0",""],
 
 
