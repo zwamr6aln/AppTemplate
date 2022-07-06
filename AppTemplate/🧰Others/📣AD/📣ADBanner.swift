@@ -8,7 +8,7 @@ struct 📣ADBanner: View {
     
     @AppStorage("🄻aunchCount") var 🄻aunchCount: Int = 0
     
-    let 🅃iming: Int = 1 //FIXME: Change
+    //let 🅃iming: Int = 1
     
     var body: some View {
         Group {
@@ -34,9 +34,9 @@ struct 📣ADBanner: View {
                         .background {
                             RoundedRectangle(cornerRadius: 16, style: .continuous)
                                 .foregroundStyle(.background)
-                                .shadow(radius: 3, y: 0.5)
+                                .shadow(color: .secondary, radius: 3, y: 0.5)
                         }
-                        .padding(12)
+                        .padding(14)
                         .transition(.move(edge: .bottom))
                         .frame(minWidth: 250)
                 }
@@ -48,7 +48,11 @@ struct 📣ADBanner: View {
             🄻aunchCount += 1
             
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
-                if 🄻aunchCount % 🅃iming == 0 {
+                //if 🄻aunchCount % 🅃iming == 0 {
+                //    🚩ShowBanner = true
+                //}
+                
+                if 🄻aunchCount > 5 {
                     🚩ShowBanner = true
                 }
             }
