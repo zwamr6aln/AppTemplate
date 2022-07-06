@@ -1,26 +1,6 @@
 
 import SwiftUI
 
-struct 🛠MenuButton: View {
-    @State private var 🚩ShowMenu = false
-    
-    var body: some View {
-        Button {
-            🚩ShowMenu = true
-            UISelectionFeedbackGenerator().selectionChanged()
-        } label: {
-            Label("Open menu", systemImage: "gear")
-        }
-        .sheet(isPresented: $🚩ShowMenu) {
-            🛠AppMenu($🚩ShowMenu)
-                .onDisappear {
-                    🚩ShowMenu = false
-                }
-        }
-    }
-}
-
-
 struct ﹀CloseMenuButton: ToolbarContent {
     @Binding var 🚩ShowMenu: Bool
     
