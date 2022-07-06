@@ -8,8 +8,6 @@ struct 📣ADBanner: View {
     
     @AppStorage("🄻aunchCount") var 🄻aunchCount: Int = 0
     
-    //let 🅃iming: Int = 1
-    
     var body: some View {
         Group {
             if 🛒.🚩Purchased {
@@ -48,10 +46,6 @@ struct 📣ADBanner: View {
             🄻aunchCount += 1
             
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
-                //if 🄻aunchCount % 🅃iming == 0 {
-                //    🚩ShowBanner = true
-                //}
-                
                 if 🄻aunchCount > 5 {
                     🚩ShowBanner = true
                 }
