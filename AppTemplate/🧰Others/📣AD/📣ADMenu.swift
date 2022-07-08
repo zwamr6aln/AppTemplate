@@ -7,9 +7,7 @@ struct 📣ADMenuLink: View {
     
     var body: some View {
         Section {
-            if 🛒.🚩Purchased == false {
-                📣ADView()
-            }
+            if 🛒.🚩Purchased == false { 📣ADView() }
             
             NavigationLink {
                 📣ADMenu()
@@ -26,7 +24,7 @@ struct 📣ADMenu: View {
     var body: some View {
         List {
             Section {
-                Text("🌏ADDescription") //TODO: Localizable.strings
+                Text("🌏ADDescription") //Localizable.strings
                     .padding()
             } header: { Text("About") }
             

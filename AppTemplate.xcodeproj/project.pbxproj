@@ -274,9 +274,9 @@
 			isa = PBXGroup;
 			children = (
 				127ECB2B28614B8B00CB1BC3 /* 📣ADMenu.swift */,
-				12E4A7792850301300B2380B /* 📣AppName.swift */,
 				12E4A7782850301300B2380B /* 📣ADView.swift */,
 				12E4A7762850301300B2380B /* 📣ADBanner.swift */,
+				12E4A7792850301300B2380B /* 📣AppName.swift */,
 			);
 			path = "📣AD";
 			sourceTree = "<group>";
