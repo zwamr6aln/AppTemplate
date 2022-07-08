@@ -3,9 +3,7 @@ import SwiftUI
 
 struct 📣ADBanner: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
-    
     @State private var 🚩ShowBanner = false
-    
     @AppStorage("🄻aunchCount") var 🄻aunchCount: Int = 0
     
     var body: some View {
@@ -45,10 +43,8 @@ struct 📣ADBanner: View {
         .onAppear {
             🄻aunchCount += 1
             
-            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
-                if 🄻aunchCount > 5 {
-                    🚩ShowBanner = true
-                }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                if 🄻aunchCount > 5 { 🚩ShowBanner = true }
             }
         }
     }
