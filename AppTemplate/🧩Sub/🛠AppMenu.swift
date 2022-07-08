@@ -13,9 +13,7 @@ struct 🛠MenuButton: View {
         }
         .sheet(isPresented: $🚩ShowMenu) {
             🛠AppMenu($🚩ShowMenu)
-                .onDisappear {
-                    🚩ShowMenu = false
-                }
+                .onDisappear { 🚩ShowMenu = false }
         }
     }
 }
@@ -32,22 +30,15 @@ struct 🛠AppMenu: View {
                     Toggle(isOn: .constant(false)) {
                         Label("placeholder", systemImage: "questionmark")
                     }
-                } header: {
-                    Text("Option")
-                }
-                
+                } header: { Text("Option") }
                 
                 📣ADMenuLink()
                 📄InformationMenuLink()
             }
             .navigationTitle("AppName") //FIXME: App DisplayName
-            .toolbar {
-                ﹀CloseMenuButton($🚩ShowMenu)
-            }
+            .toolbar { ﹀CloseMenuButton($🚩ShowMenu) }
         }
     }
     
-    init(_ 🚩: Binding<Bool>) {
-        _🚩ShowMenu = 🚩
-    }
+    init(_ 🚩: Binding<Bool>) { _🚩ShowMenu = 🚩 }
 }

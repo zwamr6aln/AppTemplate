@@ -19,7 +19,5 @@ struct ﹀CloseMenuButton: ToolbarContent {
         }
     }
     
-    init(_ 🚩: Binding<Bool>) {
-        _🚩ShowMenu = 🚩
-    }
+    init(_ 🚩: Binding<Bool>) { _🚩ShowMenu = 🚩 }
 }

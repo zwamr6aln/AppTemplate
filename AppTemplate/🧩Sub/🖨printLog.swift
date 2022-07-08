@@ -16,7 +16,6 @@ func print́(_ 📦: Any) {
     }
 }
 
-
 struct 🖨printLog: View {
     @State private var 🗒: [String] = []
     
@@ -28,12 +27,8 @@ struct 🖨printLog: View {
                 }
             }
             .navigationTitle("print-Log")
-            .onAppear {
-                🄻oad()
-            }
-            .refreshable {
-                🄻oad()
-            }
+            .onAppear { 🄻oad() }
+            .refreshable { 🄻oad() }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
@@ -48,9 +43,7 @@ struct 🖨printLog: View {
         } label: {
             Label("Check print-Log", systemImage: "printer")
         }
-        .onAppear {
-            print́("onAppered")
-        }
+        .onAppear { print́("onAppered") }
     }
     
     func 🄻oad() {
