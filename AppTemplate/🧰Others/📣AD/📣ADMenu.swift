@@ -26,7 +26,7 @@ struct 📣ADMenu: View {
     var body: some View {
         List {
             Section {
-                Text("This App shows banner advertisement about applications on AppStore. These are Apps by AAAA developer. AD banner is presented on result screen. It is activated after you launch this app 5 times.") //FIXME: Description about AD
+                Text("🌏ADDescription") //TODO: Localizable.strings
                     .padding()
             } header: {
                 Text("About")

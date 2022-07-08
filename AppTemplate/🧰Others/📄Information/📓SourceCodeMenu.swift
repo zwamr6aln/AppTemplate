@@ -13,6 +13,15 @@ enum 📁SourceFolder: String, CaseIterable, Identifiable {
     var id: String { self.rawValue }
 }
 
+struct 📓SourceCodeLink: View {
+    var body: some View {
+        NavigationLink {
+            📓SourceCodeMenu()
+        } label: {
+            Label("Source code", systemImage: "doc.plaintext")
+        }
+    }
+}
 
 struct 📓SourceCodeMenu: View {
     var body: some View {
@@ -22,13 +31,11 @@ struct 📓SourceCodeMenu: View {
             }
             
             📑BundleMainInfoDictionary()
-            
             🔗RepositoryLink()
         }
         .navigationTitle("Source code")
     }
 }
-
 
 struct 📓CodeSection: View {
     var 🄳irectoryPath: String

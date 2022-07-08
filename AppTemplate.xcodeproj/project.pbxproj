@@ -46,7 +46,7 @@
 		12E4A77B2850301300B2380B /* 📣ADBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 📣ADBanner.swift */; };
 		12E4A77D2850301300B2380B /* 📣ADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 📣ADView.swift */; };
 		12E4A77E2850301300B2380B /* 📣AppName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 📣AppName.swift */; };
-		12F4444C286D45DE0008A663 /* 🔩UniqueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F4444B286D45DE0008A663 /* 🔩UniqueData.swift */; };
+		12F4444C286D45DE0008A663 /* 🔩UniqueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F4444B286D45DE0008A663 /* 🔩UniqueItem.swift */; };
 		12F7B85B286C1C46002D3ADD /* 🩻TransparencyReport.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1220AD0B286C03CC00F07278 /* 🩻TransparencyReport.swift */; };
 /* End PBXBuildFile section */
 
@@ -153,7 +153,7 @@
 		12E4A7762850301300B2380B /* 📣ADBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADBanner.swift"; sourceTree = "<group>"; };
 		12E4A7782850301300B2380B /* 📣ADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADView.swift"; sourceTree = "<group>"; };
 		12E4A7792850301300B2380B /* 📣AppName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣AppName.swift"; sourceTree = "<group>"; };
-		12F4444B286D45DE0008A663 /* 🔩UniqueData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🔩UniqueData.swift"; sourceTree = "<group>"; };
+		12F4444B286D45DE0008A663 /* 🔩UniqueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🔩UniqueItem.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,7 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				12E4A75928502B5200B2380B /* 🛠OthersMenu.swift */,
-				12F4444B286D45DE0008A663 /* 🔩UniqueData.swift */,
+				12F4444B286D45DE0008A663 /* 🔩UniqueItem.swift */,
 				12E4A75D28502C6400B2380B /* 📄Information */,
 				12E4A77528502FF800B2380B /* 📣AD */,
 				127ECB26286149C900CB1BC3 /* 🛒InAppPurchase */,
@@ -364,7 +364,7 @@
 				12E4A77B2850301300B2380B /* 📣ADBanner.swift in Sources */,
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
 				12E4A77D2850301300B2380B /* 📣ADView.swift in Sources */,
-				12F4444C286D45DE0008A663 /* 🔩UniqueData.swift in Sources */,
+				12F4444C286D45DE0008A663 /* 🔩UniqueItem.swift in Sources */,
 				127ECB29286149EF00CB1BC3 /* 🛒StoreModel.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,

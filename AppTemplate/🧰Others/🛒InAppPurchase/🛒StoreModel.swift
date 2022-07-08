@@ -1,4 +1,6 @@
 
+let 🆔ProductIdentifier = ["PLACEHOLDER.adfree"]
+
 import StoreKit
 
 typealias Transaction = StoreKit.Transaction
@@ -61,7 +63,7 @@ class 🛒StoreModel: ObservableObject {
     @MainActor
     func 🅁equestProducts() async {
         do {
-            if let 📦 = try await Product.products(for: ["PLACEHOLDER.adfree"]).first { //FIXME: ID
+            if let 📦 = try await Product.products(for: 🆔ProductIdentifier).first {
                 🎫Product = 📦
             }
         } catch {

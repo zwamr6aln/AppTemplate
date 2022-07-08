@@ -27,7 +27,7 @@ struct 🩻TransparencyReportMenu: View {
             }
             
             NavigationLink {
-                🧑‍💻AboutDeveloperPublisher()
+                🧑‍💻AboutDeveloperPublisherMenu()
             } label: {
                 Label("Developer / Publisher", systemImage: "person")
             }
@@ -36,8 +36,17 @@ struct 🩻TransparencyReportMenu: View {
     }
 }
 
+struct 🧑‍💻AboutDeveloperPublisherLink: View {
+    var body: some View {
+        NavigationLink {
+            🧑‍💻AboutDeveloperPublisherMenu()
+        } label: {
+            Label("Developer / Publisher", systemImage: "person")
+        }
+    }
+}
 
-struct 🧑‍💻AboutDeveloperPublisher: View {
+struct 🧑‍💻AboutDeveloperPublisherMenu: View {
     var body: some View {
         List {
             Section {

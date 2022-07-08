@@ -30,9 +30,7 @@ struct 📄InformationMenu: View {
                         .padding(8)
                         .accessibilityLabel("About")
                 }
-            } header: {
-                Text("About")
-            }
+            } header: { Text("About") }
             
             
             let 🔗 = "https://apps.apple.com/app/id1111" //FIXME: AppStore URL
@@ -40,15 +38,11 @@ struct 📄InformationMenu: View {
                 Link(destination: URL(string: 🔗)!) {
                     HStack {
                         Label("Open AppStore page", systemImage: "link")
-                        
                         Spacer()
-                        
                         Image(systemName: "arrow.up.forward.app")
                     }
                 }
-            } footer: {
-                Text(🔗)
-            }
+            } footer: { Text(🔗) }
             
             
             Section {
@@ -70,20 +64,8 @@ struct 📄InformationMenu: View {
             
             
             🕒VersionHistoryLink()
-            
-            
-            NavigationLink {
-                📓SourceCodeMenu()
-            } label: {
-                Label("Source code", systemImage: "doc.plaintext")
-            }
-            
-            
-            NavigationLink {
-                🧑‍💻AboutDeveloperPublisher()
-            } label: {
-                Label("Developer / Publisher", systemImage: "person")
-            }
+            📓SourceCodeLink()
+            🧑‍💻AboutDeveloperPublisherLink()
         }
         .navigationTitle("Information")
     }
