@@ -40,7 +40,8 @@ struct 📓CodeSection: View {
     var 🄳irectoryPath: String
     var 📁URL: URL { Bundle.main.bundleURL.appendingPathComponent(🄳irectoryPath) }
     var 🏷FileName: [String] {
-        do { return try FileManager.default.contentsOfDirectory(atPath: 📁URL.path)
+        do {
+            return try FileManager.default.contentsOfDirectory(atPath: 📁URL.path)
         } catch { return [] }
     }
     
@@ -113,23 +114,6 @@ struct 🔗RepositoryLink: View {
                 }
             }
         } footer: { Text(Mirror🔗) }
-        
-        
-        // AppTemplate project for "🧰Others"
-        let Template🔗 = "https://github.com/FlipByBlink/AppTemplate" //FIXME: 再検討
-        Section {
-            Link(destination: URL(string: Template🔗)!) {
-                HStack {
-                    Label("Web Repository (Template)", systemImage: "link")
-                    
-                    Spacer()
-                    
-                    Image(systemName: "arrow.up.forward.app")
-                }
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-            }
-        } footer: { Text(Template🔗) }
     }
 }
 

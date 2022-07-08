@@ -1,6 +1,7 @@
 
 let 🆔ProductIdentifier = ["PLACEHOLDER.adfree"]
 
+
 import StoreKit
 
 typealias Transaction = StoreKit.Transaction
@@ -10,13 +11,8 @@ class 🛒StoreModel: ObservableObject {
     @Published var 🎫Product: Product?
     @Published var 🎫PurchasedProduct: Product?
     
-    var 🚩Unconnected: Bool {
-        🎫Product == nil
-    }
-    
-    var 🚩Purchased: Bool {
-        🎫PurchasedProduct != nil
-    }
+    var 🚩Unconnected: Bool { 🎫Product == nil }
+    var 🚩Purchased: Bool { 🎫PurchasedProduct != nil }
     
     var 🤖UpdateListenerTask: Task<Void, Error>? = nil
     
@@ -34,9 +30,7 @@ class 🛒StoreModel: ObservableObject {
         }
     }
     
-    deinit {
-        🤖UpdateListenerTask?.cancel()
-    }
+    deinit { 🤖UpdateListenerTask?.cancel() }
     
     
     func 📪ListenForTransactions() -> Task<Void, Error> {
@@ -66,9 +60,7 @@ class 🛒StoreModel: ObservableObject {
             if let 📦 = try await Product.products(for: 🆔ProductIdentifier).first {
                 🎫Product = 📦
             }
-        } catch {
-            print("Failed product request from the App Store server: \(error)")
-        }
+        } catch { print(#function, "Failed product request from the App Store server: \(error)") }
     }
     
     
@@ -88,10 +80,8 @@ class 🛒StoreModel: ObservableObject {
                 
                 //Always finish a transaction.
                 await 🧾Transaction.finish()
-            case .userCancelled, .pending:
-                return
-            default:
-                return
+            case .userCancelled, .pending: return
+            default: return
         }
     }
     
@@ -122,9 +112,7 @@ class 🛒StoreModel: ObservableObject {
                 print(🧾Transaction.debugDescription)
                 
                 🆕PurchasedProduct = 🎫
-            } catch {
-                print(#function, error)
-            }
+            } catch { print(#function, error) }
         }
         
         🎫PurchasedProduct = 🆕PurchasedProduct

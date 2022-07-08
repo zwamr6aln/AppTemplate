@@ -35,7 +35,7 @@ struct 🛠AppMenu: View {
                 📣ADMenuLink()
                 📄InformationMenuLink()
             }
-            .navigationTitle("AppName") //FIXME: App DisplayName
+            .navigationTitle("Placeholder")
             .toolbar { ﹀CloseMenuButton($🚩ShowMenu) }
         }
     }

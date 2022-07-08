@@ -45,9 +45,7 @@ struct 🛒PurchaseSection: View {
                     .disabled(🚩BuyingNow)
                     .buttonStyle(.borderedProminent)
                     .overlay {
-                        if 🚩BuyingNow {
-                            ProgressView()
-                        }
+                        if 🚩BuyingNow { ProgressView() }
                     }
                     .alert(isPresented: $🚨ShowError) {
                         Alert(title: Text("Error"),
@@ -64,9 +62,7 @@ struct 🛒PurchaseSection: View {
             } header: {
                 Text("In-App Purchase")
             } footer: {
-                if 🛒.🚩Purchased {
-                    Text("Purchased")
-                }
+                if 🛒.🚩Purchased { Text("Purchased") }
             }
             
             
