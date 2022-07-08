@@ -98,7 +98,7 @@
 "Open AD link" = "広告のリンクを開く";
 "OK" = "了解しました";
 
-"🌏ADDescription" = "広告としてAppStoreアプリケーションに関するバナーを表示します。「体温登録」デベロッパーによるアプリ群が表示対象となります。入力完了画面でバナー広告が表示されます。それはアプリを5回起動すると有効になります。";
+"🌏ADDescription" = "広告としてAppStoreアプリケーションに関するバナーを表示します。「?」デベロッパーによるアプリ群が表示対象となります。広告バナーはアプリを5回起動すると有効になります。";
 
 "Simple and normal ebook reader (for fixed-layout). Only a special feature. Turn a page with slightly longish voluntary blink." = "シンプルで一般的な電子書籍リーダー(固定レイアウト向け)。特殊な機能は1つだけ。目を閉じる時間を意識的にわずかに長くさせた瞬きでページめくりができます。";
 
