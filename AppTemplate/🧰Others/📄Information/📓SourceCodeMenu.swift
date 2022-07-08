@@ -2,7 +2,6 @@
 import SwiftUI
 
 enum 📁SourceFolder: String, CaseIterable, Identifiable {
-    
     case main
     case 🧩Sub
     case 🧰Others
@@ -39,17 +38,10 @@ struct 📓SourceCodeMenu: View {
 
 struct 📓CodeSection: View {
     var 🄳irectoryPath: String
-    
-    var 📁URL: URL {
-        Bundle.main.bundleURL.appendingPathComponent(🄳irectoryPath)
-    }
-    
+    var 📁URL: URL { Bundle.main.bundleURL.appendingPathComponent(🄳irectoryPath) }
     var 🏷FileName: [String] {
-        do {
-            return try FileManager.default.contentsOfDirectory(atPath: 📁URL.path)
-        } catch {
-            return []
-        }
+        do { return try FileManager.default.contentsOfDirectory(atPath: 📁URL.path)
+        } catch { return [] }
     }
     
     var body: some View {
@@ -61,18 +53,14 @@ struct 📓CodeSection: View {
                 }
             }
             
-            if 🏷FileName.isEmpty {
-                Text("🐛Bug")
-            }
+            if 🏷FileName.isEmpty { Text("🐛Bug") }
         } header: {
             Text(🄳irectoryPath)
                 .textCase(.none)
         }
     }
     
-    init(_ ⓓirectoryPath: String) {
-        🄳irectoryPath = ⓓirectoryPath
-    }
+    init(_ ⓓirectoryPath: String) { 🄳irectoryPath = ⓓirectoryPath }
 }
 
 
@@ -107,10 +95,7 @@ struct 🔗RepositoryLink: View {
                     Image(systemName: "arrow.up.forward.app")
                 }
             }
-        } footer: {
-            Text(🔗)
-        }
-        
+        } footer: { Text(🔗) }
         
         let Mirror🔗 = "https://gitlab.com/FlipByBlink/AAAA_Mirror" //FIXME: GitLab URL
         Section {
@@ -127,9 +112,8 @@ struct 🔗RepositoryLink: View {
                     Image(systemName: "arrow.up.forward.app")
                 }
             }
-        } footer: {
-            Text(Mirror🔗)
-        }
+        } footer: { Text(Mirror🔗) }
+        
         
         // AppTemplate project for "🧰Others"
         let Template🔗 = "https://github.com/FlipByBlink/AppTemplate" //FIXME: 再検討
@@ -145,9 +129,7 @@ struct 🔗RepositoryLink: View {
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
             }
-        } footer: {
-            Text(Template🔗)
-        }
+        } footer: { Text(Template🔗) }
     }
 }
 
