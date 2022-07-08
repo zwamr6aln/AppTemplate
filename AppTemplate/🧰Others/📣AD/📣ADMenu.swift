@@ -28,13 +28,9 @@ struct 📣ADMenu: View {
             Section {
                 Text("🌏ADDescription") //TODO: Localizable.strings
                     .padding()
-            } header: {
-                Text("About")
-            }
-            
+            } header: { Text("About") }
             
             🛒PurchaseSection()
-            
             
             Section {
                 ForEach(📣AppName.allCases) { 🏷 in

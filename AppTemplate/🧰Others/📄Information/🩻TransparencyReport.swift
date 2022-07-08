@@ -10,12 +10,9 @@ struct 🩻TransparencyReportLink: View {
             } label: {
                 Label("Transparency Report", systemImage: "questionmark.app.dashed")
             }
-        } header: {
-            Text("🩻TransparencyReport")
-        }
+        } header: { Text("🩻TransparencyReport") }
     }
 }
-
 
 struct 🩻TransparencyReportMenu: View {
     var body: some View {
@@ -51,10 +48,7 @@ struct 🧑‍💻AboutDeveloperPublisherMenu: View {
         List {
             Section {
                 Text("Individual")
-            } header: {
-                Text("The System")
-            }
-            
+            } header: { Text("The System") }
             
             Section {
                 Text("山下 亮")
@@ -66,12 +60,8 @@ struct 🧑‍💻AboutDeveloperPublisherMenu: View {
                 Text("Yamashita Ryo (alphabet)")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
-            } header: {
-                Text("Name")
-            } footer: {
-                Text("only one person")
-            }
-            
+            } header: { Text("Name")
+            } footer: { Text("only one person") }
             
             Section {
                 HStack {
@@ -94,15 +84,10 @@ struct 🧑‍💻AboutDeveloperPublisherMenu: View {
                     Text("Japanese")
                         .foregroundStyle(.secondary)
                 }
-            } header: {
-                Text("identity / circumstance / background")
-            } footer: {
-                Text("As of 2021")
-            }
-            
+            } header: { Text("identity / circumstance / background")
+            } footer: { Text("As of 2021") }
             
             📆TimelineSection()
-            
             
             Section {
                 Image("Developer_Publisher")
@@ -111,11 +96,8 @@ struct 🧑‍💻AboutDeveloperPublisherMenu: View {
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     .padding()
                     .opacity(0.5)
-            } header: {
-                Text("Image")
-            } footer: {
-                Text("Taken on 2021-11")
-            }
+            } header: { Text("Image")
+            } footer: { Text("Taken on 2021-11") }
         }
         .navigationTitle("Developer / Publisher")
     }
@@ -127,18 +109,16 @@ struct 📆TimelineSection: View {
     
     var body: some View {
         Section {
-        ForEach(📃Text, id: \.self) { 📃 in
-            HStack {
-                Text(📃.first ?? "🐛")
-                    .font(.caption2)
-                    .padding(8)
-                Text(LocalizedStringKey(📃.last ?? "🐛"))
-                    .font(.caption)
+            ForEach(📃Text, id: \.self) { 📃 in
+                HStack {
+                    Text(📃.first ?? "🐛")
+                        .font(.caption2)
+                        .padding(8)
+                    Text(LocalizedStringKey(📃.last ?? "🐛"))
+                        .font(.caption)
+                }
             }
-        }
-        } header: {
-            Text("Timeline")
-        }
+        } header: { Text("Timeline") }
     }
 }
 
