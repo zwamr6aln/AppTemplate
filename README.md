@@ -2,7 +2,7 @@
 
 <br>
 
-![](AppTemplate/Assets.xcassets/LaunchIcon.imageset/LaunchIcon.png)
+![画像](AppTemplate/Assets.xcassets/LaunchIcon.imageset/LaunchIcon.png)
 
 <br>
 
