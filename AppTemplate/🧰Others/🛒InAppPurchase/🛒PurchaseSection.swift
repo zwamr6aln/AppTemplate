@@ -81,16 +81,14 @@ struct 🛒ProductPreview: View {
             Image("ProductPreview_Before")
                 .resizable()
                 .scaledToFit()
-                .shadow(radius: 2)
             
             Image(systemName: "arrow.right")
                 .font(.title2.weight(.semibold))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
             
             Image("ProductPreview_After")
                 .resizable()
                 .scaledToFit()
-                .shadow(radius: 2)
         }
         .padding(.horizontal)
         .padding(24)

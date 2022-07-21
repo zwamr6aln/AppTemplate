@@ -26,7 +26,6 @@ struct 🕒VersionHistoryLink: View {
 }
 
 let 🕒LatestVersionNumber = "1.1"
-
 let 🕒LatestVersionDescription = """
 ==== English ====
 - AAAA
