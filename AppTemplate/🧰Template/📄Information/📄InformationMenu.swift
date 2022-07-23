@@ -68,7 +68,9 @@ struct 🔗AppStoreLink: View {
                     Image(systemName: "arrow.up.forward.app")
                 }
             }
-        } footer: { Text(🔗AppStoreProductURL.description) }
+        } footer: {
+            Text(🔗AppStoreProductURL.description)
+        }
     }
 }
 
