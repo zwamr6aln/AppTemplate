@@ -23,6 +23,8 @@ translations of strings from Apple OS
 
 https://developer.apple.com/download/all/?q=Glossaries
 
+https://applelocalization.com
+
 
 ### Source code bundle
 TARGETS / Build Phases / Copy Files
