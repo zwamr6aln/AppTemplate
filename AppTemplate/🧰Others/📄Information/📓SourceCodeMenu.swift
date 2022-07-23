@@ -1,4 +1,8 @@
 
+let 🔗WebRepositoryURL = URL(string: "https://github.com/FlipByBlink/AAAA")!
+let 🔗WebRepositoryURL_Mirror = URL(string: "https://gitlab.com/FlipByBlink/AAAA_Mirror")!
+
+
 import SwiftUI
 
 enum 📁SourceFolder: String, CaseIterable, Identifiable {
@@ -61,7 +65,9 @@ struct 📓CodeSection: View {
         }
     }
     
-    init(_ ⓓirectoryPath: String) { 🄳irectoryPath = ⓓirectoryPath }
+    init(_ ⓓirectoryPath: String) {
+        🄳irectoryPath = ⓓirectoryPath
+    }
 }
 
 
@@ -85,9 +91,8 @@ struct 📑BundleMainInfoDictionary: View {
 
 struct 🔗RepositoryLink: View {
     var body: some View {
-        let 🔗 = "https://github.com/FlipByBlink/AAAA" //FIXME: GitHub URL
         Section {
-            Link(destination: URL(string: 🔗)!) {
+            Link(destination: 🔗WebRepositoryURL) {
                 HStack {
                     Label("Web Repository", systemImage: "link")
                     
@@ -96,11 +101,10 @@ struct 🔗RepositoryLink: View {
                     Image(systemName: "arrow.up.forward.app")
                 }
             }
-        } footer: { Text(🔗) }
+        } footer: { Text(🔗WebRepositoryURL.description) }
         
-        let Mirror🔗 = "https://gitlab.com/FlipByBlink/AAAA_Mirror" //FIXME: GitLab URL
         Section {
-            Link(destination: URL(string: Mirror🔗)!) {
+            Link(destination: 🔗WebRepositoryURL_Mirror) {
                 HStack {
                     Label("Web Repository", systemImage: "link")
                     
@@ -113,7 +117,7 @@ struct 🔗RepositoryLink: View {
                     Image(systemName: "arrow.up.forward.app")
                 }
             }
-        } footer: { Text(Mirror🔗) }
+        } footer: { Text(🔗WebRepositoryURL_Mirror.description) }
     }
 }
 

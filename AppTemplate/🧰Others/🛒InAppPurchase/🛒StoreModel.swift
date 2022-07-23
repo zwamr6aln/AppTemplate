@@ -1,5 +1,5 @@
 
-let 🆔ProductIdentifier = ["PLACEHOLDER.adfree"]
+let 🛒InAppPurchaseProductID = ["PLACEHOLDER.adfree"]
 
 
 import StoreKit
@@ -57,7 +57,7 @@ class 🛒StoreModel: ObservableObject {
     @MainActor
     func 🅁equestProducts() async {
         do {
-            if let 📦 = try await Product.products(for: 🆔ProductIdentifier).first {
+            if let 📦 = try await Product.products(for: 🛒InAppPurchaseProductID).first {
                 🎫Product = 📦
             }
         } catch { print(#function, "Failed product request from the App Store server: \(error)") }
@@ -135,3 +135,7 @@ class 🛒StoreModel: ObservableObject {
 public enum 🚨StoreError: Error {
     case failedVerification
 }
+
+
+///Ref: Sample code "Implementing a store in your app using the StoreKit API | Apple Developer Documentation"
+///https://developer.apple.com/documentation/storekit/in-app_purchase/implementing_a_store_in_your_app_using_the_storekit_api

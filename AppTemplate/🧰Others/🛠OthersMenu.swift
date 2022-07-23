@@ -8,7 +8,6 @@ struct 🛠OthersMenu: View {
     }
 }
 
-
 struct ﹀CloseMenuButton: ToolbarContent {
     @Binding var 🚩ShowMenu: Bool
     

@@ -1,4 +1,15 @@
 
+let 🔗AppStoreProductURL = URL(string: "https://apps.apple.com/app/id1111")!
+
+let 👤PrivacyPolicy = """
+2022-AA-AA
+
+(English)This application don't collect user infomation.
+
+(Japanese)このアプリ自身において、ユーザーの情報を一切収集しません。
+"""
+
+
 import SwiftUI
 
 struct 📄InformationMenuLink: View {
@@ -39,7 +50,7 @@ struct 📰DescriptionSection: View {
             } label: {
                 Text("🌏AppStoreDescription")
                     .font(.subheadline)
-                    .lineLimit(4)
+                    .lineLimit(7)
                     .padding(8)
                     .accessibilityLabel("About")
             }
@@ -49,16 +60,15 @@ struct 📰DescriptionSection: View {
 
 struct 🔗AppStoreLink: View {
     var body: some View {
-        let 🔗 = "https://apps.apple.com/app/id1111" //FIXME: AppStore URL
         Section {
-            Link(destination: URL(string: 🔗)!) {
+            Link(destination: 🔗AppStoreProductURL) {
                 HStack {
                     Label("Open AppStore page", systemImage: "link")
                     Spacer()
                     Image(systemName: "arrow.up.forward.app")
                 }
             }
-        } footer: { Text(🔗) }
+        } footer: { Text(🔗AppStoreProductURL.description) }
     }
 }
 
@@ -66,16 +76,10 @@ struct 👤PrivacyPolicySection: View {
     var body: some View {
         Section {
             NavigationLink {
-                Text("""
-                2022-AA-AA
-
-                (English)This application don't collect user infomation.
-
-                (Japanese)このアプリ自身において、ユーザーの情報を一切収集しません。
-                """) //FIXME: Privacy Policy
-                .padding(32)
-                .textSelection(.enabled)
-                .navigationTitle("Privacy Policy")
+                Text(👤PrivacyPolicy)
+                    .padding(32)
+                    .textSelection(.enabled)
+                    .navigationTitle("Privacy Policy")
             } label: {
                 Label("Privacy Policy", systemImage: "person.text.rectangle")
             }

@@ -17,7 +17,6 @@ struct 🛠MenuButton: View {
     }
 }
 
-
 struct 🛠AppMenu: View {
     @EnvironmentObject var 📱: 📱AppModel
     

@@ -1,4 +1,22 @@
 
+let 🕒LatestVersionNumber = "1.1"
+
+let 🕒LatestVersionDescription = """
+==== English ====
+- AAAA
+- Various bugfixes and improvements.
+==== Japanese(native) ====
+- ああああ
+- いくつかの改善やバグ修正を行いました。
+"""
+
+let 🕒PastVersionHistory = """
+🕒 Version 1.0 : 2022-AA-AA
+Initial release
+最初のリリース
+"""
+
+
 import SwiftUI
 
 struct 🕒VersionHistoryLink: View {
@@ -25,16 +43,6 @@ struct 🕒VersionHistoryLink: View {
     }
 }
 
-let 🕒LatestVersionNumber = "1.1"
-let 🕒LatestVersionDescription = """
-==== English ====
-- AAAA
-- Various bugfixes and improvements.
-==== Japanese(native) ====
-- ああああ
-- いくつかの改善やバグ修正を行いました。
-"""
-
 var 🕒VersionHistory: String {
     var 📃 = "🕒 Version " + 🕒LatestVersionNumber + " : "
     📃 += "(builded on " + Date.now.formatted(date: .numeric, time: .omitted) + ")\n"
@@ -42,9 +50,3 @@ var 🕒VersionHistory: String {
     📃 += 🕒PastVersionHistory
     return 📃
 }
-
-let 🕒PastVersionHistory = """
-🕒 Version 1.0 : 2022-AA-AA
-Initial release
-最初のリリース
-"""
