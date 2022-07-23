@@ -2,18 +2,17 @@
 import SwiftUI
 
 struct 🛠MenuButton: View {
-    @State private var 🚩ShowMenu = false
+    @EnvironmentObject var 📱: 📱AppModel
     
     var body: some View {
         Button {
-            🚩ShowMenu = true
-            UISelectionFeedbackGenerator().selectionChanged()
+            📱.🚩ShowMenu = true
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
         } label: {
             Label("Open menu", systemImage: "gear")
         }
-        .sheet(isPresented: $🚩ShowMenu) {
-            🛠AppMenu($🚩ShowMenu)
-                .onDisappear { 🚩ShowMenu = false }
+        .sheet(isPresented: $📱.🚩ShowMenu) {
+            🛠AppMenu()
         }
     }
 }
@@ -21,7 +20,6 @@ struct 🛠MenuButton: View {
 
 struct 🛠AppMenu: View {
     @EnvironmentObject var 📱: 📱AppModel
-    @Binding var 🚩ShowMenu: Bool
     
     var body: some View {
         NavigationView {
@@ -36,11 +34,8 @@ struct 🛠AppMenu: View {
                 📄InformationMenuLink()
             }
             .navigationTitle("Placeholder")
-            .toolbar { ﹀CloseMenuButton($🚩ShowMenu) }
+            .toolbar { ﹀CloseMenuButton($📱.🚩ShowMenu) }
         }
-    }
-    
-    init(_ 🚩: Binding<Bool>) {
-        _🚩ShowMenu = 🚩
+        .onDisappear { 📱.🚩ShowMenu = false }
     }
 }

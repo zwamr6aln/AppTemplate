@@ -3,6 +3,6 @@ import SwiftUI
 
 class 📱AppModel: ObservableObject {
     
-    // AppModel
+    @Published var 🚩ShowMenu: Bool = false
     
 }
