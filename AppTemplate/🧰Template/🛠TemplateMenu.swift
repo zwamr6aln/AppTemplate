@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct 🛠OthersMenu: View {
+struct 🛠TemplateMenu: View {
     var body: some View {
         📣ADMenuLink()
         📄InformationMenuLink()

@@ -10,7 +10,7 @@ struct ContentView: View {
             List {
                 Section {
                     🛠MenuButton()
-                } header: { Text("🛠MenuButton") }
+                } header: { Text("MenuButton") }
                 
                 🩻TransparencyReportLink()
                 
@@ -28,15 +28,15 @@ struct ContentView: View {
                             .minimumScaleFactor(0.1)
                             .navigationTitle("debugDescription")
                     }
-                } header: { Text("🛒Product") }
+                } header: { Text("Product") }
                 
                 Section {
                     🖨printLog()
-                } header: { Text("🖨printLog") }
+                } header: { Text("printLog") }
                 
                 Section {
                     🔗OpenSystemSetting()
-                } header: { Text("🔗OpenSystemSetting") }
+                } header: { Text("OpenSystemSetting") }
             }
             .listStyle(.plain)
             .navigationTitle("AppTemplate")

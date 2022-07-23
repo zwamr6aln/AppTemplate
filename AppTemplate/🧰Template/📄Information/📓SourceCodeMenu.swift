@@ -8,7 +8,7 @@ import SwiftUI
 enum 📁SourceFolder: String, CaseIterable, Identifiable {
     case main
     case 🧩Sub
-    case 🧰Others
+    case 🧰Template
     case 📄Information
     case 📣AD
     case 🛒InAppPurchase
