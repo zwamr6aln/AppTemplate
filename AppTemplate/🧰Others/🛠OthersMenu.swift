@@ -1,6 +1,14 @@
 
 import SwiftUI
 
+struct 🛠OthersMenu: View {
+    var body: some View {
+        📣ADMenuLink()
+        📄InformationMenuLink()
+    }
+}
+
+
 struct ﹀CloseMenuButton: ToolbarContent {
     @Binding var 🚩ShowMenu: Bool
     

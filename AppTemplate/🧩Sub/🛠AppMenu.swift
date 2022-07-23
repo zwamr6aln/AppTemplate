@@ -30,8 +30,7 @@ struct 🛠AppMenu: View {
                     }
                 } header: { Text("Option") }
                 
-                📣ADMenuLink()
-                📄InformationMenuLink()
+                🛠OthersMenu()
             }
             .navigationTitle("Placeholder")
             .toolbar { ﹀CloseMenuButton($📱.🚩ShowMenu) }
