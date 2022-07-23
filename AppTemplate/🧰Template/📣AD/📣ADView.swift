@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct 📣ADView: View {
-    var 🄰ppName: 📣AppName
+    @State private var 🄰ppName: 📣AppName
     
     var body: some View {
         Link(destination: 🄰ppName.🔗URL) {
