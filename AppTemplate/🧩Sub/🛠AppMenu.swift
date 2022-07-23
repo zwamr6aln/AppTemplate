@@ -40,5 +40,7 @@ struct 🛠AppMenu: View {
         }
     }
     
-    init(_ 🚩: Binding<Bool>) { _🚩ShowMenu = 🚩 }
+    init(_ 🚩: Binding<Bool>) {
+        _🚩ShowMenu = 🚩
+    }
 }

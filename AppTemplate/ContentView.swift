@@ -41,7 +41,9 @@ struct ContentView: View {
             .listStyle(.plain)
             .navigationTitle("AppTemplate")
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) { 🛠MenuButton() }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    🛠MenuButton()
+                }
             }
         }
         .overlay(alignment: .bottom) { 📣ADBanner() }

@@ -6,6 +6,10 @@
 
 <br>
 
+## 🔗 AppStore link
+
+[apps.apple.com/app/id1111](https://apps.apple.com/app/id1111)
+
 
 ## 👆 Handiwork MEMO
 
@@ -74,11 +78,6 @@ Info.plist / Privacy - Health Share Usage Description
 Info.plist / Privacy - Health Update Usage Description
 
 "Activate HeakthKit permission to record data."
-
-
-## 🔗 AppStore link
-
-[apps.apple.com/app/id1111](https://apps.apple.com/app/id1111)
 
 
 <!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
