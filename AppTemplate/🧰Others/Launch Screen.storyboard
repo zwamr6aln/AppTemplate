@@ -23,8 +23,8 @@
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Li2-hm-cyw" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="GMH-l8-MEX"/>
-                            <constraint firstItem="Li2-hm-cyw" firstAttribute="centerY" secondItem="Bcu-3y-fUS" secondAttribute="centerY" id="RZb-Bb-9pG"/>
+                            <constraint firstItem="Li2-hm-cyw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GMH-l8-MEX"/>
+                            <constraint firstItem="Li2-hm-cyw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="5" id="RZb-Bb-9pG"/>
                         </constraints>
                     </view>
                 </viewController>

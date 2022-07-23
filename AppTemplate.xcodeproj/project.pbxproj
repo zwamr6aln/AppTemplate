@@ -224,7 +224,6 @@
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
 				127ECB25286149B400CB1BC3 /* 🧩Sub */,
 				12E4A75828502AF800B2380B /* 🧰Others */,
-				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
 			);
@@ -247,6 +246,7 @@
 				12E4A75D28502C6400B2380B /* 📄Information */,
 				12E4A77528502FF800B2380B /* 📣AD */,
 				127ECB26286149C900CB1BC3 /* 🛒InAppPurchase */,
+				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
 			);
 			path = "🧰Others";
 			sourceTree = "<group>";
