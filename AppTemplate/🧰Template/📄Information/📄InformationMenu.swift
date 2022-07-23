@@ -25,7 +25,7 @@ struct 📄InformationMenuLink: View {
 struct 📄InformationMenu: View {
     var body: some View {
         List {
-            📰DescriptionSection()
+            📰AppStoreDescriptionSection()
             🔗AppStoreLink()
             👤PrivacyPolicySection()
             🕒VersionHistoryLink()
@@ -36,19 +36,19 @@ struct 📄InformationMenu: View {
     }
 }
 
-struct 📰DescriptionSection: View {
+struct 📰AppStoreDescriptionSection: View {
     var body: some View {
         Section {
             NavigationLink {
                 ScrollView {
-                    Text("🌏AppStoreDescription")
+                    Text("📃", tableName: "AppStoreDescription")
                         .padding()
                 }
                 .navigationBarTitle("About")
                 .navigationBarTitleDisplayMode(.inline)
                 .textSelection(.enabled)
             } label: {
-                Text("🌏AppStoreDescription")
+                Text("📃", tableName: "AppStoreDescription")
                     .font(.subheadline)
                     .lineLimit(7)
                     .padding(8)
