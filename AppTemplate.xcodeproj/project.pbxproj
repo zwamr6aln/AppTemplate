@@ -203,6 +203,14 @@
 			path = "🛒InAppPurchase";
 			sourceTree = "<group>";
 		};
+		1299C381288CC2BE0086522B /* ⚠️WorkInProgress */ = {
+			isa = PBXGroup;
+			children = (
+				1220AD0B286C03CC00F07278 /* 🩻TransparencyReport.swift */,
+			);
+			path = "⚠️WorkInProgress";
+			sourceTree = "<group>";
+		};
 		12E4A73B285027F600B2380B = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +239,7 @@
 				12E4A75828502AF800B2380B /* 🧰Template */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
+				1299C381288CC2BE0086522B /* ⚠️WorkInProgress */,
 			);
 			path = AppTemplate;
 			sourceTree = "<group>";
@@ -263,7 +272,6 @@
 				12E4A75E28502C9F00B2380B /* 🕒VersionHistory.swift */,
 				12DDDDAE288C1C990055A073 /* 🧑‍💻AboutDeveloperPublisher.swift */,
 				12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */,
-				1220AD0B286C03CC00F07278 /* 🩻TransparencyReport.swift */,
 			);
 			path = "📄Information";
 			sourceTree = "<group>";
