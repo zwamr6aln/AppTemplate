@@ -1,13 +1,6 @@
 
 let 🕒VersionNumber = "2.0"
 
-let 🕒VersionDescription = """
-AAAA
-Various bugfixes and improvements.
-ああああ
-いくつかの改善やバグ修正を行いました。
-"""
-
 
 import SwiftUI
 
@@ -16,10 +9,17 @@ struct 🕒VersionHistoryLink: View {
         Section {
             NavigationLink {
                 List {
-                    let 📅 = Date.now.formatted(date: .long, time: .omitted)
-                    🕒VersionSection((🕒VersionNumber,
-                                      🕒VersionDescription,
-                                      "builded on \(📅)"))
+                    Section {
+                        Text(LocalizedStringKey(🕒VersionNumber), tableName: "VersionDescription")
+                            .font(.subheadline)
+                            .padding()
+                    } header: {
+                        Text(🕒VersionNumber)
+                    } footer: {
+                        let 📅 = Date.now.formatted(date: .long, time: .omitted)
+                        Text("builded on \(📅)")
+                    }
+                    .headerProminence(.increased)
                     
                     ForEach(🕒VersionHistoryData, id: \.self.number) { 📃 in
                         🕒VersionSection(📃)
@@ -43,7 +43,7 @@ struct 🕒VersionSection: View {
     
     var body: some View {
         Section {
-            Text(📃.text)
+            Text(LocalizedStringKey(📃.number), tableName: "VersionDescription")
                 .font(.subheadline)
                 .padding()
         } header: {
@@ -59,18 +59,9 @@ struct 🕒VersionSection: View {
     }
 }
 
-typealias 🕒VersionFormat = (number: String, text: String, date: LocalizedStringKey)
+typealias 🕒VersionFormat = (number: String, date: String)
 
 let 🕒VersionHistoryData: [🕒VersionFormat] = [
-    ("1.2","""
-            Third release
-            3回目のリリース
-            ""","2022-03-01"),
-    ("1.1","""
-            Second release
-            2回目のリリース
-            ""","2022-02-01"),
-    ("1.0","""
-            Initial release
-            最初のリリース
-            ""","2022-01-01")]
+    ("1.2","2022-03-01"),
+    ("1.1","2022-02-01"),
+    ("1.0","2022-01-01")]
