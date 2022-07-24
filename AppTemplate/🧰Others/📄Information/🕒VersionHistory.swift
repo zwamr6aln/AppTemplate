@@ -13,7 +13,7 @@ struct 🕒VersionHistoryLink: View {
             NavigationLink {
                 List {
                     Section {
-                        Text(LocalizedStringKey(🕒VersionNumber), tableName: "VersionDescription")
+                        Text(LocalizedStringKey(🕒VersionNumber), tableName: "🌏VersionDescription")
                             .font(.subheadline)
                             .padding()
                     } header: {
@@ -44,7 +44,7 @@ struct 🕒PastVersionSection: View {
     var body: some View {
         ForEach(🕒PastVersion, id: \.self.ⓝumber) { 📃 in
             Section {
-                Text(LocalizedStringKey(📃.ⓝumber), tableName: "VersionDescription")
+                Text(LocalizedStringKey(📃.ⓝumber), tableName: "🌏VersionDescription")
                     .font(.subheadline)
                     .padding()
             } header: {
