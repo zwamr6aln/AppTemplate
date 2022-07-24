@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct 🛠MenuButton: View {
+struct 🛠MenuButton: View { // ⚙️
     @EnvironmentObject var 📱: 📱AppModel
     
     var body: some View {
