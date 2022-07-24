@@ -31,7 +31,7 @@ struct 🛠AppMenu: View {
                 
                 🛠TemplateMenu()
             }
-            .navigationTitle("Placeholder")
+            .navigationTitle("AppTemplate")
             .toolbar { ﹀CloseMenuButton($📱.🚩ShowMenu) }
         }
         .onDisappear { 📱.🚩ShowMenu = false }

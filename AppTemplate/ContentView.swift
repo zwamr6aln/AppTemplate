@@ -8,13 +8,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                Section { 🛠MenuButton() }
-                
                 🔗OpenSystemSetting()
                 
                 🕒VersionHistoryLink()
-                
-                
                 
                 🩻TransparencyReportLink()
                 
@@ -35,9 +31,11 @@ struct ContentView: View {
                 } header: { Text("In-App Purchase Product") }
                 
                 Section { 🖨printLog() }
+                
+                Section { 🛠MenuButton() }
             }
             .listStyle(.plain)
-            .navigationTitle("AppTemplate")
+            .navigationTitle("ContentView")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     🛠MenuButton()
