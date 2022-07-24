@@ -1,6 +1,9 @@
 
 let 🕒VersionNumber = "2.0"
 
+let 🕒PastVersion: [(ⓝumber: String, ⓓate: String)] = [("1.2","2022-03-01"),
+                                                       ("1.1","2022-02-01"),
+                                                       ("1.0","2022-01-01")]
 
 import SwiftUI
 
@@ -21,9 +24,8 @@ struct 🕒VersionHistoryLink: View {
                     }
                     .headerProminence(.increased)
                     
-                    ForEach(🕒VersionHistoryData, id: \.self.0) { 📃 in
-                        🕒VersionSection(📃)
-                    }
+                    
+                    🕒PastVersionSection()
                 }
                 .navigationBarTitle("Version History")
                 .navigationBarTitleDisplayMode(.inline)
@@ -38,29 +40,19 @@ struct 🕒VersionHistoryLink: View {
     }
 }
 
-struct 🕒VersionSection: View {
-    var ⓝumber: String
-    var ⓓate: String
-    
+struct 🕒PastVersionSection: View {
     var body: some View {
-        Section {
-            Text(LocalizedStringKey(ⓝumber), tableName: "VersionDescription")
-                .font(.subheadline)
-                .padding()
-        } header: {
-            Text(ⓝumber)
-        } footer: {
-            Text(ⓓate)
+        ForEach(🕒PastVersion, id: \.self.ⓝumber) { 📃 in
+            Section {
+                Text(LocalizedStringKey(📃.ⓝumber), tableName: "VersionDescription")
+                    .font(.subheadline)
+                    .padding()
+            } header: {
+                Text(📃.ⓝumber)
+            } footer: {
+                Text(📃.ⓓate)
+            }
+            .headerProminence(.increased)
         }
-        .headerProminence(.increased)
-    }
-    
-    init(_ 📃: (String, String)) {
-        ⓝumber = 📃.0
-        ⓓate = 📃.1
     }
 }
-
-let 🕒VersionHistoryData: [(String, String)] = [("1.2","2022-03-01"),
-                                                ("1.1","2022-02-01"),
-                                                ("1.0","2022-01-01")]
