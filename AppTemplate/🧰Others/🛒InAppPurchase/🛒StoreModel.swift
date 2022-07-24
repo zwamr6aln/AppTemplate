@@ -60,7 +60,9 @@ class 🛒StoreModel: ObservableObject {
             if let 📦 = try await Product.products(for: 🛒InAppPurchaseProductID).first {
                 🎫Product = 📦
             }
-        } catch { print(#function, "Failed product request from the App Store server: \(error)") }
+        } catch {
+            print(#function, "Failed product request from the App Store server: \(error)")
+        }
     }
     
     
@@ -112,7 +114,9 @@ class 🛒StoreModel: ObservableObject {
                 print(🧾Transaction.debugDescription)
                 
                 🆕PurchasedProduct = 🎫
-            } catch { print(#function, error) }
+            } catch {
+                print(#function, error)
+            }
         }
         
         🎫PurchasedProduct = 🆕PurchasedProduct
