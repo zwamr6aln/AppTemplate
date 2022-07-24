@@ -8,6 +8,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                🕒VersionHistoryLink()
+                
+                
+                
                 Section {
                     🛠MenuButton()
                 } header: { Text("MenuButton") }
