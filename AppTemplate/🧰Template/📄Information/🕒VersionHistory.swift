@@ -21,7 +21,7 @@ struct 🕒VersionHistoryLink: View {
                     }
                     .headerProminence(.increased)
                     
-                    ForEach(🕒VersionHistoryData, id: \.self.number) { 📃 in
+                    ForEach(🕒VersionHistoryData, id: \.self.0) { 📃 in
                         🕒VersionSection(📃)
                     }
                 }
@@ -39,29 +39,29 @@ struct 🕒VersionHistoryLink: View {
 }
 
 struct 🕒VersionSection: View {
-    var 📃: 🕒VersionFormat
+    var ⓝumber: String
+    var ⓓate: String
     
     var body: some View {
         Section {
-            Text(LocalizedStringKey(📃.number), tableName: "VersionDescription")
+            Text(LocalizedStringKey(ⓝumber), tableName: "VersionDescription")
                 .font(.subheadline)
                 .padding()
         } header: {
-            Text(📃.number)
+            Text(ⓝumber)
         } footer: {
-            Text(📃.date)
+            Text(ⓓate)
         }
         .headerProminence(.increased)
     }
     
-    init(_ 📃: 🕒VersionFormat) {
-        self.📃 = 📃
+    init(_ 📃: (String, String)) {
+        ⓝumber = 📃.0
+        ⓓate = 📃.1
     }
 }
 
-typealias 🕒VersionFormat = (number: String, date: String)
-
-let 🕒VersionHistoryData: [🕒VersionFormat] = [
+let 🕒VersionHistoryData: [(String, String)] = [
     ("1.2","2022-03-01"),
     ("1.1","2022-02-01"),
     ("1.0","2022-01-01")]

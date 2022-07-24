@@ -8,13 +8,13 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                Section { 🛠MenuButton() }
+                
+                🔗OpenSystemSetting()
+                
                 🕒VersionHistoryLink()
                 
                 
-                
-                Section {
-                    🛠MenuButton()
-                } header: { Text("MenuButton") }
                 
                 🩻TransparencyReportLink()
                 
@@ -32,15 +32,9 @@ struct ContentView: View {
                             .minimumScaleFactor(0.1)
                             .navigationTitle("debugDescription")
                     }
-                } header: { Text("Product") }
+                } header: { Text("In-App Purchase Product") }
                 
-                Section {
-                    🖨printLog()
-                } header: { Text("printLog") }
-                
-                Section {
-                    🔗OpenSystemSetting()
-                } header: { Text("OpenSystemSetting") }
+                Section { 🖨printLog() }
             }
             .listStyle(.plain)
             .navigationTitle("AppTemplate")
