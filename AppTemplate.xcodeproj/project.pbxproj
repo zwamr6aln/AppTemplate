@@ -18,6 +18,7 @@
 		1299C37B288CB8C30086522B /* AppStoreDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C37D288CB8C30086522B /* AppStoreDescription.strings */; };
 		1299C380288CC2310086522B /* ﹀CloseMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1299C37F288CC2310086522B /* ﹀CloseMenuButton.swift */; };
 		1299C386288D12760086522B /* VersionDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C388288D12760086522B /* VersionDescription.strings */; };
+		1299C38C288D194B0086522B /* WorkInProgress.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C38E288D194B0086522B /* WorkInProgress.strings */; };
 		12C6712F286069E800FE4C06 /* 🛠TemplateMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75928502B5200B2380B /* 🛠TemplateMenu.swift */; };
 		12C67131286069ED00FE4C06 /* 🕒VersionHistory.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75E28502C9F00B2380B /* 🕒VersionHistory.swift */; };
 		12C67132286069ED00FE4C06 /* 📄InformationMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* 📄InformationMenu.swift */; };
@@ -141,6 +142,8 @@
 		1299C37F288CC2310086522B /* ﹀CloseMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "﹀CloseMenuButton.swift"; sourceTree = "<group>"; };
 		1299C387288D12760086522B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/VersionDescription.strings; sourceTree = "<group>"; };
 		1299C389288D127A0086522B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/VersionDescription.strings; sourceTree = "<group>"; };
+		1299C38D288D194B0086522B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/WorkInProgress.strings; sourceTree = "<group>"; };
+		1299C38F288D19500086522B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/WorkInProgress.strings; sourceTree = "<group>"; };
 		12D4368428656B4400B707F5 /* 🖨printLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🖨printLog.swift"; sourceTree = "<group>"; };
 		12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🔗OpenSystemSetting.swift"; sourceTree = "<group>"; };
 		12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				1220AD0B286C03CC00F07278 /* 🩻TransparencyReport.swift */,
+				1299C38E288D194B0086522B /* WorkInProgress.strings */,
 			);
 			path = "⚠️WorkInProgress";
 			sourceTree = "<group>";
@@ -373,6 +377,7 @@
 				1299C386288D12760086522B /* VersionDescription.strings in Resources */,
 				12E4A76B28502EDE00B2380B /* Localizable.strings in Resources */,
 				1299C37B288CB8C30086522B /* AppStoreDescription.strings in Resources */,
+				1299C38C288D194B0086522B /* WorkInProgress.strings in Resources */,
 				12E4A74C285027F700B2380B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +430,15 @@
 				1299C389288D127A0086522B /* ja */,
 			);
 			name = VersionDescription.strings;
+			sourceTree = "<group>";
+		};
+		1299C38E288D194B0086522B /* WorkInProgress.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1299C38D288D194B0086522B /* en */,
+				1299C38F288D19500086522B /* ja */,
+			);
+			name = WorkInProgress.strings;
 			sourceTree = "<group>";
 		};
 		12E4A76D28502EDE00B2380B /* Localizable.strings */ = {

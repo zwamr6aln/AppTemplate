@@ -1,11 +1,10 @@
 
+
 // Nothing
+
 
 // ===========================================
 // ================ Template =================
-"🌏ADDescription" = "広告としてAppStoreアプリケーションに関するバナーを表示します。「?」デベロッパーによるアプリ群が表示対象となります。広告バナーはアプリを5回起動すると有効になります。";
-
-
 // ======= Accessibility =========
 "Open menu" = "メニューを開く";
 "Option" = "オプション";
@@ -60,14 +59,6 @@
 "Adopted In-App Purchase model for the first time on TapWeight ver 1.1.1" = "TapWeight、有料課金モデルを初めて採用したver1.1.1をリリース。";
 
 
-//"Age rating" = "年齢制限指定";
-//"It is distributed to all (175) available countries or regions. It will also be automatically published to any new countries or regions that become available for distribution on AppStore." = "全て(175)の配信可能な国または地域を対象に配信しています。また、AppStoreで新しく配信可能になる国または地域にも自動的に公開されます。";
-//"Availability" = "配信地域";
-//"Compatibility with Apple Silicon mac" = "Appleシリコンmacとの互換性";
-//"eable" = "可";
-//"disable" = "不可";
-
-
 // ======== AD =========
 "AD" = "広告";
 "About AD" = "広告について";
@@ -80,6 +71,8 @@
 "Error" = "エラー";
 "Open AD link" = "広告のリンクを開く";
 "OK" = "了解しました";
+
+"🌏ADDescription" = "広告としてAppStoreアプリケーションに関するバナーを表示します。本アプリのデベロッパーによるアプリ群が表示対象となります。広告バナーはアプリを5回起動すると有効になります。";
 
 "Simple and normal ebook reader (for fixed-layout). Only a special feature. Turn a page with slightly longish voluntary blink." = "シンプルで一般的な電子書籍リーダー(固定レイアウト向け)。特殊な機能は1つだけ。目を閉じる時間を意識的にわずかに長くさせた瞬きでページめくりができます。";
 
