@@ -70,7 +70,7 @@ Move: "AAAA/🧩Sub/Info.plist"
 Edit: TARGETS / Build Settings / Packaging / Info.plist File
 
 
-### (HealthKit)
+### HealthKit
 Capabilities / HealthKit
 
 Info.plist / Privacy - Health Share Usage Description
@@ -78,6 +78,11 @@ Info.plist / Privacy - Health Share Usage Description
 Info.plist / Privacy - Health Update Usage Description
 
 "Activate HeakthKit permission to record data."
+
+#### Move "AAAA.entitlements"
+Move: "AAAA/🧩Sub/AAAA.entitlements"
+
+Edit: TARGETS / Build Settings / Signing / CODE_SIGN_ENTITLEMENTS
 
 
 <!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
