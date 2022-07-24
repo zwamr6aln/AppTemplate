@@ -37,7 +37,7 @@ struct 🕒VersionHistoryLink: View {
         } header: {
             Text("Version")
         } footer: {
-            let 📅 = Date.now.formatted(date: .numeric, time: .omitted)
+            let 📅 = Date.now.formatted(date: .long, time: .omitted)
             Text("builded on \(📅)")
         }
     }
@@ -45,7 +45,7 @@ struct 🕒VersionHistoryLink: View {
 
 var 🕒VersionHistory: String {
     var 📃 = "🕒 Version " + 🕒LatestVersionNumber + " : "
-    📃 += "(builded on " + Date.now.formatted(date: .numeric, time: .omitted) + ")\n"
+    📃 += ("(" + Date.now.formatted(date: .long, time: .omitted) + " build)\n")
     📃 += 🕒LatestVersionDescription + "\n\n\n"
     📃 += 🕒PastVersionHistory
     return 📃
