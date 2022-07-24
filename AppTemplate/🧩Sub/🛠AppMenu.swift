@@ -29,7 +29,7 @@ struct 🛠AppMenu: View {
                     }
                 } header: { Text("Option") }
                 
-                🛠TemplateMenu()
+                🛠OthersMenu()
             }
             .navigationTitle("AppTemplate")
             .toolbar { ﹀CloseMenuButton($📱.🚩ShowMenu) }
