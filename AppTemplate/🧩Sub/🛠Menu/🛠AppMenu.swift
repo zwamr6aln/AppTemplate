@@ -13,7 +13,7 @@ struct 🛠AppMenu: View {
                     }
                 } header: { Text("Option") }
                 
-                ℹ️AboutApp()
+                ℹ️AboutAppLink()
                 📣ADMenuLink()
             }
             .navigationTitle("Menu")
@@ -24,7 +24,7 @@ struct 🛠AppMenu: View {
 }
 
 
-struct ℹ️AboutApp: View {
+struct ℹ️AboutAppLink: View {
     var body: some View {
         Section {
             ZStack {
@@ -67,7 +67,7 @@ struct ℹ️AboutApp: View {
             }
             
             NavigationLink  {
-                📄InformationMenu()
+                ℹ️AboutAppMenu()
             } label: {
                 Label("About App", systemImage: "doc")
             }
@@ -75,10 +75,34 @@ struct ℹ️AboutApp: View {
     }
 }
 
+struct ﹀CloseMenuButton: ToolbarContent {
+    @Binding var 🚩ShowMenu: Bool
+    
+    var body: some ToolbarContent {
+        ToolbarItem(placement: .navigationBarTrailing) {
+            Button {
+                🚩ShowMenu = false
+                UISelectionFeedbackGenerator().selectionChanged()
+            } label: {
+                Image(systemName: "chevron.down")
+                    .foregroundStyle(.secondary)
+                    .grayscale(1.0)
+                    .padding(8)
+            }
+            .accessibilityLabel("Dismiss")
+        }
+    }
+    
+    init(_ 🚩: Binding<Bool>) {
+        _🚩ShowMenu = 🚩
+    }
+}
+
+
 struct MyPreviewProvider_Previews: PreviewProvider {
     static var previews: some View {
         List {
-            ℹ️AboutApp()
+            ℹ️AboutAppLink()
         }
     }
 }
