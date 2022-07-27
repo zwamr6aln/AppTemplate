@@ -41,10 +41,12 @@ struct ℹ️AboutAppLink: View {
                     
                     VStack(spacing: 6) {
                         Text("AppTemplate")
-                            .font(.title)
-                            .fontWeight(.bold)
+                            .font(.title2)
+                            .fontWeight(.medium)
                             .tracking(1.5)
-                            .opacity(0.8)
+                            .opacity(0.66)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.1)
                         
                         Text("Application for iPhone / iPad")
                             .font(.footnote)
@@ -54,8 +56,8 @@ struct ℹ️AboutAppLink: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.1)
                 }
-                .padding(20)
-                .padding(.top, 6)
+                .padding(24)
+                .padding(.top, 12)
             }
             
             Link(destination: 🔗AppStoreProductURL) {
