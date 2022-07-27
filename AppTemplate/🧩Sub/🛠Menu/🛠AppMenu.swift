@@ -15,7 +15,7 @@ struct 🛠AppMenu: View {
                 
                 🛠OthersMenu()
             }
-            .navigationTitle("AppTemplate")
+            .navigationTitle("Menu")
             .toolbar { ﹀CloseMenuButton($📱.🚩ShowMenu) }
         }
         .onDisappear { 📱.🚩ShowMenu = false }
