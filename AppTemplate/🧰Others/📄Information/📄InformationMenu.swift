@@ -52,9 +52,9 @@ struct 📰AppStoreDescriptionSection: View {
                     .font(.subheadline)
                     .lineLimit(7)
                     .padding(8)
-                    .accessibilityLabel("About")
+                    .accessibilityLabel("Description")
             }
-        } header: { Text("About") }
+        } header: { Text("Description") }
     }
 }
 
