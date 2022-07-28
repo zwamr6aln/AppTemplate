@@ -20,6 +20,7 @@
 		1299C38C288D194B0086522B /* WorkInProgress.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C38E288D194B0086522B /* WorkInProgress.strings */; };
 		1299C393288D4EF40086522B /* 🧑‍💻AboutDeveloperPublisher.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12DDDDAE288C1C990055A073 /* 🧑‍💻AboutDeveloperPublisher.swift */; };
 		1299C39C288D650C0086522B /* 🛠MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1299C39B288D650C0086522B /* 🛠MenuButton.swift */; };
+		12A605A5289219B30001DE23 /* 🔠BiggerSystemFontTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A605A4289219B30001DE23 /* 🔠BiggerSystemFontTest.swift */; };
 		12C67131286069ED00FE4C06 /* 🕒VersionHistory.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75E28502C9F00B2380B /* 🕒VersionHistory.swift */; };
 		12C67132286069ED00FE4C06 /* ℹ️AboutAppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutAppMenu.swift */; };
 		12C67133286069ED00FE4C06 /* 📓SourceCodeMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */; };
@@ -132,6 +133,7 @@
 		1299C38D288D194B0086522B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/WorkInProgress.strings; sourceTree = "<group>"; };
 		1299C38F288D19500086522B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/WorkInProgress.strings; sourceTree = "<group>"; };
 		1299C39B288D650C0086522B /* 🛠MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛠MenuButton.swift"; sourceTree = "<group>"; };
+		12A605A4289219B30001DE23 /* 🔠BiggerSystemFontTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🔠BiggerSystemFontTest.swift"; sourceTree = "<group>"; };
 		12D4368428656B4400B707F5 /* 🖨printLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🖨printLog.swift"; sourceTree = "<group>"; };
 		12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🔗OpenSystemSetting.swift"; sourceTree = "<group>"; };
 		12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				12D4368428656B4400B707F5 /* 🖨printLog.swift */,
 				12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */,
+				12A605A4289219B30001DE23 /* 🔠BiggerSystemFontTest.swift */,
 				12E4A7762850301300B2380B /* 📣ADBanner.swift */,
 				1299C394288D51170086522B /* 🛠Menu */,
 				12E4A74D285027F700B2380B /* Preview Content */,
@@ -387,6 +390,7 @@
 				12E4A77D2850301300B2380B /* 📣ADView.swift in Sources */,
 				127ECB29286149EF00CB1BC3 /* 🛒StoreModel.swift in Sources */,
 				12DDDDAF288C1C990055A073 /* 🧑‍💻AboutDeveloperPublisher.swift in Sources */,
+				12A605A5289219B30001DE23 /* 🔠BiggerSystemFontTest.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
 				12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */,

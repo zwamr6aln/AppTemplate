@@ -33,6 +33,8 @@ struct ContentView: View {
                 Section { 🖨printLog() }
                 
                 Section { 🛠MenuButton() }
+                
+                🔠BiggerSystemFontTest()
             }
             .listStyle(.plain)
             .navigationTitle("ContentView")
