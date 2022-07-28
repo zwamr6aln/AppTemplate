@@ -28,14 +28,12 @@ struct 🕒VersionHistoryLink: View {
                     🕒PastVersionSection()
                 }
                 .navigationBarTitle("Version History")
-                .navigationBarTitleDisplayMode(.inline)
                 .textSelection(.enabled)
             } label: {
-                Label(🕒VersionNumber, systemImage: "signpost.left")
+                Label("Version", systemImage: "signpost.left")
+                    .badge(🕒VersionNumber)
             }
             .accessibilityLabel("Version History")
-        } header: {
-            Text("Version")
         }
     }
 }

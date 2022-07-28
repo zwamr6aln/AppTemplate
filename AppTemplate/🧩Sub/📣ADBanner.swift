@@ -32,7 +32,7 @@ struct 📣ADBanner: View {
                         }
                         .padding(14)
                         .transition(.move(edge: .bottom))
-                        .frame(minWidth: 250)
+                        .frame(minWidth: 300, maxHeight: 250)
                 }
             } else {
                 EmptyView()

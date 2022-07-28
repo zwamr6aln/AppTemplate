@@ -39,26 +39,14 @@ struct 🧑‍💻AboutDeveloperPublisherMenu: View {
             
             
             Section {
-                HStack {
-                    Text("age")
-                    Spacer()
-                    Text("about 28")
-                        .foregroundStyle(.secondary)
-                }
+                Text("age")
+                    .badge("about 28")
                 
-                HStack {
-                    Text("country")
-                    Spacer()
-                    Text("Japan")
-                        .foregroundStyle(.secondary)
-                }
+                Text("country")
+                    .badge("Japan")
                 
-                HStack {
-                    Text("native language")
-                    Spacer()
-                    Text("Japanese")
-                        .foregroundStyle(.secondary)
-                }
+                Text("native language")
+                    .badge("Japanese")
             } header: {
                 Text("identity / circumstance / background")
             } footer: {
@@ -75,7 +63,7 @@ struct 🧑‍💻AboutDeveloperPublisherMenu: View {
                     .frame(width: 90, height: 90)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     .padding()
-                    .opacity(0.5)
+                    .opacity(0.6)
             } header: {
                 Text("Image")
             } footer: {
