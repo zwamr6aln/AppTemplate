@@ -41,10 +41,10 @@ struct ℹ️AboutAppLink: View {
                     
                     VStack(spacing: 6) {
                         Text("AppTemplate")
-                            .font(.title2)
-                            .fontWeight(.medium)
+                            .font(.system(.title2, design: .rounded))
+                            .fontWeight(.bold)
                             .tracking(1.5)
-                            .opacity(0.66)
+                            .opacity(0.75)
                             .lineLimit(1)
                             .minimumScaleFactor(0.1)
                         
