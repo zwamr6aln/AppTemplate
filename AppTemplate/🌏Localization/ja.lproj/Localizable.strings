@@ -3,8 +3,8 @@
 // Nothing
 
 
-// ===========================================
-// ================ Template =================
+// =======================================================
+// ====================== Template =======================
 "Menu" = "メニュー";
 "Open menu" = "メニューを開く";
 "Option" = "オプション";
@@ -61,11 +61,10 @@
 
 // ======== AD / In-App Purchase =========
 "AD" = "広告";
-"AD / In-App Purchase" = "広告/アプリ内課金";
-"About AD / In-App Purchase" = "広告/アプリ内課金について";
+"AD / Purchase" = "広告/課金";
+"About AD / Purchase" = "広告/課金について";
 "In-App Purchase" = "アプリ内課金";
 "Hide AD banner" = "広告を非表示にする";
-"Purchased" = "購入済み";
 "Restore Purchases" = "購入情報を復元する";
 "Restored transactions" = "購入情報を確認しました";
 "Done" = "完了";

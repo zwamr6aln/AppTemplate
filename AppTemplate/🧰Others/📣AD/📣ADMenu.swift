@@ -12,10 +12,10 @@ struct 📣ADMenuLink: View {
             NavigationLink {
                 📣ADMenu()
             } label: {
-                Label("About AD / In-App Purchase", systemImage: "megaphone")
+                Label("About AD / Purchase", systemImage: "megaphone")
             }
         } header: {
-            Text("AD / In-App Purchase")
+            Text("AD / Purchase")
         }
     }
 }
@@ -49,6 +49,6 @@ struct 📣ADMenu: View {
                 }
             }
         }
-        .navigationTitle("About AD")
+        .navigationTitle("AD / Purchase")
     }
 }
