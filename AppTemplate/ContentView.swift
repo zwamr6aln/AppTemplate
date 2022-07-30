@@ -8,9 +8,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                🔗OpenSystemSetting()
+                Section { 🛠MenuButton() }
                 
-                🕒VersionHistoryLink()
+                🔗OpenSystemSetting()
                 
                 🩻TransparencyReportLink()
                 
@@ -31,8 +31,6 @@ struct ContentView: View {
                 } header: { Text("In-App Purchase Product") }
                 
                 Section { 🖨printLog() }
-                
-                Section { 🛠MenuButton() }
                 
                 🔠BiggerSystemFontTest()
             }
