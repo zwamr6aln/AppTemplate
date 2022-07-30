@@ -7,13 +7,15 @@ struct 📣ADMenuLink: View {
     
     var body: some View {
         Section {
-            if 🛒.🚩Purchased == false { 📣ADView() }
+            🛒PurchaseView()
             
             NavigationLink {
                 📣ADMenu()
             } label: {
-                Label("About AD", systemImage: "megaphone")
+                Label("About AD / In-App Purchase", systemImage: "megaphone")
             }
+        } header: {
+            Text("AD / In-App Purchase")
         }
     }
 }
@@ -27,9 +29,19 @@ struct 📣ADMenu: View {
                 Text("This App shows banner advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.")
                     .padding()
                     .textSelection(.enabled)
-            } header: { Text("About") }
+                
+                //TODO: 広告バナー例の画像を載せるか検討
+            } header: {
+                Text("Description")
+            }
             
-            🛒PurchaseSection()
+            Section {
+                🛒PurchaseView()
+                🛒ProductPreview()
+                🛒RestoreButton()
+            } header: {
+                Text("In-App Purchase")
+            }
             
             Section {
                 ForEach(📣AppName.allCases) { 🏷 in

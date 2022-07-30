@@ -59,9 +59,10 @@
 "Adopted In-App Purchase model for the first time on TapWeight ver 1.1.1" = "TapWeight、有料課金モデルを初めて採用したver1.1.1をリリース。";
 
 
-// ======== AD =========
+// ======== AD / In-App Purchase =========
 "AD" = "広告";
-"About AD" = "広告について";
+"AD / In-App Purchase" = "広告/アプリ内課金";
+"About AD / In-App Purchase" = "広告/アプリ内課金について";
 "In-App Purchase" = "アプリ内課金";
 "Hide AD banner" = "広告を非表示にする";
 "Purchased" = "購入済み";
