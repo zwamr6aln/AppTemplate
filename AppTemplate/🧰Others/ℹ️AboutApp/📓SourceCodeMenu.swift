@@ -98,6 +98,8 @@ struct 🔗RepositoryLink: View {
                     Spacer()
                     
                     Image(systemName: "arrow.up.forward.app")
+                        .imageScale(.small)
+                        .foregroundStyle(.secondary)
                 }
             }
         } footer: { Text(🔗WebRepositoryURL.description) }
@@ -114,6 +116,8 @@ struct 🔗RepositoryLink: View {
                     Spacer()
                     
                     Image(systemName: "arrow.up.forward.app")
+                        .imageScale(.small)
+                        .foregroundStyle(.secondary)
                 }
             }
         } footer: { Text(🔗WebRepositoryURL_Mirror.description) }

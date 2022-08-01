@@ -44,7 +44,9 @@ struct 📰AppStoreDescriptionSection: View {
                     .padding(8)
                     .accessibilityLabel("Description")
             }
-        } header: { Text("Description") }
+        } header: {
+            Text("Description")
+        }
     }
 }
 
@@ -56,6 +58,8 @@ struct 🔗AppStoreLink: View {
                     Label("Open AppStore page", systemImage: "link")
                     Spacer()
                     Image(systemName: "arrow.up.forward.app")
+                        .imageScale(.small)
+                        .foregroundStyle(.secondary)
                 }
             }
         } footer: {

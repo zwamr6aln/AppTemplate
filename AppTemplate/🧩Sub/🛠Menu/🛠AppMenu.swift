@@ -11,7 +11,9 @@ struct 🛠AppMenu: View {
                     Toggle(isOn: .constant(false)) {
                         Label("placeholder", systemImage: "questionmark")
                     }
-                } header: { Text("Option") }
+                } header: {
+                    Text("Option")
+                }
                 
                 ℹ️AboutAppLink()
                 📣ADMenuLink()
@@ -65,6 +67,8 @@ struct ℹ️AboutAppLink: View {
                     Label("Open AppStore page", systemImage: "link")
                     Spacer()
                     Image(systemName: "arrow.up.forward.app")
+                        .imageScale(.small)
+                        .foregroundStyle(.secondary)
                 }
             }
             
