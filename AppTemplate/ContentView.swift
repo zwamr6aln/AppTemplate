@@ -8,6 +8,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                Text("🛒.🚩PurchasedADFree")
+                    .badge(🛒.🚩PurchasedADFree.description)
+                
                 Section { 🛠MenuButton() }
                 
                 🔗OpenSystemSetting()
