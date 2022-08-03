@@ -3,9 +3,11 @@ let 🛒InAppPurchaseProductID = ["PLACEHOLDER.adfree"]
 
 
 import StoreKit
+import SwiftUI
 
 typealias Transaction = StoreKit.Transaction
 
+//FIXME: 支払い済みでも起動直後に広告が表示される不具合を修正する
 class 🛒StoreModel: ObservableObject {
     
     @Published var 🎫Product: Product?
@@ -13,6 +15,12 @@ class 🛒StoreModel: ObservableObject {
     
     var 🚩Unconnected: Bool { 🎫Product == nil }
     var 🚩Purchased: Bool { 🎫PurchasedProduct != nil }
+    
+    @AppStorage("🄻aunchCount") var 🄻aunchCount: Int = 0
+    
+    var 🚩ADisActive: Bool {
+        !(🚩Purchased) && 🄻aunchCount > 5
+    }
     
     var 🤖UpdateListenerTask: Task<Void, Error>? = nil
     
@@ -28,6 +36,8 @@ class 🛒StoreModel: ObservableObject {
             //Deliver products that the customer purchases.
             await 🅄pdateCustomerProductStatus()
         }
+        
+        🄻aunchCount += 1
     }
     
     deinit { 🤖UpdateListenerTask?.cancel() }
