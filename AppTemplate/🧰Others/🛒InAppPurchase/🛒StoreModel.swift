@@ -1,5 +1,6 @@
 
 let 🛒InAppPurchaseProductID = ["PLACEHOLDER.adfree"]
+//let 🛒ADFreeProductID = "PLACEHOLDER.adfree"
 
 
 import StoreKit
@@ -8,18 +9,21 @@ import SwiftUI
 typealias Transaction = StoreKit.Transaction
 
 //FIXME: 支払い済みでも起動直後に広告が表示される不具合を修正する
+//TODO: 複数購入アイテムに対応する
+//TODO: AppModel下にインスタンスを配置するか検討する
 class 🛒StoreModel: ObservableObject {
     
-    @Published var 🎫Product: Product?
-    @Published var 🎫PurchasedProduct: Product?
+    @Published private(set) var 🎫Product: Product?
+    @Published private(set) var 🎫PurchasedProduct: Product?
     
     var 🚩Unconnected: Bool { 🎫Product == nil }
     var 🚩Purchased: Bool { 🎫PurchasedProduct != nil }
     
     @AppStorage("🄻aunchCount") var 🄻aunchCount: Int = 0
+//    @AppStorage("ADFreePurchased") var 🚩ADFreePurchased: Bool = false
     
     var 🚩ADisActive: Bool {
-        !(🚩Purchased) && 🄻aunchCount > 5
+        !🚩Purchased && ( 🄻aunchCount > 5 )
     }
     
     var 🤖UpdateListenerTask: Task<Void, Error>? = nil

@@ -22,11 +22,12 @@ struct ContentView: View {
                             .foregroundStyle(.secondary)
                     }
                     
-                    NavigationLink("debugDescription") {
+                    NavigationLink("🎫Product.debugDescription") {
                         Text(🛒.🎫Product.debugDescription)
                             .padding()
                             .minimumScaleFactor(0.1)
-                            .navigationTitle("debugDescription")
+                            .navigationTitle("🎫Product.debugDescription")
+                            .navigationBarTitleDisplayMode(.inline)
                     }
                 } header: { Text("In-App Purchase Product") }
                 

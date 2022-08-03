@@ -35,6 +35,6 @@ struct 📣ADBanner: View {
                 }
             }
         }
-        .animation(.easeOut.speed(0.33), value: 🚩ShowBanner)
+        .animation(.easeOut.speed(0.5), value: 🚩ShowBanner)
     }
 }
