@@ -14,17 +14,15 @@ typealias Transaction = StoreKit.Transaction
 class 🛒StoreModel: ObservableObject {
     
     @Published private(set) var 🎫Product: Product?
-    @Published private(set) var 🎫PurchasedProduct: Product?
-    
-    var 🚩Unconnected: Bool { 🎫Product == nil }
-    var 🚩Purchased: Bool { 🎫PurchasedProduct != nil }
+    @Published private(set) var 🚩PurchasedProduct: Bool = true
     
     @AppStorage("🄻aunchCount") var 🄻aunchCount: Int = 0
-    @AppStorage("PurchasedADFree") var 🚩PurchasedADFree: Bool = false
     
     var 🚩ADisActive: Bool {
-        !🚩Purchased && ( 🄻aunchCount > 5 )
+        !🚩PurchasedProduct && ( 🄻aunchCount > 5 )
     }
+    
+    var 🚩Unconnected: Bool { 🎫Product == nil }
     
     var 🤖UpdateListenerTask: Task<Void, Error>? = nil
     
@@ -117,28 +115,26 @@ class 🛒StoreModel: ObservableObject {
     
     @MainActor
     func 🅄pdateCustomerProductStatus() async {
-        guard let 🎫 = 🎫Product else { return }
-        
-        var 🆕PurchasedProduct: Product? = nil
+        var 🆕PurchasedProduct: Bool = false
         
         for await 📦 in Transaction.currentEntitlements {
             do {
                 //Check whether the transaction is verified. If it isn’t, catch `failedVerification` error.
                 let 🧾Transaction = try 🔍CheckVerified(📦)
-                print(🧾Transaction.debugDescription)
-                
-                🆕PurchasedProduct = 🎫
+                if 🧾Transaction.productID == 🛒InAppPurchaseProductID {
+                    🆕PurchasedProduct = true
+                }
             } catch {
                 print(#function, error)
             }
         }
         
-        🎫PurchasedProduct = 🆕PurchasedProduct
+        🚩PurchasedProduct = 🆕PurchasedProduct
     }
     
     
     var 🎫Name: String {
-        guard let 🎫 = 🎫Product else { return "(Hide AD banner)" }
+        guard let 🎫 = 🎫Product else { return "(Placeholder)" }
         return 🎫.displayName
     }
     

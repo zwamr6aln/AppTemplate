@@ -16,7 +16,7 @@ struct 🛒PurchaseView: View {
             
             Spacer()
             
-            if 🛒.🚩Purchased {
+            if 🛒.🚩PurchasedProduct {
                 Image(systemName: "checkmark")
                     .imageScale(.small)
                     .foregroundStyle(.tertiary)
@@ -53,8 +53,8 @@ struct 🛒PurchaseView: View {
         }
         .padding(.vertical)
         .disabled(🛒.🚩Unconnected)
-        .disabled(🛒.🚩Purchased)
-        .animation(.default, value: 🛒.🚩Purchased)
+        .disabled(🛒.🚩PurchasedProduct)
+        .animation(.default, value: 🛒.🚩PurchasedProduct)
     }
 }
 
@@ -111,7 +111,7 @@ struct 🛒RestoreButton: View {
                 HStack {
                     Label("Restore Purchases", systemImage: "arrow.clockwise")
                         .font(.footnote)
-                        .foregroundColor(🛒.🚩Unconnected || 🛒.🚩Purchased ? .secondary : nil)
+                        .foregroundColor(🛒.🚩Unconnected || 🛒.🚩PurchasedProduct ? .secondary : nil)
                     
                     if 🚩RestoringNow {
                         Spacer()
