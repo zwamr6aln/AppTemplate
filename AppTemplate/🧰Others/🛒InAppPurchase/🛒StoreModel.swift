@@ -1,6 +1,5 @@
 
 let 🛒InAppPurchaseProductID = "PLACEHOLDER.adfree"
-//let 🛒ADFreeProductID = "PLACEHOLDER.adfree"
 
 
 import StoreKit
@@ -8,18 +7,15 @@ import SwiftUI
 
 typealias Transaction = StoreKit.Transaction
 
-//FIXME: 支払い済みでも起動直後に広告が表示される不具合を修正する
-//TODO: 複数購入アイテムに対応する?
-//TODO: AppModel下にインスタンスを配置するか検討する
 class 🛒StoreModel: ObservableObject {
     
     @Published private(set) var 🎫Product: Product?
-    @Published private(set) var 🚩PurchasedProduct: Bool = true
+    @Published private(set) var 🚩Purchased: Bool? = nil
     
     @AppStorage("🄻aunchCount") var 🄻aunchCount: Int = 0
     
     var 🚩ADisActive: Bool {
-        !🚩PurchasedProduct && ( 🄻aunchCount > 5 )
+        !(🚩Purchased ?? true) && ( 🄻aunchCount > 5 )
     }
     
     var 🚩Unconnected: Bool { 🎫Product == nil }
@@ -115,21 +111,21 @@ class 🛒StoreModel: ObservableObject {
     
     @MainActor
     func 🅄pdateCustomerProductStatus() async {
-        var 🆕PurchasedProduct: Bool = false
+        var 🄿urchased = false
         
         for await 📦 in Transaction.currentEntitlements {
             do {
                 //Check whether the transaction is verified. If it isn’t, catch `failedVerification` error.
                 let 🧾Transaction = try 🔍CheckVerified(📦)
                 if 🧾Transaction.productID == 🛒InAppPurchaseProductID {
-                    🆕PurchasedProduct = true
+                    🄿urchased = true
                 }
             } catch {
                 print(#function, error)
             }
         }
         
-        🚩PurchasedProduct = 🆕PurchasedProduct
+        🚩Purchased = 🄿urchased
     }
     
     
@@ -149,6 +145,12 @@ class 🛒StoreModel: ObservableObject {
 public enum 🚨StoreError: Error {
     case failedVerification
 }
+
+
+
+
+//TODO: 複数購入アイテムの対応を検討
+//TODO: AppModel下にインスタンスを配置するか検討
 
 
 
