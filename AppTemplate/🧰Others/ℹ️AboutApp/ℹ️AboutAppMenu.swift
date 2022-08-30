@@ -16,7 +16,7 @@ struct ℹ️AboutAppMenu: View {
     var body: some View {
         List {
             📰AppStoreDescriptionSection()
-            🕒VersionHistoryLink()
+            📜VersionHistoryLink()
             👤PrivacyPolicySection()
             🔗AppStoreLink()
             📓SourceCodeLink()

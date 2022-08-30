@@ -1,23 +1,23 @@
 
-let 🕒VersionNumber = "2.0"
+let 📜VersionNumber = "2.0"
 
-let 🕒PastVersion: [(ⓝumber: String, ⓓate: String)] = [("1.2","2022-03-01"),
+let 📜PastVersions: [(ⓝumber: String, ⓓate: String)] = [("1.2","2022-03-01"),
                                                        ("1.1","2022-02-01"),
                                                        ("1.0","2022-01-01")]
 
 import SwiftUI
 
-struct 🕒VersionHistoryLink: View {
+struct 📜VersionHistoryLink: View {
     var body: some View {
         Section {
             NavigationLink {
                 List {
                     Section {
-                        Text(LocalizedStringKey(🕒VersionNumber), tableName: "🌏VersionDescription")
+                        Text(LocalizedStringKey(📜VersionNumber), tableName: "🌏VersionDescription")
                             .font(.subheadline)
                             .padding()
                     } header: {
-                        Text(🕒VersionNumber)
+                        Text(📜VersionNumber)
                     } footer: {
                         let 📅 = Date.now.formatted(date: .long, time: .omitted)
                         Text("builded on \(📅)")
@@ -25,30 +25,30 @@ struct 🕒VersionHistoryLink: View {
                     .headerProminence(.increased)
                     
                     
-                    🕒PastVersionSection()
+                    📜PastVersionSection()
                 }
                 .navigationBarTitle("Version History")
                 .textSelection(.enabled)
             } label: {
                 Label("Version", systemImage: "signpost.left")
-                    .badge(🕒VersionNumber)
+                    .badge(📜VersionNumber)
             }
             .accessibilityLabel("Version History")
         }
     }
 }
 
-struct 🕒PastVersionSection: View {
+struct 📜PastVersionSection: View {
     var body: some View {
-        ForEach(🕒PastVersion, id: \.self.ⓝumber) { 📃 in
+        ForEach(📜PastVersions, id: \.self.ⓝumber) { 📜 in
             Section {
-                Text(LocalizedStringKey(📃.ⓝumber), tableName: "🌏VersionDescription")
+                Text(LocalizedStringKey(📜.ⓝumber), tableName: "🌏VersionDescription")
                     .font(.subheadline)
                     .padding()
             } header: {
-                Text(📃.ⓝumber)
+                Text(📜.ⓝumber)
             } footer: {
-                Text(📃.ⓓate)
+                Text(📜.ⓓate)
             }
             .headerProminence(.increased)
         }
