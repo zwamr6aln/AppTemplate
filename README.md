@@ -39,7 +39,7 @@ SubPath
 
 
 ### Icon size
-120 152 167 1024
+1024
 
 
 ### In-App Purchase
@@ -50,12 +50,6 @@ Edit Scheme / StoreKit Configuration
 Configuration.storekit
 
 ProductID: AAAA.adfree
-
-
-### Launch screen
-Info.plist / Image Name
-
-LaunchIcon
 
 
 ### Move "Preview Content"
