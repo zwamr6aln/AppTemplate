@@ -8,7 +8,7 @@
 
 ## 🔗 AppStore link
 
-[apps.apple.com/app/id1111](https://apps.apple.com/app/id1111)
+https://apps.apple.com/app/id1111
 
 
 ## 👆 Handiwork MEMO
@@ -158,12 +158,12 @@ Korean:
 
 ## 🧰 Source code link
 
-[github.com/FlipByBlink/AAAA](https://github.com/FlipByBlink/AAAA)
+https://github.com/FlipByBlink/AAAA
 
 
 ### Source code (Mirror) link
 
-[gitlab.com/FlipByBlink/AAAA_Mirror](https://gitlab.com/FlipByBlink/AAAA_Mirror)
+https://gitlab.com/FlipByBlink/AAAA_Mirror
 
 
 ## ✉️ Contact
@@ -178,6 +178,10 @@ sear_pandora_0x@icloud.com
 <br>
 
 ------
+
+<br>
+
+<br>
 
 <br>
 
@@ -199,6 +203,10 @@ sear_pandora_0x@icloud.com
 
 This application don't collect user infomation.
 
+
+<br>
+
+<br>
 
 <br>
 
