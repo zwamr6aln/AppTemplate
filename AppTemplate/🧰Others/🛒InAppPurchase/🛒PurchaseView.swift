@@ -13,9 +13,7 @@ struct 🛒PurchaseView: View {
     var body: some View {
         HStack {
             Label(🛒.🎫Name, systemImage: "cart")
-            
             Spacer()
-            
             if 🛒.🚩Purchased ?? false {
                 Image(systemName: "checkmark")
                     .imageScale(.small)
@@ -36,7 +34,6 @@ struct 🛒PurchaseView: View {
                         🚨ErrorMessage = error.localizedDescription
                         🚨ShowError = true
                     }
-                    
                     🚩BuyingNow = false
                 }
             }
@@ -65,11 +62,9 @@ struct 🛒ProductPreview: View {
             Image("ProductPreview_Before")
                 .resizable()
                 .scaledToFit()
-            
             Image(systemName: "arrow.right")
                 .font(.title2.weight(.semibold))
                 .foregroundStyle(.secondary)
-            
             Image("ProductPreview_After")
                 .resizable()
                 .scaledToFit()
@@ -103,7 +98,6 @@ struct 🛒RestoreButton: View {
                         🚨SyncSuccess = false
                         🚨Message = error.localizedDescription
                     }
-                    
                     🚨ShowAlert = true
                     🚩RestoringNow = false
                 }
@@ -113,7 +107,6 @@ struct 🛒RestoreButton: View {
                         .font(.footnote)
                         .foregroundColor(🛒.🚩Unconnected ? .secondary : nil)
                         .grayscale(🛒.🚩Purchased ?? false ? 1 : 0)
-                    
                     if 🚩RestoringNow {
                         Spacer()
                         ProgressView()

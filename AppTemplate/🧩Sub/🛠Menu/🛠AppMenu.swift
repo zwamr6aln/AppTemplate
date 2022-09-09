@@ -31,7 +31,6 @@ struct ℹ️AboutAppLink: View {
         Section {
             ZStack {
                 Color.clear
-                
                 VStack(spacing: 12) {
                     Image("FlipByBlink")
                         .resizable()

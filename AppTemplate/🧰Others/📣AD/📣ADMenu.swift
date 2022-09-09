@@ -8,7 +8,6 @@ struct 📣ADMenuLink: View {
     var body: some View {
         Section {
             🛒PurchaseView()
-            
             NavigationLink {
                 📣ADMenu()
             } label: {

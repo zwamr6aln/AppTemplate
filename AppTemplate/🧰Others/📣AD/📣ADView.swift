@@ -2,12 +2,12 @@
 import SwiftUI
 
 struct 📣ADView: View {
-    @State private var 🄰ppName: 📣AppName
+    @State private var ⓐppName: 📣AppName
     
     var body: some View {
-        Link(destination: 🄰ppName.🔗URL) {
+        Link(destination: ⓐppName.🔗URL) {
             HStack(spacing: 12) {
-                Image(🄰ppName.rawValue)
+                Image(ⓐppName.rawValue)
                     .resizable()
                     .frame(width: 60, height: 60)
                     .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -16,7 +16,7 @@ struct 📣ADView: View {
             
                 VStack(alignment: .leading, spacing: 2) {
                     HStack {
-                        Text(🄰ppName.rawValue)
+                        Text(ⓐppName.rawValue)
                             .font(.headline)
                             .lineLimit(1)
                         
@@ -27,7 +27,7 @@ struct 📣ADView: View {
                     .minimumScaleFactor(0.1)
                     .padding(.trailing, 32)
                     
-                    Text(🄰ppName.📄About)
+                    Text(ⓐppName.📄About)
                         .font(.subheadline)
                         .multilineTextAlignment(.leading)
                         .minimumScaleFactor(0.1)
@@ -51,9 +51,9 @@ struct 📣ADView: View {
     
     init(_ ⓐppName: 📣AppName? = nil) {
         if let 🏷 = ⓐppName {
-            🄰ppName = 🏷
+            self.ⓐppName = 🏷
         } else {
-            🄰ppName = 📣AppName.allCases.randomElement()!
+            self.ⓐppName = 📣AppName.allCases.randomElement()!
         }
     }
 }

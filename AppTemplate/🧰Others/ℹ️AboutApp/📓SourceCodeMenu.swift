@@ -40,12 +40,14 @@ struct 📓SourceCodeMenu: View {
 }
 
 struct 📓CodeSection: View {
-    var 🄳irectoryPath: String
-    var 📁URL: URL { Bundle.main.bundleURL.appendingPathComponent(🄳irectoryPath) }
+    var ⓓirectoryPath: String
+    var 📁URL: URL { Bundle.main.bundleURL.appendingPathComponent(ⓓirectoryPath) }
     var 🏷FileName: [String] {
         do {
             return try FileManager.default.contentsOfDirectory(atPath: 📁URL.path)
-        } catch { return [] }
+        } catch {
+            return []
+        }
     }
     
     var body: some View {
@@ -59,13 +61,13 @@ struct 📓CodeSection: View {
             
             if 🏷FileName.isEmpty { Text("🐛Bug") }
         } header: {
-            Text(🄳irectoryPath)
+            Text(ⓓirectoryPath)
                 .textCase(.none)
         }
     }
     
     init(_ ⓓirectoryPath: String) {
-        🄳irectoryPath = ⓓirectoryPath
+        self.ⓓirectoryPath = ⓓirectoryPath
     }
 }
 
@@ -94,56 +96,55 @@ struct 🔗RepositoryLink: View {
             Link(destination: 🔗WebRepositoryURL) {
                 HStack {
                     Label("Web Repository", systemImage: "link")
-                    
                     Spacer()
-                    
                     Image(systemName: "arrow.up.forward.app")
                         .imageScale(.small)
                         .foregroundStyle(.secondary)
                 }
             }
-        } footer: { Text(🔗WebRepositoryURL.description) }
+        } footer: {
+            Text(🔗WebRepositoryURL.description)
+        }
         
         Section {
             Link(destination: 🔗WebRepositoryURL_Mirror) {
                 HStack {
                     Label("Web Repository", systemImage: "link")
-                    
                     Text("(Mirror)")
                         .font(.subheadline.bold())
                         .foregroundStyle(.secondary)
-                    
                     Spacer()
-                    
                     Image(systemName: "arrow.up.forward.app")
                         .imageScale(.small)
                         .foregroundStyle(.secondary)
                 }
             }
-        } footer: { Text(🔗WebRepositoryURL_Mirror.description) }
+        } footer: {
+            Text(🔗WebRepositoryURL_Mirror.description)
+        }
     }
 }
 
 
 struct 📰SourceCodeView: View {
-    var 🅃ext: String
-    var 🅃itle: LocalizedStringKey
+    var ⓣext: String
+    var ⓣitle: LocalizedStringKey
     
     var body: some View {
         ScrollView {
             ScrollView(.horizontal, showsIndicators: false) {
-                Text(🅃ext)
+                Text(ⓣext)
                     .padding()
             }
         }
-        .navigationBarTitle(🅃itle)
+        .navigationBarTitle(ⓣitle)
         .navigationBarTitleDisplayMode(.inline)
         .font(.caption.monospaced())
         .textSelection(.enabled)
     }
     
     init(_ ⓣext: String, _ ⓣitle: String) {
-        🅃ext = ⓣext
-        🅃itle = LocalizedStringKey(ⓣitle)
+        self.ⓣext = ⓣext
+        self.ⓣitle = LocalizedStringKey(ⓣitle)
     }
 }
