@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct 📣ADBanner: View {
+struct 📣ADPopupBanner: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     @State private var 🚩ShowBanner = true
     

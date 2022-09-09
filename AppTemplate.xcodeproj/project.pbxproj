@@ -33,7 +33,7 @@
 		12DDD5732861DB63004F59A0 /* 📣ADMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADMenu.swift */; };
 		12DDD5742861DB63004F59A0 /* 📣AppName.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 📣AppName.swift */; };
 		12DDD5752861DB63004F59A0 /* 📣ADView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 📣ADView.swift */; };
-		12DDD5762861DB63004F59A0 /* 📣ADBanner.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 📣ADBanner.swift */; };
+		12DDD5762861DB63004F59A0 /* 📣ADPopupBanner.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 📣ADPopupBanner.swift */; };
 		12DDDDAD288BF2E40055A073 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */; };
 		12DDDDAF288C1C990055A073 /* 🧑‍💻AboutDeveloperPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDDDAE288C1C990055A073 /* 🧑‍💻AboutDeveloperPublisher.swift */; };
 		12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
@@ -49,9 +49,10 @@
 		12E4A76728502D7200B2380B /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
 		12E4A76B28502EDE00B2380B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
 		12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
-		12E4A77B2850301300B2380B /* 📣ADBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 📣ADBanner.swift */; };
+		12E4A77B2850301300B2380B /* 📣ADPopupBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 📣ADPopupBanner.swift */; };
 		12E4A77D2850301300B2380B /* 📣ADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 📣ADView.swift */; };
 		12E4A77E2850301300B2380B /* 📣AppName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 📣AppName.swift */; };
+		F587808528CB701400F632E7 /* ADSimpleBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587808428CB701400F632E7 /* ADSimpleBanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -100,7 +101,7 @@
 				12DDD5732861DB63004F59A0 /* 📣ADMenu.swift in CopyFiles */,
 				12DDD5742861DB63004F59A0 /* 📣AppName.swift in CopyFiles */,
 				12DDD5752861DB63004F59A0 /* 📣ADView.swift in CopyFiles */,
-				12DDD5762861DB63004F59A0 /* 📣ADBanner.swift in CopyFiles */,
+				12DDD5762861DB63004F59A0 /* 📣ADPopupBanner.swift in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +153,10 @@
 		12E4A76E28502EE100B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		12E4A77228502F3A00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A77428502F3B00B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		12E4A7762850301300B2380B /* 📣ADBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADBanner.swift"; sourceTree = "<group>"; };
+		12E4A7762850301300B2380B /* 📣ADPopupBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADPopupBanner.swift"; sourceTree = "<group>"; };
 		12E4A7782850301300B2380B /* 📣ADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADView.swift"; sourceTree = "<group>"; };
 		12E4A7792850301300B2380B /* 📣AppName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣AppName.swift"; sourceTree = "<group>"; };
+		F587808428CB701400F632E7 /* ADSimpleBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADSimpleBanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +184,8 @@
 			children = (
 				12D4368428656B4400B707F5 /* 🖨printLog.swift */,
 				12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */,
-				12E4A7762850301300B2380B /* 📣ADBanner.swift */,
+				F587808428CB701400F632E7 /* ADSimpleBanner.swift */,
+				12E4A7762850301300B2380B /* 📣ADPopupBanner.swift */,
 				12A605A4289219B30001DE23 /* 🔠BiggerSystemFontTest.swift */,
 				1299C394288D51170086522B /* 🛠Menu */,
 				12E4A74D285027F700B2380B /* Preview Content */,
@@ -385,7 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12E4A77B2850301300B2380B /* 📣ADBanner.swift in Sources */,
+				12E4A77B2850301300B2380B /* 📣ADPopupBanner.swift in Sources */,
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
 				12E4A77D2850301300B2380B /* 📣ADView.swift in Sources */,
 				127ECB29286149EF00CB1BC3 /* 🛒StoreModel.swift in Sources */,
@@ -393,6 +396,7 @@
 				12A605A5289219B30001DE23 /* 🔠BiggerSystemFontTest.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
+				F587808528CB701400F632E7 /* ADSimpleBanner.swift in Sources */,
 				12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */,
 				1220AD0C286C03CC00F07278 /* 🩻TransparencyReport.swift in Sources */,
 				12D4368528656B4400B707F5 /* 🖨printLog.swift in Sources */,

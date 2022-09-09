@@ -12,6 +12,8 @@ struct ContentView: View {
                 
                 🔗OpenSystemSetting()
                 
+                📣ADSimpleBanner()
+                
                 🩻TransparencyReportLink()
                 
                 Section {
@@ -43,7 +45,7 @@ struct ContentView: View {
                 }
             }
         }
-        .overlay(alignment: .bottom) { 📣ADBanner() }
+        .overlay(alignment: .bottom) { 📣ADPopupBanner() }
     }
 }
 
