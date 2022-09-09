@@ -5,7 +5,6 @@ import SwiftUI
 struct AppTemplateApp: App {
     
     let 📱 = 📱AppModel()
-    
     let 🛒 = 🛒StoreModel()
     
     var body: some Scene {
