@@ -8,19 +8,15 @@ class 🛒StoreModel: ObservableObject {
     
     var 🆔ProductID: String
     
-    @Published private(set) var 🎫Product: Product?
-    @Published private(set) var 🚩Purchased: Bool? = nil
-    
-    @AppStorage("🄻aunchCount") var 🄻aunchCount: Int = 0
-    
     var 🚩ADisActive: Bool {
         !(🚩Purchased ?? true) && ( 🄻aunchCount > 5 )
     }
     
+    @Published private(set) var 🎫Product: Product?
+    @Published private(set) var 🚩Purchased: Bool? = nil
+    @AppStorage("🄻aunchCount") var 🄻aunchCount: Int = 0
     var 🚩Unconnected: Bool { 🎫Product == nil }
-    
     var 🤖UpdateListenerTask: Task<Void, Error>? = nil
-    
     
     init(id: String) {
         🆔ProductID = id
@@ -40,7 +36,6 @@ class 🛒StoreModel: ObservableObject {
     }
     
     deinit { 🤖UpdateListenerTask?.cancel() }
-    
     
     func 📪ListenForTransactions() -> Task<Void, Error> {
         return Task.detached {
@@ -62,7 +57,6 @@ class 🛒StoreModel: ObservableObject {
         }
     }
     
-    
     @MainActor
     func 🅁equestProducts() async {
         do {
@@ -73,7 +67,6 @@ class 🛒StoreModel: ObservableObject {
             print(#function, "Failed product request from the App Store server: \(error)")
         }
     }
-    
     
     func 👆Purchase() async throws {
         guard let 🎫 = 🎫Product else { return }
@@ -96,7 +89,6 @@ class 🛒StoreModel: ObservableObject {
         }
     }
     
-    
     func 🔍CheckVerified<T>(_ 📦Result: VerificationResult<T>) throws -> T {
         //Check whether the JWS passes StoreKit verification.
         switch 📦Result {
@@ -108,7 +100,6 @@ class 🛒StoreModel: ObservableObject {
                 return 📦
         }
     }
-    
     
     @MainActor
     func 🅄pdateCustomerProductStatus() async {
@@ -129,12 +120,10 @@ class 🛒StoreModel: ObservableObject {
         🚩Purchased = 🄿urchased
     }
     
-    
     var 🎫Name: String {
         guard let 🎫 = 🎫Product else { return "(Placeholder)" }
         return 🎫.displayName
     }
-    
     
     var 🎫Price: String {
         guard let 🎫 = 🎫Product else { return "…" }
@@ -142,12 +131,9 @@ class 🛒StoreModel: ObservableObject {
     }
 }
 
-
 public enum 🚨StoreError: Error {
     case failedVerification
 }
-
-
 
 
 //Ref: Sample code "Implementing a store in your app using the StoreKit API | Apple Developer Documentation"
