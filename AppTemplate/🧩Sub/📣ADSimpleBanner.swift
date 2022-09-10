@@ -9,10 +9,10 @@ struct 📣ADSimpleBanner: View {
             Color.clear
             if 🛒.🚩ADisActive {
                 📣ADView(without: .Plain将棋盤)
-                    .padding()
+                    .padding(8)
             }
         }
-        .frame(height: 160)
+        .frame(maxHeight: 160)
         .animation(.default, value: 🛒.🚩Purchased)
     }
 }
