@@ -103,21 +103,21 @@ class 🛒StoreModel: ObservableObject {
     
     @MainActor
     func 🅄pdateCustomerProductStatus() async {
-        var 🄿urchased = false
+        var ⓟurchased = false
         
         for await 📦 in Transaction.currentEntitlements {
             do {
                 //Check whether the transaction is verified. If it isn’t, catch `failedVerification` error.
                 let 🧾Transaction = try 🔍CheckVerified(📦)
                 if 🧾Transaction.productID == 🆔ProductID {
-                    🄿urchased = true
+                    ⓟurchased = true
                 }
             } catch {
                 print(#function, error)
             }
         }
         
-        🚩Purchased = 🄿urchased
+        🚩Purchased = ⓟurchased
     }
     
     var 🎫Name: String {
