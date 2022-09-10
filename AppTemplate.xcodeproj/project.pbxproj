@@ -11,8 +11,7 @@
 		1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
 		1256A340286B180C002AF08A /* 🛠AppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
 		12724D702862DEB0008471AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12724D6F2862DEB0008471AB /* StoreKit.framework */; };
-		127ECB29286149EF00CB1BC3 /* 🛒StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🛒StoreModel.swift */; };
-		127ECB2A286149EF00CB1BC3 /* 🛒PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒PurchaseView.swift */; };
+		127ECB2A286149EF00CB1BC3 /* 🛒InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
 		127ECB2C28614B8B00CB1BC3 /* 📣AD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 127ECB2D28614C0200CB1BC3 /* Configuration.storekit */; };
 		1299C37B288CB8C30086522B /* 🌏AppStoreDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C37D288CB8C30086522B /* 🌏AppStoreDescription.strings */; };
@@ -41,8 +40,7 @@
 		12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
 		12E4A77B2850301300B2380B /* 📣ADPopupBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 📣ADPopupBanner.swift */; };
 		F556941E28CC2F72004558FC /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
-		F556941F28CC2F7D004558FC /* 🛒StoreModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🛒StoreModel.swift */; };
-		F556942028CC2F7D004558FC /* 🛒PurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒PurchaseView.swift */; };
+		F556942028CC2F7D004558FC /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
 		F587808528CB701400F632E7 /* 📣ADSimpleBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587808428CB701400F632E7 /* 📣ADSimpleBanner.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +51,7 @@
 			dstPath = "🧰Others";
 			dstSubfolderSpec = 7;
 			files = (
-				F556941F28CC2F7D004558FC /* 🛒StoreModel.swift in CopyFiles */,
-				F556942028CC2F7D004558FC /* 🛒PurchaseView.swift in CopyFiles */,
+				F556942028CC2F7D004558FC /* 🛒InAppPurchase.swift in CopyFiles */,
 				F556941E28CC2F72004558FC /* 📣AD.swift in CopyFiles */,
 				12C67132286069ED00FE4C06 /* ℹ️AboutAppMenu.swift in CopyFiles */,
 				12C67133286069ED00FE4C06 /* 📓SourceCodeMenu.swift in CopyFiles */,
@@ -91,8 +88,7 @@
 		1220AD0B286C03CC00F07278 /* 🩻TransparencyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🩻TransparencyReport.swift"; sourceTree = "<group>"; };
 		1256A33E286B174D002AF08A /* 🛠AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛠AppMenu.swift"; sourceTree = "<group>"; };
 		12724D6F2862DEB0008471AB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		127ECB27286149EF00CB1BC3 /* 🛒StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒StoreModel.swift"; sourceTree = "<group>"; };
-		127ECB28286149EF00CB1BC3 /* 🛒PurchaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒PurchaseView.swift"; sourceTree = "<group>"; };
+		127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchase.swift"; sourceTree = "<group>"; };
 		127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣AD.swift"; sourceTree = "<group>"; };
 		127ECB2D28614C0200CB1BC3 /* Configuration.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		1299C37C288CB8C30086522B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/🌏AppStoreDescription.strings"; sourceTree = "<group>"; };
@@ -155,16 +151,6 @@
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
 			path = "🧩Sub";
-			sourceTree = "<group>";
-		};
-		127ECB26286149C900CB1BC3 /* 🛒InAppPurchase */ = {
-			isa = PBXGroup;
-			children = (
-				127ECB27286149EF00CB1BC3 /* 🛒StoreModel.swift */,
-				127ECB28286149EF00CB1BC3 /* 🛒PurchaseView.swift */,
-				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
-			);
-			path = "🛒InAppPurchase";
 			sourceTree = "<group>";
 		};
 		1299C381288CC2BE0086522B /* ⚠️WorkInProgress */ = {
@@ -232,7 +218,8 @@
 				12E4A76028502C9F00B2380B /* ℹ️AboutAppMenu.swift */,
 				12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */,
 				127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */,
-				127ECB26286149C900CB1BC3 /* 🛒InAppPurchase */,
+				127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */,
+				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
 				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
 			);
 			path = "🧰Others";
@@ -332,7 +319,6 @@
 			files = (
 				12E4A77B2850301300B2380B /* 📣ADPopupBanner.swift in Sources */,
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
-				127ECB29286149EF00CB1BC3 /* 🛒StoreModel.swift in Sources */,
 				12A605A5289219B30001DE23 /* 🔠BiggerSystemFontTest.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
@@ -341,7 +327,7 @@
 				1220AD0C286C03CC00F07278 /* 🩻TransparencyReport.swift in Sources */,
 				12D4368528656B4400B707F5 /* 🖨printLog.swift in Sources */,
 				1299C39C288D650C0086522B /* 🛠MenuButton.swift in Sources */,
-				127ECB2A286149EF00CB1BC3 /* 🛒PurchaseView.swift in Sources */,
+				127ECB2A286149EF00CB1BC3 /* 🛒InAppPurchase.swift in Sources */,
 				12E4A76328502C9F00B2380B /* ℹ️AboutAppMenu.swift in Sources */,
 				12E4A76228502C9F00B2380B /* 📓SourceCodeMenu.swift in Sources */,
 				127ECB2C28614B8B00CB1BC3 /* 📣AD.swift in Sources */,
