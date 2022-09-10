@@ -5,7 +5,7 @@ import SwiftUI
 struct AppTemplateApp: App {
     
     let 📱 = 📱AppModel()
-    let 🛒 = 🛒StoreModel()
+    let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
     
     var body: some Scene {
         WindowGroup {

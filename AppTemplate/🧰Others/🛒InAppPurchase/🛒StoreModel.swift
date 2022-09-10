@@ -1,15 +1,12 @@
 
-let 🛒InAppPurchaseProductID = "PLACEHOLDER.adfree"
-
-
-
-
 import StoreKit
 import SwiftUI
 
 typealias Transaction = StoreKit.Transaction
 
 class 🛒StoreModel: ObservableObject {
+    
+    var 🆔ProductID: String
     
     @Published private(set) var 🎫Product: Product?
     @Published private(set) var 🚩Purchased: Bool? = nil
@@ -25,7 +22,9 @@ class 🛒StoreModel: ObservableObject {
     var 🤖UpdateListenerTask: Task<Void, Error>? = nil
     
     
-    init() {
+    init(id: String) {
+        🆔ProductID = id
+        
         //Start a transaction listener as close to app launch as possible so you don't miss any transactions.
         🤖UpdateListenerTask = 📪ListenForTransactions()
         
@@ -67,7 +66,7 @@ class 🛒StoreModel: ObservableObject {
     @MainActor
     func 🅁equestProducts() async {
         do {
-            if let 📦 = try await Product.products(for: [🛒InAppPurchaseProductID]).first {
+            if let 📦 = try await Product.products(for: [🆔ProductID]).first {
                 🎫Product = 📦
             }
         } catch {
@@ -119,7 +118,7 @@ class 🛒StoreModel: ObservableObject {
             do {
                 //Check whether the transaction is verified. If it isn’t, catch `failedVerification` error.
                 let 🧾Transaction = try 🔍CheckVerified(📦)
-                if 🧾Transaction.productID == 🛒InAppPurchaseProductID {
+                if 🧾Transaction.productID == 🆔ProductID {
                     🄿urchased = true
                 }
             } catch {

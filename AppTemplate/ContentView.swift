@@ -54,7 +54,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static let 📱 = 📱AppModel()
-    static let 🛒 = 🛒StoreModel()
+    static let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
     
     static var previews: some View {
         ContentView()
