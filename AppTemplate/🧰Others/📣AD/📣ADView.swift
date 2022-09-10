@@ -50,4 +50,9 @@ struct 📣ADView: View {
     init(_ ⓐppName: 📣AppName = 📣AppName.allCases.randomElement()!) {
         self.ⓐppName = ⓐppName
     }
+    
+    init(without: 📣AppName) {
+        let ⓐpps = 📣AppName.allCases.filter { $0 != without }
+        ⓐppName = ⓐpps.randomElement()!
+    }
 }

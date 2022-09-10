@@ -8,7 +8,7 @@ struct 📣ADSimpleBanner: View {
         ZStack {
             Color.clear
             if 🛒.🚩ADisActive {
-                📣ADView()
+                📣ADView(without: .Plain将棋盤)
                     .padding()
             }
         }
