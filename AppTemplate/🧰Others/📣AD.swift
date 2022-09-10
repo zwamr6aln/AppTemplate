@@ -32,13 +32,7 @@ struct 📣ADMenu: View {
                 Text("Description")
             }
             
-            Section {
-                🛒PurchaseView()
-                🛒ProductPreview()
-                🛒RestoreButton()
-            } header: {
-                Text("In-App Purchase")
-            }
+            🛒IAPSection()
             
             Section {
                 ForEach(📣AppName.allCases) { 🏷 in
