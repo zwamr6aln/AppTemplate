@@ -4,9 +4,7 @@ import StoreKit
 
 struct 🛒PurchaseView: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
-    
     @State private var 🚩BuyingNow = false
-    
     @State private var 🚨ShowError = false
     @State private var 🚨ErrorMessage = ""
     
@@ -55,7 +53,6 @@ struct 🛒PurchaseView: View {
     }
 }
 
-
 struct 🛒ProductPreview: View {
     var body: some View {
         HStack {
@@ -74,12 +71,9 @@ struct 🛒ProductPreview: View {
     }
 }
 
-
 struct 🛒RestoreButton: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
-    
     @State private var 🚩RestoringNow = false
-    
     @State private var 🚨ShowAlert = false
     @State private var 🚨SyncSuccess = false
     @State private var 🚨Message = ""

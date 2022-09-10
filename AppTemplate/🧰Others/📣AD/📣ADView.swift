@@ -47,11 +47,7 @@ struct 📣ADView: View {
         }
     }
     
-    init(_ ⓐppName: 📣AppName? = nil) {
-        if let 🏷 = ⓐppName {
-            self.ⓐppName = 🏷
-        } else {
-            self.ⓐppName = 📣AppName.allCases.randomElement()!
-        }
+    init(_ ⓐppName: 📣AppName = 📣AppName.allCases.randomElement()!) {
+        self.ⓐppName = ⓐppName
     }
 }
