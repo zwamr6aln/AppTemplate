@@ -13,7 +13,7 @@
 		12724D702862DEB0008471AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12724D6F2862DEB0008471AB /* StoreKit.framework */; };
 		127ECB29286149EF00CB1BC3 /* 🛒StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🛒StoreModel.swift */; };
 		127ECB2A286149EF00CB1BC3 /* 🛒PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒PurchaseView.swift */; };
-		127ECB2C28614B8B00CB1BC3 /* 📣ADMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADMenu.swift */; };
+		127ECB2C28614B8B00CB1BC3 /* 📣AD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 127ECB2D28614C0200CB1BC3 /* Configuration.storekit */; };
 		1299C37B288CB8C30086522B /* 🌏AppStoreDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C37D288CB8C30086522B /* 🌏AppStoreDescription.strings */; };
 		1299C386288D12760086522B /* 🌏VersionDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C388288D12760086522B /* 🌏VersionDescription.strings */; };
@@ -30,9 +30,7 @@
 		12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */; };
 		12DDD5712861DB5D004F59A0 /* 🛒PurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒PurchaseView.swift */; };
 		12DDD5722861DB5D004F59A0 /* 🛒StoreModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB27286149EF00CB1BC3 /* 🛒StoreModel.swift */; };
-		12DDD5732861DB63004F59A0 /* 📣ADMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADMenu.swift */; };
-		12DDD5742861DB63004F59A0 /* 📣AppName.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 📣AppName.swift */; };
-		12DDD5752861DB63004F59A0 /* 📣ADView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 📣ADView.swift */; };
+		12DDD5732861DB63004F59A0 /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		12DDD5762861DB63004F59A0 /* 📣ADPopupBanner.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 📣ADPopupBanner.swift */; };
 		12DDDDAD288BF2E40055A073 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */; };
 		12DDDDAF288C1C990055A073 /* 🧑‍💻AboutDeveloperPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDDDAE288C1C990055A073 /* 🧑‍💻AboutDeveloperPublisher.swift */; };
@@ -50,8 +48,6 @@
 		12E4A76B28502EDE00B2380B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
 		12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
 		12E4A77B2850301300B2380B /* 📣ADPopupBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 📣ADPopupBanner.swift */; };
-		12E4A77D2850301300B2380B /* 📣ADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7782850301300B2380B /* 📣ADView.swift */; };
-		12E4A77E2850301300B2380B /* 📣AppName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7792850301300B2380B /* 📣AppName.swift */; };
 		F587808528CB701400F632E7 /* 📣ADSimpleBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587808428CB701400F632E7 /* 📣ADSimpleBanner.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,9 +94,7 @@
 			dstPath = "📣AD";
 			dstSubfolderSpec = 7;
 			files = (
-				12DDD5732861DB63004F59A0 /* 📣ADMenu.swift in CopyFiles */,
-				12DDD5742861DB63004F59A0 /* 📣AppName.swift in CopyFiles */,
-				12DDD5752861DB63004F59A0 /* 📣ADView.swift in CopyFiles */,
+				12DDD5732861DB63004F59A0 /* 📣AD.swift in CopyFiles */,
 				12DDD5762861DB63004F59A0 /* 📣ADPopupBanner.swift in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,7 +119,7 @@
 		12724D6F2862DEB0008471AB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		127ECB27286149EF00CB1BC3 /* 🛒StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒StoreModel.swift"; sourceTree = "<group>"; };
 		127ECB28286149EF00CB1BC3 /* 🛒PurchaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒PurchaseView.swift"; sourceTree = "<group>"; };
-		127ECB2B28614B8B00CB1BC3 /* 📣ADMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADMenu.swift"; sourceTree = "<group>"; };
+		127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣AD.swift"; sourceTree = "<group>"; };
 		127ECB2D28614C0200CB1BC3 /* Configuration.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		1299C37C288CB8C30086522B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/🌏AppStoreDescription.strings"; sourceTree = "<group>"; };
 		1299C37E288CB8C70086522B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = "ja.lproj/🌏AppStoreDescription.strings"; sourceTree = "<group>"; };
@@ -154,8 +148,6 @@
 		12E4A77228502F3A00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A77428502F3B00B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A7762850301300B2380B /* 📣ADPopupBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADPopupBanner.swift"; sourceTree = "<group>"; };
-		12E4A7782850301300B2380B /* 📣ADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADView.swift"; sourceTree = "<group>"; };
-		12E4A7792850301300B2380B /* 📣AppName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣AppName.swift"; sourceTree = "<group>"; };
 		F587808428CB701400F632E7 /* 📣ADSimpleBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADSimpleBanner.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -266,7 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				12E4A75D28502C6400B2380B /* ℹ️AboutApp */,
-				12E4A77528502FF800B2380B /* 📣AD */,
+				127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */,
 				127ECB26286149C900CB1BC3 /* 🛒InAppPurchase */,
 				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
 			);
@@ -293,16 +285,6 @@
 				1299C388288D12760086522B /* 🌏VersionDescription.strings */,
 			);
 			path = "🌏Localization";
-			sourceTree = "<group>";
-		};
-		12E4A77528502FF800B2380B /* 📣AD */ = {
-			isa = PBXGroup;
-			children = (
-				127ECB2B28614B8B00CB1BC3 /* 📣ADMenu.swift */,
-				12E4A7782850301300B2380B /* 📣ADView.swift */,
-				12E4A7792850301300B2380B /* 📣AppName.swift */,
-			);
-			path = "📣AD";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,7 +372,6 @@
 			files = (
 				12E4A77B2850301300B2380B /* 📣ADPopupBanner.swift in Sources */,
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
-				12E4A77D2850301300B2380B /* 📣ADView.swift in Sources */,
 				127ECB29286149EF00CB1BC3 /* 🛒StoreModel.swift in Sources */,
 				12DDDDAF288C1C990055A073 /* 🧑‍💻AboutDeveloperPublisher.swift in Sources */,
 				12A605A5289219B30001DE23 /* 🔠BiggerSystemFontTest.swift in Sources */,
@@ -404,9 +385,8 @@
 				127ECB2A286149EF00CB1BC3 /* 🛒PurchaseView.swift in Sources */,
 				12E4A76328502C9F00B2380B /* ℹ️AboutAppMenu.swift in Sources */,
 				12E4A76128502C9F00B2380B /* 📜VersionHistory.swift in Sources */,
-				12E4A77E2850301300B2380B /* 📣AppName.swift in Sources */,
 				12E4A76228502C9F00B2380B /* 📓SourceCodeMenu.swift in Sources */,
-				127ECB2C28614B8B00CB1BC3 /* 📣ADMenu.swift in Sources */,
+				127ECB2C28614B8B00CB1BC3 /* 📣AD.swift in Sources */,
 				12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
