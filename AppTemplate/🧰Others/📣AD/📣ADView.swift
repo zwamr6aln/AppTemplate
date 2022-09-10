@@ -13,13 +13,11 @@ struct 📣ADView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                     .shadow(radius: 1.5, y: 0.5)
                     .padding(.vertical, 40)
-            
                 VStack(alignment: .leading, spacing: 2) {
                     HStack {
                         Text(ⓐppName.rawValue)
                             .font(.headline)
                             .lineLimit(1)
-                        
                         Image(systemName: "arrow.up.forward.app")
                             .resizable()
                             .frame(width: 15, height: 15)

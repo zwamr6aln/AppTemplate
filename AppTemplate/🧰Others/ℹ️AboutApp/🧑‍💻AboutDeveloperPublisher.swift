@@ -20,14 +20,11 @@ struct 🧑‍💻AboutDeveloperPublisherMenu: View {
                 Text("The System")
             }
             
-            
             Section {
                 Text("山下 亮")
-                
                 Text("やました りょう (ひらがな)")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
-                
                 Text("Yamashita Ryo (alphabet)")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
@@ -37,14 +34,11 @@ struct 🧑‍💻AboutDeveloperPublisherMenu: View {
                 Text("only one person")
             }
             
-            
             Section {
                 Text("age")
                     .badge("about 28")
-                
                 Text("country")
                     .badge("Japan")
-                
                 Text("native language")
                     .badge("Japanese")
             } header: {
@@ -53,9 +47,7 @@ struct 🧑‍💻AboutDeveloperPublisherMenu: View {
                 Text("As of 2021")
             }
             
-            
             📆TimelineSection()
-            
             
             Section {
                 Image("Developer_Publisher")

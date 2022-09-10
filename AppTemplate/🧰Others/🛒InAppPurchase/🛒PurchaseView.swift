@@ -7,8 +7,8 @@ struct 🛒PurchaseView: View {
     
     @State private var 🚩BuyingNow = false
     
-    @State var 🚨ShowError = false
-    @State var 🚨ErrorMessage = ""
+    @State private var 🚨ShowError = false
+    @State private var 🚨ErrorMessage = ""
     
     var body: some View {
         HStack {
@@ -80,9 +80,9 @@ struct 🛒RestoreButton: View {
     
     @State private var 🚩RestoringNow = false
     
-    @State var 🚨ShowAlert = false
-    @State var 🚨SyncSuccess = false
-    @State var 🚨Message = ""
+    @State private var 🚨ShowAlert = false
+    @State private var 🚨SyncSuccess = false
+    @State private var 🚨Message = ""
     
     var body: some View {
         Section {

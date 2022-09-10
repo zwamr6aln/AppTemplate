@@ -27,7 +27,6 @@ struct 📜VersionHistoryLink: View {
                     }
                     .headerProminence(.increased)
                     
-                    
                     📜PastVersionSection()
                 }
                 .navigationBarTitle("Version History")
