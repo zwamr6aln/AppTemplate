@@ -109,6 +109,7 @@ enum 📣AppName: String, CaseIterable, Identifiable {
     case TapWeight
     case TapTemperature
     case MemorizeWidget
+    case LockInNote
     
     var id: String { self.rawValue }
     
@@ -120,6 +121,7 @@ enum 📣AppName: String, CaseIterable, Identifiable {
             case .TapWeight: return URL(string: "https://apps.apple.com/app/id1624159721")!
             case .TapTemperature: return URL(string: "https://apps.apple.com/app/id1626760566")!
             case .MemorizeWidget: return URL(string: "https://apps.apple.com/app/id1644276262")!
+            case .LockInNote: return URL(string: "https://apps.apple.com/app/id1644879340")!
         }
     }
     
@@ -131,6 +133,7 @@ enum 📣AppName: String, CaseIterable, Identifiable {
             case .TapWeight: return "Register weight data to the Apple \"Health\" application pre-installed on iPhone in the fastest possible way (as manual)."
             case .TapTemperature: return "Register body temperature data to the \"Health\" app pre-installed on iPhone in the fastest possible way (as manual)."
             case .MemorizeWidget: return "Flashcard on widget. Memorize a note in everyday life."
+            case .LockInNote: return "Notes widget on lock screen."
         }
     }
 }
