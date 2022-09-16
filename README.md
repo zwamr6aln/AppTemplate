@@ -1,18 +1,13 @@
 # 📱 iPhoneApp AppTemplate / アプリテンプレート
 
 <br>
-
 ![画像](AppTemplate/Assets.xcassets/LaunchIcon.imageset/360.png)
-
 <br>
 
 ## 🔗 AppStore link
-
 https://apps.apple.com/app/id1111
 
-
 ## 👆 Handiwork MEMO
-
 ### Localization
 PROJECTS / Localizations
 
@@ -24,67 +19,44 @@ InfoPlist.strings / CFBundleDisplayName = "AAAA";
 
 #### Glossaries
 translations of strings from Apple OS
-
 https://developer.apple.com/download/all/?q=Glossaries
-
 https://applelocalization.com
-
 
 ### Source code bundle
 TARGETS / Build Phases / Copy Files
-
 Resources
-
 SubPath
-
 
 ### Icon size
 1024
 
-
 ### In-App Purchase
 Capabilities / In-App Purchase
-
 Edit Scheme / StoreKit Configuration
-
 Configuration.storekit
-
 ProductID: AAAA.adfree
-
 
 ### Move "Preview Content"
 Move: "AAAA/🧩Sub/Preview Content"
-
 Edit: TARGETS / Build Settings / Development Assets
-
 
 ### Move "info.plist"
 Move: "AAAA/🧩Sub/Info.plist"
-
 Edit: TARGETS / Build Settings / Packaging / Info.plist File
-
 
 ### HealthKit
 Capabilities / HealthKit
-
 Info.plist / Privacy - Health Share Usage Description
-
 Info.plist / Privacy - Health Update Usage Description
-
 "Activate HeakthKit permission to record data."
 
 #### Move "AAAA.entitlements"
 Move: "AAAA/🧩Sub/AAAA.entitlements"
-
 Edit: TARGETS / Build Settings / Signing / CODE_SIGN_ENTITLEMENTS
 
-
-<!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
-
 ## 📄 Description
-
+<!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
 <!--==== English description ====-->
-
 AAAA.
 
 【Target/Use-case】
@@ -149,39 +121,27 @@ Korean:
 
 <br>
 
-
 ## 🧰 Source code link
-
 https://github.com/FlipByBlink/AAAA
 
-
 ### Source code (Mirror) link
-
 https://gitlab.com/FlipByBlink/AAAA_Mirror
 
-
 ## ✉️ Contact
-
 sear_pandora_0x@icloud.com
 
-
-
+<!-- URL "Support page for AppStore" -->
+<!-- https://flipbyblink.github.io/AAAA/ -->
+<!-- URL "Privacy Policy for AppStore" -->
+<!-- https://flipbyblink.github.io/AAAA/#privacy-policy-for-appstore -->
 
 <br>
-
 <br>
-
 ------
-
 <br>
-
 <br>
-
 <br>
-
 <br>
-
-
 ## Privacy Policy for AppStore
 
 
@@ -199,22 +159,9 @@ This application don't collect user infomation.
 
 
 <br>
-
 <br>
-
 <br>
-
 <br>
-
 ------
-
 <br>
-
 <br>
-
-
-<!-- URL "Support page for AppStore" -->
-<!-- https://flipbyblink.github.io/AAAA/ -->
-
-<!-- URL "Privacy Policy for AppStore" -->
-<!-- https://flipbyblink.github.io/AAAA/#privacy-policy-for-appstore -->
