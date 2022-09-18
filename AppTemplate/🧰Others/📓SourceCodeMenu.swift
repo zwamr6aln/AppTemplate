@@ -11,7 +11,6 @@ enum 📁SourceFolder: String, CaseIterable, Identifiable {
     case main
     case 🧩Sub
     case 🧰Others
-    
     var id: String { self.rawValue }
 }
 
@@ -31,7 +30,6 @@ struct 📓SourceCodeMenu: View {
             ForEach(📁SourceFolder.allCases) { 📁 in
                 📓CodeSection(📁.rawValue)
             }
-            
             📑BundleMainInfoDictionary()
             🔗RepositoryLink()
         }
@@ -49,7 +47,6 @@ struct 📓CodeSection: View {
             return []
         }
     }
-    
     var body: some View {
         Section {
             ForEach(🏷FileName, id: \.self) { 🏷 in
@@ -58,19 +55,16 @@ struct 📓CodeSection: View {
                     📰SourceCodeView(📃 ?? "🐛Bug", 🏷)
                 }
             }
-            
             if 🏷FileName.isEmpty { Text("🐛Bug") }
         } header: {
             Text(ⓓirectoryPath)
                 .textCase(.none)
         }
     }
-    
     init(_ ⓓirectoryPath: String) {
         self.ⓓirectoryPath = ⓓirectoryPath
     }
 }
-
 
 let 🄱undleMainInfoDictionary = Bundle.main.infoDictionary!.description
 struct 📑BundleMainInfoDictionary: View {
@@ -89,7 +83,6 @@ struct 📑BundleMainInfoDictionary: View {
     }
 }
 
-
 struct 🔗RepositoryLink: View {
     var body: some View {
         Section {
@@ -105,7 +98,6 @@ struct 🔗RepositoryLink: View {
         } footer: {
             Text(🔗WebRepositoryURL.description)
         }
-        
         Section {
             Link(destination: 🔗WebRepositoryURL_Mirror) {
                 HStack {
@@ -125,11 +117,9 @@ struct 🔗RepositoryLink: View {
     }
 }
 
-
 struct 📰SourceCodeView: View {
     var ⓣext: String
     var ⓣitle: LocalizedStringKey
-    
     var body: some View {
         ScrollView {
             ScrollView(.horizontal, showsIndicators: false) {
@@ -142,7 +132,6 @@ struct 📰SourceCodeView: View {
         .font(.caption.monospaced())
         .textSelection(.enabled)
     }
-    
     init(_ ⓣext: String, _ ⓣitle: String) {
         self.ⓣext = ⓣext
         self.ⓣitle = LocalizedStringKey(ⓣitle)

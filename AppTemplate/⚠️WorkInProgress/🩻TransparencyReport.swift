@@ -26,7 +26,7 @@ struct 🩻TransparencyReportMenu: View {
             }
             
             NavigationLink {
-                🧑‍💻AboutDeveloperPublisherMenu()
+                🧑‍💻AboutDeveloperPublisherLink.🧑‍💻AboutDeveloperPublisherMenu()
             } label: {
                 Label("Developer / Publisher", systemImage: "person")
             }

@@ -4,7 +4,6 @@ import StoreKit
 
 struct 📣ADMenuLink: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
-    
     var body: some View {
         Section {
             🛒PurchaseView()
@@ -17,37 +16,32 @@ struct 📣ADMenuLink: View {
             Text("AD / Purchase")
         }
     }
-}
-
-struct 📣ADMenu: View {
-    @EnvironmentObject var 🛒: 🛒StoreModel
-    
-    var body: some View {
-        List {
-            Section {
-                Text("This App shows banner advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.")
-                    .padding()
-                    .textSelection(.enabled)
-            } header: {
-                Text("Description")
-            }
-            
-            🛒IAPSection()
-            
-            Section {
-                ForEach(📣AppName.allCases) { 🏷 in
-                    📣ADView(🏷)
+    struct 📣ADMenu: View {
+        @EnvironmentObject var 🛒: 🛒StoreModel
+        var body: some View {
+            List {
+                Section {
+                    Text("This App shows banner advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.")
+                        .padding()
+                        .textSelection(.enabled)
+                } header: {
+                    Text("Description")
+                }
+                🛒IAPSection()
+                Section {
+                    ForEach(📣AppName.allCases) { 🏷 in
+                        📣ADView(🏷)
+                    }
                 }
             }
+            .navigationTitle("AD / Purchase")
         }
-        .navigationTitle("AD / Purchase")
     }
 }
 
 
 struct 📣ADView: View {
     @State private var ⓐppName: 📣AppName
-    
     var body: some View {
         Link(destination: ⓐppName.🔗URL) {
             HStack(spacing: 12) {
@@ -111,7 +105,7 @@ enum 📣AppName: String, CaseIterable, Identifiable {
     case MemorizeWidget
     case LockInNote
     
-    var id: String { self.rawValue }
+    var id: Self { self }
     
     var 🔗URL: URL {
         switch self {
