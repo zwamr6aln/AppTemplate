@@ -2,16 +2,15 @@
 import SwiftUI
 
 struct 🛠MenuButton: View { // ⚙️
-    @EnvironmentObject var 📱: 📱AppModel
-    
+    @State private var 🚩ShowMenu: Bool = false
     var body: some View {
         Button {
-            📱.🚩ShowMenu = true
+            🚩ShowMenu = true
             UIImpactFeedbackGenerator(style: .light).impactOccurred()
         } label: {
             Label("Open menu", systemImage: "gear")
         }
-        .sheet(isPresented: $📱.🚩ShowMenu) {
+        .sheet(isPresented: $🚩ShowMenu) {
             🛠AppMenu()
         }
     }

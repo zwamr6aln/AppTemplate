@@ -23,7 +23,7 @@ struct ℹ️AboutAppMenu: View {
             📰AppStoreDescriptionSection()
             📜VersionHistoryLink()
             👤PrivacyPolicySection()
-            🔗AppStoreLink()
+            🔗AppStoreLink.withURLFooter()
             📓SourceCodeLink()
             🧑‍💻AboutDeveloperPublisherLink()
         }
@@ -56,19 +56,28 @@ struct 📰AppStoreDescriptionSection: View {
 }
 
 struct 🔗AppStoreLink: View {
+    @Environment(\.openURL) var 🔗: OpenURLAction
     var body: some View {
-        Section {
-            Link(destination: 🔗AppStoreProductURL) {
-                HStack {
-                    Label("Open AppStore page", systemImage: "link")
-                    Spacer()
-                    Image(systemName: "arrow.up.forward.app")
-                        .imageScale(.small)
-                        .foregroundStyle(.secondary)
-                }
+        Button {
+            🔗.callAsFunction(🔗AppStoreProductURL)
+        } label: {
+            HStack {
+                Label("Open AppStore page", systemImage: "link")
+                Spacer()
+                Image(systemName: "arrow.up.forward.app")
+                    .imageScale(.small)
+                    .foregroundStyle(.secondary)
             }
-        } footer: {
-            Text(🔗AppStoreProductURL.description)
+        }
+    }
+    
+    struct withURLFooter: View {
+        var body: some View {
+            Section {
+                🔗AppStoreLink()
+            } footer: {
+                Text(🔗AppStoreProductURL.description)
+            }
         }
     }
 }
@@ -87,7 +96,6 @@ struct 👤PrivacyPolicySection: View {
         }
     }
 }
-
 
 struct 📜VersionHistoryLink: View {
     var body: some View {
@@ -135,7 +143,6 @@ struct 📜VersionHistoryLink: View {
         }
     }
 }
-
 
 struct 🧑‍💻AboutDeveloperPublisherLink: View {
     var body: some View {

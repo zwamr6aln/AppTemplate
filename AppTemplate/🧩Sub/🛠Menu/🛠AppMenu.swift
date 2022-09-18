@@ -3,7 +3,7 @@ import SwiftUI
 
 struct 🛠AppMenu: View {
     @EnvironmentObject var 📱: 📱AppModel
-    
+    @Environment(\.dismiss) var 🔙Dismiss: DismissAction
     var body: some View {
         NavigationView {
             List {
@@ -19,12 +19,10 @@ struct 🛠AppMenu: View {
                 📣ADMenuLink()
             }
             .navigationTitle("Menu")
-            .toolbar { ﹀CloseMenuButton() }
+            .toolbar { ﹀CloseMenuButton(🔙Dismiss) }
         }
-        .onDisappear { 📱.🚩ShowMenu = false }
     }
 }
-
 
 struct ℹ️AboutAppLink: View {
     var body: some View {
@@ -39,7 +37,6 @@ struct ℹ️AboutAppLink: View {
                         }
                         .shadow(radius: 3, y: 1)
                         .frame(width: 100, height: 100)
-                    
                     VStack(spacing: 6) {
                         Text("AppTemplate")
                             .font(.system(.title2, design: .rounded))
@@ -48,7 +45,6 @@ struct ℹ️AboutAppLink: View {
                             .opacity(0.75)
                             .lineLimit(1)
                             .minimumScaleFactor(0.1)
-                        
                         Text("Application for iPhone / iPad")
                             .font(.footnote)
                             .fontWeight(.medium)
@@ -61,15 +57,7 @@ struct ℹ️AboutAppLink: View {
                 .padding(.top, 12)
             }
             
-            Link(destination: 🔗AppStoreProductURL) {
-                HStack {
-                    Label("Open AppStore page", systemImage: "link")
-                    Spacer()
-                    Image(systemName: "arrow.up.forward.app")
-                        .imageScale(.small)
-                        .foregroundStyle(.secondary)
-                }
-            }
+            🔗AppStoreLink()
             
             NavigationLink  {
                 ℹ️AboutAppMenu()
@@ -81,12 +69,11 @@ struct ℹ️AboutAppLink: View {
 }
 
 struct ﹀CloseMenuButton: View {
-    @EnvironmentObject var 📱: 📱AppModel
-    
+    var 🔙Dismiss: DismissAction
     var body: some View {
         Button {
-            📱.🚩ShowMenu = false
-            UISelectionFeedbackGenerator().selectionChanged()
+            🔙Dismiss.callAsFunction()
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
         } label: {
             Image(systemName: "chevron.down")
                 .foregroundStyle(.secondary)
@@ -95,7 +82,12 @@ struct ﹀CloseMenuButton: View {
         }
         .accessibilityLabel("Dismiss")
     }
+    init(_ 🔙Dismiss: DismissAction) {
+        self.🔙Dismiss = 🔙Dismiss
+    }
 }
+
+
 
 
 struct MyPreviewProvider_Previews: PreviewProvider {

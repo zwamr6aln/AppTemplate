@@ -8,8 +8,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                Section { 🛠MenuButton() }
-                
                 🔗OpenSystemSetting()
                 
                 📣ADSimpleBanner()
