@@ -1,11 +1,11 @@
 # 📱 iPhoneApp AppTemplate / アプリテンプレート
 
 <br>
-![画像](AppTemplate/Assets.xcassets/LaunchIcon.imageset/360.png)
+![App icon](AppTemplate/Assets.xcassets/LaunchIcon.imageset/360.png)
 <br>
 
 ## 🔗 AppStore link
-https://apps.apple.com/app/id1111
+https://apps.apple.com/app/id❓
 
 ## 👆 Handiwork MEMO
 ### Localization
@@ -122,30 +122,33 @@ Korean:
 <br>
 
 ## 🧰 Source code link
-https://github.com/FlipByBlink/AAAA
+https://github.com/FlipByBlink/❓
 
 ### Source code (Mirror) link
-https://gitlab.com/FlipByBlink/AAAA_Mirror
+https://gitlab.com/FlipByBlink/❓_Mirror
 
 ## ✉️ Contact
 sear_pandora_0x@icloud.com
 
 <!-- URL "Support page for AppStore" -->
-<!-- https://flipbyblink.github.io/AAAA/ -->
+<!-- https://flipbyblink.github.io/❓/ -->
 <!-- URL "Privacy Policy for AppStore" -->
-<!-- https://flipbyblink.github.io/AAAA/#privacy-policy-for-appstore -->
+<!-- https://flipbyblink.github.io/❓/#privacy-policy-for-appstore -->
 
 <br>
 <br>
+
 ------
+
 <br>
 <br>
 <br>
 <br>
+
 ## Privacy Policy for AppStore
 
 
-2022-??-??
+2022-❓-❓
 
 
 ### Japanese
@@ -162,6 +165,8 @@ This application don't collect user infomation.
 <br>
 <br>
 <br>
+
 ------
+
 <br>
 <br>
