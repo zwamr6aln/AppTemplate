@@ -87,6 +87,32 @@ struct ﹀CloseMenuButton: View {
     }
 }
 
+struct ﹀DismissButton: View {
+    var ﹀Dismiss: DismissAction? = nil
+    @Binding var 🚩ShowSheet: Bool
+    var body: some View {
+        Button {
+            if let ﹀Dismiss {
+                ﹀Dismiss.callAsFunction()
+            } else {
+                🚩ShowSheet = false
+            }
+            UISelectionFeedbackGenerator().selectionChanged()
+        } label: {
+            Image(systemName: "chevron.down")
+        }
+        .tint(.secondary)
+        .accessibilityLabel("Dismiss")
+    }
+    init(_ ﹀Dismiss: DismissAction) {
+        self.﹀Dismiss = ﹀Dismiss
+        self._🚩ShowSheet = .constant(false)
+    }
+    init(_ 🚩ShowSheet: Binding<Bool>) {
+        self._🚩ShowSheet = 🚩ShowSheet
+    }
+}
+
 
 
 
