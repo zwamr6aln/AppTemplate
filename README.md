@@ -36,6 +36,9 @@ Edit Scheme / StoreKit Configuration
 Configuration.storekit
 ProductID: AAAA.adfree
 
+### AppStoreConnect / Non-Exempt Encryption
+info.plist / App Uses Non-Exempt Encryption - No
+
 ### Move "Preview Content"
 Move: "AAAA/🧩Sub/Preview Content"
 Edit: TARGETS / Build Settings / Development Assets
