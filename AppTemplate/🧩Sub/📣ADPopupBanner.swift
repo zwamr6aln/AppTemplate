@@ -19,10 +19,10 @@ struct 📣ADPopupBanner: View {
                                 Image(systemName: "xmark.circle.fill")
                                     .symbolRenderingMode(.multicolor)
                                     .font(.title)
-                                    .offset(y: -26)
                                     .shadow(radius: 1.5)
-                                    .padding()
+                                    .padding(12)
                             }
+                            .alignmentGuide(.top) { $0.height * 2 / 5 }
                         }
                         .background {
                             RoundedRectangle(cornerRadius: 16, style: .continuous)
