@@ -9,7 +9,6 @@ struct 🛒PurchaseView: View {
     @State private var 🚩BuyingNow = false
     @State private var 🚨ShowError = false
     @State private var 🚨ErrorMessage = ""
-    
     var body: some View {
         HStack {
             Label(🛒.🎫Name, systemImage: "cart")
@@ -20,7 +19,6 @@ struct 🛒PurchaseView: View {
                     .foregroundStyle(.tertiary)
                     .transition(.slide)
             }
-            
             Button(🛒.🎫Price) {
                 Task {
                     do {
@@ -57,17 +55,15 @@ struct 🛒PurchaseView: View {
 
 struct 🛒IAPSection: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
-    
     var body: some View {
         Section {
             🛒PurchaseView()
             🛒ProductPreview()
-            🛒RestoreButton()
         } header: {
             Text("In-App Purchase")
         }
+        🛒RestoreButton()
     }
-    
     struct 🛒ProductPreview: View {
         var body: some View {
             HStack(spacing: 4) {
@@ -84,14 +80,12 @@ struct 🛒IAPSection: View {
             .padding(24)
         }
     }
-    
     struct 🛒RestoreButton: View {
         @EnvironmentObject var 🛒: 🛒StoreModel
         @State private var 🚩RestoringNow = false
         @State private var 🚨ShowAlert = false
         @State private var 🚨SyncSuccess = false
         @State private var 🚨Message = ""
-        
         var body: some View {
             Section {
                 Button {
@@ -114,7 +108,7 @@ struct 🛒IAPSection: View {
                         Label("Restore Purchases", systemImage: "arrow.clockwise")
                             .font(.footnote)
                             .foregroundColor(🛒.🚩Unconnected ? .secondary : nil)
-                            .grayscale(!(🛒.🚩Purchased) ? 1 : 0)
+                            .grayscale(🛒.🚩Purchased ? 1 : 0)
                         if 🚩RestoringNow {
                             Spacer()
                             ProgressView()
