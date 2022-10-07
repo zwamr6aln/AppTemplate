@@ -4,13 +4,15 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var 📱: 📱AppModel
     @EnvironmentObject var 🛒: 🛒StoreModel
-    
+    @State private var 🚩ShowPurchaseSheet: Bool = false
     var body: some View {
         NavigationView {
             List {
+                📣test_ADView($🚩ShowPurchaseSheet)
+                
                 🔗OpenSystemSetting()
                 
-                📣ListRowADBanner()
+                //📣ListRowADBanner()
                 
                 🛒PurchaseView()
                 
@@ -44,8 +46,11 @@ struct ContentView: View {
                     🛠MenuButton()
                 }
             }
+            .sheet(isPresented: $🚩ShowPurchaseSheet) {
+                🛒PurchaseSheet()
+            }
         }
-        .overlay(alignment: .bottom) { 📣ADPopupBanner() }
+        //.overlay(alignment: .bottom) { 📣ADPopupBanner() }
         .animation(.default, value: 🛒.🚩ADIsActive)
     }
 }

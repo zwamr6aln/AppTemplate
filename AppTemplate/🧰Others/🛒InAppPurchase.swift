@@ -251,7 +251,9 @@ class 🛒StoreModel: ObservableObject {
             }
         }
         
-        🚩Purchased = ⓟurchased
+        withAnimation {
+            🚩Purchased = ⓟurchased
+        }
     }
     
     var 🎫Name: String {
