@@ -8,6 +8,7 @@ struct 📣ADBanner_pattern1: View {
         if 🛒.🚩ADIsActive {
             HStack {
                 📣ADView()
+                Spacer()
                 Button {
                     🚩ShowPurchaseSheet = true
                     UISelectionFeedbackGenerator().selectionChanged()
