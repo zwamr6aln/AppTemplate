@@ -10,7 +10,9 @@ struct ContentView: View {
             List {
                 🔗OpenSystemSetting()
                 
-                📣ADSimpleBanner()
+                📣ListRowADBanner()
+                
+                🛒PurchaseView()
                 
                 🩻TransparencyReportLink()
                 
@@ -44,6 +46,7 @@ struct ContentView: View {
             }
         }
         .overlay(alignment: .bottom) { 📣ADPopupBanner() }
+        .animation(.default, value: 🛒.🚩ADIsActive)
     }
 }
 
