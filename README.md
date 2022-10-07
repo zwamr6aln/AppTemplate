@@ -98,30 +98,6 @@ English
 
 Japanese(native)
 
-==== Localization: Main 3 keywords only ====
-
-(English: )
-
-Simplified_Chinese: 
-
-Traditional_Chinese: 
-
-Spanish: 
-
-Portuguese: 
-
-Russian: 
-
-Indonesian: 
-
-French:  
-
-Arabic:  () /  () / ()
-
-German: 
-
-Korean: 
-
 <br>
 
 ## 🧰 Source code link
