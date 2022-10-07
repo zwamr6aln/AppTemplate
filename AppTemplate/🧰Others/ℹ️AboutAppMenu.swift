@@ -70,7 +70,6 @@ struct 🔗AppStoreLink: View {
             }
         }
     }
-    
     struct withURLFooter: View {
         var body: some View {
             Section {
@@ -113,7 +112,6 @@ struct 📜VersionHistoryLink: View {
                         Text("builded on \(📅)")
                     }
                     .headerProminence(.increased)
-                    
                     📜PastVersionSection()
                 }
                 .navigationBarTitle("Version History")
@@ -125,7 +123,6 @@ struct 📜VersionHistoryLink: View {
             .accessibilityLabel("Version History")
         }
     }
-    
     struct 📜PastVersionSection: View {
         var body: some View {
             ForEach(📜PastVersions, id: \.self.ⓝumber) { 📜 in
@@ -152,7 +149,6 @@ struct 🧑‍💻AboutDeveloperPublisherLink: View {
             Label("Developer / Publisher", systemImage: "person")
         }
     }
-    
     struct 🧑‍💻AboutDeveloperPublisherMenu: View {
         var body: some View {
             List {
@@ -161,7 +157,6 @@ struct 🧑‍💻AboutDeveloperPublisherLink: View {
                 } header: {
                     Text("The System")
                 }
-                
                 Section {
                     Text("山下 亮")
                     Text("やました りょう (ひらがな)")
@@ -175,7 +170,6 @@ struct 🧑‍💻AboutDeveloperPublisherLink: View {
                 } footer: {
                     Text("only one person")
                 }
-                
                 Section {
                     Text("age")
                         .badge("about 28")
@@ -188,9 +182,7 @@ struct 🧑‍💻AboutDeveloperPublisherLink: View {
                 } footer: {
                     Text("As of 2021")
                 }
-                
                 📆TimelineSection()
-                
                 Section {
                     Image("Developer_Publisher")
                         .resizable()
@@ -206,7 +198,6 @@ struct 🧑‍💻AboutDeveloperPublisherLink: View {
             }
             .navigationTitle("Developer / Publisher")
         }
-        
         struct 📆TimelineSection: View {
             var 📃Text: [[String]] =
             [["2013-04","Finished from high school in Okayama Prefecture. Entranced into University-of-the-Ryukyus/faculty-of-engineering in Okinawa Prefecture."],
@@ -222,7 +213,6 @@ struct 🧑‍💻AboutDeveloperPublisherLink: View {
              ["2022-06","Released body temperature registration app \"TapTemperature\" ver 1.0."],
              ["2022-06","Adopted In-App Purchase model for the first time on TapWeight ver 1.1.1"],
              ["2022-09","Released LockInNote and MemorizeWidget on iOS16 release occasion."]]
-            
             var body: some View {
                 Section {
                     ForEach(📃Text, id: \.self) { 📃 in
