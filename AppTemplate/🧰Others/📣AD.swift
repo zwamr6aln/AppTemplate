@@ -2,19 +2,92 @@
 import SwiftUI
 import StoreKit
 
-struct 📣ADMenuLink: View {
+/// ParentView: View {
+///  @State private var 🚩ShowADMenuSheet: Bool = false
+///  var body: some View {
+///     ...
+///     📣ADBanner($🚩ShowADMenuSheet)
+///     ...
+///     .modifier(📣ADMenuSheet($🚩ShowADMenuSheet))
+///  }
+/// }
+
+struct 📣ADView: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
+    @State private var ⓐppName: 📣AppName
+    @Binding var 🚩ShowPurchaseSheet: Bool
     var body: some View {
-        Section {
-            🛒PurchaseView()
-            NavigationLink {
-                📣ADMenu()
-            } label: {
-                Label("About AD / Purchase", systemImage: "megaphone")
+        if 🛒.🚩ADIsActive {
+            HStack {
+                🔗LinkButton(ⓐppName)
+                    .padding(.leading, 4)
+                    .overlay(alignment: .topLeading) {
+                        Text("AD")
+                            .scaleEffect(x: 1.2)
+                            .font(.subheadline.weight(.black))
+                            .frame(maxHeight: 32)
+                            .minimumScaleFactor(0.1)
+                            .padding(.top, 8)
+                            .padding(.leading, 3)
+                            .foregroundStyle(.tertiary)
+                    }
+                Spacer()
+                Button {
+                    🚩ShowPurchaseSheet = true
+                    UISelectionFeedbackGenerator().selectionChanged()
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                        .padding(.vertical)
+                        .padding(.leading, 8)
+                }
+                .foregroundStyle(.secondary)
+                .accessibilityLabel("Purchase")
             }
-        } header: {
-            Text("AD / Purchase")
+            .buttonStyle(.borderless)
+        } else {
+            EmptyView()
         }
+    }
+    struct 🔗LinkButton: View {
+        var ⓐppName: 📣AppName
+        var body: some View {
+            Link(destination: ⓐppName.🔗URL) {
+                HStack(spacing: 12) {
+                    Image(ⓐppName.rawValue)
+                        .resizable()
+                        .frame(width: 60, height: 60)
+                        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                        .shadow(radius: 1.5, y: 0.5)
+                        .padding(.vertical, 40)
+                    VStack(alignment: .leading, spacing: 2) {
+                        HStack {
+                            Text(ⓐppName.rawValue)
+                                .font(.headline)
+                                .lineLimit(1)
+                            Image(systemName: "arrow.up.forward.app")
+                                .resizable()
+                                .frame(width: 15, height: 15)
+                        }
+                        .minimumScaleFactor(0.1)
+                        .padding(.trailing, 32)
+                        Text(ⓐppName.📄About)
+                            .font(.subheadline)
+                            .multilineTextAlignment(.leading)
+                            .minimumScaleFactor(0.1)
+                    }
+                    .padding(.vertical)
+                }
+            }
+            .accessibilityLabel("Open AD link")
+        }
+        init(_ ⓐppName: 📣AppName) {
+            self.ⓐppName = ⓐppName
+        }
+    }
+    init(without: 📣AppName, _ 🚩ShowPurchaseSheet: Binding<Bool>) {
+        let ⓐpps = 📣AppName.allCases.filter { $0 != without }
+        ⓐppName = ⓐpps.randomElement()!
+        self._🚩ShowPurchaseSheet = 🚩ShowPurchaseSheet
     }
 }
 
@@ -52,83 +125,19 @@ struct 📣ADMenu: View {
     }
 }
 
-struct 📣ADView: View {
+struct 📣ADMenuLink: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
-    @State private var ⓐppName: 📣AppName
-    @Binding var 🚩ShowPurchaseSheet: Bool
     var body: some View {
-        if 🛒.🚩ADIsActive {
-            HStack {
-                🔗LinkButton(ⓐppName)
-                    .padding(.leading, 4)
-                    .overlay(alignment: .topLeading) {
-                        Text("AD")
-                            .scaleEffect(x: 1.2)
-                            .font(.subheadline.weight(.black))
-                            .frame(maxHeight: 32)
-                            .minimumScaleFactor(0.1)
-                            .padding(.top, 8)
-                            .padding(.leading, 3)
-                            .foregroundStyle(.tertiary)
-                    }
-                Spacer()
-                Button {
-                    🚩ShowPurchaseSheet = true
-                    UISelectionFeedbackGenerator().selectionChanged()
-                } label: {
-                    Image(systemName: "ellipsis.circle")
-                        .padding(.vertical)
-                        .padding(.leading, 8)
-                }
-                .foregroundStyle(.tertiary)
-                .accessibilityLabel("Purchase")
+        Section {
+            🛒PurchaseView()
+            NavigationLink {
+                📣ADMenu()
+            } label: {
+                Label("About AD / Purchase", systemImage: "megaphone")
             }
-            .buttonStyle(.borderless)
-        } else {
-            EmptyView()
+        } header: {
+            Text("AD / Purchase")
         }
-    }
-    struct 🔗LinkButton: View {
-        var ⓐppName: 📣AppName
-        var body: some View {
-            Link(destination: ⓐppName.🔗URL) {
-                HStack(spacing: 12) {
-                    Image(ⓐppName.rawValue)
-                        .resizable()
-                        .frame(width: 60, height: 60)
-                        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-                        .shadow(radius: 1.5, y: 0.5)
-                        .padding(.vertical, 40)
-                    VStack(alignment: .leading, spacing: 2) {
-                        HStack {
-                            Text(ⓐppName.rawValue)
-                                .font(.headline)
-                                .lineLimit(1)
-                            Image(systemName: "arrow.up.forward.app")
-                                .resizable()
-                                .frame(width: 15, height: 15)
-                        }
-                        .minimumScaleFactor(0.1)
-                        .padding(.trailing, 32)
-                        
-                        Text(ⓐppName.📄About)
-                            .font(.subheadline)
-                            .multilineTextAlignment(.leading)
-                            .minimumScaleFactor(0.1)
-                    }
-                    .padding(.vertical)
-                }
-            }
-            .accessibilityLabel("Open AD link")
-        }
-        init(_ ⓐppName: 📣AppName) {
-            self.ⓐppName = ⓐppName
-        }
-    }
-    init(without: 📣AppName, _ 🚩ShowPurchaseSheet: Binding<Bool>) {
-        let ⓐpps = 📣AppName.allCases.filter { $0 != without }
-        ⓐppName = ⓐpps.randomElement()!
-        self._🚩ShowPurchaseSheet = 🚩ShowPurchaseSheet
     }
 }
 

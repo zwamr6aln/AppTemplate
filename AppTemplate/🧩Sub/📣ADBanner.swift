@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct 📣ADBanner_pattern1: View {
+struct 📣ADBanner: View {
     @Binding var 🚩ShowPurchaseSheet: Bool
     var body: some View {
         📣ADView(without: .Plain将棋盤, $🚩ShowPurchaseSheet)

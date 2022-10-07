@@ -8,7 +8,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                📣ADBanner_pattern1($🚩ShowADMenuSheet)
+                📣ADBanner($🚩ShowADMenuSheet)
                 
                 🔗OpenSystemSetting()
                 
