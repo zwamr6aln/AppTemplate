@@ -18,7 +18,7 @@ struct 🛒PurchaseSheet: ViewModifier {
     }
 }
 
-struct 📣test_ADView: View { //TODO: WIP
+struct 📣ADBanner_pattern1: View { //TODO: WIP
     @EnvironmentObject var 🛒: 🛒StoreModel
     @Binding var 🚩ShowPurchaseSheet: Bool
     var body: some View {
