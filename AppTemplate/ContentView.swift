@@ -49,7 +49,6 @@ struct ContentView: View {
             .modifier(🛒PurchaseSheet($🚩ShowPurchaseSheet))
         }
         //.overlay(alignment: .bottom) { 📣ADPopupBanner() }
-        .animation(.default, value: 🛒.🚩ADIsActive)
     }
 }
 
