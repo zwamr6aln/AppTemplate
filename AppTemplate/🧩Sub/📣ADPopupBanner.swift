@@ -7,7 +7,7 @@ struct 📣ADPopupBanner: View {
     
     var body: some View {
         Group {
-            if 🛒.🚩ADisActive {
+            if 🛒.🚩ADIsActive {
                 if 🚩ShowBanner {
                     📣ADView()
                         .padding(.horizontal)

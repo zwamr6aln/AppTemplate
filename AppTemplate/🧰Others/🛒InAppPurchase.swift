@@ -14,7 +14,7 @@ struct 🛒PurchaseView: View {
         HStack {
             Label(🛒.🎫Name, systemImage: "cart")
             Spacer()
-            if 🛒.🚩Purchased ?? false {
+            if 🛒.🚩Purchased {
                 Image(systemName: "checkmark")
                     .imageScale(.small)
                     .foregroundStyle(.tertiary)
@@ -50,7 +50,7 @@ struct 🛒PurchaseView: View {
         }
         .padding(.vertical)
         .disabled(🛒.🚩Unconnected)
-        .disabled(🛒.🚩Purchased ?? false)
+        .disabled(🛒.🚩Purchased)
         .animation(.default, value: 🛒.🚩Purchased)
     }
 }
@@ -115,7 +115,7 @@ struct 🛒IAPSection: View {
                         Label("Restore Purchases", systemImage: "arrow.clockwise")
                             .font(.footnote)
                             .foregroundColor(🛒.🚩Unconnected ? .secondary : nil)
-                            .grayscale(🛒.🚩Purchased ?? false ? 1 : 0)
+                            .grayscale(!(🛒.🚩Purchased) ? 1 : 0)
                         if 🚩RestoringNow {
                             Spacer()
                             ProgressView()
@@ -142,13 +142,13 @@ class 🛒StoreModel: ObservableObject {
     
     var 🆔ProductID: String
     
-    var 🚩ADisActive: Bool {
-        !(🚩Purchased ?? true) && ( 🄻aunchCount > 5 )
+    var 🚩ADIsActive: Bool {
+        !🚩Purchased && ( ⓛaunchCount > 5 )
     }
     
     @Published private(set) var 🎫Product: Product?
-    @Published private(set) var 🚩Purchased: Bool? = nil
-    @AppStorage("🄻aunchCount") var 🄻aunchCount: Int = 0
+    @AppStorage("Purchased") var 🚩Purchased: Bool = false
+    @AppStorage("launchCount") var ⓛaunchCount: Int = 0
     var 🚩Unconnected: Bool { 🎫Product == nil }
     var 🤖UpdateListenerTask: Task<Void, Error>? = nil
     
@@ -166,7 +166,7 @@ class 🛒StoreModel: ObservableObject {
             await 🅄pdateCustomerProductStatus()
         }
         
-        🄻aunchCount += 1
+        ⓛaunchCount += 1
     }
     
     deinit { 🤖UpdateListenerTask?.cancel() }
@@ -194,8 +194,8 @@ class 🛒StoreModel: ObservableObject {
     @MainActor
     func 🅁equestProducts() async {
         do {
-            if let 📦 = try await Product.products(for: [🆔ProductID]).first {
-                🎫Product = 📦
+            if let ⓟroduct = try await Product.products(for: [🆔ProductID]).first {
+                🎫Product = ⓟroduct
             }
         } catch {
             print(#function, "Failed product request from the App Store server: \(error)")
