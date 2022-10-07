@@ -12,8 +12,6 @@ struct ContentView: View {
                 
                 🔗OpenSystemSetting()
                 
-                //📣ListRowADBanner()
-                
                 🛒PurchaseView()
                 
                 🩻TransparencyReportLink()

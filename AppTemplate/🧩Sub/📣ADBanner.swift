@@ -2,12 +2,12 @@
 import SwiftUI
 
 struct 📣ADBanner: View {
-    @Binding var 🚩ShowPurchaseSheet: Bool
+    @Binding var 🚩ShowADMenuSheet: Bool
     var body: some View {
-        📣ADView(without: .Plain将棋盤, $🚩ShowPurchaseSheet)
+        📣ADView(without: .Plain将棋盤, $🚩ShowADMenuSheet)
     }
-    init(_ 🚩ShowPurchaseSheet: Binding<Bool>) {
-        self._🚩ShowPurchaseSheet = 🚩ShowPurchaseSheet
+    init(_ 🚩ShowADMenuSheet: Binding<Bool>) {
+        self._🚩ShowADMenuSheet = 🚩ShowADMenuSheet
     }
 }
 

@@ -15,25 +15,14 @@ import StoreKit
 struct 📣ADView: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     @State private var ⓐppName: 📣AppName
-    @Binding var 🚩ShowPurchaseSheet: Bool
+    @Binding var 🚩ShowADMenuSheet: Bool
     var body: some View {
         if 🛒.🚩ADIsActive {
             HStack {
                 🔗LinkButton(ⓐppName)
-                    .padding(.leading, 4)
-                    .overlay(alignment: .topLeading) {
-                        Text("AD")
-                            .scaleEffect(x: 1.2)
-                            .font(.subheadline.weight(.black))
-                            .frame(maxHeight: 32)
-                            .minimumScaleFactor(0.1)
-                            .padding(.top, 8)
-                            .padding(.leading, 3)
-                            .foregroundStyle(.tertiary)
-                    }
                 Spacer()
                 Button {
-                    🚩ShowPurchaseSheet = true
+                    🚩ShowADMenuSheet = true
                     UISelectionFeedbackGenerator().selectionChanged()
                 } label: {
                     Image(systemName: "ellipsis.circle")
@@ -43,6 +32,17 @@ struct 📣ADView: View {
                 .foregroundStyle(.secondary)
                 .accessibilityLabel("Purchase")
             }
+            .overlay(alignment: .topLeading) {
+                Text("AD")
+                    .scaleEffect(x: 1.2)
+                    .font(.subheadline.weight(.black))
+                    .frame(maxHeight: 32)
+                    .minimumScaleFactor(0.1)
+                    .padding(.top, 8)
+                    .padding(.leading, 3)
+                    .foregroundStyle(.tertiary)
+            }
+            .padding(.leading, 4)
             .buttonStyle(.borderless)
         } else {
             EmptyView()
@@ -84,10 +84,10 @@ struct 📣ADView: View {
             self.ⓐppName = ⓐppName
         }
     }
-    init(without: 📣AppName, _ 🚩ShowPurchaseSheet: Binding<Bool>) {
+    init(without: 📣AppName, _ 🚩ShowADMenuSheet: Binding<Bool>) {
         let ⓐpps = 📣AppName.allCases.filter { $0 != without }
         ⓐppName = ⓐpps.randomElement()!
-        self._🚩ShowPurchaseSheet = 🚩ShowPurchaseSheet
+        self._🚩ShowADMenuSheet = 🚩ShowADMenuSheet
     }
 }
 
@@ -141,7 +141,7 @@ struct 📣ADMenuLink: View {
     }
 }
 
-enum 📣AppName: String, CaseIterable, Identifiable {
+enum 📣AppName: String, CaseIterable {
     case FlipByBlink
     case FadeInAlarm
     case Plain将棋盤
@@ -149,8 +149,6 @@ enum 📣AppName: String, CaseIterable, Identifiable {
     case TapTemperature
     case MemorizeWidget
     case LockInNote
-    
-    var id: Self { self }
     
     var 🔗URL: URL {
         switch self {
