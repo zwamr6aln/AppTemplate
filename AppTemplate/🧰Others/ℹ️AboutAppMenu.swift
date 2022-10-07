@@ -220,7 +220,8 @@ struct 🧑‍💻AboutDeveloperPublisherLink: View {
              ["2022-04","Released simple shogi board app \"PlainShogiBoard\" ver 1.0."],
              ["2022-05","Released body weight registration app \"TapWeight\" ver 1.0."],
              ["2022-06","Released body temperature registration app \"TapTemperature\" ver 1.0."],
-             ["2022-06","Adopted In-App Purchase model for the first time on TapWeight ver 1.1.1"]]
+             ["2022-06","Adopted In-App Purchase model for the first time on TapWeight ver 1.1.1"],
+             ["2022-09","Released LockInNote and MemorizeWidget on iOS16 release occasion."]]
             
             var body: some View {
                 Section {
