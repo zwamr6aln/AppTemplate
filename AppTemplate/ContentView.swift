@@ -10,7 +10,7 @@ struct ContentView: View {
             List {
                 📣ADBanner_pattern1($🚩ShowPurchaseSheet)
                 
-                🔗OpenSystemSetting()
+                🔗OpenSystemSetting() // 􀣋
                 
                 //📣ListRowADBanner()
                 
@@ -43,7 +43,7 @@ struct ContentView: View {
             .navigationTitle("ContentView")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    🛠MenuButton()
+                    🛠MenuButton() // 􀍟
                 }
             }
             .modifier(🛒PurchaseSheet($🚩ShowPurchaseSheet))
