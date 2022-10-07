@@ -39,6 +39,8 @@
 		12E4A76B28502EDE00B2380B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
 		12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
 		12E4A77B2850301300B2380B /* 📣ADPopupBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A7762850301300B2380B /* 📣ADPopupBanner.swift */; };
+		F52D4EC928EFE23E007A45CD /* 📣StackViewADBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52D4EC828EFE23E007A45CD /* 📣StackViewADBanner.swift */; };
+		F52D4ECB28EFE29D007A45CD /* PurchaseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52D4ECA28EFE29D007A45CD /* PurchaseSheet.swift */; };
 		F556941E28CC2F72004558FC /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		F556942028CC2F7D004558FC /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
 		F587808528CB701400F632E7 /* 📣ListRowADBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587808428CB701400F632E7 /* 📣ListRowADBanner.swift */; };
@@ -116,6 +118,8 @@
 		12E4A77228502F3A00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A77428502F3B00B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A7762850301300B2380B /* 📣ADPopupBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADPopupBanner.swift"; sourceTree = "<group>"; };
+		F52D4EC828EFE23E007A45CD /* 📣StackViewADBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣StackViewADBanner.swift"; sourceTree = "<group>"; };
+		F52D4ECA28EFE29D007A45CD /* PurchaseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSheet.swift; sourceTree = "<group>"; };
 		F587808428CB701400F632E7 /* 📣ListRowADBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ListRowADBanner.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,7 +149,9 @@
 				12D4368428656B4400B707F5 /* 🖨printLog.swift */,
 				12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */,
 				F587808428CB701400F632E7 /* 📣ListRowADBanner.swift */,
+				F52D4EC828EFE23E007A45CD /* 📣StackViewADBanner.swift */,
 				12E4A7762850301300B2380B /* 📣ADPopupBanner.swift */,
+				F52D4ECA28EFE29D007A45CD /* PurchaseSheet.swift */,
 				12A605A4289219B30001DE23 /* 🔠BiggerSystemFontTest.swift */,
 				1299C394288D51170086522B /* 🛠Menu */,
 				12E4A74D285027F700B2380B /* Preview Content */,
@@ -317,11 +323,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52D4EC928EFE23E007A45CD /* 📣StackViewADBanner.swift in Sources */,
 				12E4A77B2850301300B2380B /* 📣ADPopupBanner.swift in Sources */,
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
 				12A605A5289219B30001DE23 /* 🔠BiggerSystemFontTest.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
+				F52D4ECB28EFE29D007A45CD /* PurchaseSheet.swift in Sources */,
 				F587808528CB701400F632E7 /* 📣ListRowADBanner.swift in Sources */,
 				12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */,
 				1220AD0C286C03CC00F07278 /* 🩻TransparencyReport.swift in Sources */,
