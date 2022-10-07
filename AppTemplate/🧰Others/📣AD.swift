@@ -53,22 +53,41 @@ struct 📣ADMenu: View {
 }
 
 struct 📣ADView: View {
+    @EnvironmentObject var 🛒: 🛒StoreModel
     @State private var ⓐppName: 📣AppName
+    @Binding var 🚩ShowPurchaseSheet: Bool
     var body: some View {
-        🔗LinkButton(ⓐppName)
-            .padding(.leading, 4)
-            .overlay(alignment: .topLeading) {
-                Text("AD")
-                    .scaleEffect(x: 1.2)
-                    .font(.subheadline.weight(.black))
-                    .frame(maxHeight: 32)
-                    .minimumScaleFactor(0.1)
-                    .padding(.top, 8)
-                    .padding(.leading, 3)
-                    .foregroundStyle(.tertiary)
+        if 🛒.🚩ADIsActive {
+            HStack {
+                🔗LinkButton(ⓐppName)
+                    .padding(.leading, 4)
+                    .overlay(alignment: .topLeading) {
+                        Text("AD")
+                            .scaleEffect(x: 1.2)
+                            .font(.subheadline.weight(.black))
+                            .frame(maxHeight: 32)
+                            .minimumScaleFactor(0.1)
+                            .padding(.top, 8)
+                            .padding(.leading, 3)
+                            .foregroundStyle(.tertiary)
+                    }
+                Spacer()
+                Button {
+                    🚩ShowPurchaseSheet = true
+                    UISelectionFeedbackGenerator().selectionChanged()
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                        .padding(.vertical)
+                        .padding(.leading, 8)
+                }
+                .foregroundStyle(.tertiary)
+                .accessibilityLabel("Purchase")
             }
+            .buttonStyle(.borderless)
+        } else {
+            EmptyView()
+        }
     }
-    
     struct 🔗LinkButton: View {
         var ⓐppName: 📣AppName
         var body: some View {
@@ -106,13 +125,10 @@ struct 📣ADView: View {
             self.ⓐppName = ⓐppName
         }
     }
-    init(_ ⓐppName: 📣AppName = 📣AppName.allCases.randomElement()!) {
-        self.ⓐppName = ⓐppName
-    }
-    
-    init(without: 📣AppName) {
+    init(without: 📣AppName, _ 🚩ShowPurchaseSheet: Binding<Bool>) {
         let ⓐpps = 📣AppName.allCases.filter { $0 != without }
         ⓐppName = ⓐpps.randomElement()!
+        self._🚩ShowPurchaseSheet = 🚩ShowPurchaseSheet
     }
 }
 
