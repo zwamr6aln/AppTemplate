@@ -70,7 +70,7 @@ struct 🛒IAPSection: View {
     
     struct 🛒ProductPreview: View {
         var body: some View {
-            HStack {
+            HStack(spacing: 4) {
                 Image("ProductPreview_Before")
                     .resizable()
                     .scaledToFit()
@@ -81,7 +81,6 @@ struct 🛒IAPSection: View {
                     .resizable()
                     .scaledToFit()
             }
-            .padding(.horizontal)
             .padding(24)
         }
     }

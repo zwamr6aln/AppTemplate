@@ -18,6 +18,23 @@ struct 📣ADMenuLink: View {
     }
 }
 
+struct 📣ADMenuSheet: ViewModifier {
+    @Binding var 🚩ShowSheet: Bool
+    func body(content: Content) -> some View {
+        content
+            .sheet(isPresented: $🚩ShowSheet) {
+                NavigationView {
+                    📣ADMenu()
+                        .toolbar { ﹀DismissButton($🚩ShowSheet) }
+                }
+                .navigationViewStyle(StackNavigationViewStyle())
+            }
+    }
+    init(_ 🚩ShowSheet: Binding<Bool>) {
+        self._🚩ShowSheet = 🚩ShowSheet
+    }
+}
+
 struct 📣ADMenu: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     var body: some View {
@@ -30,11 +47,6 @@ struct 📣ADMenu: View {
                 Text("Description")
             }
             🛒IAPSection()
-            Section {
-                ForEach(📣AppName.allCases) { 🏷 in
-                    📣ADView(🏷)
-                }
-            }
         }
         .navigationTitle("AD / Purchase")
     }
