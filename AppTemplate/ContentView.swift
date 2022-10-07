@@ -10,7 +10,7 @@ struct ContentView: View {
             List {
                 📣ADBanner_pattern1($🚩ShowPurchaseSheet)
                 
-                🔗OpenSystemSetting() // 􀣋
+                🔗OpenSystemSetting()
                 
                 //📣ListRowADBanner()
                 
@@ -43,12 +43,39 @@ struct ContentView: View {
             .navigationTitle("ContentView")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    🛠MenuButton() // 􀍟
+                    🛠MenuButton()
                 }
             }
             .modifier(🛒PurchaseSheet($🚩ShowPurchaseSheet))
         }
         //.overlay(alignment: .bottom) { 📣ADPopupBanner() }
+    }
+}
+
+
+struct ﹀DismissButton: View {
+    var ﹀Dismiss: DismissAction? = nil
+    @Binding var 🚩ShowSheet: Bool
+    var body: some View {
+        Button {
+            if let ﹀Dismiss {
+                ﹀Dismiss.callAsFunction()
+            } else {
+                🚩ShowSheet = false
+            }
+            UISelectionFeedbackGenerator().selectionChanged()
+        } label: {
+            Image(systemName: "chevron.down")
+        }
+        .tint(.secondary)
+        .accessibilityLabel("Dismiss")
+    }
+    init(_ ﹀Dismiss: DismissAction) {
+        self.﹀Dismiss = ﹀Dismiss
+        self._🚩ShowSheet = .constant(false)
+    }
+    init(_ 🚩ShowSheet: Binding<Bool>) {
+        self._🚩ShowSheet = 🚩ShowSheet
     }
 }
 

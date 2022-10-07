@@ -3,7 +3,7 @@ import SwiftUI
 
 struct 🛠AppMenu: View {
     @EnvironmentObject var 📱: 📱AppModel
-    @Environment(\.dismiss) var 🔙Dismiss: DismissAction
+    @Environment(\.dismiss) var ⓓismissAction: DismissAction
     var body: some View {
         NavigationView {
             List {
@@ -19,7 +19,7 @@ struct 🛠AppMenu: View {
                 📣ADMenuLink()
             }
             .navigationTitle("Menu")
-            .toolbar { ﹀CloseMenuButton(🔙Dismiss) }
+            .toolbar { ﹀DismissButton(ⓓismissAction) }
         }
     }
 }
@@ -64,62 +64,6 @@ struct ℹ️AboutAppLink: View {
             } label: {
                 Label("About App", systemImage: "doc")
             }
-        }
-    }
-}
-
-struct ﹀CloseMenuButton: View {
-    var 🔙Dismiss: DismissAction
-    var body: some View {
-        Button {
-            🔙Dismiss.callAsFunction()
-            UIImpactFeedbackGenerator(style: .light).impactOccurred()
-        } label: {
-            Image(systemName: "chevron.down")
-                .foregroundStyle(.secondary)
-                .grayscale(1.0)
-                .padding(8)
-        }
-        .accessibilityLabel("Dismiss")
-    }
-    init(_ 🔙Dismiss: DismissAction) {
-        self.🔙Dismiss = 🔙Dismiss
-    }
-}
-
-struct ﹀DismissButton: View {
-    var ﹀Dismiss: DismissAction? = nil
-    @Binding var 🚩ShowSheet: Bool
-    var body: some View {
-        Button {
-            if let ﹀Dismiss {
-                ﹀Dismiss.callAsFunction()
-            } else {
-                🚩ShowSheet = false
-            }
-            UISelectionFeedbackGenerator().selectionChanged()
-        } label: {
-            Image(systemName: "chevron.down")
-        }
-        .tint(.secondary)
-        .accessibilityLabel("Dismiss")
-    }
-    init(_ ﹀Dismiss: DismissAction) {
-        self.﹀Dismiss = ﹀Dismiss
-        self._🚩ShowSheet = .constant(false)
-    }
-    init(_ 🚩ShowSheet: Binding<Bool>) {
-        self._🚩ShowSheet = 🚩ShowSheet
-    }
-}
-
-
-
-
-struct MyPreviewProvider_Previews: PreviewProvider {
-    static var previews: some View {
-        List {
-            ℹ️AboutAppLink()
         }
     }
 }

@@ -156,7 +156,8 @@
 				F52D4ECC28F005C4007A45CD /* 📣ADBanner.swift */,
 				F52D4ECA28EFE29D007A45CD /* 🛒PurchaseSheet.swift */,
 				12A605A4289219B30001DE23 /* 🔠BiggerSystemFontTest.swift */,
-				1299C394288D51170086522B /* 🛠Menu */,
+				1299C39B288D650C0086522B /* 🛠MenuButton.swift */,
+				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
 			path = "🧩Sub";
@@ -169,15 +170,6 @@
 				1299C38E288D194B0086522B /* WorkInProgress.strings */,
 			);
 			path = "⚠️WorkInProgress";
-			sourceTree = "<group>";
-		};
-		1299C394288D51170086522B /* 🛠Menu */ = {
-			isa = PBXGroup;
-			children = (
-				1299C39B288D650C0086522B /* 🛠MenuButton.swift */,
-				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
-			);
-			path = "🛠Menu";
 			sourceTree = "<group>";
 		};
 		12E4A73B285027F600B2380B = {
