@@ -14,7 +14,7 @@ struct 🛒PurchaseSheet: View { //TODO: WIP
 }
 
 
-struct testADView: View {
+struct 📣test_ADView: View { //TODO: WIP
     @Binding var 🚩ShowPurchaseSheet: Bool
     var body: some View {
         📣ADView()
@@ -32,5 +32,17 @@ struct testADView: View {
                 .foregroundColor(.red)
                 .accessibilityLabel("Purchase")
             }
+    }
+    
+    struct purchaseSheet: View {
+        @EnvironmentObject var 🛒: 🛒StoreModel
+        @Environment(\.dismiss) var ⓓismissAction: DismissAction
+        var body: some View {
+            NavigationView {
+                📣ADMenu()
+                    .toolbar { ﹀DismissButton(ⓓismissAction) }
+            }
+            .navigationViewStyle(StackNavigationViewStyle())
+        }
     }
 }
