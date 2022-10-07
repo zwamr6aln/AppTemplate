@@ -6,22 +6,20 @@ struct 📣ADBanner_pattern1: View {
     @Binding var 🚩ShowPurchaseSheet: Bool
     var body: some View {
         if 🛒.🚩ADIsActive {
-            📣ADView()
-                .overlay(alignment: .topTrailing) {
-                    Button {
-                        🚩ShowPurchaseSheet = true
-                        UISelectionFeedbackGenerator().selectionChanged()
-                    } label: {
-                        Image(systemName: "questionmark.circle")
-                            .foregroundStyle(.secondary)
-                            .font(.body.weight(.medium))
-                            .padding(.vertical)
-                            .padding(.leading)
-                    }
-                    .foregroundColor(.red)
-                    .accessibilityLabel("Purchase")
+            HStack {
+                📣ADView()
+                Button {
+                    🚩ShowPurchaseSheet = true
+                    UISelectionFeedbackGenerator().selectionChanged()
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                        .padding(.vertical)
+                        .padding(.leading, 8)
                 }
-                .buttonStyle(.borderless)
+                .foregroundStyle(.secondary)
+                .accessibilityLabel("Purchase")
+            }
+            .buttonStyle(.borderless)
         } else {
             EmptyView()
         }
