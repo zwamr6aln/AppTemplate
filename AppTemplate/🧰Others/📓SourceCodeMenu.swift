@@ -66,13 +66,13 @@ struct 📓CodeSection: View {
     }
 }
 
-let 🄱undleMainInfoDictionary = Bundle.main.infoDictionary!.description
+let ⓑundleMainInfoDictionary = Bundle.main.infoDictionary!.description
 struct 📑BundleMainInfoDictionary: View {
     var body: some View {
         Section {
             NavigationLink("Bundle.main.infoDictionary") {
                 ScrollView {
-                    Text(🄱undleMainInfoDictionary)
+                    Text(ⓑundleMainInfoDictionary)
                         .padding()
                 }
                 .navigationBarTitle("Bundle.main.infoDictionary")
