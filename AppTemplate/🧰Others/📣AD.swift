@@ -2,15 +2,18 @@
 import SwiftUI
 import StoreKit
 
-/// ParentView: View {
-///  @State private var 🚩ShowADMenuSheet: Bool = false
-///  var body: some View {
-///     ...
-///     📣ADBanner($🚩ShowADMenuSheet)
-///     ...
+///#Example
+///struct ParentView: View {
+/// @State private var 🚩ShowADMenuSheet: Bool = false
+/// var body: some View {
+///     ... 📣ADBanner($🚩ShowADMenuSheet) ...
 ///     .modifier(📣ADMenuSheet($🚩ShowADMenuSheet))
-///  }
-/// }
+///} }
+///struct 📣ADBanner: View {
+/// @Binding var 🚩ShowADMenuSheet: Bool
+/// var body: some View {
+///     ... 📣ADView(without: APPSELF, $🚩ShowADMenuSheet) ...
+///} }
 
 struct 📣ADView: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
@@ -115,7 +118,16 @@ struct 📣ADMenuSheet: ViewModifier {
             .sheet(isPresented: $🚩ShowSheet) {
                 NavigationView {
                     📣ADMenu()
-                        .toolbar { ﹀DismissButton($🚩ShowSheet) }
+                        .toolbar {
+                            Button {
+                                🚩ShowSheet = false
+                                UISelectionFeedbackGenerator().selectionChanged()
+                            } label: {
+                                Image(systemName: "chevron.down")
+                            }
+                            .tint(.secondary)
+                            .accessibilityLabel("Dismiss")
+                        }
                 }
                 .navigationViewStyle(StackNavigationViewStyle())
             }
