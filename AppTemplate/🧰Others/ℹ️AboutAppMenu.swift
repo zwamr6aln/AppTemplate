@@ -1,7 +1,7 @@
 
 let 📜VersionsInfo: [(ⓝumber: String, ⓓate: String)] = [("1.1", "2021-03-01"),
                                                         ("1.0.1", "2021-02-01"),
-                                                        ("1.0", "2021-01-01")] //降順。先頭の方が新しい。
+                                                        ("1.0", "2021-01-01")] //降順。先頭の方が新しい。 //TODO: Edit
 
 let 🔗AppStoreProductURL = URL(string: "https://apps.apple.com/app/idAPPLEID")! //TODO: Edit
 
@@ -11,7 +11,17 @@ let 👤PrivacyPolicy = """
 (English) This application don't collect user infomation.
 
 (Japanese) このアプリ自身において、ユーザーの情報を一切収集しません。
-"""
+""" //TODO: Edit
+
+let 🔗WebRepositoryURL = URL(string: "https://github.com/FlipByBlink/APPNAME")! //TODO: Edit
+let 🔗WebRepositoryURL_Mirror = URL(string: "https://gitlab.com/FlipByBlink/APPNAME_Mirror")! //TODO: Edit
+
+enum 📁SourceFolder: String, CaseIterable, Identifiable {
+    case main
+    case 🧩Sub
+    case 🧰Others
+    var id: String { self.rawValue }
+} //TODO: Edit
 
 
 
@@ -126,6 +136,121 @@ struct 📜VersionHistoryLink: View {
                     .badge(📜VersionsInfo.first?.ⓝumber ?? "🐛")
             }
             .accessibilityLabel("Version History")
+        }
+    }
+}
+
+struct 📓SourceCodeLink: View {
+    var body: some View {
+        NavigationLink {
+            📓SourceCodeMenu()
+        } label: {
+            Label("Source code", systemImage: "doc.plaintext")
+        }
+    }
+    struct 📓SourceCodeMenu: View {
+        var body: some View {
+            List {
+                ForEach(📁SourceFolder.allCases) { 📁 in
+                    📓CodeSection(📁.rawValue)
+                }
+                📑BundleMainInfoDictionary()
+                🔗RepositoryLinks()
+            }
+            .navigationTitle("Source code")
+        }
+        struct 📓CodeSection: View {
+            var ⓓirectoryPath: String
+            var 📁URL: URL { Bundle.main.bundleURL.appendingPathComponent(ⓓirectoryPath) }
+            var 🏷FileNames: [String]? { try? FileManager.default.contentsOfDirectory(atPath: 📁URL.path) }
+            var body: some View {
+                Section {
+                    if let 🏷FileNames {
+                        ForEach(🏷FileNames, id: \.self) { 🏷 in
+                            NavigationLink(🏷) {
+                                let 📃 = try? String(contentsOf: 📁URL.appendingPathComponent(🏷))
+                                📰SourceCodeView(📃 ?? "🐛Bug", 🏷)
+                            }
+                        }
+                        if 🏷FileNames.isEmpty { Text("🐛Bug") }
+                    }
+                } header: {
+                    Text(ⓓirectoryPath)
+                        .textCase(.none)
+                }
+            }
+            init(_ ⓓirectoryPath: String) {
+                self.ⓓirectoryPath = ⓓirectoryPath
+            }
+            struct 📰SourceCodeView: View {
+                var ⓣext: String
+                var ⓣitle: LocalizedStringKey
+                var body: some View {
+                    ScrollView {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            Text(ⓣext)
+                                .padding()
+                        }
+                    }
+                    .navigationBarTitle(ⓣitle)
+                    .navigationBarTitleDisplayMode(.inline)
+                    .font(.caption.monospaced())
+                    .textSelection(.enabled)
+                }
+                init(_ ⓣext: String, _ ⓣitle: String) {
+                    self.ⓣext = ⓣext
+                    self.ⓣitle = LocalizedStringKey(ⓣitle)
+                }
+            }
+        }
+        struct 📑BundleMainInfoDictionary: View {
+            let ⓑundleMainInfoDictionary = Bundle.main.infoDictionary!.description
+            var body: some View {
+                Section {
+                    NavigationLink("Bundle.main.infoDictionary") {
+                        ScrollView {
+                            Text(ⓑundleMainInfoDictionary)
+                                .padding()
+                        }
+                        .navigationBarTitle("Bundle.main.infoDictionary")
+                        .navigationBarTitleDisplayMode(.inline)
+                        .textSelection(.enabled)
+                    }
+                }
+            }
+        }
+        struct 🔗RepositoryLinks: View {
+            var body: some View {
+                Section {
+                    Link(destination: 🔗WebRepositoryURL) {
+                        HStack {
+                            Label("Web Repository", systemImage: "link")
+                            Spacer()
+                            Image(systemName: "arrow.up.forward.app")
+                                .imageScale(.small)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                } footer: {
+                    Text(🔗WebRepositoryURL.description)
+                }
+                Section {
+                    Link(destination: 🔗WebRepositoryURL_Mirror) {
+                        HStack {
+                            Label("Web Repository", systemImage: "link")
+                            Text("(Mirror)")
+                                .font(.subheadline.bold())
+                                .foregroundStyle(.secondary)
+                            Spacer()
+                            Image(systemName: "arrow.up.forward.app")
+                                .imageScale(.small)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                } footer: {
+                    Text(🔗WebRepositoryURL_Mirror.description)
+                }
+            }
         }
     }
 }

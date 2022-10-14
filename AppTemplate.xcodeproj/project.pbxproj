@@ -18,7 +18,6 @@
 		1299C39C288D650C0086522B /* 🛠MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1299C39B288D650C0086522B /* 🛠MenuButton.swift */; };
 		12A605A5289219B30001DE23 /* 🔠BiggerSystemFontTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A605A4289219B30001DE23 /* 🔠BiggerSystemFontTest.swift */; };
 		12C67132286069ED00FE4C06 /* ℹ️AboutAppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutAppMenu.swift */; };
-		12C67133286069ED00FE4C06 /* 📓SourceCodeMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */; };
 		12D4368528656B4400B707F5 /* 🖨printLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D4368428656B4400B707F5 /* 🖨printLog.swift */; };
 		12D4368628656CC800B707F5 /* 🖨printLog.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12D4368428656B4400B707F5 /* 🖨printLog.swift */; };
 		12D436872865766300B707F5 /* 🔗OpenSystemSetting.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */; };
@@ -29,7 +28,6 @@
 		12E4A74C285027F700B2380B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74B285027F700B2380B /* Assets.xcassets */; };
 		12E4A74F285027F700B2380B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74E285027F700B2380B /* Preview Assets.xcassets */; };
 		12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
-		12E4A76228502C9F00B2380B /* 📓SourceCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */; };
 		12E4A76328502C9F00B2380B /* ℹ️AboutAppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutAppMenu.swift */; };
 		12E4A76528502D7200B2380B /* AppTemplateApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
 		12E4A76628502D7200B2380B /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
@@ -51,7 +49,6 @@
 				F556942028CC2F7D004558FC /* 🛒InAppPurchase.swift in CopyFiles */,
 				F556941E28CC2F72004558FC /* 📣AD.swift in CopyFiles */,
 				12C67132286069ED00FE4C06 /* ℹ️AboutAppMenu.swift in CopyFiles */,
-				12C67133286069ED00FE4C06 /* 📓SourceCodeMenu.swift in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +100,6 @@
 		12E4A74E285027F700B2380B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12E4A755285028C800B2380B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		12E4A75628502A2D00B2380B /* 📱AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel.swift"; sourceTree = "<group>"; };
-		12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📓SourceCodeMenu.swift"; sourceTree = "<group>"; };
 		12E4A76028502C9F00B2380B /* ℹ️AboutAppMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutAppMenu.swift"; sourceTree = "<group>"; };
 		12E4A76C28502EDE00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		12E4A76E28502EE100B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -198,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				12E4A76028502C9F00B2380B /* ℹ️AboutAppMenu.swift */,
-				12E4A75F28502C9F00B2380B /* 📓SourceCodeMenu.swift */,
 				127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */,
 				127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */,
 				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
@@ -308,7 +303,6 @@
 				1299C39C288D650C0086522B /* 🛠MenuButton.swift in Sources */,
 				127ECB2A286149EF00CB1BC3 /* 🛒InAppPurchase.swift in Sources */,
 				12E4A76328502C9F00B2380B /* ℹ️AboutAppMenu.swift in Sources */,
-				12E4A76228502C9F00B2380B /* 📓SourceCodeMenu.swift in Sources */,
 				127ECB2C28614B8B00CB1BC3 /* 📣AD.swift in Sources */,
 				12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */,
 			);
