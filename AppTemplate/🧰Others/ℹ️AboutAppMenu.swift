@@ -1,7 +1,6 @@
 
-let 📜VersionsInfo: [(ⓝumber: String, ⓓate: String)] = [("2.0", "2022-10-01"),
-                                                        ("1.2", "2021-03-01"),
-                                                        ("1.1", "2021-02-01"),
+let 📜VersionsInfo: [(ⓝumber: String, ⓓate: String)] = [("1.1", "2021-03-01"),
+                                                        ("1.0.1", "2021-02-01"),
                                                         ("1.0", "2021-01-01")] //降順。先頭の方が新しい。
 
 let 🔗AppStoreProductURL = URL(string: "https://apps.apple.com/app/idAPPLEID")! //TODO: Edit

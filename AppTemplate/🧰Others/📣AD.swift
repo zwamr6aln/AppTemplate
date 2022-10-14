@@ -6,13 +6,8 @@ import StoreKit
 ///struct ParentView: View {
 /// @State private var 🚩ShowADMenuSheet: Bool = false
 /// var body: some View {
-///     ... 📣ADBanner($🚩ShowADMenuSheet) ...
+///     ... 📣ADView($🚩ShowADMenuSheet) ...
 ///     .modifier(📣ADMenuSheet($🚩ShowADMenuSheet))
-///} }
-///struct 📣ADBanner: View {
-/// @Binding var 🚩ShowADMenuSheet: Bool
-/// var body: some View {
-///     ... 📣ADView(without: APPSELF, $🚩ShowADMenuSheet) ...
 ///} }
 
 struct 📣ADView: View {
