@@ -1,6 +1,8 @@
 
-let 📜VersionNumber = "2.0"
-let 📜PastVersions: [(ⓝumber: String, ⓓate: String)] = [("1.2","2022-03-01"), ("1.1","2022-02-01"), ("1.0","2022-01-01")] //降順。先頭の方が新しい。
+let 📜VersionsInfo: [(ⓝumber: String, ⓓate: String)] = [("2.0", "2022-10-01"),
+                                                        ("1.2", "2021-03-01"),
+                                                        ("1.1", "2021-02-01"),
+                                                        ("1.0", "2021-01-01")] //降順。先頭の方が新しい。
 
 let 🔗AppStoreProductURL = URL(string: "https://apps.apple.com/app/idAPPLEID")! //TODO: Edit
 
@@ -101,42 +103,30 @@ struct 📜VersionHistoryLink: View {
         Section {
             NavigationLink {
                 List {
-                    Section {
-                        Text(LocalizedStringKey(📜VersionNumber), tableName: "🌏VersionDescription")
-                            .font(.subheadline)
-                            .padding()
-                    } header: {
-                        Text(📜VersionNumber)
-                    } footer: {
-                        let 📅 = Date.now.formatted(date: .long, time: .omitted)
-                        Text("builded on \(📅)")
+                    ForEach(📜VersionsInfo, id: \.self.ⓝumber) { 📜 in
+                        Section {
+                            Text(LocalizedStringKey(📜.ⓝumber), tableName: "🌏VersionDescription")
+                                .font(.subheadline)
+                                .padding()
+                                .textSelection(.enabled)
+                        } header: {
+                            Text(📜.ⓝumber)
+                        } footer: {
+                            if 📜VersionsInfo.first?.ⓝumber == 📜.ⓝumber {
+                                Text("builded on \(📜.ⓓate)")
+                            } else {
+                                Text(📜.ⓓate)
+                            }
+                        }
+                        .headerProminence(.increased)
                     }
-                    .headerProminence(.increased)
-                    📜PastVersionSection()
                 }
                 .navigationBarTitle("Version History")
-                .textSelection(.enabled)
             } label: {
                 Label("Version", systemImage: "signpost.left")
-                    .badge(📜VersionNumber)
+                    .badge(📜VersionsInfo.first?.ⓝumber ?? "🐛")
             }
             .accessibilityLabel("Version History")
-        }
-    }
-    struct 📜PastVersionSection: View {
-        var body: some View {
-            ForEach(📜PastVersions, id: \.self.ⓝumber) { 📜 in
-                Section {
-                    Text(LocalizedStringKey(📜.ⓝumber), tableName: "🌏VersionDescription")
-                        .font(.subheadline)
-                        .padding()
-                } header: {
-                    Text(📜.ⓝumber)
-                } footer: {
-                    Text(📜.ⓓate)
-                }
-                .headerProminence(.increased)
-            }
         }
     }
 }
