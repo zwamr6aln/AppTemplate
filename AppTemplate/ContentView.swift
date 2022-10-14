@@ -14,8 +14,6 @@ struct ContentView: View {
                 
                 🛒PurchaseView()
                 
-                🩻TransparencyReportLink()
-                
                 Section {
                     HStack {
                         Text("displayName")
