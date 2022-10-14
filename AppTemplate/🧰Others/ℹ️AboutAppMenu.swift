@@ -47,14 +47,14 @@ struct 📰AppStoreDescriptionSection: View {
         Section {
             NavigationLink {
                 ScrollView {
-                    Text("📃", tableName: "🌏AppStoreDescription")
+                    Text("AppStoreDescription", tableName: "🌏AppStoreDescription")
                         .padding()
                 }
                 .navigationBarTitle("Description")
                 .navigationBarTitleDisplayMode(.inline)
                 .textSelection(.enabled)
             } label: {
-                Text("📃", tableName: "🌏AppStoreDescription")
+                Text("AppStoreDescription", tableName: "🌏AppStoreDescription")
                     .font(.subheadline)
                     .lineLimit(7)
                     .padding(8)
