@@ -1,4 +1,4 @@
-# 📱 iPhoneApp AppTemplate / アプリテンプレート
+# 📱 iPhone App AppTemplate / アプリテンプレート
 
 <br>
 ![App icon](AppTemplate/Assets.xcassets/LaunchIcon.imageset/360.png)
@@ -9,40 +9,27 @@ https://apps.apple.com/app/id❓
 
 <!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
 ## 📄 Description
-AAAA.
 
 ### Target / Use-case
 
-- AAAA
-
 ### Option
-
-- AAAA
 
 ### Others
 
-- AAAA
+### Background
 
-
-## 概要: Japanese(native) description
-
-ああああ。
+## 概要
 
 ### 想定ユーザー / ユースケース
 
-- ああああ
-
 ### オプション
-
-- ああああ
 
 ### その他
 
-- ああああ
+### 背景
 
 
 ## Localization: All
-
 English
 
 Japanese(native)
