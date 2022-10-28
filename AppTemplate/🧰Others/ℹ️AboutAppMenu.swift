@@ -124,7 +124,7 @@ struct 📜VersionHistoryLink: View {
                             if 📜VersionsInfo.first?.ⓝumber == 📜.ⓝumber {
                                 Text("builded on \(📜.ⓓate)")
                             } else {
-                                Text(📜.ⓓate)
+                                Text("released on \(📜.ⓓate)")
                             }
                         }
                         .headerProminence(.increased)

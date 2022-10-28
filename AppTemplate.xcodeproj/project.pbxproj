@@ -143,13 +143,6 @@
 			path = "🧩Sub";
 			sourceTree = "<group>";
 		};
-		1299C381288CC2BE0086522B /* ⚠️WorkInProgress */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "⚠️WorkInProgress";
-			sourceTree = "<group>";
-		};
 		12E4A73B285027F600B2380B = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +172,6 @@
 				12E4A75828502AF800B2380B /* 🧰Others */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
-				1299C381288CC2BE0086522B /* ⚠️WorkInProgress */,
 			);
 			path = AppTemplate;
 			sourceTree = "<group>";
