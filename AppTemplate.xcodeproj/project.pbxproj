@@ -106,6 +106,7 @@
 		12E4A77228502F3A00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A77428502F3B00B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F52D4ECC28F005C4007A45CD /* 📣ADBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADBanner.swift"; sourceTree = "<group>"; };
+		F549E849290BC3C300636271 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = memo.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				12E4A755285028C800B2380B /* README.md */,
+				F549E849290BC3C300636271 /* memo.md */,
 				12E4A746285027F600B2380B /* AppTemplate */,
 				12E4A745285027F600B2380B /* Products */,
 				12724D6E2862DEB0008471AB /* Frameworks */,
