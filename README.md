@@ -7,8 +7,8 @@
 ## 🔗 AppStore link
 https://apps.apple.com/app/id❓
 
-## 📄 Description
 <!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
+## 📄 Description
 AAAA.
 
 ### Target / Use-case
@@ -24,7 +24,7 @@ AAAA.
 - AAAA
 
 
-## Japanese(native) description
+## 概要: Japanese(native) description
 
 ああああ。
 
