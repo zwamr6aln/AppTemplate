@@ -5,22 +5,27 @@ struct 🛠AppMenu: View {
     @EnvironmentObject var 📱: 📱AppModel
     @Environment(\.dismiss) var ⓓismissAction: DismissAction
     var body: some View {
-        NavigationView {
-            List {
-                Section {
-                    Toggle(isOn: .constant(false)) {
-                        Label("placeholder", systemImage: "questionmark")
-                    }
-                } header: {
-                    Text("Option")
-                }
-                
-                ℹ️AboutAppLink()
-                📣ADMenuLink()
-            }
-            .navigationTitle("Menu")
-            .toolbar { ﹀DismissButton(ⓓismissAction) }
+        if #available(iOS 16.0, *) {
+            NavigationStack { 🄻ist() }
+        } else {
+            NavigationView { 🄻ist() }
         }
+    }
+    func 🄻ist() -> some View {
+        List {
+            Section {
+                Toggle(isOn: .constant(false)) {
+                    Label("placeholder", systemImage: "questionmark")
+                }
+            } header: {
+                Text("Option")
+            }
+            
+            ℹ️AboutAppLink()
+            📣ADMenuLink()
+        }
+        .navigationTitle("Menu")
+        .toolbar { ﹀DismissButton(ⓓismissAction) }
     }
 }
 
