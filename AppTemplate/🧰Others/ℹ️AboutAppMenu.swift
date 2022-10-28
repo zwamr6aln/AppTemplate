@@ -182,40 +182,29 @@ struct 📓SourceCodeLink: View {
             init(_ ⓓirectoryPath: String) {
                 self.ⓓirectoryPath = ⓓirectoryPath
             }
-            struct 📰SourceCodeView: View {
-                var ⓣext: String
-                var ⓣitle: LocalizedStringKey
-                var body: some View {
-                    ScrollView {
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            Text(ⓣext)
-                                .padding()
-                        }
+            func 📰SourceCodeView(_ ⓣext: String, _ ⓣitle: String) -> some View {
+                ScrollView {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        Text(ⓣext)
+                            .padding()
                     }
-                    .navigationBarTitle(ⓣitle)
-                    .navigationBarTitleDisplayMode(.inline)
-                    .font(.caption.monospaced())
-                    .textSelection(.enabled)
                 }
-                init(_ ⓣext: String, _ ⓣitle: String) {
-                    self.ⓣext = ⓣext
-                    self.ⓣitle = LocalizedStringKey(ⓣitle)
-                }
+                .navigationBarTitle(LocalizedStringKey(ⓣitle))
+                .navigationBarTitleDisplayMode(.inline)
+                .font(.caption.monospaced())
+                .textSelection(.enabled)
             }
         }
-        struct 📑BundleMainInfoDictionary: View {
-            let ⓑundleMainInfoDictionary = Bundle.main.infoDictionary!.description
-            var body: some View {
-                Section {
-                    NavigationLink("Bundle.main.infoDictionary") {
-                        ScrollView {
-                            Text(ⓑundleMainInfoDictionary)
-                                .padding()
-                        }
-                        .navigationBarTitle("Bundle.main.infoDictionary")
-                        .navigationBarTitleDisplayMode(.inline)
-                        .textSelection(.enabled)
+        func 📑BundleMainInfoDictionary() -> some View {
+            Section {
+                NavigationLink("Bundle.main.infoDictionary") {
+                    ScrollView {
+                        Text(Bundle.main.infoDictionary!.description)
+                            .padding()
                     }
+                    .navigationBarTitle("Bundle.main.infoDictionary")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .textSelection(.enabled)
                 }
             }
         }
