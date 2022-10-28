@@ -136,8 +136,6 @@
 				12DDD5442861D6B2004F59A0 /* 🔗OpenSystemSetting.swift */,
 				F52D4ECC28F005C4007A45CD /* 📣ADBanner.swift */,
 				12A605A4289219B30001DE23 /* 🔠BiggerSystemFontTest.swift */,
-				1299C39B288D650C0086522B /* 🛠MenuButton.swift */,
-				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
 			path = "🧩Sub";
@@ -168,6 +166,8 @@
 				12E4A747285027F600B2380B /* AppTemplateApp.swift */,
 				12E4A749285027F600B2380B /* ContentView.swift */,
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
+				1299C39B288D650C0086522B /* 🛠MenuButton.swift */,
+				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
 				127ECB25286149B400CB1BC3 /* 🧩Sub */,
 				12E4A75828502AF800B2380B /* 🧰Others */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,

@@ -27,14 +27,11 @@ struct 🛠AppMenu: View {
 struct ℹ️AboutAppLink: View {
     var body: some View {
         Section {
-            ZStack {
-                Color.clear
+            GeometryReader { 📐 in
                 VStack(spacing: 12) {
                     Image("FlipByBlink")
                         .resizable()
-                        .mask {
-                            RoundedRectangle(cornerRadius: 22.5, style: .continuous)
-                        }
+                        .mask { RoundedRectangle(cornerRadius: 22.5, style: .continuous) }
                         .shadow(radius: 3, y: 1)
                         .frame(width: 100, height: 100)
                     VStack(spacing: 6) {
@@ -53,9 +50,11 @@ struct ℹ️AboutAppLink: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.1)
                 }
-                .padding(24)
-                .padding(.top, 12)
+                .padding(20)
+                .padding(.top, 8)
+                .frame(width: 📐.size.width)
             }
+            .frame(height: 220)
             
             🔗AppStoreLink()
             
