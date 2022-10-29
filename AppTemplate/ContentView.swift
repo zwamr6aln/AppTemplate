@@ -6,45 +6,51 @@ struct ContentView: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     @State private var 🚩ShowADMenuSheet: Bool = false
     var body: some View {
-        NavigationView {
-            List {
-                📣ADBanner($🚩ShowADMenuSheet)
-                
-                🔗OpenSystemSetting()
-                
-                🛒PurchaseView()
-                
-                Section {
-                    HStack {
-                        Text("displayName")
-                        Spacer()
-                        Text(🛒.🎫Name)
-                            .foregroundStyle(.secondary)
-                    }
-                    
-                    NavigationLink("🎫Product.debugDescription") {
-                        Text(🛒.🎫Product.debugDescription)
-                            .padding()
-                            .minimumScaleFactor(0.1)
-                            .navigationTitle("🎫Product.debugDescription")
-                            .navigationBarTitleDisplayMode(.inline)
-                    }
-                } header: { Text("In-App Purchase Product") }
-                
-                Section { 🖨printLog() }
-                
-                🔠BiggerSystemFontTest()
-            }
-            .listStyle(.plain)
-            .navigationTitle("ContentView")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    🛠MenuButton()
-                }
-            }
-            .modifier(📣ADMenuSheet($🚩ShowADMenuSheet))
+        if #available(iOS 16.0, *) {
+            NavigationStack { 🄻istView() }
+        } else {
+            NavigationView { 🄻istView() }
+                .navigationViewStyle(.stack)
         }
         //.overlay(alignment: .bottom) { 📣ADPopupBanner() }
+    }
+    func 🄻istView() -> some View {
+        List {
+            📣ADBanner($🚩ShowADMenuSheet)
+            
+            🔗OpenSystemSetting()
+            
+            🛒PurchaseView()
+            
+            Section {
+                HStack {
+                    Text("displayName")
+                    Spacer()
+                    Text(🛒.🎫Name)
+                        .foregroundStyle(.secondary)
+                }
+                
+                NavigationLink("🎫Product.debugDescription") {
+                    Text(🛒.🎫Product.debugDescription)
+                        .padding()
+                        .minimumScaleFactor(0.1)
+                        .navigationTitle("🎫Product.debugDescription")
+                        .navigationBarTitleDisplayMode(.inline)
+                }
+            } header: { Text("In-App Purchase Product") }
+            
+            Section { 🖨printLog() }
+            
+            🔠BiggerSystemFontTest()
+        }
+        .listStyle(.plain)
+        .navigationTitle("ContentView")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                🛠MenuButton()
+            }
+        }
+        .modifier(📣ADMenuSheet($🚩ShowADMenuSheet))
     }
 }
 
