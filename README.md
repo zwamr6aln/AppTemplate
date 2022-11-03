@@ -1,4 +1,4 @@
-# 📱 iPhone App AppTemplate / アプリテンプレート
+# iPhone App AppTemplate / アプリテンプレート
 
 <br>
 
@@ -10,7 +10,7 @@
 https://apps.apple.com/app/id❓
 
 <!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
-## 📄 Description
+## Description
 
 ### Target / Use-case
 
@@ -19,6 +19,7 @@ https://apps.apple.com/app/id❓
 ### Others
 
 ### Background
+
 
 ## 概要
 
@@ -54,27 +55,20 @@ sear_pandora_0x@icloud.com
 
 <br>
 <br>
-
 ------
+<br>
+<br>
+<br>
+<br>
 
-<br>
-<br>
-<br>
-<br>
 
 ## Privacy Policy for AppStore
-
-
 2022-❓-❓
 
-
 ### Japanese
-
 このアプリ自身において、ユーザーの情報を一切収集しません。
 
-
 ### English
-
 This application don't collect user infomation.
 
 
@@ -82,8 +76,6 @@ This application don't collect user infomation.
 <br>
 <br>
 <br>
-
 ------
-
 <br>
 <br>
