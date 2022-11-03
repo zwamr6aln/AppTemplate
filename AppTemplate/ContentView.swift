@@ -7,7 +7,13 @@ struct ContentView: View {
     @State private var 🚩ShowADMenuSheet: Bool = false
     var body: some View {
         if #available(iOS 16.0, *) {
-            NavigationStack { 🄻istView() }
+            NavigationSplitView {
+                🄻istView()
+            } detail: {
+                Image(systemName: "questionmark")
+                    .font(.largeTitle)
+                    .foregroundStyle(.tertiary)
+            }
         } else {
             NavigationView { 🄻istView() }
                 .navigationViewStyle(.stack)
