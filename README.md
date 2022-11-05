@@ -7,7 +7,7 @@
 </a>
 
 <!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
-## Description
+## 📓 Description
 
 ### Target / Use-case
 
@@ -18,21 +18,10 @@
 ### Background
 
 
-## 概要
+## 🌏 Localization: All
+- English
 
-### 想定ユーザー / ユースケース
-
-### オプション
-
-### その他
-
-### 背景
-
-
-## Localization: All
-English
-
-Japanese(native)
+- Japanese(native)
 
 
 ## 🧰 Source code link
