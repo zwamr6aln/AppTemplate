@@ -53,7 +53,9 @@ sear_pandora_0x@icloud.com
 
 <br>
 <br>
-------
+
+---
+
 <br>
 <br>
 <br>
@@ -74,6 +76,8 @@ This application don't collect user infomation.
 <br>
 <br>
 <br>
-------
+
+---
+
 <br>
 <br>
