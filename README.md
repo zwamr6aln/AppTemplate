@@ -1,13 +1,10 @@
 # iPhone App AppTemplate / アプリテンプレート
 
-<br>
+<img src="AppTemplate/Assets.xcassets/LaunchIcon.imageset/360.png" width="80">
 
-![App icon](AppTemplate/Assets.xcassets/LaunchIcon.imageset/360.png)
-
-<br>
-
-## 🔗 AppStore link
-https://apps.apple.com/app/id❓
+<a href="https://apps.apple.com/app/id❓" target="blank">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
+</a>
 
 <!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
 ## Description
@@ -37,7 +34,6 @@ English
 
 Japanese(native)
 
-<br>
 
 ## 🧰 Source code link
 https://github.com/FlipByBlink/❓
@@ -45,8 +41,10 @@ https://github.com/FlipByBlink/❓
 ### Source code (Mirror) link
 https://gitlab.com/FlipByBlink/❓_Mirror
 
+
 ## ✉️ Contact
 sear_pandora_0x@icloud.com
+
 
 <!-- URL "Support page for AppStore" -->
 <!-- https://flipbyblink.github.io/❓/ -->
