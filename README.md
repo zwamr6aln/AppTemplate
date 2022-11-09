@@ -2,7 +2,7 @@ iPhone App AppTemplate
 =======================
 _My app template repository_
 
-<img src="AppTemplate/Assets.xcassets/LaunchIcon.imageset/360.png" width="80">
+<img src="AppTemplate/Assets.xcassets/RoundedIcon.imageset/RoundedIcon.png" width="64">
 
 <a href="https://apps.apple.com/app/id❓" target="blank">
     <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
