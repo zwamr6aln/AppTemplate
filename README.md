@@ -1,4 +1,6 @@
-# iPhone App AppTemplate / アプリテンプレート
+iPhone App AppTemplate
+=======================
+_My app template repository_
 
 <img src="AppTemplate/Assets.xcassets/LaunchIcon.imageset/360.png" width="80">
 
@@ -7,33 +9,30 @@
 </a>
 
 <!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
-## 📓 Description
 
-### Target / Use-case
+Description
+------------
 
 ### Option
 
-### Others
 
-### Background
-
-
-## 🌏 Localization: All
+Localization: All
+------------------
 - English
 
 - Japanese(native)
 
 
-## 🧰 Source code link
+Source code link
+-----------------
 https://github.com/FlipByBlink/❓
 
 ### Source code (Mirror) link
 https://gitlab.com/FlipByBlink/❓_Mirror
 
-
-## ✉️ Contact
+Contact
+-----------
 sear_pandora_0x@icloud.com
-
 
 <!-- URL "Support page for AppStore" -->
 <!-- https://flipbyblink.github.io/❓/ -->
@@ -43,15 +42,15 @@ sear_pandora_0x@icloud.com
 <br>
 <br>
 
----
+* * *
 
 <br>
 <br>
 <br>
 <br>
 
-
-## Privacy Policy for AppStore
+Privacy Policy for AppStore
+---------------------------
 2022-❓-❓
 
 ### Japanese
@@ -60,13 +59,12 @@ sear_pandora_0x@icloud.com
 ### English
 This application don't collect user infomation.
 
-
 <br>
 <br>
 <br>
 <br>
 
----
+* * *
 
 <br>
 <br>
