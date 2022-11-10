@@ -2,6 +2,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var ⓓelegate: 🄰pplicationDelegate
     @EnvironmentObject var 📱: 📱AppModel
     @EnvironmentObject var 🛒: 🛒StoreModel
     @State private var 🚩ShowADMenuSheet: Bool = false
