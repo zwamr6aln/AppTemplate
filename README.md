@@ -14,8 +14,8 @@ Description
 ### Option
 
 
-Localization: All
-------------------
+Localization
+-------------
 - English
 
 - Japanese(native)
@@ -37,9 +37,6 @@ sear_pandora_0x@icloud.com
 <!-- URL "Privacy Policy for AppStore" -->
 <!-- https://flipbyblink.github.io/❓/#privacy-policy-for-appstore -->
 
-<br>
-<br>
-
 * * *
 
 <br>
@@ -59,10 +56,5 @@ This application don't collect user infomation.
 
 <br>
 <br>
-<br>
-<br>
-
-* * *
-
 <br>
 <br>
