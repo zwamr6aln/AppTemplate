@@ -8,8 +8,6 @@ _My app template repository_
     <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
 </a>
 
-<!-- Manually sync below text between "/README.md(here)" and "Localizable.strings" and "AppStoreConnect/_/Description". -->
-
 Description
 ------------
 
