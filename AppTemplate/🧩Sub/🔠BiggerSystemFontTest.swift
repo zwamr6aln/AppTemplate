@@ -4,6 +4,7 @@ import SwiftUI
 struct 🔠BiggerSystemFontTest: View {
     @State private var 🔠FontSize: CGFloat = 🔠computeFontSize()
     @Environment(\.dynamicTypeSize) var DTS: DynamicTypeSize
+    @ScaledMetric private var ⓢize: CGFloat = 32
     
     var body: some View {
         Text("LargeTitle(plain)")
@@ -17,6 +18,9 @@ struct 🔠BiggerSystemFontTest: View {
         
         Text("LargeTitle(extension)")
             .font(.system(size: UIFont.textStyleSize(.largeTitle)*1.2, weight: .black))
+        
+        Text("@ScaledMetric / 32")
+            .font(.system(size: ⓢize, weight: .black))
     }
 }
 
