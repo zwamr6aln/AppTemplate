@@ -5,15 +5,20 @@ struct ContentView: View {
     @EnvironmentObject var ⓓelegate: 🄰pplicationDelegate
     @EnvironmentObject var 📱: 📱AppModel
     @EnvironmentObject var 🛒: 🛒StoreModel
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @State private var 🚩ShowADMenuSheet: Bool = false
     var body: some View {
         if #available(iOS 16.0, *) {
-            NavigationSplitView {
-                🄻istView()
-            } detail: {
-                Image(systemName: "questionmark")
-                    .font(.largeTitle)
-                    .foregroundStyle(.tertiary)
+            if horizontalSizeClass == .compact {
+                NavigationStack { 🄻istView() }
+            } else {
+                NavigationSplitView {
+                    🄻istView()
+                } detail: {
+                    Image(systemName: "questionmark")
+                        .font(.largeTitle)
+                        .foregroundStyle(.tertiary)
+                }
             }
         } else {
             NavigationView { 🄻istView() }
