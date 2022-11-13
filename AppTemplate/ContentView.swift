@@ -7,6 +7,7 @@ struct ContentView: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @State private var 🚩ShowADMenuSheet: Bool = false
+    @AppStorage("sharedText") var ⓢharedText: String = "empty"
     var body: some View {
         if #available(iOS 16.0, *) {
             if horizontalSizeClass == .compact {
@@ -28,6 +29,8 @@ struct ContentView: View {
     }
     func 🄻istView() -> some View {
         List {
+            Text("sharedText:" + ⓢharedText)
+            
             📣ADBanner($🚩ShowADMenuSheet)
             
             🔗OpenSystemSetting()
