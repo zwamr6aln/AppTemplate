@@ -13,7 +13,7 @@ struct ContentView: View {
             if horizontalSizeClass == .compact {
                 NavigationStack { 🄻istView() }
             } else {
-                NavigationSplitView {
+                NavigationSplitView(columnVisibility: .constant(.all)) {
                     🄻istView()
                 } detail: {
                     Image(systemName: "questionmark")
