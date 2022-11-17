@@ -25,3 +25,5 @@ class 🄰pplicationDelegate: NSObject, UIApplicationDelegate, ObservableObject 
         }
     }
 }
+
+let 🆔AppGroup = "group.net.aaaakkkkssssttttnnnn.AppTemplate"
