@@ -26,6 +26,7 @@ enum 📁SourceFolder: String, CaseIterable, Identifiable {
 
 
 
+//MARK: - Template
 import SwiftUI
 
 struct ℹ️AboutAppMenu: View {
