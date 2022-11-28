@@ -35,7 +35,7 @@ struct ℹ️AboutAppMenu: View {
             📰AppStoreDescriptionSection()
             📜VersionHistoryLink()
             👤PrivacyPolicySection()
-            🔗AppStoreLink.withURLFooter()
+            🏬AppStoreSection()
             📓SourceCodeLink()
             🧑‍💻AboutDeveloperPublisherLink()
         }
@@ -82,13 +82,28 @@ struct 🔗AppStoreLink: View {
             }
         }
     }
-    struct withURLFooter: View {
-        var body: some View {
-            Section {
-                🔗AppStoreLink()
-            } footer: {
-                Text(🔗AppStoreProductURL.description)
+}
+
+struct 🏬AppStoreSection: View {
+    @Environment(\.openURL) var 🔗: OpenURLAction
+    var body: some View {
+        Section {
+            🔗AppStoreLink()
+            Button {
+                let url = URL(string: 🔗AppStoreProductURL.description + "?action=write-review")!
+                print(url)
+                🔗.callAsFunction(url)
+            } label: {
+                HStack {
+                    Label("Review on AppStore", systemImage: "star.bubble")
+                    Spacer()
+                    Image(systemName: "arrow.up.forward.app")
+                        .imageScale(.small)
+                        .foregroundStyle(.secondary)
+                }
             }
+        } footer: {
+            Text(🔗AppStoreProductURL.description)
         }
     }
 }
