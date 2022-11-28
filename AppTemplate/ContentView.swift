@@ -1,5 +1,5 @@
-
 import SwiftUI
+import StoreKit
 
 struct ContentView: View {
     @EnvironmentObject var ⓓelegate: 🄰pplicationDelegate
@@ -10,17 +10,20 @@ struct ContentView: View {
     @AppStorage("sharedText") var ⓢharedText: String = "empty"
     var body: some View {
         if #available(iOS 16.0, *) {
-            if horizontalSizeClass == .compact {
-                NavigationStack { 🄻istView() }
-            } else {
-                NavigationSplitView(columnVisibility: .constant(.all)) {
-                    🄻istView()
-                } detail: {
-                    Image(systemName: "questionmark")
-                        .font(.largeTitle)
-                        .foregroundStyle(.tertiary)
+            Group {
+                if horizontalSizeClass == .compact {
+                    NavigationStack { 🄻istView() }
+                } else {
+                    NavigationSplitView(columnVisibility: .constant(.all)) {
+                        🄻istView()
+                    } detail: {
+                        Image(systemName: "questionmark")
+                            .font(.largeTitle)
+                            .foregroundStyle(.tertiary)
+                    }
                 }
             }
+            .modifier(🅁equestUserReview())
         } else {
             NavigationView { 🄻istView() }
                 .navigationViewStyle(.stack)
@@ -66,6 +69,24 @@ struct ContentView: View {
             }
         }
         .modifier(📣ADMenuSheet($🚩ShowADMenuSheet))
+    }
+}
+
+
+@available(iOS 16, *)
+struct 🅁equestUserReview: ViewModifier {
+    @Environment(\.requestReview) var requestReview
+    func body(content: Content) -> some View {
+        content
+            .toolbar {
+                ToolbarItem(placement: .bottomBar) {
+                    Button {
+                        requestReview.callAsFunction()
+                    } label: {
+                        Image(systemName: "star.bubble")
+                    }
+                }
+            }
     }
 }
 
