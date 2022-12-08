@@ -12,10 +12,10 @@ struct ContentView: View {
         if #available(iOS 16.0, *) {
             Group {
                 if horizontalSizeClass == .compact {
-                    NavigationStack { 🄻istView() }
+                    NavigationStack { 🄲ontents() }
                 } else {
                     NavigationSplitView(columnVisibility: .constant(.all)) {
-                        🄻istView()
+                        🄲ontents()
                     } detail: {
                         Image(systemName: "questionmark")
                             .font(.largeTitle)
@@ -25,12 +25,12 @@ struct ContentView: View {
             }
             .modifier(🅁equestUserReview())
         } else {
-            NavigationView { 🄻istView() }
+            NavigationView { 🄲ontents() }
                 .navigationViewStyle(.stack)
         }
         //.overlay(alignment: .bottom) { 📣ADPopupBanner() }
     }
-    func 🄻istView() -> some View {
+    func 🄲ontents() -> some View {
         List {
             Text("sharedText:" + ⓢharedText)
             

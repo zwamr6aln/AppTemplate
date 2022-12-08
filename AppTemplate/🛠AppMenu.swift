@@ -6,12 +6,12 @@ struct 🛠AppMenu: View {
     @Environment(\.dismiss) var ⓓismissAction: DismissAction
     var body: some View {
         if #available(iOS 16.0, *) {
-            NavigationStack { 🄻ist() }
+            NavigationStack { 🄲ontents() }
         } else {
-            NavigationView { 🄻ist() }
+            NavigationView { 🄲ontents() }
         }
     }
-    func 🄻ist() -> some View {
+    func 🄲ontents() -> some View {
         List {
             Section {
                 Toggle(isOn: .constant(false)) {
