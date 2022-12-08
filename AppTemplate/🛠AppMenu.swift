@@ -59,7 +59,7 @@ struct ℹ️AboutAppLink: View {
                 .padding(.top, 8)
                 .frame(width: 📐.size.width)
             }
-            .frame(height: 220)
+            .frame(height: 200)
             
             🔗AppStoreLink()
             
