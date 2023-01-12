@@ -10,7 +10,11 @@ struct AppTemplateApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ADSheet()
+                .sheet(isPresented: .constant(true), content: {
+                    ADSheet()
+                })
+//            ContentView()
                 .environmentObject(📱)
                 .environmentObject(🛒)
                 .defaultAppStorage(💾)

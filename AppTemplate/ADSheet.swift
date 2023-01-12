@@ -58,7 +58,13 @@ struct ADSheet: View {
             .navigationTitle("AD")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Image(systemName: "questionmark.circle")
+                    NavigationLink {
+                        📣ADMenu()
+                            .listStyle(.plain)
+                    } label: {
+                        Image(systemName: "questionmark.circle")
+                            .foregroundColor(.primary)
+                    }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Image(systemName: "chevron.down")
@@ -72,6 +78,9 @@ struct ADSheet: View {
 struct View_Previews: PreviewProvider {
     static var previews: some View {
         ADSheet()
+            .sheet(isPresented: .constant(true), content: {
+                ADSheet()
+            })
             .previewInterfaceOrientation(.portrait)
         ADSheet()
             .previewInterfaceOrientation(.landscapeLeft)
