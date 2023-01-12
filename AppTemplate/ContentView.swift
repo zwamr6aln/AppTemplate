@@ -117,17 +117,14 @@ struct ﹀DismissButton: View {
     }
 }
 
-
-
-
-struct ContentView_Previews: PreviewProvider {
-    static let 📱 = 📱AppModel()
-    static let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
-    
-    static var previews: some View {
-        ContentView()
-            .environmentObject(📱)
-            .environmentObject(🛒)
-            .previewLayout(.fixed(width: 300, height: 600))
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static let 📱 = 📱AppModel()
+//    static let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
+//
+//    static var previews: some View {
+//        ContentView()
+//            .environmentObject(📱)
+//            .environmentObject(🛒)
+//            .previewLayout(.fixed(width: 300, height: 600))
+//    }
+//}
