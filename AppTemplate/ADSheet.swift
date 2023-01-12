@@ -7,35 +7,38 @@ struct ADSheet: View {
         NavigationView {
             Group {
                 if self.verticalSizeClass == .regular {
-                    VStack(spacing: 18) {
-                        Image(systemName: "photo")
+                    VStack(spacing: 12) {
+                        Spacer()
+                        Image("mainImage")
                             .resizable()
                             .scaledToFit()
                         Spacer()
-                        Image(systemName: "square")
+                        Image("icon")
                             .resizable()
                             .frame(width: 60, height: 60)
                         Text("App name")
                             .font(.headline)
+                        Spacer()
                         Text("This is placeholder. Please deploy app description. 2 ~ 3 lines.")
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
+                            .padding(.horizontal, 8)
                         Spacer()
                         HStack(spacing: 6) {
                             Image("appstore_badge")
                             Image(systemName: "hand.point.up.left")
                         }
-                        .padding()
+                        Spacer()
                     }
                     .padding()
                 } else {
                     HStack(spacing: 16) {
-                        Image(systemName: "photo")
+                        Image("mainImage")
                             .resizable()
                             .scaledToFit()
-                        VStack(spacing: 18) {
+                        VStack(spacing: 12) {
                             Spacer()
-                            Image(systemName: "square")
+                            Image("icon")
                                 .resizable()
                                 .frame(width: 60, height: 60)
                             Text("App name")
@@ -43,12 +46,13 @@ struct ADSheet: View {
                             Text("This is placeholder. Please deploy app description. 2 ~ 3 lines.")
                                 .font(.subheadline)
                                 .multilineTextAlignment(.center)
+                                .padding(.horizontal, 4)
                             Spacer()
                             HStack(spacing: 6) {
                                 Image("appstore_badge")
                                 Image(systemName: "hand.point.up.left")
                             }
-                            .padding()
+                            Spacer()
                         }
                         .padding(.horizontal)
                     }
@@ -69,6 +73,7 @@ struct ADSheet: View {
                     Image(systemName: "chevron.down")
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
@@ -77,9 +82,6 @@ struct ADSheet: View {
 struct View_Previews: PreviewProvider {
     static var previews: some View {
         ADSheet()
-            .sheet(isPresented: .constant(true), content: {
-                ADSheet()
-            })
             .previewInterfaceOrientation(.portrait)
         ADSheet()
             .previewInterfaceOrientation(.landscapeLeft)
