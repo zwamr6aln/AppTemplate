@@ -65,7 +65,6 @@ struct ADSheet: View {
                 }
             }
         }
-        .navigationViewStyle(.stack)
     }
 }
 
