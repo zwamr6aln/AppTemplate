@@ -60,7 +60,6 @@ struct ADSheet: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     NavigationLink {
                         📣ADMenu()
-                            .listStyle(.plain)
                     } label: {
                         Image(systemName: "questionmark.circle")
                             .foregroundColor(.primary)
