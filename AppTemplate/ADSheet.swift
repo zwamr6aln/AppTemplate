@@ -9,49 +9,27 @@ struct ADSheet: View {
                 if self.verticalSizeClass == .regular {
                     VStack(spacing: 12) {
                         Spacer()
-                        Image("mainImage")
-                            .resizable()
-                            .scaledToFit()
+                        self.ⓜockImage()
                         Spacer()
-                        Image("icon")
-                            .resizable()
-                            .frame(width: 60, height: 60)
-                        Text("App name")
-                            .font(.headline)
+                        self.ⓘcon()
+                        self.ⓐppName()
                         Spacer()
-                        Text("This is placeholder. Please deploy app description. 2 ~ 3 lines.")
-                            .font(.subheadline)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 8)
+                        self.ⓓescription()
                         Spacer()
-                        HStack(spacing: 6) {
-                            Image("appstore_badge")
-                            Image(systemName: "hand.point.up.left")
-                        }
+                        self.ⓐppStoreBadge()
                         Spacer()
                     }
                     .padding()
                 } else {
                     HStack(spacing: 16) {
-                        Image("mainImage")
-                            .resizable()
-                            .scaledToFit()
+                        self.ⓜockImage()
                         VStack(spacing: 12) {
                             Spacer()
-                            Image("icon")
-                                .resizable()
-                                .frame(width: 60, height: 60)
-                            Text("App name")
-                                .font(.headline)
-                            Text("This is placeholder. Please deploy app description. 2 ~ 3 lines.")
-                                .font(.subheadline)
-                                .multilineTextAlignment(.center)
-                                .padding(.horizontal, 4)
+                            self.ⓘcon()
+                            self.ⓐppName()
+                            self.ⓓescription()
                             Spacer()
-                            HStack(spacing: 6) {
-                                Image("appstore_badge")
-                                Image(systemName: "hand.point.up.left")
-                            }
+                            self.ⓐppStoreBadge()
                             Spacer()
                         }
                         .padding(.horizontal)
@@ -74,6 +52,32 @@ struct ADSheet: View {
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+    func ⓜockImage() -> some View {
+        Image("mock/fia")
+            .resizable()
+            .scaledToFit()
+    }
+    func ⓘcon() -> some View {
+        Image("icon")
+            .resizable()
+            .frame(width: 60, height: 60)
+    }
+    func ⓐppName() -> some View {
+        Text("App name")
+            .font(.headline)
+    }
+    func ⓓescription() -> some View {
+        Text("This is placeholder. Please deploy app description. 2 ~ 3 lines.")
+            .font(.subheadline)
+            .multilineTextAlignment(.center)
+            .padding(.horizontal, 8)
+    }
+    func ⓐppStoreBadge() -> some View {
+        HStack(spacing: 6) {
+            Image("appstore_badge")
+            Image(systemName: "hand.point.up.left")
         }
     }
 }
