@@ -58,27 +58,28 @@ struct 🛒IAPSection: View {
     var body: some View {
         Section {
             🛒PurchaseView()
-            🛒ProductPreview()
+            🛒ADPreview()
         } header: {
             Text("In-App Purchase")
         }
         🛒RestoreButton()
     }
-    func 🛒ProductPreview() -> some View {
+    private func 🛒ADPreview() -> some View {
         HStack(spacing: 4) {
-            Image("ProductPreview_Before")
+            Spacer()
+            Image("ADPreview")
                 .resizable()
                 .scaledToFit()
-            Image(systemName: "arrow.right")
-                .font(.title2.weight(.semibold))
-                .foregroundStyle(.secondary)
-            Image("ProductPreview_After")
-                .resizable()
-                .scaledToFit()
+                .frame(maxHeight: 300)
+            Image(systemName: "trash.fill")
+                .symbolRenderingMode(.multicolor)
+                .font(.title.weight(.semibold))
+                .rotationEffect(.degrees(10))
+            Spacer()
         }
         .padding(24)
     }
-    struct 🛒RestoreButton: View {
+    private struct 🛒RestoreButton: View {
         @EnvironmentObject var 🛒: 🛒StoreModel
         @State private var 🚩RestoringNow = false
         @State private var 🚨ShowAlert = false
