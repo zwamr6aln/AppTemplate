@@ -47,7 +47,7 @@ struct 📣ADView: View {
         }
     }
     func 🔗LinkButton() -> some View {
-        Link(destination: ⓐppName.🔗URL) {
+        Link(destination: ⓐppName.url) {
             HStack(spacing: 12) {
                 Image(ⓐppName.rawValue)
                     .resizable()
@@ -66,7 +66,7 @@ struct 📣ADView: View {
                     }
                     .minimumScaleFactor(0.1)
                     .padding(.trailing, 32)
-                    Text(ⓐppName.📄About)
+                    Text(ⓐppName.description)
                         .font(.subheadline)
                         .multilineTextAlignment(.leading)
                         .minimumScaleFactor(0.1)
@@ -151,7 +151,11 @@ enum 📣AppName: String, CaseIterable {
     case MemorizeWidget
     case LockInNote
     
-    var 🔗URL: URL {
+    var name: LocalizedStringKey {
+        LocalizedStringKey(self.rawValue)
+    }
+    
+    var url: URL {
         switch self {
             case .FlipByBlink: return URL(string: "https://apps.apple.com/app/id1444571751")!
             case .FadeInAlarm: return URL(string: "https://apps.apple.com/app/id1465336070")!
@@ -163,7 +167,7 @@ enum 📣AppName: String, CaseIterable {
         }
     }
     
-    var 📄About: LocalizedStringKey {
+    var description: LocalizedStringKey {
         switch self {
             case .FlipByBlink: return "Simple and normal ebook reader (for fixed-layout). Only a special feature. Turn a page with slightly longish voluntary blink."
             case .FadeInAlarm: return "Alarm clock with taking a long time from small volume to max volume."
@@ -176,15 +180,10 @@ enum 📣AppName: String, CaseIterable {
     }
     
     var mockImageName: String {
-        let ⓟrefix = "mock/"
-        switch self {
-            case .FlipByBlink: return ⓟrefix + "fbb"
-            case .FadeInAlarm: return ⓟrefix + "fia"
-            case .Plain将棋盤: return ⓟrefix + "ps"
-            case .TapWeight: return ⓟrefix + "tw"
-            case .TapTemperature: return ⓟrefix + "tt"
-            case .MemorizeWidget: return ⓟrefix + "mw"
-            case .LockInNote: return ⓟrefix + "lin"
-        }
+        "mock/" + self.rawValue
+    }
+    
+    var iconImageName: String {
+        "icon/" + self.rawValue
     }
 }

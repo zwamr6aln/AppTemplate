@@ -61,22 +61,22 @@ struct ADSheet: View {
             .scaledToFit()
     }
     func ⓘcon() -> some View {
-        Image(self.ⓐpp.rawValue)
+        Image(self.ⓐpp.iconImageName)
             .resizable()
             .frame(width: 60, height: 60)
     }
     func ⓐppName() -> some View {
-        Text(self.ⓐpp.rawValue)
+        Text(self.ⓐpp.name)
             .font(.headline)
     }
     func ⓓescription() -> some View {
-        Text(self.ⓐpp.📄About)
+        Text(self.ⓐpp.description)
             .font(.subheadline)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 8)
     }
     func ⓐppStoreBadge() -> some View {
-        Link(destination: self.ⓐpp.🔗URL) {
+        Link(destination: self.ⓐpp.url) {
             HStack(spacing: 6) {
                 Image("appstore_badge")
                 Image(systemName: "hand.point.up.left")
