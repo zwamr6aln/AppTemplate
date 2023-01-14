@@ -139,18 +139,6 @@ struct 📣ADSheet: View {
     }
 }
 
-struct ADSheet_Previews: PreviewProvider {
-    static let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
-    static var previews: some View {
-        📣ADSheet(.FlipByBlink)
-            .previewInterfaceOrientation(.portrait)
-            .environmentObject(🛒)
-        📣ADSheet(.LockInNote)
-            .previewInterfaceOrientation(.landscapeLeft)
-            .environmentObject(🛒)
-    }
-}
-
 struct 📣ADMenu: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     var body: some View {
