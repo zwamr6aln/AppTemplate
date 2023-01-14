@@ -6,7 +6,7 @@ struct ContentView: View {
     @EnvironmentObject var 📱: 📱AppModel
     @EnvironmentObject var 🛒: 🛒StoreModel
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    @State private var 🚩ShowADMenuSheet: Bool = false
+//    @State private var 🚩ShowADMenuSheet: Bool = false
     @AppStorage("sharedText") var ⓢharedText: String = "empty"
     var body: some View {
         if #available(iOS 16.0, *) {
@@ -34,7 +34,7 @@ struct ContentView: View {
         List {
             Text("sharedText:" + ⓢharedText)
             
-            📣ADBanner($🚩ShowADMenuSheet)
+//            📣ADBanner($🚩ShowADMenuSheet)
             
             🔗OpenSystemSetting()
             
@@ -68,7 +68,7 @@ struct ContentView: View {
                 🛠MenuButton()
             }
         }
-        .modifier(📣ADMenuSheet($🚩ShowADMenuSheet))
+//        .modifier(📣ADMenuSheet($🚩ShowADMenuSheet))
     }
 }
 

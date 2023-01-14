@@ -1,15 +1,15 @@
 
 import SwiftUI
 
-struct 📣ADBanner: View {
-    @Binding var 🚩ShowADMenuSheet: Bool
-    var body: some View {
-        📣ADView(without: .Plain将棋盤, $🚩ShowADMenuSheet)
-    }
-    init(_ 🚩ShowADMenuSheet: Binding<Bool>) {
-        self._🚩ShowADMenuSheet = 🚩ShowADMenuSheet
-    }
-}
+//struct 📣ADBanner: View {
+//    @Binding var 🚩ShowADMenuSheet: Bool
+//    var body: some View {
+//        📣ADView(without: .Plain将棋盤, $🚩ShowADMenuSheet)
+//    }
+//    init(_ 🚩ShowADMenuSheet: Binding<Bool>) {
+//        self._🚩ShowADMenuSheet = 🚩ShowADMenuSheet
+//    }
+//}
 
 
 //struct 📣ADPopupBanner: View {

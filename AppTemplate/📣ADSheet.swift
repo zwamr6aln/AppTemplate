@@ -3,19 +3,25 @@ import SwiftUI
 
 struct 📣ADContent: ViewModifier {
     @EnvironmentObject var 🛒: 🛒StoreModel
+    @State private var ⓐpp: 📣MyApp
     func body(content: Content) -> some View {
         content
             .sheet(isPresented: $🛒.🚩showADSheet) {
-                📣ADSheet()
+                📣ADSheet(self.ⓐpp)
             }
             .onAppear { 🛒.🚩showADSheet = true }
+    }
+    init(without: 📣MyApp) {
+        let ⓐpps = 📣MyApp.allCases.filter { $0 != without }
+        self.ⓐpp = ⓐpps.randomElement()!
     }
 }
 
 struct 📣ADSheet: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass
     @EnvironmentObject var 🛒: 🛒StoreModel
-    var ⓐpp: 📣AppName = .allCases.randomElement()!
+    private var ⓐpp: 📣MyApp
+    init(_ ⓐpp: 📣MyApp) { self.ⓐpp = ⓐpp }
     var body: some View {
         NavigationView {
             Group {
@@ -131,10 +137,10 @@ struct 📣ADSheet: View {
 struct ADSheet_Previews: PreviewProvider {
     static let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
     static var previews: some View {
-        📣ADSheet()
+        📣ADSheet(📣MyApp.allCases.randomElement()!)
             .previewInterfaceOrientation(.portrait)
             .environmentObject(🛒)
-        📣ADSheet()
+        📣ADSheet(📣MyApp.allCases.randomElement()!)
             .previewInterfaceOrientation(.landscapeLeft)
             .environmentObject(🛒)
     }
