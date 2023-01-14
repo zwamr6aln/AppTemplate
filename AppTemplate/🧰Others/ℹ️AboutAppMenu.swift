@@ -1,4 +1,3 @@
-
 let 📜versionsInfo: [(ⓝumber: String, ⓓate: String)] = [("1.1", "2021-03-01"),
                                                         ("1.0.1", "2021-02-01"),
                                                         ("1.0", "2021-01-01")] //降順。先頭の方が新しい。 //TODO: Edit
@@ -26,7 +25,7 @@ enum 📁SourceFolder: String, CaseIterable, Identifiable {
 
 
 
-//MARK: - Template
+//MARK: - ============ Template ============
 import SwiftUI
 
 struct ℹ️AboutAppMenu: View {
