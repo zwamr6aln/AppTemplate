@@ -14,6 +14,7 @@ struct 📣ADSheet: View {
                     self.ⓗorizontalLayout()
                 }
             }
+            .modifier(Self.ⓟurchasedEffect())
             .navigationTitle("AD")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -113,6 +114,25 @@ struct 📣ADSheet: View {
         }
         .foregroundStyle(.primary)
         .accessibilityLabel("dismiss")
+    }
+    struct ⓟurchasedEffect: ViewModifier {
+        @EnvironmentObject var 🛒: 🛒StoreModel
+        func body(content: Content) -> some View {
+            if 🛒.🚩purchased {
+                content
+                    .blur(radius: 6)
+                    .overlay {
+                        Image(systemName: "trash.square.fill")
+                            .resizable()
+                            .symbolRenderingMode(.multicolor)
+                            .frame(width: 160, height: 160)
+                            .rotationEffect(.degrees(5))
+                            .shadow(radius: 12)
+                    }
+            } else {
+                content
+            }
+        }
     }
     init(_ ⓐpp: 📣MyApp) {
         self.ⓐpp = ⓐpp
