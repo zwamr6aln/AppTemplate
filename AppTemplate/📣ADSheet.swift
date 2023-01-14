@@ -4,7 +4,6 @@ struct 📣ADSheet: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass
     @EnvironmentObject var 🛒: 🛒StoreModel
     private var ⓐpp: 📣MyApp
-    init(_ ⓐpp: 📣MyApp) { self.ⓐpp = ⓐpp }
     var body: some View {
         NavigationView {
             Group {
@@ -114,13 +113,16 @@ struct 📣ADSheet: View {
         .foregroundStyle(.primary)
         .accessibilityLabel("dismiss")
     }
+    init(_ ⓐpp: 📣MyApp) {
+        self.ⓐpp = ⓐpp
+    }
 }
 
 
 struct ADSheet_Previews: PreviewProvider {
     static let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
     static var previews: some View {
-        📣ADSheet(.MemorizeWidget)
+        📣ADSheet(.FlipByBlink)
             .previewInterfaceOrientation(.portrait)
             .environmentObject(🛒)
         📣ADSheet(.LockInNote)
