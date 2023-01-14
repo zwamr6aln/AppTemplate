@@ -1,86 +1,135 @@
 import SwiftUI
 import StoreKit
 
-///#Example
-///struct ParentView: View {
-/// @State private var 🚩ShowADMenuSheet: Bool = false
-/// var body: some View {
-///     ... 📣ADView($🚩ShowADMenuSheet) ...
-///     .modifier(📣ADMenuSheet($🚩ShowADMenuSheet))
-///} }
+struct 📣ADSheet: View {
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+    @EnvironmentObject var 🛒: 🛒StoreModel
+    private var ⓐpp: 📣MyApp
+    var body: some View {
+        NavigationView {
+            Group {
+                if self.verticalSizeClass == .regular {
+                    self.ⓥerticalLayout()
+                } else {
+                    self.ⓗorizontalLayout()
+                }
+            }
+            .navigationTitle("AD")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    self.ⓓismissButton()
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    self.ⓐdMenuLink()
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+    private func ⓥerticalLayout() -> some View {
+        VStack(spacing: 16) {
+            Spacer()
+            self.ⓜockImage()
+            Spacer()
+            self.ⓘcon()
+            self.ⓝame()
+            Spacer()
+            self.ⓓescription()
+            Spacer()
+            self.ⓐppStoreBadge()
+            Spacer()
+        }
+        .padding()
+    }
+    private func ⓗorizontalLayout() -> some View {
+        HStack(spacing: 16) {
+            self.ⓜockImage()
+            VStack(spacing: 12) {
+                Spacer()
+                self.ⓘcon()
+                self.ⓝame()
+                self.ⓓescription()
+                Spacer()
+                self.ⓐppStoreBadge()
+                Spacer()
+            }
+            .padding(.horizontal)
+        }
+        .padding()
+    }
+    private func ⓜockImage() -> some View {
+        Link(destination: self.ⓐpp.url) {
+            Image(self.ⓐpp.mockImageName)
+                .resizable()
+                .scaledToFit()
+        }
+        .accessibilityHidden(true)
+    }
+    private func ⓘcon() -> some View {
+        Link(destination: self.ⓐpp.url) {
+            Image(self.ⓐpp.iconImageName)
+                .resizable()
+                .frame(width: 60, height: 60)
+        }
+        .accessibilityHidden(true)
+    }
+    private func ⓝame() -> some View {
+        Link(destination: self.ⓐpp.url) {
+            Text(self.ⓐpp.name)
+                .font(.headline)
+        }
+        .buttonStyle(.plain)
+        .accessibilityHidden(true)
+    }
+    private func ⓓescription() -> some View {
+        Text(self.ⓐpp.description)
+            .font(.subheadline)
+            .multilineTextAlignment(.center)
+            .padding(.horizontal, 8)
+    }
+    private func ⓐppStoreBadge() -> some View {
+        Link(destination: self.ⓐpp.url) {
+            HStack(spacing: 6) {
+                Image("appstore_badge")
+                Image(systemName: "hand.point.up.left")
+            }
+            .foregroundColor(.primary)
+        }
+    }
+    private func ⓐdMenuLink() -> some View {
+        NavigationLink {
+            📣ADMenu()
+        } label: {
+            Image(systemName: "questionmark.circle")
+                .foregroundColor(.primary)
+        }
+        .accessibilityLabel("about AD")
+    }
+    private func ⓓismissButton() -> some View {
+        Button {
+            🛒.🚩showADSheet = false
+        } label: {
+            Image(systemName: "chevron.down")
+        }
+        .foregroundStyle(.primary)
+        .accessibilityLabel("dismiss")
+    }
+    init(_ ⓐpp: 📣MyApp) {
+        self.ⓐpp = ⓐpp
+    }
+}
 
-//struct 📣ADView: View {
-//    @EnvironmentObject var 🛒: 🛒StoreModel
-//    @State private var ⓐppName: 📣AppName
-//    @Binding var 🚩showADMenuSheet: Bool
-//    var body: some View {
-//        if 🛒.🚩adIsActive {
-//            HStack {
-//                self.🔗linkButton()
-//                Spacer()
-//                Button {
-//                    self.🚩showADMenuSheet = true
-//                    UISelectionFeedbackGenerator().selectionChanged()
-//                } label: {
-//                    Image(systemName: "ellipsis.circle")
-//                        .padding(.vertical)
-//                        .padding(.leading, 8)
-//                }
-//                .foregroundStyle(.secondary)
-//                .accessibilityLabel("Purchase")
-//            }
-//            .overlay(alignment: .topLeading) {
-//                Text("AD")
-//                    .scaleEffect(x: 1.2)
-//                    .font(.subheadline.weight(.black))
-//                    .frame(maxHeight: 32)
-//                    .minimumScaleFactor(0.1)
-//                    .padding(.top, 8)
-//                    .padding(.leading, 3)
-//                    .foregroundStyle(.tertiary)
-//            }
-//            .padding(.leading, 4)
-//            .buttonStyle(.borderless)
-//        } else {
-//            EmptyView()
-//        }
-//    }
-//    private func 🔗linkButton() -> some View {
-//        Link(destination: self.ⓐppName.url) {
-//            HStack(spacing: 12) {
-//                Image(self.ⓐppName.rawValue)
-//                    .resizable()
-//                    .frame(width: 60, height: 60)
-//                    .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-//                    .shadow(radius: 1.5, y: 0.5)
-//                    .padding(.vertical, 40)
-//                VStack(alignment: .leading, spacing: 2) {
-//                    HStack {
-//                        Text(self.ⓐppName.rawValue)
-//                            .font(.headline)
-//                            .lineLimit(1)
-//                        Image(systemName: "arrow.up.forward.app")
-//                            .resizable()
-//                            .frame(width: 15, height: 15)
-//                    }
-//                    .minimumScaleFactor(0.1)
-//                    .padding(.trailing, 32)
-//                    Text(self.ⓐppName.description)
-//                        .font(.subheadline)
-//                        .multilineTextAlignment(.leading)
-//                        .minimumScaleFactor(0.1)
-//                }
-//                .padding(.vertical)
-//            }
-//        }
-//        .accessibilityLabel("Open AD link")
-//    }
-//    init(without: 📣AppName, _ 🚩ShowADMenuSheet: Binding<Bool>) {
-//        let ⓐpps = 📣AppName.allCases.filter { $0 != without }
-//        self.ⓐppName = ⓐpps.randomElement()!
-//        self._🚩showADMenuSheet = 🚩ShowADMenuSheet
-//    }
-//}
+struct ADSheet_Previews: PreviewProvider {
+    static let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
+    static var previews: some View {
+        📣ADSheet(.FlipByBlink)
+            .previewInterfaceOrientation(.portrait)
+            .environmentObject(🛒)
+        📣ADSheet(.LockInNote)
+            .previewInterfaceOrientation(.landscapeLeft)
+            .environmentObject(🛒)
+    }
+}
 
 struct 📣ADMenu: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
@@ -98,32 +147,6 @@ struct 📣ADMenu: View {
         .navigationTitle("AD / Purchase")
     }
 }
-
-//struct 📣ADMenuSheet: ViewModifier {
-//    @Binding var 🚩showSheet: Bool
-//    func body(content: Content) -> some View {
-//        content
-//            .sheet(isPresented: self.$🚩showSheet) {
-//                NavigationView {
-//                    📣ADMenu()
-//                        .toolbar {
-//                            Button {
-//                                self.🚩showSheet = false
-//                                UISelectionFeedbackGenerator().selectionChanged()
-//                            } label: {
-//                                Image(systemName: "chevron.down")
-//                            }
-//                            .tint(.secondary)
-//                            .accessibilityLabel("Dismiss")
-//                        }
-//                }
-//                .navigationViewStyle(StackNavigationViewStyle())
-//            }
-//    }
-//    init(_ 🚩showSheet: Binding<Bool>) {
-//        self._🚩showSheet = 🚩showSheet
-//    }
-//}
 
 struct 📣ADMenuLink: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
