@@ -4,7 +4,7 @@ import SwiftUI
 struct ADSheet: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass
     @EnvironmentObject var 🛒: 🛒StoreModel
-    var ⓐpp: 📣AppName = .MemorizeWidget
+    var ⓐpp: 📣AppName = 📣AppName.allCases.randomElement()!
     var body: some View {
         NavigationView {
             Group {

@@ -65,16 +65,21 @@ struct 🛒IAPSection: View {
         🛒RestoreButton()
     }
     private func 🛒ADPreview() -> some View {
-        HStack(spacing: 4) {
+        HStack(alignment: .bottom) {
             Spacer()
             Image("ADPreview")
                 .resizable()
                 .scaledToFit()
                 .frame(maxHeight: 300)
-            Image(systemName: "trash.fill")
+                .padding(.leading, 30)
+            Image(systemName: "trash.square.fill")
+                .resizable()
                 .symbolRenderingMode(.multicolor)
-                .font(.title.weight(.semibold))
+                .frame(width: 60, height: 60)
                 .rotationEffect(.degrees(10))
+                .offset(x: -30)
+                .shadow(radius: 5)
+                .padding(.bottom, 60)
             Spacer()
         }
         .padding(24)
