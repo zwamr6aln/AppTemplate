@@ -8,6 +8,10 @@ struct 📣ADContent: ViewModifier {
             .sheet(isPresented: $🛒.🚩showADSheet) {
                 📣ADSheet(ⓐpp)
             }
-            .onAppear { 🛒.🚩showADSheet = true }
+            .onAppear {
+                if 🛒.🚩adIsActive {
+                    🛒.🚩showADSheet = true
+                }
+            }
     }
 }

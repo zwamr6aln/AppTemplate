@@ -6,7 +6,6 @@ struct ContentView: View {
     @EnvironmentObject var 📱: 📱AppModel
     @EnvironmentObject var 🛒: 🛒StoreModel
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-//    @State private var 🚩ShowADMenuSheet: Bool = false
     @AppStorage("sharedText") var ⓢharedText: String = "empty"
     var body: some View {
         if #available(iOS 16.0, *) {
@@ -28,7 +27,6 @@ struct ContentView: View {
             NavigationView { 🄲ontents() }
                 .navigationViewStyle(.stack)
         }
-        //.overlay(alignment: .bottom) { 📣ADPopupBanner() }
     }
     func 🄲ontents() -> some View {
         List {
@@ -36,8 +34,6 @@ struct ContentView: View {
                 .onTapGesture {
                     🛒.🚩showADSheet = true
                 }
-            
-//            📣ADBanner($🚩ShowADMenuSheet)
             
             🔗OpenSystemSetting()
             
@@ -71,7 +67,6 @@ struct ContentView: View {
                 🛠MenuButton()
             }
         }
-//        .modifier(📣ADMenuSheet($🚩ShowADMenuSheet))
     }
 }
 
