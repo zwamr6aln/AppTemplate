@@ -166,104 +166,102 @@ struct 📜VersionHistoryLink: View {
 struct 📓SourceCodeLink: View {
     var body: some View {
         NavigationLink {
-            Self.📓SourceCodeMenu()
+            self.ⓢourceCodeMenu()
         } label: {
             Label("Source code", systemImage: "doc.plaintext")
         }
     }
-    private struct 📓SourceCodeMenu: View {
-        var body: some View {
-            List {
-                ForEach(📁SourceFolder.allCases) { ⓟath in
-                    Self.📓CodeSection(ⓟath.rawValue)
-                }
-                self.📑bundleMainInfoDictionary()
-                self.🔗repositoryLinks()
+    private func ⓢourceCodeMenu() -> some View {
+        List {
+            ForEach(📁SourceFolder.allCases) { ⓟath in
+                Self.📓CodeSection(ⓟath.rawValue)
             }
-            .navigationTitle("Source code")
+            self.📑bundleMainInfoDictionary()
+            self.🔗repositoryLinks()
         }
-        private struct 📓CodeSection: View {
-            private var ⓓirectoryPath: String
-            private var 📁url: URL { Bundle.main.bundleURL.appendingPathComponent(self.ⓓirectoryPath) }
-            private var 🏷fileNames: [String]? {
-                try? FileManager.default.contentsOfDirectory(atPath: self.📁url.path)
-            }
-            var body: some View {
-                Section {
-                    if let 🏷fileNames {
-                        ForEach(🏷fileNames, id: \.self) { 🏷 in
-                            NavigationLink(🏷) {
-                                let 📃 = try? String(contentsOf: self.📁url.appendingPathComponent(🏷))
-                                self.📰sourceCodeView(📃 ?? "🐛Bug", 🏷)
-                            }
+        .navigationTitle("Source code")
+    }
+    private struct 📓CodeSection: View {
+        private var ⓓirectoryPath: String
+        private var 📁url: URL { Bundle.main.bundleURL.appendingPathComponent(self.ⓓirectoryPath) }
+        private var 🏷fileNames: [String]? {
+            try? FileManager.default.contentsOfDirectory(atPath: self.📁url.path)
+        }
+        var body: some View {
+            Section {
+                if let 🏷fileNames {
+                    ForEach(🏷fileNames, id: \.self) { 🏷 in
+                        NavigationLink(🏷) {
+                            let 📃 = try? String(contentsOf: self.📁url.appendingPathComponent(🏷))
+                            self.📰sourceCodeView(📃 ?? "🐛Bug", 🏷)
                         }
-                        if 🏷fileNames.isEmpty { Text("🐛Bug") }
                     }
-                } header: {
-                    Text(ⓓirectoryPath)
-                        .textCase(.none)
+                    if 🏷fileNames.isEmpty { Text("🐛Bug") }
+                }
+            } header: {
+                Text(ⓓirectoryPath)
+                    .textCase(.none)
+            }
+        }
+        init(_ ⓓirectoryPath: String) {
+            self.ⓓirectoryPath = ⓓirectoryPath
+        }
+        private func 📰sourceCodeView(_ ⓣext: String, _ ⓣitle: String) -> some View {
+            ScrollView {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    Text(ⓣext)
+                        .padding()
                 }
             }
-            init(_ ⓓirectoryPath: String) {
-                self.ⓓirectoryPath = ⓓirectoryPath
-            }
-            private func 📰sourceCodeView(_ ⓣext: String, _ ⓣitle: String) -> some View {
+            .navigationBarTitle(LocalizedStringKey(ⓣitle))
+            .navigationBarTitleDisplayMode(.inline)
+            .font(.caption.monospaced())
+            .textSelection(.enabled)
+        }
+    }
+    private func 📑bundleMainInfoDictionary() -> some View {
+        Section {
+            NavigationLink("Bundle.main.infoDictionary") {
                 ScrollView {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        Text(ⓣext)
-                            .padding()
-                    }
+                    Text(Bundle.main.infoDictionary!.description)
+                        .padding()
                 }
-                .navigationBarTitle(LocalizedStringKey(ⓣitle))
+                .navigationBarTitle("Bundle.main.infoDictionary")
                 .navigationBarTitleDisplayMode(.inline)
-                .font(.caption.monospaced())
                 .textSelection(.enabled)
             }
         }
-        private func 📑bundleMainInfoDictionary() -> some View {
+    }
+    private func 🔗repositoryLinks() -> some View {
+        Group {
             Section {
-                NavigationLink("Bundle.main.infoDictionary") {
-                    ScrollView {
-                        Text(Bundle.main.infoDictionary!.description)
-                            .padding()
+                Link(destination: 🔗webRepositoryURL) {
+                    HStack {
+                        Label("Web Repository", systemImage: "link")
+                        Spacer()
+                        Image(systemName: "arrow.up.forward.app")
+                            .imageScale(.small)
+                            .foregroundStyle(.secondary)
                     }
-                    .navigationBarTitle("Bundle.main.infoDictionary")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .textSelection(.enabled)
                 }
+            } footer: {
+                Text(🔗webRepositoryURL.description)
             }
-        }
-        private func 🔗repositoryLinks() -> some View {
-            Group {
-                Section {
-                    Link(destination: 🔗webRepositoryURL) {
-                        HStack {
-                            Label("Web Repository", systemImage: "link")
-                            Spacer()
-                            Image(systemName: "arrow.up.forward.app")
-                                .imageScale(.small)
-                                .foregroundStyle(.secondary)
-                        }
+            Section {
+                Link(destination: 🔗webRepositoryURL_Mirror) {
+                    HStack {
+                        Label("Web Repository", systemImage: "link")
+                        Text("(Mirror)")
+                            .font(.subheadline.bold())
+                            .foregroundStyle(.secondary)
+                        Spacer()
+                        Image(systemName: "arrow.up.forward.app")
+                            .imageScale(.small)
+                            .foregroundStyle(.secondary)
                     }
-                } footer: {
-                    Text(🔗webRepositoryURL.description)
                 }
-                Section {
-                    Link(destination: 🔗webRepositoryURL_Mirror) {
-                        HStack {
-                            Label("Web Repository", systemImage: "link")
-                            Text("(Mirror)")
-                                .font(.subheadline.bold())
-                                .foregroundStyle(.secondary)
-                            Spacer()
-                            Image(systemName: "arrow.up.forward.app")
-                                .imageScale(.small)
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-                } footer: {
-                    Text(🔗webRepositoryURL_Mirror.description)
-                }
+            } footer: {
+                Text(🔗webRepositoryURL_Mirror.description)
             }
         }
     }
