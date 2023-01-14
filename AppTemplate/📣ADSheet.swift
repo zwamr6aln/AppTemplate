@@ -20,34 +20,9 @@ struct 📣ADSheet: View {
         NavigationView {
             Group {
                 if self.verticalSizeClass == .regular {
-                    VStack(spacing: 16) {
-                        Spacer()
-                        self.ⓜockImage()
-                        Spacer()
-                        self.ⓘcon()
-                        self.ⓝame()
-                        Spacer()
-                        self.ⓓescription()
-                        Spacer()
-                        self.ⓐppStoreBadge()
-                        Spacer()
-                    }
-                    .padding()
+                    self.ⓥerticalLayout()
                 } else {
-                    HStack(spacing: 16) {
-                        self.ⓜockImage()
-                        VStack(spacing: 12) {
-                            Spacer()
-                            self.ⓘcon()
-                            self.ⓝame()
-                            self.ⓓescription()
-                            Spacer()
-                            self.ⓐppStoreBadge()
-                            Spacer()
-                        }
-                        .padding(.horizontal)
-                    }
-                    .padding()
+                    self.ⓗorizontalLayout()
                 }
             }
             .navigationTitle("AD")
@@ -61,6 +36,37 @@ struct 📣ADSheet: View {
             }
             .navigationBarTitleDisplayMode(.inline)
         }
+    }
+    private func ⓥerticalLayout() -> some View {
+        VStack(spacing: 16) {
+            Spacer()
+            self.ⓜockImage()
+            Spacer()
+            self.ⓘcon()
+            self.ⓝame()
+            Spacer()
+            self.ⓓescription()
+            Spacer()
+            self.ⓐppStoreBadge()
+            Spacer()
+        }
+        .padding()
+    }
+    private func ⓗorizontalLayout() -> some View {
+        HStack(spacing: 16) {
+            self.ⓜockImage()
+            VStack(spacing: 12) {
+                Spacer()
+                self.ⓘcon()
+                self.ⓝame()
+                self.ⓓescription()
+                Spacer()
+                self.ⓐppStoreBadge()
+                Spacer()
+            }
+            .padding(.horizontal)
+        }
+        .padding()
     }
     private func ⓜockImage() -> some View {
         Link(destination: self.ⓐpp.url) {
@@ -122,7 +128,7 @@ struct 📣ADSheet: View {
 }
 
 
-struct View_Previews: PreviewProvider {
+struct ADSheet_Previews: PreviewProvider {
     static let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
     static var previews: some View {
         📣ADSheet()
