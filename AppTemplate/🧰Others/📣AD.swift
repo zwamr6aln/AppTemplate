@@ -174,4 +174,17 @@ enum 📣AppName: String, CaseIterable {
             case .LockInNote: return "Notes widget on lock screen."
         }
     }
+    
+    var mockImageName: String {
+        let ⓟrefix = "mock/"
+        switch self {
+            case .FlipByBlink: return ⓟrefix + "fbb"
+            case .FadeInAlarm: return ⓟrefix + "fia"
+            case .Plain将棋盤: return ⓟrefix + "ps"
+            case .TapWeight: return ⓟrefix + "tw"
+            case .TapTemperature: return ⓟrefix + "tt"
+            case .MemorizeWidget: return ⓟrefix + "mw"
+            case .LockInNote: return ⓟrefix + "lin"
+        }
+    }
 }

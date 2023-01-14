@@ -3,6 +3,7 @@ import SwiftUI
 
 struct ADSheet: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass
+    var ⓐpp: 📣AppName = .MemorizeWidget
     var body: some View {
         NavigationView {
             Group {
@@ -55,29 +56,32 @@ struct ADSheet: View {
         }
     }
     func ⓜockImage() -> some View {
-        Image("mock/fia")
+        Image(self.ⓐpp.mockImageName)
             .resizable()
             .scaledToFit()
     }
     func ⓘcon() -> some View {
-        Image("icon")
+        Image(self.ⓐpp.rawValue)
             .resizable()
             .frame(width: 60, height: 60)
     }
     func ⓐppName() -> some View {
-        Text("App name")
+        Text(self.ⓐpp.rawValue)
             .font(.headline)
     }
     func ⓓescription() -> some View {
-        Text("This is placeholder. Please deploy app description. 2 ~ 3 lines.")
+        Text(self.ⓐpp.📄About)
             .font(.subheadline)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 8)
     }
     func ⓐppStoreBadge() -> some View {
-        HStack(spacing: 6) {
-            Image("appstore_badge")
-            Image(systemName: "hand.point.up.left")
+        Link(destination: self.ⓐpp.🔗URL) {
+            HStack(spacing: 6) {
+                Image("appstore_badge")
+                Image(systemName: "hand.point.up.left")
+            }
+            .foregroundColor(.primary)
         }
     }
 }
