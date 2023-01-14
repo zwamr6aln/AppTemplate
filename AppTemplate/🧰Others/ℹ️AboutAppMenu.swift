@@ -1,11 +1,11 @@
 
-let 📜VersionsInfo: [(ⓝumber: String, ⓓate: String)] = [("1.1", "2021-03-01"),
+let 📜versionsInfo: [(ⓝumber: String, ⓓate: String)] = [("1.1", "2021-03-01"),
                                                         ("1.0.1", "2021-02-01"),
                                                         ("1.0", "2021-01-01")] //降順。先頭の方が新しい。 //TODO: Edit
 
-let 🔗AppStoreProductURL = URL(string: "https://apps.apple.com/app/idAPPLEID")! //TODO: Edit
+let 🔗appStoreProductURL = URL(string: "https://apps.apple.com/app/idAPPLEID")! //TODO: Edit
 
-let 👤PrivacyPolicy = """
+let 👤privacyPolicy = """
 2022-❓-❓
 
 (English) This application don't collect user infomation.
@@ -13,8 +13,8 @@ let 👤PrivacyPolicy = """
 (Japanese) このアプリ自身において、ユーザーの情報を一切収集しません。
 """ //TODO: Edit
 
-let 🔗WebRepositoryURL = URL(string: "https://github.com/FlipByBlink/APPNAME")! //TODO: Edit
-let 🔗WebRepositoryURL_Mirror = URL(string: "https://gitlab.com/FlipByBlink/APPNAME_Mirror")! //TODO: Edit
+let 🔗webRepositoryURL = URL(string: "https://github.com/FlipByBlink/APPNAME")! //TODO: Edit
+let 🔗webRepositoryURL_Mirror = URL(string: "https://gitlab.com/FlipByBlink/APPNAME_Mirror")! //TODO: Edit
 
 enum 📁SourceFolder: String, CaseIterable, Identifiable {
     case main
@@ -71,7 +71,7 @@ struct 🔗AppStoreLink: View {
     @Environment(\.openURL) var 🔗: OpenURLAction
     var body: some View {
         Button {
-            🔗.callAsFunction(🔗AppStoreProductURL)
+            🔗.callAsFunction(🔗appStoreProductURL)
         } label: {
             HStack {
                 Label("Open AppStore page", systemImage: "link")
@@ -90,7 +90,7 @@ struct 🏬AppStoreSection: View {
         Section {
             🔗AppStoreLink()
             Button {
-                let url = URL(string: 🔗AppStoreProductURL.description + "?action=write-review")!
+                let url = URL(string: 🔗appStoreProductURL.description + "?action=write-review")!
                 print(url)
                 🔗.callAsFunction(url)
             } label: {
@@ -103,7 +103,7 @@ struct 🏬AppStoreSection: View {
                 }
             }
         } footer: {
-            Text(🔗AppStoreProductURL.description)
+            Text(🔗appStoreProductURL.description)
         }
     }
 }
@@ -112,7 +112,7 @@ struct 👤PrivacyPolicySection: View {
     var body: some View {
         Section {
             NavigationLink {
-                Text(👤PrivacyPolicy)
+                Text(👤privacyPolicy)
                     .padding(32)
                     .textSelection(.enabled)
                     .navigationTitle("Privacy Policy")
@@ -128,7 +128,7 @@ struct 📜VersionHistoryLink: View {
         Section {
             NavigationLink {
                 List {
-                    ForEach(📜VersionsInfo, id: \.self.ⓝumber) { 📜 in
+                    ForEach(📜versionsInfo, id: \.self.ⓝumber) { 📜 in
                         Section {
                             Text(LocalizedStringKey(📜.ⓝumber), tableName: "🌏VersionDescription")
                                 .font(.subheadline)
@@ -137,7 +137,7 @@ struct 📜VersionHistoryLink: View {
                         } header: {
                             Text(📜.ⓝumber)
                         } footer: {
-                            if 📜VersionsInfo.first?.ⓝumber == 📜.ⓝumber {
+                            if 📜versionsInfo.first?.ⓝumber == 📜.ⓝumber {
                                 Text("builded on \(📜.ⓓate)")
                             } else {
                                 Text("released on \(📜.ⓓate)")
@@ -149,7 +149,7 @@ struct 📜VersionHistoryLink: View {
                 .navigationBarTitle("Version History")
             } label: {
                 Label("Version", systemImage: "signpost.left")
-                    .badge(📜VersionsInfo.first?.ⓝumber ?? "🐛")
+                    .badge(📜versionsInfo.first?.ⓝumber ?? "🐛")
             }
             .accessibilityLabel("Version History")
         }
@@ -164,18 +164,18 @@ struct 📓SourceCodeLink: View {
             Label("Source code", systemImage: "doc.plaintext")
         }
     }
-    struct 📓SourceCodeMenu: View {
+    private struct 📓SourceCodeMenu: View {
         var body: some View {
             List {
                 ForEach(📁SourceFolder.allCases) { 📁 in
                     📓CodeSection(📁.rawValue)
                 }
-                📑BundleMainInfoDictionary()
+                📑bundleMainInfoDictionary()
                 🔗RepositoryLinks()
             }
             .navigationTitle("Source code")
         }
-        struct 📓CodeSection: View {
+        private struct 📓CodeSection: View {
             var ⓓirectoryPath: String
             var 📁URL: URL { Bundle.main.bundleURL.appendingPathComponent(ⓓirectoryPath) }
             var 🏷FileNames: [String]? { try? FileManager.default.contentsOfDirectory(atPath: 📁URL.path) }
@@ -185,7 +185,7 @@ struct 📓SourceCodeLink: View {
                         ForEach(🏷FileNames, id: \.self) { 🏷 in
                             NavigationLink(🏷) {
                                 let 📃 = try? String(contentsOf: 📁URL.appendingPathComponent(🏷))
-                                📰SourceCodeView(📃 ?? "🐛Bug", 🏷)
+                                📰sourceCodeView(📃 ?? "🐛Bug", 🏷)
                             }
                         }
                         if 🏷FileNames.isEmpty { Text("🐛Bug") }
@@ -198,7 +198,7 @@ struct 📓SourceCodeLink: View {
             init(_ ⓓirectoryPath: String) {
                 self.ⓓirectoryPath = ⓓirectoryPath
             }
-            func 📰SourceCodeView(_ ⓣext: String, _ ⓣitle: String) -> some View {
+            private func 📰sourceCodeView(_ ⓣext: String, _ ⓣitle: String) -> some View {
                 ScrollView {
                     ScrollView(.horizontal, showsIndicators: false) {
                         Text(ⓣext)
@@ -211,7 +211,7 @@ struct 📓SourceCodeLink: View {
                 .textSelection(.enabled)
             }
         }
-        func 📑BundleMainInfoDictionary() -> some View {
+        private func 📑bundleMainInfoDictionary() -> some View {
             Section {
                 NavigationLink("Bundle.main.infoDictionary") {
                     ScrollView {
@@ -224,10 +224,10 @@ struct 📓SourceCodeLink: View {
                 }
             }
         }
-        struct 🔗RepositoryLinks: View {
+        private struct 🔗RepositoryLinks: View {
             var body: some View {
                 Section {
-                    Link(destination: 🔗WebRepositoryURL) {
+                    Link(destination: 🔗webRepositoryURL) {
                         HStack {
                             Label("Web Repository", systemImage: "link")
                             Spacer()
@@ -237,10 +237,10 @@ struct 📓SourceCodeLink: View {
                         }
                     }
                 } footer: {
-                    Text(🔗WebRepositoryURL.description)
+                    Text(🔗webRepositoryURL.description)
                 }
                 Section {
-                    Link(destination: 🔗WebRepositoryURL_Mirror) {
+                    Link(destination: 🔗webRepositoryURL_Mirror) {
                         HStack {
                             Label("Web Repository", systemImage: "link")
                             Text("(Mirror)")
@@ -253,7 +253,7 @@ struct 📓SourceCodeLink: View {
                         }
                     }
                 } footer: {
-                    Text(🔗WebRepositoryURL_Mirror.description)
+                    Text(🔗webRepositoryURL_Mirror.description)
                 }
             }
         }
@@ -268,7 +268,7 @@ struct 🧑‍💻AboutDeveloperPublisherLink: View {
             Label("Developer / Publisher", systemImage: "person")
         }
     }
-    struct 🧑‍💻AboutDeveloperPublisherMenu: View {
+    private struct 🧑‍💻AboutDeveloperPublisherMenu: View {
         var body: some View {
             List {
                 Section {
@@ -317,7 +317,7 @@ struct 🧑‍💻AboutDeveloperPublisherLink: View {
             }
             .navigationTitle("Developer / Publisher")
         }
-        struct 📆TimelineSection: View {
+        private struct 📆TimelineSection: View {
             var 📃Text: [[String]] =
             [["2013-04","Finished from high school in Okayama Prefecture. Entranced into University-of-the-Ryukyus/faculty-of-engineering in Okinawa Prefecture."],
              ["2018-06","Final year as an undergraduate student. Developed an iOS application(FlipByBlink) as software for the purpose of research experiments."],

@@ -44,12 +44,12 @@ struct ContentView: View {
                 HStack {
                     Text("displayName")
                     Spacer()
-                    Text(🛒.🎫Name)
+                    Text(🛒.🎫name)
                         .foregroundStyle(.secondary)
                 }
                 
                 NavigationLink("🎫Product.debugDescription") {
-                    Text(🛒.🎫Product.debugDescription)
+                    Text(🛒.🎫product.debugDescription)
                         .padding()
                         .minimumScaleFactor(0.1)
                         .navigationTitle("🎫Product.debugDescription")

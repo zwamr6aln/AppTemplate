@@ -15,7 +15,7 @@ struct 📣ADContent: ViewModifier {
 struct 📣ADSheet: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass
     @EnvironmentObject var 🛒: 🛒StoreModel
-    var ⓐpp: 📣AppName = 📣AppName.allCases.randomElement()!
+    var ⓐpp: 📣AppName = .allCases.randomElement()!
     var body: some View {
         NavigationView {
             Group {

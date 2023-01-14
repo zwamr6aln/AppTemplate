@@ -13,14 +13,14 @@ import StoreKit
 struct 📣ADView: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     @State private var ⓐppName: 📣AppName
-    @Binding var 🚩ShowADMenuSheet: Bool
+    @Binding var 🚩showADMenuSheet: Bool
     var body: some View {
-        if 🛒.🚩ADIsActive {
+        if 🛒.🚩adIsActive {
             HStack {
-                🔗LinkButton()
+                🔗linkButton()
                 Spacer()
                 Button {
-                    🚩ShowADMenuSheet = true
+                    🚩showADMenuSheet = true
                     UISelectionFeedbackGenerator().selectionChanged()
                 } label: {
                     Image(systemName: "ellipsis.circle")
@@ -46,7 +46,7 @@ struct 📣ADView: View {
             EmptyView()
         }
     }
-    func 🔗LinkButton() -> some View {
+    private func 🔗linkButton() -> some View {
         Link(destination: ⓐppName.url) {
             HStack(spacing: 12) {
                 Image(ⓐppName.rawValue)
@@ -79,7 +79,7 @@ struct 📣ADView: View {
     init(without: 📣AppName, _ 🚩ShowADMenuSheet: Binding<Bool>) {
         let ⓐpps = 📣AppName.allCases.filter { $0 != without }
         ⓐppName = ⓐpps.randomElement()!
-        self._🚩ShowADMenuSheet = 🚩ShowADMenuSheet
+        self._🚩showADMenuSheet = 🚩ShowADMenuSheet
     }
 }
 
@@ -101,15 +101,15 @@ struct 📣ADMenu: View {
 }
 
 struct 📣ADMenuSheet: ViewModifier {
-    @Binding var 🚩ShowSheet: Bool
+    @Binding var 🚩showSheet: Bool
     func body(content: Content) -> some View {
         content
-            .sheet(isPresented: $🚩ShowSheet) {
+            .sheet(isPresented: $🚩showSheet) {
                 NavigationView {
                     📣ADMenu()
                         .toolbar {
                             Button {
-                                🚩ShowSheet = false
+                                🚩showSheet = false
                                 UISelectionFeedbackGenerator().selectionChanged()
                             } label: {
                                 Image(systemName: "chevron.down")
@@ -121,8 +121,8 @@ struct 📣ADMenuSheet: ViewModifier {
                 .navigationViewStyle(StackNavigationViewStyle())
             }
     }
-    init(_ 🚩ShowSheet: Binding<Bool>) {
-        self._🚩ShowSheet = 🚩ShowSheet
+    init(_ 🚩showSheet: Binding<Bool>) {
+        self._🚩showSheet = 🚩showSheet
     }
 }
 
