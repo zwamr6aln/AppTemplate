@@ -30,10 +30,11 @@ struct ContentView: View {
     }
     func 🄲ontents() -> some View {
         List {
+            Button("支払い済みでなければ広告シートを表示する") {
+                🛒.📣showADSheetIfUserNotPurchased()
+            }
+            
             Text("sharedText:" + ⓢharedText)
-                .onTapGesture {
-                    🛒.🚩showADSheet = true
-                }
             
             🔗OpenSystemSetting()
             

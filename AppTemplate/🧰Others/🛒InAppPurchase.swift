@@ -260,6 +260,12 @@ class 🛒StoreModel: ObservableObject {
         guard let 🎫 = self.🎫product else { return "…" }
         return 🎫.displayPrice
     }
+    
+    func 📣showADSheetIfUserNotPurchased() {
+        if self.🚩adIsActive {
+            self.🚩showADSheet = true
+        }
+    }
 }
 
 public enum 🚨StoreError: Error {
