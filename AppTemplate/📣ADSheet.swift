@@ -1,21 +1,4 @@
-import Foundation
 import SwiftUI
-
-struct 📣ADContent: ViewModifier {
-    @EnvironmentObject var 🛒: 🛒StoreModel
-    @State private var ⓐpp: 📣MyApp
-    func body(content: Content) -> some View {
-        content
-            .sheet(isPresented: $🛒.🚩showADSheet) {
-                📣ADSheet(self.ⓐpp)
-            }
-            .onAppear { 🛒.🚩showADSheet = true }
-    }
-    init(without: 📣MyApp) {
-        let ⓐpps = 📣MyApp.allCases.filter { $0 != without }
-        self.ⓐpp = ⓐpps.randomElement()!
-    }
-}
 
 struct 📣ADSheet: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass
@@ -137,10 +120,10 @@ struct 📣ADSheet: View {
 struct ADSheet_Previews: PreviewProvider {
     static let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
     static var previews: some View {
-        📣ADSheet(📣MyApp.allCases.randomElement()!)
+        📣ADSheet(.MemorizeWidget)
             .previewInterfaceOrientation(.portrait)
             .environmentObject(🛒)
-        📣ADSheet(📣MyApp.allCases.randomElement()!)
+        📣ADSheet(.LockInNote)
             .previewInterfaceOrientation(.landscapeLeft)
             .environmentObject(🛒)
     }

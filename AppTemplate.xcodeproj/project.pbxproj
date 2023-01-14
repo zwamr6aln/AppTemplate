@@ -41,6 +41,7 @@
 		F53B0A4A296FC63B0022C29D /* 📣ADSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53B0A49296FC63B0022C29D /* 📣ADSheet.swift */; };
 		F556941E28CC2F72004558FC /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		F556942028CC2F7D004558FC /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
+		F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		F52D4ECC28F005C4007A45CD /* 📣ADBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADBanner.swift"; sourceTree = "<group>"; };
 		F53B0A49296FC63B0022C29D /* 📣ADSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADSheet.swift"; sourceTree = "<group>"; };
 		F549E849290BC3C300636271 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = memo.md; sourceTree = "<group>"; };
+		F57B37F129726CE300F0BB91 /* 📣ADContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADContent.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 				12E4A749285027F600B2380B /* ContentView.swift */,
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
 				F53B0A49296FC63B0022C29D /* 📣ADSheet.swift */,
+				F57B37F129726CE300F0BB91 /* 📣ADContent.swift */,
 				1299C39B288D650C0086522B /* 🛠MenuButton.swift */,
 				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
 				F51722352920FE3600C6DDE6 /* AppTemplate.entitlements */,
@@ -374,6 +377,7 @@
 			files = (
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
 				12A605A5289219B30001DE23 /* 🔠BiggerSystemFontTest.swift in Sources */,
+				F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
 				F52D4ECD28F005C4007A45CD /* 📣ADBanner.swift in Sources */,

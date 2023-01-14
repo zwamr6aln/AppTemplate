@@ -10,7 +10,7 @@ struct AppTemplateApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .modifier(📣ADContent(without: .FlipByBlink))
+                .modifier(📣ADContent())
                 .environmentObject(📱)
                 .environmentObject(🛒)
                 .defaultAppStorage(💾)

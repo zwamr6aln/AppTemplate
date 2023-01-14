@@ -33,6 +33,9 @@ struct ContentView: View {
     func 🄲ontents() -> some View {
         List {
             Text("sharedText:" + ⓢharedText)
+                .onTapGesture {
+                    🛒.🚩showADSheet = true
+                }
             
 //            📣ADBanner($🚩ShowADMenuSheet)
             
