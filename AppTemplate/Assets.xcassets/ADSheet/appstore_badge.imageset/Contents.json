@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "appstore_badge.svg",
+      "filename" : "appstore_badge 1.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,6 +12,22 @@
     {
       "idiom" : "universal",
       "scale" : "3x"
+    },
+    {
+      "filename" : "appstore_badge.svg",
+      "idiom" : "universal",
+      "locale" : "ja",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ja",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ja",
+      "scale" : "3x"
     }
   ],
   "info" : {
@@ -19,6 +35,7 @@
     "version" : 1
   },
   "properties" : {
+    "localizable" : true,
     "preserves-vector-representation" : true
   }
 }
