@@ -1,7 +1,18 @@
 import Foundation
 import SwiftUI
 
-struct ADSheet: View {
+struct 📣ADContent: ViewModifier {
+    @EnvironmentObject var 🛒: 🛒StoreModel
+    func body(content: Content) -> some View {
+        content
+            .sheet(isPresented: $🛒.🚩showADSheet) {
+                📣ADSheet()
+            }
+            .onAppear { 🛒.🚩showADSheet = true }
+    }
+}
+
+struct 📣ADSheet: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass
     @EnvironmentObject var 🛒: 🛒StoreModel
     var ⓐpp: 📣AppName = 📣AppName.allCases.randomElement()!
@@ -101,7 +112,7 @@ struct ADSheet: View {
     }
     private func ⓓismissButton() -> some View {
         Button {
-            🛒.🚨showADSheet = false
+            🛒.🚩showADSheet = false
         } label: {
             Image(systemName: "chevron.down")
         }
@@ -114,10 +125,10 @@ struct ADSheet: View {
 struct View_Previews: PreviewProvider {
     static let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
     static var previews: some View {
-        ADSheet()
+        📣ADSheet()
             .previewInterfaceOrientation(.portrait)
             .environmentObject(🛒)
-        ADSheet()
+        📣ADSheet()
             .previewInterfaceOrientation(.landscapeLeft)
             .environmentObject(🛒)
     }

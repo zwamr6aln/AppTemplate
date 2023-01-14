@@ -139,7 +139,7 @@ class 🛒StoreModel: ObservableObject {
     
     var 🆔ProductID: String
     
-    @Published var 🚨showADSheet: Bool = false //TODO: WIP
+    @Published var 🚩showADSheet: Bool = false //TODO: WIP
     
     var 🚩ADIsActive: Bool {
         !🚩Purchased && ( ⓛaunchCount > 5 )
