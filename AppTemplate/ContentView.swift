@@ -10,11 +10,11 @@ struct ContentView: View {
     var body: some View {
         if #available(iOS 16.0, *) {
             Group {
-                if horizontalSizeClass == .compact {
-                    NavigationStack { 🄲ontents() }
+                if self.horizontalSizeClass == .compact {
+                    NavigationStack { self.ⓒontent() }
                 } else {
                     NavigationSplitView(columnVisibility: .constant(.all)) {
-                        🄲ontents()
+                        self.ⓒontent()
                     } detail: {
                         Image(systemName: "questionmark")
                             .font(.largeTitle)
@@ -24,11 +24,11 @@ struct ContentView: View {
             }
             .modifier(🅁equestUserReview())
         } else {
-            NavigationView { 🄲ontents() }
+            NavigationView { self.ⓒontent() }
                 .navigationViewStyle(.stack)
         }
     }
-    func 🄲ontents() -> some View {
+    private func ⓒontent() -> some View {
         List {
             Button("支払い済みでなければ広告シートを表示する") {
                 🛒.📣showADSheetIfUserNotPurchased()
@@ -80,7 +80,7 @@ struct 🅁equestUserReview: ViewModifier {
             .toolbar {
                 ToolbarItem(placement: .bottomBar) {
                     Button {
-                        requestReview.callAsFunction()
+                        self.requestReview.callAsFunction()
                     } label: {
                         Image(systemName: "star.bubble")
                     }

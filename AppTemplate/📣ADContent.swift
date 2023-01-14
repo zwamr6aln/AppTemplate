@@ -6,7 +6,7 @@ struct 📣ADContent: ViewModifier {
     func body(content: Content) -> some View {
         content
             .sheet(isPresented: $🛒.🚩showADSheet) {
-                📣ADSheet(ⓐpp)
+                📣ADSheet(self.ⓐpp)
             }
             .onAppear {
                 if 🛒.🚩adIsActive {
