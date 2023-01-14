@@ -3,6 +3,7 @@ import SwiftUI
 
 struct ADSheet: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass
+    @EnvironmentObject var 🛒: 🛒StoreModel
     var ⓐpp: 📣AppName = .MemorizeWidget
     var body: some View {
         NavigationView {
@@ -41,41 +42,36 @@ struct ADSheet: View {
             .navigationTitle("AD")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    NavigationLink {
-                        📣ADMenu()
-                    } label: {
-                        Image(systemName: "questionmark.circle")
-                            .foregroundColor(.primary)
-                    }
+                    self.ⓓismissButton()
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Image(systemName: "chevron.down")
+                    self.ⓐdMenuLink()
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
         }
     }
-    func ⓜockImage() -> some View {
+    private func ⓜockImage() -> some View {
         Image(self.ⓐpp.mockImageName)
             .resizable()
             .scaledToFit()
     }
-    func ⓘcon() -> some View {
+    private func ⓘcon() -> some View {
         Image(self.ⓐpp.iconImageName)
             .resizable()
             .frame(width: 60, height: 60)
     }
-    func ⓐppName() -> some View {
+    private func ⓐppName() -> some View {
         Text(self.ⓐpp.name)
             .font(.headline)
     }
-    func ⓓescription() -> some View {
+    private func ⓓescription() -> some View {
         Text(self.ⓐpp.description)
             .font(.subheadline)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 8)
     }
-    func ⓐppStoreBadge() -> some View {
+    private func ⓐppStoreBadge() -> some View {
         Link(destination: self.ⓐpp.url) {
             HStack(spacing: 6) {
                 Image("appstore_badge")
@@ -84,14 +80,33 @@ struct ADSheet: View {
             .foregroundColor(.primary)
         }
     }
+    private func ⓐdMenuLink() -> some View {
+        NavigationLink {
+            📣ADMenu()
+        } label: {
+            Image(systemName: "questionmark.circle")
+                .foregroundColor(.primary)
+        }
+    }
+    private func ⓓismissButton() -> some View {
+        Button {
+            🛒.🚨showADSheet = false
+        } label: {
+            Image(systemName: "chevron.down")
+        }
+        .foregroundStyle(.primary)
+    }
 }
 
 
 struct View_Previews: PreviewProvider {
+    static let 🛒 = 🛒StoreModel(id: "PLACEHOLDER.adfree")
     static var previews: some View {
         ADSheet()
             .previewInterfaceOrientation(.portrait)
+            .environmentObject(🛒)
         ADSheet()
             .previewInterfaceOrientation(.landscapeLeft)
+            .environmentObject(🛒)
     }
 }
