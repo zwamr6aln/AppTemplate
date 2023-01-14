@@ -68,10 +68,10 @@ struct 📰AppStoreDescriptionSection: View {
 }
 
 struct 🔗AppStoreLink: View {
-    @Environment(\.openURL) var 🔗: OpenURLAction
+    @Environment(\.openURL) var openURL: OpenURLAction
     var body: some View {
         Button {
-            🔗.callAsFunction(🔗appStoreProductURL)
+            self.openURL.callAsFunction(🔗appStoreProductURL)
         } label: {
             HStack {
                 Label("Open AppStore page", systemImage: "link")
@@ -85,14 +85,13 @@ struct 🔗AppStoreLink: View {
 }
 
 struct 🏬AppStoreSection: View {
-    @Environment(\.openURL) var 🔗: OpenURLAction
+    @Environment(\.openURL) var openURL: OpenURLAction
     var body: some View {
         Section {
             🔗AppStoreLink()
             Button {
-                let url = URL(string: 🔗appStoreProductURL.description + "?action=write-review")!
-                print(url)
-                🔗.callAsFunction(url)
+                let 🔗 = URL(string: 🔗appStoreProductURL.description + "?action=write-review")!
+                self.openURL.callAsFunction(🔗)
             } label: {
                 HStack {
                     Label("Review on AppStore", systemImage: "star.bubble")
@@ -121,6 +120,12 @@ struct 👤PrivacyPolicySection: View {
             }
         }
     }
+}
+
+struct 📜VersionInfo: Identifiable {//TODO: WIP
+    var number: Double
+    var date: Date
+    var id: Double { self.number }
 }
 
 struct 📜VersionHistoryLink: View {
@@ -159,7 +164,7 @@ struct 📜VersionHistoryLink: View {
 struct 📓SourceCodeLink: View {
     var body: some View {
         NavigationLink {
-            📓SourceCodeMenu()
+            Self.📓SourceCodeMenu()
         } label: {
             Label("Source code", systemImage: "doc.plaintext")
         }
@@ -167,28 +172,30 @@ struct 📓SourceCodeLink: View {
     private struct 📓SourceCodeMenu: View {
         var body: some View {
             List {
-                ForEach(📁SourceFolder.allCases) { 📁 in
-                    📓CodeSection(📁.rawValue)
+                ForEach(📁SourceFolder.allCases) { ⓟath in
+                    Self.📓CodeSection(ⓟath.rawValue)
                 }
-                📑bundleMainInfoDictionary()
-                🔗RepositoryLinks()
+                self.📑bundleMainInfoDictionary()
+                self.🔗repositoryLinks()
             }
             .navigationTitle("Source code")
         }
         private struct 📓CodeSection: View {
-            var ⓓirectoryPath: String
-            var 📁URL: URL { Bundle.main.bundleURL.appendingPathComponent(ⓓirectoryPath) }
-            var 🏷FileNames: [String]? { try? FileManager.default.contentsOfDirectory(atPath: 📁URL.path) }
+            private var ⓓirectoryPath: String
+            private var 📁url: URL { Bundle.main.bundleURL.appendingPathComponent(self.ⓓirectoryPath) }
+            private var 🏷fileNames: [String]? {
+                try? FileManager.default.contentsOfDirectory(atPath: self.📁url.path)
+            }
             var body: some View {
                 Section {
-                    if let 🏷FileNames {
-                        ForEach(🏷FileNames, id: \.self) { 🏷 in
+                    if let 🏷fileNames {
+                        ForEach(🏷fileNames, id: \.self) { 🏷 in
                             NavigationLink(🏷) {
-                                let 📃 = try? String(contentsOf: 📁URL.appendingPathComponent(🏷))
-                                📰sourceCodeView(📃 ?? "🐛Bug", 🏷)
+                                let 📃 = try? String(contentsOf: self.📁url.appendingPathComponent(🏷))
+                                self.📰sourceCodeView(📃 ?? "🐛Bug", 🏷)
                             }
                         }
-                        if 🏷FileNames.isEmpty { Text("🐛Bug") }
+                        if 🏷fileNames.isEmpty { Text("🐛Bug") }
                     }
                 } header: {
                     Text(ⓓirectoryPath)
@@ -224,8 +231,8 @@ struct 📓SourceCodeLink: View {
                 }
             }
         }
-        private struct 🔗RepositoryLinks: View {
-            var body: some View {
+        private func 🔗repositoryLinks() -> some View {
+            Group {
                 Section {
                     Link(destination: 🔗webRepositoryURL) {
                         HStack {
@@ -263,89 +270,87 @@ struct 📓SourceCodeLink: View {
 struct 🧑‍💻AboutDeveloperPublisherLink: View {
     var body: some View {
         NavigationLink {
-            🧑‍💻AboutDeveloperPublisherMenu()
+            self.ⓐboutDeveloperPublisherMenu()
         } label: {
             Label("Developer / Publisher", systemImage: "person")
         }
     }
-    private struct 🧑‍💻AboutDeveloperPublisherMenu: View {
-        var body: some View {
-            List {
-                Section {
-                    Text("Individual")
-                } header: {
-                    Text("The System")
-                }
-                Section {
-                    Text("山下 亮")
-                    Text("やました りょう (ひらがな)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                    Text("Yamashita Ryo (alphabet)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                } header: {
-                    Text("Name")
-                } footer: {
-                    Text("only one person")
-                }
-                Section {
-                    Text("age")
-                        .badge("about 28")
-                    Text("country")
-                        .badge("Japan")
-                    Text("native language")
-                        .badge("Japanese")
-                } header: {
-                    Text("identity / circumstance / background")
-                } footer: {
-                    Text("As of 2021")
-                }
-                📆TimelineSection()
-                Section {
-                    Image("Developer_Publisher")
-                        .resizable()
-                        .frame(width: 90, height: 90)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .padding()
-                        .opacity(0.6)
-                } header: {
-                    Text("Image")
-                } footer: {
-                    Text("Taken on 2021-11")
-                }
+    private func ⓐboutDeveloperPublisherMenu() -> some View {
+        List {
+            Section {
+                Text("Individual")
+            } header: {
+                Text("The System")
             }
-            .navigationTitle("Developer / Publisher")
+            Section {
+                Text("山下 亮")
+                Text("やました りょう (ひらがな)")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                Text("Yamashita Ryo (alphabet)")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            } header: {
+                Text("Name")
+            } footer: {
+                Text("only one person")
+            }
+            Section {
+                Text("age")
+                    .badge("about 28")
+                Text("country")
+                    .badge("Japan")
+                Text("native language")
+                    .badge("Japanese")
+            } header: {
+                Text("identity / circumstance / background")
+            } footer: {
+                Text("As of 2021")
+            }
+            Self.📆TimelineSection()
+            Section {
+                Image("Developer_Publisher")
+                    .resizable()
+                    .frame(width: 90, height: 90)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .padding()
+                    .opacity(0.6)
+            } header: {
+                Text("Image")
+            } footer: {
+                Text("Taken on 2021-11")
+            }
         }
-        private struct 📆TimelineSection: View {
-            var 📃Text: [[String]] =
-            [["2013-04","Finished from high school in Okayama Prefecture. Entranced into University-of-the-Ryukyus/faculty-of-engineering in Okinawa Prefecture."],
-             ["2018-06","Final year as an undergraduate student. Developed an iOS application(FlipByBlink) as software for the purpose of research experiments."],
-             ["2019-01","Released ebook reader app \"FlipByBlink\" ver 1.0 on AppStore. Special feature is to turn a page by slightly-longish-voluntary-blink."],
-             ["2019-03","Graduated from University-of-the-Ryukyus."],
-             ["2019-05","Released alarm clock app with taking a long time \"FadeInAlarm\" ver 1.0. First paid app."],
-             ["2019-07","Migrated to Okayama Prefecture."],
-             ["2021-12","Released FlipByBlink ver 3.0 for the first time in three years since ver 2.0."],
-             ["2022-02","Released FadeInAlarm ver 2.0 for the first time in three years since ver 1.0."],
-             ["2022-04","Released simple shogi board app \"PlainShogiBoard\" ver 1.0."],
-             ["2022-05","Released body weight registration app \"TapWeight\" ver 1.0."],
-             ["2022-06","Released body temperature registration app \"TapTemperature\" ver 1.0."],
-             ["2022-06","Adopted In-App Purchase model for the first time on TapWeight ver 1.1.1"],
-             ["2022-09","Released LockInNote and MemorizeWidget on iOS16 release occasion."]]
-            var body: some View {
-                Section {
-                    ForEach(📃Text, id: \.self) { 📃 in
-                        HStack {
-                            Text(📃.first ?? "🐛")
-                                .font(.caption2)
-                                .padding(8)
-                            Text(LocalizedStringKey(📃.last ?? "🐛"))
-                                .font(.caption)
-                        }
+        .navigationTitle("Developer / Publisher")
+    }
+    private struct 📆TimelineSection: View {
+        private var 📃text: [[String]] =
+        [["2013-04","Finished from high school in Okayama Prefecture. Entranced into University-of-the-Ryukyus/faculty-of-engineering in Okinawa Prefecture."],
+         ["2018-06","Final year as an undergraduate student. Developed an iOS application(FlipByBlink) as software for the purpose of research experiments."],
+         ["2019-01","Released ebook reader app \"FlipByBlink\" ver 1.0 on AppStore. Special feature is to turn a page by slightly-longish-voluntary-blink."],
+         ["2019-03","Graduated from University-of-the-Ryukyus."],
+         ["2019-05","Released alarm clock app with taking a long time \"FadeInAlarm\" ver 1.0. First paid app."],
+         ["2019-07","Migrated to Okayama Prefecture."],
+         ["2021-12","Released FlipByBlink ver 3.0 for the first time in three years since ver 2.0."],
+         ["2022-02","Released FadeInAlarm ver 2.0 for the first time in three years since ver 1.0."],
+         ["2022-04","Released simple shogi board app \"PlainShogiBoard\" ver 1.0."],
+         ["2022-05","Released body weight registration app \"TapWeight\" ver 1.0."],
+         ["2022-06","Released body temperature registration app \"TapTemperature\" ver 1.0."],
+         ["2022-06","Adopted In-App Purchase model for the first time on TapWeight ver 1.1.1"],
+         ["2022-09","Released LockInNote and MemorizeWidget on iOS16 release occasion."]]
+        var body: some View {
+            Section {
+                ForEach(📃text, id: \.self) { 📃 in
+                    HStack {
+                        Text(📃.first ?? "🐛")
+                            .font(.caption2)
+                            .padding(8)
+                        Text(LocalizedStringKey(📃.last ?? "🐛"))
+                            .font(.caption)
                     }
-                } header: {
-                    Text("Timeline")
                 }
+            } header: {
+                Text("Timeline")
             }
         }
     }

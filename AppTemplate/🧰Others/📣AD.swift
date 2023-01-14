@@ -17,10 +17,10 @@ struct 📣ADView: View {
     var body: some View {
         if 🛒.🚩adIsActive {
             HStack {
-                🔗linkButton()
+                self.🔗linkButton()
                 Spacer()
                 Button {
-                    🚩showADMenuSheet = true
+                    self.🚩showADMenuSheet = true
                     UISelectionFeedbackGenerator().selectionChanged()
                 } label: {
                     Image(systemName: "ellipsis.circle")
@@ -47,9 +47,9 @@ struct 📣ADView: View {
         }
     }
     private func 🔗linkButton() -> some View {
-        Link(destination: ⓐppName.url) {
+        Link(destination: self.ⓐppName.url) {
             HStack(spacing: 12) {
-                Image(ⓐppName.rawValue)
+                Image(self.ⓐppName.rawValue)
                     .resizable()
                     .frame(width: 60, height: 60)
                     .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -57,7 +57,7 @@ struct 📣ADView: View {
                     .padding(.vertical, 40)
                 VStack(alignment: .leading, spacing: 2) {
                     HStack {
-                        Text(ⓐppName.rawValue)
+                        Text(self.ⓐppName.rawValue)
                             .font(.headline)
                             .lineLimit(1)
                         Image(systemName: "arrow.up.forward.app")
@@ -66,7 +66,7 @@ struct 📣ADView: View {
                     }
                     .minimumScaleFactor(0.1)
                     .padding(.trailing, 32)
-                    Text(ⓐppName.description)
+                    Text(self.ⓐppName.description)
                         .font(.subheadline)
                         .multilineTextAlignment(.leading)
                         .minimumScaleFactor(0.1)
@@ -78,7 +78,7 @@ struct 📣ADView: View {
     }
     init(without: 📣AppName, _ 🚩ShowADMenuSheet: Binding<Bool>) {
         let ⓐpps = 📣AppName.allCases.filter { $0 != without }
-        ⓐppName = ⓐpps.randomElement()!
+        self.ⓐppName = ⓐpps.randomElement()!
         self._🚩showADMenuSheet = 🚩ShowADMenuSheet
     }
 }
@@ -104,12 +104,12 @@ struct 📣ADMenuSheet: ViewModifier {
     @Binding var 🚩showSheet: Bool
     func body(content: Content) -> some View {
         content
-            .sheet(isPresented: $🚩showSheet) {
+            .sheet(isPresented: self.$🚩showSheet) {
                 NavigationView {
                     📣ADMenu()
                         .toolbar {
                             Button {
-                                🚩showSheet = false
+                                self.🚩showSheet = false
                                 UISelectionFeedbackGenerator().selectionChanged()
                             } label: {
                                 Image(systemName: "chevron.down")
