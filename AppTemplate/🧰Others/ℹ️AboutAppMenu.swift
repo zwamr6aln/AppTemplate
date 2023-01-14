@@ -1,6 +1,6 @@
-let 📜versionsInfo: [(ⓝumber: String, ⓓate: String)] = [("1.1", "2021-03-01"),
-                                                        ("1.0.1", "2021-02-01"),
-                                                        ("1.0", "2021-01-01")] //降順。先頭の方が新しい。 //TODO: Edit
+let 📜versionInfos = 📜VersionInfo.history(("1.1", "2021-03-01"),
+                                           ("1.0.1", "2021-02-01"),
+                                           ("1.0", "2021-01-01")) //降順。先頭の方が新しい。 //TODO: Edit
 
 let 🔗appStoreProductURL = URL(string: "https://apps.apple.com/app/idAPPLEID")! //TODO: Edit
 
@@ -121,10 +121,13 @@ struct 👤PrivacyPolicySection: View {
     }
 }
 
-struct 📜VersionInfo: Identifiable {//TODO: WIP
-    var number: Double
-    var date: Date
-    var id: Double { self.number }
+struct 📜VersionInfo: Identifiable {
+    var number: String
+    var date: String
+    var id: String { self.number }
+    static func history(_ ⓘnfos: (ⓝumber: String, ⓓate: String) ...) -> [Self] {
+        ⓘnfos.map { Self(number: $0.ⓝumber, date: $0.ⓓate) }
+    }
 }
 
 struct 📜VersionHistoryLink: View {
@@ -132,19 +135,19 @@ struct 📜VersionHistoryLink: View {
         Section {
             NavigationLink {
                 List {
-                    ForEach(📜versionsInfo, id: \.self.ⓝumber) { 📜 in
+                    ForEach(📜versionInfos) { ⓥersion in
                         Section {
-                            Text(LocalizedStringKey(📜.ⓝumber), tableName: "🌏VersionDescription")
+                            Text(LocalizedStringKey(ⓥersion.number), tableName: "🌏VersionDescription")
                                 .font(.subheadline)
                                 .padding()
                                 .textSelection(.enabled)
                         } header: {
-                            Text(📜.ⓝumber)
+                            Text(ⓥersion.number)
                         } footer: {
-                            if 📜versionsInfo.first?.ⓝumber == 📜.ⓝumber {
-                                Text("builded on \(📜.ⓓate)")
+                            if 📜versionInfos.first?.number == ⓥersion.number {
+                                Text("builded on \(ⓥersion.date)")
                             } else {
-                                Text("released on \(📜.ⓓate)")
+                                Text("released on \(ⓥersion.date)")
                             }
                         }
                         .headerProminence(.increased)
@@ -153,7 +156,7 @@ struct 📜VersionHistoryLink: View {
                 .navigationBarTitle("Version History")
             } label: {
                 Label("Version", systemImage: "signpost.left")
-                    .badge(📜versionsInfo.first?.ⓝumber ?? "🐛")
+                    .badge(📜versionInfos.first?.number ?? "🐛")
             }
             .accessibilityLabel("Version History")
         }
