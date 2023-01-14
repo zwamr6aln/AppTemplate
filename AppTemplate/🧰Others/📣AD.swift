@@ -100,6 +100,7 @@ struct 📣ADSheet: View {
     private func ⓐdMenuLink() -> some View {
         NavigationLink {
             📣ADMenu()
+                .navigationBarTitleDisplayMode(.large)
         } label: {
             Image(systemName: "questionmark.circle")
                 .foregroundColor(.primary)
@@ -152,7 +153,7 @@ struct 📣ADMenu: View {
             }
             🛒IAPSection()
         }
-        .navigationTitle("AD / Purchase")
+        .navigationTitle("About AD")
     }
 }
 

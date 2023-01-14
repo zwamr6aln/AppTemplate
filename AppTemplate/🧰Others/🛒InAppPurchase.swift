@@ -60,6 +60,7 @@ struct 🛒IAPSection: View {
         } header: {
             Text("In-App Purchase")
         }
+        .headerProminence(.increased)
         Self.🛒RestoreButton()
     }
     private func 🛒adPreview() -> some View {
@@ -69,13 +70,13 @@ struct 🛒IAPSection: View {
                 .resizable()
                 .scaledToFit()
                 .frame(maxHeight: 300)
-                .padding(.leading, 30)
+                .padding(.leading, 45)
             Image(systemName: "trash.square.fill")
                 .resizable()
                 .symbolRenderingMode(.multicolor)
                 .frame(width: 60, height: 60)
-                .rotationEffect(.degrees(10))
-                .offset(x: -30)
+                .rotationEffect(.degrees(8))
+                .offset(x: -45)
                 .shadow(radius: 5)
                 .padding(.bottom, 60)
             Spacer()
