@@ -110,6 +110,7 @@ struct 📣ADSheet: View {
     private func ⓓismissButton() -> some View {
         Button {
             🛒.🚩showADSheet = false
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
         } label: {
             Image(systemName: "chevron.down")
         }
