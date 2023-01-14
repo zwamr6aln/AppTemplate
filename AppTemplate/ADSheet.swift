@@ -9,12 +9,12 @@ struct ADSheet: View {
         NavigationView {
             Group {
                 if self.verticalSizeClass == .regular {
-                    VStack(spacing: 12) {
+                    VStack(spacing: 16) {
                         Spacer()
                         self.ⓜockImage()
                         Spacer()
                         self.ⓘcon()
-                        self.ⓐppName()
+                        self.ⓝame()
                         Spacer()
                         self.ⓓescription()
                         Spacer()
@@ -28,7 +28,7 @@ struct ADSheet: View {
                         VStack(spacing: 12) {
                             Spacer()
                             self.ⓘcon()
-                            self.ⓐppName()
+                            self.ⓝame()
                             self.ⓓescription()
                             Spacer()
                             self.ⓐppStoreBadge()
@@ -52,18 +52,28 @@ struct ADSheet: View {
         }
     }
     private func ⓜockImage() -> some View {
-        Image(self.ⓐpp.mockImageName)
-            .resizable()
-            .scaledToFit()
+        Link(destination: self.ⓐpp.url) {
+            Image(self.ⓐpp.mockImageName)
+                .resizable()
+                .scaledToFit()
+        }
+        .accessibilityHidden(true)
     }
     private func ⓘcon() -> some View {
-        Image(self.ⓐpp.iconImageName)
-            .resizable()
-            .frame(width: 60, height: 60)
+        Link(destination: self.ⓐpp.url) {
+            Image(self.ⓐpp.iconImageName)
+                .resizable()
+                .frame(width: 60, height: 60)
+        }
+        .accessibilityHidden(true)
     }
-    private func ⓐppName() -> some View {
-        Text(self.ⓐpp.name)
-            .font(.headline)
+    private func ⓝame() -> some View {
+        Link(destination: self.ⓐpp.url) {
+            Text(self.ⓐpp.name)
+                .font(.headline)
+        }
+        .buttonStyle(.plain)
+        .accessibilityHidden(true)
     }
     private func ⓓescription() -> some View {
         Text(self.ⓐpp.description)
@@ -87,6 +97,7 @@ struct ADSheet: View {
             Image(systemName: "questionmark.circle")
                 .foregroundColor(.primary)
         }
+        .accessibilityLabel("about AD")
     }
     private func ⓓismissButton() -> some View {
         Button {
@@ -95,6 +106,7 @@ struct ADSheet: View {
             Image(systemName: "chevron.down")
         }
         .foregroundStyle(.primary)
+        .accessibilityLabel("dismiss")
     }
 }
 
