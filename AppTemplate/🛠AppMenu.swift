@@ -32,10 +32,8 @@ struct ℹ️AboutAppLink: View {
         Section {
             GeometryReader { 📐 in
                 VStack(spacing: 12) {
-                    Image("FlipByBlink")
+                    Image("RoundedIcon")
                         .resizable()
-                        .mask { RoundedRectangle(cornerRadius: 22.5, style: .continuous) }
-                        .shadow(radius: 3, y: 1)
                         .frame(width: 100, height: 100)
                     VStack(spacing: 6) {
                         Text("AppTemplate")
@@ -45,7 +43,7 @@ struct ℹ️AboutAppLink: View {
                             .opacity(0.75)
                             .lineLimit(1)
                             .minimumScaleFactor(0.1)
-                        Text("Application for iPhone / iPad")
+                        Text("App for iPhone / iPad")
                             .font(.footnote)
                             .fontWeight(.medium)
                             .foregroundStyle(.secondary)
@@ -58,9 +56,7 @@ struct ℹ️AboutAppLink: View {
                 .frame(width: 📐.size.width)
             }
             .frame(height: 200)
-            
             🔗AppStoreLink()
-            
             NavigationLink  {
                 ℹ️AboutAppMenu()
             } label: {
