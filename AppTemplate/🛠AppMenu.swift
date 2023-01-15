@@ -1,17 +1,15 @@
-
 import SwiftUI
 
 struct 🛠AppMenu: View {
     @EnvironmentObject var 📱: 📱AppModel
-    @Environment(\.dismiss) var ⓓismissAction: DismissAction
     var body: some View {
         if #available(iOS 16.0, *) {
-            NavigationStack { 🄲ontents() }
+            NavigationStack { ⓒontent() }
         } else {
-            NavigationView { 🄲ontents() }
+            NavigationView { ⓒontent() }
         }
     }
-    func 🄲ontents() -> some View {
+    private func ⓒontent() -> some View {
         List {
             Section {
                 Toggle(isOn: .constant(false)) {
@@ -25,7 +23,7 @@ struct 🛠AppMenu: View {
             📣ADMenuLink()
         }
         .navigationTitle("Menu")
-        .toolbar { ﹀DismissButton(ⓓismissAction) }
+        .toolbar { ﹀DismissButton($📱.🚩showMenu) }
     }
 }
 

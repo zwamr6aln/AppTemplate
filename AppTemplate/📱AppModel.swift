@@ -2,7 +2,7 @@
 import SwiftUI
 
 class 📱AppModel: ObservableObject {
-    
+    @Published var 🚩showMenu: Bool = false
 }
 
 class 🄰pplicationDelegate: NSObject, UIApplicationDelegate, ObservableObject {

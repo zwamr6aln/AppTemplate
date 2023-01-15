@@ -71,7 +71,6 @@ struct ContentView: View {
     }
 }
 
-
 @available(iOS 16, *)
 struct 🅁equestUserReview: ViewModifier {
     @Environment(\.requestReview) var requestReview
@@ -89,17 +88,11 @@ struct 🅁equestUserReview: ViewModifier {
     }
 }
 
-
 struct ﹀DismissButton: View {
-    var ﹀Dismiss: DismissAction? = nil
-    @Binding var 🚩ShowSheet: Bool
+    @Binding var 🚩showSheet: Bool
     var body: some View {
         Button {
-            if let ﹀Dismiss {
-                ﹀Dismiss.callAsFunction()
-            } else {
-                🚩ShowSheet = false
-            }
+            🚩showSheet = false
             UISelectionFeedbackGenerator().selectionChanged()
         } label: {
             Image(systemName: "chevron.down")
@@ -107,12 +100,8 @@ struct ﹀DismissButton: View {
         .tint(.secondary)
         .accessibilityLabel("Dismiss")
     }
-    init(_ ﹀Dismiss: DismissAction) {
-        self.﹀Dismiss = ﹀Dismiss
-        self._🚩ShowSheet = .constant(false)
-    }
-    init(_ 🚩ShowSheet: Binding<Bool>) {
-        self._🚩ShowSheet = 🚩ShowSheet
+    init(_ 🚩showSheet: Binding<Bool>) {
+        self._🚩showSheet = 🚩showSheet
     }
 }
 
