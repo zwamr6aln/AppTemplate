@@ -31,7 +31,7 @@ struct ContentView: View {
     private func ⓒontent() -> some View {
         List {
             Button("支払い済みでなければ広告シートを表示する") {
-                🛒.📣showADSheetIfUserNotPurchased()
+                🛒.checkToShowADSheet()
             }
             
             Text("sharedText:" + ⓢharedText)
