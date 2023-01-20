@@ -160,7 +160,6 @@ struct 📣ADMenu: View {
             Section {
                 Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.")
                     .padding()
-                    .textSelection(.enabled)
             } header: {
                 Text("Description")
             }
