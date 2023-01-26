@@ -40,8 +40,8 @@
 		F556941E28CC2F72004558FC /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		F556942028CC2F7D004558FC /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
 		F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
-		F592B4422982259E00D9E882 /* 📒MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 📒MetaData.swift */; };
-		F592B443298228DA00D9E882 /* 📒MetaData.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 📒MetaData.swift */; };
+		F592B4422982259E00D9E882 /* 🧰MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
+		F592B443298228DA00D9E882 /* 🧰MetaData.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
 		F5BBEB652973A03A0064F0EF /* 🄰pplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBEB642973A03A0064F0EF /* 🄰pplicationDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +62,7 @@
 			dstPath = "🧰Others";
 			dstSubfolderSpec = 7;
 			files = (
-				F592B443298228DA00D9E882 /* 📒MetaData.swift in CopyFiles */,
+				F592B443298228DA00D9E882 /* 🧰MetaData.swift in CopyFiles */,
 				F556942028CC2F7D004558FC /* 🛒InAppPurchase.swift in CopyFiles */,
 				F556941E28CC2F72004558FC /* 📣AD.swift in CopyFiles */,
 				12C67132286069ED00FE4C06 /* ℹ️AboutApp.swift in CopyFiles */,
@@ -141,7 +141,7 @@
 		F51722362920FE8200C6DDE6 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 		F549E849290BC3C300636271 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = memo.md; sourceTree = "<group>"; };
 		F57B37F129726CE300F0BB91 /* 📣ADContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADContent.swift"; sourceTree = "<group>"; };
-		F592B4412982259E00D9E882 /* 📒MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📒MetaData.swift"; sourceTree = "<group>"; };
+		F592B4412982259E00D9E882 /* 🧰MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧰MetaData.swift"; sourceTree = "<group>"; };
 		F5BBEB642973A03A0064F0EF /* 🄰pplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🄰pplicationDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,7 +234,7 @@
 		12E4A75828502AF800B2380B /* 🧰Others */ = {
 			isa = PBXGroup;
 			children = (
-				F592B4412982259E00D9E882 /* 📒MetaData.swift */,
+				F592B4412982259E00D9E882 /* 🧰MetaData.swift */,
 				12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */,
 				127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */,
 				127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */,
@@ -383,7 +383,7 @@
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
 				F5BBEB652973A03A0064F0EF /* 🄰pplicationDelegate.swift in Sources */,
-				F592B4422982259E00D9E882 /* 📒MetaData.swift in Sources */,
+				F592B4422982259E00D9E882 /* 🧰MetaData.swift in Sources */,
 				12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */,
 				12D4368528656B4400B707F5 /* 🖨printLog.swift in Sources */,
 				1299C39C288D650C0086522B /* 🛠MenuButton.swift in Sources */,
