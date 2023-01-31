@@ -6,7 +6,7 @@ struct ContentView: View {
     @EnvironmentObject var 📱: 📱AppModel
     @EnvironmentObject var 🛒: 🛒StoreModel
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    @AppStorage("sharedText") var ⓢharedText: String = "empty"
+    @AppStorage("sharedText") private var ⓢharedText: String = "empty"
     var body: some View {
         if #available(iOS 16.0, *) {
             Group {
@@ -75,7 +75,6 @@ struct ContentView: View {
 struct 🅁equestUserReview: ViewModifier {
     @Environment(\.requestReview) var requestReview
     @AppStorage("launchCount") private var ⓛaunchCount: Int = 0
-    @State private var ⓒondition: Bool = false
     func body(content: Content) -> some View {
         content
             .task { self.ⓛaunchCount += 1 }
@@ -88,10 +87,10 @@ struct 🅁equestUserReview: ViewModifier {
 }
 
 struct ﹀DismissButton: View {
-    @Binding var 🚩showSheet: Bool
+    @Binding private var 🚩showSheet: Bool
     var body: some View {
         Button {
-            🚩showSheet = false
+            self.🚩showSheet = false
             UISelectionFeedbackGenerator().selectionChanged()
         } label: {
             Image(systemName: "chevron.down")
@@ -99,8 +98,8 @@ struct ﹀DismissButton: View {
         .tint(.secondary)
         .accessibilityLabel("Dismiss")
     }
-    init(_ 🚩showSheet: Binding<Bool>) {
-        self._🚩showSheet = 🚩showSheet
+    init(_ showSheet: Binding<Bool>) {
+        self._🚩showSheet = showSheet
     }
 }
 
