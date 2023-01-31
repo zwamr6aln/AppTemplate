@@ -79,7 +79,7 @@ struct 🅁equestUserReview: ViewModifier {
             .toolbar {
                 ToolbarItem(placement: .bottomBar) {
                     Button {
-                        self.requestReview.callAsFunction()
+                        self.requestReview()
                     } label: {
                         Image(systemName: "star.bubble")
                     }

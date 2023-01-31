@@ -42,7 +42,7 @@ struct 🔗AppStoreLink: View {
     @Environment(\.openURL) var openURL: OpenURLAction
     var body: some View {
         Button {
-            self.openURL.callAsFunction(🔗appStoreProductURL)
+            self.openURL(🔗appStoreProductURL)
         } label: {
             HStack {
                 Label("Open AppStore page", systemImage: "link")
@@ -61,8 +61,8 @@ struct 🏬AppStoreSection: View {
         Section {
             🔗AppStoreLink()
             Button {
-                let 🔗 = URL(string: 🔗appStoreProductURL.description + "?action=write-review")!
-                self.openURL.callAsFunction(🔗)
+                let ⓤrl = URL(string: 🔗appStoreProductURL.description + "?action=write-review")!
+                self.openURL(ⓤrl)
             } label: {
                 HStack {
                     Label("Review on AppStore", systemImage: "star.bubble")
