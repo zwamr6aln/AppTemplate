@@ -74,15 +74,14 @@ struct ContentView: View {
 @available(iOS 16, *)
 struct 🅁equestUserReview: ViewModifier {
     @Environment(\.requestReview) var requestReview
+    @AppStorage("launchCount") private var ⓛaunchCount: Int = 0
+    @State private var ⓒondition: Bool = false
     func body(content: Content) -> some View {
         content
-            .toolbar {
-                ToolbarItem(placement: .bottomBar) {
-                    Button {
-                        self.requestReview()
-                    } label: {
-                        Image(systemName: "star.bubble")
-                    }
+            .task { self.ⓛaunchCount += 1 }
+            .onAppear {
+                if [10, 20, 30].contains(self.ⓛaunchCount) {
+                    self.requestReview()
                 }
             }
     }
