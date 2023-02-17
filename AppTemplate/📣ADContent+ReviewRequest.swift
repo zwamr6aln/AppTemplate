@@ -14,17 +14,28 @@ struct 📣ADContent: ViewModifier {
     }
 }
 
-@available(iOS 16, *)
 struct 💬RequestUserReview: ViewModifier {
-    @Environment(\.requestReview) var requestReview
-    @AppStorage("launchCount") private var ⓛaunchCount: Int = 0
     func body(content: Content) -> some View {
-        content
-            .task { self.ⓛaunchCount += 1 }
-            .onAppear {
-                if [10, 20, 30].contains(self.ⓛaunchCount) {
-                    self.requestReview()
+        if #available(iOS 16.0, *) {
+            content
+                .modifier(ⓜodifier())
+        } else {
+            content
+        }
+            
+    }
+    @available(iOS 16, *)
+    private struct ⓜodifier: ViewModifier {
+        @Environment(\.requestReview) var requestReview
+        @AppStorage("launchCount") private var ⓛaunchCount: Int = 0
+        func body(content: Content) -> some View {
+            content
+                .task { self.ⓛaunchCount += 1 }
+                .onAppear {
+                    if [10, 20, 30].contains(self.ⓛaunchCount) {
+                        self.requestReview()
+                    }
                 }
-            }
+        }
     }
 }

@@ -22,7 +22,6 @@ struct ContentView: View {
                     }
                 }
             }
-            .modifier(💬RequestUserReview())
         } else {
             NavigationView { self.ⓒontent() }
                 .navigationViewStyle(.stack)
