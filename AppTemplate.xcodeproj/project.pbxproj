@@ -37,6 +37,7 @@
 		F51722292920FCCC00C6DDE6 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51722282920FCCC00C6DDE6 /* ShareViewController.swift */; };
 		F517222C2920FCCC00C6DDE6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F517222A2920FCCC00C6DDE6 /* MainInterface.storyboard */; };
 		F51722302920FCCC00C6DDE6 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F51722262920FCCC00C6DDE6 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F53B4914299F9F970040282A /* RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53B4913299F9F970040282A /* RequestUserReview.swift */; };
 		F556941E28CC2F72004558FC /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		F556942028CC2F7D004558FC /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
 		F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
@@ -139,6 +140,7 @@
 		F517222D2920FCCC00C6DDE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51722352920FE3600C6DDE6 /* AppTemplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppTemplate.entitlements; sourceTree = "<group>"; };
 		F51722362920FE8200C6DDE6 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		F53B4913299F9F970040282A /* RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUserReview.swift; sourceTree = "<group>"; };
 		F549E849290BC3C300636271 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = memo.md; sourceTree = "<group>"; };
 		F57B37F129726CE300F0BB91 /* 📣ADContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADContent.swift"; sourceTree = "<group>"; };
 		F592B4412982259E00D9E882 /* 🧰MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧰MetaData.swift"; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */,
 				127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */,
 				127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */,
+				F53B4913299F9F970040282A /* RequestUserReview.swift */,
 				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
 				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
 			);
@@ -383,6 +386,7 @@
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
 				F5BBEB652973A03A0064F0EF /* 🄰pplicationDelegate.swift in Sources */,
+				F53B4914299F9F970040282A /* RequestUserReview.swift in Sources */,
 				F592B4422982259E00D9E882 /* 🧰MetaData.swift in Sources */,
 				12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */,
 				12D4368528656B4400B707F5 /* 🖨printLog.swift in Sources */,
