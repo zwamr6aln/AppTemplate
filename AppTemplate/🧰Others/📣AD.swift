@@ -75,9 +75,14 @@ struct 📣ADSheet: View {
     }
     private func ⓘcon() -> some View {
         Link(destination: self.ⓐpp.url) {
-            Image(self.ⓐpp.iconImageName)
-                .resizable()
-                .frame(width: 60, height: 60)
+            HStack(spacing: 16) {
+                Image(self.ⓐpp.iconImageName)
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                if self.ⓐpp.isHealthKitApp {
+                    Image("apple_health_badge")
+                }
+            }
         }
         .accessibilityHidden(true)
         .disabled(🛒.🚩purchased)
@@ -233,5 +238,9 @@ enum 📣MyApp: String, CaseIterable {
     static func pickUpAppWithout(_ ⓜySelf: Self) -> Self {
         let ⓐpps = 📣MyApp.allCases.filter { $0 != ⓜySelf }
         return ⓐpps.randomElement()!
+    }
+    
+    var isHealthKitApp: Bool {
+        self == .TapTemperature || self == .TapWeight
     }
 }
