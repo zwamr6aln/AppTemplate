@@ -35,16 +35,16 @@ struct 📣ADSheet: View {
     }
     private func ⓥerticalLayout() -> some View {
         VStack(spacing: 16) {
-            Spacer()
+            Spacer(minLength: 0)
             self.ⓜockImage()
-            Spacer()
+            Spacer(minLength: 0)
             self.ⓘcon()
             self.ⓝame()
-            Spacer()
+            Spacer(minLength: 0)
             self.ⓓescription()
-            Spacer()
+            Spacer(minLength: 0)
             self.ⓐppStoreBadge()
-            Spacer()
+            Spacer(minLength: 0)
         }
         .padding()
     }

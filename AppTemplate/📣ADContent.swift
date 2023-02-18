@@ -7,7 +7,12 @@ struct 📣ADContent: ViewModifier {
     func body(content: Content) -> some View {
         content
             .sheet(isPresented: $🛒.🚩showADSheet) {
-                📣ADSheet(self.ⓐpp)
+                if #available(iOS 16.0, *) {
+                    📣ADSheet(self.ⓐpp)
+                        .presentationDetents([.height(560)])
+                } else {
+                    📣ADSheet(self.ⓐpp)
+                }
             }
             .onChange(of: self.scenePhase) {
                 if $0 == .background {
