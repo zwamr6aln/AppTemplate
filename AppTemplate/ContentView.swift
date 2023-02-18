@@ -6,7 +6,6 @@ struct ContentView: View {
     @EnvironmentObject var 📱: 📱AppModel
     @EnvironmentObject var 🛒: 🛒StoreModel
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    @AppStorage("sharedText") private var ⓢharedText: String = "empty"
     var body: some View {
         if #available(iOS 16.0, *) {
             Group {
@@ -29,36 +28,12 @@ struct ContentView: View {
     }
     private func ⓒontent() -> some View {
         List {
+            🛒PurchaseView()
+            🔗OpenSystemSetting()
+            🔠BiggerSystemFontTest()
             Button("支払い済みでなければ広告シートを表示する") {
                 🛒.checkToShowADSheet()
             }
-            
-            Text("sharedText:" + ⓢharedText)
-            
-            🔗OpenSystemSetting()
-            
-            🛒PurchaseView()
-            
-            Section {
-                HStack {
-                    Text("displayName")
-                    Spacer()
-                    Text(🛒.🎫name)
-                        .foregroundStyle(.secondary)
-                }
-                
-                NavigationLink("🎫Product.debugDescription") {
-                    Text(🛒.🎫product.debugDescription)
-                        .padding()
-                        .minimumScaleFactor(0.1)
-                        .navigationTitle("🎫Product.debugDescription")
-                        .navigationBarTitleDisplayMode(.inline)
-                }
-            } header: { Text("In-App Purchase Product") }
-            
-            Section { 🖨printLog() }
-            
-            🔠BiggerSystemFontTest()
         }
         .listStyle(.plain)
         .navigationTitle("ContentView")

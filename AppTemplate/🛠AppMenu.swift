@@ -1,5 +1,20 @@
 import SwiftUI
 
+struct 🛠MenuButton: View { // ⚙️
+    @State private var 🚩showMenu: Bool = false
+    var body: some View {
+        Button {
+            self.🚩showMenu = true
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+        } label: {
+            Label("Open menu", systemImage: "gear")
+        }
+        .sheet(isPresented: $🚩showMenu) {
+            🛠AppMenu()
+        }
+    }
+}
+
 struct 🛠AppMenu: View {
     @EnvironmentObject var 📱: 📱AppModel
     var body: some View {
