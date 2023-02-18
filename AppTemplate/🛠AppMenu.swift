@@ -21,7 +21,10 @@ struct 🛠AppMenu: View {
         if #available(iOS 16.0, *) {
             NavigationStack { ⓒontent() }
         } else {
-            NavigationView { ⓒontent() }
+            NavigationView {
+                ⓒontent()
+                    .navigationViewStyle(.stack)
+            }
         }
     }
     private func ⓒontent() -> some View {
