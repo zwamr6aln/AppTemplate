@@ -15,7 +15,7 @@ struct 📣ADContent: ViewModifier {
                 }
             }
             .onAppear {
-                🛒.checkToShowADSheet()
+                🛒.checkToShowADSheet()//アプリ毎にこの関数を呼ぶ場所を検討する
             }
     }
 }

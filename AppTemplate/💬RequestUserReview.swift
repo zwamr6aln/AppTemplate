@@ -4,6 +4,15 @@ import SwiftUI
 //@State private var checkToRequestReview: Bool = false
 //.modifier(💬RequestUserReview(self.$checkToRequestReview))
 //self.checkToRequestReview = true
+struct 💬RequestUserReviewOnLaunch: ViewModifier {
+    @State private var checkToRequest: Bool = false
+    func body(content: Content) -> some View {
+        content
+            .modifier(💬RequestUserReview(self.$checkToRequest))
+            .onAppear { self.checkToRequest = true }
+    }
+}
+
 struct 💬RequestUserReview: ViewModifier {
     @Binding private var checkToRequest: Bool
     func body(content: Content) -> some View {
@@ -27,7 +36,7 @@ struct 💬RequestUserReview: ViewModifier {
                 .task { self.ⓛaunchCount += 1 }
                 .onChange(of: self.checkToRequest) {
                     if $0 == true {
-                        if [10, 20, 40, 100].contains(self.ⓛaunchCount) {
+                        if [10, 30, 60, 100].contains(self.ⓛaunchCount) {
                             self.requestReview()
                         }
                     }
