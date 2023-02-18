@@ -39,7 +39,8 @@
 		F51722302920FCCC00C6DDE6 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F51722262920FCCC00C6DDE6 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F556941E28CC2F72004558FC /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		F556942028CC2F7D004558FC /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
-		F57B37F229726CE300F0BB91 /* 📣ADContent+ReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent+ReviewRequest.swift */; };
+		F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
+		F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F592B4422982259E00D9E882 /* 🧰MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
 		F592B443298228DA00D9E882 /* 🧰MetaData.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
 		F5BBEB652973A03A0064F0EF /* 🄰pplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBEB642973A03A0064F0EF /* 🄰pplicationDelegate.swift */; };
@@ -140,7 +141,8 @@
 		F51722352920FE3600C6DDE6 /* AppTemplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppTemplate.entitlements; sourceTree = "<group>"; };
 		F51722362920FE8200C6DDE6 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 		F549E849290BC3C300636271 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = memo.md; sourceTree = "<group>"; };
-		F57B37F129726CE300F0BB91 /* 📣ADContent+ReviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADContent+ReviewRequest.swift"; sourceTree = "<group>"; };
+		F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
+		F57B37F129726CE300F0BB91 /* 📣ADContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADContent.swift"; sourceTree = "<group>"; };
 		F592B4412982259E00D9E882 /* 🧰MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧰MetaData.swift"; sourceTree = "<group>"; };
 		F5BBEB642973A03A0064F0EF /* 🄰pplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🄰pplicationDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,7 +213,8 @@
 				12E4A749285027F600B2380B /* ContentView.swift */,
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
 				F5BBEB642973A03A0064F0EF /* 🄰pplicationDelegate.swift */,
-				F57B37F129726CE300F0BB91 /* 📣ADContent+ReviewRequest.swift */,
+				F57B37F129726CE300F0BB91 /* 📣ADContent.swift */,
+				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
 				1299C39B288D650C0086522B /* 🛠MenuButton.swift */,
 				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
 				F51722352920FE3600C6DDE6 /* AppTemplate.entitlements */,
@@ -379,10 +382,11 @@
 			files = (
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
 				12A605A5289219B30001DE23 /* 🔠BiggerSystemFontTest.swift in Sources */,
-				F57B37F229726CE300F0BB91 /* 📣ADContent+ReviewRequest.swift in Sources */,
+				F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
 				F5BBEB652973A03A0064F0EF /* 🄰pplicationDelegate.swift in Sources */,
+				F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */,
 				F592B4422982259E00D9E882 /* 🧰MetaData.swift in Sources */,
 				12DDD5452861D6B2004F59A0 /* 🔗OpenSystemSetting.swift in Sources */,
 				12D4368528656B4400B707F5 /* 🖨printLog.swift in Sources */,
