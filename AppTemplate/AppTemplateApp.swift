@@ -11,7 +11,6 @@ struct AppTemplateApp: App {
         WindowGroup {
             ContentView()
                 .modifier(📣ADContent())
-                .modifier(💬RequestUserReview())
                 .environmentObject(📱)
                 .environmentObject(🛒)
                 .defaultAppStorage(💾)

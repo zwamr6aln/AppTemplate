@@ -140,7 +140,7 @@ class 🛒StoreModel: ObservableObject {
     
     @Published var 🚩showADSheet: Bool = false
     
-    func checkToShowADSheetOnLaunch() {
+    func checkToShowADSheet() {
         if !self.🚩purchased && (self.ⓛaunchCount > 5) {
             self.🚩showADSheet = true
         }
