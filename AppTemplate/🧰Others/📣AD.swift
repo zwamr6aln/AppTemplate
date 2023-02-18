@@ -217,11 +217,11 @@ enum 📣MyApp: String, CaseIterable {
     
     var description: LocalizedStringKey {
         switch self {
-            case .FlipByBlink: return "Simple and normal ebook reader (for fixed-layout). Only a special feature. Turn a page with slightly longish voluntary blink."
+            case .FlipByBlink: return "E-book reader that can turn a page with slightly longish voluntary blink."
             case .FadeInAlarm: return "Alarm clock with taking a long time from small volume to max volume."
-            case .PlainShogiBoard: return "Simple Shogi board App. Based on iOS system UI design. Supported SharePlay."
-            case .TapWeight: return "Register weight data to the Apple \"Health\" application pre-installed on iPhone in the fastest possible way (as manual)."
-            case .TapTemperature: return "Register body temperature data to the \"Health\" app pre-installed on iPhone in the fastest possible way (as manual)."
+            case .PlainShogiBoard: return "Simplest Shogi board App. Supported SharePlay."
+            case .TapWeight: return "Register weight data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)."
+            case .TapTemperature: return "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)."
             case .MemorizeWidget: return "Flashcard on widget. Memorize a note in everyday life."
             case .LockInNote: return "Notes widget on lock screen."
         }
