@@ -9,7 +9,7 @@ struct 🛠MenuButton: View { // ⚙️
         } label: {
             Label("Open menu", systemImage: "gear")
         }
-        .sheet(isPresented: $🚩showMenu) {
+        .sheet(isPresented: self.$🚩showMenu) {
             🛠AppMenu()
         }
     }
