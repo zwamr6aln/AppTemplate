@@ -2,7 +2,6 @@ import SwiftUI
 import StoreKit
 
 struct ContentView: View {
-    @EnvironmentObject var ⓓelegate: 🄰pplicationDelegate
     @EnvironmentObject var 📱: 📱AppModel
     @EnvironmentObject var 🛒: 🛒StoreModel
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
