@@ -29,8 +29,6 @@ struct ContentView: View {
     private func ⓒontent() -> some View {
         List {
             🛒PurchaseView()
-            🔗OpenSystemSetting()
-            🔠BiggerSystemFontTest()
             Button("支払い済みでなければ広告シートを表示する") {
                 🛒.checkToShowADSheet()
             }
