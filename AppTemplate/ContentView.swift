@@ -27,12 +27,11 @@ struct ContentView: View {
     }
     private func ⓒontent() -> some View {
         List {
-            🛒PurchaseView()
+            Text("Placeholder")
             Button("支払い済みでなければ広告シートを表示する") {
                 🛒.checkToShowADSheet()
             }
         }
-        .listStyle(.plain)
         .navigationTitle("ContentView")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
