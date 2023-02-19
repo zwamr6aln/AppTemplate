@@ -41,7 +41,17 @@ struct 🛠AppMenu: View {
             📣ADMenuLink()
         }
         .navigationTitle("Menu")
-        .toolbar { ﹀DismissButton($📱.🚩showMenu) }
+        .toolbar { self.ⓓismissButton() }
+    }
+    private func ⓓismissButton() -> some View {
+        Button {
+            📱.🚩showMenu = false
+            UISelectionFeedbackGenerator().selectionChanged()
+        } label: {
+            Image(systemName: "chevron.down")
+        }
+        .tint(.secondary)
+        .accessibilityLabel("Dismiss")
     }
 }
 

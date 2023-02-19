@@ -41,20 +41,3 @@ struct ContentView: View {
         }
     }
 }
-
-struct ﹀DismissButton: View {
-    @Binding private var 🚩showSheet: Bool
-    var body: some View {
-        Button {
-            self.🚩showSheet = false
-            UISelectionFeedbackGenerator().selectionChanged()
-        } label: {
-            Image(systemName: "chevron.down")
-        }
-        .tint(.secondary)
-        .accessibilityLabel("Dismiss")
-    }
-    init(_ showSheet: Binding<Bool>) {
-        self._🚩showSheet = showSheet
-    }
-}
