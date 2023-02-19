@@ -16,7 +16,7 @@ struct 🛠MenuButton: View { // ⚙️
 }
 
 struct 🛠AppMenu: View {
-    @EnvironmentObject var 📱: 📱AppModel
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         if #available(iOS 16.0, *) {
             NavigationStack { ⓒontent() }
@@ -45,7 +45,7 @@ struct 🛠AppMenu: View {
     }
     private func ⓓismissButton() -> some View {
         Button {
-            📱.🚩showMenu = false
+            self.dismiss()
             UISelectionFeedbackGenerator().selectionChanged()
         } label: {
             Image(systemName: "chevron.down")
