@@ -1,7 +1,7 @@
 import SwiftUI
 import StoreKit
 
-//MARK: ======================== View ========================
+//MARK: ======== View ========
 struct 🛒PurchaseView: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     @State private var 🚩buyingNow = false
@@ -131,7 +131,7 @@ struct 🛒IAPSection: View {
     }
 }
 
-//MARK: ======================== Model ========================
+//MARK: ======== Model ========
 typealias Transaction = StoreKit.Transaction
 
 class 🛒StoreModel: ObservableObject {

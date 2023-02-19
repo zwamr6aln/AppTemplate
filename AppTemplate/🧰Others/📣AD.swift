@@ -133,7 +133,7 @@ struct 📣ADSheet: View {
         .foregroundStyle(.primary)
         .accessibilityLabel("Dismiss")
     }
-    struct ⓟurchasedEffect: ViewModifier {
+    private struct ⓟurchasedEffect: ViewModifier {
         @EnvironmentObject var 🛒: 🛒StoreModel
         func body(content: Content) -> some View {
             if 🛒.🚩purchased {
