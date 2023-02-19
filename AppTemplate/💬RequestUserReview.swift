@@ -4,7 +4,7 @@ import SwiftUI
 //@State private var checkToRequestReview: Bool = false
 //.modifier(💬RequestUserReview(self.$checkToRequestReview))
 //self.checkToRequestReview = true
-struct 💬RequestUserReviewOnLaunch: ViewModifier {
+struct 💬RequestUserReviewOnLaunch: ViewModifier {//アプリ毎に個別に実装する
     @State private var checkToRequest: Bool = false
     func body(content: Content) -> some View {
         content
