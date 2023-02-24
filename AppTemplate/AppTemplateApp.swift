@@ -8,7 +8,7 @@ struct AppTemplateApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .modifier(📣ADContent())
+                .modifier(📣ADSheet())
                 .modifier(💬RequestUserReviewOnLaunch())
                 .environmentObject(📱)
                 .environmentObject(🛒)
