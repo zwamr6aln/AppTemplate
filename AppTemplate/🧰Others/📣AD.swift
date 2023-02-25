@@ -1,6 +1,20 @@
 import SwiftUI
 import StoreKit
 
+//struct 📣ADSheet: ViewModifier {
+//    @EnvironmentObject var 🛒: 🛒StoreModel
+//    @State private var ⓐpp: 📣MyApp = .pickUpAppWithout(.ONESELF)
+//    func body(content: Content) -> some View {
+//        content
+//            .sheet(isPresented: $🛒.🚩showADSheet) {
+//                📣ADView(self.ⓐpp)
+//            }
+//            .onAppear {
+//                🛒.checkToShowADSheet()
+//            }
+//    }
+//}
+
 struct 📣ADView: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     @Environment(\.scenePhase) var scenePhase
