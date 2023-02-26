@@ -9,7 +9,7 @@ struct AppTemplateApp: App {
         WindowGroup {
             ContentView()
                 .modifier(📣ADSheet())
-                .modifier(💬RequestUserReviewOnLaunch())
+                .modifier(💬RequestUserReview())
                 .environmentObject(📱)
                 .environmentObject(🛒)
         }
