@@ -18,9 +18,7 @@ let 🔗webRepositoryURL = URL(string: "https://github.com/FlipByBlink/?")!
 let 🔗webRepositoryURL_Mirror = URL(string: "https://gitlab.com/FlipByBlink/?_Mirror")!
 
 enum 📁SourceCodeCategory: String, CaseIterable, Identifiable {
-    case main
-    case 🧩Sub
-    case 🧰Others
+    case main, 🧩Sub, 🧰Others
     var id: Self { self }
     var fileNames: [String] {
         switch self {
