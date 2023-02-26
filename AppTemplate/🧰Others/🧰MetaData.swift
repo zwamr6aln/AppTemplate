@@ -17,9 +17,24 @@ let 👤privacyPolicy = """
 let 🔗webRepositoryURL = URL(string: "https://github.com/FlipByBlink/?")!
 let 🔗webRepositoryURL_Mirror = URL(string: "https://gitlab.com/FlipByBlink/?_Mirror")!
 
-enum 📁SourceFolder: String, CaseIterable, Identifiable {
+enum 📁SourceCodeCategory: String, CaseIterable, Identifiable {
     case main
     case 🧩Sub
     case 🧰Others
     var id: Self { self }
+    var fileNames: [String] {
+        switch self {
+            case .main:
+                return ["AppTemplateApp.swift",
+                        "📱AppModel.swift",
+                        "ContentView.swift"]
+            case .🧩Sub:
+                return []
+            case .🧰Others:
+                return ["🧰MetaData.swift",
+                        "ℹ️AboutApp.swift",
+                        "📣AD.swift",
+                        "🛒InAppPurchase.swift"]
+        }
+    }
 }

@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
-		1256A340286B180C002AF08A /* 🛠AppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
 		12724D702862DEB0008471AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12724D6F2862DEB0008471AB /* StoreKit.framework */; };
 		127ECB2A286149EF00CB1BC3 /* 🛒InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
 		127ECB2C28614B8B00CB1BC3 /* 📣AD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 127ECB2D28614C0200CB1BC3 /* Configuration.storekit */; };
 		1299C37B288CB8C30086522B /* 🌏AppStoreDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C37D288CB8C30086522B /* 🌏AppStoreDescription.strings */; };
 		1299C386288D12760086522B /* 🌏VersionDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C388288D12760086522B /* 🌏VersionDescription.strings */; };
-		12C67132286069ED00FE4C06 /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
 		12DDDDAD288BF2E40055A073 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */; };
 		12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
 		12E4A74A285027F600B2380B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
@@ -23,55 +21,21 @@
 		12E4A74F285027F700B2380B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74E285027F700B2380B /* Preview Assets.xcassets */; };
 		12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
 		12E4A76328502C9F00B2380B /* ℹ️AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
-		12E4A76528502D7200B2380B /* AppTemplateApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
-		12E4A76628502D7200B2380B /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
-		12E4A76728502D7200B2380B /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
 		12E4A76B28502EDE00B2380B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
 		12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
-		F556941E28CC2F72004558FC /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
-		F556942028CC2F7D004558FC /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
+		F519CB5D29AAFF5800ACD6B6 /* AppTemplateApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
+		F519CB5E29AAFF5800ACD6B6 /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
+		F519CB5F29AAFF5800ACD6B6 /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
+		F519CB6029AAFF5800ACD6B6 /* 🧰MetaData.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
+		F519CB6129AAFF5800ACD6B6 /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
+		F519CB6229AAFF5800ACD6B6 /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
+		F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
 		F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
 		F57B37F229726CE300F0BB91 /* 📣ADSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */; };
 		F592B4422982259E00D9E882 /* 🧰MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
-		F592B443298228DA00D9E882 /* 🧰MetaData.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		12C6712E286069CE00FE4C06 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "🧰Others";
-			dstSubfolderSpec = 7;
-			files = (
-				F592B443298228DA00D9E882 /* 🧰MetaData.swift in CopyFiles */,
-				F556942028CC2F7D004558FC /* 🛒InAppPurchase.swift in CopyFiles */,
-				F556941E28CC2F72004558FC /* 📣AD.swift in CopyFiles */,
-				12C67132286069ED00FE4C06 /* ℹ️AboutApp.swift in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12DDD56D2861DAF5004F59A0 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "🧩Sub";
-			dstSubfolderSpec = 7;
-			files = (
-				1256A340286B180C002AF08A /* 🛠AppMenu.swift in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12E4A76428502D5E00B2380B /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = main;
-			dstSubfolderSpec = 7;
-			files = (
-				12E4A76528502D7200B2380B /* AppTemplateApp.swift in CopyFiles */,
-				12E4A76628502D7200B2380B /* ContentView.swift in CopyFiles */,
-				12E4A76728502D7200B2380B /* 📱AppModel.swift in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F51722312920FCCC00C6DDE6 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,6 +44,22 @@
 			files = (
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F519CB5C29AAFF2D00ACD6B6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "📁SourceCode";
+			dstSubfolderSpec = 7;
+			files = (
+				F519CB5D29AAFF5800ACD6B6 /* AppTemplateApp.swift in CopyFiles */,
+				F519CB5E29AAFF5800ACD6B6 /* ContentView.swift in CopyFiles */,
+				F519CB5F29AAFF5800ACD6B6 /* 📱AppModel.swift in CopyFiles */,
+				F519CB6029AAFF5800ACD6B6 /* 🧰MetaData.swift in CopyFiles */,
+				F519CB6129AAFF5800ACD6B6 /* ℹ️AboutApp.swift in CopyFiles */,
+				F519CB6229AAFF5800ACD6B6 /* 📣AD.swift in CopyFiles */,
+				F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchase.swift in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -219,10 +199,8 @@
 				12E4A740285027F600B2380B /* Sources */,
 				12E4A741285027F600B2380B /* Frameworks */,
 				12E4A742285027F600B2380B /* Resources */,
-				12E4A76428502D5E00B2380B /* CopyFiles */,
-				12DDD56D2861DAF5004F59A0 /* CopyFiles */,
-				12C6712E286069CE00FE4C06 /* CopyFiles */,
 				F51722312920FCCC00C6DDE6 /* Embed Foundation Extensions */,
+				F519CB5C29AAFF2D00ACD6B6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
