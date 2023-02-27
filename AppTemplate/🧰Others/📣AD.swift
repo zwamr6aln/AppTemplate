@@ -21,7 +21,7 @@ struct 📣ADView: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass
     @State private var 🚩disableDismiss: Bool = true
     private let 🕒timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
-    @State private var 🕒countdown: Int = 7
+    @State private var 🕒countdown: Int
     private var ⓐpp: 📣MyApp
     var body: some View {
         Group {
@@ -191,8 +191,9 @@ struct 📣ADView: View {
             }
         }
     }
-    init(_ ⓐpp: 📣MyApp) {
-        self.ⓐpp = ⓐpp
+    init(_ app: 📣MyApp, second: Int) {
+        self.ⓐpp = app
+        self._🕒countdown = State(initialValue: second)
     }
 }
 
