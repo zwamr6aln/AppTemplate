@@ -164,9 +164,10 @@ struct 📣ADView: View {
                 Image(systemName: "\(self.🕒countdown.description).circle")
             } else {
                 Image(systemName: "xmark.circle.fill")
+                    .font(.body.weight(.medium))
             }
         }
-        .foregroundStyle(self.🚩disableDismiss ? .quaternary : .primary)
+        .foregroundStyle(self.🚩disableDismiss ? .tertiary : .primary)
         .disabled(self.🚩disableDismiss)
         .animation(.default, value: self.🚩disableDismiss)
         .accessibilityLabel("Dismiss")
@@ -184,7 +185,7 @@ struct 📣ADView: View {
                             .foregroundStyle(.white, .red)
                             .frame(width: 160, height: 160)
                             .rotationEffect(.degrees(5))
-                            .shadow(radius: 12)
+                            .shadow(radius: 8)
                     }
             } else {
                 content
