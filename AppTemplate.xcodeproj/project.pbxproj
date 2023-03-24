@@ -30,6 +30,7 @@
 		F519CB6129AAFF5800ACD6B6 /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
 		F519CB6229AAFF5800ACD6B6 /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
+		F5514EF329CD743E00FCA7EA /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5514EF229CD743E00FCA7EA /* DismissButton.swift */; };
 		F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
 		F57B37F229726CE300F0BB91 /* 📣ADSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */; };
 		F592B4422982259E00D9E882 /* 🧰MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
@@ -88,6 +89,7 @@
 		12E4A77228502F3A00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A77428502F3B00B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F549E849290BC3C300636271 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = memo.md; sourceTree = "<group>"; };
+		F5514EF229CD743E00FCA7EA /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
 		F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
 		F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADSheet.swift"; sourceTree = "<group>"; };
 		F592B4412982259E00D9E882 /* 🧰MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧰MetaData.swift"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */,
 				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
 				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
+				F5514EF229CD743E00FCA7EA /* DismissButton.swift */,
 				127ECB25286149B400CB1BC3 /* 🧩Sub */,
 				12E4A75828502AF800B2380B /* 🧰Others */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
+				F5514EF329CD743E00FCA7EA /* DismissButton.swift in Sources */,
 				F57B37F229726CE300F0BB91 /* 📣ADSheet.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
