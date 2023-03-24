@@ -31,6 +31,10 @@
 		F519CB6229AAFF5800ACD6B6 /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
 		F5514EF329CD743E00FCA7EA /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5514EF229CD743E00FCA7EA /* DismissButton.swift */; };
+		F5514EF429CD7B4E00FCA7EA /* 📣ADSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */; };
+		F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
+		F5514EF629CD7B4E00FCA7EA /* 🛠AppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
+		F5514EF729CD7B4E00FCA7EA /* DismissButton.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5514EF229CD743E00FCA7EA /* DismissButton.swift */; };
 		F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
 		F57B37F229726CE300F0BB91 /* 📣ADSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */; };
 		F592B4422982259E00D9E882 /* 🧰MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
@@ -53,6 +57,10 @@
 			dstPath = "📁SourceCode";
 			dstSubfolderSpec = 7;
 			files = (
+				F5514EF429CD7B4E00FCA7EA /* 📣ADSheet.swift in CopyFiles */,
+				F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */,
+				F5514EF629CD7B4E00FCA7EA /* 🛠AppMenu.swift in CopyFiles */,
+				F5514EF729CD7B4E00FCA7EA /* DismissButton.swift in CopyFiles */,
 				F519CB5D29AAFF5800ACD6B6 /* AppTemplateApp.swift in CopyFiles */,
 				F519CB5E29AAFF5800ACD6B6 /* ContentView.swift in CopyFiles */,
 				F519CB5F29AAFF5800ACD6B6 /* 📱AppModel.swift in CopyFiles */,
@@ -118,6 +126,10 @@
 		127ECB25286149B400CB1BC3 /* 🧩Sub */ = {
 			isa = PBXGroup;
 			children = (
+				F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */,
+				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
+				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
+				F5514EF229CD743E00FCA7EA /* DismissButton.swift */,
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
 			path = "🧩Sub";
@@ -148,10 +160,6 @@
 				12E4A747285027F600B2380B /* AppTemplateApp.swift */,
 				12E4A749285027F600B2380B /* ContentView.swift */,
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
-				F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */,
-				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
-				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
-				F5514EF229CD743E00FCA7EA /* DismissButton.swift */,
 				127ECB25286149B400CB1BC3 /* 🧩Sub */,
 				12E4A75828502AF800B2380B /* 🧰Others */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,

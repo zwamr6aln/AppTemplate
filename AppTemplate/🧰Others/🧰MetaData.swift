@@ -29,7 +29,10 @@ enum 📁SourceCodeCategory: String, CaseIterable, Identifiable {
             case .Shared:
                 return []
             case .Sub:
-                return []
+                return ["📣ADSheet.swift",
+                        "💬RequestUserReview.swift",
+                        "🛠AppMenu.swift",
+                        "DismissButton.swift"]
             case .Others:
                 return ["🧰MetaData.swift",
                         "ℹ️AboutApp.swift",
