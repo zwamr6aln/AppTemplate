@@ -6,12 +6,8 @@ import StoreKit
 //    @State private var ⓐpp: 📣MyApp = .pickUpAppWithout(.ONESELF)
 //    func body(content: Content) -> some View {
 //        content
-//            .sheet(isPresented: $🛒.🚩showADSheet) {
-//                📣ADView(self.ⓐpp)
-//            }
-//            .onAppear {
-//                🛒.checkToShowADSheet()
-//            }
+//            .sheet(isPresented: $🛒.🚩showADSheet) { 📣ADView(self.ⓐpp) }
+//            .onAppear { 🛒.checkToShowADSheet() }
 //    }
 //}
 
