@@ -23,7 +23,7 @@ struct 📣ADView: View {
         Group {
             if #available(iOS 16.0, *) {
                 NavigationStack { self.ⓒontent() }
-                    .presentationDetents([.height(600)])
+                    .presentationDetents([.height(640)])
             } else {
                 NavigationView { self.ⓒontent() }
                     .navigationViewStyle(.stack)
@@ -235,9 +235,7 @@ enum 📣MyApp: String, CaseIterable {
     case MemorizeWidget
     case LockInNote
     
-    var name: LocalizedStringKey {
-        LocalizedStringKey(self.rawValue)
-    }
+    var name: LocalizedStringKey { LocalizedStringKey(self.rawValue) }
     
     var url: URL {
         switch self {
@@ -263,13 +261,9 @@ enum 📣MyApp: String, CaseIterable {
         }
     }
     
-    var mockImageName: String {
-        "mock/" + self.rawValue
-    }
+    var mockImageName: String { "mock/" + self.rawValue }
     
-    var iconImageName: String {
-        "icon/" + self.rawValue
-    }
+    var iconImageName: String { "icon/" + self.rawValue }
     
     static func pickUpAppWithout(_ ⓜySelf: Self) -> Self {
         let ⓐpps = 📣MyApp.allCases.filter { $0 != ⓜySelf }
