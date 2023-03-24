@@ -130,6 +130,7 @@
 				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
 				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
 				F5514EF229CD743E00FCA7EA /* DismissButton.swift */,
+				12E4A75828502AF800B2380B /* 🧰Others */,
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
 			path = "🧩Sub";
@@ -161,7 +162,6 @@
 				12E4A749285027F600B2380B /* ContentView.swift */,
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
 				127ECB25286149B400CB1BC3 /* 🧩Sub */,
-				12E4A75828502AF800B2380B /* 🧰Others */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
 			);

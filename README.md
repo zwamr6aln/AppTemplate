@@ -1,5 +1,5 @@
-iPhone App AppTemplate
-=======================
+AppTemplate: iPhone App
+------------------------
 _My app template repository_
 
 <img src="AppTemplate/Assets.xcassets/RoundedIcon.imageset/icon.png" width="64">
@@ -8,17 +8,17 @@ _My app template repository_
     <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
 </a>
 
+
 Description
 ------------
+This is placeholder.
 
-### Option
 
+Option
 
-Localization
--------------
-- English
+- placeholder
 
-- Japanese(native)
+- placeholder
 
 
 Source code link
