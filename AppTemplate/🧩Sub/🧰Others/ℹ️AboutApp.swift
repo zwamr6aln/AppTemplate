@@ -65,8 +65,9 @@ private struct 📰AppStoreDescriptionSection: View {
                 .navigationBarTitle("Description")
                 .textSelection(.enabled)
             } label: {
-                Text("AppStoreDescription", tableName: "🌏AppStoreDescription")
+                Text(self.ⓛabelString)
                     .font(.subheadline)
+                    .lineSpacing(5)
                     .lineLimit(7)
                     .padding(8)
                     .accessibilityLabel("Description")
@@ -74,6 +75,11 @@ private struct 📰AppStoreDescriptionSection: View {
         } header: {
             Text("Description")
         }
+    }
+    private var ⓛabelString: String {
+        String(localized: "AppStoreDescription", table: "🌏AppStoreDescription")
+            .replacingOccurrences(of: "\n\n", with: "\n")
+            .replacingOccurrences(of: "\n\n", with: "\n")
     }
 }
 
@@ -121,10 +127,12 @@ private struct 👤PrivacyPolicySection: View {
     var body: some View {
         Section {
             NavigationLink {
-                Text(👤privacyPolicy)
-                    .padding(32)
-                    .textSelection(.enabled)
-                    .navigationTitle("Privacy Policy")
+                ScrollView {
+                    Text(👤privacyPolicy)
+                        .padding(24)
+                        .textSelection(.enabled)
+                }
+                .navigationTitle("Privacy Policy")
             } label: {
                 Label("Privacy Policy", systemImage: "person.text.rectangle")
             }
