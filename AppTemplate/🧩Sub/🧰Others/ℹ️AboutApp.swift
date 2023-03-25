@@ -372,36 +372,36 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
 }
 
 struct 💬PrepareToRequestUserReview: ViewModifier {
-    @Binding private var checkToRequest: Bool
+    @Binding private var ⓒheckToRequest: Bool
     func body(content: Content) -> some View {
         if #available(iOS 16.0, *) {
             content
-                .modifier(ⓜodifier(self.$checkToRequest))
+                .modifier(ⓜodifier(self.$ⓒheckToRequest))
         } else {
             content
         }
     }
     init(_ checkToRequest: Binding<Bool>) {
-        self._checkToRequest = checkToRequest
+        self._ⓒheckToRequest = checkToRequest
     }
     @available(iOS 16, *)
     private struct ⓜodifier: ViewModifier {
         @Environment(\.requestReview) var requestReview
         @AppStorage("launchCount") private var ⓛaunchCount: Int = 0
-        @Binding private var checkToRequest: Bool
+        @Binding private var ⓒheckToRequest: Bool
         func body(content: Content) -> some View {
             content
                 .task { self.ⓛaunchCount += 1 }
-                .onChange(of: self.checkToRequest) {
+                .onChange(of: self.ⓒheckToRequest) {
                     if $0 == true {
-                        if [10, 30, 60, 100].contains(self.ⓛaunchCount) {
+                        if [10, 30, 50, 70, 90].contains(self.ⓛaunchCount) {
                             self.requestReview()
                         }
                     }
                 }
         }
         init(_ checkToRequest: Binding<Bool>) {
-            self._checkToRequest = checkToRequest
+            self._ⓒheckToRequest = checkToRequest
         }
     }
 }
