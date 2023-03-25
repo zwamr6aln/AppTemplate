@@ -15,7 +15,7 @@ English
 This application don't collect user infomation.
 
 
-Japanese
+日本語(Japanese)
 
 このアプリ自身において、ユーザーの情報を一切収集しません。
 """
