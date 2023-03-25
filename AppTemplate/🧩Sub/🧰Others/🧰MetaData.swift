@@ -6,7 +6,7 @@ let 📜versionInfos = 📜VersionInfo.history(("1.1", "2021-03-01"),
 
 let 🔗appStoreProductURL = URL(string: "https://apps.apple.com/app/id?")!
 
-let 👤privacyPolicy = """
+let 👤privacyPolicyDescription = """
 2022-❓-❓
 
 
@@ -21,7 +21,7 @@ This application don't collect user infomation.
 """
 
 let 🔗webRepositoryURL = URL(string: "https://github.com/FlipByBlink/?")!
-let 🔗webRepositoryURL_Mirror = URL(string: "https://gitlab.com/FlipByBlink/?_Mirror")!
+let 🔗webMirrorRepositoryURL = URL(string: "https://gitlab.com/FlipByBlink/?_Mirror")!
 
 enum 📁SourceCodeCategory: String, CaseIterable, Identifiable {
     case main, Shared, Sub, Others, WatchApp, WatchComplication

@@ -128,7 +128,7 @@ private struct 👤PrivacyPolicySection: View {
         Section {
             NavigationLink {
                 ScrollView {
-                    Text(👤privacyPolicy)
+                    Text(👤privacyPolicyDescription)
                         .padding(24)
                         .textSelection(.enabled)
                 }
@@ -263,7 +263,7 @@ private struct 📓SourceCodeLink: View {
                 Text(🔗webRepositoryURL.description)
             }
             Section {
-                Link(destination: 🔗webRepositoryURL_Mirror) {
+                Link(destination: 🔗webMirrorRepositoryURL) {
                     HStack {
                         Label("Web Repository", systemImage: "link")
                         Text("(Mirror)")
@@ -276,7 +276,7 @@ private struct 📓SourceCodeLink: View {
                     }
                 }
             } footer: {
-                Text(🔗webRepositoryURL_Mirror.description)
+                Text(🔗webMirrorRepositoryURL.description)
             }
         }
     }
