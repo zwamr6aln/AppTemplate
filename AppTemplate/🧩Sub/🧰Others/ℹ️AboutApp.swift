@@ -16,18 +16,15 @@ struct ℹ️AboutAppLink: View {
     }
     private func ⓘconAndName() -> some View {
         GeometryReader { 📐 in
-            VStack(spacing: 12) {
+            VStack(spacing: 8) {
                 Image("RoundedIcon")
                     .resizable()
                     .frame(width: 100, height: 100)
                 VStack(spacing: 6) {
                     Text(self.name)
-                        .font(.system(.title2, design: .rounded))
-                        .fontWeight(.bold)
+                        .font(.system(.headline, design: .rounded))
                         .tracking(1.5)
                         .opacity(0.75)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.1)
                     Text(self.subtitle)
                         .font(.footnote)
                         .fontWeight(.medium)
@@ -37,7 +34,6 @@ struct ℹ️AboutAppLink: View {
                 .minimumScaleFactor(0.1)
             }
             .padding(20)
-            .padding(.top, 8)
             .frame(width: 📐.size.width)
         }
         .frame(height: 200)

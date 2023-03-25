@@ -1,5 +1,5 @@
-AppTemplate: iPhone App
-------------------------
+AppTemplate: iPhone / Apple Watch app
+--------------------------------------
 _My app template repository_
 
 <img src="AppTemplate/Assets.xcassets/RoundedIcon.imageset/icon.png" width="64">
@@ -28,14 +28,11 @@ https://github.com/FlipByBlink/❓
 ### Source code (Mirror) link
 https://gitlab.com/FlipByBlink/❓_Mirror
 
+
 Contact
------------
+--------
 sear_pandora_0x@icloud.com
 
-<!-- URL "Support page for AppStore" -->
-<!-- https://flipbyblink.github.io/❓/ -->
-<!-- URL "Privacy Policy for AppStore" -->
-<!-- https://flipbyblink.github.io/❓/#privacy-policy-for-appstore -->
 
 * * *
 
@@ -43,6 +40,7 @@ sear_pandora_0x@icloud.com
 <br>
 <br>
 <br>
+
 
 Privacy Policy for AppStore
 ---------------------------
@@ -54,7 +52,14 @@ Privacy Policy for AppStore
 ### English
 This application don't collect user infomation.
 
+
 <br>
 <br>
 <br>
 <br>
+
+
+<!-- URL "Support page for AppStore" -->
+<!-- https://flipbyblink.github.io/❓/ -->
+<!-- URL "Privacy Policy for AppStore" -->
+<!-- https://flipbyblink.github.io/❓/#privacy-policy-for-appstore -->

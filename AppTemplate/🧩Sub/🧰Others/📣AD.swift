@@ -194,22 +194,6 @@ struct 📣ADView: View {
     }
 }
 
-struct 📣ADMenu: View {
-    @EnvironmentObject var 🛒: 🛒StoreModel
-    var body: some View {
-        List {
-            Section {
-                Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.")
-                    .padding()
-            } header: {
-                Text("Description")
-            }
-            🛒IAPSection()
-        }
-        .navigationTitle("About AD")
-    }
-}
-
 struct 📣ADMenuLink: View {
     @EnvironmentObject var 🛒: 🛒StoreModel
     var body: some View {
@@ -223,6 +207,22 @@ struct 📣ADMenuLink: View {
         } header: {
             Text("AD / Purchase")
         }
+    }
+}
+
+private struct 📣ADMenu: View {
+    @EnvironmentObject var 🛒: 🛒StoreModel
+    var body: some View {
+        List {
+            Section {
+                Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.")
+                    .padding()
+            } header: {
+                Text("Description")
+            }
+            🛒IAPSection()
+        }
+        .navigationTitle("About AD")
     }
 }
 
