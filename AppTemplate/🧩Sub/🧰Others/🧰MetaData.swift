@@ -38,7 +38,7 @@ enum 📁SourceCodeCategory: String, CaseIterable, Identifiable {
                 return ["📣ADSheet.swift",
                         "💬RequestUserReview.swift",
                         "🛠AppMenu.swift",
-                        "DismissButton.swift"]
+                        "🄳ismissButton.swift"]
             case .Others:
                 return ["🧰MetaData.swift",
                         "ℹ️AboutApp.swift",

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct DismissButton: View {
+struct 🄳ismissButton: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         Button {
