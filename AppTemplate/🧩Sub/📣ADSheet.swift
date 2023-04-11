@@ -7,6 +7,7 @@ struct 📣ADSheet: ViewModifier {
         content
             .sheet(isPresented: $🛒.🚩showADSheet) {
                 📣ADView(self.ⓐpp, second: 13)
+                    .environmentObject(🛒)
             }
             .onAppear {
                 🛒.checkToShowADSheet()
