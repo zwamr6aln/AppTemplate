@@ -1,2 +1,3 @@
 
 CFBundleDisplayName = "テンプレート";
+//CFBundleName = "テンプレート";//macCatalyst

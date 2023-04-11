@@ -1,2 +1,3 @@
 
 CFBundleDisplayName = "Template";
+//CFBundleName = "Template";//macCatalyst
