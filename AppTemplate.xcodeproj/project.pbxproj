@@ -41,7 +41,7 @@
 		F567E39229F2A09A0026E12D /* ContentView_watchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E39129F2A09A0026E12D /* ContentView_watchOSApp.swift */; };
 		F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567E39329F2A09C0026E12D /* Assets.xcassets */; };
 		F567E39729F2A09C0026E12D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567E39629F2A09C0026E12D /* Preview Assets.xcassets */; };
-		F567E39A29F2A09C0026E12D /* AT Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F567E38D29F2A09A0026E12D /* AT Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F567E39A29F2A09C0026E12D /* AT Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F567E38D29F2A09A0026E12D /* AT Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F567E39F29F2A17E0026E12D /* 🧰MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
 		F567E3A129F2A3000026E12D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
 		F567E3A229F2A3030026E12D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
@@ -410,6 +410,7 @@
 /* Begin PBXTargetDependency section */
 		F567E39929F2A09C0026E12D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = F567E38C29F2A09A0026E12D /* AT Watch App */;
 			targetProxy = F567E39829F2A09C0026E12D /* PBXContainerItemProxy */;
 		};
