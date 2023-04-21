@@ -84,7 +84,7 @@ private struct 📰AppStoreDescriptionSection: View {
 }
 
 private struct 🔗AppStoreLink: View {
-    @Environment(\.openURL) var openURL
+    @Environment(\.openURL) private var openURL
     var body: some View {
         Button {
             self.openURL(🔗appStoreProductURL)
@@ -101,7 +101,7 @@ private struct 🔗AppStoreLink: View {
 }
 
 private struct 🏬AppStoreSection: View {
-    @Environment(\.openURL) var openURL
+    @Environment(\.openURL) private var openURL
     var body: some View {
         Section {
             🔗AppStoreLink()

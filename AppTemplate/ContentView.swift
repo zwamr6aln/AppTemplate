@@ -2,15 +2,19 @@ import SwiftUI
 import StoreKit
 
 struct ContentView: View {
-    @EnvironmentObject var 📱: 📱AppModel
-    @EnvironmentObject var 🛒: 🛒StoreModel
+    @EnvironmentObject private var 📱: 📱AppModel
+    @EnvironmentObject private var 🛒: 🛒StoreModel
     var body: some View {
-        if #available(iOS 16.0, *) {
-            NavigationStack { self.ⓒontent() }
-        } else {
-            NavigationView { self.ⓒontent() }
-                .navigationViewStyle(.stack)
+        Group {
+            if #available(iOS 16.0, *) {
+                NavigationStack { self.ⓒontent() }
+            } else {
+                NavigationView { self.ⓒontent() }
+                    .navigationViewStyle(.stack)
+            }
         }
+        .modifier(💬RequestUserReview())
+        .modifier(🩹Workaround.hideTitleBarOnMacCatalyst())
     }
     private func ⓒontent() -> some View {
         List {

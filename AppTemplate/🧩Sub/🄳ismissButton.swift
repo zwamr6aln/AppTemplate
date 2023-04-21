@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct 🄳ismissButton: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
         Button {
             self.dismiss()

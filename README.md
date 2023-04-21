@@ -1,5 +1,5 @@
-AppTemplate: iPhone / Apple Watch app
---------------------------------------
+AppTemplate: iPhone, iPad, Apple Watch, Mac
+-------------------------------------------
 _My app template repository_
 
 <img src="AppTemplate/Assets.xcassets/RoundedIcon.imageset/icon.png" width="64">

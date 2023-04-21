@@ -12,9 +12,9 @@ import StoreKit
 //}
 
 struct 📣ADView: View {
-    @EnvironmentObject var 🛒: 🛒StoreModel
-    @Environment(\.scenePhase) var scenePhase
-    @Environment(\.verticalSizeClass) var verticalSizeClass
+    @EnvironmentObject private var 🛒: 🛒StoreModel
+    @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.verticalSizeClass) private var verticalSizeClass
     @State private var 🚩disableDismiss: Bool = true
     private let 🕒timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
     @State private var 🕒countdown: Int
@@ -195,7 +195,7 @@ struct 📣ADView: View {
 }
 
 struct 📣ADMenuLink: View {
-    @EnvironmentObject var 🛒: 🛒StoreModel
+    @EnvironmentObject private var 🛒: 🛒StoreModel
     var body: some View {
         Section {
             🛒PurchaseView()
@@ -211,7 +211,7 @@ struct 📣ADMenuLink: View {
 }
 
 private struct 📣ADMenu: View {
-    @EnvironmentObject var 🛒: 🛒StoreModel
+    @EnvironmentObject private var 🛒: 🛒StoreModel
     var body: some View {
         List {
             Section {
