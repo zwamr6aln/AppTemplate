@@ -55,3 +55,12 @@ enum 📁SourceCodeCategory: String, CaseIterable, Identifiable {
         }
     }
 }
+
+struct 📜VersionInfo: Identifiable {
+    var number: String
+    var date: String
+    var id: String { self.number }
+    static func history(_ ⓘnfos: (ⓝumber: String, ⓓate: String) ...) -> [Self] {
+        ⓘnfos.map { Self(number: $0.ⓝumber, date: $0.ⓓate) }
+    }
+}

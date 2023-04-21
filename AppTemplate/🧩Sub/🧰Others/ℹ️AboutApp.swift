@@ -145,15 +145,6 @@ private struct 👤PrivacyPolicySection: View {
     }
 }
 
-struct 📜VersionInfo: Identifiable {
-    var number: String
-    var date: String
-    var id: String { self.number }
-    static func history(_ ⓘnfos: (ⓝumber: String, ⓓate: String) ...) -> [Self] {
-        ⓘnfos.map { Self(number: $0.ⓝumber, date: $0.ⓓate) }
-    }
-}
-
 private struct 📜VersionHistoryLink: View {
     var body: some View {
         Section {
