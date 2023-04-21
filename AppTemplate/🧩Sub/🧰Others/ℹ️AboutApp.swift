@@ -61,6 +61,7 @@ private struct 📰AppStoreDescriptionSection: View {
                 ScrollView {
                     Text("AppStoreDescription", tableName: "🌏AppStoreDescription")
                         .padding()
+                        .frame(maxWidth: .infinity)
                 }
                 .navigationBarTitle("Description")
                 .textSelection(.enabled)
@@ -131,6 +132,7 @@ private struct 👤PrivacyPolicySection: View {
                     Text(👤privacyPolicyDescription)
                         .padding(24)
                         .textSelection(.enabled)
+                        .frame(maxWidth: .infinity)
                 }
                 .navigationTitle("Privacy Policy")
             } label: {
