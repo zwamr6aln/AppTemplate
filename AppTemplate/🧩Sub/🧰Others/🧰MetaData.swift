@@ -1,4 +1,8 @@
 import Foundation
+import SwiftUI
+
+let ℹ️appName: LocalizedStringKey = "AppTemplate"
+let ℹ️appSubTitle: LocalizedStringKey = "App for iPhone / iPad / Apple Watch"
 
 let 📜versionInfos = 📜VersionInfo.history(("1.1", "2021-03-01"),
                                            ("1.0.1", "2021-02-01"),

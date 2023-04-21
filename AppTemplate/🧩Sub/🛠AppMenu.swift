@@ -20,7 +20,7 @@ struct 🛠AppMenu: View {
             } header: {
                 Text("Option")
             }
-            ℹ️AboutAppLink(name: "AppTemplate", subtitle: "App for iPhone / iPad / Apple Watch")
+            ℹ️AboutAppLink()
             📣ADMenuLink()
         }
         .navigationTitle("Menu")

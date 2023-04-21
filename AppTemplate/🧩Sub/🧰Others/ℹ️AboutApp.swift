@@ -1,11 +1,9 @@
 import SwiftUI
 
 struct ℹ️AboutAppLink: View {
-    var name: LocalizedStringKey
-    var subtitle: LocalizedStringKey
     var body: some View {
         Section {
-            self.ⓘconAndName()
+            🖼️IconAndName()
             🔗AppStoreLink()
             NavigationLink {
                 ℹ️AboutAppMenu()
@@ -14,18 +12,37 @@ struct ℹ️AboutAppLink: View {
             }
         }
     }
-    private func ⓘconAndName() -> some View {
+}
+
+struct ℹ️AboutAppMenu: View {
+    var withSidebarLayout: Bool = false
+    var body: some View {
+        List {
+            if self.withSidebarLayout { 🖼️IconAndName() }
+            📰AppStoreDescriptionSection()
+            📜VersionHistoryLink()
+            👤PrivacyPolicySection()
+            🏬AppStoreSection()
+            📓SourceCodeLink()
+            🧑‍💻AboutDeveloperPublisherLink()
+        }
+        .navigationTitle("About App")
+    }
+}
+
+private struct 🖼️IconAndName: View {
+    var body: some View {
         GeometryReader { 📐 in
             VStack(spacing: 8) {
                 Image("RoundedIcon")
                     .resizable()
                     .frame(width: 100, height: 100)
                 VStack(spacing: 6) {
-                    Text(self.name)
+                    Text(ℹ️appName)
                         .font(.system(.headline, design: .rounded))
                         .tracking(1.5)
                         .opacity(0.75)
-                    Text(self.subtitle)
+                    Text(ℹ️appSubTitle)
                         .font(.footnote)
                         .fontWeight(.medium)
                         .foregroundStyle(.secondary)
@@ -37,20 +54,6 @@ struct ℹ️AboutAppLink: View {
             .frame(width: 📐.size.width)
         }
         .frame(height: 200)
-    }
-}
-
-private struct ℹ️AboutAppMenu: View {
-    var body: some View {
-        List {
-            📰AppStoreDescriptionSection()
-            📜VersionHistoryLink()
-            👤PrivacyPolicySection()
-            🏬AppStoreSection()
-            📓SourceCodeLink()
-            🧑‍💻AboutDeveloperPublisherLink()
-        }
-        .navigationTitle("About App")
     }
 }
 
