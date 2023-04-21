@@ -392,7 +392,7 @@ struct 💬PrepareToRequestUserReview: ViewModifier {
     }
     @available(iOS 16, *)
     private struct ⓜodifier: ViewModifier {
-        @Environment(\.requestReview) var requestReview
+        @Environment(\.requestReview) private var requestReview
         @AppStorage("launchCount") private var ⓛaunchCount: Int = 0
         @Binding private var ⓒheckToRequest: Bool
         func body(content: Content) -> some View {

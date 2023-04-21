@@ -169,7 +169,7 @@ struct 📣ADView: View {
         .accessibilityLabel("Dismiss")
     }
     private struct ⓟurchasedEffect: ViewModifier {
-        @EnvironmentObject var 🛒: 🛒StoreModel
+        @EnvironmentObject private var 🛒: 🛒StoreModel
         func body(content: Content) -> some View {
             if 🛒.🚩purchased {
                 content
