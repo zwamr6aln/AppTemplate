@@ -99,6 +99,7 @@
 		F549E849290BC3C300636271 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = memo.md; sourceTree = "<group>"; };
 		F5514EF229CD743E00FCA7EA /* 🄳ismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🄳ismissButton.swift"; sourceTree = "<group>"; };
 		F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
+		F567E36929F278B10026E12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADSheet.swift"; sourceTree = "<group>"; };
 		F592B4412982259E00D9E882 /* 🧰MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧰MetaData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +132,7 @@
 				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
 				F5514EF229CD743E00FCA7EA /* 🄳ismissButton.swift */,
 				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
+				F567E36929F278B10026E12D /* Info.plist */,
 				12E4A75828502AF800B2380B /* 🧰Others */,
 				12E4A74D285027F700B2380B /* Preview Content */,
 			);
