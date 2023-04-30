@@ -31,7 +31,7 @@
 		F519CB6229AAFF5800ACD6B6 /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
 		F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
 		F5514EF329CD743E00FCA7EA /* 🄳ismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5514EF229CD743E00FCA7EA /* 🄳ismissButton.swift */; };
-		F5514EF429CD7B4E00FCA7EA /* 📣ADSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */; };
+		F5514EF429CD7B4E00FCA7EA /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
 		F5514EF629CD7B4E00FCA7EA /* 🛠AppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
 		F5514EF729CD7B4E00FCA7EA /* 🄳ismissButton.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5514EF229CD743E00FCA7EA /* 🄳ismissButton.swift */; };
@@ -45,7 +45,7 @@
 		F567E39F29F2A17E0026E12D /* 🧰MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
 		F567E3A129F2A3000026E12D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
 		F567E3A229F2A3030026E12D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
-		F57B37F229726CE300F0BB91 /* 📣ADSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */; };
+		F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F592B4422982259E00D9E882 /* 🧰MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
 		F5F2272129FE6B1900891C69 /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
 /* End PBXBuildFile section */
@@ -77,7 +77,7 @@
 			dstPath = "📁SourceCode";
 			dstSubfolderSpec = 7;
 			files = (
-				F5514EF429CD7B4E00FCA7EA /* 📣ADSheet.swift in CopyFiles */,
+				F5514EF429CD7B4E00FCA7EA /* 📣ADContent.swift in CopyFiles */,
 				F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */,
 				F5514EF629CD7B4E00FCA7EA /* 🛠AppMenu.swift in CopyFiles */,
 				F5514EF729CD7B4E00FCA7EA /* 🄳ismissButton.swift in CopyFiles */,
@@ -137,7 +137,7 @@
 		F567E39129F2A09A0026E12D /* ContentView_watchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_watchOSApp.swift; sourceTree = "<group>"; };
 		F567E39329F2A09C0026E12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F567E39629F2A09C0026E12D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADSheet.swift"; sourceTree = "<group>"; };
+		F57B37F129726CE300F0BB91 /* 📣ADContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADContent.swift"; sourceTree = "<group>"; };
 		F592B4412982259E00D9E882 /* 🧰MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧰MetaData.swift"; sourceTree = "<group>"; };
 		F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🪧Sheet.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */,
-				F57B37F129726CE300F0BB91 /* 📣ADSheet.swift */,
+				F57B37F129726CE300F0BB91 /* 📣ADContent.swift */,
 				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
 				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
 				F5514EF229CD743E00FCA7EA /* 🄳ismissButton.swift */,
@@ -385,7 +385,7 @@
 			files = (
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
 				F5514EF329CD743E00FCA7EA /* 🄳ismissButton.swift in Sources */,
-				F57B37F229726CE300F0BB91 /* 📣ADSheet.swift in Sources */,
+				F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */,
 				F567E38829F27E180026E12D /* 🩹Workaround.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,

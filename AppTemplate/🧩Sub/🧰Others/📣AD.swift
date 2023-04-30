@@ -165,6 +165,7 @@ struct 📣ADView: View {
                     .font(.body.weight(.medium))
             }
         }
+        .keyboardShortcut(.cancelAction)
         .foregroundStyle(self.🚩disableDismiss ? .tertiary : .primary)
         .disabled(self.🚩disableDismiss)
         .animation(.default, value: self.🚩disableDismiss)
