@@ -13,15 +13,13 @@ struct ContentView: View {
                     .navigationViewStyle(.stack)
             }
         }
+        .modifier(🪧Sheet())
         .modifier(💬RequestUserReview())
         .modifier(🩹Workaround.hideTitleBarOnMacCatalyst())
     }
     private func ⓒontent() -> some View {
         List {
             Text("Placeholder")
-            Button("支払い済みでなければ広告シートを表示する") {
-                🛒.checkToShowADSheet()
-            }
         }
         .navigationTitle("ContentView")
         .toolbar {
