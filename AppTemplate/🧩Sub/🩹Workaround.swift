@@ -12,8 +12,11 @@ enum 🩹Workaround {
                 }
         }
         private func closeMenuPopup() {
-            let ⓢcene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-            ⓢcene?.windows.first?.rootViewController?.dismiss(animated: true)
+            (UIApplication.shared.connectedScenes.first as? UIWindowScene)?
+                .windows
+                .first?
+                .rootViewController?
+                .dismiss(animated: true)
         }
         //Conflict error Menu-popup / sheetPresentation
         //> [Presentation]
@@ -25,8 +28,9 @@ enum 🩹Workaround {
             content
                 .onAppear {
 #if targetEnvironment(macCatalyst)
-                    let ⓢcene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-                    ⓢcene?.titlebar?.titleVisibility = .hidden
+                    (UIApplication.shared.connectedScenes.first as? UIWindowScene)?
+                        .titlebar?
+                        .titleVisibility = .hidden
 #endif
                 }
         }

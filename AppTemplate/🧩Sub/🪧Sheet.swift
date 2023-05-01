@@ -16,7 +16,7 @@ struct 🪧Sheet: ViewModifier {
                 if 🛒.checkToShowADSheet() { 📱.showSheet = .AD }
             }
     }
-    enum 🄲ategory: Identifiable {
+    enum Source: Identifiable {
         case AD, Menu, Placeholder
         var id: Self { self }
     }
