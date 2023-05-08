@@ -6,7 +6,7 @@ struct ContentView_watchOSApp: View {
             List {
                 💁GuideMenu()
             }
-            .navigationTitle("AppTemplate")
+            .navigationTitle(ℹ️appName)
         }
     }
 }

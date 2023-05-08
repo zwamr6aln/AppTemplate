@@ -341,7 +341,7 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
         .navigationTitle("Developer / Publisher")
     }
     private struct 📆TimelineSection: View {
-        private var 📃text: [[String]] =
+        private static var ⓣexts: [[String]] =
         [["2013-04","Finished from high school in Okayama Prefecture. Entranced into University-of-the-Ryukyus/faculty-of-engineering in Okinawa Prefecture."],
          ["2018-06","Final year as an undergraduate student. Developed an iOS application(FlipByBlink) as software for the purpose of research experiments."],
          ["2019-01","Released ebook reader app \"FlipByBlink\" ver 1.0 on AppStore. Special feature is to turn a page by slightly-longish-voluntary-blink."],
@@ -357,12 +357,12 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
          ["2022-09","Released LockInNote and MemorizeWidget on iOS16 release occasion."]]
         var body: some View {
             Section {
-                ForEach(📃text, id: \.self) { 📃 in
+                ForEach(Self.ⓣexts, id: \.self) { ⓣext in
                     HStack {
-                        Text(📃.first ?? "🐛")
+                        Text(ⓣext.first ?? "🐛")
                             .font(.caption2)
                             .padding(8)
-                        Text(LocalizedStringKey(📃.last ?? "🐛"))
+                        Text(LocalizedStringKey(ⓣext.last ?? "🐛"))
                             .font(.caption)
                     }
                 }
@@ -377,8 +377,7 @@ struct 💬PrepareToRequestUserReview: ViewModifier {
     @Binding private var ⓒheckToRequest: Bool
     func body(content: Content) -> some View {
         if #available(iOS 16.0, *) {
-            content
-                .modifier(ⓜodifier(self.$ⓒheckToRequest))
+            content.modifier(Self.🄼odifier(self.$ⓒheckToRequest))
         } else {
             content
         }
@@ -387,7 +386,7 @@ struct 💬PrepareToRequestUserReview: ViewModifier {
         self._ⓒheckToRequest = checkToRequest
     }
     @available(iOS 16, *)
-    private struct ⓜodifier: ViewModifier {
+    private struct 🄼odifier: ViewModifier {
         @Environment(\.requestReview) private var requestReview
         @AppStorage("launchCount") private var ⓛaunchCount: Int = 0
         @Binding private var ⓒheckToRequest: Bool
