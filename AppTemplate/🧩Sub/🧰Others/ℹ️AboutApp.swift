@@ -148,33 +148,34 @@ private struct 👤PrivacyPolicySection: View {
 private struct 📜VersionHistoryLink: View {
     var body: some View {
         Section {
-            NavigationLink {
-                List {
-                    ForEach(📜versionInfos) { ⓥersion in
-                        Section {
-                            Text(LocalizedStringKey(ⓥersion.number), tableName: "🌏VersionDescription")
-                                .font(.subheadline)
-                                .padding()
-                                .textSelection(.enabled)
-                        } header: {
-                            Text(ⓥersion.number)
-                        } footer: {
-                            if 📜versionInfos.first?.number == ⓥersion.number {
-                                Text("builded on \(ⓥersion.date)")
-                            } else {
-                                Text("released on \(ⓥersion.date)")
-                            }
-                        }
-                        .headerProminence(.increased)
-                    }
-                }
-                .navigationBarTitle("Version History")
-            } label: {
+            NavigationLink(destination: self.ⓜenu) {
                 Label("Version", systemImage: "signpost.left")
-                    .badge(📜versionInfos.first?.number ?? "🐛")
+                    .badge(📜versionInfos.first?.version ?? "🐛")
             }
             .accessibilityLabel("Version History")
         }
+    }
+    private func ⓜenu() -> some View {
+        List {
+            ForEach(📜versionInfos, id: \.version) { ⓘnfo in
+                Section {
+                    Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
+                        .font(.subheadline)
+                        .padding()
+                        .textSelection(.enabled)
+                } header: {
+                    Text(ⓘnfo.version)
+                } footer: {
+                    if 📜versionInfos.first?.version == ⓘnfo.version {
+                        Text("builded on \(ⓘnfo.date)")
+                    } else {
+                        Text("released on \(ⓘnfo.date)")
+                    }
+                }
+                .headerProminence(.increased)
+            }
+        }
+        .navigationBarTitle("Version History")
     }
 }
 

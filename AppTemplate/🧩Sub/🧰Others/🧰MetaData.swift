@@ -1,12 +1,11 @@
-import Foundation
 import SwiftUI
 
 let ℹ️appName: LocalizedStringKey = "AppTemplate"
 let ℹ️appSubTitle: LocalizedStringKey = "App for iPhone / iPad / Apple Watch"
 
-let 📜versionInfos = 📜VersionInfo.history(("1.1", "2021-03-01"),
-                                           ("1.0.1", "2021-02-01"),
-                                           ("1.0", "2021-01-01")) //降順。先頭の方が新しい
+let 📜versionInfos: [(version: String, date: String)] = [("1.1", "2021-03-01"),
+                                                         ("1.0.1", "2021-02-01"),
+                                                         ("1.0", "2021-01-01")] //降順。先頭の方が新しい
 
 let 🔗appStoreProductURL = URL(string: "https://apps.apple.com/app/id?")!
 
@@ -53,14 +52,5 @@ enum 📁SourceCodeCategory: String, CaseIterable, Identifiable {
             case .WatchComplication:
                 return []
         }
-    }
-}
-
-struct 📜VersionInfo: Identifiable {
-    var number: String
-    var date: String
-    var id: String { self.number }
-    static func history(_ ⓘnfos: (ⓝumber: String, ⓓate: String) ...) -> [Self] {
-        ⓘnfos.map { Self(number: $0.ⓝumber, date: $0.ⓓate) }
     }
 }
