@@ -40,7 +40,6 @@
 		F567E39029F2A09A0026E12D /* AT Watch App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E38F29F2A09A0026E12D /* AT Watch App.swift */; };
 		F567E39229F2A09A0026E12D /* ContentView_watchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E39129F2A09A0026E12D /* ContentView_watchOSApp.swift */; };
 		F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567E39329F2A09C0026E12D /* Assets.xcassets */; };
-		F567E39729F2A09C0026E12D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567E39629F2A09C0026E12D /* Preview Assets.xcassets */; };
 		F567E39A29F2A09C0026E12D /* AT Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F567E38D29F2A09A0026E12D /* AT Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F567E39F29F2A17E0026E12D /* 🧰MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaData.swift */; };
 		F567E3A129F2A3000026E12D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
@@ -137,7 +136,6 @@
 		F567E38F29F2A09A0026E12D /* AT Watch App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AT Watch App.swift"; sourceTree = "<group>"; };
 		F567E39129F2A09A0026E12D /* ContentView_watchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_watchOSApp.swift; sourceTree = "<group>"; };
 		F567E39329F2A09C0026E12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F567E39629F2A09C0026E12D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F57B37F129726CE300F0BB91 /* 📣ADContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADContent.swift"; sourceTree = "<group>"; };
 		F582D3E12A0085210088830D /* 🗄️Rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🗄️Rest.swift"; sourceTree = "<group>"; };
 		F592B4412982259E00D9E882 /* 🧰MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧰MetaData.swift"; sourceTree = "<group>"; };
@@ -260,17 +258,8 @@
 				F567E38F29F2A09A0026E12D /* AT Watch App.swift */,
 				F567E39129F2A09A0026E12D /* ContentView_watchOSApp.swift */,
 				F567E39329F2A09C0026E12D /* Assets.xcassets */,
-				F567E39529F2A09C0026E12D /* Preview Content */,
 			);
 			path = "AT Watch App";
-			sourceTree = "<group>";
-		};
-		F567E39529F2A09C0026E12D /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F567E39629F2A09C0026E12D /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,7 +361,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F567E39729F2A09C0026E12D /* Preview Assets.xcassets in Resources */,
 				F567E3A229F2A3030026E12D /* InfoPlist.strings in Resources */,
 				F567E3A129F2A3000026E12D /* Localizable.strings in Resources */,
 				F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */,
@@ -588,7 +576,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AppTemplate/AppTemplate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppTemplate/🧩Sub/Preview Content\"";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
@@ -605,7 +593,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aaaakkkkssssttttnnnn.AppTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -625,7 +613,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AppTemplate/AppTemplate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppTemplate/🧩Sub/Preview Content\"";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
@@ -642,7 +630,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aaaakkkkssssttttnnnn.AppTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -662,7 +650,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AT Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -693,7 +681,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AT Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
