@@ -36,11 +36,11 @@ private struct 🖼️IconAndName: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 VStack(spacing: 6) {
-                    Text(ℹ️appName)
+                    Text(🧰Info.appName)
                         .font(.system(.headline, design: .rounded))
                         .tracking(1.5)
                         .opacity(0.75)
-                    Text(ℹ️appSubTitle)
+                    Text(🧰Info.appSubTitle)
                         .font(.footnote)
                         .fontWeight(.medium)
                         .foregroundStyle(.secondary)
@@ -89,7 +89,7 @@ private struct 🔗AppStoreLink: View {
     @Environment(\.openURL) private var openURL
     var body: some View {
         Button {
-            self.openURL(🔗appStoreProductURL)
+            self.openURL(🧰Info.appStoreProductURL)
         } label: {
             HStack {
                 Label("Open AppStore page", systemImage: "link")
@@ -108,7 +108,7 @@ private struct 🏬AppStoreSection: View {
         Section {
             🔗AppStoreLink()
             Button {
-                let ⓤrl = URL(string: 🔗appStoreProductURL.description + "?action=write-review")!
+                let ⓤrl = URL(string: 🧰Info.appStoreProductURL.description + "?action=write-review")!
                 self.openURL(ⓤrl)
             } label: {
                 HStack {
@@ -120,7 +120,7 @@ private struct 🏬AppStoreSection: View {
                 }
             }
         } footer: {
-            Text(🔗appStoreProductURL.description)
+            Text(🧰Info.appStoreProductURL.description)
         }
     }
 }
@@ -130,7 +130,7 @@ private struct 👤PrivacyPolicySection: View {
         Section {
             NavigationLink {
                 ScrollView {
-                    Text(👤privacyPolicyDescription)
+                    Text(🧰Info.privacyPolicyDescription)
                         .padding(24)
                         .textSelection(.enabled)
                         .frame(maxWidth: .infinity)
@@ -148,14 +148,14 @@ private struct 📜VersionHistoryLink: View {
         Section {
             NavigationLink(destination: self.ⓜenu) {
                 Label("Version", systemImage: "signpost.left")
-                    .badge(📜versionInfos.first?.version ?? "🐛")
+                    .badge(🧰Info.versionInfos.first?.version ?? "🐛")
             }
             .accessibilityLabel("Version History")
         }
     }
     private func ⓜenu() -> some View {
         List {
-            ForEach(📜versionInfos, id: \.version) { ⓘnfo in
+            ForEach(🧰Info.versionInfos, id: \.version) { ⓘnfo in
                 Section {
                     Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
                         .font(.subheadline)
@@ -164,7 +164,7 @@ private struct 📜VersionHistoryLink: View {
                 } header: {
                     Text(ⓘnfo.version)
                 } footer: {
-                    if 📜versionInfos.first?.version == ⓘnfo.version {
+                    if 🧰Info.versionInfos.first?.version == ⓘnfo.version {
                         Text("builded on \(ⓘnfo.date)")
                     } else {
                         Text("released on \(ⓘnfo.date)")
@@ -179,22 +179,20 @@ private struct 📜VersionHistoryLink: View {
 
 private struct 📓SourceCodeLink: View {
     var body: some View {
-        NavigationLink(destination: self.ⓢourceCodeMenu) {
+        NavigationLink(destination: self.ⓜenu) {
             Label("Source code", systemImage: "doc.plaintext")
         }
     }
-    private func ⓢourceCodeMenu() -> some View {
+    private func ⓜenu() -> some View {
         List {
-            ForEach(📁SourceCodeCategory.allCases) {
-                Self.📓CodeSection($0)
-            }
+            ForEach(🧰Info.SourceCodeCategory.allCases) { Self.📓CodeSection($0) }
             self.📑bundleMainInfoDictionary()
             self.🔗repositoryLinks()
         }
         .navigationTitle("Source code")
     }
     private struct 📓CodeSection: View {
-        private var ⓒategory: 📁SourceCodeCategory
+        private var ⓒategory: 🧰Info.SourceCodeCategory
         private var ⓤrl: URL {
 #if targetEnvironment(macCatalyst)
             Bundle.main.bundleURL.appendingPathComponent("Contents/Resources/📁SourceCode")
@@ -204,11 +202,9 @@ private struct 📓SourceCodeLink: View {
         }
         var body: some View {
             Section {
-                ForEach(self.ⓒategory.fileNames, id: \.self) { ⓝame in
-                    if let ⓒode = try? String(contentsOf: self.ⓤrl.appendingPathComponent(ⓝame)) {
-                        NavigationLink(ⓝame) {
-                            self.📰sourceCodeView(ⓒode, ⓝame)
-                        }
+                ForEach(self.ⓒategory.fileNames, id: \.self) { ⓕileName in
+                    if let ⓒode = try? String(contentsOf: self.ⓤrl.appendingPathComponent(ⓕileName)) {
+                        NavigationLink(ⓕileName) { self.📰sourceCodeView(ⓒode, ⓕileName) }
                     } else {
                         Text("🐛")
                     }
@@ -219,7 +215,7 @@ private struct 📓SourceCodeLink: View {
                     .textCase(.none)
             }
         }
-        init(_ category: 📁SourceCodeCategory) {
+        init(_ category: 🧰Info.SourceCodeCategory) {
             self.ⓒategory = category
         }
         private func 📰sourceCodeView(_ ⓣext: String, _ ⓣitle: String) -> some View {
@@ -249,7 +245,7 @@ private struct 📓SourceCodeLink: View {
     private func 🔗repositoryLinks() -> some View {
         Group {
             Section {
-                Link(destination: 🔗webRepositoryURL) {
+                Link(destination: 🧰Info.webRepositoryURL) {
                     HStack {
                         Label("Web Repository", systemImage: "link")
                         Spacer()
@@ -259,10 +255,10 @@ private struct 📓SourceCodeLink: View {
                     }
                 }
             } footer: {
-                Text(🔗webRepositoryURL.description)
+                Text(🧰Info.webRepositoryURL.description)
             }
             Section {
-                Link(destination: 🔗webMirrorRepositoryURL) {
+                Link(destination: 🧰Info.webMirrorRepositoryURL) {
                     HStack {
                         Label("Web Repository", systemImage: "link")
                         Text("(Mirror)")
@@ -275,7 +271,7 @@ private struct 📓SourceCodeLink: View {
                     }
                 }
             } footer: {
-                Text(🔗webMirrorRepositoryURL.description)
+                Text(🧰Info.webMirrorRepositoryURL.description)
             }
         }
     }
@@ -283,11 +279,11 @@ private struct 📓SourceCodeLink: View {
 
 private struct 🧑‍💻AboutDeveloperPublisherLink: View {
     var body: some View {
-        NavigationLink(destination: self.ⓐboutDeveloperPublisherMenu) {
+        NavigationLink(destination: self.ⓜenu) {
             Label("Developer / Publisher", systemImage: "person")
         }
     }
-    private func ⓐboutDeveloperPublisherMenu() -> some View {
+    private func ⓜenu() -> some View {
         List {
             Section {
                 Text("Individual")

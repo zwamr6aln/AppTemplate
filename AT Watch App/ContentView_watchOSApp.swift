@@ -6,7 +6,7 @@ struct ContentView_watchOSApp: View {
             List {
                 💁GuideMenu()
             }
-            .navigationTitle(ℹ️appName)
+            .navigationTitle(🧰Info.appName)
         }
     }
 }
@@ -23,11 +23,11 @@ private struct 💁GuideMenu: View {
                             .frame(width: 60, height: 60)
                             .clipShape(Circle())
                         VStack(spacing: 6) {
-                            Text(ℹ️appName)
+                            Text(🧰Info.appName)
                                 .font(.system(.headline))
                                 .tracking(1.5)
                                 .opacity(0.75)
-                            Text(ℹ️appSubTitle)
+                            Text(🧰Info.appSubTitle)
                                 .font(.footnote)
                                 .foregroundStyle(.secondary)
                                 .multilineTextAlignment(.center)
@@ -38,7 +38,7 @@ private struct 💁GuideMenu: View {
                     .padding(.horizontal, 4)
                     .padding(.vertical, 16)
                 }
-                Link(destination: 🔗appStoreProductURL) {
+                Link(destination: 🧰Info.appStoreProductURL) {
                     Label("Open AppStore page", systemImage: "link")
                 }
             }
