@@ -197,6 +197,17 @@ struct 📣ADView: View {
     }
 }
 
+struct 📣ADDescriptionSection: View {
+    var body: some View {
+        Section {
+            Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.")
+                .padding()
+        } header: {
+            Text("Description")
+        }
+    }
+}
+
 struct 📣ADMenuLink: View {
     @EnvironmentObject private var 🛒: 🛒StoreModel
     var body: some View {
@@ -217,12 +228,7 @@ struct 📣ADMenu: View {
     @EnvironmentObject private var 🛒: 🛒StoreModel
     var body: some View {
         List {
-            Section {
-                Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.")
-                    .padding()
-            } header: {
-                Text("Description")
-            }
+            📣ADDescriptionSection()
             🛒IAPSection()
         }
         .navigationTitle("About AD")
@@ -268,11 +274,7 @@ enum 📣MyApp: String, CaseIterable {
     
     var iconImageName: String { "icon/" + self.rawValue }
     
-    static func pickUpAppWithout(_ ⓜySelf: Self) -> Self {
-        📣MyApp.allCases.filter({ $0 != ⓜySelf }).randomElement()!
-    }
+    static func pickUpAppWithout(_ ⓜySelf: Self) -> Self { .allCases.filter({ $0 != ⓜySelf }).randomElement()! }
     
-    var isHealthKitApp: Bool {
-        self == .TapTemperature || self == .TapWeight
-    }
+    var isHealthKitApp: Bool { [Self.TapTemperature, .TapWeight].contains(self) }
 }
