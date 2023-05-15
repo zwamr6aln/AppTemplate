@@ -57,14 +57,14 @@ struct 🛒IAPSection: View {
     var body: some View {
         Section {
             🛒PurchaseView()
-            self.🛒adPreview()
+            self.ⓐdPreview()
         } header: {
             Text("In-App Purchase")
         }
         .headerProminence(.increased)
-        Self.🛒RestoreButton()
+        Self.🅁estoreButton()
     }
-    private func 🛒adPreview() -> some View {
+    private func ⓐdPreview() -> some View {
         HStack(alignment: .bottom) {
             Spacer()
             Image("ADPreview")
@@ -85,7 +85,7 @@ struct 🛒IAPSection: View {
         }
         .padding(24)
     }
-    private struct 🛒RestoreButton: View {
+    private struct 🅁estoreButton: View {
         @EnvironmentObject private var 🛒: 🛒StoreModel
         @State private var 🚩restoringNow = false
         @State private var 🚨showAlert = false
@@ -247,9 +247,7 @@ class 🛒StoreModel: ObservableObject {
             }
         }
         
-        withAnimation {
-            self.🚩purchased = ⓟurchased
-        }
+        withAnimation { self.🚩purchased = ⓟurchased }
     }
     
     var 🎫name: String {

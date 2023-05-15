@@ -238,7 +238,7 @@ enum 📣MyApp: String, CaseIterable {
     case MemorizeWidget
     case LockInNote
     
-    var name: LocalizedStringKey { LocalizedStringKey(self.rawValue) }
+    var name: LocalizedStringKey { .init(self.rawValue) }
     
     var url: URL {
         switch self {
@@ -269,8 +269,7 @@ enum 📣MyApp: String, CaseIterable {
     var iconImageName: String { "icon/" + self.rawValue }
     
     static func pickUpAppWithout(_ ⓜySelf: Self) -> Self {
-        let ⓐpps = 📣MyApp.allCases.filter { $0 != ⓜySelf }
-        return ⓐpps.randomElement()!
+        📣MyApp.allCases.filter({ $0 != ⓜySelf }).randomElement()!
     }
     
     var isHealthKitApp: Bool {
