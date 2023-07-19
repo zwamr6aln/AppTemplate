@@ -4,7 +4,7 @@ struct ContentView: View {
     @EnvironmentObject private var 📱: 📱AppModel
     @EnvironmentObject private var 🛒: 🛒StoreModel
     var body: some View {
-        🗄️NavigationStack {
+        NavigationStack {
             List {
                 Text("Placeholder")
             }

@@ -21,27 +21,20 @@ struct 📣ADView: View {
     @State private var 🕒countdown: Int
     private var targetApp: 📣MyApp
     var body: some View {
-        Group {
-            if #available(iOS 16.0, *) {
-                NavigationStack { self.ⓒontent() }
-                    .presentationDetents([.height(640)])
-            } else {
-                NavigationView { self.ⓒontent() }
-                    .navigationViewStyle(.stack)
+        NavigationStack { self.ⓒontent() }
+            .presentationDetents([.height(640)])
+            .onChange(of: self.scenePhase) {
+                if $0 == .background { self.dismiss() }
             }
-        }
-        .onChange(of: self.scenePhase) {
-            if $0 == .background { self.dismiss() }
-        }
-        .onChange(of: 🛒.🚩purchased) { if $0 { self.🚩disableDismiss = false } }
-        .interactiveDismissDisabled(self.🚩disableDismiss)
-        .onReceive(self.🕒timer) { _ in
-            if self.🕒countdown > 1 {
-                self.🕒countdown -= 1
-            } else {
-                self.🚩disableDismiss = false
+            .onChange(of: 🛒.🚩purchased) { if $0 { self.🚩disableDismiss = false } }
+            .interactiveDismissDisabled(self.🚩disableDismiss)
+            .onReceive(self.🕒timer) { _ in
+                if self.🕒countdown > 1 {
+                    self.🕒countdown -= 1
+                } else {
+                    self.🚩disableDismiss = false
+                }
             }
-        }
     }
     private func ⓒontent() -> some View {
         Group {
