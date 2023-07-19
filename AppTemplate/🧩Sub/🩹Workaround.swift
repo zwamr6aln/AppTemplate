@@ -23,6 +23,7 @@ enum 🩹Workaround {
         //> Attempt to present <_> on <_> (from <_>)
         //> which is already presenting <_UIContextMenuActionsOnlyViewController: _>.
     }
+    
     struct hideTitleBarOnMacCatalyst: ViewModifier {
         func body(content: Content) -> some View {
             content

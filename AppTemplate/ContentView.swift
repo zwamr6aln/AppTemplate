@@ -1,5 +1,4 @@
 import SwiftUI
-import StoreKit
 
 struct ContentView: View {
     @EnvironmentObject private var 📱: 📱AppModel
@@ -11,7 +10,7 @@ struct ContentView: View {
             }
             .navigationTitle("AppTemplate")
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) { 🛠MenuButton() }
+                ToolbarItem(placement: .topBarTrailing) { 🛠MenuButton() }
             }
         }
         .modifier(🪧Sheet())

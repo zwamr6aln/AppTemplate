@@ -32,7 +32,7 @@ private struct 🖼️IconAndName: View {
     var body: some View {
         GeometryReader { 📐 in
             VStack(spacing: 8) {
-                Image("RoundedIcon")
+                Image(.roundedIcon)
                     .resizable()
                     .frame(width: 100, height: 100)
                 VStack(spacing: 6) {
@@ -108,7 +108,7 @@ private struct 🏬AppStoreSection: View {
         Section {
             🔗AppStoreLink()
             Button {
-                let ⓤrl = URL(string: 🧰Info.appStoreProductURL.description + "?action=write-review")!
+                let ⓤrl = URL(string: "\(🧰Info.appStoreProductURL)?action=write-review")!
                 self.openURL(ⓤrl)
             } label: {
                 HStack {
@@ -120,7 +120,7 @@ private struct 🏬AppStoreSection: View {
                 }
             }
         } footer: {
-            Text(🧰Info.appStoreProductURL.description)
+            Text("\(🧰Info.appStoreProductURL)")
         }
     }
 }
@@ -255,7 +255,7 @@ private struct 📓SourceCodeLink: View {
                     }
                 }
             } footer: {
-                Text(🧰Info.webRepositoryURL.description)
+                Text("\(🧰Info.webRepositoryURL)")
             }
             Section {
                 Link(destination: 🧰Info.webMirrorRepositoryURL) {
@@ -271,7 +271,7 @@ private struct 📓SourceCodeLink: View {
                     }
                 }
             } footer: {
-                Text(🧰Info.webMirrorRepositoryURL.description)
+                Text("\(🧰Info.webMirrorRepositoryURL)")
             }
         }
     }
@@ -279,11 +279,11 @@ private struct 📓SourceCodeLink: View {
 
 private struct 🧑‍💻AboutDeveloperPublisherLink: View {
     var body: some View {
-        NavigationLink(destination: self.ⓜenu) {
+        NavigationLink(destination: self.menu) {
             Label("Developer / Publisher", systemImage: "person")
         }
     }
-    private func ⓜenu() -> some View {
+    private func menu() -> some View {
         List {
             Section {
                 Text("Individual")
@@ -317,7 +317,7 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
             }
             Self.🅃imelineSection()
             Section {
-                Image("Developer_Publisher")
+                Image(.developerPublisher)
                     .resizable()
                     .frame(width: 90, height: 90)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -332,7 +332,7 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
         .navigationTitle("Developer / Publisher")
     }
     private struct 🅃imelineSection: View {
-        private static var ⓥalues: [(date: String, description: String)] {
+        private static var values: [(date: String, description: String)] {
             [("2013-04", "Finished from high school in Okayama Prefecture. Entranced into University-of-the-Ryukyus/faculty-of-engineering in Okinawa Prefecture."),
              ("2018-06", "Final year as an undergraduate student. Developed an iOS application(FlipByBlink) as software for the purpose of research experiments."),
              ("2019-01", "Released ebook reader app \"FlipByBlink\" ver 1.0 on AppStore. Special feature is to turn a page by slightly-longish-voluntary-blink."),
@@ -349,7 +349,7 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
         }
         var body: some View {
             Section {
-                ForEach(Self.ⓥalues, id: \.self.date) { ⓥalue in
+                ForEach(Self.values, id: \.self.date) { ⓥalue in
                     HStack {
                         Text(ⓥalue.date)
                             .font(.caption2)
@@ -366,35 +366,35 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
 }
 
 struct 💬PrepareToRequestUserReview: ViewModifier {
-    @Binding private var ⓒheckToRequest: Bool
+    @Binding private var checkToRequest: Bool
     func body(content: Content) -> some View {
         if #available(iOS 16.0, *) {
-            content.modifier(Self.🄼odifier(self.$ⓒheckToRequest))
+            content.modifier(Self.🄼odifier(self.$checkToRequest))
         } else {
             content
         }
     }
     init(_ checkToRequest: Binding<Bool>) {
-        self._ⓒheckToRequest = checkToRequest
+        self._checkToRequest = checkToRequest
     }
     @available(iOS 16, *)
     private struct 🄼odifier: ViewModifier {
         @Environment(\.requestReview) private var requestReview
-        @AppStorage("launchCount") private var ⓛaunchCount: Int = 0
-        @Binding private var ⓒheckToRequest: Bool
+        @AppStorage("launchCount") private var launchCount: Int = 0
+        @Binding private var checkToRequest: Bool
         func body(content: Content) -> some View {
             content
-                .task { self.ⓛaunchCount += 1 }
-                .onChange(of: self.ⓒheckToRequest) {
+                .task { self.launchCount += 1 }
+                .onChange(of: self.checkToRequest) {
                     if $0 == true {
-                        if [10, 30, 50, 70, 90].contains(self.ⓛaunchCount) {
+                        if [10, 30, 50, 70, 90].contains(self.launchCount) {
                             self.requestReview()
                         }
                     }
                 }
         }
         init(_ checkToRequest: Binding<Bool>) {
-            self._ⓒheckToRequest = checkToRequest
+            self._checkToRequest = checkToRequest
         }
     }
 }

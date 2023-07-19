@@ -67,7 +67,7 @@ struct 🛒IAPSection: View {
     private func ⓐdPreview() -> some View {
         HStack(alignment: .bottom) {
             Spacer()
-            Image("ADPreview")
+            Image(.adPreview)
                 .resizable()
                 .scaledToFit()
                 .frame(maxHeight: 300)

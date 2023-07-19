@@ -18,7 +18,7 @@ private struct 💁GuideMenu: View {
                 ZStack {
                     Color.clear
                     VStack(spacing: 8) {
-                        Image("IconImage")
+                        Image(.icon)
                             .resizable()
                             .frame(width: 60, height: 60)
                             .clipShape(Circle())

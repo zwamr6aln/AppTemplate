@@ -5,10 +5,10 @@ import SwiftUI
 //.modifier(💬PrepareToRequestUserReview(self.$checkToRequestReview))
 //self.checkToRequestReview = true
 struct 💬RequestUserReview: ViewModifier {//アプリ毎に個別に実装する
-    @State private var ⓒheckToRequest: Bool = false
+    @State private var checkToRequest: Bool = false
     func body(content: Content) -> some View {
         content
-            .modifier(💬PrepareToRequestUserReview(self.$ⓒheckToRequest))
-            .onAppear { self.ⓒheckToRequest = true }
+            .modifier(💬PrepareToRequestUserReview(self.$checkToRequest))
+            .onAppear { self.checkToRequest = true }
     }
 }

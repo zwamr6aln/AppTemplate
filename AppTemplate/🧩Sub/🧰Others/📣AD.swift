@@ -19,7 +19,7 @@ struct 📣ADView: View {
     @State private var 🚩disableDismiss: Bool = true
     private let 🕒timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
     @State private var 🕒countdown: Int
-    private var ⓐpp: 📣MyApp
+    private var targetApp: 📣MyApp
     var body: some View {
         Group {
             if #available(iOS 16.0, *) {
@@ -95,8 +95,8 @@ struct 📣ADView: View {
         .padding()
     }
     private func ⓜockImage() -> some View {
-        Link(destination: self.ⓐpp.url) {
-            Image(self.ⓐpp.mockImageName)
+        Link(destination: self.targetApp.url) {
+            Image(self.targetApp.mockImageName)
                 .resizable()
                 .scaledToFit()
         }
@@ -104,13 +104,13 @@ struct 📣ADView: View {
         .disabled(🛒.🚩purchased)
     }
     private func ⓘcon() -> some View {
-        Link(destination: self.ⓐpp.url) {
+        Link(destination: self.targetApp.url) {
             HStack(spacing: 16) {
-                Image(self.ⓐpp.iconImageName)
+                Image(self.targetApp.iconImageName)
                     .resizable()
                     .frame(width: 60, height: 60)
-                if self.ⓐpp.isHealthKitApp {
-                    Image("apple_health_badge")
+                if self.targetApp.isHealthKitApp {
+                    Image(.appleHealthBadge)
                 }
             }
         }
@@ -118,8 +118,8 @@ struct 📣ADView: View {
         .disabled(🛒.🚩purchased)
     }
     private func ⓝame() -> some View {
-        Link(destination: self.ⓐpp.url) {
-            Text(self.ⓐpp.name)
+        Link(destination: self.targetApp.url) {
+            Text(self.targetApp.name)
                 .font(.headline)
         }
         .buttonStyle(.plain)
@@ -127,15 +127,15 @@ struct 📣ADView: View {
         .disabled(🛒.🚩purchased)
     }
     private func ⓓescription() -> some View {
-        Text(self.ⓐpp.description)
+        Text(self.targetApp.description)
             .font(.subheadline)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 8)
     }
     private func ⓐppStoreBadge() -> some View {
-        Link(destination: self.ⓐpp.url) {
+        Link(destination: self.targetApp.url) {
             HStack(spacing: 6) {
-                Image("appstore_badge")
+                Image(.appstoreBadge)
                 Image(systemName: "hand.point.up.left")
             }
             .foregroundColor(.primary)
@@ -192,7 +192,7 @@ struct 📣ADView: View {
         }
     }
     init(_ app: 📣MyApp, second: Int) {
-        self.ⓐpp = app
+        self.targetApp = app
         self._🕒countdown = State(initialValue: second)
     }
 }
@@ -248,25 +248,25 @@ enum 📣MyApp: String, CaseIterable {
     
     var url: URL {
         switch self {
-            case .FlipByBlink: return URL(string: "https://apps.apple.com/app/id1444571751")!
-            case .FadeInAlarm: return URL(string: "https://apps.apple.com/app/id1465336070")!
-            case .PlainShogiBoard: return URL(string: "https://apps.apple.com/app/id1620268476")!
-            case .TapWeight: return URL(string: "https://apps.apple.com/app/id1624159721")!
-            case .TapTemperature: return URL(string: "https://apps.apple.com/app/id1626760566")!
-            case .MemorizeWidget: return URL(string: "https://apps.apple.com/app/id1644276262")!
-            case .LockInNote: return URL(string: "https://apps.apple.com/app/id1644879340")!
+            case .FlipByBlink: URL(string: "https://apps.apple.com/app/id1444571751")!
+            case .FadeInAlarm: URL(string: "https://apps.apple.com/app/id1465336070")!
+            case .PlainShogiBoard: URL(string: "https://apps.apple.com/app/id1620268476")!
+            case .TapWeight: URL(string: "https://apps.apple.com/app/id1624159721")!
+            case .TapTemperature: URL(string: "https://apps.apple.com/app/id1626760566")!
+            case .MemorizeWidget: URL(string: "https://apps.apple.com/app/id1644276262")!
+            case .LockInNote: URL(string: "https://apps.apple.com/app/id1644879340")!
         }
     }
     
     var description: LocalizedStringKey {
         switch self {
-            case .FlipByBlink: return "E-book reader that can turn a page with slightly longish voluntary blink."
-            case .FadeInAlarm: return "Alarm clock with taking a long time from small volume to max volume."
-            case .PlainShogiBoard: return "Simplest Shogi board App. Supported SharePlay."
-            case .TapWeight: return "Register weight data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)."
-            case .TapTemperature: return "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)."
-            case .MemorizeWidget: return "Flashcard on widget. Memorize a note in everyday life."
-            case .LockInNote: return "Notes widget on lock screen."
+            case .FlipByBlink: "E-book reader that can turn a page with slightly longish voluntary blink."
+            case .FadeInAlarm: "Alarm clock with taking a long time from small volume to max volume."
+            case .PlainShogiBoard: "Simplest Shogi board App. Supported SharePlay."
+            case .TapWeight: "Register weight data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)."
+            case .TapTemperature: "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)."
+            case .MemorizeWidget: "Flashcard on widget. Memorize a note in everyday life."
+            case .LockInNote: "Notes widget on lock screen."
         }
     }
     
