@@ -47,10 +47,10 @@ struct 📣ADView: View {
         .modifier(Self.ⓟurchasedEffect())
         .navigationTitle("AD")
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
+            ToolbarItem(placement: .topBarLeading) {
                 self.ⓓismissButton()
             }
-            ToolbarItem(placement: .navigationBarTrailing) {
+            ToolbarItem(placement: .topBarTrailing) {
                 self.ⓐdMenuLink()
             }
         }
