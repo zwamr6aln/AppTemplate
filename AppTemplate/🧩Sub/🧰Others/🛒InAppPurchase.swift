@@ -22,7 +22,7 @@ struct 🛒PurchaseView: View {
                     do {
                         self.buyingInProgress = true
                         try await 🛒.purchase()
-                    } catch 🛒StoreModel.🚨Error.failedVerification {
+                    } catch 🛒Error.failedVerification {
                         self.errorMessage = "Your purchase could not be verified by the App Store."
                         self.showError = true
                     } catch {
@@ -225,7 +225,7 @@ class 🛒StoreModel: ObservableObject {
         switch ⓡesult {
             case .unverified:
                 //StoreKit parses the JWS, but it fails verification.
-                throw Self.🚨Error.failedVerification
+                throw 🛒Error.failedVerification
             case .verified(let ⓢafe):
                 //The result is verified. Return the unwrapped value.
                 return ⓢafe
@@ -258,10 +258,10 @@ class 🛒StoreModel: ObservableObject {
     var productPrice: String {
         self.product?.displayPrice ?? "…"
     }
-    
-    enum 🚨Error: Error {
-        case failedVerification
-    }
+}
+
+private enum 🛒Error: Error {
+    case failedVerification
 }
 
 
