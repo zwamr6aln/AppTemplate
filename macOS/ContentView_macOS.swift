@@ -29,9 +29,11 @@ struct ContentView: View {
                     Text("Text")
                 }
             }
+        } content: {
+            Text("Content")
+                .navigationTitle("AppTitle")
         } detail: {
             Text("Detail")
-                .navigationTitle("AppTitle")
         }
     }
 }
@@ -45,18 +47,22 @@ struct TrialView: View {
         List {
             Button("Show sheet") { self.showSheet = true }
                 .sheet(isPresented: self.$showSheet) {
-                    Text("Placeholder")
-                        .padding()
+                    Text("Placeholder").padding()
                 }
             Button("Show pop over") { self.showPopOver = true }
                 .popover(isPresented: self.$showPopOver) {
-                    Text("Placeholder")
-                        .padding()
+                    Text("Placeholder").padding()
                 }
             Button("Show alert") { self.showAlert = true }
-                .alert("alert", isPresented: self.$showAlert) { EmptyView() }
+                .alert("alert", isPresented: self.$showAlert) {}
             Button("Show CD") { self.showCD = true }
-                .confirmationDialog("confirmationDialog", isPresented: self.$showCD) { EmptyView() }
+                .confirmationDialog("confirmationDialog", isPresented: self.$showCD) {}
+            LabeledContent("titleKey", value: "value")
+            NavigationLink {
+                Text("\(Date.now)")
+            } label: {
+                Label("NavigationLink", systemImage: "1.circle")
+            }
         }
         .toolbar {
             ShareLink(item: "a")
