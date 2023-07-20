@@ -16,45 +16,41 @@ struct 📣ADView: View {
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.verticalSizeClass) private var verticalSizeClass
     @Environment(\.dismiss) private var dismiss
-    @State private var 🚩disableDismiss: Bool = true
-    private let 🕒timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
-    @State private var 🕒countdown: Int
+    @State private var disableDismiss: Bool = true
+    private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
+    @State private var countdown: Int
     private var targetApp: 📣MyApp
+    @State private var showADMenu: Bool = false
     var body: some View {
         NavigationStack { self.ⓒontent() }
             .presentationDetents([.height(640)])
             .onChange(of: self.scenePhase) {
                 if $0 == .background { self.dismiss() }
             }
-            .onChange(of: 🛒.🚩purchased) { if $0 { self.🚩disableDismiss = false } }
-            .interactiveDismissDisabled(self.🚩disableDismiss)
-            .onReceive(self.🕒timer) { _ in
-                if self.🕒countdown > 1 {
-                    self.🕒countdown -= 1
+            .onChange(of: 🛒.🚩purchased) { if $0 { self.disableDismiss = false } }
+            .interactiveDismissDisabled(self.disableDismiss)
+            .onReceive(self.timer) { _ in
+                if self.countdown > 1 {
+                    self.countdown -= 1
                 } else {
-                    self.🚩disableDismiss = false
+                    self.disableDismiss = false
                 }
             }
+            .overlay(alignment: .topLeading) { self.ⓓismissButton() }
     }
     private func ⓒontent() -> some View {
         Group {
-            if self.verticalSizeClass == .regular {
-                self.ⓥerticalLayout()
-            } else {
+            if self.verticalSizeClass == .compact {
                 self.ⓗorizontalLayout()
+            } else {
+                self.ⓥerticalLayout()
             }
         }
-        .modifier(Self.ⓟurchasedEffect())
+        .modifier(Self.🄿urchasedEffect())
         .navigationTitle("AD")
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                self.ⓓismissButton()
-            }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                self.ⓐdMenuLink()
-            }
-        }
+        .toolbar { self.ⓐdMenuLink() }
         .navigationBarTitleDisplayMode(.inline)
+        .navigationDestination(isPresented: self.$showADMenu) { 📣ADMenu() }
     }
     private func ⓥerticalLayout() -> some View {
         VStack(spacing: 16) {
@@ -137,9 +133,8 @@ struct 📣ADView: View {
         .disabled(🛒.🚩purchased)
     }
     private func ⓐdMenuLink() -> some View {
-        NavigationLink {
-            📣ADMenu()
-                .navigationBarTitleDisplayMode(.large)
+        Button {
+            self.showADMenu = true
         } label: {
             Image(systemName: "questionmark.circle")
         }
@@ -147,24 +142,32 @@ struct 📣ADView: View {
         .accessibilityLabel("About AD")
     }
     private func ⓓismissButton() -> some View {
-        Button {
-            self.dismiss()
-            UIImpactFeedbackGenerator(style: .light).impactOccurred()
-        } label: {
-            if self.🚩disableDismiss {
-                Image(systemName: "\(self.🕒countdown).circle")
-            } else {
-                Image(systemName: "xmark.circle.fill")
-                    .fontWeight(.medium)
+        Group {
+            if !self.showADMenu {
+                if self.disableDismiss {
+                    Image(systemName: "\(self.countdown).circle")
+                        .foregroundStyle(.tertiary)
+                } else {
+                    Button {
+                        self.dismiss()
+                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .fontWeight(.medium)
+                    }
+                    .keyboardShortcut(.cancelAction)
+                    .tint(.primary)
+                    .accessibilityLabel("Dismiss")
+                }
             }
         }
-        .keyboardShortcut(.cancelAction)
-        .tint(self.🚩disableDismiss ? .tertiary : .primary)
-        .disabled(self.🚩disableDismiss)
-        .animation(.default, value: self.🚩disableDismiss)
-        .accessibilityLabel("Dismiss")
+        .font(.title3)
+        .padding(.top, 11)
+        .padding(.leading, 18)
+        .animation(.default, value: self.disableDismiss)
+        .animation(.default, value: self.showADMenu)
     }
-    private struct ⓟurchasedEffect: ViewModifier {
+    private struct 🄿urchasedEffect: ViewModifier {
         @EnvironmentObject private var 🛒: 🛒StoreModel
         func body(content: Content) -> some View {
             if 🛒.🚩purchased {
@@ -186,7 +189,7 @@ struct 📣ADView: View {
     }
     init(_ app: 📣MyApp, second: Int) {
         self.targetApp = app
-        self._🕒countdown = State(initialValue: second)
+        self._countdown = State(initialValue: second)
     }
 }
 
@@ -225,6 +228,7 @@ struct 📣ADMenu: View {
             🛒IAPSection()
         }
         .navigationTitle("About AD")
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 
