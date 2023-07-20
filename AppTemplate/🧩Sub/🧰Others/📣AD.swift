@@ -47,10 +47,10 @@ struct 📣ADView: View {
         .modifier(Self.ⓟurchasedEffect())
         .navigationTitle("AD")
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
+            ToolbarItem(placement: .navigationBarLeading) {
                 self.ⓓismissButton()
             }
-            ToolbarItem(placement: .topBarTrailing) {
+            ToolbarItem(placement: .navigationBarTrailing) {
                 self.ⓐdMenuLink()
             }
         }
@@ -142,8 +142,8 @@ struct 📣ADView: View {
                 .navigationBarTitleDisplayMode(.large)
         } label: {
             Image(systemName: "questionmark.circle")
-                .foregroundColor(.primary)
         }
+        .tint(.primary)
         .accessibilityLabel("About AD")
     }
     private func ⓓismissButton() -> some View {
@@ -152,14 +152,14 @@ struct 📣ADView: View {
             UIImpactFeedbackGenerator(style: .light).impactOccurred()
         } label: {
             if self.🚩disableDismiss {
-                Image(systemName: "\(self.🕒countdown.description).circle")
+                Image(systemName: "\(self.🕒countdown).circle")
             } else {
                 Image(systemName: "xmark.circle.fill")
-                    .font(.body.weight(.medium))
+                    .fontWeight(.medium)
             }
         }
         .keyboardShortcut(.cancelAction)
-        .foregroundStyle(self.🚩disableDismiss ? .tertiary : .primary)
+        .tint(self.🚩disableDismiss ? .tertiary : .primary)
         .disabled(self.🚩disableDismiss)
         .animation(.default, value: self.🚩disableDismiss)
         .accessibilityLabel("Dismiss")

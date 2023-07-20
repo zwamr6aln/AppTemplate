@@ -7,9 +7,11 @@ struct 🪧Sheet: ViewModifier {
         content
             .sheet(item: $📱.showSheet) {
                 switch $0 {
-                    case .AD: 📣ADContent()
                     case .Menu: 🛠AppMenu()
                     case .Placeholder: Text("Placeholder")
+                    case .AD:
+                        📣ADContent()
+                            .environmentObject(🛒)
                 }
             }
             .onAppear {
@@ -17,7 +19,7 @@ struct 🪧Sheet: ViewModifier {
             }
     }
     enum Source: Identifiable {
-        case AD, Menu, Placeholder
+        case Menu, Placeholder, AD
         var id: Self { self }
     }
 }

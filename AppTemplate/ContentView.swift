@@ -10,7 +10,9 @@ struct ContentView: View {
             }
             .navigationTitle("AppTemplate")
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) { 🛠MenuButton() }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    🛠MenuButton()
+                }
             }
         }
         .modifier(🪧Sheet())
