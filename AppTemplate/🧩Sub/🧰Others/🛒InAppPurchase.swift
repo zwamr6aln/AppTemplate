@@ -4,9 +4,9 @@ import StoreKit
 //MARK: ======== View ========
 struct 🛒PurchaseView: View {
     @EnvironmentObject private var 🛒: 🛒StoreModel
-    @State private var 🚩buyingNow = false
-    @State private var 🚨showError = false
-    @State private var 🚨errorMessage = ""
+    @State private var buyingInProgress = false
+    @State private var showError = false
+    @State private var errorMessage = ""
     var body: some View {
         HStack {
             Label(🛒.🎫name, systemImage: "cart")
@@ -20,28 +20,28 @@ struct 🛒PurchaseView: View {
             Button(🛒.🎫price) {
                 Task {
                     do {
-                        self.🚩buyingNow = true
+                        self.buyingInProgress = true
                         try await 🛒.👆purchase()
-                    } catch 🚨StoreError.failedVerification {
-                        self.🚨errorMessage = "Your purchase could not be verified by the App Store."
-                        self.🚨showError = true
+                    } catch 🛒StoreModel.🚨Error.failedVerification {
+                        self.errorMessage = "Your purchase could not be verified by the App Store."
+                        self.showError = true
                     } catch {
                         print("Failed purchase: \(error)")
-                        self.🚨errorMessage = error.localizedDescription
-                        self.🚨showError = true
+                        self.errorMessage = error.localizedDescription
+                        self.showError = true
                     }
-                    self.🚩buyingNow = false
+                    self.buyingInProgress = false
                 }
             }
             .accessibilityLabel("Buy")
-            .disabled(self.🚩buyingNow)
+            .disabled(self.buyingInProgress)
             .buttonStyle(.borderedProminent)
             .overlay {
-                if self.🚩buyingNow { ProgressView() }
+                if self.buyingInProgress { ProgressView() }
             }
-            .alert(isPresented: self.$🚨showError) {
+            .alert(isPresented: self.$showError) {
                 Alert(title: Text("Error"),
-                      message: Text(self.🚨errorMessage),
+                      message: Text(self.errorMessage),
                       dismissButton: .default(Text("OK")))
             }
         }
@@ -57,14 +57,14 @@ struct 🛒IAPSection: View {
     var body: some View {
         Section {
             🛒PurchaseView()
-            self.ⓐdPreview()
+            self.adPreview()
         } header: {
             Text("In-App Purchase")
         }
         .headerProminence(.increased)
-        Self.🅁estoreButton()
+        Self.RestoreButton()
     }
-    private func ⓐdPreview() -> some View {
+    private func adPreview() -> some View {
         HStack(alignment: .bottom) {
             Spacer()
             Image(.adPreview)
@@ -85,28 +85,28 @@ struct 🛒IAPSection: View {
         }
         .padding(24)
     }
-    private struct 🅁estoreButton: View {
+    private struct RestoreButton: View {
         @EnvironmentObject private var 🛒: 🛒StoreModel
-        @State private var 🚩restoringNow = false
-        @State private var 🚨showAlert = false
-        @State private var 🚨syncSuccess = false
-        @State private var 🚨message = ""
+        @State private var restoringInProgress = false
+        @State private var showAlert = false
+        @State private var syncSuccess = false
+        @State private var alertMessage = ""
         var body: some View {
             Section {
                 Button {
                     Task {
                         do {
-                            self.🚩restoringNow = true
+                            self.restoringInProgress = true
                             try await AppStore.sync()
-                            self.🚨syncSuccess = true
-                            self.🚨message = "Restored transactions"
+                            self.syncSuccess = true
+                            self.alertMessage = "Restored transactions"
                         } catch {
                             print("Failed sync: \(error)")
-                            self.🚨syncSuccess = false
-                            self.🚨message = error.localizedDescription
+                            self.syncSuccess = false
+                            self.alertMessage = error.localizedDescription
                         }
-                        self.🚨showAlert = true
-                        self.🚩restoringNow = false
+                        self.showAlert = true
+                        self.restoringInProgress = false
                     }
                 } label: {
                     HStack {
@@ -114,16 +114,16 @@ struct 🛒IAPSection: View {
                             .font(.footnote)
                             .foregroundColor(🛒.🚩unconnected ? .secondary : nil)
                             .grayscale(🛒.🚩purchased ? 1 : 0)
-                        if self.🚩restoringNow {
+                        if self.restoringInProgress {
                             Spacer()
                             ProgressView()
                         }
                     }
                 }
-                .disabled(self.🚩restoringNow)
-                .alert(isPresented: self.$🚨showAlert) {
-                    Alert(title: Text(self.🚨syncSuccess ? "Done" : "Error"),
-                          message: Text(LocalizedStringKey(self.🚨message)),
+                .disabled(self.restoringInProgress)
+                .alert(isPresented: self.$showAlert) {
+                    Alert(title: Text(self.syncSuccess ? "Done" : "Error"),
+                          message: Text(LocalizedStringKey(self.alertMessage)),
                           dismissButton: .default(Text("OK")))
                 }
             }
@@ -224,7 +224,7 @@ class 🛒StoreModel: ObservableObject {
         switch 📦result {
             case .unverified:
                 //StoreKit parses the JWS, but it fails verification.
-                throw 🚨StoreError.failedVerification
+                throw Self.🚨Error.failedVerification
             case .verified(let 📦):
                 //The result is verified. Return the unwrapped value.
                 return 📦
@@ -259,10 +259,10 @@ class 🛒StoreModel: ObservableObject {
         guard let 🎫 = self.🎫product else { return "…" }
         return 🎫.displayPrice
     }
-}
-
-public enum 🚨StoreError: Error {
-    case failedVerification
+    
+    enum 🚨Error: Error {
+        case failedVerification
+    }
 }
 
 
