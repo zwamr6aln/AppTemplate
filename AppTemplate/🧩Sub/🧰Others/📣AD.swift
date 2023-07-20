@@ -36,7 +36,20 @@ struct 📣ADView: View {
                     self.disableDismiss = false
                 }
             }
-            .overlay(alignment: .topLeading) { self.ⓓismissButton() }
+            .overlay(alignment: .topLeading) {
+                HStack {
+                    if !self.showADMenu {
+                        self.ⓓismissButton()
+                        Spacer()
+                        self.ⓐdMenuLink()
+                    }
+                }
+                .font(.title3)
+                .padding(.top, 12)
+                .padding(.horizontal, 18)
+                .animation(.default, value: self.disableDismiss)
+                .animation(.default, value: self.showADMenu)
+            }
     }
     private func ⓒontent() -> some View {
         Group {
@@ -48,7 +61,6 @@ struct 📣ADView: View {
         }
         .modifier(Self.🄿urchasedEffect())
         .navigationTitle("AD")
-        .toolbar { self.ⓐdMenuLink() }
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: self.$showADMenu) { 📣ADMenu() }
     }
@@ -143,29 +155,22 @@ struct 📣ADView: View {
     }
     private func ⓓismissButton() -> some View {
         Group {
-            if !self.showADMenu {
-                if self.disableDismiss {
-                    Image(systemName: "\(self.countdown).circle")
-                        .foregroundStyle(.tertiary)
-                } else {
-                    Button {
-                        self.dismiss()
-                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    } label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .fontWeight(.medium)
-                    }
-                    .keyboardShortcut(.cancelAction)
-                    .tint(.primary)
-                    .accessibilityLabel("Dismiss")
+            if self.disableDismiss {
+                Image(systemName: "\(self.countdown).circle")
+                    .foregroundStyle(.tertiary)
+            } else {
+                Button {
+                    self.dismiss()
+                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .fontWeight(.medium)
                 }
+                .keyboardShortcut(.cancelAction)
+                .tint(.primary)
+                .accessibilityLabel("Dismiss")
             }
         }
-        .font(.title3)
-        .padding(.top, 11)
-        .padding(.leading, 18)
-        .animation(.default, value: self.disableDismiss)
-        .animation(.default, value: self.showADMenu)
     }
     private struct 🄿urchasedEffect: ViewModifier {
         @EnvironmentObject private var 🛒: 🛒StoreModel
