@@ -1,10 +1,10 @@
 import SwiftUI
 
 @main
-struct AT_Watch_App: App {
+struct App_watchOS: App {
     var body: some Scene {
         WindowGroup {
-            ContentView_watchOSApp()
+            ContentView()
         }
     }
 }

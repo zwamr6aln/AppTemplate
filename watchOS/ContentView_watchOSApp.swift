@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView_watchOSApp: View {
+struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {

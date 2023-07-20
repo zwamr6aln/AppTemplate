@@ -15,16 +15,16 @@
 		1299C37B288CB8C30086522B /* 🌏AppStoreDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C37D288CB8C30086522B /* 🌏AppStoreDescription.strings */; };
 		1299C386288D12760086522B /* 🌏VersionDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C388288D12760086522B /* 🌏VersionDescription.strings */; };
 		12DDDDAD288BF2E40055A073 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */; };
-		12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
-		12E4A74A285027F600B2380B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
+		12E4A748285027F600B2380B /* App_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* App_iOS.swift */; };
+		12E4A74A285027F600B2380B /* ContentView_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView_iOS.swift */; };
 		12E4A74C285027F700B2380B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74B285027F700B2380B /* Assets.xcassets */; };
 		12E4A74F285027F700B2380B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74E285027F700B2380B /* Preview Assets.xcassets */; };
 		12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
 		12E4A76328502C9F00B2380B /* ℹ️AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
 		12E4A76B28502EDE00B2380B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
 		12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
-		F519CB5D29AAFF5800ACD6B6 /* AppTemplateApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* AppTemplateApp.swift */; };
-		F519CB5E29AAFF5800ACD6B6 /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView.swift */; };
+		F519CB5D29AAFF5800ACD6B6 /* App_iOS.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* App_iOS.swift */; };
+		F519CB5E29AAFF5800ACD6B6 /* ContentView_iOS.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView_iOS.swift */; };
 		F519CB5F29AAFF5800ACD6B6 /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
 		F519CB6029AAFF5800ACD6B6 /* 🧰MetaInfo.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaInfo.swift */; };
 		F519CB6129AAFF5800ACD6B6 /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
@@ -37,7 +37,7 @@
 		F5514EF729CD7B4E00FCA7EA /* ﹀DismissButton.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5514EF229CD743E00FCA7EA /* ﹀DismissButton.swift */; };
 		F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
 		F567E38829F27E180026E12D /* 🩹Workaround.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E38729F27E180026E12D /* 🩹Workaround.swift */; };
-		F567E39029F2A09A0026E12D /* AT Watch App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E38F29F2A09A0026E12D /* AT Watch App.swift */; };
+		F567E39029F2A09A0026E12D /* App_watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E38F29F2A09A0026E12D /* App_watchOS.swift */; };
 		F567E39229F2A09A0026E12D /* ContentView_watchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E39129F2A09A0026E12D /* ContentView_watchOSApp.swift */; };
 		F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567E39329F2A09C0026E12D /* Assets.xcassets */; };
 		F567E39A29F2A09C0026E12D /* AT Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F567E38D29F2A09A0026E12D /* AT Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -46,7 +46,7 @@
 		F567E3A229F2A3030026E12D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
 		F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F592B4422982259E00D9E882 /* 🧰MetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaInfo.swift */; };
-		F5A8805B2A693B0C00D534EC /* macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A8805A2A693B0C00D534EC /* macOSApp.swift */; };
+		F5A8805B2A693B0C00D534EC /* App_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A8805A2A693B0C00D534EC /* App_macOS.swift */; };
 		F5A8805D2A693B0C00D534EC /* ContentView_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */; };
 		F5A8805F2A693B0F00D534EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A8805E2A693B0F00D534EC /* Assets.xcassets */; };
 		F5F2272129FE6B1900891C69 /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
@@ -83,8 +83,8 @@
 				F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */,
 				F5514EF629CD7B4E00FCA7EA /* 🛠AppMenu.swift in CopyFiles */,
 				F5514EF729CD7B4E00FCA7EA /* ﹀DismissButton.swift in CopyFiles */,
-				F519CB5D29AAFF5800ACD6B6 /* AppTemplateApp.swift in CopyFiles */,
-				F519CB5E29AAFF5800ACD6B6 /* ContentView.swift in CopyFiles */,
+				F519CB5D29AAFF5800ACD6B6 /* App_iOS.swift in CopyFiles */,
+				F519CB5E29AAFF5800ACD6B6 /* ContentView_iOS.swift in CopyFiles */,
 				F519CB5F29AAFF5800ACD6B6 /* 📱AppModel.swift in CopyFiles */,
 				F519CB6029AAFF5800ACD6B6 /* 🧰MetaInfo.swift in CopyFiles */,
 				F519CB6129AAFF5800ACD6B6 /* ℹ️AboutApp.swift in CopyFiles */,
@@ -118,8 +118,8 @@
 		1299C389288D127A0086522B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = "ja.lproj/🌏VersionDescription.strings"; sourceTree = "<group>"; };
 		12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		12E4A744285027F600B2380B /* AppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		12E4A747285027F600B2380B /* AppTemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTemplateApp.swift; sourceTree = "<group>"; };
-		12E4A749285027F600B2380B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		12E4A747285027F600B2380B /* App_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_iOS.swift; sourceTree = "<group>"; };
+		12E4A749285027F600B2380B /* ContentView_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_iOS.swift; sourceTree = "<group>"; };
 		12E4A74B285027F700B2380B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12E4A74E285027F700B2380B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12E4A755285028C800B2380B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -135,13 +135,13 @@
 		F567E36929F278B10026E12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F567E38729F27E180026E12D /* 🩹Workaround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🩹Workaround.swift"; sourceTree = "<group>"; };
 		F567E38D29F2A09A0026E12D /* AT Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AT Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F567E38F29F2A09A0026E12D /* AT Watch App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AT Watch App.swift"; sourceTree = "<group>"; };
+		F567E38F29F2A09A0026E12D /* App_watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_watchOS.swift; sourceTree = "<group>"; };
 		F567E39129F2A09A0026E12D /* ContentView_watchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_watchOSApp.swift; sourceTree = "<group>"; };
 		F567E39329F2A09C0026E12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F57B37F129726CE300F0BB91 /* 📣ADContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADContent.swift"; sourceTree = "<group>"; };
 		F592B4412982259E00D9E882 /* 🧰MetaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧰MetaInfo.swift"; sourceTree = "<group>"; };
 		F5A880582A693B0C00D534EC /* macOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5A8805A2A693B0C00D534EC /* macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOSApp.swift; sourceTree = "<group>"; };
+		F5A8805A2A693B0C00D534EC /* App_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_macOS.swift; sourceTree = "<group>"; };
 		F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_macOS.swift; sourceTree = "<group>"; };
 		F5A8805E2A693B0F00D534EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A880632A693B0F00D534EC /* macOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOSApp.entitlements; sourceTree = "<group>"; };
@@ -204,9 +204,9 @@
 			children = (
 				12E4A755285028C800B2380B /* README.md */,
 				F549E849290BC3C300636271 /* memo.md */,
-				12E4A746285027F600B2380B /* AppTemplate */,
-				F567E38E29F2A09A0026E12D /* AT Watch App */,
-				F5A880592A693B0C00D534EC /* macOSApp */,
+				12E4A746285027F600B2380B /* iOS */,
+				F567E38E29F2A09A0026E12D /* watchOS */,
+				F5A880592A693B0C00D534EC /* macOS */,
 				12E4A745285027F600B2380B /* Products */,
 				12724D6E2862DEB0008471AB /* Frameworks */,
 			);
@@ -222,17 +222,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		12E4A746285027F600B2380B /* AppTemplate */ = {
+		12E4A746285027F600B2380B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				12E4A747285027F600B2380B /* AppTemplateApp.swift */,
-				12E4A749285027F600B2380B /* ContentView.swift */,
+				12E4A747285027F600B2380B /* App_iOS.swift */,
+				12E4A749285027F600B2380B /* ContentView_iOS.swift */,
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
 				127ECB25286149B400CB1BC3 /* 🧩Sub */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
 			);
-			path = AppTemplate;
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		12E4A74D285027F700B2380B /* Preview Content */ = {
@@ -266,25 +266,25 @@
 			path = "🌏Localization";
 			sourceTree = "<group>";
 		};
-		F567E38E29F2A09A0026E12D /* AT Watch App */ = {
+		F567E38E29F2A09A0026E12D /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				F567E38F29F2A09A0026E12D /* AT Watch App.swift */,
+				F567E38F29F2A09A0026E12D /* App_watchOS.swift */,
 				F567E39129F2A09A0026E12D /* ContentView_watchOSApp.swift */,
 				F567E39329F2A09C0026E12D /* Assets.xcassets */,
 			);
-			path = "AT Watch App";
+			path = watchOS;
 			sourceTree = "<group>";
 		};
-		F5A880592A693B0C00D534EC /* macOSApp */ = {
+		F5A880592A693B0C00D534EC /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				F5A8805A2A693B0C00D534EC /* macOSApp.swift */,
+				F5A8805A2A693B0C00D534EC /* App_macOS.swift */,
 				F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */,
 				F5A8805E2A693B0F00D534EC /* Assets.xcassets */,
 				F5A880632A693B0F00D534EC /* macOSApp.entitlements */,
 			);
-			path = macOSApp;
+			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +432,7 @@
 				F5514EF329CD743E00FCA7EA /* ﹀DismissButton.swift in Sources */,
 				F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */,
 				F567E38829F27E180026E12D /* 🩹Workaround.swift in Sources */,
-				12E4A74A285027F600B2380B /* ContentView.swift in Sources */,
+				12E4A74A285027F600B2380B /* ContentView_iOS.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
 				F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */,
 				F592B4422982259E00D9E882 /* 🧰MetaInfo.swift in Sources */,
@@ -440,7 +440,7 @@
 				12E4A76328502C9F00B2380B /* ℹ️AboutApp.swift in Sources */,
 				F5F2272129FE6B1900891C69 /* 🪧Sheet.swift in Sources */,
 				127ECB2C28614B8B00CB1BC3 /* 📣AD.swift in Sources */,
-				12E4A748285027F600B2380B /* AppTemplateApp.swift in Sources */,
+				12E4A748285027F600B2380B /* App_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +450,7 @@
 			files = (
 				F567E39229F2A09A0026E12D /* ContentView_watchOSApp.swift in Sources */,
 				F567E39F29F2A17E0026E12D /* 🧰MetaInfo.swift in Sources */,
-				F567E39029F2A09A0026E12D /* AT Watch App.swift in Sources */,
+				F567E39029F2A09A0026E12D /* App_watchOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A8805D2A693B0C00D534EC /* ContentView_macOS.swift in Sources */,
-				F5A8805B2A693B0C00D534EC /* macOSApp.swift in Sources */,
+				F5A8805B2A693B0C00D534EC /* App_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,14 +640,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AppTemplate/AppTemplate.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iOS/AppTemplate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4.0.1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppTemplate/🧩Sub/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "AppTemplate/🧩Sub/Info.plist";
+				INFOPLIST_FILE = "iOS/🧩Sub/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -677,14 +677,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AppTemplate/AppTemplate.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iOS/AppTemplate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4.0.1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppTemplate/🧩Sub/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "AppTemplate/🧩Sub/Info.plist";
+				INFOPLIST_FILE = "iOS/🧩Sub/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -776,7 +776,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = macOSApp/macOSApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOSApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -809,7 +809,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = macOSApp/macOSApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOSApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

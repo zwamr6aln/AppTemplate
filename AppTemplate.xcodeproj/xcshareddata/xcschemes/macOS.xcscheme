@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "12E4A743285027F600B2380B"
-               BuildableName = "AppTemplate.app"
-               BlueprintName = "AppTemplate"
+               BlueprintIdentifier = "F5A880572A693B0C00D534EC"
+               BuildableName = "macOSApp.app"
+               BlueprintName = "macOSApp"
                ReferencedContainer = "container:AppTemplate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,15 +43,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "12E4A743285027F600B2380B"
-            BuildableName = "AppTemplate.app"
-            BlueprintName = "AppTemplate"
+            BlueprintIdentifier = "F5A880572A693B0C00D534EC"
+            BuildableName = "macOSApp.app"
+            BlueprintName = "macOSApp"
             ReferencedContainer = "container:AppTemplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <StoreKitConfigurationFileReference
-         identifier = "../../AppTemplate/&#x1f9e9;Sub/Configuration.storekit">
-      </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -63,9 +60,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "12E4A743285027F600B2380B"
-            BuildableName = "AppTemplate.app"
-            BlueprintName = "AppTemplate"
+            BlueprintIdentifier = "F5A880572A693B0C00D534EC"
+            BuildableName = "macOSApp.app"
+            BlueprintName = "macOSApp"
             ReferencedContainer = "container:AppTemplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
