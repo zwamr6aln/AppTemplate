@@ -3,10 +3,10 @@ import StoreKit
 
 //struct 📣ADSheet: ViewModifier {
 //    @EnvironmentObject var 🛒: 🛒StoreModel
-//    @State private var ⓐpp: 📣MyApp = .pickUpAppWithout(.ONESELF)
+//    @State private var app: 📣MyApp = .pickUpAppWithout(.ONESELF)
 //    func body(content: Content) -> some View {
 //        content
-//            .sheet(isPresented: $🛒.🚩showADSheet) { 📣ADView(self.ⓐpp) }
+//            .sheet(isPresented: $🛒.🚩showADSheet) { 📣ADView(self.app) }
 //            .onAppear { 🛒.checkToShowADSheet() }
 //    }
 //}
@@ -18,11 +18,11 @@ struct 📣ADView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var disableDismiss: Bool = true
     private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
-    @State private var countdown: Int
+    @State private var countDown: Int
     private var targetApp: 📣MyApp
     @State private var showADMenu: Bool = false
     var body: some View {
-        NavigationStack { self.ⓒontent() }
+        NavigationStack { self.appADContent() }
             .presentationDetents([.height(640)])
             .onChange(of: self.scenePhase) {
                 if $0 == .background { self.dismiss() }
@@ -30,8 +30,8 @@ struct 📣ADView: View {
             .onChange(of: 🛒.🚩purchased) { if $0 { self.disableDismiss = false } }
             .interactiveDismissDisabled(self.disableDismiss)
             .onReceive(self.timer) { _ in
-                if self.countdown > 1 {
-                    self.countdown -= 1
+                if self.countDown > 1 {
+                    self.countDown -= 1
                 } else {
                     self.disableDismiss = false
                 }
@@ -39,9 +39,9 @@ struct 📣ADView: View {
             .overlay(alignment: .topLeading) {
                 HStack {
                     if !self.showADMenu {
-                        self.ⓓismissButton()
+                        self.dismissButton()
                         Spacer()
-                        self.ⓐdMenuLink()
+                        self.adMenuLink()
                     }
                 }
                 .font(.title3)
@@ -51,51 +51,51 @@ struct 📣ADView: View {
                 .animation(.default, value: self.showADMenu)
             }
     }
-    private func ⓒontent() -> some View {
+    private func appADContent() -> some View {
         Group {
             if self.verticalSizeClass == .compact {
-                self.ⓗorizontalLayout()
+                self.horizontalLayout()
             } else {
-                self.ⓥerticalLayout()
+                self.verticalLayout()
             }
         }
-        .modifier(Self.🄿urchasedEffect())
+        .modifier(Self.PurchasedEffect())
         .navigationTitle("AD")
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: self.$showADMenu) { 📣ADMenu() }
     }
-    private func ⓥerticalLayout() -> some View {
+    private func verticalLayout() -> some View {
         VStack(spacing: 16) {
             Spacer(minLength: 0)
-            self.ⓜockImage()
+            self.mockImage()
             Spacer(minLength: 0)
-            self.ⓘcon()
-            self.ⓝame()
+            self.appIcon()
+            self.appName()
             Spacer(minLength: 0)
-            self.ⓓescription()
+            self.appDescription()
             Spacer(minLength: 0)
-            self.ⓐppStoreBadge()
+            self.appStoreBadge()
             Spacer(minLength: 0)
         }
         .padding()
     }
-    private func ⓗorizontalLayout() -> some View {
+    private func horizontalLayout() -> some View {
         HStack(spacing: 16) {
-            self.ⓜockImage()
+            self.mockImage()
             VStack(spacing: 12) {
                 Spacer()
-                self.ⓘcon()
-                self.ⓝame()
-                self.ⓓescription()
+                self.appIcon()
+                self.appName()
+                self.appDescription()
                 Spacer()
-                self.ⓐppStoreBadge()
+                self.appStoreBadge()
                 Spacer()
             }
             .padding(.horizontal)
         }
         .padding()
     }
-    private func ⓜockImage() -> some View {
+    private func mockImage() -> some View {
         Link(destination: self.targetApp.url) {
             Image(self.targetApp.mockImageName)
                 .resizable()
@@ -104,7 +104,7 @@ struct 📣ADView: View {
         .accessibilityHidden(true)
         .disabled(🛒.🚩purchased)
     }
-    private func ⓘcon() -> some View {
+    private func appIcon() -> some View {
         Link(destination: self.targetApp.url) {
             HStack(spacing: 16) {
                 Image(self.targetApp.iconImageName)
@@ -118,7 +118,7 @@ struct 📣ADView: View {
         .accessibilityHidden(true)
         .disabled(🛒.🚩purchased)
     }
-    private func ⓝame() -> some View {
+    private func appName() -> some View {
         Link(destination: self.targetApp.url) {
             Text(self.targetApp.name)
                 .font(.headline)
@@ -127,13 +127,13 @@ struct 📣ADView: View {
         .accessibilityHidden(true)
         .disabled(🛒.🚩purchased)
     }
-    private func ⓓescription() -> some View {
+    private func appDescription() -> some View {
         Text(self.targetApp.description)
             .font(.subheadline)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 8)
     }
-    private func ⓐppStoreBadge() -> some View {
+    private func appStoreBadge() -> some View {
         Link(destination: self.targetApp.url) {
             HStack(spacing: 6) {
                 Image(.appstoreBadge)
@@ -144,7 +144,7 @@ struct 📣ADView: View {
         .accessibilityLabel("Open AppStore page")
         .disabled(🛒.🚩purchased)
     }
-    private func ⓐdMenuLink() -> some View {
+    private func adMenuLink() -> some View {
         Button {
             self.showADMenu = true
         } label: {
@@ -153,10 +153,10 @@ struct 📣ADView: View {
         .tint(.primary)
         .accessibilityLabel("About AD")
     }
-    private func ⓓismissButton() -> some View {
+    private func dismissButton() -> some View {
         Group {
             if self.disableDismiss {
-                Image(systemName: "\(self.countdown).circle")
+                Image(systemName: "\(self.countDown).circle")
                     .foregroundStyle(.tertiary)
             } else {
                 Button {
@@ -172,7 +172,7 @@ struct 📣ADView: View {
             }
         }
     }
-    private struct 🄿urchasedEffect: ViewModifier {
+    private struct PurchasedEffect: ViewModifier {
         @EnvironmentObject private var 🛒: 🛒StoreModel
         func body(content: Content) -> some View {
             if 🛒.🚩purchased {
@@ -194,7 +194,7 @@ struct 📣ADView: View {
     }
     init(_ app: 📣MyApp, second: Int) {
         self.targetApp = app
-        self._countdown = State(initialValue: second)
+        self._countDown = State(initialValue: second)
     }
 }
 

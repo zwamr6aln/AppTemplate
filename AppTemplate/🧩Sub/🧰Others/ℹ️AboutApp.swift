@@ -67,7 +67,7 @@ private struct 📰AppStoreDescriptionSection: View {
                 .navigationBarTitle("Description")
                 .textSelection(.enabled)
             } label: {
-                Text(self.ⓛabelString)
+                Text(self.textWithoutEmptyLines)
                     .font(.subheadline)
                     .lineSpacing(5)
                     .lineLimit(7)
@@ -78,7 +78,7 @@ private struct 📰AppStoreDescriptionSection: View {
             Text("Description")
         }
     }
-    private var ⓛabelString: String {
+    private var textWithoutEmptyLines: String {
         String(localized: "AppStoreDescription", table: "🌏AppStoreDescription")
             .replacingOccurrences(of: "\n\n", with: "\n")
             .replacingOccurrences(of: "\n\n", with: "\n")
@@ -146,54 +146,52 @@ private struct 👤PrivacyPolicySection: View {
 private struct 📜VersionHistoryLink: View {
     var body: some View {
         Section {
-            NavigationLink(destination: self.ⓜenu) {
+            NavigationLink {
+                List {
+                    ForEach(🧰Info.versionInfos, id: \.version) { ⓘnfo in
+                        Section {
+                            Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
+                                .font(.subheadline)
+                                .padding()
+                                .textSelection(.enabled)
+                        } header: {
+                            Text(ⓘnfo.version)
+                        } footer: {
+                            if 🧰Info.versionInfos.first?.version == ⓘnfo.version {
+                                Text("builded on \(ⓘnfo.date)")
+                            } else {
+                                Text("released on \(ⓘnfo.date)")
+                            }
+                        }
+                        .headerProminence(.increased)
+                    }
+                }
+                .navigationBarTitle("Version History")
+            } label: {
                 Label("Version", systemImage: "signpost.left")
                     .badge(🧰Info.versionInfos.first?.version ?? "🐛")
             }
             .accessibilityLabel("Version History")
         }
     }
-    private func ⓜenu() -> some View {
-        List {
-            ForEach(🧰Info.versionInfos, id: \.version) { ⓘnfo in
-                Section {
-                    Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
-                        .font(.subheadline)
-                        .padding()
-                        .textSelection(.enabled)
-                } header: {
-                    Text(ⓘnfo.version)
-                } footer: {
-                    if 🧰Info.versionInfos.first?.version == ⓘnfo.version {
-                        Text("builded on \(ⓘnfo.date)")
-                    } else {
-                        Text("released on \(ⓘnfo.date)")
-                    }
-                }
-                .headerProminence(.increased)
-            }
-        }
-        .navigationBarTitle("Version History")
-    }
 }
 
 private struct 📓SourceCodeLink: View {
     var body: some View {
-        NavigationLink(destination: self.ⓜenu) {
+        NavigationLink {
+            List {
+                ForEach(🧰Info.SourceCodeCategory.allCases) { Self.CodeSection($0) }
+                self.bundleMainInfoDictionary()
+                self.repositoryLinks()
+            }
+            .navigationTitle("Source code")
+        } label: {
             Label("Source code", systemImage: "doc.plaintext")
         }
     }
-    private func ⓜenu() -> some View {
-        List {
-            ForEach(🧰Info.SourceCodeCategory.allCases) { Self.📓CodeSection($0) }
-            self.📑bundleMainInfoDictionary()
-            self.🔗repositoryLinks()
-        }
-        .navigationTitle("Source code")
-    }
-    private struct 📓CodeSection: View {
-        private var ⓒategory: 🧰Info.SourceCodeCategory
-        private var ⓤrl: URL {
+    private struct CodeSection: View {
+        private var category: 🧰Info.SourceCodeCategory
+        private var url: URL {
 #if targetEnvironment(macCatalyst)
             Bundle.main.bundleURL.appendingPathComponent("Contents/Resources/📁SourceCode")
 #else
@@ -202,23 +200,23 @@ private struct 📓SourceCodeLink: View {
         }
         var body: some View {
             Section {
-                ForEach(self.ⓒategory.fileNames, id: \.self) { ⓕileName in
-                    if let ⓒode = try? String(contentsOf: self.ⓤrl.appendingPathComponent(ⓕileName)) {
-                        NavigationLink(ⓕileName) { self.📰sourceCodeView(ⓒode, ⓕileName) }
+                ForEach(self.category.fileNames, id: \.self) { ⓕileName in
+                    if let ⓒode = try? String(contentsOf: self.url.appendingPathComponent(ⓕileName)) {
+                        NavigationLink(ⓕileName) { self.sourceCodeView(ⓒode, ⓕileName) }
                     } else {
                         Text("🐛")
                     }
                 }
-                if self.ⓒategory.fileNames.isEmpty { Text("🐛") }
+                if self.category.fileNames.isEmpty { Text("🐛") }
             } header: {
-                Text(self.ⓒategory.rawValue)
+                Text(self.category.rawValue)
                     .textCase(.none)
             }
         }
         init(_ category: 🧰Info.SourceCodeCategory) {
-            self.ⓒategory = category
+            self.category = category
         }
-        private func 📰sourceCodeView(_ ⓣext: String, _ ⓣitle: String) -> some View {
+        private func sourceCodeView(_ ⓣext: String, _ ⓣitle: String) -> some View {
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false) {
                     Text(ⓣext)
@@ -230,7 +228,7 @@ private struct 📓SourceCodeLink: View {
             .textSelection(.enabled)
         }
     }
-    private func 📑bundleMainInfoDictionary() -> some View {
+    private func bundleMainInfoDictionary() -> some View {
         Section {
             NavigationLink("Bundle.main.infoDictionary") {
                 ScrollView {
@@ -242,7 +240,7 @@ private struct 📓SourceCodeLink: View {
             }
         }
     }
-    private func 🔗repositoryLinks() -> some View {
+    private func repositoryLinks() -> some View {
         Group {
             Section {
                 Link(destination: 🧰Info.webRepositoryURL) {
@@ -279,59 +277,58 @@ private struct 📓SourceCodeLink: View {
 
 private struct 🧑‍💻AboutDeveloperPublisherLink: View {
     var body: some View {
-        NavigationLink(destination: self.menu) {
+        NavigationLink {
+            List {
+                Section {
+                    Text("Individual")
+                } header: {
+                    Text("The System")
+                }
+                Section {
+                    Text("山下 亮")
+                    Text("やました りょう (ひらがな)")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                    Text("Yamashita Ryo (alphabet)")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                } header: {
+                    Text("Name")
+                } footer: {
+                    Text("only one person")
+                }
+                Section {
+                    Text("age")
+                        .badge("about 28")
+                    Text("country")
+                        .badge("Japan")
+                    Text("native language")
+                        .badge("Japanese")
+                } header: {
+                    Text("identity / circumstance / background")
+                } footer: {
+                    Text("As of 2021")
+                }
+                Self.TimelineSection()
+                Section {
+                    Image(.developerPublisher)
+                        .resizable()
+                        .frame(width: 90, height: 90)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .padding()
+                        .opacity(0.6)
+                } header: {
+                    Text("Image")
+                } footer: {
+                    Text("Taken on 2021-11")
+                }
+            }
+            .navigationTitle("Developer / Publisher")
+        } label: {
             Label("Developer / Publisher", systemImage: "person")
         }
     }
-    private func menu() -> some View {
-        List {
-            Section {
-                Text("Individual")
-            } header: {
-                Text("The System")
-            }
-            Section {
-                Text("山下 亮")
-                Text("やました りょう (ひらがな)")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                Text("Yamashita Ryo (alphabet)")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-            } header: {
-                Text("Name")
-            } footer: {
-                Text("only one person")
-            }
-            Section {
-                Text("age")
-                    .badge("about 28")
-                Text("country")
-                    .badge("Japan")
-                Text("native language")
-                    .badge("Japanese")
-            } header: {
-                Text("identity / circumstance / background")
-            } footer: {
-                Text("As of 2021")
-            }
-            Self.🅃imelineSection()
-            Section {
-                Image(.developerPublisher)
-                    .resizable()
-                    .frame(width: 90, height: 90)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .padding()
-                    .opacity(0.6)
-            } header: {
-                Text("Image")
-            } footer: {
-                Text("Taken on 2021-11")
-            }
-        }
-        .navigationTitle("Developer / Publisher")
-    }
-    private struct 🅃imelineSection: View {
+    private struct TimelineSection: View {
         private static var values: [(date: String, description: String)] {
             [("2013-04", "Finished from high school in Okayama Prefecture. Entranced into University-of-the-Ryukyus/faculty-of-engineering in Okinawa Prefecture."),
              ("2018-06", "Final year as an undergraduate student. Developed an iOS application(FlipByBlink) as software for the purpose of research experiments."),
