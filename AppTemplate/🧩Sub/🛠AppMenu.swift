@@ -1,15 +1,5 @@
 import SwiftUI
 
-struct 🛠MenuButton: View { // ⚙️
-    var body: some View {
-        NavigationLink {
-            🛠AppMenu()
-        } label: {
-            Label("Open menu", systemImage: "gear")
-        }
-    }
-}
-
 struct 🛠AppMenu: View {
     var body: some View {
         List {
