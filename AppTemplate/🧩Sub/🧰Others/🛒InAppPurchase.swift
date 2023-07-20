@@ -9,19 +9,19 @@ struct 🛒PurchaseView: View {
     @State private var errorMessage = ""
     var body: some View {
         HStack {
-            Label(🛒.🎫name, systemImage: "cart")
+            Label(🛒.productName, systemImage: "cart")
             Spacer()
-            if 🛒.🚩purchased {
+            if 🛒.purchased {
                 Image(systemName: "checkmark")
                     .imageScale(.small)
                     .foregroundStyle(.tertiary)
                     .transition(.slide)
             }
-            Button(🛒.🎫price) {
+            Button(🛒.productPrice) {
                 Task {
                     do {
                         self.buyingInProgress = true
-                        try await 🛒.👆purchase()
+                        try await 🛒.purchase()
                     } catch 🛒StoreModel.🚨Error.failedVerification {
                         self.errorMessage = "Your purchase could not be verified by the App Store."
                         self.showError = true
@@ -46,9 +46,9 @@ struct 🛒PurchaseView: View {
             }
         }
         .padding(.vertical)
-        .disabled(🛒.🚩unconnected)
-        .disabled(🛒.🚩purchased)
-        .animation(.default, value: 🛒.🚩purchased)
+        .disabled(🛒.unconnected)
+        .disabled(🛒.purchased)
+        .animation(.default, value: 🛒.purchased)
     }
 }
 
@@ -112,8 +112,8 @@ struct 🛒IAPSection: View {
                     HStack {
                         Label("Restore Purchases", systemImage: "arrow.clockwise")
                             .font(.footnote)
-                            .foregroundColor(🛒.🚩unconnected ? .secondary : nil)
-                            .grayscale(🛒.🚩purchased ? 1 : 0)
+                            .foregroundColor(🛒.unconnected ? .secondary : nil)
+                            .grayscale(🛒.purchased ? 1 : 0)
                         if self.restoringInProgress {
                             Spacer()
                             ProgressView()
@@ -136,49 +136,50 @@ typealias Transaction = StoreKit.Transaction
 
 class 🛒StoreModel: ObservableObject {
     
-    private let 🆔productID: String
+    private let productID: String
     
     func checkToShowADSheet() -> Bool {
-        !self.🚩purchased && (self.ⓛaunchCount > 5)
+        !self.purchased && (self.launchCount > 5)
     }
     
-    @Published private(set) var 🎫product: Product?
-    @AppStorage("Purchased") private(set) var 🚩purchased: Bool = false
-    @AppStorage("launchCount") private var ⓛaunchCount: Int = 0
-    var 🚩unconnected: Bool { self.🎫product == nil }
-    private var 🤖updateListenerTask: Task<Void, Error>? = nil
+    @Published private(set) var product: Product?
+    @AppStorage("Purchased") private(set) var purchased: Bool = false
+    @AppStorage("launchCount") private var launchCount: Int = 0
+    var unconnected: Bool { self.product == nil }
+    
+    private var updateListenerTask: Task<Void, Error>? = nil
     
     init(id: String) {
-        self.🆔productID = id
+        self.productID = id
         
         //Start a transaction listener as close to app launch as possible so you don't miss any transactions.
-        self.🤖updateListenerTask = self.📪listenForTransactions()
+        self.updateListenerTask = self.listenForTransactions()
         
         Task {
             //During store initialization, request products from the App Store.
-            await self.ⓡequestProducts()
+            await self.requestProducts()
             
             //Deliver products that the customer purchases.
-            await self.ⓤpdateCustomerProductStatus()
+            await self.updateCustomerProductStatus()
         }
         
-        self.ⓛaunchCount += 1
+        self.launchCount += 1
     }
     
-    deinit { self.🤖updateListenerTask?.cancel() }
+    deinit { self.updateListenerTask?.cancel() }
     
-    private func 📪listenForTransactions() -> Task<Void, Error> {
-        return Task.detached {
+    private func listenForTransactions() -> Task<Void, Error> {
+        Task.detached {
             //Iterate through any transactions that don't come from a direct call to `purchase()`.
-            for await 📦 in Transaction.updates {
+            for await ⓡesult in Transaction.updates {
                 do {
-                    let 🧾transaction = try self.🔍checkVerified(📦)
+                    let ⓣransaction = try self.checkVerified(ⓡesult)
                     
                     //Deliver products to the user.
-                    await self.ⓤpdateCustomerProductStatus()
+                    await self.updateCustomerProductStatus()
                     
                     //Always finish a transaction.
-                    await 🧾transaction.finish()
+                    await ⓣransaction.finish()
                 } catch {
                     //StoreKit has a transaction that fails verification. Don't deliver content to the user.
                     print("Transaction failed verification")
@@ -188,58 +189,58 @@ class 🛒StoreModel: ObservableObject {
     }
     
     @MainActor
-    private func ⓡequestProducts() async {
+    private func requestProducts() async {
         do {
-            if let ⓟroduct = try await Product.products(for: [self.🆔productID]).first {
-                self.🎫product = ⓟroduct
+            if let ⓟroduct = try await Product.products(for: [self.productID]).first {
+                self.product = ⓟroduct
             }
         } catch {
             print(#function, "Failed product request from the App Store server: \(error)")
         }
     }
     
-    func 👆purchase() async throws {
-        guard let 🎫 = self.🎫product else { return }
+    func purchase() async throws {
+        guard let ⓟroduct = self.product else { return }
         
-        let 📦result = try await 🎫.purchase()
+        let ⓡesult = try await ⓟroduct.purchase()
         
-        switch 📦result {
-            case .success(let 📦):
+        switch ⓡesult {
+            case .success(let ⓥerification):
                 //Check whether the transaction is verified. If it isn't,
                 //this function rethrows the verification error.
-                let 🧾transaction = try self.🔍checkVerified(📦)
+                let ⓣransaction = try self.checkVerified(ⓥerification)
                 
                 //The transaction is verified. Deliver content to the user.
-                await ⓤpdateCustomerProductStatus()
+                await updateCustomerProductStatus()
                 
                 //Always finish a transaction.
-                await 🧾transaction.finish()
+                await ⓣransaction.finish()
             case .userCancelled, .pending: return
             default: return
         }
     }
     
-    private func 🔍checkVerified<T>(_ 📦result: VerificationResult<T>) throws -> T {
+    private func checkVerified<T>(_ ⓡesult: VerificationResult<T>) throws -> T {
         //Check whether the JWS passes StoreKit verification.
-        switch 📦result {
+        switch ⓡesult {
             case .unverified:
                 //StoreKit parses the JWS, but it fails verification.
                 throw Self.🚨Error.failedVerification
-            case .verified(let 📦):
+            case .verified(let ⓢafe):
                 //The result is verified. Return the unwrapped value.
-                return 📦
+                return ⓢafe
         }
     }
     
     @MainActor
-    private func ⓤpdateCustomerProductStatus() async {
+    private func updateCustomerProductStatus() async {
         var ⓟurchased = false
         
-        for await 📦 in Transaction.currentEntitlements {
+        for await ⓡesult in Transaction.currentEntitlements {
             do {
                 //Check whether the transaction is verified. If it isn’t, catch `failedVerification` error.
-                let 🧾transaction = try self.🔍checkVerified(📦)
-                if 🧾transaction.productID == self.🆔productID {
+                let ⓣransaction = try self.checkVerified(ⓡesult)
+                if ⓣransaction.productID == self.productID {
                     ⓟurchased = true
                 }
             } catch {
@@ -247,17 +248,15 @@ class 🛒StoreModel: ObservableObject {
             }
         }
         
-        withAnimation { self.🚩purchased = ⓟurchased }
+        withAnimation { self.purchased = ⓟurchased }
     }
     
-    var 🎫name: String {
-        guard let 🎫 = self.🎫product else { return "(Placeholder)" }
-        return 🎫.displayName
+    var productName: String {
+        self.product?.displayName ?? "(Placeholder)"
     }
     
-    var 🎫price: String {
-        guard let 🎫 = self.🎫product else { return "…" }
-        return 🎫.displayPrice
+    var productPrice: String {
+        self.product?.displayPrice ?? "…"
     }
     
     enum 🚨Error: Error {

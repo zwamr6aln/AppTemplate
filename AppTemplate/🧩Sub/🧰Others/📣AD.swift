@@ -27,7 +27,7 @@ struct 📣ADView: View {
             .onChange(of: self.scenePhase) {
                 if $0 == .background { self.dismiss() }
             }
-            .onChange(of: 🛒.🚩purchased) { if $0 { self.disableDismiss = false } }
+            .onChange(of: 🛒.purchased) { if $0 { self.disableDismiss = false } }
             .interactiveDismissDisabled(self.disableDismiss)
             .onReceive(self.timer) { _ in
                 if self.countDown > 1 {
@@ -102,7 +102,7 @@ struct 📣ADView: View {
                 .scaledToFit()
         }
         .accessibilityHidden(true)
-        .disabled(🛒.🚩purchased)
+        .disabled(🛒.purchased)
     }
     private func appIcon() -> some View {
         Link(destination: self.targetApp.url) {
@@ -116,7 +116,7 @@ struct 📣ADView: View {
             }
         }
         .accessibilityHidden(true)
-        .disabled(🛒.🚩purchased)
+        .disabled(🛒.purchased)
     }
     private func appName() -> some View {
         Link(destination: self.targetApp.url) {
@@ -125,7 +125,7 @@ struct 📣ADView: View {
         }
         .buttonStyle(.plain)
         .accessibilityHidden(true)
-        .disabled(🛒.🚩purchased)
+        .disabled(🛒.purchased)
     }
     private func appDescription() -> some View {
         Text(self.targetApp.description)
@@ -142,7 +142,7 @@ struct 📣ADView: View {
             .foregroundColor(.primary)
         }
         .accessibilityLabel("Open AppStore page")
-        .disabled(🛒.🚩purchased)
+        .disabled(🛒.purchased)
     }
     private func adMenuLink() -> some View {
         Button {
@@ -175,7 +175,7 @@ struct 📣ADView: View {
     private struct PurchasedEffect: ViewModifier {
         @EnvironmentObject private var 🛒: 🛒StoreModel
         func body(content: Content) -> some View {
-            if 🛒.🚩purchased {
+            if 🛒.purchased {
                 content
                     .blur(radius: 6)
                     .overlay {
