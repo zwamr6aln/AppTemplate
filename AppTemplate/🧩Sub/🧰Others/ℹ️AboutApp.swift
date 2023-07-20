@@ -349,7 +349,7 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
         }
         var body: some View {
             Section {
-                ForEach(Self.values, id: \.self.date) { ⓥalue in
+                ForEach(Self.values, id: \.self.description) { ⓥalue in
                     HStack {
                         Text(ⓥalue.date)
                             .font(.caption2)
