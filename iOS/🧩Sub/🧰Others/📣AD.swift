@@ -12,10 +12,10 @@ import StoreKit
 //}
 
 struct 📣ADView: View {
-    @EnvironmentObject private var 🛒: 🛒StoreModel
-    @Environment(\.scenePhase) private var scenePhase
-    @Environment(\.verticalSizeClass) private var verticalSizeClass
-    @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject var 🛒: 🛒StoreModel
+    @Environment(\.scenePhase) var scenePhase
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+    @Environment(\.dismiss) var dismiss
     @State private var disableDismiss: Bool = true
     private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
     @State private var countDown: Int
@@ -173,7 +173,7 @@ struct 📣ADView: View {
         }
     }
     private struct PurchasedEffect: ViewModifier {
-        @EnvironmentObject private var 🛒: 🛒StoreModel
+        @EnvironmentObject var 🛒: 🛒StoreModel
         func body(content: Content) -> some View {
             if 🛒.purchased {
                 content
@@ -210,7 +210,7 @@ struct 📣ADDescriptionSection: View {
 }
 
 struct 📣ADMenuLink: View {
-    @EnvironmentObject private var 🛒: 🛒StoreModel
+    @EnvironmentObject var 🛒: 🛒StoreModel
     var body: some View {
         Section {
             🛒PurchaseView()
@@ -226,7 +226,7 @@ struct 📣ADMenuLink: View {
 }
 
 struct 📣ADMenu: View {
-    @EnvironmentObject private var 🛒: 🛒StoreModel
+    @EnvironmentObject var 🛒: 🛒StoreModel
     var body: some View {
         List {
             📣ADDescriptionSection()

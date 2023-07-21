@@ -86,7 +86,7 @@ private struct 📰AppStoreDescriptionSection: View {
 }
 
 private struct 🔗AppStoreLink: View {
-    @Environment(\.openURL) private var openURL
+    @Environment(\.openURL) var openURL
     var body: some View {
         Button {
             self.openURL(🧰Info.appStoreProductURL)
@@ -103,7 +103,7 @@ private struct 🔗AppStoreLink: View {
 }
 
 private struct 🏬AppStoreSection: View {
-    @Environment(\.openURL) private var openURL
+    @Environment(\.openURL) var openURL
     var body: some View {
         Section {
             🔗AppStoreLink()
@@ -363,9 +363,9 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
 }
 
 struct 💬PrepareToRequestUserReview: ViewModifier {
-    @Environment(\.requestReview) private var requestReview
+    @Environment(\.requestReview) var requestReview
     @AppStorage("launchCount") private var launchCount: Int = 0
-    @Binding private var checkToRequest: Bool
+    @Binding var checkToRequest: Bool
     func body(content: Content) -> some View {
         content
             .task { self.launchCount += 1 }

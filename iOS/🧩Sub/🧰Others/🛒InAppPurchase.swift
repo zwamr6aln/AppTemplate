@@ -3,7 +3,7 @@ import StoreKit
 
 //MARK: ======== View ========
 struct 🛒PurchaseView: View {
-    @EnvironmentObject private var 🛒: 🛒StoreModel
+    @EnvironmentObject var 🛒: 🛒StoreModel
     @State private var buyingInProgress = false
     @State private var showError = false
     @State private var errorMessage = ""
@@ -53,7 +53,7 @@ struct 🛒PurchaseView: View {
 }
 
 struct 🛒IAPSection: View {
-    @EnvironmentObject private var 🛒: 🛒StoreModel
+    @EnvironmentObject var 🛒: 🛒StoreModel
     var body: some View {
         Section {
             🛒PurchaseView()
@@ -86,7 +86,7 @@ struct 🛒IAPSection: View {
         .padding(24)
     }
     private struct RestoreButton: View {
-        @EnvironmentObject private var 🛒: 🛒StoreModel
+        @EnvironmentObject var 🛒: 🛒StoreModel
         @State private var restoringInProgress = false
         @State private var showAlert = false
         @State private var syncSuccess = false

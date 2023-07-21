@@ -32,9 +32,9 @@ enum 🧰Info {
         var id: Self { self }
         var fileNames: [String] {
             switch self {
-                case .main: ["AppTemplateApp.swift",
+                case .main: ["App_iOS.swift",
                              "📱AppModel.swift",
-                             "ContentView.swift"]
+                             "ContentView_iOS.swift"]
                 case .Shared: []
                 case .Sub: ["📣ADContent.swift",
                             "💬RequestUserReview.swift",

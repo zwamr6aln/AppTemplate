@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct 🪧Sheet: ViewModifier {
-    @EnvironmentObject private var 📱: 📱AppModel
-    @EnvironmentObject private var 🛒: 🛒StoreModel
+    @EnvironmentObject var 📱: 📱AppModel
+    @EnvironmentObject var 🛒: 🛒StoreModel
     func body(content: Content) -> some View {
         content
             .sheet(item: $📱.showSheet) {

@@ -1,4 +1,4 @@
-AppTemplate: iPhone, iPad, Apple Watch, Mac, Apple TV
+AppTemplate: iPhone, iPad, Mac, Apple TV, Apple Watch
 ------------------------------------------------------
 _My app template repository_
 

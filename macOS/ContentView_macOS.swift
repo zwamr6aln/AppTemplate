@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject private var 📱: 📱AppModel
+    @EnvironmentObject var 📱: 📱AppModel
     var body: some View {
         NavigationSplitView {
             List {
@@ -27,6 +27,7 @@ struct ContentView: View {
                     Picker("Picker", selection: .constant("1")) { Text("1"); Text("2") }
                     Button("Button") {}
                     Text("Text")
+                    Text("EnvironmentObject/📱.showSheet: " + self.📱.showSheet.description)
                 }
             }
         } content: {

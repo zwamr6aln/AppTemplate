@@ -38,7 +38,7 @@
 		F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
 		F567E38829F27E180026E12D /* 🩹Workaround.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E38729F27E180026E12D /* 🩹Workaround.swift */; };
 		F567E39029F2A09A0026E12D /* App_watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E38F29F2A09A0026E12D /* App_watchOS.swift */; };
-		F567E39229F2A09A0026E12D /* ContentView_watchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E39129F2A09A0026E12D /* ContentView_watchOSApp.swift */; };
+		F567E39229F2A09A0026E12D /* ContentView_watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E39129F2A09A0026E12D /* ContentView_watchOS.swift */; };
 		F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567E39329F2A09C0026E12D /* Assets.xcassets */; };
 		F567E39A29F2A09C0026E12D /* AT Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F567E38D29F2A09A0026E12D /* AT Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F567E39F29F2A17E0026E12D /* 🧰MetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaInfo.swift */; };
@@ -136,7 +136,7 @@
 		F567E38729F27E180026E12D /* 🩹Workaround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🩹Workaround.swift"; sourceTree = "<group>"; };
 		F567E38D29F2A09A0026E12D /* AT Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AT Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F567E38F29F2A09A0026E12D /* App_watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_watchOS.swift; sourceTree = "<group>"; };
-		F567E39129F2A09A0026E12D /* ContentView_watchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_watchOSApp.swift; sourceTree = "<group>"; };
+		F567E39129F2A09A0026E12D /* ContentView_watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_watchOS.swift; sourceTree = "<group>"; };
 		F567E39329F2A09C0026E12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F57B37F129726CE300F0BB91 /* 📣ADContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADContent.swift"; sourceTree = "<group>"; };
 		F592B4412982259E00D9E882 /* 🧰MetaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧰MetaInfo.swift"; sourceTree = "<group>"; };
@@ -270,7 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				F567E38F29F2A09A0026E12D /* App_watchOS.swift */,
-				F567E39129F2A09A0026E12D /* ContentView_watchOSApp.swift */,
+				F567E39129F2A09A0026E12D /* ContentView_watchOS.swift */,
 				F567E39329F2A09C0026E12D /* Assets.xcassets */,
 			);
 			path = watchOS;
@@ -448,7 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F567E39229F2A09A0026E12D /* ContentView_watchOSApp.swift in Sources */,
+				F567E39229F2A09A0026E12D /* ContentView_watchOS.swift in Sources */,
 				F567E39F29F2A17E0026E12D /* 🧰MetaInfo.swift in Sources */,
 				F567E39029F2A09A0026E12D /* App_watchOS.swift in Sources */,
 			);

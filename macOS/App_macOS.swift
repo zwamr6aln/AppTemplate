@@ -2,7 +2,7 @@ import SwiftUI
 
 @main
 struct App_macOS: App {
-    @StateObject private var 📱 = 📱AppModel()
+    private let 📱 = 📱AppModel()
     var body: some Scene {
         WindowGroup {
             ContentView()

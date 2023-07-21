@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject private var 📱: 📱AppModel
-    @EnvironmentObject private var 🛒: 🛒StoreModel
+    @EnvironmentObject var 📱: 📱AppModel
+    @EnvironmentObject var 🛒: 🛒StoreModel
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     var body: some View {
         Group {
@@ -49,6 +49,6 @@ struct ContentView: View {
         }
         .modifier(🪧Sheet())
         .modifier(💬RequestUserReview())
-        .modifier(🩹Workaround.hideTitleBarOnMacCatalyst())
+        .modifier(🩹Workaround.HideTitleBarOnMacCatalyst())
     }
 }
