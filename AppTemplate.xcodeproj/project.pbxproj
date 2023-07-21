@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
 		12724D702862DEB0008471AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12724D6F2862DEB0008471AB /* StoreKit.framework */; };
-		127ECB2A286149EF00CB1BC3 /* 🛒InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
-		127ECB2C28614B8B00CB1BC3 /* 📣AD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
+		127ECB2A286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */; };
+		127ECB2C28614B8B00CB1BC3 /* 📣ADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADView.swift */; };
 		127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 127ECB2D28614C0200CB1BC3 /* Configuration.storekit */; };
 		1299C37B288CB8C30086522B /* 🌏AppStoreDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C37D288CB8C30086522B /* 🌏AppStoreDescription.strings */; };
 		1299C386288D12760086522B /* 🌏VersionDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C388288D12760086522B /* 🌏VersionDescription.strings */; };
@@ -29,10 +29,9 @@
 		F519CB5D29AAFF5800ACD6B6 /* App_iOS.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* App_iOS.swift */; };
 		F519CB5E29AAFF5800ACD6B6 /* ContentView_iOS.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView_iOS.swift */; };
 		F519CB5F29AAFF5800ACD6B6 /* 📱AppModel_iOS.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel_iOS.swift */; };
-		F519CB6029AAFF5800ACD6B6 /* 🧰MetaInfo.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaInfo.swift */; };
 		F519CB6129AAFF5800ACD6B6 /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
-		F519CB6229AAFF5800ACD6B6 /* 📣AD.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */; };
-		F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchase.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */; };
+		F519CB6229AAFF5800ACD6B6 /* 📣ADView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADView.swift */; };
+		F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */; };
 		F5514EF329CD743E00FCA7EA /* ﹀DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5514EF229CD743E00FCA7EA /* ﹀DismissButton.swift */; };
 		F5514EF429CD7B4E00FCA7EA /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
@@ -44,11 +43,16 @@
 		F567E39229F2A09A0026E12D /* ContentView_watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E39129F2A09A0026E12D /* ContentView_watchOS.swift */; };
 		F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567E39329F2A09C0026E12D /* Assets.xcassets */; };
 		F567E39A29F2A09C0026E12D /* AT Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F567E38D29F2A09A0026E12D /* AT Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F567E39F29F2A17E0026E12D /* 🧰MetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaInfo.swift */; };
 		F567E3A129F2A3000026E12D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
 		F567E3A229F2A3030026E12D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
 		F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
-		F592B4422982259E00D9E882 /* 🧰MetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592B4412982259E00D9E882 /* 🧰MetaInfo.swift */; };
+		F5936C192A6A90B10044B939 /* 📣ADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C182A6A90B10044B939 /* 📣ADModel.swift */; };
+		F5936C1A2A6A90B10044B939 /* 📣ADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C182A6A90B10044B939 /* 📣ADModel.swift */; };
+		F5936C1B2A6A90B10044B939 /* 📣ADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C182A6A90B10044B939 /* 📣ADModel.swift */; };
+		F5936C1D2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
+		F5936C1E2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
+		F5936C1F2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
+		F5936C212A6A92820044B939 /* 💬PrepareToRequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C202A6A92820044B939 /* 💬PrepareToRequestUserReview.swift */; };
 		F5A8805B2A693B0C00D534EC /* App_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A8805A2A693B0C00D534EC /* App_macOS.swift */; };
 		F5A8805D2A693B0C00D534EC /* ContentView_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */; };
 		F5A8805F2A693B0F00D534EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A8805E2A693B0F00D534EC /* Assets.xcassets */; };
@@ -90,10 +94,9 @@
 				F519CB5D29AAFF5800ACD6B6 /* App_iOS.swift in CopyFiles */,
 				F519CB5E29AAFF5800ACD6B6 /* ContentView_iOS.swift in CopyFiles */,
 				F519CB5F29AAFF5800ACD6B6 /* 📱AppModel_iOS.swift in CopyFiles */,
-				F519CB6029AAFF5800ACD6B6 /* 🧰MetaInfo.swift in CopyFiles */,
 				F519CB6129AAFF5800ACD6B6 /* ℹ️AboutApp.swift in CopyFiles */,
-				F519CB6229AAFF5800ACD6B6 /* 📣AD.swift in CopyFiles */,
-				F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchase.swift in CopyFiles */,
+				F519CB6229AAFF5800ACD6B6 /* 📣ADView.swift in CopyFiles */,
+				F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchaseView.swift in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,8 +116,8 @@
 /* Begin PBXFileReference section */
 		1256A33E286B174D002AF08A /* 🛠AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛠AppMenu.swift"; sourceTree = "<group>"; };
 		12724D6F2862DEB0008471AB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchase.swift"; sourceTree = "<group>"; };
-		127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣AD.swift"; sourceTree = "<group>"; };
+		127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseView.swift"; sourceTree = "<group>"; };
+		127ECB2B28614B8B00CB1BC3 /* 📣ADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADView.swift"; sourceTree = "<group>"; };
 		127ECB2D28614C0200CB1BC3 /* Configuration.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		1299C37C288CB8C30086522B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/🌏AppStoreDescription.strings"; sourceTree = "<group>"; };
 		1299C37E288CB8C70086522B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = "ja.lproj/🌏AppStoreDescription.strings"; sourceTree = "<group>"; };
@@ -143,7 +146,9 @@
 		F567E39129F2A09A0026E12D /* ContentView_watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_watchOS.swift; sourceTree = "<group>"; };
 		F567E39329F2A09C0026E12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F57B37F129726CE300F0BB91 /* 📣ADContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADContent.swift"; sourceTree = "<group>"; };
-		F592B4412982259E00D9E882 /* 🧰MetaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧰MetaInfo.swift"; sourceTree = "<group>"; };
+		F5936C182A6A90B10044B939 /* 📣ADModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADModel.swift"; sourceTree = "<group>"; };
+		F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseModel.swift"; sourceTree = "<group>"; };
+		F5936C202A6A92820044B939 /* 💬PrepareToRequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬PrepareToRequestUserReview.swift"; sourceTree = "<group>"; };
 		F5A880582A693B0C00D534EC /* macOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A8805A2A693B0C00D534EC /* App_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_macOS.swift; sourceTree = "<group>"; };
 		F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_macOS.swift; sourceTree = "<group>"; };
@@ -240,10 +245,6 @@
 		12E4A75828502AF800B2380B /* 🧰Others */ = {
 			isa = PBXGroup;
 			children = (
-				F592B4412982259E00D9E882 /* 🧰MetaInfo.swift */,
-				12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */,
-				127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */,
-				127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */,
 			);
 			path = "🧰Others";
 			sourceTree = "<group>";
@@ -263,6 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */,
+				F5936C182A6A90B10044B939 /* 📣ADModel.swift */,
+				F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -282,6 +285,10 @@
 			children = (
 				F5514EF229CD743E00FCA7EA /* ﹀DismissButton.swift */,
 				F567E38729F27E180026E12D /* 🩹Workaround.swift */,
+				F5936C202A6A92820044B939 /* 💬PrepareToRequestUserReview.swift */,
+				12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */,
+				127ECB2B28614B8B00CB1BC3 /* 📣ADView.swift */,
+				127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */,
 				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
 				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
 			);
@@ -447,11 +454,13 @@
 				F501E9C72A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */,
 				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
 				F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */,
-				F592B4422982259E00D9E882 /* 🧰MetaInfo.swift in Sources */,
-				127ECB2A286149EF00CB1BC3 /* 🛒InAppPurchase.swift in Sources */,
+				F5936C1D2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
+				127ECB2A286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift in Sources */,
+				F5936C192A6A90B10044B939 /* 📣ADModel.swift in Sources */,
 				12E4A76328502C9F00B2380B /* ℹ️AboutApp.swift in Sources */,
 				F5F2272129FE6B1900891C69 /* 🪧Sheet.swift in Sources */,
-				127ECB2C28614B8B00CB1BC3 /* 📣AD.swift in Sources */,
+				127ECB2C28614B8B00CB1BC3 /* 📣ADView.swift in Sources */,
+				F5936C212A6A92820044B939 /* 💬PrepareToRequestUserReview.swift in Sources */,
 				12E4A748285027F600B2380B /* App_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,8 +469,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5936C1A2A6A90B10044B939 /* 📣ADModel.swift in Sources */,
 				F567E39229F2A09A0026E12D /* ContentView_watchOS.swift in Sources */,
-				F567E39F29F2A17E0026E12D /* 🧰MetaInfo.swift in Sources */,
+				F5936C1E2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
 				F567E39029F2A09A0026E12D /* App_watchOS.swift in Sources */,
 				F501E9C82A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */,
 			);
@@ -471,6 +481,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5936C1B2A6A90B10044B939 /* 📣ADModel.swift in Sources */,
+				F5936C1F2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
 				F5A8805D2A693B0C00D534EC /* ContentView_macOS.swift in Sources */,
 				F501E9C92A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */,
 				F5A8805B2A693B0C00D534EC /* App_macOS.swift in Sources */,

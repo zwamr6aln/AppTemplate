@@ -6,7 +6,7 @@ struct ContentView: View {
             List {
                 💁GuideMenu()
             }
-            .navigationTitle(🧰Info.appName)
+            .navigationTitle(🗒️StaticInfo.appName)
         }
     }
 }
@@ -23,11 +23,11 @@ private struct 💁GuideMenu: View {
                             .frame(width: 60, height: 60)
                             .clipShape(Circle())
                         VStack(spacing: 6) {
-                            Text(🧰Info.appName)
+                            Text(🗒️StaticInfo.appName)
                                 .font(.system(.headline))
                                 .tracking(1.5)
                                 .opacity(0.75)
-                            Text(🧰Info.appSubTitle)
+                            Text(🗒️StaticInfo.appSubTitle)
                                 .font(.footnote)
                                 .foregroundStyle(.secondary)
                                 .multilineTextAlignment(.center)
@@ -38,7 +38,7 @@ private struct 💁GuideMenu: View {
                     .padding(.horizontal, 4)
                     .padding(.vertical, 16)
                 }
-                Link(destination: 🧰Info.appStoreProductURL) {
+                Link(destination: 🗒️StaticInfo.appStoreProductURL) {
                     Label("Open AppStore page", systemImage: "link")
                 }
             }

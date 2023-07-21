@@ -36,11 +36,11 @@ private struct 🖼️IconAndName: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 VStack(spacing: 6) {
-                    Text(🧰Info.appName)
+                    Text(🗒️StaticInfo.appName)
                         .font(.system(.headline, design: .rounded))
                         .tracking(1.5)
                         .opacity(0.75)
-                    Text(🧰Info.appSubTitle)
+                    Text(🗒️StaticInfo.appSubTitle)
                         .font(.footnote)
                         .fontWeight(.medium)
                         .foregroundStyle(.secondary)
@@ -89,7 +89,7 @@ private struct 🔗AppStoreLink: View {
     @Environment(\.openURL) var openURL
     var body: some View {
         Button {
-            self.openURL(🧰Info.appStoreProductURL)
+            self.openURL(🗒️StaticInfo.appStoreProductURL)
         } label: {
             HStack {
                 Label("Open AppStore page", systemImage: "link")
@@ -108,7 +108,7 @@ private struct 🏬AppStoreSection: View {
         Section {
             🔗AppStoreLink()
             Button {
-                let ⓤrl = URL(string: "\(🧰Info.appStoreProductURL)?action=write-review")!
+                let ⓤrl = URL(string: "\(🗒️StaticInfo.appStoreProductURL)?action=write-review")!
                 self.openURL(ⓤrl)
             } label: {
                 HStack {
@@ -120,7 +120,7 @@ private struct 🏬AppStoreSection: View {
                 }
             }
         } footer: {
-            Text("\(🧰Info.appStoreProductURL)")
+            Text("\(🗒️StaticInfo.appStoreProductURL)")
         }
     }
 }
@@ -130,7 +130,7 @@ private struct 👤PrivacyPolicySection: View {
         Section {
             NavigationLink {
                 ScrollView {
-                    Text(🧰Info.privacyPolicyDescription)
+                    Text(🗒️StaticInfo.privacyPolicyDescription)
                         .padding(24)
                         .textSelection(.enabled)
                         .frame(maxWidth: .infinity)
@@ -148,7 +148,7 @@ private struct 📜VersionHistoryLink: View {
         Section {
             NavigationLink {
                 List {
-                    ForEach(🧰Info.versionInfos, id: \.version) { ⓘnfo in
+                    ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
                         Section {
                             Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
                                 .font(.subheadline)
@@ -157,7 +157,7 @@ private struct 📜VersionHistoryLink: View {
                         } header: {
                             Text(ⓘnfo.version)
                         } footer: {
-                            if 🧰Info.versionInfos.first?.version == ⓘnfo.version {
+                            if 🗒️StaticInfo.versionInfos.first?.version == ⓘnfo.version {
                                 Text("builded on \(ⓘnfo.date)")
                             } else {
                                 Text("released on \(ⓘnfo.date)")
@@ -169,7 +169,7 @@ private struct 📜VersionHistoryLink: View {
                 .navigationBarTitle("Version History")
             } label: {
                 Label("Version", systemImage: "signpost.left")
-                    .badge(🧰Info.versionInfos.first?.version ?? "🐛")
+                    .badge(🗒️StaticInfo.versionInfos.first?.version ?? "🐛")
             }
             .accessibilityLabel("Version History")
         }
@@ -180,7 +180,7 @@ private struct 📓SourceCodeLink: View {
     var body: some View {
         NavigationLink {
             List {
-                ForEach(🧰Info.SourceCodeCategory.allCases) { Self.CodeSection($0) }
+                ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
                 self.bundleMainInfoDictionary()
                 self.repositoryLinks()
             }
@@ -190,7 +190,7 @@ private struct 📓SourceCodeLink: View {
         }
     }
     private struct CodeSection: View {
-        private var category: 🧰Info.SourceCodeCategory
+        private var category: 🗒️StaticInfo.SourceCodeCategory
         private var url: URL {
 #if targetEnvironment(macCatalyst)
             Bundle.main.bundleURL.appendingPathComponent("Contents/Resources/📁SourceCode")
@@ -213,7 +213,7 @@ private struct 📓SourceCodeLink: View {
                     .textCase(.none)
             }
         }
-        init(_ category: 🧰Info.SourceCodeCategory) {
+        init(_ category: 🗒️StaticInfo.SourceCodeCategory) {
             self.category = category
         }
         private func sourceCodeView(_ ⓣext: String, _ ⓣitle: String) -> some View {
@@ -243,7 +243,7 @@ private struct 📓SourceCodeLink: View {
     private func repositoryLinks() -> some View {
         Group {
             Section {
-                Link(destination: 🧰Info.webRepositoryURL) {
+                Link(destination: 🗒️StaticInfo.webRepositoryURL) {
                     HStack {
                         Label("Web Repository", systemImage: "link")
                         Spacer()
@@ -253,10 +253,10 @@ private struct 📓SourceCodeLink: View {
                     }
                 }
             } footer: {
-                Text("\(🧰Info.webRepositoryURL)")
+                Text("\(🗒️StaticInfo.webRepositoryURL)")
             }
             Section {
-                Link(destination: 🧰Info.webMirrorRepositoryURL) {
+                Link(destination: 🗒️StaticInfo.webMirrorRepositoryURL) {
                     HStack {
                         Label("Web Repository", systemImage: "link")
                         Text("(Mirror)")
@@ -269,7 +269,7 @@ private struct 📓SourceCodeLink: View {
                     }
                 }
             } footer: {
-                Text("\(🧰Info.webMirrorRepositoryURL)")
+                Text("\(🗒️StaticInfo.webMirrorRepositoryURL)")
             }
         }
     }
@@ -359,25 +359,5 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
                 Text("Timeline")
             }
         }
-    }
-}
-
-struct 💬PrepareToRequestUserReview: ViewModifier {
-    @Environment(\.requestReview) var requestReview
-    @AppStorage("launchCount") private var launchCount: Int = 0
-    @Binding var checkToRequest: Bool
-    func body(content: Content) -> some View {
-        content
-            .task { self.launchCount += 1 }
-            .onChange(of: self.checkToRequest) {
-                if $0 == true {
-                    if [10, 30, 50, 70, 90].contains(self.launchCount) {
-                        self.requestReview()
-                    }
-                }
-            }
-    }
-    init(_ checkToRequest: Binding<Bool>) {
-        self._checkToRequest = checkToRequest
     }
 }

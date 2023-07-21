@@ -2,7 +2,7 @@ import SwiftUI
 
 struct 🪧Sheet: ViewModifier {
     @EnvironmentObject var 📱: 📱AppModel
-    @EnvironmentObject var 🛒: 🛒StoreModel
+    @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
     func body(content: Content) -> some View {
         content
             .sheet(item: $📱.showSheet) {

@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var 📱: 📱AppModel
-    @EnvironmentObject var 🛒: 🛒StoreModel
+    @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     var body: some View {
         Group {
