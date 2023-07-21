@@ -1,12 +1,8 @@
 import SwiftUI
 
-enum 🧰Info {
+enum 🗒️StaticInfo { //Work in progress
     static let appName: LocalizedStringKey = "AppTemplate"
-    static let appSubTitle: LocalizedStringKey = "App for iPhone / iPad / Apple Watch"
-    
-    static let versionInfos: [(version: String, date: String)] = [("1.1", "2021-03-01"),
-                                                                  ("1.0.1", "2021-02-01"),
-                                                                  ("1.0", "2021-01-01")] //降順。先頭の方が新しい
+    static let appSubTitle: LocalizedStringKey = "App for iPhone / iPad / Mac / Apple Watch"
     
     static let appStoreProductURL = URL(string: "https://apps.apple.com/app/id?")!
     
@@ -26,6 +22,13 @@ enum 🧰Info {
     
     static let webRepositoryURL = URL(string: "https://github.com/FlipByBlink/?")!
     static let webMirrorRepositoryURL = URL(string: "https://gitlab.com/FlipByBlink/?_Mirror")!
+}
+
+#if os(iOS)
+extension 🗒️StaticInfo {
+    static let versionInfos: [(version: String, date: String)] = [("1.1", "2021-03-01"),
+                                                                  ("1.0.1", "2021-02-01"),
+                                                                  ("1.0", "2021-01-01")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
         case main, Shared, Sub, Others, WatchApp, WatchComplication
@@ -44,10 +47,10 @@ enum 🧰Info {
                                "ℹ️AboutApp.swift",
                                "📣AD.swift",
                                "🛒InAppPurchase.swift"]
-                case .WatchApp: ["App_watchOS",
-                                 "ContentView_watchOS"]
+                case .WatchApp: []
                 case .WatchComplication: []
             }
         }
     }
 }
+#endif
