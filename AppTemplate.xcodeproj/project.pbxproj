@@ -18,7 +18,6 @@
 		12E4A748285027F600B2380B /* App_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* App_iOS.swift */; };
 		12E4A74A285027F600B2380B /* ContentView_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView_iOS.swift */; };
 		12E4A74C285027F700B2380B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74B285027F700B2380B /* Assets.xcassets */; };
-		12E4A74F285027F700B2380B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74E285027F700B2380B /* Preview Assets.xcassets */; };
 		12E4A75728502A2D00B2380B /* 📱AppModel_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel_iOS.swift */; };
 		12E4A76328502C9F00B2380B /* ℹ️AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
 		12E4A76B28502EDE00B2380B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A76D28502EDE00B2380B /* Localizable.strings */; };
@@ -126,7 +125,6 @@
 		12E4A747285027F600B2380B /* App_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_iOS.swift; sourceTree = "<group>"; };
 		12E4A749285027F600B2380B /* ContentView_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_iOS.swift; sourceTree = "<group>"; };
 		12E4A74B285027F700B2380B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		12E4A74E285027F700B2380B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12E4A755285028C800B2380B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		12E4A75628502A2D00B2380B /* 📱AppModel_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel_iOS.swift"; sourceTree = "<group>"; };
 		12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutApp.swift"; sourceTree = "<group>"; };
@@ -195,12 +193,9 @@
 				F57B37F129726CE300F0BB91 /* 📣ADContent.swift */,
 				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
 				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
-				F5514EF229CD743E00FCA7EA /* ﹀DismissButton.swift */,
-				F567E38729F27E180026E12D /* 🩹Workaround.swift */,
-				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
 				F567E36929F278B10026E12D /* Info.plist */,
+				F5936C162A6A81DE0044B939 /* 🗄️Rest */,
 				12E4A75828502AF800B2380B /* 🧰Others */,
-				12E4A74D285027F700B2380B /* Preview Content */,
 			);
 			path = "🧩Sub";
 			sourceTree = "<group>";
@@ -242,14 +237,6 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		12E4A74D285027F700B2380B /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				12E4A74E285027F700B2380B /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		12E4A75828502AF800B2380B /* 🧰Others */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +244,6 @@
 				12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */,
 				127ECB2B28614B8B00CB1BC3 /* 📣AD.swift */,
 				127ECB28286149EF00CB1BC3 /* 🛒InAppPurchase.swift */,
-				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
 			);
 			path = "🧰Others";
 			sourceTree = "<group>";
@@ -289,6 +275,17 @@
 				F567E39329F2A09C0026E12D /* Assets.xcassets */,
 			);
 			path = watchOS;
+			sourceTree = "<group>";
+		};
+		F5936C162A6A81DE0044B939 /* 🗄️Rest */ = {
+			isa = PBXGroup;
+			children = (
+				F5514EF229CD743E00FCA7EA /* ﹀DismissButton.swift */,
+				F567E38729F27E180026E12D /* 🩹Workaround.swift */,
+				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
+				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
+			);
+			path = "🗄️Rest";
 			sourceTree = "<group>";
 		};
 		F5A880592A693B0C00D534EC /* macOS */ = {
@@ -408,7 +405,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				12DDDDAD288BF2E40055A073 /* Launch Screen.storyboard in Resources */,
-				12E4A74F285027F700B2380B /* Preview Assets.xcassets in Resources */,
 				127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */,
 				12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */,
 				1299C386288D12760086522B /* 🌏VersionDescription.strings in Resources */,
