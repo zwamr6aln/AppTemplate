@@ -8,6 +8,7 @@ struct App_macOS: App {
             ContentView()
                 .environmentObject(📱)
         }
+        Settings { 🔧SettingsContent() }
     }
 }
 

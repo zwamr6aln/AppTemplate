@@ -52,6 +52,7 @@
 		F583DC752A6D22F500F02006 /* AboutApp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC722A6D22F500F02006 /* AboutApp.xcstrings */; };
 		F583DC772A6D29F200F02006 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC762A6D29F200F02006 /* Localizable.xcstrings */; };
 		F583DC7C2A6D2CB300F02006 /* ℹ️AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583DC792A6D2CB300F02006 /* ℹ️AboutApp.swift */; };
+		F583DC802A6DE2D200F02006 /* 🔧Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */; };
 		F5936C192A6A90B10044B939 /* 📣ADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C182A6A90B10044B939 /* 📣ADModel.swift */; };
 		F5936C1A2A6A90B10044B939 /* 📣ADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C182A6A90B10044B939 /* 📣ADModel.swift */; };
 		F5936C1B2A6A90B10044B939 /* 📣ADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C182A6A90B10044B939 /* 📣ADModel.swift */; };
@@ -154,6 +155,7 @@
 		F583DC722A6D22F500F02006 /* AboutApp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AboutApp.xcstrings; sourceTree = "<group>"; };
 		F583DC762A6D29F200F02006 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F583DC792A6D2CB300F02006 /* ℹ️AboutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutApp.swift"; sourceTree = "<group>"; };
+		F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🔧Settings.swift"; sourceTree = "<group>"; };
 		F5936C182A6A90B10044B939 /* 📣ADModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADModel.swift"; sourceTree = "<group>"; };
 		F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseModel.swift"; sourceTree = "<group>"; };
 		F5936C202A6A92820044B939 /* 💬PrepareToRequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬PrepareToRequestUserReview.swift"; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 				F5A8805A2A693B0C00D534EC /* App_macOS.swift */,
 				F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */,
 				F583DC792A6D2CB300F02006 /* ℹ️AboutApp.swift */,
+				F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */,
 				F5A8805E2A693B0F00D534EC /* Assets.xcassets */,
 				F5A880632A693B0F00D534EC /* macOSApp.entitlements */,
 			);
@@ -501,6 +504,7 @@
 				F5936C1F2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
 				F5A8805D2A693B0C00D534EC /* ContentView_macOS.swift in Sources */,
 				F501E9C92A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */,
+				F583DC802A6DE2D200F02006 /* 🔧Settings.swift in Sources */,
 				F5A8805B2A693B0C00D534EC /* App_macOS.swift in Sources */,
 				F583DC7C2A6D2CB300F02006 /* ℹ️AboutApp.swift in Sources */,
 			);
