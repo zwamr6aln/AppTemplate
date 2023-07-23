@@ -1,0 +1,334 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "About AD" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "広告について"
+          }
+        }
+      }
+    },
+    "About AD / Purchase" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "広告/課金について"
+          }
+        }
+      }
+    },
+    "AD" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "広告"
+          }
+        }
+      }
+    },
+    "AD / Purchase" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "広告/課金"
+          }
+        }
+      }
+    },
+    "Alarm clock with taking a long time from small volume to max volume." : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "時間をかけて少しずつ音量が大きくなるアラームアプリ。"
+          }
+        }
+      }
+    },
+    "Buy" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支払う"
+          }
+        }
+      }
+    },
+    "Description" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "概要"
+          }
+        }
+      }
+    },
+    "Dismiss" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "閉じる"
+          }
+        }
+      }
+    },
+    "E-book reader that can turn a page with slightly longish voluntary blink." : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目を閉じる時間を意識的にわずかに長くさせた瞬きでページめくりができる電子書籍リーダー。"
+          }
+        }
+      }
+    },
+    "Error" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エラー"
+          }
+        }
+      }
+    },
+    "FadeInAlarm" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FadeInAlarm"
+          }
+        }
+      }
+    },
+    "Flashcard on widget. Memorize a note in everyday life." : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ウィジェットを暗記帳にしよう。日常の中で知識を脳に染み込ませるアプリです。"
+          }
+        }
+      }
+    },
+    "FlipByBlink" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FlipByBlink"
+          }
+        }
+      }
+    },
+    "Hide AD banner" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "広告を非表示にする"
+          }
+        }
+      }
+    },
+    "In-App Purchase" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリ内課金"
+          }
+        }
+      }
+    },
+    "LockInNote" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ロックノート"
+          }
+        }
+      }
+    },
+    "MemorizeWidget" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暗記ウィジェット"
+          }
+        }
+      }
+    },
+    "Notes widget on lock screen." : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ロック画面ウィジェットをメモ帳にしよう。"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "了解しました"
+          }
+        }
+      }
+    },
+    "Open AD link" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "広告のリンクを開く"
+          }
+        }
+      }
+    },
+    "Open AppStore page" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AppStoreページを開く"
+          }
+        }
+      }
+    },
+    "PlainShogiBoard" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plain将棋盤"
+          }
+        }
+      }
+    },
+    "Purchase" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリ内課金"
+          }
+        }
+      }
+    },
+    "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「ヘルスケア」アプリに体温データを(手動としては)最速で登録するためのアプリ。"
+          }
+        }
+      }
+    },
+    "Register weight data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「ヘルスケア」アプリに体重データを(手動としては)最速で登録するためのアプリ。"
+          }
+        }
+      }
+    },
+    "Restore Purchases" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購入情報を復元する"
+          }
+        }
+      }
+    },
+    "Restored transactions" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購入情報を確認しました"
+          }
+        }
+      }
+    },
+    "Simplest Shogi board App. Supported SharePlay." : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ただの将棋盤。SharePlayも出来ます。"
+          }
+        }
+      }
+    },
+    "TapTemperature" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "体温登録"
+          }
+        }
+      }
+    },
+    "TapWeight" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "体重登録"
+          }
+        }
+      }
+    },
+    "This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AppStoreアプリケーションに関する広告を表示します。本アプリのデベロッパーによるアプリ群が表示対象となります。広告はアプリを5回起動すると有効になります。"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

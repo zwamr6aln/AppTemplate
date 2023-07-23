@@ -33,16 +33,16 @@ struct 🛒PurchaseView: View {
                     self.buyingInProgress = false
                 }
             }
-            .accessibilityLabel("Buy")
+            .accessibilityLabel(Text("Buy", tableName: "AD&InAppPurchase"))
             .disabled(self.buyingInProgress)
             .buttonStyle(.borderedProminent)
             .overlay {
                 if self.buyingInProgress { ProgressView() }
             }
             .alert(isPresented: self.$showError) {
-                Alert(title: Text("Error"),
+                Alert(title: Text("Error", tableName: "AD&InAppPurchase"),
                       message: Text(self.errorMessage),
-                      dismissButton: .default(Text("OK")))
+                      dismissButton: .default(Text("OK", tableName: "AD&InAppPurchase")))
             }
         }
         .padding(.vertical)
@@ -59,7 +59,7 @@ struct 🛒IAPSection: View {
             🛒PurchaseView()
             self.adPreview()
         } header: {
-            Text("In-App Purchase")
+            Text("In-App Purchase", tableName: "AD&InAppPurchase")
         }
         .headerProminence(.increased)
         Self.RestoreButton()
@@ -110,10 +110,11 @@ struct 🛒IAPSection: View {
                     }
                 } label: {
                     HStack {
-                        Label("Restore Purchases", systemImage: "arrow.clockwise")
-                            .font(.footnote)
-                            .foregroundColor(🛒.unconnected ? .secondary : nil)
-                            .grayscale(🛒.purchased ? 1 : 0)
+                        Label(String(localized: "Restore Purchases", table: "AD&InAppPurchase"),
+                              systemImage: "arrow.clockwise")
+                        .font(.footnote)
+                        .foregroundColor(🛒.unconnected ? .secondary : nil)
+                        .grayscale(🛒.purchased ? 1 : 0)
                         if self.restoringInProgress {
                             Spacer()
                             ProgressView()
@@ -122,9 +123,9 @@ struct 🛒IAPSection: View {
                 }
                 .disabled(self.restoringInProgress)
                 .alert(isPresented: self.$showAlert) {
-                    Alert(title: Text(self.syncSuccess ? "Done" : "Error"),
+                    Alert(title: Text(self.syncSuccess ? "Done" : "Error", tableName: "AD&InAppPurchase"),
                           message: Text(LocalizedStringKey(self.alertMessage)),
-                          dismissButton: .default(Text("OK")))
+                          dismissButton: .default(Text("OK", tableName: "AD&InAppPurchase")))
                 }
             }
         }

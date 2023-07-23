@@ -6,7 +6,8 @@ struct ℹ️AboutAppLink: View {
             🖼️IconAndName()
             🔗AppStoreLink()
             NavigationLink(destination: ℹ️AboutAppMenu()) {
-                Label("About App", systemImage: "doc")
+                Label(String(localized: "About App", table: "AboutApp"),
+                      systemImage: "doc")
             }
         }
     }
@@ -24,7 +25,7 @@ struct ℹ️AboutAppMenu: View {
             📓SourceCodeLink()
             🧑‍💻AboutDeveloperPublisherLink()
         }
-        .navigationTitle("About App")
+        .navigationTitle(Text("About App", tableName: "AboutApp"))
     }
 }
 
@@ -64,7 +65,7 @@ private struct 📰AppStoreDescriptionSection: View {
                         .padding()
                         .frame(maxWidth: .infinity)
                 }
-                .navigationBarTitle("Description")
+                .navigationBarTitle(Text("Description", tableName: "AboutApp"))
                 .textSelection(.enabled)
             } label: {
                 Text(self.textWithoutEmptyLines)
@@ -72,10 +73,10 @@ private struct 📰AppStoreDescriptionSection: View {
                     .lineSpacing(5)
                     .lineLimit(7)
                     .padding(8)
-                    .accessibilityLabel("Description")
+                    .accessibilityLabel(Text("Description", tableName: "AboutApp"))
             }
         } header: {
-            Text("Description")
+            Text("Description", tableName: "AboutApp")
         }
     }
     private var textWithoutEmptyLines: String {
@@ -92,7 +93,8 @@ private struct 🔗AppStoreLink: View {
             self.openURL(🗒️StaticInfo.appStoreProductURL)
         } label: {
             HStack {
-                Label("Open AppStore page", systemImage: "link")
+                Label(String(localized: "Open AppStore page", table: "AboutApp"),
+                      systemImage: "link")
                 Spacer()
                 Image(systemName: "arrow.up.forward.app")
                     .font(.body.weight(.light))
@@ -112,7 +114,8 @@ private struct 🏬AppStoreSection: View {
                 self.openURL(ⓤrl)
             } label: {
                 HStack {
-                    Label("Review on AppStore", systemImage: "star.bubble")
+                    Label(String(localized: "Review on AppStore", table: "AboutApp"),
+                          systemImage: "star.bubble")
                     Spacer()
                     Image(systemName: "arrow.up.forward.app")
                         .imageScale(.small)
@@ -135,9 +138,10 @@ private struct 👤PrivacyPolicySection: View {
                         .textSelection(.enabled)
                         .frame(maxWidth: .infinity)
                 }
-                .navigationTitle("Privacy Policy")
+                .navigationTitle(Text("Privacy Policy", tableName: "AboutApp"))
             } label: {
-                Label("Privacy Policy", systemImage: "person.text.rectangle")
+                Label(String(localized: "Privacy Policy", table: "AboutApp"),
+                      systemImage: "person.text.rectangle")
             }
         }
     }
@@ -158,20 +162,21 @@ private struct 📜VersionHistoryLink: View {
                             Text(ⓘnfo.version)
                         } footer: {
                             if 🗒️StaticInfo.versionInfos.first?.version == ⓘnfo.version {
-                                Text("builded on \(ⓘnfo.date)")
+                                Text("builded on \(ⓘnfo.date)", tableName: "AboutApp")
                             } else {
-                                Text("released on \(ⓘnfo.date)")
+                                Text("released on \(ⓘnfo.date)", tableName: "AboutApp")
                             }
                         }
                         .headerProminence(.increased)
                     }
                 }
-                .navigationBarTitle("Version History")
+                .navigationBarTitle(Text("Version History", tableName: "AboutApp"))
             } label: {
-                Label("Version", systemImage: "signpost.left")
-                    .badge(🗒️StaticInfo.versionInfos.first?.version ?? "🐛")
+                Label(String(localized: "Version", table: "AboutApp"),
+                      systemImage: "signpost.left")
+                .badge(🗒️StaticInfo.versionInfos.first?.version ?? "🐛")
             }
-            .accessibilityLabel("Version History")
+            .accessibilityLabel(Text("Version History", tableName: "AboutApp"))
         }
     }
 }
@@ -184,9 +189,10 @@ private struct 📓SourceCodeLink: View {
                 self.bundleMainInfoDictionary()
                 self.repositoryLinks()
             }
-            .navigationTitle("Source code")
+            .navigationTitle(Text("Source code", tableName: "AboutApp"))
         } label: {
-            Label("Source code", systemImage: "doc.plaintext")
+            Label(String(localized: "Source code", table: "AboutApp"),
+                  systemImage: "doc.plaintext")
         }
     }
     private struct CodeSection: View {
@@ -204,10 +210,10 @@ private struct 📓SourceCodeLink: View {
                     if let ⓒode = try? String(contentsOf: self.url.appendingPathComponent(ⓕileName)) {
                         NavigationLink(ⓕileName) { self.sourceCodeView(ⓒode, ⓕileName) }
                     } else {
-                        Text("🐛")
+                        Text(verbatim: "🐛")
                     }
                 }
-                if self.category.fileNames.isEmpty { Text("🐛") }
+                if self.category.fileNames.isEmpty { Text(verbatim: "🐛") }
             } header: {
                 Text(self.category.rawValue)
                     .textCase(.none)
@@ -245,7 +251,8 @@ private struct 📓SourceCodeLink: View {
             Section {
                 Link(destination: 🗒️StaticInfo.webRepositoryURL) {
                     HStack {
-                        Label("Web Repository", systemImage: "link")
+                        Label(String(localized: "Web Repository", table: "AboutApp"),
+                              systemImage: "link")
                         Spacer()
                         Image(systemName: "arrow.up.forward.app")
                             .imageScale(.small)
@@ -258,8 +265,9 @@ private struct 📓SourceCodeLink: View {
             Section {
                 Link(destination: 🗒️StaticInfo.webMirrorRepositoryURL) {
                     HStack {
-                        Label("Web Repository", systemImage: "link")
-                        Text("(Mirror)")
+                        Label(String(localized: "Web Repository", table: "AboutApp"),
+                              systemImage: "link")
+                        Text("(Mirror)", tableName: "AboutApp")
                             .font(.subheadline.bold())
                             .foregroundStyle(.secondary)
                         Spacer()
@@ -280,34 +288,34 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
         NavigationLink {
             List {
                 Section {
-                    Text("Individual")
+                    Text("Individual", tableName: "AboutApp")
                 } header: {
-                    Text("The System")
+                    Text("The System", tableName: "AboutApp")
                 }
                 Section {
-                    Text("山下 亮")
-                    Text("やました りょう (ひらがな)")
+                    Text(verbatim: "山下 亮")
+                    Text(verbatim: "やました りょう (ひらがな)")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
-                    Text("Yamashita Ryo (alphabet)")
+                    Text(verbatim: "Yamashita Ryo (alphabet)")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 } header: {
-                    Text("Name")
+                    Text("Name", tableName: "AboutApp")
                 } footer: {
-                    Text("only one person")
+                    Text("only one person", tableName: "AboutApp")
                 }
                 Section {
-                    Text("age")
-                        .badge("about 28")
-                    Text("country")
-                        .badge("Japan")
-                    Text("native language")
-                        .badge("Japanese")
+                    Text("age", tableName: "AboutApp")
+                        .badge(Text("about 28", tableName: "AboutApp"))
+                    Text("country", tableName: "AboutApp")
+                        .badge(Text("Japan", tableName: "AboutApp"))
+                    Text("native language", tableName: "AboutApp")
+                        .badge(Text("Japanese", tableName: "AboutApp"))
                 } header: {
-                    Text("identity / circumstance / background")
+                    Text("identity / circumstance / background", tableName: "AboutApp")
                 } footer: {
-                    Text("As of 2021")
+                    Text("As of 2021", tableName: "AboutApp")
                 }
                 Self.TimelineSection()
                 Section {
@@ -318,14 +326,15 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
                         .padding()
                         .opacity(0.6)
                 } header: {
-                    Text("Image")
+                    Text("Image", tableName: "AboutApp")
                 } footer: {
-                    Text("Taken on 2021-11")
+                    Text("Taken on 2021-11", tableName: "AboutApp")
                 }
             }
-            .navigationTitle("Developer / Publisher")
+            .navigationTitle(Text("Developer / Publisher", tableName: "AboutApp"))
         } label: {
-            Label("Developer / Publisher", systemImage: "person")
+            Label(String(localized: "Developer / Publisher", table: "AboutApp"),
+                  systemImage: "person")
         }
     }
     private struct TimelineSection: View {
@@ -351,12 +360,12 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
                         Text(ⓥalue.date)
                             .font(.caption2)
                             .padding(8)
-                        Text(LocalizedStringKey(ⓥalue.description))
+                        Text(LocalizedStringKey(ⓥalue.description), tableName: "AboutApp")
                             .font(.caption)
                     }
                 }
             } header: {
-                Text("Timeline")
+                Text("Timeline", tableName: "AboutApp")
             }
         }
     }

@@ -1,0 +1,254 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@" : {
+
+    },
+    "1" : {
+
+    },
+    "2" : {
+
+    },
+    "About App" : {
+
+    },
+    "Alarm clock with taking a long time from small volume to max volume." : {
+
+    },
+    "App for iPhone" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone向けアプリ"
+          }
+        }
+      }
+    },
+    "App for iPhone / Apple Watch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone/Apple Watch向けアプリ"
+          }
+        }
+      }
+    },
+    "App for iPhone / iPad" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone/iPad向けアプリ"
+          }
+        }
+      }
+    },
+    "App for iPhone / iPad / Apple Watch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone/iPad/Apple Watch向けアプリ"
+          }
+        }
+      }
+    },
+    "App for iPhone / iPad / Mac / Apple Watch" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone/iPad/Mac/Apple Watch向けアプリ"
+          }
+        }
+      }
+    },
+    "AppTemplate" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリテンプレート"
+          }
+        }
+      }
+    },
+    "Bundle.main.infoDictionary" : {
+
+    },
+    "Button" : {
+
+    },
+    "Cancel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取り消す"
+          }
+        }
+      }
+    },
+    "Description" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "概要"
+          }
+        }
+      }
+    },
+    "Detail" : {
+
+    },
+    "DisclosureGroup" : {
+
+    },
+    "Dismiss" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "閉じる"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了"
+          }
+        }
+      }
+    },
+    "E-book reader that can turn a page with slightly longish voluntary blink." : {
+
+    },
+    "Error" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エラー"
+          }
+        }
+      }
+    },
+    "Flashcard on widget. Memorize a note in everyday life." : {
+
+    },
+    "for iPhone / iPad / Mac / Apple TV / Apple Watch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone/iPad/Mac/Apple TV/Apple Watch向け"
+          }
+        }
+      }
+    },
+    "for iPhone / iPad / Mac / Apple Watch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone/iPad/Mac/Apple Watch向け"
+          }
+        }
+      }
+    },
+    "Menu" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニュー"
+          }
+        }
+      }
+    },
+    "Navi link1" : {
+
+    },
+    "Notes widget on lock screen." : {
+
+    },
+    "OK" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "了解しました"
+          }
+        }
+      }
+    },
+    "Open AppStore page" : {
+
+    },
+    "Open menu" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューを開く"
+          }
+        }
+      }
+    },
+    "Option" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オプション"
+          }
+        }
+      }
+    },
+    "Picker" : {
+
+    },
+    "placeholder" : {
+
+    },
+    "Placeholder" : {
+
+    },
+    "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
+
+    },
+    "Register weight data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
+
+    },
+    "Section header title" : {
+
+    },
+    "Simplest Shogi board App. Supported SharePlay." : {
+
+    },
+    "Text" : {
+
+    },
+    "Toggle" : {
+
+    }
+  },
+  "version" : "1.0"
+}

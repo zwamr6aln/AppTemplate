@@ -60,7 +60,7 @@ struct 📣ADView: View {
             }
         }
         .modifier(Self.PurchasedEffect())
-        .navigationTitle("AD")
+        .navigationTitle(Text("AD", tableName: "AD&InAppPurchase"))
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: self.$showADMenu) { 📣ADMenu() }
     }
@@ -120,7 +120,7 @@ struct 📣ADView: View {
     }
     private func appName() -> some View {
         Link(destination: self.targetApp.url) {
-            Text(self.targetApp.name)
+            Text(self.targetApp.name, tableName: "AD&InAppPurchase")
                 .font(.headline)
         }
         .buttonStyle(.plain)
@@ -128,7 +128,7 @@ struct 📣ADView: View {
         .disabled(🛒.purchased)
     }
     private func appDescription() -> some View {
-        Text(self.targetApp.description)
+        Text(self.targetApp.description, tableName: "AD&InAppPurchase")
             .font(.subheadline)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 8)
@@ -141,7 +141,7 @@ struct 📣ADView: View {
             }
             .foregroundColor(.primary)
         }
-        .accessibilityLabel("Open AppStore page")
+        .accessibilityLabel(Text("Open AppStore page", tableName: "AD&InAppPurchase"))
         .disabled(🛒.purchased)
     }
     private func adMenuLink() -> some View {
@@ -151,7 +151,7 @@ struct 📣ADView: View {
             Image(systemName: "questionmark.circle")
         }
         .tint(.primary)
-        .accessibilityLabel("About AD")
+        .accessibilityLabel(Text("About AD", tableName: "AD&InAppPurchase"))
     }
     private func dismissButton() -> some View {
         Group {
@@ -168,7 +168,7 @@ struct 📣ADView: View {
                 }
                 .keyboardShortcut(.cancelAction)
                 .tint(.primary)
-                .accessibilityLabel("Dismiss")
+                .accessibilityLabel(Text("Dismiss", tableName: "AD&InAppPurchase"))
             }
         }
     }
@@ -201,10 +201,11 @@ struct 📣ADView: View {
 struct 📣ADDescriptionSection: View {
     var body: some View {
         Section {
-            Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.")
-                .padding()
+            Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.",
+                 tableName: "AD&InAppPurchase")
+            .padding()
         } header: {
-            Text("Description")
+            Text("Description", tableName: "AD&InAppPurchase")
         }
     }
 }
@@ -217,10 +218,11 @@ struct 📣ADMenuLink: View {
             NavigationLink {
                 📣ADMenu()
             } label: {
-                Label("About AD / Purchase", systemImage: "megaphone")
+                Label(String(localized: "About AD / Purchase", table: "AD&InAppPurchase"),
+                      systemImage: "megaphone")
             }
         } header: {
-            Text("AD / Purchase")
+            Text("AD / Purchase", tableName: "AD&InAppPurchase")
         }
     }
 }
@@ -232,7 +234,7 @@ struct 📣ADMenu: View {
             📣ADDescriptionSection()
             🛒IAPSection()
         }
-        .navigationTitle("About AD")
+        .navigationTitle(Text("About AD", tableName: "AD&InAppPurchase"))
         .navigationBarTitleDisplayMode(.large)
     }
 }
