@@ -53,4 +53,25 @@ extension 🗒️StaticInfo {
         }
     }
 }
+
+#elseif os(macOS)
+extension 🗒️StaticInfo {
+    static let versionInfos: [(version: String, date: String)] = [("1.1", "2021-03-01"),
+                                                                  ("1.0.1", "2021-02-01"),
+                                                                  ("1.0", "2021-01-01")] //降順。先頭の方が新しい
+    
+    enum SourceCodeCategory: String, CaseIterable, Identifiable {
+        case main, Shared, Sub
+        var id: Self { self }
+        var fileNames: [String] {
+            switch self {
+                case .main: ["App_macOS.swift",
+                             "📱AppModel_macOS.swift",
+                             "ContentView_maciOS.swift"]
+                case .Shared: ["🗒️StaticInfo.swift"]
+                case .Sub: ["ℹ️AboutApp.swift"]
+            }
+        }
+    }
+}
 #endif

@@ -15,6 +15,12 @@ struct ContentView: View {
                 } label: {
                     Label("Trial", systemImage: "questionmark.app")
                 }
+                NavigationLink {
+                    ℹ️AboutAppMenu()
+                } label: {
+                    Label("About", systemImage: "questionmark")
+                }
+                Divider()
                 Section {
                     NavigationLink("Navi link") { Text("Text") }
                 } header: {
