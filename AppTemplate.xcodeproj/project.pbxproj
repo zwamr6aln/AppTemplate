@@ -207,7 +207,6 @@
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 				F567E36929F278B10026E12D /* Info.plist */,
 				F5936C162A6A81DE0044B939 /* 🗄️Rest */,
-				12E4A75828502AF800B2380B /* 🧰Others */,
 			);
 			path = "🧩Sub";
 			sourceTree = "<group>";
@@ -246,13 +245,6 @@
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
 			);
 			path = iOS;
-			sourceTree = "<group>";
-		};
-		12E4A75828502AF800B2380B /* 🧰Others */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "🧰Others";
 			sourceTree = "<group>";
 		};
 		12E4A76828502EA600B2380B /* 🌏Localization */ = {
