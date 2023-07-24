@@ -2,6 +2,7 @@ import SwiftUI
 
 @main
 struct App_macOS: App {
+    @NSApplicationDelegateAdaptor var ⓓelegate: 🄳elegate
     private let 📱 = 📱AppModel()
     var body: some Scene {
         WindowGroup {
@@ -10,6 +11,13 @@ struct App_macOS: App {
         }
         .commands { 🪄Commands() }
         Settings { 🔧SettingsContent() }
+    }
+}
+
+class 🄳elegate: NSObject, NSApplicationDelegate {
+    func applicationDidBecomeActive(_ notification: Notification) {
+        let ⓐpp = notification.object as! NSApplication
+        print("🖨️ \(self), \(String(describing: ⓐpp.menu?.items))")
     }
 }
 
