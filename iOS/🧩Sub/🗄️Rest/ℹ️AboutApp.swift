@@ -306,15 +306,15 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
                 }
                 Section {
                     Text("age", tableName: "AboutApp")
-                        .badge(Text("about 28", tableName: "AboutApp"))
+                        .badge(Text("about 29", tableName: "AboutApp"))
                     Text("country", tableName: "AboutApp")
                         .badge(Text("Japan", tableName: "AboutApp"))
                     Text("native language", tableName: "AboutApp")
                         .badge(Text("Japanese", tableName: "AboutApp"))
                 } header: {
-                    Text("identity / circumstance / background", tableName: "AboutApp")
+                    Text("background", tableName: "AboutApp")
                 } footer: {
-                    Text("As of 2021", tableName: "AboutApp")
+                    Text("As of 2023", tableName: "AboutApp")
                 }
                 Self.TimelineSection()
                 Section {

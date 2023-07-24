@@ -177,47 +177,71 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
         Window("Developer / Publisher", id: "DeveloperPublisher") {
             List {
                 Section {
-                    Text("Individual", tableName: "AboutApp")
+                    GroupBox {
+                        LabeledContent {
+                            Text("only one person", tableName: "AboutApp")
+                        } label: {
+                            Text("Individual", tableName: "AboutApp")
+                        }
+                        .padding(4)
+                    }
                 } header: {
                     Text("The System", tableName: "AboutApp")
                 }
                 Section {
-                    Text(verbatim: "山下 亮")
-                    Text(verbatim: "やました りょう (ひらがな)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                    Text(verbatim: "Yamashita Ryo (alphabet)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                    GroupBox {
+                        VStack {
+                            LabeledContent("Original", value: "山下 亮")
+                            LabeledContent("Alphabet", value: "Yamashita Ryo")
+                                .foregroundStyle(.tertiary)
+                        }
+                        .padding(4)
+                    }
                 } header: {
                     Text("Name", tableName: "AboutApp")
-                } footer: {
-                    Text("only one person", tableName: "AboutApp")
                 }
                 Section {
-                    Text("age", tableName: "AboutApp")
-                        .badge(Text("about 28", tableName: "AboutApp"))
-                    Text("country", tableName: "AboutApp")
-                        .badge(Text("Japan", tableName: "AboutApp"))
-                    Text("native language", tableName: "AboutApp")
-                        .badge(Text("Japanese", tableName: "AboutApp"))
+                    GroupBox {
+                        VStack {
+                            LabeledContent {
+                                Text("about 29", tableName: "AboutApp")
+                            } label: {
+                                Text("age", tableName: "AboutApp")
+                            }
+                            LabeledContent {
+                                Text("Japan", tableName: "AboutApp")
+                            } label: {
+                                Text("country", tableName: "AboutApp")
+                            }
+                            LabeledContent {
+                                Text("Japanese", tableName: "AboutApp")
+                            } label: {
+                                Text("native language", tableName: "AboutApp")
+                            }
+                            Text("As of 2023", tableName: "AboutApp")
+                                .font(.caption)
+                                .foregroundStyle(.tertiary)
+                        }
+                        .padding(4)
+                    }
                 } header: {
-                    Text("identity / circumstance / background", tableName: "AboutApp")
-                } footer: {
-                    Text("As of 2021", tableName: "AboutApp")
+                    Text("background", tableName: "AboutApp")
                 }
                 Self.TimelineSection()
                 Section {
-                    Image(.developerPublisher)
-                        .resizable()
-                        .frame(width: 90, height: 90)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .padding()
-                        .opacity(0.6)
+                    VStack(spacing: 8) {
+                        Image(.developerPublisher)
+                            .resizable()
+                            .frame(width: 90, height: 90)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .opacity(0.6)
+                        Text("Taken on 2021-11", tableName: "AboutApp")
+                            .font(.caption)
+                            .foregroundStyle(.tertiary)
+                    }
+                    .padding(12)
                 } header: {
                     Text("Image", tableName: "AboutApp")
-                } footer: {
-                    Text("Taken on 2021-11", tableName: "AboutApp")
                 }
             }
         }
@@ -241,13 +265,18 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
         }
         var body: some View {
             Section {
-                ForEach(Self.values, id: \.self.description) { ⓥalue in
-                    HStack {
-                        Text(ⓥalue.date)
-                            .font(.caption2)
-                            .padding(8)
-                        Text(LocalizedStringKey(ⓥalue.description), tableName: "AboutApp")
-                            .font(.caption)
+                GroupBox {
+                    Grid {
+                        ForEach(Self.values, id: \.self.description) { ⓥalue in
+                            GridRow {
+                                Text(ⓥalue.date)
+                                    .font(.caption2)
+                                    .padding(8)
+                                Text(LocalizedStringKey(ⓥalue.description), tableName: "AboutApp")
+                                    .font(.caption)
+                                    .gridCellAnchor(.leading)
+                            }
+                        }
                     }
                 }
             } header: {

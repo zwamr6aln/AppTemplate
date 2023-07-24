@@ -11,12 +11,12 @@
         }
       }
     },
-    "about 28" : {
+    "about 29" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "約28才"
+            "value" : "約29才"
           }
         }
       }
@@ -63,12 +63,22 @@
         }
       }
     },
-    "As of 2021" : {
+    "As of 2023" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "2021年時点"
+            "value" : "2023年時点"
+          }
+        }
+      }
+    },
+    "background" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バックグラウンド"
           }
         }
       }
@@ -142,16 +152,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "琉球大学を卒業。"
-          }
-        }
-      }
-    },
-    "identity / circumstance / background" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "身元 / 素性 / 境遇"
           }
         }
       }
@@ -412,7 +412,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "構成"
+            "value" : "組織構成"
           }
         }
       }
