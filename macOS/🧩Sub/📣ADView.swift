@@ -188,11 +188,13 @@ struct 📣ADView: View {
 struct 📣ADDescriptionSection: View {
     var body: some View {
         Section {
-            Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.",
-                 tableName: "AD&InAppPurchase")
-            .padding()
+            GroupBox {
+                Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.",
+                     tableName: "AD&InAppPurchase")
+                .padding()
+            }
         } header: {
-            Text("Description", tableName: "AD&InAppPurchase")
+            Text("About AD", tableName: "AD&InAppPurchase")
         }
     }
 }
@@ -221,6 +223,6 @@ struct 📣ADMenu: View {
             📣ADDescriptionSection()
             🛒IAPSection()
         }
-        .navigationTitle(Text("About AD", tableName: "AD&InAppPurchase"))
+        .navigationTitle(Text("AD&InAppPurchase", tableName: "AD&InAppPurchase"))
     }
 }

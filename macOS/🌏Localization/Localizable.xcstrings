@@ -19,9 +19,6 @@
     "Alarm clock with taking a long time from small volume to max volume." : {
 
     },
-    "alert" : {
-
-    },
     "Alphabet" : {
 
     },
@@ -38,12 +35,6 @@
 
     },
     "Bundle.main.infoDictionary" : {
-
-    },
-    "confirmationDialog" : {
-
-    },
-    "Content" : {
 
     },
     "Description" : {
@@ -70,13 +61,13 @@
     "Git repository is public on GitHub.com" : {
 
     },
-    "label" : {
+    "In App Purchase" : {
 
     },
     "Link" : {
 
     },
-    "NavigationLink" : {
+    "Navigation title" : {
 
     },
     "Notes widget on lock screen." : {
@@ -109,31 +100,13 @@
     "Review on AppStore" : {
 
     },
-    "Show alert" : {
-
-    },
-    "Show CD" : {
-
-    },
-    "Show pop over" : {
-
-    },
-    "Show sheet" : {
-
-    },
     "Simplest Shogi board App. Supported SharePlay." : {
 
     },
     "Source code" : {
 
     },
-    "titleKey" : {
-
-    },
     "Toggle" : {
-
-    },
-    "Trial" : {
 
     },
     "Version history" : {

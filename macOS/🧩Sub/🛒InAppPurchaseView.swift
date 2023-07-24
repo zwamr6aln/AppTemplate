@@ -44,7 +44,6 @@ struct 🛒PurchaseView: View {
                       dismissButton: .default(Text("OK", tableName: "AD&InAppPurchase")))
             }
         }
-        .padding(.vertical)
         .disabled(🛒.unconnected)
         .disabled(🛒.purchased)
         .animation(.default, value: 🛒.purchased)
@@ -55,13 +54,18 @@ struct 🛒IAPSection: View {
     @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
     var body: some View {
         Section {
-            🛒PurchaseView()
-            self.adPreview()
+            GroupBox {
+                VStack {
+                    🛒PurchaseView()
+                    self.adPreview()
+                    Self.RestoreButton()
+                }
+                .padding()
+            }
         } header: {
             Text("In-App Purchase", tableName: "AD&InAppPurchase")
         }
         .headerProminence(.increased)
-        Self.RestoreButton()
     }
     private func adPreview() -> some View {
         HStack(alignment: .bottom) {
@@ -82,7 +86,7 @@ struct 🛒IAPSection: View {
                 .padding(.bottom, 60)
             Spacer()
         }
-        .padding(24)
+        .padding(12)
     }
     private struct RestoreButton: View {
         @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
@@ -91,41 +95,39 @@ struct 🛒IAPSection: View {
         @State private var syncSuccess = false
         @State private var alertMessage = ""
         var body: some View {
-            Section {
-                Button {
-                    Task {
-                        do {
-                            self.restoringInProgress = true
-                            try await AppStore.sync()
-                            self.syncSuccess = true
-                            self.alertMessage = "Restored transactions"
-                        } catch {
-                            print("Failed sync: \(error)")
-                            self.syncSuccess = false
-                            self.alertMessage = error.localizedDescription
-                        }
-                        self.showAlert = true
-                        self.restoringInProgress = false
+            Button {
+                Task {
+                    do {
+                        self.restoringInProgress = true
+                        try await AppStore.sync()
+                        self.syncSuccess = true
+                        self.alertMessage = "Restored transactions"
+                    } catch {
+                        print("Failed sync: \(error)")
+                        self.syncSuccess = false
+                        self.alertMessage = error.localizedDescription
                     }
-                } label: {
-                    HStack {
-                        Label(String(localized: "Restore Purchases", table: "AD&InAppPurchase"),
-                              systemImage: "arrow.clockwise")
-                        .font(.footnote)
-                        .foregroundColor(🛒.unconnected ? .secondary : nil)
-                        .grayscale(🛒.purchased ? 1 : 0)
-                        if self.restoringInProgress {
-                            Spacer()
-                            ProgressView()
-                        }
+                    self.showAlert = true
+                    self.restoringInProgress = false
+                }
+            } label: {
+                HStack {
+                    Label(String(localized: "Restore Purchases", table: "AD&InAppPurchase"),
+                          systemImage: "arrow.clockwise")
+                    .font(.footnote)
+                    .foregroundColor(🛒.unconnected ? .secondary : nil)
+                    .grayscale(🛒.purchased ? 1 : 0)
+                    if self.restoringInProgress {
+                        Spacer()
+                        ProgressView()
                     }
                 }
-                .disabled(self.restoringInProgress)
-                .alert(isPresented: self.$showAlert) {
-                    Alert(title: Text(self.syncSuccess ? "Done" : "Error", tableName: "AD&InAppPurchase"),
-                          message: Text(LocalizedStringKey(self.alertMessage)),
-                          dismissButton: .default(Text("OK", tableName: "AD&InAppPurchase")))
-                }
+            }
+            .disabled(self.restoringInProgress)
+            .alert(isPresented: self.$showAlert) {
+                Alert(title: Text(self.syncSuccess ? "Done" : "Error", tableName: "AD&InAppPurchase"),
+                      message: Text(LocalizedStringKey(self.alertMessage)),
+                      dismissButton: .default(Text("OK", tableName: "AD&InAppPurchase")))
             }
         }
     }
