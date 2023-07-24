@@ -9,11 +9,13 @@ struct 🪄Commands: Commands {
         SidebarCommands()
         CommandGroup(replacing: .help) { EmptyView() }
         CommandGroup(after: .help) {
-            Link("AppStore link", destination: URL(string: "https://apple.com")!)
-            Link("Review on AppStore", destination: URL(string: "https://apple.com")!)
+            Link("AppStore link", destination: 🗒️StaticInfo.appStoreProductURL)
+            Link("Review on AppStore", destination: URL(string: "\(🗒️StaticInfo.appStoreProductURL)?action=write-review")!)
+            Divider()
             Button("Description") { self.openWindow(id: "Description") }
             Button("Privacy policy") { self.openWindow(id: "PrivacyPolicy") }
             Button("Version history") { self.openWindow(id: "VersionHistory") }
+            Divider()
             Button("Source code") { self.openWindow(id: "SourceCode") }
             Button("Developer / Publisher") { self.openWindow(id: "DeveloperPublisher") }
         }

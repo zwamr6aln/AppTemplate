@@ -1,105 +1,82 @@
 import SwiftUI
 
-struct 📰DescriptionContent: View {
-    var body: some View {
-        ScrollView {
-            Text("AppStoreDescription", tableName: "🌏AppStoreDescription")
-                .padding()
-                .frame(minWidth: 300, minHeight: 400)
-        }
-        .navigationTitle(Text("Description", tableName: "AboutApp"))
-        .textSelection(.enabled)
+struct ℹ️HelpWindows: Scene {
+    var body: some Scene {
+        📰DescriptionWindow()
+        👤PrivacyPolicyWindow()
+        📜VersionHistoryWindow()
+        📓SourceCodeWindow()
+        🧑‍💻DeveloperPublisherWindow()
     }
 }
 
-private struct 🔗AppStoreLink: View {
-    @Environment(\.openURL) var openURL
-    var body: some View {
-        Button {
-            self.openURL(🗒️StaticInfo.appStoreProductURL)
-        } label: {
-            HStack {
-                Label(String(localized: "Open AppStore page", table: "AboutApp"),
-                      systemImage: "link")
-                Spacer()
-                Image(systemName: "arrow.up.forward.app")
-                    .font(.body.weight(.light))
-                    .imageScale(.small)
+private struct 📰DescriptionWindow: Scene {
+    var body: some Scene {
+        Window("Description", id: "Description") {
+            ScrollView {
+                Text("AppStoreDescription", tableName: "🌏AppStoreDescription")
+                    .padding(24)
             }
-        }
-    }
-}
-
-private struct 🏬AppStoreSection: View {
-    @Environment(\.openURL) var openURL
-    var body: some View {
-        Section {
-            🔗AppStoreLink()
-            Button {
-                let ⓤrl = URL(string: "\(🗒️StaticInfo.appStoreProductURL)?action=write-review")!
-                self.openURL(ⓤrl)
-            } label: {
-                HStack {
-                    Label(String(localized: "Review on AppStore", table: "AboutApp"),
-                          systemImage: "star.bubble")
-                    Spacer()
-                    Image(systemName: "arrow.up.forward.app")
-                        .imageScale(.small)
-                        .foregroundStyle(.secondary)
-                }
-            }
-        } footer: {
-            Text("\(🗒️StaticInfo.appStoreProductURL)")
-        }
-    }
-}
-
-struct 👤PrivacyPolicyContent: View {
-    var body: some View {
-        Text(🗒️StaticInfo.privacyPolicyDescription)
-            .padding(24)
+            .navigationTitle(Text("Description", tableName: "AboutApp"))
             .textSelection(.enabled)
-            .frame(width: 300, height: 300)
-    }
-}
-
-struct 📜VersionHistoryContent: View {
-    var body: some View {
-        List {
-            ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
-                Section {
-                    Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
-                        .font(.subheadline)
-                        .padding()
-                        .textSelection(.enabled)
-                } header: {
-                    Text(ⓘnfo.version)
-                } footer: {
-                    if 🗒️StaticInfo.versionInfos.first?.version == ⓘnfo.version {
-                        Text("builded on \(ⓘnfo.date)", tableName: "AboutApp")
-                    } else {
-                        Text("released on \(ⓘnfo.date)", tableName: "AboutApp")
-                    }
-                }
-                .headerProminence(.increased)
-            }
         }
-        .navigationTitle(Text("Version History", tableName: "AboutApp"))
+        .defaultSize(width: 300, height: 300)
     }
 }
 
-struct 📓SourceCodeContent: View {
-    var body: some View {
-        NavigationSplitView {
+private struct 👤PrivacyPolicyWindow: Scene {
+    var body: some Scene {
+        Window("Privacy Policy", id: "PrivacyPolicy") {
+            Text(🗒️StaticInfo.privacyPolicyDescription)
+                .padding(24)
+                .textSelection(.enabled)
+        }
+        .defaultSize(width: 300, height: 300)
+    }
+}
+
+private struct 📜VersionHistoryWindow: Scene {
+    var body: some Scene {
+        Window("Version history", id: "VersionHistory") {
             List {
-                ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
-                self.bundleMainInfoDictionary()
-                self.repositoryLinks()
+                ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
+                    Section {
+                        Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
+                            .font(.subheadline)
+                            .padding()
+                            .textSelection(.enabled)
+                    } header: {
+                        Text(ⓘnfo.version)
+                    } footer: {
+                        if 🗒️StaticInfo.versionInfos.first?.version == ⓘnfo.version {
+                            Text("builded on \(ⓘnfo.date)", tableName: "AboutApp")
+                        } else {
+                            Text("released on \(ⓘnfo.date)", tableName: "AboutApp")
+                        }
+                    }
+                    .headerProminence(.increased)
+                }
             }
-            .navigationTitle(Text("Source code", tableName: "AboutApp"))
-        } detail: {
-            Text("← Select file")
-                .foregroundStyle(.tertiary)
+            .navigationTitle(Text("Version History", tableName: "AboutApp"))
+        }
+        .defaultSize(width: 300, height: 400)
+    }
+}
+
+private struct 📓SourceCodeWindow: Scene {
+    var body: some Scene {
+        Window("Source code", id: "SourceCode") {
+            NavigationSplitView {
+                List {
+                    ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
+                    self.bundleMainInfoDictionary()
+                    self.repositoryLinks()
+                }
+                .navigationTitle(Text("Source code", tableName: "AboutApp"))
+            } detail: {
+                Text("← Select file")
+                    .foregroundStyle(.tertiary)
+            }
         }
     }
     private struct CodeSection: View {
@@ -190,54 +167,56 @@ struct 📓SourceCodeContent: View {
     }
 }
 
-struct 🧑‍💻DeveloperPublisherContent: View {
-    var body: some View {
-        List {
-            Section {
-                Text("Individual", tableName: "AboutApp")
-            } header: {
-                Text("The System", tableName: "AboutApp")
+private struct 🧑‍💻DeveloperPublisherWindow: Scene {
+    var body: some Scene {
+        Window("Developer / Publisher", id: "DeveloperPublisher") {
+            List {
+                Section {
+                    Text("Individual", tableName: "AboutApp")
+                } header: {
+                    Text("The System", tableName: "AboutApp")
+                }
+                Section {
+                    Text(verbatim: "山下 亮")
+                    Text(verbatim: "やました りょう (ひらがな)")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                    Text(verbatim: "Yamashita Ryo (alphabet)")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                } header: {
+                    Text("Name", tableName: "AboutApp")
+                } footer: {
+                    Text("only one person", tableName: "AboutApp")
+                }
+                Section {
+                    Text("age", tableName: "AboutApp")
+                        .badge(Text("about 28", tableName: "AboutApp"))
+                    Text("country", tableName: "AboutApp")
+                        .badge(Text("Japan", tableName: "AboutApp"))
+                    Text("native language", tableName: "AboutApp")
+                        .badge(Text("Japanese", tableName: "AboutApp"))
+                } header: {
+                    Text("identity / circumstance / background", tableName: "AboutApp")
+                } footer: {
+                    Text("As of 2021", tableName: "AboutApp")
+                }
+                Self.TimelineSection()
+                Section {
+                    Image(.developerPublisher)
+                        .resizable()
+                        .frame(width: 90, height: 90)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .padding()
+                        .opacity(0.6)
+                } header: {
+                    Text("Image", tableName: "AboutApp")
+                } footer: {
+                    Text("Taken on 2021-11", tableName: "AboutApp")
+                }
             }
-            Section {
-                Text(verbatim: "山下 亮")
-                Text(verbatim: "やました りょう (ひらがな)")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                Text(verbatim: "Yamashita Ryo (alphabet)")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-            } header: {
-                Text("Name", tableName: "AboutApp")
-            } footer: {
-                Text("only one person", tableName: "AboutApp")
-            }
-            Section {
-                Text("age", tableName: "AboutApp")
-                    .badge(Text("about 28", tableName: "AboutApp"))
-                Text("country", tableName: "AboutApp")
-                    .badge(Text("Japan", tableName: "AboutApp"))
-                Text("native language", tableName: "AboutApp")
-                    .badge(Text("Japanese", tableName: "AboutApp"))
-            } header: {
-                Text("identity / circumstance / background", tableName: "AboutApp")
-            } footer: {
-                Text("As of 2021", tableName: "AboutApp")
-            }
-            Self.TimelineSection()
-            Section {
-                Image(.developerPublisher)
-                    .resizable()
-                    .frame(width: 90, height: 90)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .padding()
-                    .opacity(0.6)
-            } header: {
-                Text("Image", tableName: "AboutApp")
-            } footer: {
-                Text("Taken on 2021-11", tableName: "AboutApp")
-            }
+            .navigationTitle(Text("Developer / Publisher", tableName: "AboutApp"))
         }
-        .navigationTitle(Text("Developer / Publisher", tableName: "AboutApp"))
     }
     private struct TimelineSection: View {
         private static var values: [(date: String, description: String)] {
