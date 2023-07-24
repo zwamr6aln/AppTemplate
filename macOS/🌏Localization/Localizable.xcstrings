@@ -25,6 +25,9 @@
     "App for iPhone / iPad / Mac / Apple Watch" : {
 
     },
+    "AppStore link" : {
+
+    },
     "AppTemplate" : {
 
     },
@@ -37,16 +40,19 @@
     "Button" : {
 
     },
-    "Category1" : {
-
-    },
     "confirmationDialog" : {
 
     },
     "Content" : {
 
     },
+    "Description" : {
+
+    },
     "Detail" : {
+
+    },
+    "Developer / Publisher" : {
 
     },
     "DisclosureGroup" : {
@@ -76,22 +82,25 @@
     "Notes widget on lock screen." : {
 
     },
-    "Option" : {
-
-    },
     "Picker" : {
 
     },
-    "placeholder" : {
+    "Placeholder" : {
 
     },
-    "Placeholder" : {
+    "Privacy policy" : {
+
+    },
+    "Privacy Policy" : {
 
     },
     "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
 
     },
     "Register weight data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
+
+    },
+    "Review on AppStore" : {
 
     },
     "Section header title" : {
@@ -112,6 +121,9 @@
     "Simplest Shogi board App. Supported SharePlay." : {
 
     },
+    "Source code" : {
+
+    },
     "Text" : {
 
     },
@@ -122,6 +134,9 @@
 
     },
     "Trial" : {
+
+    },
+    "Version history" : {
 
     }
   },

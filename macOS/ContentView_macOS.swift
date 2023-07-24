@@ -6,11 +6,6 @@ struct ContentView: View {
         NavigationSplitView {
             List {
                 NavigationLink {
-                    🛠AppMenu()
-                } label: {
-                    Label("Option", systemImage: "gearshape")
-                }
-                NavigationLink {
                     TrialView()
                 } label: {
                     Label("Trial", systemImage: "questionmark.app")
@@ -77,22 +72,5 @@ struct TrialView: View {
         }
         .navigationTitle("Trial")
         
-    }
-}
-
-struct 🛠AppMenu: View {
-    var body: some View {
-        NavigationStack {
-            List {
-                Section {
-                    Toggle(isOn: .constant(false)) {
-                        Label("placeholder", systemImage: "questionmark")
-                    }
-                } header: {
-                    Text("Category1")
-                }
-            }
-            .navigationTitle("Option")
-        }
     }
 }

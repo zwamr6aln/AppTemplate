@@ -5,7 +5,6 @@ struct ℹ️AboutAppMenu: View {
         List {
             📰AppStoreDescriptionSection()
             📜VersionHistoryLink()
-            👤PrivacyPolicySection()
             🏬AppStoreSection()
             Divider()
             📓SourceCodeLink()
@@ -110,20 +109,12 @@ private struct 🏬AppStoreSection: View {
     }
 }
 
-private struct 👤PrivacyPolicySection: View {
+struct 👤PrivacyPolicyContent: View {
     var body: some View {
-        NavigationLink {
-            ScrollView {
-                Text(🗒️StaticInfo.privacyPolicyDescription)
-                    .padding(24)
-                    .textSelection(.enabled)
-                    .frame(maxWidth: .infinity)
-            }
-            .navigationTitle(Text("Privacy Policy", tableName: "AboutApp"))
-        } label: {
-            Label(String(localized: "Privacy Policy", table: "AboutApp"),
-                  systemImage: "person.text.rectangle")
-        }
+        Text(🗒️StaticInfo.privacyPolicyDescription)
+            .padding(24)
+            .textSelection(.enabled)
+            .frame(width: 300, height: 300)
     }
 }
 

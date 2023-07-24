@@ -10,6 +10,7 @@ struct App_macOS: App {
                 .environmentObject(📱)
         }
         .commands { 🪄Commands() }
+        Window("Privacy Policy", id: "PrivacyPolicy") { 👤PrivacyPolicyContent() }
         Settings { 🔧SettingsContent() }
     }
 }
