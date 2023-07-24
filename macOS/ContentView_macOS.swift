@@ -11,19 +11,10 @@ struct ContentView: View {
                     Label("Trial", systemImage: "questionmark.app")
                 }
                 Divider()
-                Section {
-                    NavigationLink("Navi link") { Text("Text") }
-                } header: {
-                    Text("Section header title")
-                }
-                DisclosureGroup("DisclosureGroup", isExpanded: .constant(true)) {
-                    ShareLink(item: "ShareLink")
-                    Toggle("Toggle", isOn: .constant(false))
-                    Menu("Menu") { Text("1"); Text("2") }
-                    Picker("Picker", selection: .constant("1")) { Text("1"); Text("2") }
-                    Button("Button") {}
-                    Text("Text")
-                    Text("EnvironmentObject/📱.showSheet: " + self.📱.showSheet.description)
+                NavigationLink {
+                    Text("Placeholder")
+                } label: {
+                    Label("Option", systemImage: "gear")
                 }
             }
         } content: {
@@ -66,6 +57,5 @@ struct TrialView: View {
             Button(action: {}) { Label("label", systemImage: "xmark") }
         }
         .navigationTitle("Trial")
-        
     }
 }

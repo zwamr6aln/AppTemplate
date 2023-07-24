@@ -40,9 +40,6 @@
     "Bundle.main.infoDictionary" : {
 
     },
-    "Button" : {
-
-    },
     "confirmationDialog" : {
 
     },
@@ -58,10 +55,13 @@
     "Developer / Publisher" : {
 
     },
-    "DisclosureGroup" : {
+    "Done" : {
 
     },
     "E-book reader that can turn a page with slightly longish voluntary blink." : {
+
+    },
+    "Error" : {
 
     },
     "Flashcard on widget. Memorize a note in everyday life." : {
@@ -76,16 +76,13 @@
     "Link" : {
 
     },
-    "Menu" : {
-
-    },
-    "Navi link" : {
-
-    },
     "NavigationLink" : {
 
     },
     "Notes widget on lock screen." : {
+
+    },
+    "Option" : {
 
     },
     "Original" : {
@@ -112,9 +109,6 @@
     "Review on AppStore" : {
 
     },
-    "Section header title" : {
-
-    },
     "Show alert" : {
 
     },
@@ -131,9 +125,6 @@
 
     },
     "Source code" : {
-
-    },
-    "Text" : {
 
     },
     "titleKey" : {
