@@ -1,69 +1,14 @@
 import SwiftUI
 
-struct ℹ️AboutAppMenu: View {
+struct 📰DescriptionContent: View {
     var body: some View {
-        List {
-            📰AppStoreDescriptionSection()
-            📜VersionHistoryLink()
-            🏬AppStoreSection()
-            Divider()
-            📓SourceCodeLink()
-            🧑‍💻AboutDeveloperPublisherLink()
+        ScrollView {
+            Text("AppStoreDescription", tableName: "🌏AppStoreDescription")
+                .padding()
+                .frame(minWidth: 300, minHeight: 400)
         }
-        .navigationTitle(Text("About App", tableName: "AboutApp"))
-    }
-}
-
-private struct 🖼️IconAndName: View {
-    var body: some View {
-        GeometryReader { 📐 in
-            VStack(spacing: 8) {
-                Image("RoundedIcon")
-                    .resizable()
-                    .frame(width: 100, height: 100)
-                VStack(spacing: 6) {
-                    Text(🗒️StaticInfo.appName)
-                        .font(.system(.headline, design: .rounded))
-                        .tracking(1.5)
-                        .opacity(0.75)
-                    Text(🗒️StaticInfo.appSubTitle)
-                        .font(.footnote)
-                        .fontWeight(.medium)
-                        .foregroundStyle(.secondary)
-                }
-                .lineLimit(1)
-                .minimumScaleFactor(0.1)
-            }
-            .padding(20)
-            .frame(width: 📐.size.width)
-        }
-        .frame(height: 200)
-    }
-}
-
-private struct 📰AppStoreDescriptionSection: View {
-    var body: some View {
-        NavigationLink {
-            ScrollView {
-                Text("AppStoreDescription", tableName: "🌏AppStoreDescription")
-                    .padding()
-                    .frame(maxWidth: .infinity)
-            }
-            .navigationTitle(Text("Description", tableName: "AboutApp"))
-            .textSelection(.enabled)
-        } label: {
-            Text(self.textWithoutEmptyLines)
-                .font(.subheadline)
-                .lineSpacing(5)
-                .lineLimit(7)
-                .padding(8)
-                .accessibilityLabel(Text("Description", tableName: "AboutApp"))
-        }
-    }
-    private var textWithoutEmptyLines: String {
-        String(localized: "AppStoreDescription", table: "🌏AppStoreDescription")
-            .replacingOccurrences(of: "\n\n", with: "\n")
-            .replacingOccurrences(of: "\n\n", with: "\n")
+        .navigationTitle(Text("Description", tableName: "AboutApp"))
+        .textSelection(.enabled)
     }
 }
 
@@ -118,50 +63,43 @@ struct 👤PrivacyPolicyContent: View {
     }
 }
 
-private struct 📜VersionHistoryLink: View {
+struct 📜VersionHistoryContent: View {
     var body: some View {
-        NavigationLink {
-            List {
-                ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
-                    Section {
-                        Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
-                            .font(.subheadline)
-                            .padding()
-                            .textSelection(.enabled)
-                    } header: {
-                        Text(ⓘnfo.version)
-                    } footer: {
-                        if 🗒️StaticInfo.versionInfos.first?.version == ⓘnfo.version {
-                            Text("builded on \(ⓘnfo.date)", tableName: "AboutApp")
-                        } else {
-                            Text("released on \(ⓘnfo.date)", tableName: "AboutApp")
-                        }
+        List {
+            ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
+                Section {
+                    Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
+                        .font(.subheadline)
+                        .padding()
+                        .textSelection(.enabled)
+                } header: {
+                    Text(ⓘnfo.version)
+                } footer: {
+                    if 🗒️StaticInfo.versionInfos.first?.version == ⓘnfo.version {
+                        Text("builded on \(ⓘnfo.date)", tableName: "AboutApp")
+                    } else {
+                        Text("released on \(ⓘnfo.date)", tableName: "AboutApp")
                     }
-                    .headerProminence(.increased)
                 }
+                .headerProminence(.increased)
             }
-            .navigationTitle(Text("Version History", tableName: "AboutApp"))
-        } label: {
-            Label(String(localized: "Version", table: "AboutApp"),
-                  systemImage: "signpost.left")
-            .badge(🗒️StaticInfo.versionInfos.first?.version ?? "🐛")
         }
-        .accessibilityLabel(Text("Version History", tableName: "AboutApp"))
+        .navigationTitle(Text("Version History", tableName: "AboutApp"))
     }
 }
 
-private struct 📓SourceCodeLink: View {
+struct 📓SourceCodeContent: View {
     var body: some View {
-        NavigationLink {
+        NavigationSplitView {
             List {
                 ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
                 self.bundleMainInfoDictionary()
                 self.repositoryLinks()
             }
             .navigationTitle(Text("Source code", tableName: "AboutApp"))
-        } label: {
-            Label(String(localized: "Source code", table: "AboutApp"),
-                  systemImage: "doc.plaintext")
+        } detail: {
+            Text("← Select file")
+                .foregroundStyle(.tertiary)
         }
     }
     private struct CodeSection: View {
@@ -252,59 +190,54 @@ private struct 📓SourceCodeLink: View {
     }
 }
 
-private struct 🧑‍💻AboutDeveloperPublisherLink: View {
+struct 🧑‍💻DeveloperPublisherContent: View {
     var body: some View {
-        NavigationLink {
-            List {
-                Section {
-                    Text("Individual", tableName: "AboutApp")
-                } header: {
-                    Text("The System", tableName: "AboutApp")
-                }
-                Section {
-                    Text(verbatim: "山下 亮")
-                    Text(verbatim: "やました りょう (ひらがな)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                    Text(verbatim: "Yamashita Ryo (alphabet)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                } header: {
-                    Text("Name", tableName: "AboutApp")
-                } footer: {
-                    Text("only one person", tableName: "AboutApp")
-                }
-                Section {
-                    Text("age", tableName: "AboutApp")
-                        .badge(Text("about 28", tableName: "AboutApp"))
-                    Text("country", tableName: "AboutApp")
-                        .badge(Text("Japan", tableName: "AboutApp"))
-                    Text("native language", tableName: "AboutApp")
-                        .badge(Text("Japanese", tableName: "AboutApp"))
-                } header: {
-                    Text("identity / circumstance / background", tableName: "AboutApp")
-                } footer: {
-                    Text("As of 2021", tableName: "AboutApp")
-                }
-                Self.TimelineSection()
-                Section {
-                    Image(.developerPublisher)
-                        .resizable()
-                        .frame(width: 90, height: 90)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .padding()
-                        .opacity(0.6)
-                } header: {
-                    Text("Image", tableName: "AboutApp")
-                } footer: {
-                    Text("Taken on 2021-11", tableName: "AboutApp")
-                }
+        List {
+            Section {
+                Text("Individual", tableName: "AboutApp")
+            } header: {
+                Text("The System", tableName: "AboutApp")
             }
-            .navigationTitle(Text("Developer / Publisher", tableName: "AboutApp"))
-        } label: {
-            Label(String(localized: "Developer / Publisher", table: "AboutApp"),
-                  systemImage: "person")
+            Section {
+                Text(verbatim: "山下 亮")
+                Text(verbatim: "やました りょう (ひらがな)")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                Text(verbatim: "Yamashita Ryo (alphabet)")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            } header: {
+                Text("Name", tableName: "AboutApp")
+            } footer: {
+                Text("only one person", tableName: "AboutApp")
+            }
+            Section {
+                Text("age", tableName: "AboutApp")
+                    .badge(Text("about 28", tableName: "AboutApp"))
+                Text("country", tableName: "AboutApp")
+                    .badge(Text("Japan", tableName: "AboutApp"))
+                Text("native language", tableName: "AboutApp")
+                    .badge(Text("Japanese", tableName: "AboutApp"))
+            } header: {
+                Text("identity / circumstance / background", tableName: "AboutApp")
+            } footer: {
+                Text("As of 2021", tableName: "AboutApp")
+            }
+            Self.TimelineSection()
+            Section {
+                Image(.developerPublisher)
+                    .resizable()
+                    .frame(width: 90, height: 90)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .padding()
+                    .opacity(0.6)
+            } header: {
+                Text("Image", tableName: "AboutApp")
+            } footer: {
+                Text("Taken on 2021-11", tableName: "AboutApp")
+            }
         }
+        .navigationTitle(Text("Developer / Publisher", tableName: "AboutApp"))
     }
     private struct TimelineSection: View {
         private static var values: [(date: String, description: String)] {

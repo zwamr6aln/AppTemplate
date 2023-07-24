@@ -10,8 +10,12 @@ struct App_macOS: App {
                 .environmentObject(📱)
         }
         .commands { 🪄Commands() }
-        Window("Privacy Policy", id: "PrivacyPolicy") { 👤PrivacyPolicyContent() }
         Settings { 🔧SettingsContent() }
+        Window("Privacy Policy", id: "PrivacyPolicy") { 👤PrivacyPolicyContent() }
+        Window("Description", id: "Description") { 📰DescriptionContent() }
+        Window("Version history", id: "VersionHistory") { 📜VersionHistoryContent() }
+        Window("Source code", id: "SourceCode") { 📓SourceCodeContent() }
+        Window("Developer / Publisher", id: "DeveloperPublisher") { 🧑‍💻DeveloperPublisherContent() }
     }
 }
 
