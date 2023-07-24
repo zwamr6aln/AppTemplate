@@ -220,7 +220,6 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                     Text("Taken on 2021-11", tableName: "AboutApp")
                 }
             }
-            .navigationTitle(Text("Developer / Publisher", tableName: "AboutApp"))
         }
         .defaultSize(width: 200, height: 300)
     }
