@@ -287,22 +287,21 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
         NavigationLink {
             List {
                 Section {
-                    Text("Individual", tableName: "AboutApp")
+                    LabeledContent {
+                        Text("only one person", tableName: "AboutApp")
+                    } label: {
+                        Text("Individual", tableName: "AboutApp")
+                    }
                 } header: {
                     Text("The System", tableName: "AboutApp")
                 }
                 Section {
                     Text(verbatim: "山下 亮")
-                    Text(verbatim: "やました りょう (ひらがな)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
                     Text(verbatim: "Yamashita Ryo (alphabet)")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 } header: {
                     Text("Name", tableName: "AboutApp")
-                } footer: {
-                    Text("only one person", tableName: "AboutApp")
                 }
                 Section {
                     Text("age", tableName: "AboutApp")

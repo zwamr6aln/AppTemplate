@@ -22,9 +22,17 @@ struct ContentView: View {
                 NavigationSplitView {
                     List {
                         NavigationLink {
-                            NavigationStack { 🛠AppMenu() }
+                            NavigationStack {
+                                Form { Toggle("Toggle", isOn: .constant(false)) }
+                                    .navigationTitle("Option")
+                            }
                         } label: {
-                            Label("Open menu", systemImage: "gear")
+                            Label("Option", systemImage: "gear")
+                        }
+                        NavigationLink {
+                            NavigationStack { ℹ️AboutAppMenu(withSidebarLayout: true) }
+                        } label: {
+                            Label("About", systemImage: "questionmark")
                         }
                         Section {
                             NavigationLink("Navi link1") { Text("1") }

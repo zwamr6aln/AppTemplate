@@ -270,10 +270,10 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                         ForEach(Self.values, id: \.self.description) { ⓥalue in
                             GridRow {
                                 Text(ⓥalue.date)
-                                    .font(.caption2)
+                                    .font(.subheadline)
                                     .padding(8)
                                 Text(LocalizedStringKey(ⓥalue.description), tableName: "AboutApp")
-                                    .font(.caption)
+                                    .font(.subheadline)
                                     .gridCellAnchor(.leading)
                             }
                         }
