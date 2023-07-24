@@ -64,6 +64,8 @@
 		F5A8805B2A693B0C00D534EC /* App_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A8805A2A693B0C00D534EC /* App_macOS.swift */; };
 		F5A8805D2A693B0C00D534EC /* ContentView_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */; };
 		F5A8805F2A693B0F00D534EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A8805E2A693B0F00D534EC /* Assets.xcassets */; };
+		F5D521552A6DFEB600BE4D12 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F5D521532A6DFEAF00BE4D12 /* InfoPlist.xcstrings */; };
+		F5D521562A6DFF5600BE4D12 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F5D521512A6DFE9E00BE4D12 /* Localizable.xcstrings */; };
 		F5F2272129FE6B1900891C69 /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
 /* End PBXBuildFile section */
 
@@ -166,6 +168,8 @@
 		F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_macOS.swift; sourceTree = "<group>"; };
 		F5A8805E2A693B0F00D534EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A880632A693B0F00D534EC /* macOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOSApp.entitlements; sourceTree = "<group>"; };
+		F5D521512A6DFE9E00BE4D12 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F5D521532A6DFEAF00BE4D12 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🪧Sheet.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,8 +323,18 @@
 				F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */,
 				F5A8805E2A693B0F00D534EC /* Assets.xcassets */,
 				F5A880632A693B0F00D534EC /* macOSApp.entitlements */,
+				F5D521502A6DFE9000BE4D12 /* 🌏Localization */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		F5D521502A6DFE9000BE4D12 /* 🌏Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F5D521512A6DFE9E00BE4D12 /* Localizable.xcstrings */,
+				F5D521532A6DFEAF00BE4D12 /* InfoPlist.xcstrings */,
+			);
+			path = "🌏Localization";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,7 +470,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F583DC672A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */,
+				F5D521562A6DFF5600BE4D12 /* Localizable.xcstrings in Resources */,
 				F583DC752A6D22F500F02006 /* AboutApp.xcstrings in Resources */,
+				F5D521552A6DFEB600BE4D12 /* InfoPlist.xcstrings in Resources */,
 				F5A8805F2A693B0F00D534EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

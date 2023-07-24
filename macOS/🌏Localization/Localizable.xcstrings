@@ -1,0 +1,129 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@" : {
+
+    },
+    "1" : {
+
+    },
+    "2" : {
+
+    },
+    "3" : {
+
+    },
+    "About" : {
+
+    },
+    "Alarm clock with taking a long time from small volume to max volume." : {
+
+    },
+    "alert" : {
+
+    },
+    "App for iPhone / iPad / Mac / Apple Watch" : {
+
+    },
+    "AppTemplate" : {
+
+    },
+    "AppTitle" : {
+
+    },
+    "Bundle.main.infoDictionary" : {
+
+    },
+    "Button" : {
+
+    },
+    "Category1" : {
+
+    },
+    "confirmationDialog" : {
+
+    },
+    "Content" : {
+
+    },
+    "Detail" : {
+
+    },
+    "DisclosureGroup" : {
+
+    },
+    "E-book reader that can turn a page with slightly longish voluntary blink." : {
+
+    },
+    "Flashcard on widget. Memorize a note in everyday life." : {
+
+    },
+    "label" : {
+
+    },
+    "Link" : {
+
+    },
+    "Menu" : {
+
+    },
+    "Navi link" : {
+
+    },
+    "NavigationLink" : {
+
+    },
+    "Notes widget on lock screen." : {
+
+    },
+    "Option" : {
+
+    },
+    "Picker" : {
+
+    },
+    "placeholder" : {
+
+    },
+    "Placeholder" : {
+
+    },
+    "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
+
+    },
+    "Register weight data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
+
+    },
+    "Section header title" : {
+
+    },
+    "Show alert" : {
+
+    },
+    "Show CD" : {
+
+    },
+    "Show pop over" : {
+
+    },
+    "Show sheet" : {
+
+    },
+    "Simplest Shogi board App. Supported SharePlay." : {
+
+    },
+    "Text" : {
+
+    },
+    "titleKey" : {
+
+    },
+    "Toggle" : {
+
+    },
+    "Trial" : {
+
+    }
+  },
+  "version" : "1.0"
+}
