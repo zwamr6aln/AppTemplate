@@ -17,7 +17,6 @@ private struct 📰DescriptionWindow: Scene {
                 Text("AppStoreDescription", tableName: "🌏AppStoreDescription")
                     .padding(24)
             }
-            .navigationTitle(Text("Description", tableName: "AboutApp"))
             .textSelection(.enabled)
         }
         .defaultSize(width: 300, height: 300)
@@ -40,24 +39,25 @@ private struct 📜VersionHistoryWindow: Scene {
         Window("Version history", id: "VersionHistory") {
             List {
                 ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
-                    Section {
-                        Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
-                            .font(.subheadline)
-                            .padding()
-                            .textSelection(.enabled)
-                    } header: {
-                        Text(ⓘnfo.version)
-                    } footer: {
-                        if 🗒️StaticInfo.versionInfos.first?.version == ⓘnfo.version {
-                            Text("builded on \(ⓘnfo.date)", tableName: "AboutApp")
-                        } else {
-                            Text("released on \(ⓘnfo.date)", tableName: "AboutApp")
+                    GroupBox(ⓘnfo.version) {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
+                                .font(.subheadline)
+                                .textSelection(.enabled)
+                            Group {
+                                if 🗒️StaticInfo.versionInfos.first?.version == ⓘnfo.version {
+                                    Text("builded on \(ⓘnfo.date)", tableName: "AboutApp")
+                                } else {
+                                    Text("released on \(ⓘnfo.date)", tableName: "AboutApp")
+                                }
+                            }
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
                         }
+                        .padding()
                     }
-                    .headerProminence(.increased)
                 }
             }
-            .navigationTitle(Text("Version History", tableName: "AboutApp"))
         }
         .defaultSize(width: 300, height: 400)
     }
