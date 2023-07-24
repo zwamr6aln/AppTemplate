@@ -110,8 +110,7 @@ private struct 🏬AppStoreSection: View {
         Section {
             🔗AppStoreLink()
             Button {
-                let ⓤrl = URL(string: "\(🗒️StaticInfo.appStoreProductURL)?action=write-review")!
-                self.openURL(ⓤrl)
+                self.openURL(🗒️StaticInfo.appStoreUserReviewURL)
             } label: {
                 HStack {
                     Label(String(localized: "Review on AppStore", table: "AboutApp"),

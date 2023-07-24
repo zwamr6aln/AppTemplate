@@ -10,7 +10,7 @@ struct 🪄Commands: Commands {
         CommandGroup(replacing: .help) { EmptyView() }
         CommandGroup(after: .help) {
             Link("AppStore link", destination: 🗒️StaticInfo.appStoreProductURL)
-            Link("Review on AppStore", destination: URL(string: "\(🗒️StaticInfo.appStoreProductURL)?action=write-review")!)
+            Link("Review on AppStore", destination: 🗒️StaticInfo.appStoreUserReviewURL)
             Divider()
             Button("Description") { self.openWindow(id: "Description") }
             Button("Privacy policy") { self.openWindow(id: "PrivacyPolicy") }

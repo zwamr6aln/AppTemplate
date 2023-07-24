@@ -5,6 +5,7 @@ enum 🗒️StaticInfo { //Work in progress
     static let appSubTitle: LocalizedStringKey = "App for iPhone / iPad / Mac / Apple Watch"
     
     static let appStoreProductURL = URL(string: "https://apps.apple.com/app/id?")!
+    static var appStoreUserReviewURL: URL { URL(string: "\(Self.appStoreProductURL)?action=write-review")! }
     
     static let privacyPolicyDescription = """
         2022-❓-❓
@@ -61,17 +62,18 @@ extension 🗒️StaticInfo {
                                                                   ("1.0", "2021-01-01")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Shared, Sub
+        case main, Sub
         var id: Self { self }
         var fileNames: [String] {
             switch self {
                 case .main: ["App_macOS.swift",
                              "📱AppModel_macOS.swift",
                              "ContentView_macOS.swift"]
-                case .Shared: ["🗒️StaticInfo.swift"]
-                case .Sub: ["ℹ️HelpWindows.swift",
+                case .Sub: ["🗒️StaticInfo.swift",
+                            "ℹ️HelpWindows.swift",
                             "🔧Settings.swift",
-                            "🪄Commands.swift"]
+                            "🪄Commands.swift",
+                            "🄳elegate.swift"]
             }
         }
     }
