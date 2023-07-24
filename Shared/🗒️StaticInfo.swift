@@ -67,9 +67,11 @@ extension 🗒️StaticInfo {
             switch self {
                 case .main: ["App_macOS.swift",
                              "📱AppModel_macOS.swift",
-                             "ContentView_maciOS.swift"]
+                             "ContentView_macOS.swift"]
                 case .Shared: ["🗒️StaticInfo.swift"]
-                case .Sub: ["ℹ️AboutApp.swift"]
+                case .Sub: ["ℹ️HelpWindows.swift",
+                            "🔧Settings.swift",
+                            "🪄Commands.swift"]
             }
         }
     }

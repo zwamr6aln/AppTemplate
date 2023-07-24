@@ -68,6 +68,17 @@
 		F5D521562A6DFF5600BE4D12 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F5D521512A6DFE9E00BE4D12 /* Localizable.xcstrings */; };
 		F5D521592A6E542700BE4D12 /* 🌏VersionDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5D521572A6E542700BE4D12 /* 🌏VersionDescription.strings */; };
 		F5D5215A2A6E542700BE4D12 /* 🌏AppStoreDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5D521582A6E542700BE4D12 /* 🌏AppStoreDescription.strings */; };
+		F5D5215C2A6E573800BE4D12 /* 🗒️StaticInfo.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
+		F5D5215D2A6E573800BE4D12 /* 📣ADModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C182A6A90B10044B939 /* 📣ADModel.swift */; };
+		F5D5215E2A6E573800BE4D12 /* 🛒InAppPurchaseModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
+		F5D5215F2A6E573800BE4D12 /* App_macOS.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5A8805A2A693B0C00D534EC /* App_macOS.swift */; };
+		F5D521602A6E573800BE4D12 /* ContentView_macOS.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */; };
+		F5D521612A6E573800BE4D12 /* ℹ️HelpWindows.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F583DC792A6D2CB300F02006 /* ℹ️HelpWindows.swift */; };
+		F5D521622A6E573800BE4D12 /* 🔧Settings.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */; };
+		F5D521632A6E573800BE4D12 /* 🪄Commands.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */; };
+		F5D521652A6E575B00BE4D12 /* 📱AppModel_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D521642A6E575B00BE4D12 /* 📱AppModel_macOS.swift */; };
+		F5D521672A6E578400BE4D12 /* 🄳elegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D521662A6E578400BE4D12 /* 🄳elegate.swift */; };
+		F5D521682A6E583800BE4D12 /* 📱AppModel_macOS.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5D521642A6E575B00BE4D12 /* 📱AppModel_macOS.swift */; };
 		F5F2272129FE6B1900891C69 /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +134,24 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F5D5215B2A6E572200BE4D12 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "📁SourceCode";
+			dstSubfolderSpec = 7;
+			files = (
+				F5D521682A6E583800BE4D12 /* 📱AppModel_macOS.swift in CopyFiles */,
+				F5D5215C2A6E573800BE4D12 /* 🗒️StaticInfo.swift in CopyFiles */,
+				F5D5215D2A6E573800BE4D12 /* 📣ADModel.swift in CopyFiles */,
+				F5D5215E2A6E573800BE4D12 /* 🛒InAppPurchaseModel.swift in CopyFiles */,
+				F5D5215F2A6E573800BE4D12 /* App_macOS.swift in CopyFiles */,
+				F5D521602A6E573800BE4D12 /* ContentView_macOS.swift in CopyFiles */,
+				F5D521612A6E573800BE4D12 /* ℹ️HelpWindows.swift in CopyFiles */,
+				F5D521622A6E573800BE4D12 /* 🔧Settings.swift in CopyFiles */,
+				F5D521632A6E573800BE4D12 /* 🪄Commands.swift in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -174,6 +203,8 @@
 		F5D521532A6DFEAF00BE4D12 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		F5D521572A6E542700BE4D12 /* 🌏VersionDescription.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "🌏VersionDescription.strings"; sourceTree = "<group>"; };
 		F5D521582A6E542700BE4D12 /* 🌏AppStoreDescription.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "🌏AppStoreDescription.strings"; sourceTree = "<group>"; };
+		F5D521642A6E575B00BE4D12 /* 📱AppModel_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel_macOS.swift"; sourceTree = "<group>"; };
+		F5D521662A6E578400BE4D12 /* 🄳elegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🄳elegate.swift"; sourceTree = "<group>"; };
 		F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🪧Sheet.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,10 +352,12 @@
 			isa = PBXGroup;
 			children = (
 				F5A8805A2A693B0C00D534EC /* App_macOS.swift */,
+				F5D521642A6E575B00BE4D12 /* 📱AppModel_macOS.swift */,
 				F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */,
 				F583DC792A6D2CB300F02006 /* ℹ️HelpWindows.swift */,
 				F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */,
 				F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */,
+				F5D521662A6E578400BE4D12 /* 🄳elegate.swift */,
 				F5A8805E2A693B0F00D534EC /* Assets.xcassets */,
 				F5A880632A693B0F00D534EC /* macOSApp.entitlements */,
 				F5D521502A6DFE9000BE4D12 /* 🌏Localization */,
@@ -391,6 +424,7 @@
 				F5A880542A693B0C00D534EC /* Sources */,
 				F5A880552A693B0C00D534EC /* Frameworks */,
 				F5A880562A693B0C00D534EC /* Resources */,
+				F5D5215B2A6E572200BE4D12 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -527,10 +561,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D521672A6E578400BE4D12 /* 🄳elegate.swift in Sources */,
 				F5936C1B2A6A90B10044B939 /* 📣ADModel.swift in Sources */,
 				F5936C1F2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
 				F5A8805D2A693B0C00D534EC /* ContentView_macOS.swift in Sources */,
 				F583DC842A6DE6DB00F02006 /* 🪄Commands.swift in Sources */,
+				F5D521652A6E575B00BE4D12 /* 📱AppModel_macOS.swift in Sources */,
 				F501E9C92A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */,
 				F583DC802A6DE2D200F02006 /* 🔧Settings.swift in Sources */,
 				F5A8805B2A693B0C00D534EC /* App_macOS.swift in Sources */,

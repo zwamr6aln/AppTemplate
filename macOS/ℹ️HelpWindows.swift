@@ -69,7 +69,9 @@ private struct 📓SourceCodeWindow: Scene {
             NavigationSplitView {
                 List {
                     ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
+                    Divider()
                     self.bundleMainInfoDictionary()
+                    Divider()
                     self.repositoryLinks()
                 }
                 .navigationTitle(Text("Source code", tableName: "AboutApp"))
@@ -78,15 +80,12 @@ private struct 📓SourceCodeWindow: Scene {
                     .foregroundStyle(.tertiary)
             }
         }
+        .defaultSize(width: 400, height: 400)
     }
     private struct CodeSection: View {
         private var category: 🗒️StaticInfo.SourceCodeCategory
         private var url: URL {
-#if targetEnvironment(macCatalyst)
             Bundle.main.bundleURL.appendingPathComponent("Contents/Resources/📁SourceCode")
-#else
-            Bundle.main.bundleURL.appendingPathComponent("📁SourceCode")
-#endif
         }
         var body: some View {
             Section {
@@ -110,59 +109,65 @@ private struct 📓SourceCodeWindow: Scene {
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false) {
                     Text(ⓣext)
+                        .monospaced()
                         .padding()
                 }
             }
             .navigationTitle(LocalizedStringKey(ⓣitle))
-            .font(.caption.monospaced())
             .textSelection(.enabled)
         }
     }
     private func bundleMainInfoDictionary() -> some View {
-        Section {
-            NavigationLink("Bundle.main.infoDictionary") {
-                ScrollView {
-                    Text(Bundle.main.infoDictionary!.description)
-                        .padding()
-                }
-                .navigationTitle("Bundle.main.infoDictionary")
-                .textSelection(.enabled)
+        NavigationLink("Bundle.main.infoDictionary") {
+            ScrollView {
+                Text(Bundle.main.infoDictionary!.description)
+                    .padding()
             }
+            .navigationTitle("Bundle.main.infoDictionary")
+            .textSelection(.enabled)
         }
     }
     private func repositoryLinks() -> some View {
-        Group {
-            Section {
-                Link(destination: 🗒️StaticInfo.webRepositoryURL) {
-                    HStack {
-                        Label(String(localized: "Web Repository", table: "AboutApp"),
-                              systemImage: "link")
-                        Spacer()
-                        Image(systemName: "arrow.up.forward.app")
-                            .imageScale(.small)
-                            .foregroundStyle(.secondary)
+        NavigationLink {
+            VStack {
+                Spacer()
+                Text("Git repository is public on GitHub.com")
+                    .font(.headline)
+                Spacer()
+                VStack {
+                    Link(destination: 🗒️StaticInfo.webRepositoryURL) {
+                        HStack {
+                            Text("Web Repository", tableName: "AboutApp")
+                            Image(systemName: "arrow.up.forward.app")
+                                .imageScale(.small)
+                                .foregroundStyle(.secondary)
+                        }
                     }
+                    Text("\(🗒️StaticInfo.webRepositoryURL)")
+                        .foregroundStyle(.secondary)
+                        .font(.subheadline.italic())
                 }
-            } footer: {
-                Text("\(🗒️StaticInfo.webRepositoryURL)")
-            }
-            Section {
-                Link(destination: 🗒️StaticInfo.webMirrorRepositoryURL) {
-                    HStack {
-                        Label(String(localized: "Web Repository", table: "AboutApp"),
-                              systemImage: "link")
-                        Text("(Mirror)", tableName: "AboutApp")
-                            .font(.subheadline.bold())
-                            .foregroundStyle(.secondary)
-                        Spacer()
-                        Image(systemName: "arrow.up.forward.app")
-                            .imageScale(.small)
-                            .foregroundStyle(.secondary)
+                Spacer()
+                VStack {
+                    Link(destination: 🗒️StaticInfo.webMirrorRepositoryURL) {
+                        HStack {
+                            Text("(Mirror)", tableName: "AboutApp")
+                                .font(.subheadline)
+                            Image(systemName: "arrow.up.forward.app")
+                                .imageScale(.small)
+                        }
+                        .foregroundStyle(.secondary)
                     }
+                    Text("\(🗒️StaticInfo.webMirrorRepositoryURL)")
+                        .foregroundStyle(.secondary)
+                        .font(.subheadline.italic())
                 }
-            } footer: {
-                Text("\(🗒️StaticInfo.webMirrorRepositoryURL)")
+                Spacer()
             }
+            .navigationTitle(String(localized: "Web Repository", table: "AboutApp"))
+        } label: {
+            Label(String(localized: "Web Repository", table: "AboutApp"),
+                  systemImage: "link")
         }
     }
 }
@@ -217,6 +222,7 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
             }
             .navigationTitle(Text("Developer / Publisher", tableName: "AboutApp"))
         }
+        .defaultSize(width: 200, height: 300)
     }
     private struct TimelineSection: View {
         private static var values: [(date: String, description: String)] {
