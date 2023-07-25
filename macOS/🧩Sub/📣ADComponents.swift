@@ -112,6 +112,7 @@ struct 📣ADView: View {
             Image(systemName: "questionmark")
         }
         .accessibilityLabel(Text("About AD", tableName: "AD&InAppPurchase"))
+        .help(Text("About AD", tableName: "AD&InAppPurchase"))
     }
     private func dismissButton() -> some View {
         Button {

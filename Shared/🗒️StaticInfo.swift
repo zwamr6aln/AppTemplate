@@ -32,22 +32,26 @@ extension 🗒️StaticInfo {
                                                                   ("1.0", "2021-01-01")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Shared, Sub, Others, WatchApp, WatchComplication
+        case main, Sub, Others, WatchApp, WatchComplication
         var id: Self { self }
         var fileNames: [String] {
             switch self {
                 case .main: ["App_iOS.swift",
                              "📱AppModel_iOS.swift",
                              "ContentView_iOS.swift"]
-                case .Shared: ["🗒️StaticInfo.swift"]
-                case .Sub: ["📣ADContent.swift",
+                case .Sub: ["🪧Sheet.swift",
+                            "📣ADContent.swift",
                             "💬RequestUserReview.swift",
                             "🛠AppMenu.swift",
-                            "﹀DismissButton.swift"]
-                case .Others: ["🧰MetaInfo.swift",
+                            "﹀DismissButton.swift",
+                            "🩹Workaround.swift",
+                            "💬PrepareToRequestUserReview.swift"]
+                case .Others: ["🗒️StaticInfo.swift",
                                "ℹ️AboutApp.swift",
-                               "📣AD.swift",
-                               "🛒InAppPurchase.swift"]
+                               "📣ADModel.swift",
+                               "📣ADComponents.swift",
+                               "🛒InAppPurchaseModel.swift",
+                               "🛒InAppPurchaseView.swift"]
                 case .WatchApp: []
                 case .WatchComplication: []
             }
@@ -75,7 +79,9 @@ extension 🗒️StaticInfo {
                             "🔧Settings.swift",
                             "🪄Commands.swift",
                             "🤖AppDelegate.swift",
+                            "📣ADModel.swift",
                             "📣ADComponents.swift",
+                            "🛒InAppPurchaseModel.swift",
                             "🛒InAppPurchaseView.swift"]
             }
         }
