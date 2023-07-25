@@ -12,8 +12,6 @@
 		127ECB2A286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */; };
 		127ECB2C28614B8B00CB1BC3 /* 📣ADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADView.swift */; };
 		127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 127ECB2D28614C0200CB1BC3 /* Configuration.storekit */; };
-		1299C37B288CB8C30086522B /* 🌏AppStoreDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C37D288CB8C30086522B /* 🌏AppStoreDescription.strings */; };
-		1299C386288D12760086522B /* 🌏VersionDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1299C388288D12760086522B /* 🌏VersionDescription.strings */; };
 		12DDDDAD288BF2E40055A073 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */; };
 		12E4A748285027F600B2380B /* App_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A747285027F600B2380B /* App_iOS.swift */; };
 		12E4A74A285027F600B2380B /* ContentView_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A749285027F600B2380B /* ContentView_iOS.swift */; };
@@ -34,6 +32,10 @@
 		F53A8F932A6FB963000C4568 /* 📣ADSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */; };
 		F53A8F942A6FB963000C4568 /* 📣ADComponents.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B05182A6EB09B004BE9E5 /* 📣ADComponents.swift */; };
 		F53A8F952A6FB963000C4568 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */; };
+		F53A8F972A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F962A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings */; };
+		F53A8F992A6FBD11000C4568 /* 🌏VersionDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F982A6FBD11000C4568 /* 🌏VersionDescription.xcstrings */; };
+		F53A8F9B2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */; };
+		F53A8F9D2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F9C2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings */; };
 		F5514EF329CD743E00FCA7EA /* ﹀DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5514EF229CD743E00FCA7EA /* ﹀DismissButton.swift */; };
 		F5514EF429CD7B4E00FCA7EA /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
@@ -72,8 +74,6 @@
 		F5A8805F2A693B0F00D534EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A8805E2A693B0F00D534EC /* Assets.xcassets */; };
 		F5D521552A6DFEB600BE4D12 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F5D521532A6DFEAF00BE4D12 /* InfoPlist.xcstrings */; };
 		F5D521562A6DFF5600BE4D12 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F5D521512A6DFE9E00BE4D12 /* Localizable.xcstrings */; };
-		F5D521592A6E542700BE4D12 /* 🌏VersionDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5D521572A6E542700BE4D12 /* 🌏VersionDescription.strings */; };
-		F5D5215A2A6E542700BE4D12 /* 🌏AppStoreDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5D521582A6E542700BE4D12 /* 🌏AppStoreDescription.strings */; };
 		F5D5215C2A6E573800BE4D12 /* 🗒️StaticInfo.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F5D5215D2A6E573800BE4D12 /* 📣ADModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C182A6A90B10044B939 /* 📣ADModel.swift */; };
 		F5D5215E2A6E573800BE4D12 /* 🛒InAppPurchaseModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
@@ -171,10 +171,6 @@
 		127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseView.swift"; sourceTree = "<group>"; };
 		127ECB2B28614B8B00CB1BC3 /* 📣ADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADView.swift"; sourceTree = "<group>"; };
 		127ECB2D28614C0200CB1BC3 /* Configuration.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
-		1299C37C288CB8C30086522B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/🌏AppStoreDescription.strings"; sourceTree = "<group>"; };
-		1299C37E288CB8C70086522B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = "ja.lproj/🌏AppStoreDescription.strings"; sourceTree = "<group>"; };
-		1299C387288D12760086522B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/🌏VersionDescription.strings"; sourceTree = "<group>"; };
-		1299C389288D127A0086522B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = "ja.lproj/🌏VersionDescription.strings"; sourceTree = "<group>"; };
 		12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		12E4A744285027F600B2380B /* AppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E4A747285027F600B2380B /* App_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_iOS.swift; sourceTree = "<group>"; };
@@ -186,6 +182,10 @@
 		12E4A77228502F3A00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A77428502F3B00B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🗒️StaticInfo.swift"; sourceTree = "<group>"; };
+		F53A8F962A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
+		F53A8F982A6FBD11000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
+		F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
+		F53A8F9C2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
 		F549E849290BC3C300636271 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = memo.md; sourceTree = "<group>"; };
 		F5514EF229CD743E00FCA7EA /* ﹀DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "﹀DismissButton.swift"; sourceTree = "<group>"; };
 		F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
@@ -215,8 +215,6 @@
 		F5A880632A693B0F00D534EC /* macOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOSApp.entitlements; sourceTree = "<group>"; };
 		F5D521512A6DFE9E00BE4D12 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F5D521532A6DFEAF00BE4D12 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
-		F5D521572A6E542700BE4D12 /* 🌏VersionDescription.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "🌏VersionDescription.strings"; sourceTree = "<group>"; };
-		F5D521582A6E542700BE4D12 /* 🌏AppStoreDescription.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "🌏AppStoreDescription.strings"; sourceTree = "<group>"; };
 		F5D521642A6E575B00BE4D12 /* 📱AppModel_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel_macOS.swift"; sourceTree = "<group>"; };
 		F5D521662A6E578400BE4D12 /* 🄳elegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🄳elegate.swift"; sourceTree = "<group>"; };
 		F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🪧Sheet.swift"; sourceTree = "<group>"; };
@@ -311,8 +309,8 @@
 			children = (
 				F583DC762A6D29F200F02006 /* Localizable.xcstrings */,
 				12E4A77328502F3A00B2380B /* InfoPlist.strings */,
-				1299C37D288CB8C30086522B /* 🌏AppStoreDescription.strings */,
-				1299C388288D12760086522B /* 🌏VersionDescription.strings */,
+				F53A8F9C2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings */,
+				F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */,
 			);
 			path = "🌏Localization";
 			sourceTree = "<group>";
@@ -403,8 +401,8 @@
 			children = (
 				F5D521512A6DFE9E00BE4D12 /* Localizable.xcstrings */,
 				F5D521532A6DFEAF00BE4D12 /* InfoPlist.xcstrings */,
-				F5D521582A6E542700BE4D12 /* 🌏AppStoreDescription.strings */,
-				F5D521572A6E542700BE4D12 /* 🌏VersionDescription.strings */,
+				F53A8F962A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings */,
+				F53A8F982A6FBD11000C4568 /* 🌏VersionDescription.xcstrings */,
 			);
 			path = "🌏Localization";
 			sourceTree = "<group>";
@@ -515,14 +513,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53A8F9B2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings in Resources */,
 				12DDDDAD288BF2E40055A073 /* Launch Screen.storyboard in Resources */,
 				127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */,
 				12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */,
 				F583DC652A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */,
 				F583DC732A6D22F500F02006 /* AboutApp.xcstrings in Resources */,
-				1299C386288D12760086522B /* 🌏VersionDescription.strings in Resources */,
+				F53A8F9D2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings in Resources */,
 				F583DC772A6D29F200F02006 /* Localizable.xcstrings in Resources */,
-				1299C37B288CB8C30086522B /* 🌏AppStoreDescription.strings in Resources */,
 				12E4A74C285027F700B2380B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,10 +543,10 @@
 				F583DC672A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */,
 				F5D521562A6DFF5600BE4D12 /* Localizable.xcstrings in Resources */,
 				F583DC752A6D22F500F02006 /* AboutApp.xcstrings in Resources */,
-				F5D521592A6E542700BE4D12 /* 🌏VersionDescription.strings in Resources */,
 				F5D521552A6DFEB600BE4D12 /* InfoPlist.xcstrings in Resources */,
 				F5A8805F2A693B0F00D534EC /* Assets.xcassets in Resources */,
-				F5D5215A2A6E542700BE4D12 /* 🌏AppStoreDescription.strings in Resources */,
+				F53A8F992A6FBD11000C4568 /* 🌏VersionDescription.xcstrings in Resources */,
+				F53A8F972A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,24 +620,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1299C37D288CB8C30086522B /* 🌏AppStoreDescription.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1299C37C288CB8C30086522B /* en */,
-				1299C37E288CB8C70086522B /* ja */,
-			);
-			name = "🌏AppStoreDescription.strings";
-			sourceTree = "<group>";
-		};
-		1299C388288D12760086522B /* 🌏VersionDescription.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1299C387288D12760086522B /* en */,
-				1299C389288D127A0086522B /* ja */,
-			);
-			name = "🌏VersionDescription.strings";
-			sourceTree = "<group>";
-		};
 		12E4A77328502F3A00B2380B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

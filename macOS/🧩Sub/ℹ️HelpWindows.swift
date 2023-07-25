@@ -14,7 +14,7 @@ private struct 📰DescriptionWindow: Scene {
     var body: some Scene {
         Window("Description", id: "Description") {
             ScrollView {
-                Text("AppStoreDescription", tableName: "🌏AppStoreDescription")
+                Text("current", tableName: "🌏AppStoreDescription")
                     .padding(24)
             }
             .textSelection(.enabled)
@@ -132,14 +132,14 @@ private struct 📓SourceCodeWindow: Scene {
             VStack {
                 Spacer()
                 Text("Git repository is public on GitHub.com")
-                    .font(.headline)
+                    .font(.title2.weight(.medium))
                 Spacer()
                 VStack {
                     Link(destination: 🗒️StaticInfo.webRepositoryURL) {
                         HStack {
                             Text("Web Repository", tableName: "AboutApp")
+                                .font(.title3)
                             Image(systemName: "arrow.up.forward.app")
-                                .imageScale(.small)
                                 .foregroundStyle(.secondary)
                         }
                     }
@@ -152,9 +152,7 @@ private struct 📓SourceCodeWindow: Scene {
                     Link(destination: 🗒️StaticInfo.webMirrorRepositoryURL) {
                         HStack {
                             Text("(Mirror)", tableName: "AboutApp")
-                                .font(.subheadline)
                             Image(systemName: "arrow.up.forward.app")
-                                .imageScale(.small)
                         }
                         .foregroundStyle(.secondary)
                     }
