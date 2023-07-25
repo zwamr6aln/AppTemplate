@@ -2,11 +2,14 @@ import SwiftUI
 
 struct ℹ️HelpWindows: Scene {
     var body: some Scene {
-        📰DescriptionWindow()
-        👤PrivacyPolicyWindow()
-        📜VersionHistoryWindow()
-        📓SourceCodeWindow()
-        🧑‍💻DeveloperPublisherWindow()
+        Group {
+            📰DescriptionWindow()
+            👤PrivacyPolicyWindow()
+            📜VersionHistoryWindow()
+            📓SourceCodeWindow()
+            🧑‍💻DeveloperPublisherWindow()
+        }
+        .commandsRemoved()
     }
 }
 

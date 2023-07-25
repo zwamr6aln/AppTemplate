@@ -9,6 +9,7 @@ struct 🛒InAppPurchaseWindow: Scene {
                 .environmentObject(🛒)
         }
         .defaultSize(width: 400, height: 500)
+        .commandsRemoved()
     }
     init(_ 🛒: 🛒InAppPurchaseModel) {
         self.🛒 = 🛒
