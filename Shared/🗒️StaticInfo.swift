@@ -69,11 +69,14 @@ extension 🗒️StaticInfo {
                 case .main: ["App_macOS.swift",
                              "📱AppModel_macOS.swift",
                              "ContentView_macOS.swift"]
-                case .Sub: ["🗒️StaticInfo.swift",
+                case .Sub: ["📣ADSheet.swift",
+                            "🗒️StaticInfo.swift",
                             "ℹ️HelpWindows.swift",
                             "🔧Settings.swift",
                             "🪄Commands.swift",
-                            "🄳elegate.swift"]
+                            "🄳elegate.swift",
+                            "📣ADComponents.swift",
+                            "🛒InAppPurchaseView.swift"]
             }
         }
     }

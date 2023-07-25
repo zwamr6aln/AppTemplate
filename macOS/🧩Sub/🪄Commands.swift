@@ -4,7 +4,7 @@ struct 🪄Commands: Commands {
     @Environment(\.openWindow) var openWindow
     var body: some Commands {
         CommandGroup(before: .appVisibility) {
-            Button("In App Purchase") { self.openWindow(id: "InAppPurchase") }
+            Button(String(localized: "In-App Purchase", table: "AD&InAppPurchase")) { self.openWindow(id: "InAppPurchase") }
             Divider()
         }
         CommandGroup(replacing: .systemServices) { EmptyView() }

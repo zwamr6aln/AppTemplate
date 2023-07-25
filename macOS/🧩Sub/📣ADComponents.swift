@@ -9,18 +9,6 @@ struct 📣ADView: View {
     @State private var countDown: Int
     private var targetApp: 📣ADTargetApp
     var body: some View {
-        NavigationStack { self.appADContent() }
-            .onChange(of: 🛒.purchased) { if $0 { self.disableDismiss = false } }
-            .onReceive(self.timer) { _ in
-                if self.countDown > 1 {
-                    self.countDown -= 1
-                } else {
-                    self.disableDismiss = false
-                }
-            }
-            .frame(minWidth: 700, maxWidth: 1000, minHeight: 500, maxHeight: 600)
-    }
-    private func appADContent() -> some View {
         VStack {
             self.header()
             HStack(spacing: 16) {
@@ -39,6 +27,15 @@ struct 📣ADView: View {
             }
             .padding(32)
             .modifier(Self.PurchasedEffect())
+        }
+        .frame(minWidth: 700, maxWidth: 1000, minHeight: 500, maxHeight: 600)
+        .onChange(of: 🛒.purchased) { if $0 { self.disableDismiss = false } }
+        .onReceive(self.timer) { _ in
+            if self.countDown > 1 {
+                self.countDown -= 1
+            } else {
+                self.disableDismiss = false
+            }
         }
     }
     private func header() -> some View {
@@ -116,19 +113,18 @@ struct 📣ADView: View {
         } label: {
             Image(systemName: "questionmark")
         }
-        .tint(.primary)
         .accessibilityLabel(Text("About AD", tableName: "AD&InAppPurchase"))
     }
     private func dismissButton() -> some View {
         Button {
-            self.dismiss()
+            if !self.disableDismiss { self.dismiss() }
         } label: {
             Image(systemName: "xmark")
                 .fontWeight(.medium)
         }
-        .tint(.primary)
+        .opacity(self.disableDismiss ? 0.33 : 1)
         .accessibilityLabel(Text("Dismiss", tableName: "AD&InAppPurchase"))
-        .disabled(self.disableDismiss)
+        .keyboardShortcut(.cancelAction)
     }
     private struct PurchasedEffect: ViewModifier {
         @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
@@ -194,6 +190,6 @@ struct 📣ADMenu: View {
             📣ADDescriptionSection()
             🛒IAPSection()
         }
-        .navigationTitle(Text("AD&InAppPurchase", tableName: "AD&InAppPurchase"))
+        .navigationTitle(Text("In-App Purchase", tableName: "AD&InAppPurchase"))
     }
 }

@@ -34,9 +34,6 @@
     "AppTemplate" : {
 
     },
-    "AppTitle" : {
-
-    },
     "Bundle.main.infoDictionary" : {
 
     },
@@ -64,13 +61,13 @@
     "Git repository is public on GitHub.com" : {
 
     },
-    "In App Purchase" : {
+    "In-App Purchase" : {
 
     },
     "Link" : {
 
     },
-    "Navigation title" : {
+    "No select" : {
 
     },
     "Notes widget on lock screen." : {

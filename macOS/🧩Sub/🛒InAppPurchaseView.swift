@@ -4,7 +4,7 @@ import StoreKit
 struct 🛒InAppPurchaseWindow: Scene {
     @ObservedObject var 🛒: 🛒InAppPurchaseModel
     var body: some Scene {
-        Window("In App Purchase", id: "InAppPurchase") {
+        Window("In-App Purchase", id: "InAppPurchase") {
             📣ADMenu()
                 .environmentObject(🛒)
         }
@@ -125,16 +125,13 @@ struct 🛒IAPSection: View {
                     self.restoringInProgress = false
                 }
             } label: {
-                HStack {
-                    Label(String(localized: "Restore Purchases", table: "AD&InAppPurchase"),
-                          systemImage: "arrow.clockwise")
-                    .font(.footnote)
-                    .foregroundColor(🛒.unconnected ? .secondary : nil)
-                    .grayscale(🛒.purchased ? 1 : 0)
-                    if self.restoringInProgress {
-                        Spacer()
-                        ProgressView()
-                    }
+                Label(String(localized: "Restore Purchases", table: "AD&InAppPurchase"),
+                      systemImage: "arrow.clockwise")
+                .font(.subheadline)
+                .foregroundColor(🛒.unconnected ? .secondary : nil)
+                .grayscale(🛒.purchased ? 1 : 0)
+                .overlay {
+                    if self.restoringInProgress { ProgressView() }
                 }
             }
             .disabled(self.restoringInProgress)

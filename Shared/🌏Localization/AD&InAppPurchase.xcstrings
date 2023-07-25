@@ -41,9 +41,6 @@
         }
       }
     },
-    "AD&InAppPurchase" : {
-
-    },
     "Alarm clock with taking a long time from small volume to max volume." : {
       "extractionState" : "migrated",
       "localizations" : {

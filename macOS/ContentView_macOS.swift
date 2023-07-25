@@ -7,26 +7,21 @@ struct ContentView: View {
             List {
                 NavigationLink {
                     Text("Placeholder")
-                        .navigationTitle("Navigation title")
+                        .navigationTitle("Placeholder")
                 } label: {
                     Label("Placeholder", systemImage: "book")
                 }
                 Divider()
                 NavigationLink {
-                    Text("Placeholder")
+                    List { Toggle("Toggle", isOn: .constant(false)) }
                         .navigationTitle("Option")
                 } label: {
                     Label("Option", systemImage: "gear")
                 }
-                NavigationLink {
-                    📣ADMenu()
-                } label: {
-                    Label("In App Purchase", systemImage: "cart")
-                }
             }
         } detail: {
             Text("Detail")
-                .navigationTitle("AppTitle")
+                .navigationTitle("No select")
         }
         .modifier(📣ADSheet())
     }
