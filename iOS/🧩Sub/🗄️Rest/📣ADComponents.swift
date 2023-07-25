@@ -20,7 +20,7 @@ struct 📣ADView: View {
     private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
     @State private var countDown: Int
     private var targetApp: 📣ADTargetApp
-    @State private var showADMenu: Bool = false
+    @State private var showMenu: Bool = false
     var body: some View {
         NavigationStack { self.appADContent() }
             .presentationDetents([.height(640)])
@@ -36,20 +36,27 @@ struct 📣ADView: View {
                     self.disableDismiss = false
                 }
             }
-            .overlay(alignment: .topLeading) {
-                HStack {
-                    if !self.showADMenu {
-                        self.dismissButton()
-                        Spacer()
-                        self.adMenuLink()
-                    }
-                }
-                .font(.title3)
-                .padding(.top, 12)
-                .padding(.horizontal, 18)
-                .animation(.default, value: self.disableDismiss)
-                .animation(.default, value: self.showADMenu)
+            .overlay(alignment: .topLeading) { self.header() }
+    }
+    init(_ app: 📣ADTargetApp, second: Int) {
+        self.targetApp = app
+        self._countDown = State(initialValue: second)
+    }
+}
+
+private extension 📣ADView {
+    private func header() -> some View {
+        HStack {
+            if !self.showMenu {
+                self.dismissButton()
+                Spacer()
+                self.adMenuLink()
             }
+        }
+        .font(.title3)
+        .padding(.horizontal, 6)
+        .animation(.default, value: self.disableDismiss)
+        .animation(.default, value: self.showMenu)
     }
     private func appADContent() -> some View {
         Group {
@@ -62,7 +69,7 @@ struct 📣ADView: View {
         .modifier(Self.PurchasedEffect())
         .navigationTitle(Text("AD", tableName: "AD&InAppPurchase"))
         .navigationBarTitleDisplayMode(.inline)
-        .navigationDestination(isPresented: self.$showADMenu) { 📣ADMenu() }
+        .navigationDestination(isPresented: self.$showMenu) { 🛒InAppPurchaseMenu() }
     }
     private func verticalLayout() -> some View {
         VStack(spacing: 16) {
@@ -146,9 +153,10 @@ struct 📣ADView: View {
     }
     private func adMenuLink() -> some View {
         Button {
-            self.showADMenu = true
+            self.showMenu = true
         } label: {
             Image(systemName: "questionmark.circle")
+                .padding(12)
         }
         .tint(.primary)
         .accessibilityLabel(Text("About AD", tableName: "AD&InAppPurchase"))
@@ -165,6 +173,7 @@ struct 📣ADView: View {
                 } label: {
                     Image(systemName: "xmark.circle.fill")
                         .fontWeight(.medium)
+                        .padding(12)
                 }
                 .keyboardShortcut(.cancelAction)
                 .tint(.primary)
@@ -191,50 +200,5 @@ struct 📣ADView: View {
                 content
             }
         }
-    }
-    init(_ app: 📣ADTargetApp, second: Int) {
-        self.targetApp = app
-        self._countDown = State(initialValue: second)
-    }
-}
-
-struct 📣ADDescriptionSection: View {
-    var body: some View {
-        Section {
-            Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.",
-                 tableName: "AD&InAppPurchase")
-            .padding()
-        } header: {
-            Text("Description", tableName: "AD&InAppPurchase")
-        }
-    }
-}
-
-struct 📣ADMenuLink: View {
-    @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
-    var body: some View {
-        Section {
-            🛒PurchaseView()
-            NavigationLink {
-                📣ADMenu()
-            } label: {
-                Label(String(localized: "About AD / Purchase", table: "AD&InAppPurchase"),
-                      systemImage: "megaphone")
-            }
-        } header: {
-            Text("AD / Purchase", tableName: "AD&InAppPurchase")
-        }
-    }
-}
-
-struct 📣ADMenu: View {
-    @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
-    var body: some View {
-        List {
-            📣ADDescriptionSection()
-            🛒IAPSection()
-        }
-        .navigationTitle(Text("About AD", tableName: "AD&InAppPurchase"))
-        .navigationBarTitleDisplayMode(.large)
     }
 }

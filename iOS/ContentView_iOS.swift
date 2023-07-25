@@ -30,6 +30,11 @@ struct ContentView: View {
                             Label("Option", systemImage: "gear")
                         }
                         NavigationLink {
+                            NavigationStack { 🛠AppMenu() }
+                        } label: {
+                            Label("Menu", systemImage: "gearshape")
+                        }
+                        NavigationLink {
                             NavigationStack { ℹ️AboutAppMenu(withSidebarLayout: true) }
                         } label: {
                             Label("About", systemImage: "questionmark")

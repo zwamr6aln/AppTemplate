@@ -11,7 +11,7 @@ struct 🛠AppMenu: View {
                 Text("Option")
             }
             ℹ️AboutAppLink()
-            📣ADMenuLink()
+            🛒InAppPurchaseMenuLink()
         }
         .navigationTitle("Menu")
     }

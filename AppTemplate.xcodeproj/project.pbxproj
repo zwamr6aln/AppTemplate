@@ -362,10 +362,10 @@
 			isa = PBXGroup;
 			children = (
 				F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */,
-				F583DC792A6D2CB300F02006 /* ℹ️HelpWindows.swift */,
 				F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */,
 				F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */,
 				F5D521662A6E578400BE4D12 /* 🤖AppDelegate.swift */,
+				F583DC792A6D2CB300F02006 /* ℹ️HelpWindows.swift */,
 				F58B05182A6EB09B004BE9E5 /* 📣ADContent.swift */,
 				F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */,
 				F5A880632A693B0F00D534EC /* macOSApp.entitlements */,
