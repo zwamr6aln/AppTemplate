@@ -74,7 +74,7 @@ extension 🗒️StaticInfo {
                             "ℹ️HelpWindows.swift",
                             "🔧Settings.swift",
                             "🪄Commands.swift",
-                            "🄳elegate.swift",
+                            "🤖AppDelegate.swift",
                             "📣ADComponents.swift",
                             "🛒InAppPurchaseView.swift"]
             }

@@ -2,7 +2,7 @@ import SwiftUI
 
 @main
 struct App_macOS: App {
-    //@NSApplicationDelegateAdaptor var ⓓelegate: 🄳elegate
+    //@NSApplicationDelegateAdaptor var ⓓelegate: 🤖AppDelegate
     private let 📱 = 📱AppModel()
     private let 🛒 = 🛒InAppPurchaseModel(id: "PLACEHOLDER.adfree")
     var body: some Scene {
