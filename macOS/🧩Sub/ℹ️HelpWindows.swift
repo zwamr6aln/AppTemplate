@@ -36,7 +36,7 @@ private struct 👤PrivacyPolicyWindow: Scene {
 
 private struct 📜VersionHistoryWindow: Scene {
     var body: some Scene {
-        Window("Version history", id: "VersionHistory") {
+        Window("Version History", id: "VersionHistory") {
             List {
                 ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
                     GroupBox(ⓘnfo.version) {

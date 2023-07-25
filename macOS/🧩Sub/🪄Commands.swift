@@ -13,15 +13,15 @@ struct 🪄Commands: Commands {
         SidebarCommands()
         CommandGroup(replacing: .help) { EmptyView() }
         CommandGroup(after: .help) {
-            Link("AppStore link", destination: 🗒️StaticInfo.appStoreProductURL)
-            Link("Review on AppStore", destination: 🗒️StaticInfo.appStoreUserReviewURL)
+            Link(String(localized: "Open AppStore page", table: "AboutApp"), destination: 🗒️StaticInfo.appStoreProductURL)
+            Link(String(localized: "Review on AppStore", table: "AboutApp"), destination: 🗒️StaticInfo.appStoreUserReviewURL)
             Divider()
-            Button("Description") { self.openWindow(id: "Description") }
-            Button("Privacy policy") { self.openWindow(id: "PrivacyPolicy") }
-            Button("Version history") { self.openWindow(id: "VersionHistory") }
+            Button(String(localized: "Description", table: "AboutApp")) { self.openWindow(id: "Description") }
+            Button(String(localized: "Privacy Policy", table: "AboutApp")) { self.openWindow(id: "PrivacyPolicy") }
+            Button(String(localized: "Version History", table: "AboutApp")) { self.openWindow(id: "VersionHistory") }
             Divider()
-            Button("Source code") { self.openWindow(id: "SourceCode") }
-            Button("Developer / Publisher") { self.openWindow(id: "DeveloperPublisher") }
+            Button(String(localized: "Source code", table: "AboutApp")) { self.openWindow(id: "SourceCode") }
+            Button(String(localized: "Developer / Publisher", table: "AboutApp")) { self.openWindow(id: "DeveloperPublisher") }
         }
     }
 }
