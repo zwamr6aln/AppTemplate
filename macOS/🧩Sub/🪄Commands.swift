@@ -3,6 +3,10 @@ import SwiftUI
 struct 🪄Commands: Commands {
     @Environment(\.openWindow) var openWindow
     var body: some Commands {
+        CommandGroup(before: .appVisibility) {
+            Button("In App Purchase") { self.openWindow(id: "InAppPurchase") }
+            Divider()
+        }
         CommandGroup(replacing: .systemServices) { EmptyView() }
         CommandGroup(replacing: .undoRedo) { EmptyView() }
         CommandGroup(replacing: .pasteboard) { EmptyView() }

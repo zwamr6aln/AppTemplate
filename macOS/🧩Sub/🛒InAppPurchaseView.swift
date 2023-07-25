@@ -1,6 +1,20 @@
 import SwiftUI
 import StoreKit
 
+struct 🛒InAppPurchaseWindow: Scene {
+    @ObservedObject var 🛒: 🛒InAppPurchaseModel
+    var body: some Scene {
+        Window("In App Purchase", id: "InAppPurchase") {
+            📣ADMenu()
+                .environmentObject(🛒)
+        }
+        .defaultSize(width: 400, height: 500)
+    }
+    init(_ 🛒: 🛒InAppPurchaseModel) {
+        self.🛒 = 🛒
+    }
+}
+
 struct 🛒PurchaseView: View {
     @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
     @State private var buyingInProgress = false

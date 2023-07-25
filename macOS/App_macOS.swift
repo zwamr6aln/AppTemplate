@@ -14,5 +14,6 @@ struct App_macOS: App {
         .commands { 🪄Commands() }
         Settings { 🔧SettingsContent() }
         ℹ️HelpWindows()
+        🛒InAppPurchaseWindow(🛒)
     }
 }

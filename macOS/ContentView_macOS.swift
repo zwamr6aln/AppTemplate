@@ -28,5 +28,6 @@ struct ContentView: View {
             Text("Detail")
                 .navigationTitle("AppTitle")
         }
+        .modifier(📣ADSheet())
     }
 }

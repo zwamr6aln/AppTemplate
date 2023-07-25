@@ -2,22 +2,15 @@ import SwiftUI
 
 struct 📣ADView: View {
     @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
-    @Environment(\.scenePhase) var scenePhase
-    @Environment(\.verticalSizeClass) var verticalSizeClass
     @Environment(\.dismiss) var dismiss
+    @Environment(\.openWindow) var openWindow
     @State private var disableDismiss: Bool = true
     private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
     @State private var countDown: Int
     private var targetApp: 📣ADTargetApp
-    @State private var showADMenu: Bool = false
     var body: some View {
         NavigationStack { self.appADContent() }
-            .presentationDetents([.height(640)])
-            .onChange(of: self.scenePhase) {
-                if $0 == .background { self.dismiss() }
-            }
             .onChange(of: 🛒.purchased) { if $0 { self.disableDismiss = false } }
-            .interactiveDismissDisabled(self.disableDismiss)
             .onReceive(self.timer) { _ in
                 if self.countDown > 1 {
                     self.countDown -= 1
@@ -25,63 +18,48 @@ struct 📣ADView: View {
                     self.disableDismiss = false
                 }
             }
-            .overlay(alignment: .topLeading) {
-                HStack {
-                    if !self.showADMenu {
-                        self.dismissButton()
-                        Spacer()
-                        self.adMenuLink()
-                    }
-                }
-                .font(.title3)
-                .padding(.top, 12)
-                .padding(.horizontal, 18)
-                .animation(.default, value: self.disableDismiss)
-                .animation(.default, value: self.showADMenu)
-            }
+            .frame(minWidth: 700, maxWidth: 1000, minHeight: 500, maxHeight: 600)
     }
     private func appADContent() -> some View {
-        Group {
-            if self.verticalSizeClass == .compact {
-                self.horizontalLayout()
-            } else {
-                self.verticalLayout()
+        VStack {
+            self.header()
+            HStack(spacing: 16) {
+                self.mockImage()
+                VStack(spacing: 16) {
+                    Spacer()
+                    self.appIcon()
+                    self.appName()
+                    self.appDescription()
+                    Spacer()
+                    self.appStoreBadge()
+                    Spacer()
+                }
+                .padding()
+                .padding(.vertical)
             }
+            .padding(32)
+            .modifier(Self.PurchasedEffect())
         }
-        .modifier(Self.PurchasedEffect())
-        .navigationTitle(Text("AD", tableName: "AD&InAppPurchase"))
-        .navigationDestination(isPresented: self.$showADMenu) { 📣ADMenu() }
     }
-    private func verticalLayout() -> some View {
-        VStack(spacing: 16) {
-            Spacer(minLength: 0)
-            self.mockImage()
-            Spacer(minLength: 0)
-            self.appIcon()
-            self.appName()
-            Spacer(minLength: 0)
-            self.appDescription()
-            Spacer(minLength: 0)
-            self.appStoreBadge()
-            Spacer(minLength: 0)
-        }
-        .padding()
-    }
-    private func horizontalLayout() -> some View {
-        HStack(spacing: 16) {
-            self.mockImage()
-            VStack(spacing: 12) {
-                Spacer()
-                self.appIcon()
-                self.appName()
-                self.appDescription()
-                Spacer()
-                self.appStoreBadge()
-                Spacer()
+    private func header() -> some View {
+        HStack {
+            self.dismissButton()
+            if self.disableDismiss {
+                Text("\(self.countDown)")
+                    .foregroundStyle(.tertiary)
+                    .font(.subheadline)
             }
-            .padding(.horizontal)
+            Spacer()
+            self.adMenuLink()
         }
-        .padding()
+        .font(.title3)
+        .overlay {
+            Text("AD", tableName: "AD&InAppPurchase")
+                .font(.headline)
+        }
+        .padding(.top, 12)
+        .padding(.horizontal, 18)
+        .animation(.default, value: self.disableDismiss)
     }
     private func mockImage() -> some View {
         Link(destination: self.targetApp.url) {
@@ -97,7 +75,7 @@ struct 📣ADView: View {
             HStack(spacing: 16) {
                 Image(self.targetApp.iconImageName)
                     .resizable()
-                    .frame(width: 60, height: 60)
+                    .frame(width: 80, height: 80)
                 if self.targetApp.isHealthKitApp {
                     Image(.appleHealthBadge)
                 }
@@ -109,7 +87,7 @@ struct 📣ADView: View {
     private func appName() -> some View {
         Link(destination: self.targetApp.url) {
             Text(self.targetApp.name, tableName: "AD&InAppPurchase")
-                .font(.headline)
+                .font(.title.bold())
         }
         .buttonStyle(.plain)
         .accessibilityHidden(true)
@@ -117,7 +95,7 @@ struct 📣ADView: View {
     }
     private func appDescription() -> some View {
         Text(self.targetApp.description, tableName: "AD&InAppPurchase")
-            .font(.subheadline)
+            .font(.title3)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 8)
     }
@@ -134,30 +112,23 @@ struct 📣ADView: View {
     }
     private func adMenuLink() -> some View {
         Button {
-            self.showADMenu = true
+            self.openWindow(id: "InAppPurchase")
         } label: {
-            Image(systemName: "questionmark.circle")
+            Image(systemName: "questionmark")
         }
         .tint(.primary)
         .accessibilityLabel(Text("About AD", tableName: "AD&InAppPurchase"))
     }
     private func dismissButton() -> some View {
-        Group {
-            if self.disableDismiss {
-                Image(systemName: "\(self.countDown).circle")
-                    .foregroundStyle(.tertiary)
-            } else {
-                Button {
-                    self.dismiss()
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .fontWeight(.medium)
-                }
-                .keyboardShortcut(.cancelAction)
-                .tint(.primary)
-                .accessibilityLabel(Text("Dismiss", tableName: "AD&InAppPurchase"))
-            }
+        Button {
+            self.dismiss()
+        } label: {
+            Image(systemName: "xmark")
+                .fontWeight(.medium)
         }
+        .tint(.primary)
+        .accessibilityLabel(Text("Dismiss", tableName: "AD&InAppPurchase"))
+        .disabled(self.disableDismiss)
     }
     private struct PurchasedEffect: ViewModifier {
         @EnvironmentObject var 🛒: 🛒InAppPurchaseModel

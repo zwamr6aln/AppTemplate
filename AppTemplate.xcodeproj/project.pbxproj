@@ -54,6 +54,7 @@
 		F583DC7C2A6D2CB300F02006 /* ℹ️HelpWindows.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583DC792A6D2CB300F02006 /* ℹ️HelpWindows.swift */; };
 		F583DC802A6DE2D200F02006 /* 🔧Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */; };
 		F583DC842A6DE6DB00F02006 /* 🪄Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */; };
+		F586E8B22A6F9BCF00023554 /* 📣ADSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */; };
 		F58B051A2A6EB09E004BE9E5 /* 📣ADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B05182A6EB09B004BE9E5 /* 📣ADView.swift */; };
 		F58B051C2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */; };
 		F5936C192A6A90B10044B939 /* 📣ADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C182A6A90B10044B939 /* 📣ADModel.swift */; };
@@ -195,6 +196,7 @@
 		F583DC792A6D2CB300F02006 /* ℹ️HelpWindows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️HelpWindows.swift"; sourceTree = "<group>"; };
 		F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🔧Settings.swift"; sourceTree = "<group>"; };
 		F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🪄Commands.swift"; sourceTree = "<group>"; };
+		F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADSheet.swift"; sourceTree = "<group>"; };
 		F58B05182A6EB09B004BE9E5 /* 📣ADView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADView.swift"; sourceTree = "<group>"; };
 		F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseView.swift"; sourceTree = "<group>"; };
 		F5936C182A6A90B10044B939 /* 📣ADModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADModel.swift"; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 		F58B051D2A6EB146004BE9E5 /* 🧩Sub */ = {
 			isa = PBXGroup;
 			children = (
+				F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */,
 				F583DC792A6D2CB300F02006 /* ℹ️HelpWindows.swift */,
 				F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */,
 				F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */,
@@ -594,6 +597,7 @@
 				F583DC842A6DE6DB00F02006 /* 🪄Commands.swift in Sources */,
 				F5D521652A6E575B00BE4D12 /* 📱AppModel_macOS.swift in Sources */,
 				F501E9C92A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */,
+				F586E8B22A6F9BCF00023554 /* 📣ADSheet.swift in Sources */,
 				F583DC802A6DE2D200F02006 /* 🔧Settings.swift in Sources */,
 				F5A8805B2A693B0C00D534EC /* App_macOS.swift in Sources */,
 				F583DC7C2A6D2CB300F02006 /* ℹ️HelpWindows.swift in Sources */,
