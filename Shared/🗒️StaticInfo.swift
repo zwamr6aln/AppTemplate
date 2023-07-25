@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum 🗒️StaticInfo { //Work in progress
+enum 🗒️StaticInfo {
     static let appName: LocalizedStringKey = "AppTemplate"
     static let appSubTitle: LocalizedStringKey = "App for iPhone / iPad / Mac / Apple Watch"
     
@@ -32,7 +32,7 @@ extension 🗒️StaticInfo {
                                                                   ("1.0", "2021-01-01")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Sub, Others, WatchApp, WatchComplication
+        case main, Sub, Rest
         var id: Self { self }
         var fileNames: [String] {
             switch self {
@@ -46,14 +46,12 @@ extension 🗒️StaticInfo {
                             "﹀DismissButton.swift",
                             "🩹Workaround.swift",
                             "💬PrepareToRequestUserReview.swift"]
-                case .Others: ["🗒️StaticInfo.swift",
-                               "ℹ️AboutApp.swift",
-                               "📣ADModel.swift",
-                               "📣ADComponents.swift",
-                               "🛒InAppPurchaseModel.swift",
-                               "🛒InAppPurchaseView.swift"]
-                case .WatchApp: []
-                case .WatchComplication: []
+                case .Rest: ["🗒️StaticInfo.swift",
+                             "ℹ️AboutApp.swift",
+                             "📣ADModel.swift",
+                             "📣ADComponents.swift",
+                             "🛒InAppPurchaseModel.swift",
+                             "🛒InAppPurchaseView.swift"]
             }
         }
     }
@@ -66,7 +64,7 @@ extension 🗒️StaticInfo {
                                                                   ("1.0", "2021-01-01")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Sub
+        case main, Sub, Rest
         var id: Self { self }
         var fileNames: [String] {
             switch self {
@@ -74,15 +72,15 @@ extension 🗒️StaticInfo {
                              "📱AppModel_macOS.swift",
                              "ContentView_macOS.swift"]
                 case .Sub: ["📣ADSheet.swift",
-                            "🗒️StaticInfo.swift",
-                            "ℹ️HelpWindows.swift",
                             "🔧Settings.swift",
                             "🪄Commands.swift",
-                            "🤖AppDelegate.swift",
-                            "📣ADModel.swift",
-                            "📣ADComponents.swift",
-                            "🛒InAppPurchaseModel.swift",
-                            "🛒InAppPurchaseView.swift"]
+                            "🤖AppDelegate.swift"]
+                case .Rest: ["🗒️StaticInfo.swift",
+                             "ℹ️HelpWindows.swift",
+                             "📣ADModel.swift",
+                             "📣ADComponents.swift",
+                             "🛒InAppPurchaseModel.swift",
+                             "🛒InAppPurchaseView.swift"]
             }
         }
     }
