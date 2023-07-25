@@ -78,7 +78,7 @@ extension 🗒️StaticInfo {
                 case .Rest: ["🗒️StaticInfo.swift",
                              "ℹ️HelpWindows.swift",
                              "📣ADModel.swift",
-                             "📣ADComponents.swift",
+                             "📣ADContent.swift",
                              "🛒InAppPurchaseModel.swift",
                              "🛒InAppPurchaseView.swift"]
             }

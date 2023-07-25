@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct 📣ADView: View {
+struct 📣ADContent: View {
     @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
     @Environment(\.dismiss) var dismiss
     @Environment(\.openWindow) var openWindow
@@ -38,6 +38,13 @@ struct 📣ADView: View {
             }
         }
     }
+    init(_ app: 📣ADTargetApp, second: Int) {
+        self.targetApp = app
+        self._countDown = State(initialValue: second)
+    }
+}
+
+private extension 📣ADContent {
     private func header() -> some View {
         HStack {
             self.dismissButton()
@@ -144,51 +151,5 @@ struct 📣ADView: View {
                 content
             }
         }
-    }
-    init(_ app: 📣ADTargetApp, second: Int) {
-        self.targetApp = app
-        self._countDown = State(initialValue: second)
-    }
-}
-
-struct 📣ADDescriptionSection: View {
-    var body: some View {
-        Section {
-            GroupBox {
-                Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.",
-                     tableName: "AD&InAppPurchase")
-                .padding()
-            }
-        } header: {
-            Text("About AD", tableName: "AD&InAppPurchase")
-        }
-    }
-}
-
-struct 📣ADMenuLink: View {
-    @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
-    var body: some View {
-        Section {
-            🛒PurchaseView()
-            NavigationLink {
-                📣ADMenu()
-            } label: {
-                Label(String(localized: "About AD / Purchase", table: "AD&InAppPurchase"),
-                      systemImage: "megaphone")
-            }
-        } header: {
-            Text("AD / Purchase", tableName: "AD&InAppPurchase")
-        }
-    }
-}
-
-struct 📣ADMenu: View {
-    @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
-    var body: some View {
-        List {
-            📣ADDescriptionSection()
-            🛒IAPSection()
-        }
-        .navigationTitle(Text("In-App Purchase", tableName: "AD&InAppPurchase"))
     }
 }

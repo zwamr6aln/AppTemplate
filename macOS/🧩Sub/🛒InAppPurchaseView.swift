@@ -5,7 +5,7 @@ struct 🛒InAppPurchaseWindow: Scene {
     @ObservedObject var 🛒: 🛒InAppPurchaseModel
     var body: some Scene {
         Window("In-App Purchase", id: "InAppPurchase") {
-            📣ADMenu()
+            Self.menu()
                 .environmentObject(🛒)
         }
         .defaultSize(width: 400, height: 500)
@@ -16,73 +16,38 @@ struct 🛒InAppPurchaseWindow: Scene {
     }
 }
 
-struct 🛒PurchaseView: View {
-    @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
-    @State private var buyingInProgress = false
-    @State private var showError = false
-    @State private var errorMessage = ""
-    var body: some View {
-        HStack {
-            Label(🛒.productName, systemImage: "cart")
-            Spacer()
-            if 🛒.purchased {
-                Image(systemName: "checkmark")
-                    .imageScale(.small)
-                    .foregroundStyle(.tertiary)
-                    .transition(.slide)
-            }
-            Button(🛒.productPrice) {
-                Task {
-                    do {
-                        self.buyingInProgress = true
-                        try await 🛒.purchase()
-                    } catch 🛒Error.failedVerification {
-                        self.errorMessage = "Your purchase could not be verified by the App Store."
-                        self.showError = true
-                    } catch {
-                        print("Failed purchase: \(error)")
-                        self.errorMessage = error.localizedDescription
-                        self.showError = true
+private extension 🛒InAppPurchaseWindow {
+    private static func menu() -> some View {
+        List {
+            Self.aboutADSection()
+            Section {
+                GroupBox {
+                    VStack {
+                        Self.PurchaseView()
+                        Self.adPreview()
+                        Self.RestoreButton()
                     }
-                    self.buyingInProgress = false
+                    .padding()
                 }
+            } header: {
+                Text("In-App Purchase", tableName: "AD&InAppPurchase")
             }
-            .accessibilityLabel(Text("Buy", tableName: "AD&InAppPurchase"))
-            .disabled(self.buyingInProgress)
-            .buttonStyle(.borderedProminent)
-            .overlay {
-                if self.buyingInProgress { ProgressView() }
-            }
-            .alert(isPresented: self.$showError) {
-                Alert(title: Text("Error", tableName: "AD&InAppPurchase"),
-                      message: Text(self.errorMessage),
-                      dismissButton: .default(Text("OK", tableName: "AD&InAppPurchase")))
-            }
+            .headerProminence(.increased)
         }
-        .disabled(🛒.unconnected)
-        .disabled(🛒.purchased)
-        .animation(.default, value: 🛒.purchased)
+        .navigationTitle(Text("In-App Purchase", tableName: "AD&InAppPurchase"))
     }
-}
-
-struct 🛒IAPSection: View {
-    @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
-    var body: some View {
+    private static func aboutADSection() -> some View {
         Section {
             GroupBox {
-                VStack {
-                    🛒PurchaseView()
-                    self.adPreview()
-                    Self.RestoreButton()
-                }
+                Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.",
+                     tableName: "AD&InAppPurchase")
                 .padding()
             }
         } header: {
-            Text("In-App Purchase", tableName: "AD&InAppPurchase")
+            Text("About AD", tableName: "AD&InAppPurchase")
         }
-        .headerProminence(.increased)
     }
-    private func adPreview() -> some View {
+    private static func adPreview() -> some View {
         HStack(alignment: .bottom) {
             Spacer()
             Image(.adPreview)
@@ -102,6 +67,54 @@ struct 🛒IAPSection: View {
             Spacer()
         }
         .padding(12)
+    }
+    private struct PurchaseView: View {
+        @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
+        @State private var buyingInProgress = false
+        @State private var showError = false
+        @State private var errorMessage = ""
+        var body: some View {
+            HStack {
+                Label(🛒.productName, systemImage: "cart")
+                Spacer()
+                if 🛒.purchased {
+                    Image(systemName: "checkmark")
+                        .imageScale(.small)
+                        .foregroundStyle(.tertiary)
+                        .transition(.slide)
+                }
+                Button(🛒.productPrice) {
+                    Task {
+                        do {
+                            self.buyingInProgress = true
+                            try await 🛒.purchase()
+                        } catch 🛒Error.failedVerification {
+                            self.errorMessage = "Your purchase could not be verified by the App Store."
+                            self.showError = true
+                        } catch {
+                            print("Failed purchase: \(error)")
+                            self.errorMessage = error.localizedDescription
+                            self.showError = true
+                        }
+                        self.buyingInProgress = false
+                    }
+                }
+                .accessibilityLabel(Text("Buy", tableName: "AD&InAppPurchase"))
+                .disabled(self.buyingInProgress)
+                .buttonStyle(.borderedProminent)
+                .overlay {
+                    if self.buyingInProgress { ProgressView() }
+                }
+                .alert(isPresented: self.$showError) {
+                    Alert(title: Text("Error", tableName: "AD&InAppPurchase"),
+                          message: Text(self.errorMessage),
+                          dismissButton: .default(Text("OK", tableName: "AD&InAppPurchase")))
+                }
+            }
+            .disabled(🛒.unconnected)
+            .disabled(🛒.purchased)
+            .animation(.default, value: 🛒.purchased)
+        }
     }
     private struct RestoreButton: View {
         @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
