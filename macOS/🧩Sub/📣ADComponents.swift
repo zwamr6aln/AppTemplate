@@ -41,15 +41,13 @@ struct 📣ADView: View {
     private func header() -> some View {
         HStack {
             self.dismissButton()
-            if self.disableDismiss {
-                Text("\(self.countDown)")
-                    .foregroundStyle(.tertiary)
-                    .font(.subheadline)
-            }
+            Text("\(self.countDown)")
+                .foregroundStyle(.tertiary)
+                .font(.subheadline)
+                .opacity(self.disableDismiss ? 1 : 0)
             Spacer()
             self.adMenuLink()
         }
-        .font(.title3)
         .overlay {
             Text("AD", tableName: "AD&InAppPurchase")
                 .font(.headline)

@@ -10,7 +10,8 @@ struct 📣ADSheet: ViewModifier {
                 📣ADView(self.app, second: 5)
                     .environmentObject(🛒)
             }
-            .onAppear {
+            .task {
+                try? await Task.sleep(for: .seconds(0.5))
                 if 🛒.checkToShowADSheet() { self.showSheet = true }
             }
     }

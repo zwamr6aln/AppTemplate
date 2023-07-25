@@ -64,6 +64,16 @@
     "Link" : {
 
     },
+    "Main window" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メインウィンドウ"
+          }
+        }
+      }
+    },
     "No select" : {
 
     },
