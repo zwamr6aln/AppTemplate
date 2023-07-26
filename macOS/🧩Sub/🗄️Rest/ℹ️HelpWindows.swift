@@ -18,7 +18,7 @@ private struct 📰DescriptionWindow: Scene {
         Window(Text("Description", tableName: "AboutApp"),
                id: "Description") {
             ScrollView {
-                Text("current", tableName: "🌏AppStoreDescription")
+                Text("current", tableName: "🌐AppStoreDescription")
                     .padding(24)
             }
             .textSelection(.enabled)
@@ -47,7 +47,7 @@ private struct 📜VersionHistoryWindow: Scene {
                 ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
                     GroupBox(ⓘnfo.version) {
                         VStack(alignment: .leading, spacing: 8) {
-                            Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
+                            Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌐VersionHistory")
                                 .font(.subheadline)
                                 .textSelection(.enabled)
                             Group {

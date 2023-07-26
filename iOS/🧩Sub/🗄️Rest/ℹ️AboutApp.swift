@@ -61,7 +61,7 @@ private struct 📰AppStoreDescriptionSection: View {
         Section {
             NavigationLink {
                 ScrollView {
-                    Text("current", tableName: "🌏AppStoreDescription")
+                    Text("current", tableName: "🌐AppStoreDescription")
                         .padding()
                         .frame(maxWidth: .infinity)
                 }
@@ -80,7 +80,7 @@ private struct 📰AppStoreDescriptionSection: View {
         }
     }
     private var textWithoutEmptyLines: String {
-        String(localized: "current", table: "🌏AppStoreDescription")
+        String(localized: "current", table: "🌐AppStoreDescription")
             .replacingOccurrences(of: "\n\n", with: "\n")
             .replacingOccurrences(of: "\n\n", with: "\n")
     }
@@ -153,7 +153,7 @@ private struct 📜VersionHistoryLink: View {
                 List {
                     ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
                         Section {
-                            Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌏VersionDescription")
+                            Text(LocalizedStringKey(ⓘnfo.version), tableName: "🌐VersionHistory")
                                 .font(.subheadline)
                                 .padding()
                                 .textSelection(.enabled)

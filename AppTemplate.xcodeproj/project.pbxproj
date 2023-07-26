@@ -52,10 +52,10 @@
 		F53A8F932A6FB963000C4568 /* 📣ADSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */; };
 		F53A8F942A6FB963000C4568 /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B05182A6EB09B004BE9E5 /* 📣ADContent.swift */; };
 		F53A8F952A6FB963000C4568 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */; };
-		F53A8F972A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F962A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings */; };
-		F53A8F992A6FBD11000C4568 /* 🌏VersionDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F982A6FBD11000C4568 /* 🌏VersionDescription.xcstrings */; };
-		F53A8F9B2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */; };
-		F53A8F9D2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F9C2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings */; };
+		F53A8F972A6FBCEE000C4568 /* 🌐AppStoreDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F962A6FBCEE000C4568 /* 🌐AppStoreDescription.xcstrings */; };
+		F53A8F992A6FBD11000C4568 /* 🌐VersionHistory.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F982A6FBD11000C4568 /* 🌐VersionHistory.xcstrings */; };
+		F53A8F9B2A6FBD66000C4568 /* 🌐VersionHistory.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F9A2A6FBD66000C4568 /* 🌐VersionHistory.xcstrings */; };
+		F53A8F9D2A6FBD66000C4568 /* 🌐AppStoreDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F53A8F9C2A6FBD66000C4568 /* 🌐AppStoreDescription.xcstrings */; };
 		F53A8F9E2A6FDBFD000C4568 /* 📣ADModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C182A6A90B10044B939 /* 📣ADModel.swift */; };
 		F53A8F9F2A6FDBFD000C4568 /* 🛒InAppPurchaseModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
 		F53A8FA02A6FDBFD000C4568 /* 🪧Sheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
@@ -225,10 +225,10 @@
 		F539EA412A70D37300A3C80E /* 📱AppModel(Extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel(Extension).swift"; sourceTree = "<group>"; };
 		F539EA432A70D39900A3C80E /* 📱AppModel(Extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel(Extension).swift"; sourceTree = "<group>"; };
 		F539EA482A70D5BE00A3C80E /* ℹ️AboutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutApp.swift"; sourceTree = "<group>"; };
-		F53A8F962A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
-		F53A8F982A6FBD11000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
-		F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
-		F53A8F9C2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
+		F53A8F962A6FBCEE000C4568 /* 🌐AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
+		F53A8F982A6FBD11000C4568 /* 🌐VersionHistory.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐VersionHistory.xcstrings"; sourceTree = "<group>"; };
+		F53A8F9A2A6FBD66000C4568 /* 🌐VersionHistory.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐VersionHistory.xcstrings"; sourceTree = "<group>"; };
+		F53A8F9C2A6FBD66000C4568 /* 🌐AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
 		F549E849290BC3C300636271 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = memo.md; sourceTree = "<group>"; };
 		F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
 		F567E36929F278B10026E12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -305,7 +305,7 @@
 				F5936C162A6A81DE0044B939 /* 🗄️Rest */,
 				F567E36929F278B10026E12D /* Info.plist */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
-				12E4A76828502EA600B2380B /* 🌏Localization */,
+				12E4A76828502EA600B2380B /* 🌐Localization */,
 			);
 			path = "🧩Sub";
 			sourceTree = "<group>";
@@ -344,15 +344,15 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		12E4A76828502EA600B2380B /* 🌏Localization */ = {
+		12E4A76828502EA600B2380B /* 🌐Localization */ = {
 			isa = PBXGroup;
 			children = (
 				F583DC762A6D29F200F02006 /* Localizable.xcstrings */,
 				F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */,
-				F53A8F9C2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings */,
-				F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */,
+				F53A8F9C2A6FBD66000C4568 /* 🌐AppStoreDescription.xcstrings */,
+				F53A8F9A2A6FBD66000C4568 /* 🌐VersionHistory.xcstrings */,
 			);
-			path = "🌏Localization";
+			path = "🌐Localization";
 			sourceTree = "<group>";
 		};
 		F501E9C52A6A2E7C00E9F9A6 /* Shared */ = {
@@ -362,7 +362,7 @@
 				F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */,
 				F5936C182A6A90B10044B939 /* 📣ADModel.swift */,
 				F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */,
-				F583DC592A6D222B00F02006 /* 🌏Localization */,
+				F583DC592A6D222B00F02006 /* 🌐Localization */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -389,13 +389,13 @@
 			path = watchOS;
 			sourceTree = "<group>";
 		};
-		F583DC592A6D222B00F02006 /* 🌏Localization */ = {
+		F583DC592A6D222B00F02006 /* 🌐Localization */ = {
 			isa = PBXGroup;
 			children = (
 				F583DC722A6D22F500F02006 /* AboutApp.xcstrings */,
 				F583DC642A6D227900F02006 /* AD&InAppPurchase.xcstrings */,
 			);
-			path = "🌏Localization";
+			path = "🌐Localization";
 			sourceTree = "<group>";
 		};
 		F58B051D2A6EB146004BE9E5 /* 🧩Sub */ = {
@@ -410,7 +410,7 @@
 				F58B051E2A6EB158004BE9E5 /* 🗄️Rest */,
 				F5A880632A693B0F00D534EC /* 🎟️App.entitlements */,
 				F5A8805E2A693B0F00D534EC /* Assets.xcassets */,
-				F5D521502A6DFE9000BE4D12 /* 🌏Localization */,
+				F5D521502A6DFE9000BE4D12 /* 🌐Localization */,
 			);
 			path = "🧩Sub";
 			sourceTree = "<group>";
@@ -447,15 +447,15 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		F5D521502A6DFE9000BE4D12 /* 🌏Localization */ = {
+		F5D521502A6DFE9000BE4D12 /* 🌐Localization */ = {
 			isa = PBXGroup;
 			children = (
 				F5D521512A6DFE9E00BE4D12 /* Localizable.xcstrings */,
 				F5D521532A6DFEAF00BE4D12 /* InfoPlist.xcstrings */,
-				F53A8F962A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings */,
-				F53A8F982A6FBD11000C4568 /* 🌏VersionDescription.xcstrings */,
+				F53A8F962A6FBCEE000C4568 /* 🌐AppStoreDescription.xcstrings */,
+				F53A8F982A6FBD11000C4568 /* 🌐VersionHistory.xcstrings */,
 			);
-			path = "🌏Localization";
+			path = "🌐Localization";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,13 +565,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F53A8F9B2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings in Resources */,
+				F53A8F9B2A6FBD66000C4568 /* 🌐VersionHistory.xcstrings in Resources */,
 				12DDDDAD288BF2E40055A073 /* Launch Screen.storyboard in Resources */,
 				127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */,
 				F583DC652A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */,
 				F583DC732A6D22F500F02006 /* AboutApp.xcstrings in Resources */,
 				F539EA342A70B6CB00A3C80E /* InfoPlist.xcstrings in Resources */,
-				F53A8F9D2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings in Resources */,
+				F53A8F9D2A6FBD66000C4568 /* 🌐AppStoreDescription.xcstrings in Resources */,
 				F583DC772A6D29F200F02006 /* Localizable.xcstrings in Resources */,
 				12E4A74C285027F700B2380B /* Assets.xcassets in Resources */,
 			);
@@ -597,8 +597,8 @@
 				F5D521552A6DFEB600BE4D12 /* InfoPlist.xcstrings in Resources */,
 				F5DD10FD2A70E70000428A16 /* AboutApp.xcstrings in Resources */,
 				F5A8805F2A693B0F00D534EC /* Assets.xcassets in Resources */,
-				F53A8F992A6FBD11000C4568 /* 🌏VersionDescription.xcstrings in Resources */,
-				F53A8F972A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings in Resources */,
+				F53A8F992A6FBD11000C4568 /* 🌐VersionHistory.xcstrings in Resources */,
+				F53A8F972A6FBCEE000C4568 /* 🌐AppStoreDescription.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
