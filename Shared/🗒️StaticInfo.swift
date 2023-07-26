@@ -66,7 +66,8 @@ extension 🗒️StaticInfo {
                              "ContentView.swift",
                              "📱AppModel.swift"]
                 case .Sub: ["📱AppModel(Extension).swift"]
-                case .Rest: ["🗒️StaticInfo.swift"]
+                case .Rest: ["🗒️StaticInfo.swift",
+                             "ℹ️AboutApp.swift"]
             }
         }
     }

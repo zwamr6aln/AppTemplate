@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "About App" : {
-
-    },
     "Alarm clock with taking a long time from small volume to max volume." : {
 
     },
@@ -22,7 +19,7 @@
     "Notes widget on lock screen." : {
 
     },
-    "Open AppStore page" : {
+    "Placeholder" : {
 
     },
     "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {

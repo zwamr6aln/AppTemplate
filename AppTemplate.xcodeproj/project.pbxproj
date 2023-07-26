@@ -40,6 +40,15 @@
 		F539EA452A70D41D00A3C80E /* 📱AppModel(Extension).swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA3F2A70D33300A3C80E /* 📱AppModel(Extension).swift */; };
 		F539EA462A70D43300A3C80E /* 📱AppModel(Extension).swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA412A70D37300A3C80E /* 📱AppModel(Extension).swift */; };
 		F539EA472A70D43B00A3C80E /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
+		F539EA492A70D5BE00A3C80E /* ℹ️AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA482A70D5BE00A3C80E /* ℹ️AboutApp.swift */; };
+		F539EA4B2A70D90700A3C80E /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
+		F539EA4C2A70D90700A3C80E /* 🗒️StaticInfo.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
+		F539EA4D2A70D90700A3C80E /* 📣ADModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C182A6A90B10044B939 /* 📣ADModel.swift */; };
+		F539EA4E2A70D90700A3C80E /* 🛒InAppPurchaseModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
+		F539EA4F2A70D91100A3C80E /* App.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F567E38F29F2A09A0026E12D /* App.swift */; };
+		F539EA502A70D91100A3C80E /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F567E39129F2A09A0026E12D /* ContentView.swift */; };
+		F539EA512A70D91100A3C80E /* 📱AppModel(Extension).swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA432A70D39900A3C80E /* 📱AppModel(Extension).swift */; };
+		F539EA522A70D91100A3C80E /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA482A70D5BE00A3C80E /* ℹ️AboutApp.swift */; };
 		F53A8F932A6FB963000C4568 /* 📣ADSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */; };
 		F53A8F942A6FB963000C4568 /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B05182A6EB09B004BE9E5 /* 📣ADContent.swift */; };
 		F53A8F952A6FB963000C4568 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */; };
@@ -61,7 +70,6 @@
 		F567E39A29F2A09C0026E12D /* Template.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F567E38D29F2A09A0026E12D /* Template.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F583DC652A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* AD&InAppPurchase.xcstrings */; };
-		F583DC662A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* AD&InAppPurchase.xcstrings */; };
 		F583DC672A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* AD&InAppPurchase.xcstrings */; };
 		F583DC732A6D22F500F02006 /* AboutApp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC722A6D22F500F02006 /* AboutApp.xcstrings */; };
 		F583DC742A6D22F500F02006 /* AboutApp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC722A6D22F500F02006 /* AboutApp.xcstrings */; };
@@ -141,6 +149,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F539EA4A2A70D8F500A3C80E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "📁SourceCode";
+			dstSubfolderSpec = 7;
+			files = (
+				F539EA4F2A70D91100A3C80E /* App.swift in CopyFiles */,
+				F539EA502A70D91100A3C80E /* ContentView.swift in CopyFiles */,
+				F539EA512A70D91100A3C80E /* 📱AppModel(Extension).swift in CopyFiles */,
+				F539EA522A70D91100A3C80E /* ℹ️AboutApp.swift in CopyFiles */,
+				F539EA4B2A70D90700A3C80E /* 📱AppModel.swift in CopyFiles */,
+				F539EA4C2A70D90700A3C80E /* 🗒️StaticInfo.swift in CopyFiles */,
+				F539EA4D2A70D90700A3C80E /* 📣ADModel.swift in CopyFiles */,
+				F539EA4E2A70D90700A3C80E /* 🛒InAppPurchaseModel.swift in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F567E39E29F2A09C0026E12D /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,6 +224,7 @@
 		F539EA3F2A70D33300A3C80E /* 📱AppModel(Extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel(Extension).swift"; sourceTree = "<group>"; };
 		F539EA412A70D37300A3C80E /* 📱AppModel(Extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel(Extension).swift"; sourceTree = "<group>"; };
 		F539EA432A70D39900A3C80E /* 📱AppModel(Extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel(Extension).swift"; sourceTree = "<group>"; };
+		F539EA482A70D5BE00A3C80E /* ℹ️AboutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutApp.swift"; sourceTree = "<group>"; };
 		F53A8F962A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
 		F53A8F982A6FBD11000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
 		F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
@@ -345,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				F539EA432A70D39900A3C80E /* 📱AppModel(Extension).swift */,
+				F539EA482A70D5BE00A3C80E /* ℹ️AboutApp.swift */,
 				F539EA362A70B9F300A3C80E /* Localizable.xcstrings */,
 				F539EA382A70BA1A00A3C80E /* InfoPlist.xcstrings */,
 				F567E39329F2A09C0026E12D /* Assets.xcassets */,
@@ -462,6 +489,7 @@
 				F567E38929F2A09A0026E12D /* Sources */,
 				F567E38A29F2A09A0026E12D /* Frameworks */,
 				F567E38B29F2A09A0026E12D /* Resources */,
+				F539EA4A2A70D8F500A3C80E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -556,7 +584,6 @@
 				F539EA372A70B9F300A3C80E /* Localizable.xcstrings in Resources */,
 				F539EA392A70BA1A00A3C80E /* InfoPlist.xcstrings in Resources */,
 				F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */,
-				F583DC662A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */,
 				F583DC742A6D22F500F02006 /* AboutApp.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,6 +637,7 @@
 				F539EA3D2A70D31900A3C80E /* 📱AppModel.swift in Sources */,
 				F567E39029F2A09A0026E12D /* App.swift in Sources */,
 				F501E9C82A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */,
+				F539EA492A70D5BE00A3C80E /* ℹ️AboutApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
