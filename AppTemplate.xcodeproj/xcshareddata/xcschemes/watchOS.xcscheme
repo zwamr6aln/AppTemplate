@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F567E38C29F2A09A0026E12D"
-            BuildableName = "AT Watch App.app"
+            BuildableName = "Template.app"
             BlueprintName = "AT Watch App"
             ReferencedContainer = "container:AppTemplate.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F567E38C29F2A09A0026E12D"
-            BuildableName = "AT Watch App.app"
+            BuildableName = "Template.app"
             BlueprintName = "AT Watch App"
             ReferencedContainer = "container:AppTemplate.xcodeproj">
          </BuildableReference>

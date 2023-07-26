@@ -263,9 +263,9 @@
 				F57B37F129726CE300F0BB91 /* 📣ADContent.swift */,
 				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
 				F567E38729F27E180026E12D /* 🩹Workaround.swift */,
+				F5936C162A6A81DE0044B939 /* 🗄️Rest */,
 				F567E36929F278B10026E12D /* Info.plist */,
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
-				F5936C162A6A81DE0044B939 /* 🗄️Rest */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 			);
 			path = "🧩Sub";
@@ -365,10 +365,10 @@
 				F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */,
 				F5D521662A6E578400BE4D12 /* 🤖AppDelegate.swift */,
 				F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */,
+				F58B051E2A6EB158004BE9E5 /* 🗄️Rest */,
 				F5A880632A693B0F00D534EC /* macOSApp.entitlements */,
 				F5A8805E2A693B0F00D534EC /* Assets.xcassets */,
 				F5D521502A6DFE9000BE4D12 /* 🌏Localization */,
-				F58B051E2A6EB158004BE9E5 /* 🗄️Rest */,
 			);
 			path = "🧩Sub";
 			sourceTree = "<group>";
