@@ -31,6 +31,7 @@
 		F539EA342A70B6CB00A3C80E /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */; };
 		F539EA372A70B9F300A3C80E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F539EA362A70B9F300A3C80E /* Localizable.xcstrings */; };
 		F539EA392A70BA1A00A3C80E /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F539EA382A70BA1A00A3C80E /* InfoPlist.xcstrings */; };
+		F539EA3B2A70C03E00A3C80E /* 💬RequestUserReview.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */; };
 		F53A8F932A6FB963000C4568 /* 📣ADSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */; };
 		F53A8F942A6FB963000C4568 /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B05182A6EB09B004BE9E5 /* 📣ADContent.swift */; };
 		F53A8F952A6FB963000C4568 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */; };
@@ -150,6 +151,7 @@
 			dstPath = "📁SourceCode";
 			dstSubfolderSpec = 7;
 			files = (
+				F539EA3B2A70C03E00A3C80E /* 💬RequestUserReview.swift in CopyFiles */,
 				F53A8F932A6FB963000C4568 /* 📣ADSheet.swift in CopyFiles */,
 				F53A8F942A6FB963000C4568 /* 📣ADContent.swift in CopyFiles */,
 				F53A8F952A6FB963000C4568 /* 🛒InAppPurchaseView.swift in CopyFiles */,
@@ -174,7 +176,7 @@
 		127ECB2B28614B8B00CB1BC3 /* 📣ADComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADComponents.swift"; sourceTree = "<group>"; };
 		127ECB2D28614C0200CB1BC3 /* Configuration.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		12E4A744285027F600B2380B /* AppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E4A744285027F600B2380B /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E4A747285027F600B2380B /* App_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_iOS.swift; sourceTree = "<group>"; };
 		12E4A749285027F600B2380B /* ContentView_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_iOS.swift; sourceTree = "<group>"; };
 		12E4A74B285027F700B2380B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -210,11 +212,11 @@
 		F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseView.swift"; sourceTree = "<group>"; };
 		F5936C182A6A90B10044B939 /* 📣ADModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADModel.swift"; sourceTree = "<group>"; };
 		F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseModel.swift"; sourceTree = "<group>"; };
-		F5A880582A693B0C00D534EC /* macOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A880582A693B0C00D534EC /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A8805A2A693B0C00D534EC /* App_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_macOS.swift; sourceTree = "<group>"; };
 		F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_macOS.swift; sourceTree = "<group>"; };
 		F5A8805E2A693B0F00D534EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F5A880632A693B0F00D534EC /* macOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOSApp.entitlements; sourceTree = "<group>"; };
+		F5A880632A693B0F00D534EC /* 🎟️App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "🎟️App.entitlements"; sourceTree = "<group>"; };
 		F5D521512A6DFE9E00BE4D12 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F5D521532A6DFEAF00BE4D12 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		F5D521642A6E575B00BE4D12 /* 📱AppModel_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel_macOS.swift"; sourceTree = "<group>"; };
@@ -288,9 +290,9 @@
 		12E4A745285027F600B2380B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12E4A744285027F600B2380B /* AppTemplate.app */,
+				12E4A744285027F600B2380B /* iOS.app */,
 				F567E38D29F2A09A0026E12D /* Template.app */,
-				F5A880582A693B0C00D534EC /* macOSApp.app */,
+				F5A880582A693B0C00D534EC /* macOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -366,7 +368,7 @@
 				F5D521662A6E578400BE4D12 /* 🤖AppDelegate.swift */,
 				F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */,
 				F58B051E2A6EB158004BE9E5 /* 🗄️Rest */,
-				F5A880632A693B0F00D534EC /* macOSApp.entitlements */,
+				F5A880632A693B0F00D534EC /* 🎟️App.entitlements */,
 				F5A8805E2A693B0F00D534EC /* Assets.xcassets */,
 				F5D521502A6DFE9000BE4D12 /* 🌏Localization */,
 			);
@@ -420,9 +422,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		12E4A743285027F600B2380B /* AppTemplate */ = {
+		12E4A743285027F600B2380B /* iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12E4A752285027F700B2380B /* Build configuration list for PBXNativeTarget "AppTemplate" */;
+			buildConfigurationList = 12E4A752285027F700B2380B /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
 				12E4A740285027F600B2380B /* Sources */,
 				12E4A741285027F600B2380B /* Frameworks */,
@@ -436,14 +438,14 @@
 			dependencies = (
 				F567E39929F2A09C0026E12D /* PBXTargetDependency */,
 			);
-			name = AppTemplate;
+			name = iOS;
 			productName = AppTemplate;
-			productReference = 12E4A744285027F600B2380B /* AppTemplate.app */;
+			productReference = 12E4A744285027F600B2380B /* iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F567E38C29F2A09A0026E12D /* AT Watch App */ = {
+		F567E38C29F2A09A0026E12D /* watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F567E39B29F2A09C0026E12D /* Build configuration list for PBXNativeTarget "AT Watch App" */;
+			buildConfigurationList = F567E39B29F2A09C0026E12D /* Build configuration list for PBXNativeTarget "watchOS" */;
 			buildPhases = (
 				F567E38929F2A09A0026E12D /* Sources */,
 				F567E38A29F2A09A0026E12D /* Frameworks */,
@@ -453,14 +455,14 @@
 			);
 			dependencies = (
 			);
-			name = "AT Watch App";
+			name = watchOS;
 			productName = "AT Watch App";
 			productReference = F567E38D29F2A09A0026E12D /* Template.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F5A880572A693B0C00D534EC /* macOSApp */ = {
+		F5A880572A693B0C00D534EC /* macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5A880662A693B0F00D534EC /* Build configuration list for PBXNativeTarget "macOSApp" */;
+			buildConfigurationList = F5A880662A693B0F00D534EC /* Build configuration list for PBXNativeTarget "macOS" */;
 			buildPhases = (
 				F5A880542A693B0C00D534EC /* Sources */,
 				F5A880552A693B0C00D534EC /* Frameworks */,
@@ -471,9 +473,9 @@
 			);
 			dependencies = (
 			);
-			name = macOSApp;
+			name = macOS;
 			productName = macOSApp;
-			productReference = F5A880582A693B0C00D534EC /* macOSApp.app */;
+			productReference = F5A880582A693B0C00D534EC /* macOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -511,9 +513,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12E4A743285027F600B2380B /* AppTemplate */,
-				F567E38C29F2A09A0026E12D /* AT Watch App */,
-				F5A880572A693B0C00D534EC /* macOSApp */,
+				12E4A743285027F600B2380B /* iOS */,
+				F567E38C29F2A09A0026E12D /* watchOS */,
+				F5A880572A693B0C00D534EC /* macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -623,7 +625,7 @@
 		F567E39929F2A09C0026E12D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			platformFilter = ios;
-			target = F567E38C29F2A09A0026E12D /* AT Watch App */;
+			target = F567E38C29F2A09A0026E12D /* watchOS */;
 			targetProxy = F567E39829F2A09C0026E12D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -891,7 +893,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "macOS/🧩Sub/macOSApp.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "macOS/🧩Sub/🎟️App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -924,7 +926,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "macOS/🧩Sub/macOSApp.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "macOS/🧩Sub/🎟️App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -962,7 +964,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12E4A752285027F700B2380B /* Build configuration list for PBXNativeTarget "AppTemplate" */ = {
+		12E4A752285027F700B2380B /* Build configuration list for PBXNativeTarget "iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12E4A753285027F700B2380B /* Debug */,
@@ -971,7 +973,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F567E39B29F2A09C0026E12D /* Build configuration list for PBXNativeTarget "AT Watch App" */ = {
+		F567E39B29F2A09C0026E12D /* Build configuration list for PBXNativeTarget "watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F567E39C29F2A09C0026E12D /* Debug */,
@@ -980,7 +982,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5A880662A693B0F00D534EC /* Build configuration list for PBXNativeTarget "macOSApp" */ = {
+		F5A880662A693B0F00D534EC /* Build configuration list for PBXNativeTarget "macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F5A880642A693B0F00D534EC /* Debug */,

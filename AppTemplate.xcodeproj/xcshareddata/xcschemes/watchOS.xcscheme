@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F567E38C29F2A09A0026E12D"
-               BuildableName = "AT Watch App.app"
-               BlueprintName = "AT Watch App"
+               BuildableName = "Template.app"
+               BlueprintName = "watchOS"
                ReferencedContainer = "container:AppTemplate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "12E4A743285027F600B2380B"
-               BuildableName = "AppTemplate.app"
-               BlueprintName = "AppTemplate"
+               BuildableName = "iOS.app"
+               BlueprintName = "iOS"
                ReferencedContainer = "container:AppTemplate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -59,7 +59,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F567E38C29F2A09A0026E12D"
             BuildableName = "Template.app"
-            BlueprintName = "AT Watch App"
+            BlueprintName = "watchOS"
             ReferencedContainer = "container:AppTemplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -76,7 +76,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F567E38C29F2A09A0026E12D"
             BuildableName = "Template.app"
-            BlueprintName = "AT Watch App"
+            BlueprintName = "watchOS"
             ReferencedContainer = "container:AppTemplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
