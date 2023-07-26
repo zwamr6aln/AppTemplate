@@ -296,10 +296,7 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
                     Text("The System", tableName: "AboutApp")
                 }
                 Section {
-                    Text(verbatim: "山下 亮")
-                    Text(verbatim: "Yamashita Ryo (alphabet)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                    LabeledContent(String("山下 亮"), value: "Yamashita Ryo")
                 } header: {
                     Text("Name", tableName: "AboutApp")
                 }
@@ -355,7 +352,7 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
             Section {
                 ForEach(Self.values, id: \.self.description) { ⓥalue in
                     HStack {
-                        Text(ⓥalue.date)
+                        Text(verbatim: ⓥalue.date)
                             .font(.caption2)
                             .padding(8)
                         Text(LocalizedStringKey(ⓥalue.description), tableName: "AboutApp")

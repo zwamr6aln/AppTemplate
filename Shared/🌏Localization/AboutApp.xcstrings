@@ -289,17 +289,6 @@
         }
       }
     },
-    "Original" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "オリジナル"
-          }
-        }
-      }
-    },
     "Privacy Policy" : {
       "localizations" : {
         "ja" : {
