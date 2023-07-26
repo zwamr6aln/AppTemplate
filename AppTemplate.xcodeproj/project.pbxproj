@@ -72,8 +72,6 @@
 		F583DC652A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* AD&InAppPurchase.xcstrings */; };
 		F583DC672A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* AD&InAppPurchase.xcstrings */; };
 		F583DC732A6D22F500F02006 /* AboutApp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC722A6D22F500F02006 /* AboutApp.xcstrings */; };
-		F583DC742A6D22F500F02006 /* AboutApp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC722A6D22F500F02006 /* AboutApp.xcstrings */; };
-		F583DC752A6D22F500F02006 /* AboutApp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC722A6D22F500F02006 /* AboutApp.xcstrings */; };
 		F583DC772A6D29F200F02006 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC762A6D29F200F02006 /* Localizable.xcstrings */; };
 		F583DC7C2A6D2CB300F02006 /* ℹ️HelpWindows.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583DC792A6D2CB300F02006 /* ℹ️HelpWindows.swift */; };
 		F583DC802A6DE2D200F02006 /* 🔧Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */; };
@@ -102,6 +100,8 @@
 		F5D521632A6E573800BE4D12 /* 🪄Commands.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */; };
 		F5D521672A6E578400BE4D12 /* 🤖AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D521662A6E578400BE4D12 /* 🤖AppDelegate.swift */; };
 		F5D521692A6E5D1300BE4D12 /* 🤖AppDelegate.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5D521662A6E578400BE4D12 /* 🤖AppDelegate.swift */; };
+		F5DD10FC2A70E6FE00428A16 /* AboutApp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC722A6D22F500F02006 /* AboutApp.xcstrings */; };
+		F5DD10FD2A70E70000428A16 /* AboutApp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC722A6D22F500F02006 /* AboutApp.xcstrings */; };
 		F5F2272129FE6B1900891C69 /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
 /* End PBXBuildFile section */
 
@@ -582,9 +582,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F539EA372A70B9F300A3C80E /* Localizable.xcstrings in Resources */,
+				F5DD10FC2A70E6FE00428A16 /* AboutApp.xcstrings in Resources */,
 				F539EA392A70BA1A00A3C80E /* InfoPlist.xcstrings in Resources */,
 				F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */,
-				F583DC742A6D22F500F02006 /* AboutApp.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,8 +594,8 @@
 			files = (
 				F583DC672A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */,
 				F5D521562A6DFF5600BE4D12 /* Localizable.xcstrings in Resources */,
-				F583DC752A6D22F500F02006 /* AboutApp.xcstrings in Resources */,
 				F5D521552A6DFEB600BE4D12 /* InfoPlist.xcstrings in Resources */,
+				F5DD10FD2A70E70000428A16 /* AboutApp.xcstrings in Resources */,
 				F5A8805F2A693B0F00D534EC /* Assets.xcassets in Resources */,
 				F53A8F992A6FBD11000C4568 /* 🌏VersionDescription.xcstrings in Resources */,
 				F53A8F972A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings in Resources */,
