@@ -12,10 +12,8 @@ struct ContentView: View {
                         .navigationTitle("AppTemplate")
                         .toolbar {
                             NavigationLink {
-                                🛠AppMenu()
-                            } label: {
-                                Label("Open menu", systemImage: "gear")
-                            }
+                                Self.menu()
+                            } label: { Label("Open menu", systemImage: "gear") }
                         }
                 }
             } else {
@@ -26,33 +24,13 @@ struct ContentView: View {
                                 Form { Toggle("Toggle", isOn: .constant(false)) }
                                     .navigationTitle("Option")
                             }
-                        } label: {
-                            Label("Option", systemImage: "gear")
-                        }
+                        } label: { Label("Option", systemImage: "gear") }
                         NavigationLink {
-                            NavigationStack { 🛠AppMenu() }
-                        } label: {
-                            Label("Menu", systemImage: "gearshape")
-                        }
+                            NavigationStack { Self.menu() }
+                        } label: { Label("Menu", systemImage: "gearshape") }
                         NavigationLink {
                             NavigationStack { ℹ️AboutAppMenu(withSidebarLayout: true) }
-                        } label: {
-                            Label("About", systemImage: "questionmark")
-                        }
-                        Section {
-                            NavigationLink("Navi link1") { Text("1") }
-                            Text("Text")
-                        } header: {
-                            Text("Section header title")
-                        }
-                        DisclosureGroup("DisclosureGroup", isExpanded: .constant(true)) {
-                            EditButton()
-                            ShareLink(item: "ShareLink")
-                            Toggle("Toggle", isOn: .constant(false))
-                            Menu("Menu") { Text("1"); Text("2") }
-                            Picker("Picker", selection: .constant("1")) { Text("1"); Text("2") }
-                            Button("Button") {}
-                        }
+                        } label: { Label("About", systemImage: "questionmark") }
                     }
                     .navigationTitle("AppTemplate")
                 } detail: {
@@ -63,5 +41,19 @@ struct ContentView: View {
         .modifier(🪧Sheet())
         .modifier(💬RequestUserReview())
         .modifier(🩹Workaround.HideTitleBarOnMacCatalyst())
+    }
+}
+
+
+
+
+extension ContentView {
+    private static func menu() -> some View {
+        List {
+            Text("Placeholder")
+            ℹ️AboutAppLink()
+            🛒InAppPurchaseMenuLink()
+        }
+        .navigationTitle("Menu")
     }
 }

@@ -1,8 +1,8 @@
-AppTemplate: iPhone, iPad, Mac, Apple TV, Apple Watch
+AppTemplate - iPhone, iPad, Mac, Apple TV, Apple Watch
 ------------------------------------------------------
 _My app template repository_
 
-<img src="AppTemplate/Assets.xcassets/RoundedIcon.imageset/icon.png" width="64">
+<img src="iOS/Assets.xcassets/RoundedIcon.imageset/icon.png" width="64">
 
 <a href="https://apps.apple.com/app/id❓" target="blank">
     <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">

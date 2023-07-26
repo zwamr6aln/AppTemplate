@@ -7,7 +7,7 @@ struct 🪧Sheet: ViewModifier {
         content
             .sheet(item: $📱.showSheet) {
                 switch $0 {
-                    case .Menu: 🛠AppMenu()
+                    case .Menu: Text("Menu")
                     case .Placeholder: Text("Placeholder")
                     case .AD:
                         📣ADContent()

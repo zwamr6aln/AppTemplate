@@ -42,7 +42,6 @@ extension 🗒️StaticInfo {
                 case .Sub: ["🪧Sheet.swift",
                             "📣ADContent.swift",
                             "💬RequestUserReview.swift",
-                            "🛠AppMenu.swift",
                             "🩹Workaround.swift"]
                 case .Rest: ["🗒️StaticInfo.swift",
                              "ℹ️AboutApp.swift",

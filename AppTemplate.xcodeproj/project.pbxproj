@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
 		12724D702862DEB0008471AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12724D6F2862DEB0008471AB /* StoreKit.framework */; };
 		127ECB2A286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */; };
 		127ECB2C28614B8B00CB1BC3 /* 📣ADComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADComponents.swift */; };
@@ -18,7 +17,6 @@
 		12E4A74C285027F700B2380B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A74B285027F700B2380B /* Assets.xcassets */; };
 		12E4A75728502A2D00B2380B /* 📱AppModel_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel_iOS.swift */; };
 		12E4A76328502C9F00B2380B /* ℹ️AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
-		12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
 		F501E9C72A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C82A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C92A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
@@ -30,6 +28,8 @@
 		F519CB6229AAFF5800ACD6B6 /* 📣ADComponents.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADComponents.swift */; };
 		F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */; };
 		F539EA322A70A1E900A3C80E /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */; };
+		F539EA342A70B6CB00A3C80E /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */; };
+		F539EA352A70B6CB00A3C80E /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */; };
 		F53A8F932A6FB963000C4568 /* 📣ADSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */; };
 		F53A8F942A6FB963000C4568 /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B05182A6EB09B004BE9E5 /* 📣ADContent.swift */; };
 		F53A8F952A6FB963000C4568 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */; };
@@ -43,14 +43,12 @@
 		F53A8FA12A6FDBFD000C4568 /* 🩹Workaround.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F567E38729F27E180026E12D /* 🩹Workaround.swift */; };
 		F5514EF429CD7B4E00FCA7EA /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
-		F5514EF629CD7B4E00FCA7EA /* 🛠AppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
 		F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
 		F567E38829F27E180026E12D /* 🩹Workaround.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E38729F27E180026E12D /* 🩹Workaround.swift */; };
 		F567E39029F2A09A0026E12D /* App_watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E38F29F2A09A0026E12D /* App_watchOS.swift */; };
 		F567E39229F2A09A0026E12D /* ContentView_watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E39129F2A09A0026E12D /* ContentView_watchOS.swift */; };
 		F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567E39329F2A09C0026E12D /* Assets.xcassets */; };
 		F567E39A29F2A09C0026E12D /* AT Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F567E38D29F2A09A0026E12D /* AT Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F567E3A229F2A3030026E12D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E4A77328502F3A00B2380B /* InfoPlist.strings */; };
 		F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F583DC652A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* AD&InAppPurchase.xcstrings */; };
 		F583DC662A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* AD&InAppPurchase.xcstrings */; };
@@ -125,7 +123,6 @@
 				F501E9CE2A6A3A0E00E9F9A6 /* 🗒️StaticInfo.swift in CopyFiles */,
 				F5514EF429CD7B4E00FCA7EA /* 📣ADContent.swift in CopyFiles */,
 				F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */,
-				F5514EF629CD7B4E00FCA7EA /* 🛠AppMenu.swift in CopyFiles */,
 				F519CB5D29AAFF5800ACD6B6 /* App_iOS.swift in CopyFiles */,
 				F519CB5E29AAFF5800ACD6B6 /* ContentView_iOS.swift in CopyFiles */,
 				F519CB5F29AAFF5800ACD6B6 /* 📱AppModel_iOS.swift in CopyFiles */,
@@ -171,7 +168,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1256A33E286B174D002AF08A /* 🛠AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛠AppMenu.swift"; sourceTree = "<group>"; };
 		12724D6F2862DEB0008471AB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseView.swift"; sourceTree = "<group>"; };
 		127ECB2B28614B8B00CB1BC3 /* 📣ADComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "📣ADComponents.swift"; sourceTree = "<group>"; };
@@ -184,10 +180,9 @@
 		12E4A755285028C800B2380B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		12E4A75628502A2D00B2380B /* 📱AppModel_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel_iOS.swift"; sourceTree = "<group>"; };
 		12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutApp.swift"; sourceTree = "<group>"; };
-		12E4A77228502F3A00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		12E4A77428502F3B00B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🗒️StaticInfo.swift"; sourceTree = "<group>"; };
 		F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
+		F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		F53A8F962A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
 		F53A8F982A6FBD11000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
 		F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
@@ -264,11 +259,10 @@
 				F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */,
 				F57B37F129726CE300F0BB91 /* 📣ADContent.swift */,
 				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
-				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
 				F567E38729F27E180026E12D /* 🩹Workaround.swift */,
-				12E4A76828502EA600B2380B /* 🌏Localization */,
 				F567E36929F278B10026E12D /* Info.plist */,
 				F5936C162A6A81DE0044B939 /* 🗄️Rest */,
+				12E4A76828502EA600B2380B /* 🌏Localization */,
 			);
 			path = "🧩Sub";
 			sourceTree = "<group>";
@@ -313,7 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				F583DC762A6D29F200F02006 /* Localizable.xcstrings */,
-				12E4A77328502F3A00B2380B /* InfoPlist.strings */,
+				F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */,
 				F53A8F9C2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings */,
 				F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */,
 			);
@@ -519,9 +513,9 @@
 				F53A8F9B2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings in Resources */,
 				12DDDDAD288BF2E40055A073 /* Launch Screen.storyboard in Resources */,
 				127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */,
-				12E4A77128502F3A00B2380B /* InfoPlist.strings in Resources */,
 				F583DC652A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */,
 				F583DC732A6D22F500F02006 /* AboutApp.xcstrings in Resources */,
+				F539EA342A70B6CB00A3C80E /* InfoPlist.xcstrings in Resources */,
 				F53A8F9D2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings in Resources */,
 				F583DC772A6D29F200F02006 /* Localizable.xcstrings in Resources */,
 				12E4A74C285027F700B2380B /* Assets.xcassets in Resources */,
@@ -532,7 +526,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F567E3A229F2A3030026E12D /* InfoPlist.strings in Resources */,
+				F539EA352A70B6CB00A3C80E /* InfoPlist.xcstrings in Resources */,
 				F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */,
 				F583DC662A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */,
 				F583DC742A6D22F500F02006 /* AboutApp.xcstrings in Resources */,
@@ -565,7 +559,6 @@
 				F567E38829F27E180026E12D /* 🩹Workaround.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView_iOS.swift in Sources */,
 				F501E9C72A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */,
-				1256A33F286B174D002AF08A /* 🛠AppMenu.swift in Sources */,
 				F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */,
 				F5936C1D2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
 				127ECB2A286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift in Sources */,
@@ -620,18 +613,6 @@
 			targetProxy = F567E39829F2A09C0026E12D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		12E4A77328502F3A00B2380B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				12E4A77228502F3A00B2380B /* en */,
-				12E4A77428502F3B00B2380B /* ja */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		12E4A750285027F700B2380B /* Debug */ = {
@@ -688,6 +669,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -745,6 +727,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

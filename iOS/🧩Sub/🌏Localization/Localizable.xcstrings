@@ -4,12 +4,6 @@
     "%@" : {
 
     },
-    "1" : {
-
-    },
-    "2" : {
-
-    },
     "About" : {
 
     },
@@ -86,9 +80,6 @@
     "Bundle.main.infoDictionary" : {
 
     },
-    "Button" : {
-
-    },
     "Cancel" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -112,9 +103,6 @@
       }
     },
     "Detail" : {
-
-    },
-    "DisclosureGroup" : {
 
     },
     "Dismiss" : {
@@ -185,9 +173,6 @@
         }
       }
     },
-    "Navi link1" : {
-
-    },
     "Notes widget on lock screen." : {
 
     },
@@ -225,12 +210,6 @@
         }
       }
     },
-    "Picker" : {
-
-    },
-    "placeholder" : {
-
-    },
     "Placeholder" : {
 
     },
@@ -240,13 +219,7 @@
     "Register weight data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
 
     },
-    "Section header title" : {
-
-    },
     "Simplest Shogi board App. Supported SharePlay." : {
-
-    },
-    "Text" : {
 
     },
     "Toggle" : {
