@@ -4,7 +4,8 @@ import StoreKit
 struct 🛒InAppPurchaseWindow: Scene {
     @ObservedObject var 🛒: 🛒InAppPurchaseModel
     var body: some Scene {
-        Window("In-App Purchase", id: "InAppPurchase") {
+        Window(Text("In-App Purchase", tableName: "AD&InAppPurchase"),
+               id: "InAppPurchase") {
             Self.menu()
                 .environmentObject(🛒)
         }

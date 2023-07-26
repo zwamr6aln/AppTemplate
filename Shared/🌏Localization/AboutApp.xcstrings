@@ -290,6 +290,7 @@
       }
     },
     "Original" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {

@@ -125,12 +125,12 @@ private struct 📓SourceCodeWindow: Scene {
         }
     }
     private func bundleMainInfoDictionary() -> some View {
-        NavigationLink("Bundle.main.infoDictionary") {
+        NavigationLink(String("Bundle.main.infoDictionary")) {
             ScrollView {
                 Text(Bundle.main.infoDictionary!.description)
                     .padding()
             }
-            .navigationTitle("Bundle.main.infoDictionary")
+            .navigationTitle(Text(verbatim: "Bundle.main.infoDictionary"))
             .textSelection(.enabled)
         }
     }
@@ -196,13 +196,9 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                 }
                 Section {
                     GroupBox {
-                        VStack {
-                            LabeledContent(String(localized: "Original", table: "AboutApp"),
-                                           value: "山下 亮")
-                            LabeledContent("Alphabet", value: "Yamashita Ryo")
-                                .foregroundStyle(.tertiary)
-                        }
-                        .padding(4)
+                        LabeledContent(String("山下 亮"), value: "Yamashita Ryo")
+                            .foregroundStyle(.tertiary)
+                            .padding(4)
                     }
                 } header: {
                     Text("Name", tableName: "AboutApp")

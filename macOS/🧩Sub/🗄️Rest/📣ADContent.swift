@@ -48,7 +48,7 @@ private extension 📣ADContent {
     private func header() -> some View {
         HStack {
             self.dismissButton()
-            Text("\(self.countDown)")
+            Text(verbatim: "\(self.countDown)")
                 .foregroundStyle(.tertiary)
                 .font(.subheadline)
                 .opacity(self.disableDismiss ? 1 : 0)
