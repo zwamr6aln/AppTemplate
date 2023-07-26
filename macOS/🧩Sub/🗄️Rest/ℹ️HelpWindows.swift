@@ -197,7 +197,6 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                 Section {
                     GroupBox {
                         LabeledContent(String("山下 亮"), value: "Yamashita Ryo")
-                            .foregroundStyle(.tertiary)
                             .padding(4)
                     }
                 } header: {
