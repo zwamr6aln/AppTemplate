@@ -7,9 +7,6 @@
     "%lld" : {
 
     },
-    "← Select file" : {
-
-    },
     "1" : {
 
     },
@@ -34,13 +31,7 @@
     "Bundle.main.infoDictionary" : {
 
     },
-    "Description" : {
-
-    },
     "Detail" : {
-
-    },
-    "Developer / Publisher" : {
 
     },
     "Done" : {
@@ -53,9 +44,6 @@
 
     },
     "Flashcard on widget. Memorize a note in everyday life." : {
-
-    },
-    "Git repository is public on GitHub.com" : {
 
     },
     "In-App Purchase" : {
@@ -83,16 +71,10 @@
     "Option" : {
 
     },
-    "Original" : {
-
-    },
     "Picker" : {
 
     },
     "Placeholder" : {
-
-    },
-    "Privacy Policy" : {
 
     },
     "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
@@ -104,13 +86,7 @@
     "Simplest Shogi board App. Supported SharePlay." : {
 
     },
-    "Source code" : {
-
-    },
     "Toggle" : {
-
-    },
-    "Version History" : {
 
     }
   },

@@ -15,7 +15,8 @@ struct ℹ️HelpWindows: Scene {
 
 private struct 📰DescriptionWindow: Scene {
     var body: some Scene {
-        Window("Description", id: "Description") {
+        Window(Text("Description", tableName: "AboutApp"),
+               id: "Description") {
             ScrollView {
                 Text("current", tableName: "🌏AppStoreDescription")
                     .padding(24)
@@ -28,7 +29,8 @@ private struct 📰DescriptionWindow: Scene {
 
 private struct 👤PrivacyPolicyWindow: Scene {
     var body: some Scene {
-        Window("Privacy Policy", id: "PrivacyPolicy") {
+        Window(Text("Privacy Policy", tableName: "AboutApp"),
+               id: "PrivacyPolicy") {
             Text(🗒️StaticInfo.privacyPolicyDescription)
                 .padding(24)
                 .textSelection(.enabled)
@@ -39,7 +41,8 @@ private struct 👤PrivacyPolicyWindow: Scene {
 
 private struct 📜VersionHistoryWindow: Scene {
     var body: some Scene {
-        Window("Version History", id: "VersionHistory") {
+        Window(Text("Version History", tableName: "AboutApp"),
+               id: "VersionHistory") {
             List {
                 ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
                     GroupBox(ⓘnfo.version) {
@@ -68,7 +71,8 @@ private struct 📜VersionHistoryWindow: Scene {
 
 private struct 📓SourceCodeWindow: Scene {
     var body: some Scene {
-        Window("Source code", id: "SourceCode") {
+        Window(Text("Source code", tableName: "AboutApp"),
+               id: "SourceCode") {
             NavigationSplitView {
                 List {
                     ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
@@ -79,7 +83,7 @@ private struct 📓SourceCodeWindow: Scene {
                 }
                 .navigationTitle(Text("Source code", tableName: "AboutApp"))
             } detail: {
-                Text("← Select file")
+                Text("← Select file", tableName: "AboutApp")
                     .foregroundStyle(.tertiary)
             }
         }
@@ -134,7 +138,7 @@ private struct 📓SourceCodeWindow: Scene {
         NavigationLink {
             VStack {
                 Spacer()
-                Text("Git repository is public on GitHub.com")
+                Text("Git repository is public on GitHub.com", tableName: "AboutApp")
                     .font(.title2.weight(.medium))
                 Spacer()
                 VStack {
@@ -175,7 +179,8 @@ private struct 📓SourceCodeWindow: Scene {
 
 private struct 🧑‍💻DeveloperPublisherWindow: Scene {
     var body: some Scene {
-        Window("Developer / Publisher", id: "DeveloperPublisher") {
+        Window(Text("Developer / Publisher", tableName: "AboutApp"),
+               id: "DeveloperPublisher") {
             List {
                 Section {
                     GroupBox {
@@ -192,7 +197,8 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                 Section {
                     GroupBox {
                         VStack {
-                            LabeledContent("Original", value: "山下 亮")
+                            LabeledContent(String(localized: "Original", table: "AboutApp"),
+                                           value: "山下 亮")
                             LabeledContent("Alphabet", value: "Yamashita Ryo")
                                 .foregroundStyle(.tertiary)
                         }

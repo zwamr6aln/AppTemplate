@@ -11,6 +11,16 @@
         }
       }
     },
+    "← Select file" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "← ファイルを選択して下さい"
+          }
+        }
+      }
+    },
     "about 29" : {
       "localizations" : {
         "ja" : {
@@ -145,6 +155,16 @@
         }
       }
     },
+    "Git repository is public on GitHub.com" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitリポジトリをGitHub.comで公開しています"
+          }
+        }
+      }
+    },
     "Graduated from University-of-the-Ryukyus." : {
       "extractionState" : "migrated",
       "localizations" : {
@@ -265,6 +285,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "AppStoreページを開く"
+          }
+        }
+      }
+    },
+    "Original" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オリジナル"
           }
         }
       }
