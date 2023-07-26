@@ -36,9 +36,9 @@ extension 🗒️StaticInfo {
         var id: Self { self }
         var fileNames: [String] {
             switch self {
-                case .main: ["App_iOS.swift",
-                             "📱AppModel_iOS.swift",
-                             "ContentView_iOS.swift"]
+                case .main: ["App.swift",
+                             "ContentView.swift",
+                             "📱AppModel.swift"]
                 case .Sub: ["🪧Sheet.swift",
                             "📣ADContent.swift",
                             "💬RequestUserReview.swift",
@@ -49,6 +49,23 @@ extension 🗒️StaticInfo {
                              "📣ADComponents.swift",
                              "🛒InAppPurchaseModel.swift",
                              "🛒InAppPurchaseView.swift"]
+            }
+        }
+    }
+}
+
+#elseif os(watchOS)
+extension 🗒️StaticInfo {
+    enum SourceCodeCategory: String, CaseIterable, Identifiable {
+        case main, Sub, Rest
+        var id: Self { self }
+        var fileNames: [String] {
+            switch self {
+                case .main: ["App.swift",
+                             "ContentView.swift",
+                             "📱AppModel.swift"]
+                case .Sub: []
+                case .Rest: ["🗒️StaticInfo.swift"]
             }
         }
     }
@@ -65,9 +82,9 @@ extension 🗒️StaticInfo {
         var id: Self { self }
         var fileNames: [String] {
             switch self {
-                case .main: ["App_macOS.swift",
-                             "📱AppModel_macOS.swift",
-                             "ContentView_macOS.swift"]
+                case .main: ["App.swift",
+                             "ContentView.swift",
+                             "📱AppModel.swift"]
                 case .Sub: ["📣ADSheet.swift",
                             "🔧Settings.swift",
                             "🪄Commands.swift",

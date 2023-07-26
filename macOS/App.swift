@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct App_macOS: App {
+struct AppTemplate: App {
     //@NSApplicationDelegateAdaptor var ⓓelegate: 🤖AppDelegate
     private let 📱 = 📱AppModel()
     private let 🛒 = 🛒InAppPurchaseModel(id: "PLACEHOLDER.adfree")
