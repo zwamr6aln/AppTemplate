@@ -3,11 +3,12 @@ import StoreKit
 
 //struct 📣ADSheet: ViewModifier {
 //    @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
-//    @State private var app: 📣MyApp = .pickUpAppWithout(.ONESELF)
+//    @State private var app: 📣ADTargetApp = .pickUpAppWithout(.ONESELF)
+//    @State private var showSheet: Bool = false
 //    func body(content: Content) -> some View {
 //        content
-//            .sheet(isPresented: $🛒.🚩showADSheet) { 📣ADView(self.app) }
-//            .onAppear { 🛒.checkToShowADSheet() }
+//            .sheet(isPresented: self.$showSheet) { 📣ADView(self.app) }
+//            .onAppear { if 🛒.checkToShowADSheet() { self.showSheet = true } }
 //    }
 //}
 
@@ -36,7 +37,7 @@ struct 📣ADView: View {
                     self.disableDismiss = false
                 }
             }
-            .overlay(alignment: .topLeading) { self.header() }
+            .overlay { self.header() }
     }
     init(_ app: 📣ADTargetApp, second: Int) {
         self.targetApp = app
@@ -50,7 +51,7 @@ private extension 📣ADView {
             if !self.showMenu {
                 self.dismissButton()
                 Spacer()
-                self.adMenuLink()
+                self.menuLink()
             }
         }
         .font(.title3)
@@ -151,7 +152,7 @@ private extension 📣ADView {
         .accessibilityLabel(Text("Open AppStore page", tableName: "AD&InAppPurchase"))
         .disabled(🛒.purchased)
     }
-    private func adMenuLink() -> some View {
+    private func menuLink() -> some View {
         Button {
             self.showMenu = true
         } label: {

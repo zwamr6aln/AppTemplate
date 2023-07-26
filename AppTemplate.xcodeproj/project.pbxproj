@@ -41,11 +41,9 @@
 		F53A8FA02A6FDBFD000C4568 /* 🪧Sheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
 		F53A8FA12A6FDBFD000C4568 /* 🩹Workaround.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F567E38729F27E180026E12D /* 🩹Workaround.swift */; };
 		F53A8FA22A6FDBFD000C4568 /* 💬PrepareToRequestUserReview.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C202A6A92820044B939 /* 💬PrepareToRequestUserReview.swift */; };
-		F5514EF329CD743E00FCA7EA /* ﹀DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5514EF229CD743E00FCA7EA /* ﹀DismissButton.swift */; };
 		F5514EF429CD7B4E00FCA7EA /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
 		F5514EF629CD7B4E00FCA7EA /* 🛠AppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
-		F5514EF729CD7B4E00FCA7EA /* ﹀DismissButton.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5514EF229CD743E00FCA7EA /* ﹀DismissButton.swift */; };
 		F557299729A08E4100C918C1 /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
 		F567E38829F27E180026E12D /* 🩹Workaround.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E38729F27E180026E12D /* 🩹Workaround.swift */; };
 		F567E39029F2A09A0026E12D /* App_watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E38F29F2A09A0026E12D /* App_watchOS.swift */; };
@@ -130,7 +128,6 @@
 				F5514EF429CD7B4E00FCA7EA /* 📣ADContent.swift in CopyFiles */,
 				F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */,
 				F5514EF629CD7B4E00FCA7EA /* 🛠AppMenu.swift in CopyFiles */,
-				F5514EF729CD7B4E00FCA7EA /* ﹀DismissButton.swift in CopyFiles */,
 				F519CB5D29AAFF5800ACD6B6 /* App_iOS.swift in CopyFiles */,
 				F519CB5E29AAFF5800ACD6B6 /* ContentView_iOS.swift in CopyFiles */,
 				F519CB5F29AAFF5800ACD6B6 /* 📱AppModel_iOS.swift in CopyFiles */,
@@ -197,7 +194,6 @@
 		F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
 		F53A8F9C2A6FBD66000C4568 /* 🌏AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
 		F549E849290BC3C300636271 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = memo.md; sourceTree = "<group>"; };
-		F5514EF229CD743E00FCA7EA /* ﹀DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "﹀DismissButton.swift"; sourceTree = "<group>"; };
 		F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
 		F567E36929F278B10026E12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F567E38729F27E180026E12D /* 🩹Workaround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🩹Workaround.swift"; sourceTree = "<group>"; };
@@ -271,7 +267,6 @@
 				F57B37F129726CE300F0BB91 /* 📣ADContent.swift */,
 				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
 				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
-				F5514EF229CD743E00FCA7EA /* ﹀DismissButton.swift */,
 				F567E38729F27E180026E12D /* 🩹Workaround.swift */,
 				F5936C202A6A92820044B939 /* 💬PrepareToRequestUserReview.swift */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
@@ -568,7 +563,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E4A75728502A2D00B2380B /* 📱AppModel_iOS.swift in Sources */,
-				F5514EF329CD743E00FCA7EA /* ﹀DismissButton.swift in Sources */,
 				F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */,
 				F567E38829F27E180026E12D /* 🩹Workaround.swift in Sources */,
 				12E4A74A285027F600B2380B /* ContentView_iOS.swift in Sources */,
