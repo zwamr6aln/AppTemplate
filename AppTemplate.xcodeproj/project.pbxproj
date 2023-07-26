@@ -29,7 +29,8 @@
 		F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */; };
 		F539EA322A70A1E900A3C80E /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */; };
 		F539EA342A70B6CB00A3C80E /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */; };
-		F539EA352A70B6CB00A3C80E /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */; };
+		F539EA372A70B9F300A3C80E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F539EA362A70B9F300A3C80E /* Localizable.xcstrings */; };
+		F539EA392A70BA1A00A3C80E /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F539EA382A70BA1A00A3C80E /* InfoPlist.xcstrings */; };
 		F53A8F932A6FB963000C4568 /* 📣ADSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */; };
 		F53A8F942A6FB963000C4568 /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B05182A6EB09B004BE9E5 /* 📣ADContent.swift */; };
 		F53A8F952A6FB963000C4568 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */; };
@@ -48,7 +49,7 @@
 		F567E39029F2A09A0026E12D /* App_watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E38F29F2A09A0026E12D /* App_watchOS.swift */; };
 		F567E39229F2A09A0026E12D /* ContentView_watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567E39129F2A09A0026E12D /* ContentView_watchOS.swift */; };
 		F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567E39329F2A09C0026E12D /* Assets.xcassets */; };
-		F567E39A29F2A09C0026E12D /* AT Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F567E38D29F2A09A0026E12D /* AT Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F567E39A29F2A09C0026E12D /* Template.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F567E38D29F2A09A0026E12D /* Template.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F583DC652A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* AD&InAppPurchase.xcstrings */; };
 		F583DC662A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* AD&InAppPurchase.xcstrings */; };
@@ -138,7 +139,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				F567E39A29F2A09C0026E12D /* AT Watch App.app in Embed Watch Content */,
+				F567E39A29F2A09C0026E12D /* Template.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +184,8 @@
 		F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🗒️StaticInfo.swift"; sourceTree = "<group>"; };
 		F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
 		F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		F539EA362A70B9F300A3C80E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F539EA382A70BA1A00A3C80E /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		F53A8F962A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
 		F53A8F982A6FBD11000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
 		F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
@@ -191,7 +194,7 @@
 		F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
 		F567E36929F278B10026E12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F567E38729F27E180026E12D /* 🩹Workaround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🩹Workaround.swift"; sourceTree = "<group>"; };
-		F567E38D29F2A09A0026E12D /* AT Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AT Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F567E38D29F2A09A0026E12D /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F567E38F29F2A09A0026E12D /* App_watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_watchOS.swift; sourceTree = "<group>"; };
 		F567E39129F2A09A0026E12D /* ContentView_watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_watchOS.swift; sourceTree = "<group>"; };
 		F567E39329F2A09C0026E12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -261,6 +264,7 @@
 				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
 				F567E38729F27E180026E12D /* 🩹Workaround.swift */,
 				F567E36929F278B10026E12D /* Info.plist */,
+				12E4A74B285027F700B2380B /* Assets.xcassets */,
 				F5936C162A6A81DE0044B939 /* 🗄️Rest */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 			);
@@ -285,7 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				12E4A744285027F600B2380B /* AppTemplate.app */,
-				F567E38D29F2A09A0026E12D /* AT Watch App.app */,
+				F567E38D29F2A09A0026E12D /* Template.app */,
 				F5A880582A693B0C00D534EC /* macOSApp.app */,
 			);
 			name = Products;
@@ -298,7 +302,6 @@
 				12E4A749285027F600B2380B /* ContentView_iOS.swift */,
 				12E4A75628502A2D00B2380B /* 📱AppModel_iOS.swift */,
 				127ECB25286149B400CB1BC3 /* 🧩Sub */,
-				12E4A74B285027F700B2380B /* Assets.xcassets */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -325,12 +328,22 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		F539EA3A2A70BA2500A3C80E /* 🧩Sub */ = {
+			isa = PBXGroup;
+			children = (
+				F539EA362A70B9F300A3C80E /* Localizable.xcstrings */,
+				F539EA382A70BA1A00A3C80E /* InfoPlist.xcstrings */,
+				F567E39329F2A09C0026E12D /* Assets.xcassets */,
+			);
+			path = "🧩Sub";
+			sourceTree = "<group>";
+		};
 		F567E38E29F2A09A0026E12D /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
 				F567E38F29F2A09A0026E12D /* App_watchOS.swift */,
 				F567E39129F2A09A0026E12D /* ContentView_watchOS.swift */,
-				F567E39329F2A09C0026E12D /* Assets.xcassets */,
+				F539EA3A2A70BA2500A3C80E /* 🧩Sub */,
 			);
 			path = watchOS;
 			sourceTree = "<group>";
@@ -353,6 +366,8 @@
 				F5D521662A6E578400BE4D12 /* 🤖AppDelegate.swift */,
 				F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */,
 				F5A880632A693B0F00D534EC /* macOSApp.entitlements */,
+				F5A8805E2A693B0F00D534EC /* Assets.xcassets */,
+				F5D521502A6DFE9000BE4D12 /* 🌏Localization */,
 				F58B051E2A6EB158004BE9E5 /* 🗄️Rest */,
 			);
 			path = "🧩Sub";
@@ -387,8 +402,6 @@
 				F5D521642A6E575B00BE4D12 /* 📱AppModel_macOS.swift */,
 				F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */,
 				F58B051D2A6EB146004BE9E5 /* 🧩Sub */,
-				F5D521502A6DFE9000BE4D12 /* 🌏Localization */,
-				F5A8805E2A693B0F00D534EC /* Assets.xcassets */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -442,7 +455,7 @@
 			);
 			name = "AT Watch App";
 			productName = "AT Watch App";
-			productReference = F567E38D29F2A09A0026E12D /* AT Watch App.app */;
+			productReference = F567E38D29F2A09A0026E12D /* Template.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F5A880572A693B0C00D534EC /* macOSApp */ = {
@@ -526,7 +539,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F539EA352A70B6CB00A3C80E /* InfoPlist.xcstrings in Resources */,
+				F539EA372A70B9F300A3C80E /* Localizable.xcstrings in Resources */,
+				F539EA392A70BA1A00A3C80E /* InfoPlist.xcstrings in Resources */,
 				F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */,
 				F583DC662A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */,
 				F583DC742A6D22F500F02006 /* AboutApp.xcstrings in Resources */,
@@ -823,7 +837,6 @@
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = AT;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = net.aaaakkkkssssttttnnnn.AppTemplate;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -832,7 +845,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aaaakkkkssssttttnnnn.AppTemplate.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Template;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -854,7 +867,6 @@
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = AT;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = net.aaaakkkkssssttttnnnn.AppTemplate;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -863,7 +875,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aaaakkkkssssttttnnnn.AppTemplate.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Template;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

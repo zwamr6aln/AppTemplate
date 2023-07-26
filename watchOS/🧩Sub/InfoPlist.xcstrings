@@ -2,11 +2,12 @@
   "sourceLanguage" : "en",
   "strings" : {
     "CFBundleName" : {
-      "comment" : "macCatalyst",
+      "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Template"
           }
         },
