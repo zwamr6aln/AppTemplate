@@ -53,7 +53,7 @@ private extension 📣ADContent {
                 .font(.subheadline)
                 .opacity(self.disableDismiss ? 1 : 0)
             Spacer()
-            self.adMenuLink()
+            self.menuLink()
         }
         .overlay {
             Text("AD", tableName: "AD&InAppPurchase")
@@ -112,7 +112,7 @@ private extension 📣ADContent {
         .accessibilityLabel(Text("Open AppStore page", tableName: "AD&InAppPurchase"))
         .disabled(🛒.purchased)
     }
-    private func adMenuLink() -> some View {
+    private func menuLink() -> some View {
         Button {
             self.openWindow(id: "InAppPurchase")
         } label: {
