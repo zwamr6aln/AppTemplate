@@ -12,7 +12,7 @@ struct App_macOS: App {
                 .environmentObject(🛒)
         }
         .commands { 🪄Commands() }
-        Settings { 🔧SettingsContent() }
+        Settings { 🔧Settings() }
         ℹ️HelpWindows()
         🛒InAppPurchaseWindow(🛒)
     }

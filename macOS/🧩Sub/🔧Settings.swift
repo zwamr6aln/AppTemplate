@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct 🔧SettingsContent: View {
+struct 🔧Settings: View {
     var body: some View {
         TabView {
             Form {

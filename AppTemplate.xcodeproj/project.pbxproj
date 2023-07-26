@@ -358,9 +358,6 @@
 				F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */,
 				F5D521662A6E578400BE4D12 /* 🤖AppDelegate.swift */,
 				F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */,
-				F583DC792A6D2CB300F02006 /* ℹ️HelpWindows.swift */,
-				F58B05182A6EB09B004BE9E5 /* 📣ADContent.swift */,
-				F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */,
 				F5A880632A693B0F00D534EC /* macOSApp.entitlements */,
 				F58B051E2A6EB158004BE9E5 /* 🗄️Rest */,
 			);
@@ -370,6 +367,9 @@
 		F58B051E2A6EB158004BE9E5 /* 🗄️Rest */ = {
 			isa = PBXGroup;
 			children = (
+				F583DC792A6D2CB300F02006 /* ℹ️HelpWindows.swift */,
+				F58B05182A6EB09B004BE9E5 /* 📣ADContent.swift */,
+				F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */,
 			);
 			path = "🗄️Rest";
 			sourceTree = "<group>";
@@ -765,7 +765,7 @@
 				CURRENT_PROJECT_VERSION = 4.0.1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6696GEY228;
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS/🧩Sub/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
@@ -802,7 +802,7 @@
 				CURRENT_PROJECT_VERSION = 4.0.1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6696GEY228;
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS/🧩Sub/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
@@ -903,7 +903,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -936,7 +936,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
