@@ -43,8 +43,7 @@ extension 🗒️StaticInfo {
                             "📣ADContent.swift",
                             "💬RequestUserReview.swift",
                             "🛠AppMenu.swift",
-                            "🩹Workaround.swift",
-                            "💬PrepareToRequestUserReview.swift"]
+                            "🩹Workaround.swift"]
                 case .Rest: ["🗒️StaticInfo.swift",
                              "ℹ️AboutApp.swift",
                              "📣ADModel.swift",

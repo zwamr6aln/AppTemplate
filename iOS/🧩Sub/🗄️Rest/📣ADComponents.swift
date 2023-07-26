@@ -37,7 +37,7 @@ struct 📣ADView: View {
                     self.disableDismiss = false
                 }
             }
-            .overlay { self.header() }
+            .overlay(alignment: .top) { self.header() }
     }
     init(_ app: 📣ADTargetApp, second: Int) {
         self.targetApp = app
@@ -55,7 +55,7 @@ private extension 📣ADView {
             }
         }
         .font(.title3)
-        .padding(.horizontal, 6)
+        .padding(.horizontal, 4)
         .animation(.default, value: self.disableDismiss)
         .animation(.default, value: self.showMenu)
     }
@@ -167,6 +167,7 @@ private extension 📣ADView {
             if self.disableDismiss {
                 Image(systemName: "\(self.countDown).circle")
                     .foregroundStyle(.tertiary)
+                    .padding(12)
             } else {
                 Button {
                     self.dismiss()

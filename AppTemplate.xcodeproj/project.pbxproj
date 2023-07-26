@@ -29,6 +29,7 @@
 		F519CB6129AAFF5800ACD6B6 /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
 		F519CB6229AAFF5800ACD6B6 /* 📣ADComponents.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADComponents.swift */; };
 		F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */; };
+		F539EA322A70A1E900A3C80E /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */; };
 		F53A8F932A6FB963000C4568 /* 📣ADSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */; };
 		F53A8F942A6FB963000C4568 /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B05182A6EB09B004BE9E5 /* 📣ADContent.swift */; };
 		F53A8F952A6FB963000C4568 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */; };
@@ -40,7 +41,6 @@
 		F53A8F9F2A6FDBFD000C4568 /* 🛒InAppPurchaseModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
 		F53A8FA02A6FDBFD000C4568 /* 🪧Sheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
 		F53A8FA12A6FDBFD000C4568 /* 🩹Workaround.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F567E38729F27E180026E12D /* 🩹Workaround.swift */; };
-		F53A8FA22A6FDBFD000C4568 /* 💬PrepareToRequestUserReview.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C202A6A92820044B939 /* 💬PrepareToRequestUserReview.swift */; };
 		F5514EF429CD7B4E00FCA7EA /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */; };
 		F5514EF629CD7B4E00FCA7EA /* 🛠AppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1256A33E286B174D002AF08A /* 🛠AppMenu.swift */; };
@@ -71,7 +71,6 @@
 		F5936C1D2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
 		F5936C1E2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
 		F5936C1F2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
-		F5936C212A6A92820044B939 /* 💬PrepareToRequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5936C202A6A92820044B939 /* 💬PrepareToRequestUserReview.swift */; };
 		F5A8805B2A693B0C00D534EC /* App_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A8805A2A693B0C00D534EC /* App_macOS.swift */; };
 		F5A8805D2A693B0C00D534EC /* ContentView_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */; };
 		F5A8805F2A693B0F00D534EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A8805E2A693B0F00D534EC /* Assets.xcassets */; };
@@ -123,7 +122,6 @@
 				F53A8F9F2A6FDBFD000C4568 /* 🛒InAppPurchaseModel.swift in CopyFiles */,
 				F53A8FA02A6FDBFD000C4568 /* 🪧Sheet.swift in CopyFiles */,
 				F53A8FA12A6FDBFD000C4568 /* 🩹Workaround.swift in CopyFiles */,
-				F53A8FA22A6FDBFD000C4568 /* 💬PrepareToRequestUserReview.swift in CopyFiles */,
 				F501E9CE2A6A3A0E00E9F9A6 /* 🗒️StaticInfo.swift in CopyFiles */,
 				F5514EF429CD7B4E00FCA7EA /* 📣ADContent.swift in CopyFiles */,
 				F5514EF529CD7B4E00FCA7EA /* 💬RequestUserReview.swift in CopyFiles */,
@@ -189,6 +187,7 @@
 		12E4A77228502F3A00B2380B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12E4A77428502F3B00B2380B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🗒️StaticInfo.swift"; sourceTree = "<group>"; };
+		F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
 		F53A8F962A6FBCEE000C4568 /* 🌏AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
 		F53A8F982A6FBD11000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
 		F53A8F9A2A6FBD66000C4568 /* 🌏VersionDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌏VersionDescription.xcstrings"; sourceTree = "<group>"; };
@@ -213,7 +212,6 @@
 		F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseView.swift"; sourceTree = "<group>"; };
 		F5936C182A6A90B10044B939 /* 📣ADModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📣ADModel.swift"; sourceTree = "<group>"; };
 		F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseModel.swift"; sourceTree = "<group>"; };
-		F5936C202A6A92820044B939 /* 💬PrepareToRequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬PrepareToRequestUserReview.swift"; sourceTree = "<group>"; };
 		F5A880582A693B0C00D534EC /* macOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A8805A2A693B0C00D534EC /* App_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_macOS.swift; sourceTree = "<group>"; };
 		F5A8805C2A693B0C00D534EC /* ContentView_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_macOS.swift; sourceTree = "<group>"; };
@@ -268,7 +266,6 @@
 				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
 				1256A33E286B174D002AF08A /* 🛠AppMenu.swift */,
 				F567E38729F27E180026E12D /* 🩹Workaround.swift */,
-				F5936C202A6A92820044B939 /* 💬PrepareToRequestUserReview.swift */,
 				12E4A76828502EA600B2380B /* 🌏Localization */,
 				F567E36929F278B10026E12D /* Info.plist */,
 				F5936C162A6A81DE0044B939 /* 🗄️Rest */,
@@ -360,6 +357,7 @@
 				F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */,
 				F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */,
 				F5D521662A6E578400BE4D12 /* 🤖AppDelegate.swift */,
+				F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */,
 				F583DC792A6D2CB300F02006 /* ℹ️HelpWindows.swift */,
 				F58B05182A6EB09B004BE9E5 /* 📣ADContent.swift */,
 				F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseView.swift */,
@@ -575,7 +573,6 @@
 				12E4A76328502C9F00B2380B /* ℹ️AboutApp.swift in Sources */,
 				F5F2272129FE6B1900891C69 /* 🪧Sheet.swift in Sources */,
 				127ECB2C28614B8B00CB1BC3 /* 📣ADComponents.swift in Sources */,
-				F5936C212A6A92820044B939 /* 💬PrepareToRequestUserReview.swift in Sources */,
 				12E4A748285027F600B2380B /* App_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +603,7 @@
 				F5D521652A6E575B00BE4D12 /* 📱AppModel_macOS.swift in Sources */,
 				F501E9C92A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */,
 				F586E8B22A6F9BCF00023554 /* 📣ADSheet.swift in Sources */,
+				F539EA322A70A1E900A3C80E /* 💬RequestUserReview.swift in Sources */,
 				F583DC802A6DE2D200F02006 /* 🔧Settings.swift in Sources */,
 				F5A8805B2A693B0C00D534EC /* App_macOS.swift in Sources */,
 				F583DC7C2A6D2CB300F02006 /* ℹ️HelpWindows.swift in Sources */,

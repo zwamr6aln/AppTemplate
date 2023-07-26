@@ -24,5 +24,6 @@ struct ContentView: View {
                 .navigationTitle("No select")
         }
         .modifier(📣ADSheet())
+        .modifier(💬RequestUserReview())
     }
 }
