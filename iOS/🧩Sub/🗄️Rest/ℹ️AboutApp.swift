@@ -235,12 +235,12 @@ private struct 📓SourceCodeLink: View {
     }
     private func bundleMainInfoDictionary() -> some View {
         Section {
-            NavigationLink("Bundle.main.infoDictionary") {
+            NavigationLink(String("Bundle.main.infoDictionary")) {
                 ScrollView {
                     Text(Bundle.main.infoDictionary!.description)
                         .padding()
                 }
-                .navigationBarTitle("Bundle.main.infoDictionary")
+                .navigationBarTitle(Text(verbatim: "Bundle.main.infoDictionary"))
                 .textSelection(.enabled)
             }
         }
