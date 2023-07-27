@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "%@" : {
 
     },
@@ -8,9 +11,6 @@
 
     },
     "About App" : {
-
-    },
-    "Alarm clock with taking a long time from small volume to max volume." : {
 
     },
     "App for iPhone" : {
@@ -125,9 +125,6 @@
         }
       }
     },
-    "E-book reader that can turn a page with slightly longish voluntary blink." : {
-
-    },
     "Error" : {
       "localizations" : {
         "ja" : {
@@ -137,9 +134,6 @@
           }
         }
       }
-    },
-    "Flashcard on widget. Memorize a note in everyday life." : {
-
     },
     "for iPhone / iPad / Mac / Apple TV / Apple Watch" : {
       "extractionState" : "manual",
@@ -172,9 +166,6 @@
           }
         }
       }
-    },
-    "Notes widget on lock screen." : {
-
     },
     "OK" : {
       "extractionState" : "migrated",
@@ -211,15 +202,6 @@
       }
     },
     "Placeholder" : {
-
-    },
-    "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
-
-    },
-    "Register weight data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
-
-    },
-    "Simplest Shogi board App. Supported SharePlay." : {
 
     },
     "Toggle" : {

@@ -1,34 +1,13 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Alarm clock with taking a long time from small volume to max volume." : {
-
-    },
     "App for iPhone / iPad / Mac / Apple Watch" : {
 
     },
     "AppTemplate" : {
 
     },
-    "E-book reader that can turn a page with slightly longish voluntary blink." : {
-
-    },
-    "Flashcard on widget. Memorize a note in everyday life." : {
-
-    },
-    "Notes widget on lock screen." : {
-
-    },
     "Placeholder" : {
-
-    },
-    "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
-
-    },
-    "Register weight data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
-
-    },
-    "Simplest Shogi board App. Supported SharePlay." : {
 
     }
   },

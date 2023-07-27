@@ -127,7 +127,7 @@ private extension 📣ADView {
     }
     private func appName() -> some View {
         Link(destination: self.targetApp.url) {
-            Text(self.targetApp.name, tableName: "AD&InAppPurchase")
+            Text(self.targetApp.localizationKey, tableName: "🌐ADAppName")
                 .font(.headline)
         }
         .buttonStyle(.plain)
@@ -135,7 +135,7 @@ private extension 📣ADView {
         .disabled(🛒.purchased)
     }
     private func appDescription() -> some View {
-        Text(self.targetApp.description, tableName: "AD&InAppPurchase")
+        Text(self.targetApp.localizationKey, tableName: "🌐ADAppDescription")
             .font(.subheadline)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 8)

@@ -42,7 +42,7 @@
       }
     },
     "Alarm clock with taking a long time from small volume to max volume." : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -83,7 +83,7 @@
       }
     },
     "E-book reader that can turn a page with slightly longish voluntary blink." : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -115,7 +115,7 @@
       }
     },
     "Flashcard on widget. Memorize a note in everyday life." : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -180,7 +180,7 @@
       }
     },
     "Notes widget on lock screen." : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -244,7 +244,7 @@
       }
     },
     "Register body temperature data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -255,7 +255,7 @@
       }
     },
     "Register weight data to \"Health\" app pre-installed on iPhone in the fastest way (as manual)." : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -287,7 +287,7 @@
       }
     },
     "Simplest Shogi board App. Supported SharePlay." : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "ja" : {
           "stringUnit" : {

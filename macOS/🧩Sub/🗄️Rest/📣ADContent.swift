@@ -88,7 +88,7 @@ private extension 📣ADContent {
     }
     private func appName() -> some View {
         Link(destination: self.targetApp.url) {
-            Text(self.targetApp.name, tableName: "AD&InAppPurchase")
+            Text(self.targetApp.localizationKey, tableName: "🌐ADAppName")
                 .font(.title.bold())
         }
         .buttonStyle(.plain)
@@ -96,7 +96,7 @@ private extension 📣ADContent {
         .disabled(🛒.purchased)
     }
     private func appDescription() -> some View {
-        Text(self.targetApp.description, tableName: "AD&InAppPurchase")
+        Text(self.targetApp.localizationKey, tableName: "🌐ADAppDescription")
             .font(.title3)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 8)

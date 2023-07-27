@@ -27,6 +27,10 @@
 		F519CB6129AAFF5800ACD6B6 /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
 		F519CB6229AAFF5800ACD6B6 /* 📣ADComponents.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADComponents.swift */; };
 		F519CB6329AAFF5800ACD6B6 /* 🛒InAppPurchaseView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */; };
+		F531FA192A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA182A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings */; };
+		F531FA1A2A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA182A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings */; };
+		F531FA1C2A71E962004BBFE0 /* 🌐ADAppName.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA1B2A71E962004BBFE0 /* 🌐ADAppName.xcstrings */; };
+		F531FA1D2A71E962004BBFE0 /* 🌐ADAppName.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA1B2A71E962004BBFE0 /* 🌐ADAppName.xcstrings */; };
 		F539EA322A70A1E900A3C80E /* 💬RequestUserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */; };
 		F539EA342A70B6CB00A3C80E /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */; };
 		F539EA372A70B9F300A3C80E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F539EA362A70B9F300A3C80E /* Localizable.xcstrings */; };
@@ -217,6 +221,8 @@
 		12E4A75628502A2D00B2380B /* 📱AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel.swift"; sourceTree = "<group>"; };
 		12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutApp.swift"; sourceTree = "<group>"; };
 		F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🗒️StaticInfo.swift"; sourceTree = "<group>"; };
+		F531FA182A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐ADAppDescription.xcstrings"; sourceTree = "<group>"; };
+		F531FA1B2A71E962004BBFE0 /* 🌐ADAppName.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐ADAppName.xcstrings"; sourceTree = "<group>"; };
 		F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
 		F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		F539EA362A70B9F300A3C80E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -394,6 +400,8 @@
 			children = (
 				F583DC722A6D22F500F02006 /* AboutApp.xcstrings */,
 				F583DC642A6D227900F02006 /* AD&InAppPurchase.xcstrings */,
+				F531FA1B2A71E962004BBFE0 /* 🌐ADAppName.xcstrings */,
+				F531FA182A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings */,
 			);
 			path = "🌐Localization";
 			sourceTree = "<group>";
@@ -566,6 +574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F53A8F9B2A6FBD66000C4568 /* 🌐VersionHistory.xcstrings in Resources */,
+				F531FA192A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings in Resources */,
 				12DDDDAD288BF2E40055A073 /* Launch Screen.storyboard in Resources */,
 				127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */,
 				F583DC652A6D227900F02006 /* AD&InAppPurchase.xcstrings in Resources */,
@@ -574,6 +583,7 @@
 				F53A8F9D2A6FBD66000C4568 /* 🌐AppStoreDescription.xcstrings in Resources */,
 				F583DC772A6D29F200F02006 /* Localizable.xcstrings in Resources */,
 				12E4A74C285027F700B2380B /* Assets.xcassets in Resources */,
+				F531FA1C2A71E962004BBFE0 /* 🌐ADAppName.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,7 +608,9 @@
 				F5DD10FD2A70E70000428A16 /* AboutApp.xcstrings in Resources */,
 				F5A8805F2A693B0F00D534EC /* Assets.xcassets in Resources */,
 				F53A8F992A6FBD11000C4568 /* 🌐VersionHistory.xcstrings in Resources */,
+				F531FA1D2A71E962004BBFE0 /* 🌐ADAppName.xcstrings in Resources */,
 				F53A8F972A6FBCEE000C4568 /* 🌐AppStoreDescription.xcstrings in Resources */,
+				F531FA1A2A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
