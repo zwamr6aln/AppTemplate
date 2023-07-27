@@ -1,35 +1,17 @@
 import SwiftUI
 
-struct ℹ️AboutAppLink: View {
+struct ℹ️AboutAppContent: View {
     var body: some View {
-        Section {
-            🖼️IconAndName()
-            🔗AppStoreLink()
-            NavigationLink(destination: ℹ️AboutAppMenu()) {
-                Label(String(localized: "About App", table: "🌐AboutApp"),
-                      systemImage: "doc")
-            }
-        }
+        📰AppStoreDescriptionSection()
+        📜VersionHistoryLink()
+        👤PrivacyPolicySection()
+        🏬AppStoreSection()
+        📓SourceCodeLink()
+        🧑‍💻AboutDeveloperPublisherLink()
     }
 }
 
-struct ℹ️AboutAppMenu: View {
-    var withSidebarLayout: Bool = false
-    var body: some View {
-        List {
-            if self.withSidebarLayout { 🖼️IconAndName() }
-            📰AppStoreDescriptionSection()
-            📜VersionHistoryLink()
-            👤PrivacyPolicySection()
-            🏬AppStoreSection()
-            📓SourceCodeLink()
-            🧑‍💻AboutDeveloperPublisherLink()
-        }
-        .navigationTitle(Text("About App", tableName: "🌐AboutApp"))
-    }
-}
-
-private struct 🖼️IconAndName: View {
+struct ℹ️IconAndName: View {
     var body: some View {
         GeometryReader { 📐 in
             VStack(spacing: 8) {
@@ -53,6 +35,22 @@ private struct 🖼️IconAndName: View {
             .frame(width: 📐.size.width)
         }
         .frame(height: 200)
+    }
+}
+
+struct ℹ️AppStoreLink: View {
+    @Environment(\.openURL) var openURL
+    var body: some View {
+        Button {
+            self.openURL(🗒️StaticInfo.appStoreProductURL)
+        } label: {
+            LabeledContent {
+                Image(systemName: "arrow.up.forward.app")
+            } label: {
+                Label(String(localized: "Open AppStore page", table: "🌐AboutApp"),
+                      systemImage: "link")
+            }
+        }
     }
 }
 
@@ -86,39 +84,19 @@ private struct 📰AppStoreDescriptionSection: View {
     }
 }
 
-private struct 🔗AppStoreLink: View {
-    @Environment(\.openURL) var openURL
-    var body: some View {
-        Button {
-            self.openURL(🗒️StaticInfo.appStoreProductURL)
-        } label: {
-            HStack {
-                Label(String(localized: "Open AppStore page", table: "🌐AboutApp"),
-                      systemImage: "link")
-                Spacer()
-                Image(systemName: "arrow.up.forward.app")
-                    .font(.body.weight(.light))
-                    .imageScale(.small)
-            }
-        }
-    }
-}
-
 private struct 🏬AppStoreSection: View {
     @Environment(\.openURL) var openURL
     var body: some View {
         Section {
-            🔗AppStoreLink()
+            ℹ️AppStoreLink()
             Button {
                 self.openURL(🗒️StaticInfo.appStoreUserReviewURL)
             } label: {
-                HStack {
+                LabeledContent {
+                    Image(systemName: "arrow.up.forward.app")
+                } label: {
                     Label(String(localized: "Review on AppStore", table: "🌐AboutApp"),
                           systemImage: "star.bubble")
-                    Spacer()
-                    Image(systemName: "arrow.up.forward.app")
-                        .imageScale(.small)
-                        .foregroundStyle(.secondary)
                 }
             }
         } footer: {
@@ -249,13 +227,11 @@ private struct 📓SourceCodeLink: View {
         Group {
             Section {
                 Link(destination: 🗒️StaticInfo.webRepositoryURL) {
-                    HStack {
+                    LabeledContent {
+                        Image(systemName: "arrow.up.forward.app")
+                    } label: {
                         Label(String(localized: "Web Repository", table: "🌐AboutApp"),
                               systemImage: "link")
-                        Spacer()
-                        Image(systemName: "arrow.up.forward.app")
-                            .imageScale(.small)
-                            .foregroundStyle(.secondary)
                     }
                 }
             } footer: {
@@ -263,16 +239,16 @@ private struct 📓SourceCodeLink: View {
             }
             Section {
                 Link(destination: 🗒️StaticInfo.webMirrorRepositoryURL) {
-                    HStack {
-                        Label(String(localized: "Web Repository", table: "🌐AboutApp"),
-                              systemImage: "link")
-                        Text("(Mirror)", tableName: "🌐AboutApp")
-                            .font(.subheadline.bold())
-                            .foregroundStyle(.secondary)
-                        Spacer()
+                    LabeledContent {
                         Image(systemName: "arrow.up.forward.app")
-                            .imageScale(.small)
-                            .foregroundStyle(.secondary)
+                    } label: {
+                        HStack {
+                            Label(String(localized: "Web Repository", table: "🌐AboutApp"),
+                                  systemImage: "link")
+                            Text("(Mirror)", tableName: "🌐AboutApp")
+                                .font(.subheadline.bold())
+                                .foregroundStyle(.secondary)
+                        }
                     }
                 }
             } footer: {

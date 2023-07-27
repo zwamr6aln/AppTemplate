@@ -29,8 +29,17 @@ struct ContentView: View {
                             NavigationStack { Self.menu() }
                         } label: { Label("Menu", systemImage: "gearshape") }
                         NavigationLink {
-                            NavigationStack { ℹ️AboutAppMenu(withSidebarLayout: true) }
-                        } label: { Label("About", systemImage: "questionmark") }
+                            NavigationStack {
+                                List {
+                                    ℹ️IconAndName()
+                                    ℹ️AboutAppContent()
+                                }
+                                .navigationTitle(String(localized: "About App", table: "🌐AboutApp"))
+                            }
+                        } label: {
+                            Label(String(localized: "About App", table: "🌐AboutApp"),
+                                  systemImage: "doc")
+                        }
                     }
                     .navigationTitle("AppTemplate")
                 } detail: {
@@ -51,7 +60,17 @@ extension ContentView {
     private static func menu() -> some View {
         List {
             Text(verbatim: "Placeholder")
-            ℹ️AboutAppLink()
+            Section {
+                ℹ️IconAndName()
+                ℹ️AppStoreLink()
+                NavigationLink {
+                    List { ℹ️AboutAppContent() }
+                        .navigationTitle(String(localized: "About App", table: "🌐AboutApp"))
+                } label: {
+                    Label(String(localized: "About App", table: "🌐AboutApp"),
+                          systemImage: "doc")
+                }
+            }
             🛒InAppPurchaseMenuLink()
         }
         .navigationTitle("Menu")
