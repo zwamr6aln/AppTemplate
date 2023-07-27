@@ -1,61 +1,11 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
-
-    },
-    "%@" : {
-
-    },
     "About" : {
 
     },
     "About App" : {
 
-    },
-    "App for iPhone" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone向けアプリ"
-          }
-        }
-      }
-    },
-    "App for iPhone / Apple Watch" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone/Apple Watch向けアプリ"
-          }
-        }
-      }
-    },
-    "App for iPhone / iPad" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone/iPad向けアプリ"
-          }
-        }
-      }
-    },
-    "App for iPhone / iPad / Apple Watch" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone/iPad/Apple Watch向けアプリ"
-          }
-        }
-      }
     },
     "App for iPhone / iPad / Mac / Apple Watch" : {
       "localizations" : {
@@ -73,20 +23,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "アプリテンプレート"
-          }
-        }
-      }
-    },
-    "Bundle.main.infoDictionary" : {
-
-    },
-    "Cancel" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "取り消す"
           }
         }
       }
@@ -131,28 +67,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "エラー"
-          }
-        }
-      }
-    },
-    "for iPhone / iPad / Mac / Apple TV / Apple Watch" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone/iPad/Mac/Apple TV/Apple Watch向け"
-          }
-        }
-      }
-    },
-    "for iPhone / iPad / Mac / Apple Watch" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone/iPad/Mac/Apple Watch向け"
           }
         }
       }

@@ -15,7 +15,7 @@ struct ℹ️HelpWindows: Scene {
 
 private struct 📰DescriptionWindow: Scene {
     var body: some Scene {
-        Window(Text("Description", tableName: "AboutApp"),
+        Window(Text("Description", tableName: "🌐AboutApp"),
                id: "Description") {
             ScrollView {
                 Text("current", tableName: "🌐AppStoreDescription")
@@ -29,7 +29,7 @@ private struct 📰DescriptionWindow: Scene {
 
 private struct 👤PrivacyPolicyWindow: Scene {
     var body: some Scene {
-        Window(Text("Privacy Policy", tableName: "AboutApp"),
+        Window(Text("Privacy Policy", tableName: "🌐AboutApp"),
                id: "PrivacyPolicy") {
             Text(🗒️StaticInfo.privacyPolicyDescription)
                 .padding(24)
@@ -41,7 +41,7 @@ private struct 👤PrivacyPolicyWindow: Scene {
 
 private struct 📜VersionHistoryWindow: Scene {
     var body: some Scene {
-        Window(Text("Version History", tableName: "AboutApp"),
+        Window(Text("Version History", tableName: "🌐AboutApp"),
                id: "VersionHistory") {
             List {
                 ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
@@ -52,9 +52,9 @@ private struct 📜VersionHistoryWindow: Scene {
                                 .textSelection(.enabled)
                             Group {
                                 if 🗒️StaticInfo.versionInfos.first?.version == ⓘnfo.version {
-                                    Text("builded on \(ⓘnfo.date)", tableName: "AboutApp")
+                                    Text("builded on \(ⓘnfo.date)", tableName: "🌐AboutApp")
                                 } else {
-                                    Text("released on \(ⓘnfo.date)", tableName: "AboutApp")
+                                    Text("released on \(ⓘnfo.date)", tableName: "🌐AboutApp")
                                 }
                             }
                             .font(.caption)
@@ -71,7 +71,7 @@ private struct 📜VersionHistoryWindow: Scene {
 
 private struct 📓SourceCodeWindow: Scene {
     var body: some Scene {
-        Window(Text("Source code", tableName: "AboutApp"),
+        Window(Text("Source code", tableName: "🌐AboutApp"),
                id: "SourceCode") {
             NavigationSplitView {
                 List {
@@ -81,9 +81,9 @@ private struct 📓SourceCodeWindow: Scene {
                     Divider()
                     self.repositoryLinks()
                 }
-                .navigationTitle(Text("Source code", tableName: "AboutApp"))
+                .navigationTitle(Text("Source code", tableName: "🌐AboutApp"))
             } detail: {
-                Text("← Select file", tableName: "AboutApp")
+                Text("← Select file", tableName: "🌐AboutApp")
                     .foregroundStyle(.tertiary)
             }
         }
@@ -138,19 +138,19 @@ private struct 📓SourceCodeWindow: Scene {
         NavigationLink {
             VStack {
                 Spacer()
-                Text("Git repository is public on GitHub.com", tableName: "AboutApp")
+                Text("Git repository is public on GitHub.com", tableName: "🌐AboutApp")
                     .font(.title2.weight(.medium))
                 Spacer()
                 VStack {
                     Link(destination: 🗒️StaticInfo.webRepositoryURL) {
                         HStack {
-                            Text("Web Repository", tableName: "AboutApp")
+                            Text("Web Repository", tableName: "🌐AboutApp")
                                 .font(.title3)
                             Image(systemName: "arrow.up.forward.app")
                                 .foregroundStyle(.secondary)
                         }
                     }
-                    Text("\(🗒️StaticInfo.webRepositoryURL)")
+                    Text(verbatim: "\(🗒️StaticInfo.webRepositoryURL)")
                         .foregroundStyle(.secondary)
                         .font(.subheadline.italic())
                 }
@@ -158,20 +158,20 @@ private struct 📓SourceCodeWindow: Scene {
                 VStack {
                     Link(destination: 🗒️StaticInfo.webMirrorRepositoryURL) {
                         HStack {
-                            Text("(Mirror)", tableName: "AboutApp")
+                            Text("(Mirror)", tableName: "🌐AboutApp")
                             Image(systemName: "arrow.up.forward.app")
                         }
                         .foregroundStyle(.secondary)
                     }
-                    Text("\(🗒️StaticInfo.webMirrorRepositoryURL)")
+                    Text(verbatim: "\(🗒️StaticInfo.webMirrorRepositoryURL)")
                         .foregroundStyle(.secondary)
                         .font(.subheadline.italic())
                 }
                 Spacer()
             }
-            .navigationTitle(String(localized: "Web Repository", table: "AboutApp"))
+            .navigationTitle(String(localized: "Web Repository", table: "🌐AboutApp"))
         } label: {
-            Label(String(localized: "Web Repository", table: "AboutApp"),
+            Label(String(localized: "Web Repository", table: "🌐AboutApp"),
                   systemImage: "link")
         }
     }
@@ -179,55 +179,55 @@ private struct 📓SourceCodeWindow: Scene {
 
 private struct 🧑‍💻DeveloperPublisherWindow: Scene {
     var body: some Scene {
-        Window(Text("Developer / Publisher", tableName: "AboutApp"),
+        Window(Text("Developer / Publisher", tableName: "🌐AboutApp"),
                id: "DeveloperPublisher") {
             List {
                 Section {
                     GroupBox {
                         LabeledContent {
-                            Text("only one person", tableName: "AboutApp")
+                            Text("only one person", tableName: "🌐AboutApp")
                         } label: {
-                            Text("Individual", tableName: "AboutApp")
+                            Text("Individual", tableName: "🌐AboutApp")
                         }
                         .padding(4)
                     }
                 } header: {
-                    Text("The System", tableName: "AboutApp")
+                    Text("The System", tableName: "🌐AboutApp")
                 }
                 Section {
                     GroupBox {
-                        LabeledContent(String("山下 亮"), value: "Yamashita Ryo")
+                        LabeledContent("山下 亮" as String, value: "Yamashita Ryo")
                             .padding(4)
                     }
                 } header: {
-                    Text("Name", tableName: "AboutApp")
+                    Text("Name", tableName: "🌐AboutApp")
                 }
                 Section {
                     GroupBox {
                         VStack {
                             LabeledContent {
-                                Text("about 29", tableName: "AboutApp")
+                                Text("about 29", tableName: "🌐AboutApp")
                             } label: {
-                                Text("age", tableName: "AboutApp")
+                                Text("age", tableName: "🌐AboutApp")
                             }
                             LabeledContent {
-                                Text("Japan", tableName: "AboutApp")
+                                Text("Japan", tableName: "🌐AboutApp")
                             } label: {
-                                Text("country", tableName: "AboutApp")
+                                Text("country", tableName: "🌐AboutApp")
                             }
                             LabeledContent {
-                                Text("Japanese", tableName: "AboutApp")
+                                Text("Japanese", tableName: "🌐AboutApp")
                             } label: {
-                                Text("native language", tableName: "AboutApp")
+                                Text("native language", tableName: "🌐AboutApp")
                             }
-                            Text("As of 2023", tableName: "AboutApp")
+                            Text("As of 2023", tableName: "🌐AboutApp")
                                 .font(.caption)
                                 .foregroundStyle(.tertiary)
                         }
                         .padding(4)
                     }
                 } header: {
-                    Text("background", tableName: "AboutApp")
+                    Text("background", tableName: "🌐AboutApp")
                 }
                 Self.TimelineSection()
                 Section {
@@ -237,13 +237,13 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                             .frame(width: 90, height: 90)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                             .opacity(0.6)
-                        Text("Taken on 2021-11", tableName: "AboutApp")
+                        Text("Taken on 2021-11", tableName: "🌐AboutApp")
                             .font(.caption)
                             .foregroundStyle(.tertiary)
                     }
                     .padding(12)
                 } header: {
-                    Text("Image", tableName: "AboutApp")
+                    Text("Image", tableName: "🌐AboutApp")
                 }
             }
         }
@@ -277,7 +277,7 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                                 Text(ⓥalue.date)
                                     .font(.subheadline)
                                     .padding(8)
-                                Text(LocalizedStringKey(ⓥalue.description), tableName: "AboutApp")
+                                Text(LocalizedStringKey(ⓥalue.description), tableName: "🌐AboutApp")
                                     .font(.subheadline)
                                     .gridCellAnchor(.leading)
                             }
@@ -285,7 +285,7 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                     }
                 }
             } header: {
-                Text("Timeline", tableName: "AboutApp")
+                Text("Timeline", tableName: "🌐AboutApp")
             }
         }
     }

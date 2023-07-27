@@ -38,9 +38,9 @@ extension 🗒️StaticInfo {
             switch self {
                 case .main: ["App.swift",
                              "ContentView.swift",
-                             "📱AppModel.swift"]
-                case .Sub: ["📱AppModel(Extension).swift",
-                            "🪧Sheet.swift",
+                             "📱AppModel.swift",
+                             "📱AppModel(Extension).swift"]
+                case .Sub: ["🪧Sheet.swift",
                             "📣ADContent.swift",
                             "💬RequestUserReview.swift",
                             "🩹Workaround.swift"]
@@ -64,8 +64,9 @@ extension 🗒️StaticInfo {
             switch self {
                 case .main: ["App.swift",
                              "ContentView.swift",
-                             "📱AppModel.swift"]
-                case .Sub: ["📱AppModel(Extension).swift"]
+                             "📱AppModel.swift",
+                             "📱AppModel(Extension).swift"]
+                case .Sub: []
                 case .Rest: ["🗒️StaticInfo.swift",
                              "ℹ️AboutApp.swift"]
             }
@@ -86,9 +87,9 @@ extension 🗒️StaticInfo {
             switch self {
                 case .main: ["App.swift",
                              "ContentView.swift",
-                             "📱AppModel.swift"]
-                case .Sub: ["📱AppModel(Extension).swift",
-                            "📣ADSheet.swift",
+                             "📱AppModel.swift",
+                             "📱AppModel(Extension).swift"]
+                case .Sub: ["📣ADSheet.swift",
                             "🔧Settings.swift",
                             "🪄Commands.swift",
                             "🤖AppDelegate.swift",

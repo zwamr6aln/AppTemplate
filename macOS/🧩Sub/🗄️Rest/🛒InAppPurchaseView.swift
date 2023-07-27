@@ -4,7 +4,7 @@ import StoreKit
 struct 🛒InAppPurchaseWindow: Scene {
     @ObservedObject var 🛒: 🛒InAppPurchaseModel
     var body: some Scene {
-        Window(Text("In-App Purchase", tableName: "AD&InAppPurchase"),
+        Window(Text("In-App Purchase", tableName: "🌐AD&InAppPurchase"),
                id: "InAppPurchase") {
             Self.menu()
                 .environmentObject(🛒)
@@ -31,21 +31,21 @@ private extension 🛒InAppPurchaseWindow {
                     .padding()
                 }
             } header: {
-                Text("In-App Purchase", tableName: "AD&InAppPurchase")
+                Text("In-App Purchase", tableName: "🌐AD&InAppPurchase")
             }
             .headerProminence(.increased)
         }
-        .navigationTitle(Text("In-App Purchase", tableName: "AD&InAppPurchase"))
+        .navigationTitle(Text("In-App Purchase", tableName: "🌐AD&InAppPurchase"))
     }
     private static func aboutADSection() -> some View {
         Section {
             GroupBox {
                 Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.",
-                     tableName: "AD&InAppPurchase")
+                     tableName: "🌐AD&InAppPurchase")
                 .padding()
             }
         } header: {
-            Text("About AD", tableName: "AD&InAppPurchase")
+            Text("About AD", tableName: "🌐AD&InAppPurchase")
         }
     }
     private static func adPreview() -> some View {
@@ -100,16 +100,16 @@ private extension 🛒InAppPurchaseWindow {
                         self.buyingInProgress = false
                     }
                 }
-                .accessibilityLabel(Text("Buy", tableName: "AD&InAppPurchase"))
+                .accessibilityLabel(Text("Buy", tableName: "🌐AD&InAppPurchase"))
                 .disabled(self.buyingInProgress)
                 .buttonStyle(.borderedProminent)
                 .overlay {
                     if self.buyingInProgress { ProgressView() }
                 }
                 .alert(isPresented: self.$showError) {
-                    Alert(title: Text("Error", tableName: "AD&InAppPurchase"),
+                    Alert(title: Text("Error", tableName: "🌐AD&InAppPurchase"),
                           message: Text(self.errorMessage),
-                          dismissButton: .default(Text("OK", tableName: "AD&InAppPurchase")))
+                          dismissButton: .default(Text("OK", tableName: "🌐AD&InAppPurchase")))
                 }
             }
             .disabled(🛒.unconnected)
@@ -140,7 +140,7 @@ private extension 🛒InAppPurchaseWindow {
                     self.restoringInProgress = false
                 }
             } label: {
-                Label(String(localized: "Restore Purchases", table: "AD&InAppPurchase"),
+                Label(String(localized: "Restore Purchases", table: "🌐AD&InAppPurchase"),
                       systemImage: "arrow.clockwise")
                 .font(.subheadline)
                 .foregroundColor(🛒.unconnected ? .secondary : nil)
@@ -151,9 +151,9 @@ private extension 🛒InAppPurchaseWindow {
             }
             .disabled(self.restoringInProgress)
             .alert(isPresented: self.$showAlert) {
-                Alert(title: Text(self.syncSuccess ? "Done" : "Error", tableName: "AD&InAppPurchase"),
+                Alert(title: Text(self.syncSuccess ? "Done" : "Error", tableName: "🌐AD&InAppPurchase"),
                       message: Text(LocalizedStringKey(self.alertMessage)),
-                      dismissButton: .default(Text("OK", tableName: "AD&InAppPurchase")))
+                      dismissButton: .default(Text("OK", tableName: "🌐AD&InAppPurchase")))
             }
         }
     }

@@ -67,7 +67,7 @@ private extension 📣ADView {
             }
         }
         .modifier(Self.PurchasedEffect())
-        .navigationTitle(Text("AD", tableName: "AD&InAppPurchase"))
+        .navigationTitle(Text("AD", tableName: "🌐AD&InAppPurchase"))
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: self.$showMenu) { 🛒InAppPurchaseMenu() }
     }
@@ -148,7 +148,7 @@ private extension 📣ADView {
             }
             .foregroundColor(.primary)
         }
-        .accessibilityLabel(Text("Open AppStore page", tableName: "AD&InAppPurchase"))
+        .accessibilityLabel(Text("Open AppStore page", tableName: "🌐AD&InAppPurchase"))
         .disabled(🛒.purchased)
     }
     private func menuLink() -> some View {
@@ -159,7 +159,7 @@ private extension 📣ADView {
                 .padding(12)
         }
         .tint(.primary)
-        .accessibilityLabel(Text("About AD", tableName: "AD&InAppPurchase"))
+        .accessibilityLabel(Text("About AD", tableName: "🌐AD&InAppPurchase"))
     }
     private func dismissButton() -> some View {
         Group {
@@ -178,7 +178,7 @@ private extension 📣ADView {
                 }
                 .keyboardShortcut(.cancelAction)
                 .tint(.primary)
-                .accessibilityLabel(Text("Dismiss", tableName: "AD&InAppPurchase"))
+                .accessibilityLabel(Text("Dismiss", tableName: "🌐AD&InAppPurchase"))
             }
         }
     }

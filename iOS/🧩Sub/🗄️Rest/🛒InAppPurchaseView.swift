@@ -9,11 +9,11 @@ struct 🛒InAppPurchaseMenuLink: View {
             NavigationLink {
                 🛒InAppPurchaseMenu()
             } label: {
-                Label(String(localized: "About AD / Purchase", table: "AD&InAppPurchase"),
+                Label(String(localized: "About AD / Purchase", table: "🌐AD&InAppPurchase"),
                       systemImage: "megaphone")
             }
         } header: {
-            Text("AD / Purchase", tableName: "AD&InAppPurchase")
+            Text("AD / Purchase", tableName: "🌐AD&InAppPurchase")
         }
     }
 }
@@ -27,21 +27,21 @@ struct 🛒InAppPurchaseMenu: View {
                 🛒PurchaseView()
                 🛒Preview()
             } header: {
-                Text("In-App Purchase", tableName: "AD&InAppPurchase")
+                Text("In-App Purchase", tableName: "🌐AD&InAppPurchase")
             }
             .headerProminence(.increased)
             🛒RestoreButton()
         }
-        .navigationTitle(Text("About AD", tableName: "AD&InAppPurchase"))
+        .navigationTitle(Text("About AD", tableName: "🌐AD&InAppPurchase"))
         .navigationBarTitleDisplayMode(.large)
     }
     private static func aboutADSection() -> some View {
         Section {
             Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.",
-                 tableName: "AD&InAppPurchase")
+                 tableName: "🌐AD&InAppPurchase")
             .padding()
         } header: {
-            Text("Description", tableName: "AD&InAppPurchase")
+            Text("Description", tableName: "🌐AD&InAppPurchase")
         }
     }
 }
@@ -101,16 +101,16 @@ private struct 🛒PurchaseView: View {
                     self.buyingInProgress = false
                 }
             }
-            .accessibilityLabel(Text("Buy", tableName: "AD&InAppPurchase"))
+            .accessibilityLabel(Text("Buy", tableName: "🌐AD&InAppPurchase"))
             .disabled(self.buyingInProgress)
             .buttonStyle(.borderedProminent)
             .overlay {
                 if self.buyingInProgress { ProgressView() }
             }
             .alert(isPresented: self.$showError) {
-                Alert(title: Text("Error", tableName: "AD&InAppPurchase"),
+                Alert(title: Text("Error", tableName: "🌐AD&InAppPurchase"),
                       message: Text(self.errorMessage),
-                      dismissButton: .default(Text("OK", tableName: "AD&InAppPurchase")))
+                      dismissButton: .default(Text("OK", tableName: "🌐AD&InAppPurchase")))
             }
         }
         .padding(.vertical)
@@ -145,7 +145,7 @@ private struct 🛒RestoreButton: View {
                 }
             } label: {
                 HStack {
-                    Label(String(localized: "Restore Purchases", table: "AD&InAppPurchase"),
+                    Label(String(localized: "Restore Purchases", table: "🌐AD&InAppPurchase"),
                           systemImage: "arrow.clockwise")
                     .font(.footnote)
                     .foregroundColor(🛒.unconnected ? .secondary : nil)
@@ -158,9 +158,9 @@ private struct 🛒RestoreButton: View {
             }
             .disabled(self.restoringInProgress)
             .alert(isPresented: self.$showAlert) {
-                Alert(title: Text(self.syncSuccess ? "Done" : "Error", tableName: "AD&InAppPurchase"),
+                Alert(title: Text(self.syncSuccess ? "Done" : "Error", tableName: "🌐AD&InAppPurchase"),
                       message: Text(LocalizedStringKey(self.alertMessage)),
-                      dismissButton: .default(Text("OK", tableName: "AD&InAppPurchase")))
+                      dismissButton: .default(Text("OK", tableName: "🌐AD&InAppPurchase")))
             }
         }
     }

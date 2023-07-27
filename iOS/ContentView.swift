@@ -8,7 +8,7 @@ struct ContentView: View {
         Group {
             if self.horizontalSizeClass == .compact {
                 NavigationStack {
-                    Text("Placeholder")
+                    Text(verbatim: "Placeholder")
                         .navigationTitle("AppTemplate")
                         .toolbar {
                             NavigationLink {
@@ -34,7 +34,7 @@ struct ContentView: View {
                     }
                     .navigationTitle("AppTemplate")
                 } detail: {
-                    Text("Detail")
+                    Text(verbatim: "Detail")
                 }
             }
         }
@@ -50,7 +50,7 @@ struct ContentView: View {
 extension ContentView {
     private static func menu() -> some View {
         List {
-            Text("Placeholder")
+            Text(verbatim: "Placeholder")
             ℹ️AboutAppLink()
             🛒InAppPurchaseMenuLink()
         }

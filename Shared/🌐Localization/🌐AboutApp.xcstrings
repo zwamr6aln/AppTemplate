@@ -62,17 +62,6 @@
         }
       }
     },
-    "AppStore Release" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AppStore リリース"
-          }
-        }
-      }
-    },
     "As of 2023" : {
       "localizations" : {
         "ja" : {
@@ -182,17 +171,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "写真"
-          }
-        }
-      }
-    },
-    "income" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "収入"
           }
         }
       }
@@ -473,17 +451,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "タイムライン"
-          }
-        }
-      }
-    },
-    "Transparency Report" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "透明性レポート"
           }
         }
       }

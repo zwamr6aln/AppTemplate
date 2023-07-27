@@ -9,9 +9,9 @@ struct ℹ️AboutAppLink: View {
                 👤PrivacyPolicyLink()
                 📓SourceCodeLink()
             }
-            .navigationTitle(Text("About App", tableName: "AboutApp"))
+            .navigationTitle(Text("About App", tableName: "🌐AboutApp"))
         } label: {
-            Label(String(localized: "About App", table: "AboutApp"),
+            Label(String(localized: "About App", table: "🌐AboutApp"),
                   systemImage: "questionmark")
         }
     }
@@ -53,7 +53,7 @@ private struct 🏬AppStoreLink: View {
                 self.openURL(🗒️StaticInfo.appStoreProductURL)
             } label: {
                 HStack {
-                    Label(String(localized: "Open AppStore page", table: "AboutApp"),
+                    Label(String(localized: "Open AppStore page", table: "🌐AboutApp"),
                           systemImage: "link")
                     Spacer()
                     Image(systemName: "arrow.up.forward.app")
@@ -73,9 +73,9 @@ private struct 👤PrivacyPolicyLink: View {
                     Text(🗒️StaticInfo.privacyPolicyDescription)
                         .padding()
                 }
-                .navigationTitle(Text("Privacy Policy", tableName: "AboutApp"))
+                .navigationTitle(Text("Privacy Policy", tableName: "🌐AboutApp"))
             } label: {
-                Label(String(localized: "Privacy Policy", table: "AboutApp"),
+                Label(String(localized: "Privacy Policy", table: "🌐AboutApp"),
                       systemImage: "person.text.rectangle")
             }
         }
@@ -89,9 +89,9 @@ private struct 📓SourceCodeLink: View {
                 ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
                 self.bundleMainInfoDictionary()
             }
-            .navigationTitle(Text("Source code", tableName: "AboutApp"))
+            .navigationTitle(Text("Source code", tableName: "🌐AboutApp"))
         } label: {
-            Label(String(localized: "Source code", table: "AboutApp"),
+            Label(String(localized: "Source code", table: "🌐AboutApp"),
                   systemImage: "doc.plaintext")
         }
     }
