@@ -245,6 +245,7 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                 } header: {
                     Text("Image", tableName: "🌐AboutApp")
                 }
+                Self.jobHuntSection()
             }
         }
         .defaultSize(width: 200, height: 300)
@@ -287,6 +288,23 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
             } header: {
                 Text("Timeline", tableName: "🌐AboutApp")
             }
+        }
+    }
+    private static func jobHuntSection() -> some View {
+        Section {
+            VStack(spacing: 8) {
+                Text("Job hunting now!", tableName: "🌐AboutApp")
+                    .font(.headline.italic())
+                Text("If you are interested in hiring or acquiring, please contact me.",
+                     tableName: "🌐AboutApp")
+                .font(.subheadline)
+                Text(🗒️StaticInfo.contactAddress)
+                    .textSelection(.enabled)
+                    .italic()
+                    .foregroundStyle(.secondary)
+            }
+            .padding(12)
+            .frame(maxWidth: .infinity)
         }
     }
 }
