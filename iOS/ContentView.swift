@@ -12,7 +12,7 @@ struct ContentView: View {
                         .navigationTitle("AppTemplate")
                         .toolbar {
                             NavigationLink {
-                                Self.menu()
+                                Self.menuPane()
                             } label: { Label("Open menu", systemImage: "gear") }
                         }
                 }
@@ -26,7 +26,7 @@ struct ContentView: View {
                             }
                         } label: { Label("Option", systemImage: "gear") }
                         NavigationLink {
-                            NavigationStack { Self.menu() }
+                            NavigationStack { Self.menuPane() }
                         } label: { Label("Menu", systemImage: "gearshape") }
                         NavigationLink {
                             NavigationStack {
@@ -57,9 +57,10 @@ struct ContentView: View {
 
 
 extension ContentView {
-    private static func menu() -> some View {
+    private static func menuPane() -> some View {
         List {
             Text(verbatim: "Placeholder")
+                .redacted(reason: .placeholder)
             Section {
                 ℹ️IconAndName()
                 ℹ️AppStoreLink()

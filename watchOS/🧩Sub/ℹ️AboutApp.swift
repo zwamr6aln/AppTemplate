@@ -52,13 +52,11 @@ private struct 🏬AppStoreLink: View {
             Button {
                 self.openURL(🗒️StaticInfo.appStoreProductURL)
             } label: {
-                HStack {
+                LabeledContent {
+                    Image(systemName: "arrow.up.forward.app")
+                } label: {
                     Label(String(localized: "Open AppStore page", table: "🌐AboutApp"),
                           systemImage: "link")
-                    Spacer()
-                    Image(systemName: "arrow.up.forward.app")
-                        .font(.body.weight(.light))
-                        .imageScale(.small)
                 }
             }
         }
