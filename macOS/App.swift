@@ -14,6 +14,6 @@ struct AppTemplate: App {
         .commands { 🪄Commands() }
         Settings { 🔧Settings() }
         ℹ️HelpWindows()
-        🛒InAppPurchaseWindow(🛒)
+        🛒InAppPurchaseWindow(self.📱)
     }
 }
