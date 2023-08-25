@@ -7,13 +7,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "AppTemplate"
+            "value" : "AppTemplate(BDN)"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "アプリテンプレート"
+            "value" : "アプリテンプレート(BDN)"
           }
         }
       }
@@ -24,13 +24,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Template"
+            "value" : "AppTemplate(BN)"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "テンプレート"
+            "value" : "アプリテンプレート(BN)"
           }
         }
       }
