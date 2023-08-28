@@ -5,7 +5,11 @@ struct ContentView: View {
         NavigationStack {
             List {
                 NavigationLink("Placeholder") { Text("Placeholder") }
-                ℹ️AboutAppLink()
+                NavigationLink {
+                    ℹ️AboutAppMenu()
+                } label: {
+                    Label("About App", systemImage: "questionmark")
+                }
             }
             .navigationTitle(🗒️StaticInfo.appName)
         }
