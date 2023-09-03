@@ -5,7 +5,7 @@ enum 🗒️StaticInfo {
     static let appSubTitle: LocalizedStringKey = "App for iPhone / iPad / Mac / Apple Watch"
     
     static let appStoreProductURL = URL(string: "https://apps.apple.com/app/id?")!
-    static var appStoreUserReviewURL: URL { URL(string: "\(Self.appStoreProductURL)?action=write-review")! }
+    static var appStoreUserReviewURL: URL { .init(string: "\(Self.appStoreProductURL)?action=write-review")! }
     
     static var contactAddress: String { "sear_pandora_0x@icloud.com" }
     
@@ -34,7 +34,7 @@ extension 🗒️StaticInfo {
                                                                   ("1.0", "2021-01-01")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Sub, Rest
+        case main, Rest
         var id: Self { self }
         var fileNames: [String] {
             switch self {
@@ -42,11 +42,11 @@ extension 🗒️StaticInfo {
                              "ContentView.swift",
                              "📱AppModel.swift",
                              "📱AppModel(Extension).swift"]
-                case .Sub: ["🪧Sheet.swift",
-                            "📣ADContent.swift",
-                            "💬RequestUserReview.swift",
-                            "🩹Workaround.swift"]
-                case .Rest: ["🗒️StaticInfo.swift",
+                case .Rest: ["🪧Sheet.swift",
+                             "📣ADContent.swift",
+                             "💬RequestUserReview.swift",
+                             "🩹Workaround.swift",
+                             "🗒️StaticInfo.swift",
                              "ℹ️AboutApp.swift",
                              "📣ADModel.swift",
                              "📣ADComponents.swift",
@@ -60,7 +60,7 @@ extension 🗒️StaticInfo {
 #elseif os(watchOS)
 extension 🗒️StaticInfo {
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Sub, Rest
+        case main, Rest
         var id: Self { self }
         var fileNames: [String] {
             switch self {
@@ -68,7 +68,6 @@ extension 🗒️StaticInfo {
                              "ContentView.swift",
                              "📱AppModel.swift",
                              "📱AppModel(Extension).swift"]
-                case .Sub: []
                 case .Rest: ["🗒️StaticInfo.swift",
                              "ℹ️AboutApp.swift"]
             }
@@ -83,7 +82,7 @@ extension 🗒️StaticInfo {
                                                                   ("1.0", "2021-01-01")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Sub, Rest
+        case main, Rest
         var id: Self { self }
         var fileNames: [String] {
             switch self {
@@ -91,12 +90,12 @@ extension 🗒️StaticInfo {
                              "ContentView.swift",
                              "📱AppModel.swift",
                              "📱AppModel(Extension).swift"]
-                case .Sub: ["📣ADSheet.swift",
-                            "🔧Settings.swift",
-                            "🪄Commands.swift",
-                            "🤖AppDelegate.swift",
-                            "💬RequestUserReview.swift"]
-                case .Rest: ["🗒️StaticInfo.swift",
+                case .Rest: ["📣ADSheet.swift",
+                             "🔧Settings.swift",
+                             "🪄Commands.swift",
+                             "🤖AppDelegate.swift",
+                             "💬RequestUserReview.swift",
+                             "🗒️StaticInfo.swift",
                              "ℹ️HelpWindows.swift",
                              "📣ADModel.swift",
                              "📣ADContent.swift",
