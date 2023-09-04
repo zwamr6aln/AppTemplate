@@ -378,6 +378,8 @@
 			children = (
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
 				F567E36929F278B10026E12D /* Info.plist */,
+				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
+				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
 				12E4A76828502EA600B2380B /* 🌐Localization */,
 			);
 			path = "🧰SupportingFiles";
@@ -449,8 +451,6 @@
 				12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */,
 				127ECB2B28614B8B00CB1BC3 /* 📣ADComponents.swift */,
 				127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */,
-				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
-				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
 			);
 			path = "🗄️Rest";
 			sourceTree = "<group>";
