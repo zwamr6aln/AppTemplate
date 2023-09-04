@@ -34,14 +34,14 @@ extension 🗒️StaticInfo {
                                                                   ("1.0", "2021-01-01")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Rest
+        case main, Rest, Widget
         var id: Self { self }
         var fileNames: [String] {
             switch self {
                 case .main: ["App.swift",
                              "ContentView.swift",
                              "📱AppModel.swift",
-                             "📱AppModel(Extension).swift"]
+                             "📱AppModel(extension).swift"]
                 case .Rest: ["🪧Sheet.swift",
                              "📣ADContent.swift",
                              "💬RequestUserReview.swift",
@@ -52,6 +52,7 @@ extension 🗒️StaticInfo {
                              "📣ADComponents.swift",
                              "🛒InAppPurchaseModel.swift",
                              "🛒InAppPurchaseView.swift"]
+                case .Widget: ["Widget.swift"]
             }
         }
     }
@@ -60,16 +61,17 @@ extension 🗒️StaticInfo {
 #elseif os(watchOS)
 extension 🗒️StaticInfo {
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Rest
+        case main, Rest, Widget
         var id: Self { self }
         var fileNames: [String] {
             switch self {
                 case .main: ["App.swift",
                              "ContentView.swift",
                              "📱AppModel.swift",
-                             "📱AppModel(Extension).swift"]
+                             "📱AppModel(extension).swift"]
                 case .Rest: ["🗒️StaticInfo.swift",
                              "ℹ️AboutApp.swift"]
+                case .Widget: ["Widget.swift"]
             }
         }
     }
@@ -82,14 +84,14 @@ extension 🗒️StaticInfo {
                                                                   ("1.0", "2021-01-01")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Rest
+        case main, Rest, Widget
         var id: Self { self }
         var fileNames: [String] {
             switch self {
                 case .main: ["App.swift",
                              "ContentView.swift",
                              "📱AppModel.swift",
-                             "📱AppModel(Extension).swift"]
+                             "📱AppModel(extension).swift"]
                 case .Rest: ["📣ADSheet.swift",
                              "🔧Settings.swift",
                              "🪄Commands.swift",
@@ -102,6 +104,7 @@ extension 🗒️StaticInfo {
                              "🛒InAppPurchaseModel.swift",
                              "🛒InAppPurchaseWindow.swift",
                              "🛒InAppPurchaseMenu.swift"]
+                case .Widget: ["Widget.swift"]
             }
         }
     }

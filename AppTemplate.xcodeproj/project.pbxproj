@@ -40,11 +40,11 @@
 		F539EA3B2A70C03E00A3C80E /* 💬RequestUserReview.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA312A70A1E900A3C80E /* 💬RequestUserReview.swift */; };
 		F539EA3D2A70D31900A3C80E /* 📱AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
 		F539EA3E2A70D31A00A3C80E /* 📱AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
-		F539EA402A70D33300A3C80E /* 📱AppModel(Extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA3F2A70D33300A3C80E /* 📱AppModel(Extension).swift */; };
-		F539EA422A70D37300A3C80E /* 📱AppModel(Extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA412A70D37300A3C80E /* 📱AppModel(Extension).swift */; };
-		F539EA442A70D39900A3C80E /* 📱AppModel(Extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA432A70D39900A3C80E /* 📱AppModel(Extension).swift */; };
-		F539EA452A70D41D00A3C80E /* 📱AppModel(Extension).swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA3F2A70D33300A3C80E /* 📱AppModel(Extension).swift */; };
-		F539EA462A70D43300A3C80E /* 📱AppModel(Extension).swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA412A70D37300A3C80E /* 📱AppModel(Extension).swift */; };
+		F539EA402A70D33300A3C80E /* 📱AppModel(extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA3F2A70D33300A3C80E /* 📱AppModel(extension).swift */; };
+		F539EA422A70D37300A3C80E /* 📱AppModel(extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA412A70D37300A3C80E /* 📱AppModel(extension).swift */; };
+		F539EA442A70D39900A3C80E /* 📱AppModel(extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA432A70D39900A3C80E /* 📱AppModel(extension).swift */; };
+		F539EA452A70D41D00A3C80E /* 📱AppModel(extension).swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA3F2A70D33300A3C80E /* 📱AppModel(extension).swift */; };
+		F539EA462A70D43300A3C80E /* 📱AppModel(extension).swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA412A70D37300A3C80E /* 📱AppModel(extension).swift */; };
 		F539EA472A70D43B00A3C80E /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
 		F539EA492A70D5BE00A3C80E /* ℹ️AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539EA482A70D5BE00A3C80E /* ℹ️AboutApp.swift */; };
 		F539EA4B2A70D90700A3C80E /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
@@ -53,7 +53,7 @@
 		F539EA4E2A70D90700A3C80E /* 🛒InAppPurchaseModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */; };
 		F539EA4F2A70D91100A3C80E /* App.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F567E38F29F2A09A0026E12D /* App.swift */; };
 		F539EA502A70D91100A3C80E /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F567E39129F2A09A0026E12D /* ContentView.swift */; };
-		F539EA512A70D91100A3C80E /* 📱AppModel(Extension).swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA432A70D39900A3C80E /* 📱AppModel(Extension).swift */; };
+		F539EA512A70D91100A3C80E /* 📱AppModel(extension).swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA432A70D39900A3C80E /* 📱AppModel(extension).swift */; };
 		F539EA522A70D91100A3C80E /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F539EA482A70D5BE00A3C80E /* ℹ️AboutApp.swift */; };
 		F53A8F932A6FB963000C4568 /* 📣ADSheet.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */; };
 		F53A8F942A6FB963000C4568 /* 📣ADContent.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58B05182A6EB09B004BE9E5 /* 📣ADContent.swift */; };
@@ -138,7 +138,7 @@
 			dstPath = "📁SourceCode";
 			dstSubfolderSpec = 7;
 			files = (
-				F539EA452A70D41D00A3C80E /* 📱AppModel(Extension).swift in CopyFiles */,
+				F539EA452A70D41D00A3C80E /* 📱AppModel(extension).swift in CopyFiles */,
 				F53A8F9E2A6FDBFD000C4568 /* 📣ADModel.swift in CopyFiles */,
 				F53A8F9F2A6FDBFD000C4568 /* 🛒InAppPurchaseModel.swift in CopyFiles */,
 				F53A8FA02A6FDBFD000C4568 /* 🪧Sheet.swift in CopyFiles */,
@@ -163,7 +163,7 @@
 			files = (
 				F539EA4F2A70D91100A3C80E /* App.swift in CopyFiles */,
 				F539EA502A70D91100A3C80E /* ContentView.swift in CopyFiles */,
-				F539EA512A70D91100A3C80E /* 📱AppModel(Extension).swift in CopyFiles */,
+				F539EA512A70D91100A3C80E /* 📱AppModel(extension).swift in CopyFiles */,
 				F539EA522A70D91100A3C80E /* ℹ️AboutApp.swift in CopyFiles */,
 				F539EA4B2A70D90700A3C80E /* 📱AppModel.swift in CopyFiles */,
 				F539EA4C2A70D90700A3C80E /* 🗒️StaticInfo.swift in CopyFiles */,
@@ -191,7 +191,7 @@
 			files = (
 				F529167B2A985779002BB58E /* 🛒InAppPurchaseWindow.swift in CopyFiles */,
 				F539EA472A70D43B00A3C80E /* 📱AppModel.swift in CopyFiles */,
-				F539EA462A70D43300A3C80E /* 📱AppModel(Extension).swift in CopyFiles */,
+				F539EA462A70D43300A3C80E /* 📱AppModel(extension).swift in CopyFiles */,
 				F539EA3B2A70C03E00A3C80E /* 💬RequestUserReview.swift in CopyFiles */,
 				F53A8F932A6FB963000C4568 /* 📣ADSheet.swift in CopyFiles */,
 				F53A8F942A6FB963000C4568 /* 📣ADContent.swift in CopyFiles */,
@@ -231,9 +231,9 @@
 		F539EA332A70B6CB00A3C80E /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		F539EA362A70B9F300A3C80E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F539EA382A70BA1A00A3C80E /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
-		F539EA3F2A70D33300A3C80E /* 📱AppModel(Extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel(Extension).swift"; sourceTree = "<group>"; };
-		F539EA412A70D37300A3C80E /* 📱AppModel(Extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel(Extension).swift"; sourceTree = "<group>"; };
-		F539EA432A70D39900A3C80E /* 📱AppModel(Extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel(Extension).swift"; sourceTree = "<group>"; };
+		F539EA3F2A70D33300A3C80E /* 📱AppModel(extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel(extension).swift"; sourceTree = "<group>"; };
+		F539EA412A70D37300A3C80E /* 📱AppModel(extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel(extension).swift"; sourceTree = "<group>"; };
+		F539EA432A70D39900A3C80E /* 📱AppModel(extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "📱AppModel(extension).swift"; sourceTree = "<group>"; };
 		F539EA482A70D5BE00A3C80E /* ℹ️AboutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutApp.swift"; sourceTree = "<group>"; };
 		F53A8F962A6FBCEE000C4568 /* 🌐AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
 		F53A8F982A6FBD11000C4568 /* 🌐VersionHistory.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐VersionHistory.xcstrings"; sourceTree = "<group>"; };
@@ -334,7 +334,7 @@
 			children = (
 				12E4A747285027F600B2380B /* App.swift */,
 				12E4A749285027F600B2380B /* ContentView.swift */,
-				F539EA3F2A70D33300A3C80E /* 📱AppModel(Extension).swift */,
+				F539EA3F2A70D33300A3C80E /* 📱AppModel(extension).swift */,
 				F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */,
 				F5936C162A6A81DE0044B939 /* 🗄️Rest */,
 				F5397F582AA209FA002C90F2 /* 🧰SupportingFiles */,
@@ -409,7 +409,7 @@
 			children = (
 				F567E38F29F2A09A0026E12D /* App.swift */,
 				F567E39129F2A09A0026E12D /* ContentView.swift */,
-				F539EA432A70D39900A3C80E /* 📱AppModel(Extension).swift */,
+				F539EA432A70D39900A3C80E /* 📱AppModel(extension).swift */,
 				F539EA482A70D5BE00A3C80E /* ℹ️AboutApp.swift */,
 				F5397F592AA20A4C002C90F2 /* 🧰SupportingFiles */,
 			);
@@ -460,7 +460,7 @@
 			children = (
 				F5A8805A2A693B0C00D534EC /* App.swift */,
 				F5A8805C2A693B0C00D534EC /* ContentView.swift */,
-				F539EA412A70D37300A3C80E /* 📱AppModel(Extension).swift */,
+				F539EA412A70D37300A3C80E /* 📱AppModel(extension).swift */,
 				F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */,
 				F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */,
 				F5D521662A6E578400BE4D12 /* 🤖AppDelegate.swift */,
@@ -636,7 +636,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F539EA402A70D33300A3C80E /* 📱AppModel(Extension).swift in Sources */,
+				F539EA402A70D33300A3C80E /* 📱AppModel(extension).swift in Sources */,
 				12E4A75728502A2D00B2380B /* 📱AppModel.swift in Sources */,
 				F57B37F229726CE300F0BB91 /* 📣ADContent.swift in Sources */,
 				F567E38829F27E180026E12D /* 🩹Workaround.swift in Sources */,
@@ -657,7 +657,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F539EA442A70D39900A3C80E /* 📱AppModel(Extension).swift in Sources */,
+				F539EA442A70D39900A3C80E /* 📱AppModel(extension).swift in Sources */,
 				F5936C1A2A6A90B10044B939 /* 📣ADModel.swift in Sources */,
 				F567E39229F2A09A0026E12D /* ContentView.swift in Sources */,
 				F5936C1E2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
@@ -675,7 +675,7 @@
 				F529167A2A9855AD002BB58E /* 🛒InAppPurchaseWindow.swift in Sources */,
 				F5D521672A6E578400BE4D12 /* 🤖AppDelegate.swift in Sources */,
 				F5936C1B2A6A90B10044B939 /* 📣ADModel.swift in Sources */,
-				F539EA422A70D37300A3C80E /* 📱AppModel(Extension).swift in Sources */,
+				F539EA422A70D37300A3C80E /* 📱AppModel(extension).swift in Sources */,
 				F5936C1F2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
 				F539EA3E2A70D31A00A3C80E /* 📱AppModel.swift in Sources */,
 				F58B051A2A6EB09E004BE9E5 /* 📣ADContent.swift in Sources */,
