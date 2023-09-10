@@ -241,6 +241,10 @@
 		F53A8F9C2A6FBD66000C4568 /* 🌐AppStoreDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
 		F549E849290BC3C300636271 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = memo.md; sourceTree = "<group>"; };
 		F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "💬RequestUserReview.swift"; sourceTree = "<group>"; };
+		F567AE472AAD528A00A404F8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		F567AE482AAD52A500A404F8 /* apple_health_badge.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = apple_health_badge.svg; sourceTree = "<group>"; };
+		F567AE492AAD52A500A404F8 /* appstore_badge.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = appstore_badge.svg; sourceTree = "<group>"; };
+		F567AE4A2AAD52A500A404F8 /* screenshot1200w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot1200w.png; sourceTree = "<group>"; };
 		F567E36929F278B10026E12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F567E38729F27E180026E12D /* 🩹Workaround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🩹Workaround.swift"; sourceTree = "<group>"; };
 		F567E38D29F2A09A0026E12D /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -369,6 +373,7 @@
 				F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */,
 				F5936C182A6A90B10044B939 /* 📣ADModel.swift */,
 				F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */,
+				F567AE462AAD526600A404F8 /* ForREADME */,
 			);
 			path = "🗄️Rest";
 			sourceTree = "<group>";
@@ -404,6 +409,17 @@
 				F5D521502A6DFE9000BE4D12 /* 🌐Localization */,
 			);
 			path = "🧰SupportingFiles";
+			sourceTree = "<group>";
+		};
+		F567AE462AAD526600A404F8 /* ForREADME */ = {
+			isa = PBXGroup;
+			children = (
+				F567AE472AAD528A00A404F8 /* icon.png */,
+				F567AE492AAD52A500A404F8 /* appstore_badge.svg */,
+				F567AE482AAD52A500A404F8 /* apple_health_badge.svg */,
+				F567AE4A2AAD52A500A404F8 /* screenshot1200w.png */,
+			);
+			path = ForREADME;
 			sourceTree = "<group>";
 		};
 		F567E38E29F2A09A0026E12D /* watchOS */ = {
