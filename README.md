@@ -2,15 +2,15 @@ AppTemplate - iPhone, iPad, Mac, Apple TV, Apple Watch
 ------------------------------------------------------
 _My app template repository_
 
-<a href="https://apps.apple.com/app/id❓" target="blank">
-    <img src="Shared/🗄️Rest/ForREADME/icon.png" width="64">
-    
-    <img src="Shared/🗄️Rest/ForREADME/appstore_badge.svg">
-    
-    <img src="Shared/🗄️Rest/ForREADME/apple_health_badge.svg">
+<img src="Shared/🗄️Rest/ForREADME/icon.png" width="64">
 
-    <img src="Shared/🗄️Rest/ForREADME/screenshot1200w.png" width="600">
+<a href="https://apps.apple.com/app/id❓" target="blank">
+    <img src="Shared/🗄️Rest/ForREADME/appstore_badge.svg">
 </a>
+
+<img src="Shared/🗄️Rest/ForREADME/apple_health_badge.svg">
+
+<img src="Shared/🗄️Rest/ForREADME/screenshot1200w.png" width="600">
 
 
 Description
