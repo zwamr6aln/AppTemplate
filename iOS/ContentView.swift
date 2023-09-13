@@ -4,21 +4,26 @@ struct ContentView: View {
     @EnvironmentObject var 📱: 📱AppModel
     @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @State private var showMenuSheet: Bool = false
     var body: some View {
         Group {
             if self.horizontalSizeClass == .compact {
                 NavigationStack {
-                    Text(verbatim: "Placeholder")
-                        .navigationTitle("AppTemplate")
-                        .toolbar {
-                            NavigationLink {
-                                Self.menuPane()
-                            } label: { Label("Open menu", systemImage: "gear") }
-                        }
+                    List {
+                        Text(verbatim: "Placeholder")
+                        Button("Show menu sheet") { self.showMenuSheet = true }
+                    }
+                    .navigationTitle("AppTemplate")
+                    .toolbar {
+                        NavigationLink {
+                            Self.menuPane()
+                        } label: { Label("Open menu", systemImage: "gear") }
+                    }
                 }
             } else {
                 NavigationSplitView {
                     List {
+                        Button("Show menu sheet") { self.showMenuSheet = true }
                         NavigationLink {
                             NavigationStack {
                                 Form { Toggle("Toggle", isOn: .constant(false)) }
@@ -47,6 +52,9 @@ struct ContentView: View {
                 }
             }
         }
+        .sheet(isPresented: self.$showMenuSheet) {
+            NavigationStack { Self.menuPane() }
+        }
         .modifier(🪧Sheet())
         .modifier(💬RequestUserReview())
         .modifier(🩹Workaround.HideTitleBarOnMacCatalyst())
@@ -74,6 +82,19 @@ extension ContentView {
             }
             🛒InAppPurchaseMenuLink()
         }
+        .modifier(NavigationTitleStyle())
         .navigationTitle("Menu")
+        .toolbar { Image(systemName: "xmark") }
+    }
+}
+
+struct NavigationTitleStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        if #available(iOS  17.0, *) {
+            content
+                .toolbarTitleDisplayMode(.large)
+        } else {
+            content
+        }
     }
 }
