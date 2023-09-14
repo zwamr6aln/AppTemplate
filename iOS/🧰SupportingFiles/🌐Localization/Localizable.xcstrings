@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "About App" : {
-
-    },
     "App for iPhone / iPad / Mac / Apple Watch" : {
       "localizations" : {
         "ja" : {
@@ -25,7 +22,7 @@
       }
     },
     "Description" : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -35,10 +32,8 @@
         }
       }
     },
-    "Detail" : {
-
-    },
     "Dismiss" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -79,7 +74,7 @@
       }
     },
     "OK" : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "ja" : {
           "stringUnit" : {

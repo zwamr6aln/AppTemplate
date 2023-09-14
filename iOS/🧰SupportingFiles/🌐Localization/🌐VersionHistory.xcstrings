@@ -2,7 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     "1.0" : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -19,7 +19,7 @@
       }
     },
     "1.0.1" : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -36,7 +36,7 @@
       }
     },
     "1.1" : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
