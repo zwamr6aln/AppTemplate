@@ -208,6 +208,7 @@ private struct 📓SourceCodeLink: View {
                         .padding()
                 }
             }
+            .environment(\.layoutDirection, .leftToRight)
             .navigationBarTitle(LocalizedStringKey(ⓣitle))
             .font(.caption.monospaced())
             .textSelection(.enabled)

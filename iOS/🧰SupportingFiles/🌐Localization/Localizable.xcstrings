@@ -105,7 +105,14 @@
       }
     },
     "Placeholder" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Placeholder(arabic)"
+          }
+        }
+      }
     },
     "Show menu sheet" : {
 

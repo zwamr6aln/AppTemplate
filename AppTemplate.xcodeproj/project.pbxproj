@@ -586,6 +586,7 @@
 				en,
 				Base,
 				ja,
+				ar,
 			);
 			mainGroup = 12E4A73B285027F600B2380B;
 			productRefGroup = 12E4A745285027F600B2380B /* Products */;
