@@ -48,7 +48,14 @@
 
     },
     "Placeholder" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Placeholder(arabic)"
+          }
+        }
+      }
     },
     "Toggle" : {
 

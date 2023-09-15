@@ -11,7 +11,14 @@
 
     },
     "Placeholder" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Placeholder(arabic)"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

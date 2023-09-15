@@ -120,6 +120,7 @@ private struct 📓SourceCodeWindow: Scene {
                         .padding()
                 }
             }
+            .environment(\.layoutDirection, .leftToRight)
             .navigationTitle(LocalizedStringKey(ⓣitle))
             .textSelection(.enabled)
         }
