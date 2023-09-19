@@ -99,11 +99,13 @@ extension 🗒️StaticInfo {
                              "💬RequestUserReview.swift",
                              "🗒️StaticInfo.swift",
                              "ℹ️HelpWindows.swift",
+                             "ℹ️HelpCommands.swift",
                              "📣ADModel.swift",
                              "📣ADContent.swift",
                              "🛒InAppPurchaseModel.swift",
                              "🛒InAppPurchaseWindow.swift",
-                             "🛒InAppPurchaseMenu.swift"]
+                             "🛒InAppPurchaseMenu.swift",
+                             "🛒InAppPurchaseCommand.swift"]
                 case .Widget: ["Widget.swift"]
             }
         }
