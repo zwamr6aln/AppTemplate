@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct AppTemplate: App {
+struct watchOSApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

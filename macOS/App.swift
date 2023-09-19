@@ -1,19 +1,19 @@
 import SwiftUI
 
 @main
-struct AppTemplate: App {
+struct macOSApp: App {
     //@NSApplicationDelegateAdaptor var ⓓelegate: 🤖AppDelegate
-    private let 📱 = 📱AppModel()
-    private let 🛒 = 🛒InAppPurchaseModel(id: "PLACEHOLDER.adfree")
+    private let appModel = 📱AppModel()
+    private let inAppPurchaseModel = 🛒InAppPurchaseModel(id: "PLACEHOLDER.adfree")
     var body: some Scene {
         Window("Main window", id: "MainWindow") {
             ContentView()
-                .environmentObject(📱)
-                .environmentObject(🛒)
+                .environmentObject(self.appModel)
+                .environmentObject(self.inAppPurchaseModel)
         }
         .commands { 🪄Commands() }
         🔧Settings()
         ℹ️HelpWindows()
-        🛒InAppPurchaseWindow(self.📱)
+        🛒InAppPurchaseWindow(self.appModel)
     }
 }

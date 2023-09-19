@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct AppTemplate: App {
+struct iOSApp: App {
     private let 📱 = 📱AppModel()
     private let 🛒 = 🛒InAppPurchaseModel(id: "PLACEHOLDER.adfree")
     var body: some Scene {
