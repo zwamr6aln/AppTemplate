@@ -12,7 +12,7 @@ struct AppTemplate: App {
                 .environmentObject(🛒)
         }
         .commands { 🪄Commands() }
-        Settings { 🔧Settings() }
+        🔧Settings()
         ℹ️HelpWindows()
         🛒InAppPurchaseWindow(self.📱)
     }
