@@ -15,34 +15,34 @@ struct ℹ️HelpWindows: Scene {
 
 private struct 📰DescriptionWindow: Scene {
     var body: some Scene {
-        Window(Text("Description", tableName: "🌐AboutApp"),
-               id: "Description") {
+        Window(Text("Description", tableName: "🌐AboutApp"), id: "Description") {
             ScrollView {
                 Text("current", tableName: "🌐AppStoreDescription")
                     .padding(24)
             }
             .textSelection(.enabled)
-            .frame(minWidth: 400, minHeight: 400)
+            .frame(width: 600, height: 500)
         }
+        .windowResizability(.contentSize)
     }
 }
 
 private struct 👤PrivacyPolicyWindow: Scene {
     var body: some Scene {
-        Window(Text("Privacy Policy", tableName: "🌐AboutApp"),
-               id: "PrivacyPolicy") {
+        Window(Text("Privacy Policy", tableName: "🌐AboutApp"), id: "PrivacyPolicy") {
             Text(🗒️StaticInfo.privacyPolicyDescription)
+                .font(.title3)
                 .padding(32)
                 .textSelection(.enabled)
-                .frame(minWidth: 400, minHeight: 300)
+                .frame(width: 500, height: 400)
         }
+        .windowResizability(.contentSize)
     }
 }
 
 private struct 📜VersionHistoryWindow: Scene {
     var body: some Scene {
-        Window(Text("Version History", tableName: "🌐AboutApp"),
-               id: "VersionHistory") {
+        Window(Text("Version History", tableName: "🌐AboutApp"), id: "VersionHistory") {
             List {
                 ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
                     GroupBox(ⓘnfo.version) {
@@ -64,15 +64,15 @@ private struct 📜VersionHistoryWindow: Scene {
                     }
                 }
             }
-            .frame(minWidth: 400, minHeight: 600)
+            .frame(width: 350, height: 450)
         }
+        .windowResizability(.contentSize)
     }
 }
 
 private struct 📓SourceCodeWindow: Scene {
     var body: some Scene {
-        Window(Text("Source code", tableName: "🌐AboutApp"),
-               id: "SourceCode") {
+        Window(Text("Source code", tableName: "🌐AboutApp"), id: "SourceCode") {
             NavigationSplitView {
                 List {
                     ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
@@ -82,12 +82,14 @@ private struct 📓SourceCodeWindow: Scene {
                     self.repositoryLinks()
                 }
                 .navigationTitle(Text("Source code", tableName: "🌐AboutApp"))
+                .frame(minWidth: 220)
             } detail: {
                 Text("← Select file", tableName: "🌐AboutApp")
                     .foregroundStyle(.tertiary)
             }
             .frame(minWidth: 1000, minHeight: 600)
         }
+        .windowResizability(.contentMinSize)
     }
     private struct CodeSection: View {
         private var category: 🗒️StaticInfo.SourceCodeCategory
@@ -183,8 +185,7 @@ private struct 📓SourceCodeWindow: Scene {
 
 private struct 🧑‍💻DeveloperPublisherWindow: Scene {
     var body: some Scene {
-        Window(Text("Developer / Publisher", tableName: "🌐AboutApp"),
-               id: "DeveloperPublisher") {
+        Window(Text("Developer / Publisher", tableName: "🌐AboutApp"), id: "DeveloperPublisher") {
             List {
                 Section {
                     GroupBox {
@@ -251,8 +252,9 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                 }
                 Self.jobHuntSection()
             }
-            .frame(minWidth: 400, minHeight: 400)
+            .frame(width: 540, height: 540)
         }
+        .windowResizability(.contentSize)
     }
     private struct TimelineSection: View {
         private static var values: [(date: String, description: String)] {
