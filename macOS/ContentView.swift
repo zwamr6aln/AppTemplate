@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var 📱: 📱AppModel
+    //@EnvironmentObject var model: 📱AppModel
     var body: some View {
         NavigationSplitView {
             List {

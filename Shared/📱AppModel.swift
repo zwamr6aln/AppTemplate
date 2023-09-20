@@ -1,6 +1,6 @@
 import SwiftUI
 
-class 📱AppModel: ObservableObject {
+class 📱AppModel: NSObject, ObservableObject {
 #if os(iOS)
     @Published var showSheet: 🪧Sheet.Source? = nil
 #endif

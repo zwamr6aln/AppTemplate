@@ -1,16 +1,18 @@
 import SwiftUI
 
 struct 🛒InAppPurchaseWindow: Scene {
-    @ObservedObject var app: 📱AppModel
     var body: some Scene {
         Window(Text("In-App Purchase", tableName: "🌐AD&InAppPurchase"), id: "InAppPurchase") {
-            🛒InAppPurchaseMenu()
-                .environmentObject(self.app.inAppPurchaseModel)
+            Self.ContentView()
         }
         .defaultSize(width: 400, height: 700)
         .commandsRemoved()
     }
-    init(_ app: 📱AppModel) {
-        self.app = app
+    private struct ContentView: View {
+        @EnvironmentObject var appModel: 📱AppModel
+        var body: some View {
+            🛒InAppPurchaseMenu()
+                .environmentObject(self.appModel.inAppPurchaseModel)
+        }
     }
 }

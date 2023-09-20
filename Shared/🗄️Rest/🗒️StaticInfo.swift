@@ -95,7 +95,6 @@ extension 🗒️StaticInfo {
                 case .Rest: ["📣ADSheet.swift",
                              "🔧Settings.swift",
                              "🪄Commands.swift",
-                             "🤖AppDelegate.swift",
                              "💬RequestUserReview.swift",
                              "🗒️StaticInfo.swift",
                              "ℹ️HelpWindows.swift",
