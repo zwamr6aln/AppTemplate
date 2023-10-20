@@ -1,5 +1,7 @@
-AppTemplate - iPhone, iPad, Mac, Apple TV, Apple Watch
-------------------------------------------------------
+AppTemplate
+-----------
+__iPhone, iPad, Mac, Apple TV, Apple Watch__
+
 _My app template repository_
 
 <img src="Shared/🗄️Rest/ForREADME/icon.png" width="64">
