@@ -109,7 +109,7 @@ private extension 📣ADContent {
             }
             .foregroundColor(.primary)
         }
-        .accessibilityLabel(Text("Open AppStore page", tableName: "🌐AD&InAppPurchase"))
+        .accessibilityLabel(Text("Open App Store page", tableName: "🌐AD&InAppPurchase"))
         .disabled(self.model.purchased)
     }
     private func menuLink() -> some View {

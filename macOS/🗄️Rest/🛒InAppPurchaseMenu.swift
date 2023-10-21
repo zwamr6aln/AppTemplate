@@ -28,7 +28,7 @@ private extension 🛒InAppPurchaseMenu {
     private static func aboutADSection() -> some View {
         Section {
             GroupBox {
-                Text("This App shows advertisement about applications on AppStore. These are several Apps by this app's developer. It is activated after you launch this app 5 times.",
+                Text("This App shows advertisement about applications on App Store. These are several Apps by this app's developer. It is activated after you launch this app 5 times.",
                      tableName: "🌐AD&InAppPurchase")
                 .padding()
             }
