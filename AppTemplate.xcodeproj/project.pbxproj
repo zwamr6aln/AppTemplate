@@ -350,8 +350,8 @@
 				16A5131C2AF4A4FD0010B780 /* 🏢NavigationView.swift */,
 				F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */,
 				16A5131E2AF4A6040010B780 /* MenuPane.swift */,
-				F5936C162A6A81DE0044B939 /* 🗄️Rest */,
-				F5397F582AA209FA002C90F2 /* 🧰SupportingFiles */,
+				F5936C162A6A81DE0044B939 /* Rest */,
+				F5397F582AA209FA002C90F2 /* SupportingFiles */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -371,24 +371,24 @@
 			isa = PBXGroup;
 			children = (
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
-				F5397F572AA209DB002C90F2 /* 🗄️Rest */,
+				F5397F572AA209DB002C90F2 /* Rest */,
 				F583DC592A6D222B00F02006 /* 🌐Localization */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		F5397F572AA209DB002C90F2 /* 🗄️Rest */ = {
+		F5397F572AA209DB002C90F2 /* Rest */ = {
 			isa = PBXGroup;
 			children = (
 				F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */,
 				F5936C182A6A90B10044B939 /* 📣ADModel.swift */,
 				F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */,
-				F567AE462AAD526600A404F8 /* ForREADME */,
+				F567AE462AAD526600A404F8 /* READMEAssets */,
 			);
-			path = "🗄️Rest";
+			path = Rest;
 			sourceTree = "<group>";
 		};
-		F5397F582AA209FA002C90F2 /* 🧰SupportingFiles */ = {
+		F5397F582AA209FA002C90F2 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
@@ -397,20 +397,20 @@
 				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
 				12E4A76828502EA600B2380B /* 🌐Localization */,
 			);
-			path = "🧰SupportingFiles";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		F5397F592AA20A4C002C90F2 /* 🧰SupportingFiles */ = {
+		F5397F592AA20A4C002C90F2 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				F567E39329F2A09C0026E12D /* Assets.xcassets */,
 				F539EA362A70B9F300A3C80E /* Localizable.xcstrings */,
 				F539EA382A70BA1A00A3C80E /* InfoPlist.xcstrings */,
 			);
-			path = "🧰SupportingFiles";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		F5397F5A2AA20A69002C90F2 /* 🧰SupportingFiles */ = {
+		F5397F5A2AA20A69002C90F2 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				F5A8805E2A693B0F00D534EC /* Assets.xcassets */,
@@ -418,10 +418,10 @@
 				F5E51EB42A98A0A600C53268 /* Info.plist */,
 				F5D521502A6DFE9000BE4D12 /* 🌐Localization */,
 			);
-			path = "🧰SupportingFiles";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		F567AE462AAD526600A404F8 /* ForREADME */ = {
+		F567AE462AAD526600A404F8 /* READMEAssets */ = {
 			isa = PBXGroup;
 			children = (
 				F567AE472AAD528A00A404F8 /* icon.png */,
@@ -429,7 +429,7 @@
 				F567AE482AAD52A500A404F8 /* apple_health_badge.svg */,
 				F567AE4A2AAD52A500A404F8 /* screenshot1200w.png */,
 			);
-			path = ForREADME;
+			path = READMEAssets;
 			sourceTree = "<group>";
 		};
 		F567E38E29F2A09A0026E12D /* watchOS */ = {
@@ -439,7 +439,7 @@
 				F567E39129F2A09A0026E12D /* ContentView.swift */,
 				F539EA432A70D39900A3C80E /* 📱AppModel(extension).swift */,
 				F539EA482A70D5BE00A3C80E /* ℹ️AboutApp.swift */,
-				F5397F592AA20A4C002C90F2 /* 🧰SupportingFiles */,
+				F5397F592AA20A4C002C90F2 /* SupportingFiles */,
 			);
 			path = watchOS;
 			sourceTree = "<group>";
@@ -455,7 +455,7 @@
 			path = "🌐Localization";
 			sourceTree = "<group>";
 		};
-		F58B051E2A6EB158004BE9E5 /* 🗄️Rest */ = {
+		F58B051E2A6EB158004BE9E5 /* Rest */ = {
 			isa = PBXGroup;
 			children = (
 				F586E8B12A6F9BCF00023554 /* 📣ADSheet.swift */,
@@ -467,10 +467,10 @@
 				F58B051B2A6EB0C1004BE9E5 /* 🛒InAppPurchaseMenu.swift */,
 				164915FC2AB9B391009F94E3 /* 🛒InAppPurchaseCommand.swift */,
 			);
-			path = "🗄️Rest";
+			path = Rest;
 			sourceTree = "<group>";
 		};
-		F5936C162A6A81DE0044B939 /* 🗄️Rest */ = {
+		F5936C162A6A81DE0044B939 /* Rest */ = {
 			isa = PBXGroup;
 			children = (
 				F57B37F129726CE300F0BB91 /* 📣ADContent.swift */,
@@ -480,7 +480,7 @@
 				127ECB2B28614B8B00CB1BC3 /* 📣ADComponents.swift */,
 				127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */,
 			);
-			path = "🗄️Rest";
+			path = Rest;
 			sourceTree = "<group>";
 		};
 		F5A880592A693B0C00D534EC /* macOS */ = {
@@ -491,8 +491,8 @@
 				F539EA412A70D37300A3C80E /* 📱AppModel(extension).swift */,
 				F583DC7D2A6DE2D200F02006 /* 🔧Settings.swift */,
 				F583DC812A6DE6DB00F02006 /* 🪄Commands.swift */,
-				F58B051E2A6EB158004BE9E5 /* 🗄️Rest */,
-				F5397F5A2AA20A69002C90F2 /* 🧰SupportingFiles */,
+				F58B051E2A6EB158004BE9E5 /* Rest */,
+				F5397F5A2AA20A69002C90F2 /* SupportingFiles */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -873,7 +873,7 @@
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS/🧰SupportingFiles/Info.plist";
+				INFOPLIST_FILE = iOS/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -910,7 +910,7 @@
 				DEVELOPMENT_TEAM = 6696GEY228;
 				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS/🧰SupportingFiles/Info.plist";
+				INFOPLIST_FILE = iOS/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1002,7 +1002,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "macOS/🧰SupportingFiles/macOS.entitlements";
+				CODE_SIGN_ENTITLEMENTS = macOS/SupportingFiles/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 5;
@@ -1012,7 +1012,7 @@
 				ENABLE_PREVIEWS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "macOS/🧰SupportingFiles/Info.plist";
+				INFOPLIST_FILE = macOS/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1037,7 +1037,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "macOS/🧰SupportingFiles/macOS.entitlements";
+				CODE_SIGN_ENTITLEMENTS = macOS/SupportingFiles/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 5;
@@ -1047,7 +1047,7 @@
 				ENABLE_PREVIEWS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "macOS/🧰SupportingFiles/Info.plist";
+				INFOPLIST_FILE = macOS/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
