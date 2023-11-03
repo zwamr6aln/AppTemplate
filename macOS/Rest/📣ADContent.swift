@@ -22,13 +22,12 @@ struct 📣ADContent: View {
                     self.appStoreBadge()
                     Spacer()
                 }
-                .padding()
-                .padding(.vertical)
+                .padding(8)
             }
             .padding(32)
             .modifier(Self.PurchasedEffect())
         }
-        .frame(minWidth: 700, maxWidth: 1000, minHeight: 500, maxHeight: 600)
+        .frame(width: 700, height: 430)
         .onChange(of: self.model.purchased) { if $0 { self.disableDismiss = false } }
         .onReceive(self.timer) { _ in
             if self.countDown > 1 {
