@@ -7,7 +7,7 @@ struct MacOSApp: App {
         Window("Primary", id: "primary") {
             ContentView()
         }
-        .commands { 🪄Commands() }
+        .commands { 🪄Commands(self.model) }
         🔧Settings()
         ℹ️HelpWindows()
         🛒InAppPurchaseWindow()
