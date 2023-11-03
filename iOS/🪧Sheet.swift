@@ -5,7 +5,7 @@ struct 🪧Sheet: ViewModifier {
     @EnvironmentObject var inAppPurchaseModel: 🛒InAppPurchaseModel
     func body(content: Content) -> some View {
         content
-            .sheet(item: $model.presentedSheet) {
+            .sheet(item: self.$model.presentedSheet) {
                 switch $0 {
                     case .menu: NavigationStack { MenuPane() }
                     case .placeholder: Text("Placeholder")
@@ -15,7 +15,7 @@ struct 🪧Sheet: ViewModifier {
                 }
             }
             .onAppear {
-                if self.inAppPurchaseModel.checkToShowADSheet() { model.presentedSheet = .ad }
+                if self.inAppPurchaseModel.checkToShowADSheet() { self.model.presentedSheet = .ad }
             }
     }
     enum Source: Identifiable {

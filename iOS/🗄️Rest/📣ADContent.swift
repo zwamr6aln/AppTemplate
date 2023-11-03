@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct 📣ADContent: View {
-    @State private var app: 📣ADTargetApp = .pickUpAppWithout(.FlipByBlink)
+    @State private var pickedApp: 📣ADTargetApp = .pickUpAppWithout(.FlipByBlink)
     var body: some View {
-        📣ADView(self.app, second: 9)
+        📣ADView(self.pickedApp, second: 9)
     }
 }

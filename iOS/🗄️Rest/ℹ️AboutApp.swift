@@ -64,7 +64,7 @@ private struct 📰AppStoreDescriptionSection: View {
                         .padding(UIDevice.current.userInterfaceIdiom == .pad ? 32 : 16)
                         .frame(maxWidth: .infinity)
                 }
-                .navigationBarTitle(Text("Description", tableName: "🌐AboutApp"))
+                .navigationBarTitle(.init("Description", tableName: "🌐AboutApp"))
                 .textSelection(.enabled)
             } label: {
                 Text(self.textWithoutEmptyLines)
@@ -72,7 +72,7 @@ private struct 📰AppStoreDescriptionSection: View {
                     .lineSpacing(5)
                     .lineLimit(7)
                     .padding(8)
-                    .accessibilityLabel(Text("Description", tableName: "🌐AboutApp"))
+                    .accessibilityLabel(.init("Description", tableName: "🌐AboutApp"))
             }
         } header: {
             Text("Description", tableName: "🌐AboutApp")
@@ -116,7 +116,7 @@ private struct 👤PrivacyPolicySection: View {
                         .textSelection(.enabled)
                         .frame(maxWidth: .infinity)
                 }
-                .navigationTitle(Text("Privacy Policy", tableName: "🌐AboutApp"))
+                .navigationTitle(.init("Privacy Policy", tableName: "🌐AboutApp"))
             } label: {
                 Label(String(localized: "Privacy Policy", table: "🌐AboutApp"),
                       systemImage: "person.text.rectangle")
@@ -148,13 +148,13 @@ private struct 📜VersionHistoryLink: View {
                         .headerProminence(.increased)
                     }
                 }
-                .navigationBarTitle(Text("Version History", tableName: "🌐AboutApp"))
+                .navigationBarTitle(.init("Version History", tableName: "🌐AboutApp"))
             } label: {
                 Label(String(localized: "Version", table: "🌐AboutApp"),
                       systemImage: "signpost.left")
                 .badge(🗒️StaticInfo.versionInfos.first?.version ?? "🐛")
             }
-            .accessibilityLabel(Text("Version History", tableName: "🌐AboutApp"))
+            .accessibilityLabel(.init("Version History", tableName: "🌐AboutApp"))
         }
     }
 }
@@ -167,7 +167,7 @@ private struct 📓SourceCodeLink: View {
                 self.bundleMainInfoDictionary()
                 self.repositoryLinks()
             }
-            .navigationTitle(Text("Source code", tableName: "🌐AboutApp"))
+            .navigationTitle(.init("Source code", tableName: "🌐AboutApp"))
         } label: {
             Label(String(localized: "Source code", table: "🌐AboutApp"),
                   systemImage: "doc.plaintext")
@@ -223,7 +223,7 @@ private struct 📓SourceCodeLink: View {
                         }
                     }
                 }
-                .navigationBarTitle(Text(verbatim: "Bundle.main.infoDictionary"))
+                .navigationBarTitle(.init(verbatim: "Bundle.main.infoDictionary"))
                 .textSelection(.enabled)
             }
         }
@@ -308,7 +308,7 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
                 }
                 Self.jobHuntSection()
             }
-            .navigationTitle(Text("Developer / Publisher", tableName: "🌐AboutApp"))
+            .navigationTitle(.init("Developer / Publisher", tableName: "🌐AboutApp"))
         } label: {
             Label(String(localized: "Developer / Publisher", table: "🌐AboutApp"),
                   systemImage: "person")
