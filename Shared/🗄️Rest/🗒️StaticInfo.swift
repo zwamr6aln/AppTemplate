@@ -4,7 +4,7 @@ enum 🗒️StaticInfo {
     static let appName: LocalizedStringKey = "AppTemplate"
     static let appSubTitle: LocalizedStringKey = "App for iPhone / iPad / Mac / Apple Watch"
     
-    static let appStoreProductURL = URL(string: "https://apps.apple.com/app/id?")!
+    static let appStoreProductURL: URL = .init(string: "https://apps.apple.com/app/id?")!
     static var appStoreUserReviewURL: URL { .init(string: "\(Self.appStoreProductURL)?action=write-review")! }
     
     static var contactAddress: String { "sear_pandora_0x@icloud.com" }
@@ -23,8 +23,8 @@ enum 🗒️StaticInfo {
         このアプリ自身において、ユーザーの情報を一切収集しません。
         """
     
-    static let webRepositoryURL = URL(string: "https://github.com/FlipByBlink/?")!
-    static let webMirrorRepositoryURL = URL(string: "https://gitlab.com/FlipByBlink/?_Mirror")!
+    static let webRepositoryURL: URL = .init(string: "https://github.com/FlipByBlink/?")!
+    static let webMirrorRepositoryURL: URL = .init(string: "https://gitlab.com/FlipByBlink/?_Mirror")!
 }
 
 #if os(iOS)

@@ -5,4 +5,7 @@ extension 📱AppModel: NSApplicationDelegate {
         let ⓐpp = notification.object as! NSApplication
         print("🖨️ \(self), \(String(describing: ⓐpp.menu?.items))")
     }
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        false
+    }
 }
