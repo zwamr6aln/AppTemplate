@@ -119,7 +119,7 @@ private extension 📣ADContent {
             Image(systemName: "questionmark")
         }
         .accessibilityLabel(.init("About AD", tableName: "🌐AD&InAppPurchase"))
-        .help(Text("About AD", tableName: "🌐AD&InAppPurchase"))
+        .help(.init("About AD", tableName: "🌐AD&InAppPurchase"))
     }
     private func dismissButton() -> some View {
         Button {
@@ -153,3 +153,6 @@ private extension 📣ADContent {
         }
     }
 }
+
+//シート上のAssetsのImageを読み込むと以下のログが出る
+//>This method should not be called on the main thread as it may lead to UI unresponsiveness.
