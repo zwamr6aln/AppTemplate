@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct MenuPane: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         List {
             Text(verbatim: "Placeholder")
@@ -19,6 +20,14 @@ struct MenuPane: View {
             🛒InAppPurchaseMenuLink()
         }
         .navigationTitle("Menu")
-        .toolbar { Image(systemName: "xmark") }
+        .toolbar {
+            Button(role: .cancel) {
+                self.dismiss()
+            } label: {
+                Image(systemName: "xmark.circle.fill")
+                    .symbolRenderingMode(.hierarchical)
+                    .tint(.secondary)
+            }
+        }
     }
 }
