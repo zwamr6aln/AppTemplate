@@ -28,17 +28,6 @@
     "Link" : {
 
     },
-    "Main window" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "メインウィンドウ"
-          }
-        }
-      }
-    },
     "No select" : {
 
     },
