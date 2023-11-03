@@ -2,13 +2,13 @@ import SwiftUI
 
 @main
 struct IOSApp: App {
-    private let 📱 = 📱AppModel()
-    private let 🛒 = 🛒InAppPurchaseModel(id: "PLACEHOLDER.adfree")
+    @StateObject var model = 📱AppModel()
+    @StateObject var inAppPurchaseModel = 🛒InAppPurchaseModel(id: "PLACEHOLDER.adfree")
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(📱)
-                .environmentObject(🛒)
+                .environmentObject(self.model)
+                .environmentObject(self.inAppPurchaseModel)
         }
     }
 }

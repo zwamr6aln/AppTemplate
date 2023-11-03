@@ -29,6 +29,7 @@
 
     },
     "Main window" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -56,6 +57,9 @@
           }
         }
       }
+    },
+    "Primary" : {
+
     },
     "Toggle" : {
 

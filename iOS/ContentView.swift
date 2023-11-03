@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var 📱: 📱AppModel
-    @EnvironmentObject var 🛒: 🛒InAppPurchaseModel
+    @EnvironmentObject var model: 📱AppModel
+    @EnvironmentObject var inAppPurchaseModel: 🛒InAppPurchaseModel
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @State private var showMenuSheet: Bool = false
     var body: some View {

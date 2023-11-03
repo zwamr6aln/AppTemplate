@@ -2,7 +2,7 @@ import SwiftUI
 
 class 📱AppModel: NSObject, ObservableObject {
 #if os(iOS)
-    @Published var showSheet: 🪧Sheet.Source? = nil
+    @Published var presentedSheet: 🪧Sheet.Source? = nil
 #endif
     
 #if os(iOS) || os(macOS)
