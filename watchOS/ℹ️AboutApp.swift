@@ -8,7 +8,7 @@ struct ℹ️AboutAppMenu: View {
             👤PrivacyPolicyLink()
             📓SourceCodeLink()
         }
-        .navigationTitle(Text("About App", tableName: "🌐AboutApp"))
+        .navigationTitle(.init("About App", tableName: "🌐AboutApp"))
     }
 }
 
@@ -66,7 +66,7 @@ private struct 👤PrivacyPolicyLink: View {
                     Text(🗒️StaticInfo.privacyPolicyDescription)
                         .padding()
                 }
-                .navigationTitle(Text("Privacy Policy", tableName: "🌐AboutApp"))
+                .navigationTitle(.init("Privacy Policy", tableName: "🌐AboutApp"))
             } label: {
                 Label(String(localized: "Privacy Policy", table: "🌐AboutApp"),
                       systemImage: "person.text.rectangle")
@@ -82,7 +82,7 @@ private struct 📓SourceCodeLink: View {
                 ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
                 self.bundleMainInfoDictionary()
             }
-            .navigationTitle(Text("Source code", tableName: "🌐AboutApp"))
+            .navigationTitle(.init("Source code", tableName: "🌐AboutApp"))
         } label: {
             Label(String(localized: "Source code", table: "🌐AboutApp"),
                   systemImage: "doc.plaintext")
@@ -133,7 +133,7 @@ private struct 📓SourceCodeLink: View {
                         }
                     }
                 }
-                .navigationBarTitle(Text(verbatim: "Bundle.main.infoDictionary"))
+                .navigationBarTitle(.init(verbatim: "Bundle.main.infoDictionary"))
             }
         }
     }

@@ -2,7 +2,7 @@ import SwiftUI
 
 struct 🛒InAppPurchaseWindow: Scene {
     var body: some Scene {
-        Window(Text("In-App Purchase", tableName: "🌐AD&InAppPurchase"), id: "InAppPurchase") {
+        Window(.init("In-App Purchase", tableName: "🌐AD&InAppPurchase"), id: "InAppPurchase") {
             Self.ContentView()
         }
         .defaultSize(width: 400, height: 700)

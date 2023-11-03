@@ -19,7 +19,7 @@ struct 🛒InAppPurchaseMenu: View {
             }
             .headerProminence(.increased)
         }
-        .navigationTitle(Text("In-App Purchase", tableName: "🌐AD&InAppPurchase"))
+        .navigationTitle(.init("In-App Purchase", tableName: "🌐AD&InAppPurchase"))
         .frame(minWidth: 400, minHeight: 640)
     }
 }
@@ -88,16 +88,16 @@ private extension 🛒InAppPurchaseMenu {
                         self.buyingInProgress = false
                     }
                 }
-                .accessibilityLabel(Text("Buy", tableName: "🌐AD&InAppPurchase"))
+                .accessibilityLabel(.init("Buy", tableName: "🌐AD&InAppPurchase"))
                 .disabled(self.buyingInProgress)
                 .buttonStyle(.borderedProminent)
                 .overlay {
                     if self.buyingInProgress { ProgressView() }
                 }
                 .alert(isPresented: self.$showError) {
-                    Alert(title: Text("Error", tableName: "🌐AD&InAppPurchase"),
-                          message: Text(self.errorMessage),
-                          dismissButton: .default(Text("OK", tableName: "🌐AD&InAppPurchase")))
+                    Alert(title: .init("Error", tableName: "🌐AD&InAppPurchase"),
+                          message: .init(self.errorMessage),
+                          dismissButton: .default(.init("OK", tableName: "🌐AD&InAppPurchase")))
                 }
             }
             .disabled(self.model.unconnected)
@@ -139,9 +139,9 @@ private extension 🛒InAppPurchaseMenu {
             }
             .disabled(self.restoringInProgress)
             .alert(isPresented: self.$showAlert) {
-                Alert(title: Text(self.syncSuccess ? "Done" : "Error", tableName: "🌐AD&InAppPurchase"),
-                      message: Text(LocalizedStringKey(self.alertMessage)),
-                      dismissButton: .default(Text("OK", tableName: "🌐AD&InAppPurchase")))
+                Alert(title: .init(self.syncSuccess ? "Done" : "Error", tableName: "🌐AD&InAppPurchase"),
+                      message: .init(LocalizedStringKey(self.alertMessage)),
+                      dismissButton: .default(.init("OK", tableName: "🌐AD&InAppPurchase")))
             }
         }
     }

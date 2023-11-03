@@ -15,7 +15,7 @@ struct ℹ️HelpWindows: Scene {
 
 private struct 📰DescriptionWindow: Scene {
     var body: some Scene {
-        Window(Text("Description", tableName: "🌐AboutApp"), id: "Description") {
+        Window(.init("Description", tableName: "🌐AboutApp"), id: "Description") {
             ScrollView {
                 Text("current", tableName: "🌐AppStoreDescription")
                     .padding(24)
@@ -29,7 +29,7 @@ private struct 📰DescriptionWindow: Scene {
 
 private struct 👤PrivacyPolicyWindow: Scene {
     var body: some Scene {
-        Window(Text("Privacy Policy", tableName: "🌐AboutApp"), id: "PrivacyPolicy") {
+        Window(.init("Privacy Policy", tableName: "🌐AboutApp"), id: "PrivacyPolicy") {
             Text(🗒️StaticInfo.privacyPolicyDescription)
                 .font(.title3)
                 .padding(32)
@@ -42,7 +42,7 @@ private struct 👤PrivacyPolicyWindow: Scene {
 
 private struct 📜VersionHistoryWindow: Scene {
     var body: some Scene {
-        Window(Text("Version History", tableName: "🌐AboutApp"), id: "VersionHistory") {
+        Window(.init("Version History", tableName: "🌐AboutApp"), id: "VersionHistory") {
             List {
                 ForEach(🗒️StaticInfo.versionInfos, id: \.version) { ⓘnfo in
                     GroupBox(ⓘnfo.version) {
@@ -72,7 +72,7 @@ private struct 📜VersionHistoryWindow: Scene {
 
 private struct 📓SourceCodeWindow: Scene {
     var body: some Scene {
-        Window(Text("Source code", tableName: "🌐AboutApp"), id: "SourceCode") {
+        Window(.init("Source code", tableName: "🌐AboutApp"), id: "SourceCode") {
             NavigationSplitView {
                 List {
                     ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
@@ -81,7 +81,7 @@ private struct 📓SourceCodeWindow: Scene {
                     Divider()
                     self.repositoryLinks()
                 }
-                .navigationTitle(Text("Source code", tableName: "🌐AboutApp"))
+                .navigationTitle(.init("Source code", tableName: "🌐AboutApp"))
                 .frame(minWidth: 220)
             } detail: {
                 Text("← Select file", tableName: "🌐AboutApp")
@@ -128,7 +128,7 @@ private struct 📓SourceCodeWindow: Scene {
         }
     }
     private func bundleMainInfoDictionary() -> some View {
-        NavigationLink(String("Bundle.main.infoDictionary")) {
+        NavigationLink("Bundle.main.infoDictionary" as String) {
             Form {
                 if let ⓓictionary = Bundle.main.infoDictionary {
                     ForEach(ⓓictionary.map({$0.key}), id: \.self) {
@@ -136,7 +136,7 @@ private struct 📓SourceCodeWindow: Scene {
                     }
                 }
             }
-            .navigationTitle(Text(verbatim: "Bundle.main.infoDictionary"))
+            .navigationTitle(.init(verbatim: "Bundle.main.infoDictionary"))
             .textSelection(.enabled)
         }
     }
@@ -175,7 +175,7 @@ private struct 📓SourceCodeWindow: Scene {
                 }
                 Spacer()
             }
-            .navigationTitle(String(localized: "Web Repository", table: "🌐AboutApp"))
+            .navigationTitle(.init("Web Repository", tableName: "🌐AboutApp"))
         } label: {
             Label(String(localized: "Web Repository", table: "🌐AboutApp"),
                   systemImage: "link")
@@ -185,7 +185,7 @@ private struct 📓SourceCodeWindow: Scene {
 
 private struct 🧑‍💻DeveloperPublisherWindow: Scene {
     var body: some Scene {
-        Window(Text("Developer / Publisher", tableName: "🌐AboutApp"), id: "DeveloperPublisher") {
+        Window(.init("Developer / Publisher", tableName: "🌐AboutApp"), id: "DeveloperPublisher") {
             List {
                 Section {
                     GroupBox {

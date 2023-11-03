@@ -109,7 +109,7 @@ private extension 📣ADContent {
             }
             .foregroundColor(.primary)
         }
-        .accessibilityLabel(Text("Open App Store page", tableName: "🌐AD&InAppPurchase"))
+        .accessibilityLabel(.init("Open App Store page", tableName: "🌐AD&InAppPurchase"))
         .disabled(self.model.purchased)
     }
     private func menuLink() -> some View {
@@ -118,7 +118,7 @@ private extension 📣ADContent {
         } label: {
             Image(systemName: "questionmark")
         }
-        .accessibilityLabel(Text("About AD", tableName: "🌐AD&InAppPurchase"))
+        .accessibilityLabel(.init("About AD", tableName: "🌐AD&InAppPurchase"))
         .help(Text("About AD", tableName: "🌐AD&InAppPurchase"))
     }
     private func dismissButton() -> some View {
@@ -129,7 +129,7 @@ private extension 📣ADContent {
                 .fontWeight(.medium)
         }
         .opacity(self.disableDismiss ? 0.33 : 1)
-        .accessibilityLabel(Text("Dismiss", tableName: "🌐AD&InAppPurchase"))
+        .accessibilityLabel(.init("Dismiss", tableName: "🌐AD&InAppPurchase"))
         .keyboardShortcut(.cancelAction)
     }
     private struct PurchasedEffect: ViewModifier {
