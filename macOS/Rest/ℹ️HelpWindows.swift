@@ -18,7 +18,8 @@ private struct 📰DescriptionWindow: Scene {
         Window(.init("Description", tableName: "🌐AboutApp"), id: "Description") {
             ScrollView {
                 Text("current", tableName: "🌐AppStoreDescription")
-                    .padding(24)
+                    .padding(32)
+                    .frame(maxWidth: .infinity)
             }
             .textSelection(.enabled)
             .frame(width: 600, height: 500)
@@ -62,6 +63,8 @@ private struct 📜VersionHistoryWindow: Scene {
                         }
                         .padding()
                     }
+                    .padding(.vertical, 4)
+                    .listRowSeparator(.hidden)
                 }
             }
             .frame(width: 350, height: 450)
@@ -82,7 +85,7 @@ private struct 📓SourceCodeWindow: Scene {
                     self.repositoryLinks()
                 }
                 .navigationTitle(.init("Source code", tableName: "🌐AboutApp"))
-                .frame(minWidth: 280)
+                .frame(minWidth: 270)
             } detail: {
                 Text("← Select file", tableName: "🌐AboutApp")
                     .foregroundStyle(.tertiary)
@@ -196,6 +199,7 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                         }
                         .padding(4)
                     }
+                    .listRowSeparator(.hidden)
                 } header: {
                     Text("The System", tableName: "🌐AboutApp")
                 }
@@ -204,6 +208,7 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                         LabeledContent("山下 亮" as String, value: "Yamashita Ryo")
                             .padding(4)
                     }
+                    .listRowSeparator(.hidden)
                 } header: {
                     Text("Name", tableName: "🌐AboutApp")
                 }
@@ -231,6 +236,7 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                         }
                         .padding(4)
                     }
+                    .listRowSeparator(.hidden)
                 } header: {
                     Text("background", tableName: "🌐AboutApp")
                 }
@@ -291,6 +297,7 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                         }
                     }
                 }
+                .listRowSeparator(.hidden)
             } header: {
                 Text("Timeline", tableName: "🌐AboutApp")
             }
