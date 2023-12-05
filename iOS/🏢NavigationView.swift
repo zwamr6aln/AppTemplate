@@ -15,10 +15,12 @@ struct 🏢NavigationView: View {
                 .toolbar {
                     NavigationLink {
                         MenuPane()
+                            .modifier(FixWidthForIPad())
                     } label: {
                         Label("Open menu", systemImage: "gear")
                     }
                 }
+                .modifier(FixWidthForIPad())
             }
         } else {
             NavigationSplitView {
@@ -50,6 +52,7 @@ struct 🏢NavigationView: View {
             } detail: {
                 Text(verbatim: "Detail")
             }
+            .navigationSplitViewStyle(.balanced)
         }
     }
 }
