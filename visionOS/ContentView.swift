@@ -43,6 +43,8 @@ struct ContentView: View {
         } detail: {
             Text(verbatim: "Detail")
                 .help("Help Content")
+                .padding()
+                .background(in: .rect(cornerRadius: 12, style: .continuous))
         }
         .persistentSystemOverlays(.hidden)
         .frame(minWidth: 800)
