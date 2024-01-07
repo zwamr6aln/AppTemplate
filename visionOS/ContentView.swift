@@ -42,7 +42,9 @@ struct ContentView: View {
             .navigationTitle("AppTemplate")
         } detail: {
             Text(verbatim: "Detail")
+                .help("Help Content")
         }
+        .persistentSystemOverlays(.hidden)
         .frame(minWidth: 800)
     }
 }
