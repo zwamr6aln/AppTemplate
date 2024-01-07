@@ -1,6 +1,6 @@
 AppTemplate
 -----------
-__iPhone, iPad, Mac, Apple TV, Apple Watch__
+__iPhone, iPad, Mac, Apple TV, Apple Watch, Apple Vision__
 
 _My app template repository_
 
