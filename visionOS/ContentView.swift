@@ -7,13 +7,16 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             List {
-                Button("Show menu sheet") {}
                 NavigationLink {
                     NavigationStack {
-                        Form { Toggle("Toggle", isOn: .constant(false)) }
-                            .navigationTitle("Option")
+                        Form {
+                            Toggle("Toggle", isOn: .constant(false))
+                        }
+                        .navigationTitle("Option")
                     }
-                } label: { Label("Option", systemImage: "gear") }
+                } label: {
+                    Label("Option", systemImage: "gear")
+                }
                 NavigationLink {
                     NavigationStack {
                         List {
@@ -21,7 +24,9 @@ struct ContentView: View {
                         }
                         .navigationTitle("Menu")
                     }
-                } label: { Label("Menu", systemImage: "gearshape") }
+                } label: {
+                    Label("Menu", systemImage: "gearshape")
+                }
                 NavigationLink {
                     NavigationStack {
                         List {
@@ -38,6 +43,6 @@ struct ContentView: View {
         } detail: {
             Text(verbatim: "Detail")
         }
-        .navigationSplitViewStyle(.balanced)
+        .frame(minWidth: 800)
     }
 }
