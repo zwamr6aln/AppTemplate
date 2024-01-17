@@ -4,15 +4,15 @@ __iPhone, iPad, Mac, Apple TV, Apple Watch, Apple Vision__
 
 _My app template repository_
 
-<img src="Shared/Rest/READMEAssets/icon.png" width="64">
+<img src="Shared/Supporting files/README assets/icon.png" width="64">
 
 <a href="https://apps.apple.com/app/id❓" target="blank">
-    <img src="Shared/Rest/READMEAssets/appstore_badge.svg">
+    <img src="Shared/Supporting files/README assets/appstore_badge.svg">
 </a>
 
-<img src="Shared/Rest/READMEAssets/apple_health_badge.svg">
+<img src="Shared/Supporting files/README assets/apple_health_badge.svg">
 
-<img src="Shared/Rest/READMEAssets/screenshot1200w.png" width="600">
+<img src="Shared/Supporting files/README assets/screenshot1200w.png" width="600">
 
 
 Description
