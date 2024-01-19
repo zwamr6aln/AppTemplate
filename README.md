@@ -1,6 +1,6 @@
 AppTemplate
 -----------
-__iPhone, iPad, Mac, Apple TV, Apple Watch, Apple Vision__
+__iPhone, iPad, Mac, Apple TV, Apple Watch, Apple Vision Pro__
 
 _My app template repository_
 
@@ -27,6 +27,11 @@ Option
 - placeholder
 
 
+App Store link
+--------------
+[apps.apple.com/app/id????](https://apps.apple.com/app/id????)
+
+
 Source code link
 -----------------
 https://github.com/FlipByBlink/❓
@@ -48,24 +53,24 @@ sear_pandora_0x@icloud.com
 <br>
 
 
-Privacy Policy for AppStore
----------------------------
+Privacy Policy for App Store
+----------------------------
 2022-❓-❓
-
-### Japanese
-このアプリ自身において、ユーザーの情報を一切収集しません。
 
 ### English
 This application don't collect user infomation.
 
-
-<br>
-<br>
-<br>
-<br>
+### Japanese
+このアプリ自身において、ユーザーの情報を一切収集しません。
 
 
-<!-- URL "Support page for AppStore" -->
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- URL "Support page for App Store" -->
 <!-- https://flipbyblink.github.io/❓/ -->
-<!-- URL "Privacy Policy for AppStore" -->
-<!-- https://flipbyblink.github.io/❓/#privacy-policy-for-appstore -->
+<!-- URL "Privacy Policy for App Store" -->
+<!-- https://flipbyblink.github.io/❓/#privacy-policy-for-app-store -->
