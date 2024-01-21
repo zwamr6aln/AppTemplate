@@ -32,7 +32,6 @@
 		16A5131D2AF4A4FD0010B780 /* 🏢NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5131C2AF4A4FD0010B780 /* 🏢NavigationView.swift */; };
 		16A5131F2AF4A6040010B780 /* MenuPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5131E2AF4A6040010B780 /* MenuPane.swift */; };
 		16EF413E2B5D1D29002312FA /* ℹ️AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
-		16EF41402B5D1D47002312FA /* ℹ️AboutAppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */; };
 		16EF41442B5D1FEE002312FA /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
 		16EF41452B5D1FEE002312FA /* 🗒️StaticInfo.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		16EF41462B5D1FEE002312FA /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
@@ -41,11 +40,11 @@
 		16EF414C2B5D2D64002312FA /* AboutApp.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414B2B5D2D64002312FA /* AboutApp.xcassets */; };
 		16EF414E2B5D2DC6002312FA /* AD+InAppPurchase.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */; };
 		16EF414F2B5D2DC6002312FA /* AD+InAppPurchase.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */; };
-		16EF41512B5D33F5002312FA /* ℹ️AboutAppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */; };
 		16EF41572B5D39D4002312FA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 16EF41532B5D39D4002312FA /* Localizable.xcstrings */; };
 		16EF41582B5D39D4002312FA /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 16EF41542B5D39D4002312FA /* InfoPlist.xcstrings */; };
 		16EF41592B5D39D4002312FA /* 🌐VersionHistory.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 16EF41552B5D39D4002312FA /* 🌐VersionHistory.xcstrings */; };
 		16EF415A2B5D39D4002312FA /* 🌐AppStoreDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 16EF41562B5D39D4002312FA /* 🌐AppStoreDescription.xcstrings */; };
+		16EF415C2B5D3D9B002312FA /* ℹ️AboutAppMenu+Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu+Tab.swift */; };
 		F501E9C72A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C82A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C92A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
@@ -155,7 +154,6 @@
 			dstPath = "📁SourceCode";
 			dstSubfolderSpec = 7;
 			files = (
-				16EF41512B5D33F5002312FA /* ℹ️AboutAppMenu.swift in CopyFiles */,
 				16EF41442B5D1FEE002312FA /* 📱AppModel.swift in CopyFiles */,
 				16EF41452B5D1FEE002312FA /* 🗒️StaticInfo.swift in CopyFiles */,
 				16EF41462B5D1FEE002312FA /* ℹ️AboutApp.swift in CopyFiles */,
@@ -277,7 +275,7 @@
 		168E36222B1EA6EC00067F9C /* FixWidthForIPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixWidthForIPad.swift; sourceTree = "<group>"; };
 		16A5131C2AF4A4FD0010B780 /* 🏢NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🏢NavigationView.swift"; sourceTree = "<group>"; };
 		16A5131E2AF4A6040010B780 /* MenuPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPane.swift; sourceTree = "<group>"; };
-		16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutAppMenu.swift"; sourceTree = "<group>"; };
+		16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu+Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutAppMenu+Tab.swift"; sourceTree = "<group>"; };
 		16EF414B2B5D2D64002312FA /* AboutApp.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AboutApp.xcassets; sourceTree = "<group>"; };
 		16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "AD+InAppPurchase.xcassets"; sourceTree = "<group>"; };
 		16EF41532B5D39D4002312FA /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -446,7 +444,7 @@
 			children = (
 				167C50352B4A46A200531BC5 /* App.swift */,
 				167C50372B4A46A200531BC5 /* ContentView.swift */,
-				16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */,
+				16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu+Tab.swift */,
 				16EF415B2B5D39E3002312FA /* Supporting files */,
 			);
 			path = visionOS;
@@ -851,11 +849,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16EF41402B5D1D47002312FA /* ℹ️AboutAppMenu.swift in Sources */,
 				167C50422B4A47DC00531BC5 /* 🗒️StaticInfo.swift in Sources */,
 				16EF413E2B5D1D29002312FA /* ℹ️AboutApp.swift in Sources */,
 				167C50452B4A47DC00531BC5 /* 📱AppModel.swift in Sources */,
 				167C50382B4A46A200531BC5 /* ContentView.swift in Sources */,
+				16EF415C2B5D3D9B002312FA /* ℹ️AboutAppMenu+Tab.swift in Sources */,
 				167C50362B4A46A200531BC5 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,6 +5,11 @@ struct ContentView: View {
     @State private var presentAboutApp: Bool = false
     var body: some View {
         TabView {
+            ℹ️AboutAppTab()
+                .tabItem {
+                    Label(String(localized: "About App", table: "🌐AboutApp"),
+                          systemImage: "info")
+                }
             NavigationSplitView {
                 List {
                     NavigationLink {
@@ -54,11 +59,6 @@ struct ContentView: View {
             .frame(minWidth: 800)
             .sheet(isPresented: self.$presentAboutApp) { ℹ️AboutAppMenu() }
             .tabItem { Label("Home", systemImage: "house") }
-            ℹ️AboutAppMenu()
-                .tabItem {
-                    Label(String(localized: "About App", table: "🌐AboutApp"),
-                          systemImage: "info")
-                }
         }
     }
 }

@@ -22,3 +22,16 @@ struct ℹ️AboutAppMenu: View {
         }
     }
 }
+
+struct ℹ️AboutAppTab: View {
+    @Environment(\.dismiss) var dismiss
+    var body: some View {
+        NavigationStack {
+            List {
+                ℹ️AboutAppContent()
+            }
+            .frame(maxWidth: 600)
+            .navigationTitle(String(localized: "About App", table: "🌐AboutApp"))
+        }
+    }
+}

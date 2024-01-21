@@ -151,7 +151,7 @@ extension 🗒️StaticInfo {
                 case .Rest: [
                     "🗒️StaticInfo.swift",
                     "ℹ️AboutApp.swift",
-                    "ℹ️AboutAppMenu.swift"
+                    "ℹ️AboutAppMenu+Tab.swift"
                 ]
             }
         }
