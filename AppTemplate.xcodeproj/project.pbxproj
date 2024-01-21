@@ -42,6 +42,9 @@
 		16EF41472B5D1FEE002312FA /* App.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 167C50352B4A46A200531BC5 /* App.swift */; };
 		16EF41482B5D1FEE002312FA /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 167C50372B4A46A200531BC5 /* ContentView.swift */; };
 		16EF41492B5D1FEE002312FA /* ℹ️AboutAppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */; };
+		16EF414C2B5D2D64002312FA /* AboutApp.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414B2B5D2D64002312FA /* AboutApp.xcassets */; };
+		16EF414E2B5D2DC6002312FA /* AD+InAppPurchase.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */; };
+		16EF414F2B5D2DC6002312FA /* AD+InAppPurchase.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */; };
 		F501E9C72A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C82A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C92A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
@@ -274,6 +277,8 @@
 		16A5131C2AF4A4FD0010B780 /* 🏢NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🏢NavigationView.swift"; sourceTree = "<group>"; };
 		16A5131E2AF4A6040010B780 /* MenuPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPane.swift; sourceTree = "<group>"; };
 		16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutAppMenu.swift"; sourceTree = "<group>"; };
+		16EF414B2B5D2D64002312FA /* AboutApp.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AboutApp.xcassets; sourceTree = "<group>"; };
+		16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "AD+InAppPurchase.xcassets"; sourceTree = "<group>"; };
 		F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🗒️StaticInfo.swift"; sourceTree = "<group>"; };
 		F52916792A9855AD002BB58E /* 🛒InAppPurchaseWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseWindow.swift"; sourceTree = "<group>"; };
 		F531FA182A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐ADAppDescription.xcstrings"; sourceTree = "<group>"; };
@@ -424,6 +429,7 @@
 		16267B4B2B57965C000CA8AD /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				16EF414A2B5D2D47002312FA /* Assets */,
 				F583DC592A6D222B00F02006 /* 🌐Localization */,
 				F567AE462AAD526600A404F8 /* README assets */,
 			);
@@ -448,6 +454,15 @@
 				167C50322B4A46A200531BC5 /* RealityKitContent */,
 			);
 			path = Packages;
+			sourceTree = "<group>";
+		};
+		16EF414A2B5D2D47002312FA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				16EF414B2B5D2D64002312FA /* AboutApp.xcassets */,
+				16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		F501E9C52A6A2E7C00E9F9A6 /* Shared */ = {
@@ -731,6 +746,7 @@
 				F583DC732A6D22F500F02006 /* 🌐AboutApp.xcstrings in Resources */,
 				F539EA342A70B6CB00A3C80E /* InfoPlist.xcstrings in Resources */,
 				F53A8F9D2A6FBD66000C4568 /* 🌐AppStoreDescription.xcstrings in Resources */,
+				16EF414E2B5D2DC6002312FA /* AD+InAppPurchase.xcassets in Resources */,
 				F583DC772A6D29F200F02006 /* Localizable.xcstrings in Resources */,
 				12E4A74C285027F700B2380B /* Assets.xcassets in Resources */,
 				F531FA1C2A71E962004BBFE0 /* 🌐ADAppName.xcstrings in Resources */,
@@ -744,6 +760,7 @@
 				167C503A2B4A46A400531BC5 /* Assets.xcassets in Resources */,
 				167C50492B4A47E700531BC5 /* 🌐ADAppDescription.xcstrings in Resources */,
 				167C50462B4A47E700531BC5 /* 🌐AboutApp.xcstrings in Resources */,
+				16EF414C2B5D2D64002312FA /* AboutApp.xcassets in Resources */,
 				167C50472B4A47E700531BC5 /* 🌐AD&InAppPurchase.xcstrings in Resources */,
 				167C50482B4A47E700531BC5 /* 🌐ADAppName.xcstrings in Resources */,
 			);
@@ -764,6 +781,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16EF414F2B5D2DC6002312FA /* AD+InAppPurchase.xcassets in Resources */,
 				F583DC672A6D227900F02006 /* 🌐AD&InAppPurchase.xcstrings in Resources */,
 				F5D521562A6DFF5600BE4D12 /* Localizable.xcstrings in Resources */,
 				F5D521552A6DFEB600BE4D12 /* InfoPlist.xcstrings in Resources */,
