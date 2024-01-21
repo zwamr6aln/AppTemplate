@@ -16,6 +16,7 @@ struct ℹ️AboutAppMenu: View {
                         Image(systemName: "xmark")
                     }
                     .buttonBorderShape(.circle)
+                    .keyboardShortcut(.escape)
                 }
             }
         }

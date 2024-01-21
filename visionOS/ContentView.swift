@@ -30,10 +30,21 @@ struct ContentView: View {
                     self.presentAboutApp.toggle()
                 } label: {
                     Label(String(localized: "About App", table: "🌐AboutApp"),
-                          systemImage: "doc")
+                          systemImage: "info")
                 }
             }
             .navigationTitle("AppTemplate")
+            .toolbar {
+                ToolbarItem(placement: .bottomBar) {
+                    Button {
+                        self.presentAboutApp.toggle()
+                    } label: {
+                        Label(String(localized: "About App", table: "🌐AboutApp"),
+                              systemImage: "info.circle")
+                    }
+                    .buttonStyle(.borderless)
+                }
+            }
         } detail: {
             Text(verbatim: "Detail")
                 .help("Help Content")
