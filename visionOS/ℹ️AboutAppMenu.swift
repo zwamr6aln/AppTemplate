@@ -5,7 +5,6 @@ struct ℹ️AboutAppMenu: View {
     var body: some View {
         NavigationStack {
             List {
-                ℹ️IconAndName()
                 ℹ️AboutAppContent()
             }
             .navigationTitle(String(localized: "About App", table: "🌐AboutApp"))

@@ -318,6 +318,17 @@
         }
       }
     },
+    "Released Apple Vision Pro apps." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Vision Pro向けアプリを複数リリース。"
+          }
+        }
+      }
+    },
     "Released Apple Watch app version of \"TapTemperature\"." : {
       "localizations" : {
         "ja" : {
