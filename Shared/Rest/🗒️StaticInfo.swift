@@ -43,21 +43,27 @@ extension 🗒️StaticInfo {
         var id: Self { self }
         var fileNames: [String] {
             switch self {
-                case .main: ["App.swift",
-                             "ContentView.swift",
-                             "📱AppModel.swift",
-                             "📱AppModel(extension).swift"]
-                case .Rest: ["🪧Sheet.swift",
-                             "📣ADContent.swift",
-                             "💬RequestUserReview.swift",
-                             "🩹Workaround.swift",
-                             "🗒️StaticInfo.swift",
-                             "ℹ️AboutApp.swift",
-                             "📣ADModel.swift",
-                             "📣ADComponents.swift",
-                             "🛒InAppPurchaseModel.swift",
-                             "🛒InAppPurchaseView.swift"]
-                case .Widget: ["Widget.swift"]
+                case .main: [
+                    "App.swift",
+                    "ContentView.swift",
+                    "📱AppModel.swift",
+                    "📱AppModel(extension).swift"
+                ]
+                case .Rest: [
+                    "🪧Sheet.swift",
+                    "📣ADContent.swift",
+                    "💬RequestUserReview.swift",
+                    "🩹Workaround.swift",
+                    "🗒️StaticInfo.swift",
+                    "ℹ️AboutApp.swift",
+                    "📣ADModel.swift",
+                    "📣ADComponents.swift",
+                    "🛒InAppPurchaseModel.swift",
+                    "🛒InAppPurchaseView.swift"
+                ]
+                case .Widget: [
+                    "Widget.swift"
+                ]
             }
         }
     }
@@ -70,13 +76,19 @@ extension 🗒️StaticInfo {
         var id: Self { self }
         var fileNames: [String] {
             switch self {
-                case .main: ["App.swift",
-                             "ContentView.swift",
-                             "📱AppModel.swift",
-                             "📱AppModel(extension).swift"]
-                case .Rest: ["🗒️StaticInfo.swift",
-                             "ℹ️AboutApp.swift"]
-                case .Widget: ["Widget.swift"]
+                case .main: [
+                    "App.swift",
+                    "ContentView.swift",
+                    "📱AppModel.swift",
+                    "📱AppModel(extension).swift"
+                ]
+                case .Rest: [
+                    "🗒️StaticInfo.swift",
+                    "ℹ️AboutApp.swift"
+                ]
+                case .Widget: [
+                    "Widget.swift"
+                ]
             }
         }
     }
@@ -93,24 +105,30 @@ extension 🗒️StaticInfo {
         var id: Self { self }
         var fileNames: [String] {
             switch self {
-                case .main: ["App.swift",
-                             "ContentView.swift",
-                             "📱AppModel.swift",
-                             "📱AppModel(extension).swift"]
-                case .Rest: ["📣ADSheet.swift",
-                             "🔧Settings.swift",
-                             "🪄Commands.swift",
-                             "💬RequestUserReview.swift",
-                             "🗒️StaticInfo.swift",
-                             "ℹ️HelpWindows.swift",
-                             "ℹ️HelpCommands.swift",
-                             "📣ADModel.swift",
-                             "📣ADContent.swift",
-                             "🛒InAppPurchaseModel.swift",
-                             "🛒InAppPurchaseWindow.swift",
-                             "🛒InAppPurchaseMenu.swift",
-                             "🛒InAppPurchaseCommand.swift"]
-                case .Widget: ["Widget.swift"]
+                case .main: [
+                    "App.swift",
+                    "ContentView.swift",
+                    "📱AppModel.swift",
+                    "📱AppModel(extension).swift"
+                ]
+                case .Rest: [
+                    "📣ADSheet.swift",
+                    "🔧Settings.swift",
+                    "🪄Commands.swift",
+                    "💬RequestUserReview.swift",
+                    "🗒️StaticInfo.swift",
+                    "ℹ️HelpWindows.swift",
+                    "ℹ️HelpCommands.swift",
+                    "📣ADModel.swift",
+                    "📣ADContent.swift",
+                    "🛒InAppPurchaseModel.swift",
+                    "🛒InAppPurchaseWindow.swift",
+                    "🛒InAppPurchaseMenu.swift",
+                    "🛒InAppPurchaseCommand.swift"
+                ]
+                case .Widget: [
+                    "Widget.swift"
+                ]
             }
         }
     }
@@ -125,20 +143,16 @@ extension 🗒️StaticInfo {
         var id: Self { self }
         var fileNames: [String] {
             switch self {
-                case .main: ["App.swift",
-                             "ContentView.swift",
-                             "📱AppModel.swift",
-                             "📱AppModel(extension).swift"]
-                case .Rest: ["🪧Sheet.swift",
-                             "📣ADContent.swift",
-                             "💬RequestUserReview.swift",
-                             "🩹Workaround.swift",
-                             "🗒️StaticInfo.swift",
-                             "ℹ️AboutApp.swift",
-                             "📣ADModel.swift",
-                             "📣ADComponents.swift",
-                             "🛒InAppPurchaseModel.swift",
-                             "🛒InAppPurchaseView.swift"]
+                case .main: [
+                    "App.swift",
+                    "ContentView.swift",
+                    "📱AppModel.swift"
+                ]
+                case .Rest: [
+                    "🗒️StaticInfo.swift",
+                    "ℹ️AboutApp.swift",
+                    "ℹ️AboutAppMenu.swift"
+                ]
             }
         }
     }

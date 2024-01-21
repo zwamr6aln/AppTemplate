@@ -36,6 +36,12 @@
 		16A5131F2AF4A6040010B780 /* MenuPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5131E2AF4A6040010B780 /* MenuPane.swift */; };
 		16EF413E2B5D1D29002312FA /* ℹ️AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
 		16EF41402B5D1D47002312FA /* ℹ️AboutAppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */; };
+		16EF41442B5D1FEE002312FA /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
+		16EF41452B5D1FEE002312FA /* 🗒️StaticInfo.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
+		16EF41462B5D1FEE002312FA /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
+		16EF41472B5D1FEE002312FA /* App.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 167C50352B4A46A200531BC5 /* App.swift */; };
+		16EF41482B5D1FEE002312FA /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 167C50372B4A46A200531BC5 /* ContentView.swift */; };
+		16EF41492B5D1FEE002312FA /* ℹ️AboutAppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */; };
 		F501E9C72A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C82A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C92A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
@@ -139,6 +145,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		16EF41432B5D1FE0002312FA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "📁SourceCode";
+			dstSubfolderSpec = 7;
+			files = (
+				16EF41442B5D1FEE002312FA /* 📱AppModel.swift in CopyFiles */,
+				16EF41452B5D1FEE002312FA /* 🗒️StaticInfo.swift in CopyFiles */,
+				16EF41462B5D1FEE002312FA /* ℹ️AboutApp.swift in CopyFiles */,
+				16EF41472B5D1FEE002312FA /* App.swift in CopyFiles */,
+				16EF41482B5D1FEE002312FA /* ContentView.swift in CopyFiles */,
+				16EF41492B5D1FEE002312FA /* ℹ️AboutAppMenu.swift in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F51722312920FCCC00C6DDE6 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -600,6 +621,7 @@
 				167C502B2B4A46A200531BC5 /* Sources */,
 				167C502C2B4A46A200531BC5 /* Frameworks */,
 				167C502D2B4A46A200531BC5 /* Resources */,
+				16EF41432B5D1FE0002312FA /* CopyFiles */,
 			);
 			buildRules = (
 			);
