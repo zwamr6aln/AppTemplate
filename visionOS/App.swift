@@ -8,6 +8,5 @@ struct VisionOSApp: App {
             ContentView()
                 .environmentObject(self.model)
         }
-        .windowResizability(.contentMinSize)
     }
 }
