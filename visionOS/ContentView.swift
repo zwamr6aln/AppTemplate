@@ -1,9 +1,8 @@
 import SwiftUI
-import RealityKit
-import RealityKitContent
 
 struct ContentView: View {
     @EnvironmentObject var model: 📱AppModel
+    @State private var presentAboutApp: Bool = true
     var body: some View {
         NavigationSplitView {
             List {
@@ -27,13 +26,8 @@ struct ContentView: View {
                 } label: {
                     Label("Menu", systemImage: "gearshape")
                 }
-                NavigationLink {
-                    NavigationStack {
-                        List {
-                            Text(verbatim: "Placeholder")
-                        }
-                        .navigationTitle(String(localized: "About App", table: "🌐AboutApp"))
-                    }
+                Button {
+                    self.presentAboutApp.toggle()
                 } label: {
                     Label(String(localized: "About App", table: "🌐AboutApp"),
                           systemImage: "doc")
@@ -46,7 +40,7 @@ struct ContentView: View {
                 .padding()
                 .background(in: .rect(cornerRadius: 12, style: .continuous))
         }
-        .persistentSystemOverlays(.hidden)
         .frame(minWidth: 800)
+        .sheet(isPresented: self.$presentAboutApp) { ℹ️AboutAppMenu() }
     }
 }
