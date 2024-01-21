@@ -474,8 +474,8 @@
 			children = (
 				16EF41532B5D39D4002312FA /* Localizable.xcstrings */,
 				16EF41542B5D39D4002312FA /* InfoPlist.xcstrings */,
-				16EF41552B5D39D4002312FA /* 🌐VersionHistory.xcstrings */,
 				16EF41562B5D39D4002312FA /* 🌐AppStoreDescription.xcstrings */,
+				16EF41552B5D39D4002312FA /* 🌐VersionHistory.xcstrings */,
 			);
 			path = "🌐Localization";
 			sourceTree = "<group>";
