@@ -163,10 +163,19 @@ private struct 📜VersionHistoryLink: View {
     }
 }
 
+private var 📓sourceCodeFolderURL: URL {
+#if targetEnvironment(macCatalyst)
+    Bundle.main.bundleURL.appendingPathComponent("Contents/Resources/📁SourceCode")
+#else
+    Bundle.main.bundleURL.appendingPathComponent("📁SourceCode")
+#endif
+}
+
 private struct 📓SourceCodeLink: View {
     var body: some View {
         NavigationLink {
             List {
+                Self.DebugView()
                 ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
                 self.bundleMainInfoDictionary()
                 self.repositoryLinks()
@@ -177,19 +186,38 @@ private struct 📓SourceCodeLink: View {
                   systemImage: "doc.plaintext")
         }
     }
+    private struct DebugView: View {
+        private var fileCounts: Int? {
+            try? FileManager.default
+                .contentsOfDirectory(atPath: 📓sourceCodeFolderURL.path(percentEncoded: false))
+                .count
+        }
+        private var caseCounts: Int {
+            🗒️StaticInfo.SourceCodeCategory.allCases.reduce(into: 0) { $0 += $1.fileNames.count }
+        }
+        var body: some View {
+            if let fileCounts {
+                if fileCounts != self.caseCounts {
+                    Section {
+                        Text(verbatim: "⚠️ mismatch fileCounts")
+                        LabeledContent(String("fileCounts"),
+                                       value: self.fileCounts.debugDescription)
+                        LabeledContent(String("caseCounts"), 
+                                       value: self.caseCounts.description)
+                    }
+                }
+            } else {
+                Text(verbatim: "⚠️ contentsOfDirectory failure")
+            }
+        }
+    }
     private struct CodeSection: View {
         private var category: 🗒️StaticInfo.SourceCodeCategory
-        private var url: URL {
-#if targetEnvironment(macCatalyst)
-            Bundle.main.bundleURL.appendingPathComponent("Contents/Resources/📁SourceCode")
-#else
-            Bundle.main.bundleURL.appendingPathComponent("📁SourceCode")
-#endif
-        }
         var body: some View {
             Section {
                 ForEach(self.category.fileNames, id: \.self) { ⓕileName in
-                    if let ⓒode = try? String(contentsOf: self.url.appendingPathComponent(ⓕileName)) {
+                    let ⓤrl = 📓sourceCodeFolderURL.appendingPathComponent(ⓕileName)
+                    if let ⓒode = try? String(contentsOf: ⓤrl) {
                         NavigationLink(ⓕileName) { self.sourceCodeView(ⓒode, ⓕileName) }
                     } else {
                         Text(verbatim: "🐛")

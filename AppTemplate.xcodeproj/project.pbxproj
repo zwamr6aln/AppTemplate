@@ -41,10 +41,10 @@
 		16EF41462B5D1FEE002312FA /* ℹ️AboutApp.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
 		16EF41472B5D1FEE002312FA /* App.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 167C50352B4A46A200531BC5 /* App.swift */; };
 		16EF41482B5D1FEE002312FA /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 167C50372B4A46A200531BC5 /* ContentView.swift */; };
-		16EF41492B5D1FEE002312FA /* ℹ️AboutAppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */; };
 		16EF414C2B5D2D64002312FA /* AboutApp.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414B2B5D2D64002312FA /* AboutApp.xcassets */; };
 		16EF414E2B5D2DC6002312FA /* AD+InAppPurchase.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */; };
 		16EF414F2B5D2DC6002312FA /* AD+InAppPurchase.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */; };
+		16EF41512B5D33F5002312FA /* ℹ️AboutAppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */; };
 		F501E9C72A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C82A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C92A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
@@ -154,12 +154,12 @@
 			dstPath = "📁SourceCode";
 			dstSubfolderSpec = 7;
 			files = (
+				16EF41512B5D33F5002312FA /* ℹ️AboutAppMenu.swift in CopyFiles */,
 				16EF41442B5D1FEE002312FA /* 📱AppModel.swift in CopyFiles */,
 				16EF41452B5D1FEE002312FA /* 🗒️StaticInfo.swift in CopyFiles */,
 				16EF41462B5D1FEE002312FA /* ℹ️AboutApp.swift in CopyFiles */,
 				16EF41472B5D1FEE002312FA /* App.swift in CopyFiles */,
 				16EF41482B5D1FEE002312FA /* ContentView.swift in CopyFiles */,
-				16EF41492B5D1FEE002312FA /* ℹ️AboutAppMenu.swift in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
