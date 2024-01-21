@@ -1,3 +1,5 @@
+//MARK: iOS, iPadOS, Mac Catalyst, visionOS
+
 import SwiftUI
 
 struct ℹ️AboutAppContent: View {
