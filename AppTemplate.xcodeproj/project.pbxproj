@@ -28,9 +28,6 @@
 		167C50422B4A47DC00531BC5 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		167C50452B4A47DC00531BC5 /* 📱AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
 		167C50462B4A47E700531BC5 /* 🌐AboutApp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC722A6D22F500F02006 /* 🌐AboutApp.xcstrings */; };
-		167C50472B4A47E700531BC5 /* 🌐AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* 🌐AD&InAppPurchase.xcstrings */; };
-		167C50482B4A47E700531BC5 /* 🌐ADAppName.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA1B2A71E962004BBFE0 /* 🌐ADAppName.xcstrings */; };
-		167C50492B4A47E700531BC5 /* 🌐ADAppDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA182A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings */; };
 		168E36232B1EA6EC00067F9C /* FixWidthForIPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168E36222B1EA6EC00067F9C /* FixWidthForIPad.swift */; };
 		16A5131D2AF4A4FD0010B780 /* 🏢NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5131C2AF4A4FD0010B780 /* 🏢NavigationView.swift */; };
 		16A5131F2AF4A6040010B780 /* MenuPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5131E2AF4A6040010B780 /* MenuPane.swift */; };
@@ -45,6 +42,10 @@
 		16EF414E2B5D2DC6002312FA /* AD+InAppPurchase.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */; };
 		16EF414F2B5D2DC6002312FA /* AD+InAppPurchase.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */; };
 		16EF41512B5D33F5002312FA /* ℹ️AboutAppMenu.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */; };
+		16EF41572B5D39D4002312FA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 16EF41532B5D39D4002312FA /* Localizable.xcstrings */; };
+		16EF41582B5D39D4002312FA /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 16EF41542B5D39D4002312FA /* InfoPlist.xcstrings */; };
+		16EF41592B5D39D4002312FA /* 🌐VersionHistory.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 16EF41552B5D39D4002312FA /* 🌐VersionHistory.xcstrings */; };
+		16EF415A2B5D39D4002312FA /* 🌐AppStoreDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 16EF41562B5D39D4002312FA /* 🌐AppStoreDescription.xcstrings */; };
 		F501E9C72A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C82A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
 		F501E9C92A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
@@ -279,6 +280,10 @@
 		16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutAppMenu.swift"; sourceTree = "<group>"; };
 		16EF414B2B5D2D64002312FA /* AboutApp.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AboutApp.xcassets; sourceTree = "<group>"; };
 		16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "AD+InAppPurchase.xcassets"; sourceTree = "<group>"; };
+		16EF41532B5D39D4002312FA /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		16EF41542B5D39D4002312FA /* InfoPlist.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		16EF41552B5D39D4002312FA /* 🌐VersionHistory.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = "🌐VersionHistory.xcstrings"; sourceTree = "<group>"; };
+		16EF41562B5D39D4002312FA /* 🌐AppStoreDescription.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = "🌐AppStoreDescription.xcstrings"; sourceTree = "<group>"; };
 		F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🗒️StaticInfo.swift"; sourceTree = "<group>"; };
 		F52916792A9855AD002BB58E /* 🛒InAppPurchaseWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseWindow.swift"; sourceTree = "<group>"; };
 		F531FA182A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐ADAppDescription.xcstrings"; sourceTree = "<group>"; };
@@ -442,8 +447,7 @@
 				167C50352B4A46A200531BC5 /* App.swift */,
 				167C50372B4A46A200531BC5 /* ContentView.swift */,
 				16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu.swift */,
-				167C50392B4A46A400531BC5 /* Assets.xcassets */,
-				167C503E2B4A46A400531BC5 /* Info.plist */,
+				16EF415B2B5D39E3002312FA /* Supporting files */,
 			);
 			path = visionOS;
 			sourceTree = "<group>";
@@ -463,6 +467,27 @@
 				16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		16EF41522B5D39D4002312FA /* 🌐Localization */ = {
+			isa = PBXGroup;
+			children = (
+				16EF41532B5D39D4002312FA /* Localizable.xcstrings */,
+				16EF41542B5D39D4002312FA /* InfoPlist.xcstrings */,
+				16EF41552B5D39D4002312FA /* 🌐VersionHistory.xcstrings */,
+				16EF41562B5D39D4002312FA /* 🌐AppStoreDescription.xcstrings */,
+			);
+			path = "🌐Localization";
+			sourceTree = "<group>";
+		};
+		16EF415B2B5D39E3002312FA /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				167C50392B4A46A400531BC5 /* Assets.xcassets */,
+				167C503E2B4A46A400531BC5 /* Info.plist */,
+				16EF41522B5D39D4002312FA /* 🌐Localization */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		F501E9C52A6A2E7C00E9F9A6 /* Shared */ = {
@@ -758,11 +783,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				167C503A2B4A46A400531BC5 /* Assets.xcassets in Resources */,
-				167C50492B4A47E700531BC5 /* 🌐ADAppDescription.xcstrings in Resources */,
+				16EF41582B5D39D4002312FA /* InfoPlist.xcstrings in Resources */,
 				167C50462B4A47E700531BC5 /* 🌐AboutApp.xcstrings in Resources */,
+				16EF41592B5D39D4002312FA /* 🌐VersionHistory.xcstrings in Resources */,
+				16EF415A2B5D39D4002312FA /* 🌐AppStoreDescription.xcstrings in Resources */,
+				16EF41572B5D39D4002312FA /* Localizable.xcstrings in Resources */,
 				16EF414C2B5D2D64002312FA /* AboutApp.xcassets in Resources */,
-				167C50472B4A47E700531BC5 /* 🌐AD&InAppPurchase.xcstrings in Resources */,
-				167C50482B4A47E700531BC5 /* 🌐ADAppName.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1098,7 +1124,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_FILE = "$(TARGET_NAME)/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1129,7 +1155,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_FILE = "$(TARGET_NAME)/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

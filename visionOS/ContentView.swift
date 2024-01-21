@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var model: 📱AppModel
-    @State private var presentAboutApp: Bool = true
+    @State private var presentAboutApp: Bool = false
     var body: some View {
         NavigationSplitView {
             List {
@@ -40,9 +40,8 @@ struct ContentView: View {
                         self.presentAboutApp.toggle()
                     } label: {
                         Label(String(localized: "About App", table: "🌐AboutApp"),
-                              systemImage: "info.circle")
+                              systemImage: "info")
                     }
-                    .buttonStyle(.borderless)
                 }
             }
         } detail: {
