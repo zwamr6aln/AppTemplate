@@ -3,6 +3,12 @@
   "strings" : {
     "About AD" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About AD"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13,6 +19,12 @@
     },
     "About AD / Purchase" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About AD / Purchase"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -23,6 +35,12 @@
     },
     "AD" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AD"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -33,6 +51,12 @@
     },
     "AD / Purchase" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AD / Purchase"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -43,6 +67,12 @@
     },
     "Buy" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buy"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -53,6 +83,12 @@
     },
     "Description" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Description"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -63,6 +99,12 @@
     },
     "Dismiss" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dismiss"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -73,6 +115,12 @@
     },
     "Error" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -83,6 +131,12 @@
     },
     "In-App Purchase" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In-App Purchase"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -93,6 +147,12 @@
     },
     "OK" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -104,6 +164,12 @@
     "Open AD link" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open AD link"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -114,6 +180,12 @@
     },
     "Open App Store page" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open App Store page"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -125,6 +197,12 @@
     "Purchase" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchase"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -135,6 +213,12 @@
     },
     "Restore Purchases" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore Purchases"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -146,6 +230,12 @@
     "Restored transactions" : {
       "extractionState" : "migrated",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restored transactions"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -156,6 +246,12 @@
     },
     "This App shows advertisement about applications on App Store. These are several Apps by this app's developer. It is activated after you launch this app 5 times." : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This App shows advertisement about applications on App Store. These are several Apps by this app's developer. It is activated after you launch this app 5 times."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",

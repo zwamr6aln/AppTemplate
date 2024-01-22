@@ -263,34 +263,36 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
         .windowResizability(.contentSize)
     }
     private struct TimelineSection: View {
-        private static var values: [(date: String, description: String)] {
-            [("2013-04", "Finished from high school in Okayama Prefecture. Entranced into University-of-the-Ryukyus/faculty-of-engineering in Okinawa Prefecture."),
-             ("2018-06", "Final year as an undergraduate student. Developed an iOS application(FlipByBlink) as software for the purpose of research experiments."),
-             ("2019-01", "Released ebook reader app \"FlipByBlink\" ver 1.0 on App Store. Special feature is to turn a page by slightly-longish-voluntary-blink."),
-             ("2019-03", "Graduated from University-of-the-Ryukyus."),
-             ("2019-05", "Released alarm clock app with taking a long time \"FadeInAlarm\" ver 1.0. First paid app."),
-             ("2019-07", "Migrated to Okayama Prefecture."),
-             ("2021-12", "Released FlipByBlink ver 3.0 for the first time in three years since ver 2.0."),
-             ("2022-02", "Released FadeInAlarm ver 2.0 for the first time in three years since ver 1.0."),
-             ("2022-04", "Released simple shogi board app \"PlainShogiBoard\" ver 1.0."),
-             ("2022-05", "Released body weight registration app \"TapWeight\" ver 1.0."),
-             ("2022-06", "Released body temperature registration app \"TapTemperature\" ver 1.0."),
-             ("2022-06", "Adopted In-App Purchase model for the first time on TapWeight ver 1.1.1"),
-             ("2022-09", "Released LockInNote and MemorizeWidget on iOS16 release occasion."),
-             ("2023-02", "Released Apple Watch app version of \"TapTemperature\"."),
-             ("2023-04", "Released Mac app version of \"MemorizeWidget\"."),
-             ("2023-05", "Released Apple TV app version of \"PlainShogiBoard\".")]
+        private static var localizedStringResources: [LocalizedStringResource] {
+            [
+                .init("2013-04", table: "🌐Timeline"),
+                .init("2018-06", table: "🌐Timeline"),
+                .init("2019-01", table: "🌐Timeline"),
+                .init("2019-03", table: "🌐Timeline"),
+                .init("2019-05", table: "🌐Timeline"),
+                .init("2019-07", table: "🌐Timeline"),
+                .init("2021-12", table: "🌐Timeline"),
+                .init("2022-02", table: "🌐Timeline"),
+                .init("2022-04", table: "🌐Timeline"),
+                .init("2022-05", table: "🌐Timeline"),
+                .init("2022-06", table: "🌐Timeline"), //two lines
+                .init("2022-09", table: "🌐Timeline"),
+                .init("2023-02", table: "🌐Timeline"),
+                .init("2023-04", table: "🌐Timeline"),
+                .init("2023-05", table: "🌐Timeline"),
+                .init("2024-02", table: "🌐Timeline"),
+            ]
         }
         var body: some View {
             Section {
                 GroupBox {
                     Grid {
-                        ForEach(Self.values, id: \.self.description) { ⓥalue in
+                        ForEach(Self.localizedStringResources, id: \.self.key) { ⓡesource in
                             GridRow {
-                                Text(ⓥalue.date)
+                                Text(ⓡesource.key)
                                     .font(.subheadline)
                                     .padding(8)
-                                Text(LocalizedStringKey(ⓥalue.description), tableName: "🌐AboutApp")
+                                Text(ⓡesource)
                                     .font(.subheadline)
                                     .gridCellAnchor(.leading)
                             }

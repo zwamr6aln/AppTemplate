@@ -41,17 +41,6 @@
         }
       }
     },
-    "Adopted In-App Purchase model for the first time on TapWeight ver 1.1.1" : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "TapWeight、有料課金モデルを初めて採用したver1.1.1をリリース。"
-          }
-        }
-      }
-    },
     "age" : {
       "localizations" : {
         "ja" : {
@@ -122,45 +111,12 @@
         }
       }
     },
-    "Final year as an undergraduate student. Developed an iOS application(FlipByBlink) as software for the purpose of research experiments." : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "大学学部生として最終学年。研究実験を目的としたiOSアプリ(FlipByBlink)の開発を行う。"
-          }
-        }
-      }
-    },
-    "Finished from high school in Okayama Prefecture. Entranced into University-of-the-Ryukyus/faculty-of-engineering in Okinawa Prefecture." : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "岡山県の高等学校を卒業。沖縄県の琉球大学工学部に入学。"
-          }
-        }
-      }
-    },
     "Git repository is public on GitHub.com" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "GitリポジトリをGitHub.comで公開しています"
-          }
-        }
-      }
-    },
-    "Graduated from University-of-the-Ryukyus." : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "琉球大学を卒業。"
           }
         }
       }
@@ -221,17 +177,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "職探し中！"
-          }
-        }
-      }
-    },
-    "Migrated to Okayama Prefecture." : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "岡山に移住。"
           }
         }
       }
@@ -297,141 +242,12 @@
         }
       }
     },
-    "Released alarm clock app with taking a long time \"FadeInAlarm\" ver 1.0. First paid app." : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "時間をかけて徐々に音が大きくなるアラームアプリ「FadeInAlarm」ver1.0をリリース。初めてとなる有料アプリ。"
-          }
-        }
-      }
-    },
-    "Released Apple TV app version of \"PlainShogiBoard\"." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "「Plain将棋盤」のApple TV向けアプリをリリース。"
-          }
-        }
-      }
-    },
-    "Released Apple Vision Pro apps." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Apple Vision Pro向けアプリを複数リリース。"
-          }
-        }
-      }
-    },
-    "Released Apple Watch app version of \"TapTemperature\"." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "「TapTemperature」のApple Watch向けアプリをリリース。"
-          }
-        }
-      }
-    },
-    "Released body temperature registration app \"TapTemperature\" ver 1.0." : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "体温登録アプリ「TapTemperature」ver1.0をリリース。"
-          }
-        }
-      }
-    },
-    "Released body weight registration app \"TapWeight\" ver 1.0." : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "体重登録アプリ「TapWeight」ver1.0をリリース。"
-          }
-        }
-      }
-    },
-    "Released ebook reader app \"FlipByBlink\" ver 1.0 on App Store. Special feature is to turn a page by slightly-longish-voluntary-blink." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "特殊なまばたきでページめくりができる電子書籍リーダーアプリ「FlipByBlink」をver1.0としてApp Storeにリリース。"
-          }
-        }
-      }
-    },
-    "Released FadeInAlarm ver 2.0 for the first time in three years since ver 1.0." : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "FadeInAlarm、ver1.0以来 約3年ぶりとなるver2.0をリリース。"
-          }
-        }
-      }
-    },
-    "Released FlipByBlink ver 3.0 for the first time in three years since ver 2.0." : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "FlipByBlink、ver2.0以来 約3年ぶりとなるver3.0をリリース。"
-          }
-        }
-      }
-    },
-    "Released LockInNote and MemorizeWidget on iOS16 release occasion." : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iOS16のリリースに合わせて「ロックノート」と「暗記ウィジェット」をリリース。"
-          }
-        }
-      }
-    },
-    "Released Mac app version of \"MemorizeWidget\"." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "「暗記ウィジェット」のMac向けアプリをリリース。"
-          }
-        }
-      }
-    },
     "released on %@" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ にリリースしました"
-          }
-        }
-      }
-    },
-    "Released simple shogi board app \"PlainShogiBoard\" ver 1.0." : {
-      "extractionState" : "migrated",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "シンプルな将棋盤アプリ「Plain将棋盤」ver1.0をリリース。"
           }
         }
       }
