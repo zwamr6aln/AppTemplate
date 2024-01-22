@@ -21,7 +21,6 @@
 		164915FD2AB9B391009F94E3 /* 🛒InAppPurchaseCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164915FC2AB9B391009F94E3 /* 🛒InAppPurchaseCommand.swift */; };
 		164915FE2AB9B454009F94E3 /* ℹ️HelpCommands.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 164915FA2AB9B2F1009F94E3 /* ℹ️HelpCommands.swift */; };
 		164915FF2AB9B454009F94E3 /* 🛒InAppPurchaseCommand.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 164915FC2AB9B391009F94E3 /* 🛒InAppPurchaseCommand.swift */; };
-		167C50342B4A46A200531BC5 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 167C50332B4A46A200531BC5 /* RealityKitContent */; };
 		167C50362B4A46A200531BC5 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167C50352B4A46A200531BC5 /* App.swift */; };
 		167C50382B4A46A200531BC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167C50372B4A46A200531BC5 /* ContentView.swift */; };
 		167C503A2B4A46A400531BC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167C50392B4A46A400531BC5 /* Assets.xcassets */; };
@@ -273,7 +272,6 @@
 		164915FA2AB9B2F1009F94E3 /* ℹ️HelpCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️HelpCommands.swift"; sourceTree = "<group>"; };
 		164915FC2AB9B391009F94E3 /* 🛒InAppPurchaseCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseCommand.swift"; sourceTree = "<group>"; };
 		167C502F2B4A46A200531BC5 /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		167C50322B4A46A200531BC5 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		167C50352B4A46A200531BC5 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		167C50372B4A46A200531BC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		167C50392B4A46A400531BC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -356,7 +354,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				167C50342B4A46A200531BC5 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +392,6 @@
 				F567E38E29F2A09A0026E12D /* watchOS */,
 				F5A880592A693B0C00D534EC /* macOS */,
 				167C50302B4A46A200531BC5 /* visionOS */,
-				167C50312B4A46A200531BC5 /* Packages */,
 				12E4A745285027F600B2380B /* Products */,
 				12724D6E2862DEB0008471AB /* Frameworks */,
 			);
@@ -458,14 +454,6 @@
 				16EF415B2B5D39E3002312FA /* Supporting files */,
 			);
 			path = visionOS;
-			sourceTree = "<group>";
-		};
-		167C50312B4A46A200531BC5 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				167C50322B4A46A200531BC5 /* RealityKitContent */,
-			);
-			path = Packages;
 			sourceTree = "<group>";
 		};
 		16EF414A2B5D2D47002312FA /* Assets */ = {
@@ -681,7 +669,6 @@
 			);
 			name = visionOS;
 			packageProductDependencies = (
-				167C50332B4A46A200531BC5 /* RealityKitContent */,
 			);
 			productName = visionOS;
 			productReference = 167C502F2B4A46A200531BC5 /* visionOS.app */;
@@ -1372,13 +1359,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		167C50332B4A46A200531BC5 /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12E4A73C285027F600B2380B /* Project object */;
 }
