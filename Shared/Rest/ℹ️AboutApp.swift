@@ -18,7 +18,7 @@ struct ℹ️IconAndName: View {
         HStack {
             Spacer()
             VStack(spacing: 8) {
-                Image(.iconInAboutApp)
+                Image(.aboutAppIcon)
                     .resizable()
                     .frame(width: 100, height: 100)
                 VStack(spacing: 6) {
