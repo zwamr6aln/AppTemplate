@@ -38,7 +38,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Released ebook reader app \\\"FlipByBlink\\\" ver 1.0 on App Store. Special feature is to turn a page by slightly-longish-voluntary-blink."
+            "value" : "Released ebook reader app \"FlipByBlink\" ver 1.0 on App Store. Special feature is to turn a page by slightly-longish-voluntary-blink."
           }
         },
         "ja" : {
@@ -134,7 +134,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Released simple shogi board app \\\"PlainShogiBoard\\\" ver 1.0."
+            "value" : "Released simple shogi board app \"PlainShogiBoard\" ver 1.0."
           }
         },
         "ja" : {
@@ -150,7 +150,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Released body weight registration app \\\"TapWeight\\\" ver 1.0."
+            "value" : "Released body weight registration app \"TapWeight\" ver 1.0."
           }
         },
         "ja" : {
@@ -198,7 +198,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Released Apple Watch app version of \\\"TapTemperature\\\"."
+            "value" : "Released Apple Watch app version of \"TapTemperature\"."
           }
         },
         "ja" : {

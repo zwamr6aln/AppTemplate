@@ -359,7 +359,7 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
                 .init("2022-02", table: "🌐Timeline"),
                 .init("2022-04", table: "🌐Timeline"),
                 .init("2022-05", table: "🌐Timeline"),
-                .init("2022-06", table: "🌐Timeline"), //2行
+                .init("2022-06", table: "🌐Timeline"), //two lines
                 .init("2022-09", table: "🌐Timeline"),
                 .init("2023-02", table: "🌐Timeline"),
                 .init("2023-04", table: "🌐Timeline"),
@@ -369,12 +369,12 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
         }
         var body: some View {
             Section {
-                ForEach(Self.localizedStringResources, id: \.self.key) { resource in
+                ForEach(Self.localizedStringResources, id: \.self.key) { ⓡesource in
                     HStack {
-                        Text(resource.key)
+                        Text(ⓡesource.key)
                             .font(.caption2.monospacedDigit())
                             .padding(8)
-                        Text(resource)
+                        Text(ⓡesource)
                             .font(.caption)
                     }
                 }
