@@ -33,10 +33,6 @@
 		16E0FD132B5DF8B600BA8482 /* Developer_Publisher.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E0FD122B5DF8B600BA8482 /* Developer_Publisher.xcassets */; };
 		16E0FD142B5DF8C200BA8482 /* Developer_Publisher.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E0FD122B5DF8B600BA8482 /* Developer_Publisher.xcassets */; };
 		16E0FD152B5DF8C300BA8482 /* Developer_Publisher.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E0FD122B5DF8B600BA8482 /* Developer_Publisher.xcassets */; };
-		16E0FD172B5DF90C00BA8482 /* AboutAppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E0FD162B5DF90C00BA8482 /* AboutAppIcon.xcassets */; };
-		16E0FD192B5DF96200BA8482 /* AboutAppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E0FD182B5DF96200BA8482 /* AboutAppIcon.xcassets */; };
-		16E0FD1B2B5DF97100BA8482 /* AboutAppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E0FD1A2B5DF97100BA8482 /* AboutAppIcon.xcassets */; };
-		16E0FD1D2B5DF98800BA8482 /* AboutAppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E0FD1C2B5DF98800BA8482 /* AboutAppIcon.xcassets */; };
 		16EF413E2B5D1D29002312FA /* ℹ️AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */; };
 		16EF41442B5D1FEE002312FA /* 📱AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12E4A75628502A2D00B2380B /* 📱AppModel.swift */; };
 		16EF41452B5D1FEE002312FA /* 🗒️StaticInfo.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = F501E9C62A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift */; };
@@ -280,10 +276,6 @@
 		16A5131C2AF4A4FD0010B780 /* 🏢NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🏢NavigationView.swift"; sourceTree = "<group>"; };
 		16A5131E2AF4A6040010B780 /* MenuPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPane.swift; sourceTree = "<group>"; };
 		16E0FD122B5DF8B600BA8482 /* Developer_Publisher.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Developer_Publisher.xcassets; sourceTree = "<group>"; };
-		16E0FD162B5DF90C00BA8482 /* AboutAppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AboutAppIcon.xcassets; sourceTree = "<group>"; };
-		16E0FD182B5DF96200BA8482 /* AboutAppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AboutAppIcon.xcassets; sourceTree = "<group>"; };
-		16E0FD1A2B5DF97100BA8482 /* AboutAppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AboutAppIcon.xcassets; sourceTree = "<group>"; };
-		16E0FD1C2B5DF98800BA8482 /* AboutAppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AboutAppIcon.xcassets; sourceTree = "<group>"; };
 		16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu+Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️AboutAppMenu+Tab.swift"; sourceTree = "<group>"; };
 		16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "AD+InAppPurchase.xcassets"; sourceTree = "<group>"; };
 		16EF41532B5D39D4002312FA /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -480,7 +472,6 @@
 			isa = PBXGroup;
 			children = (
 				167C50392B4A46A400531BC5 /* Assets.xcassets */,
-				16E0FD1C2B5DF98800BA8482 /* AboutAppIcon.xcassets */,
 				167C503E2B4A46A400531BC5 /* Info.plist */,
 				16EF41522B5D39D4002312FA /* 🌐Localization */,
 			);
@@ -512,7 +503,6 @@
 			isa = PBXGroup;
 			children = (
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
-				16E0FD162B5DF90C00BA8482 /* AboutAppIcon.xcassets */,
 				F567E36929F278B10026E12D /* Info.plist */,
 				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
 				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
@@ -525,7 +515,6 @@
 			isa = PBXGroup;
 			children = (
 				F567E39329F2A09C0026E12D /* Assets.xcassets */,
-				16E0FD1A2B5DF97100BA8482 /* AboutAppIcon.xcassets */,
 				F539EA362A70B9F300A3C80E /* Localizable.xcstrings */,
 				F539EA382A70BA1A00A3C80E /* InfoPlist.xcstrings */,
 			);
@@ -535,7 +524,6 @@
 		F5397F5A2AA20A69002C90F2 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				16E0FD182B5DF96200BA8482 /* AboutAppIcon.xcassets */,
 				F5A8805E2A693B0F00D534EC /* Assets.xcassets */,
 				F5A880632A693B0F00D534EC /* macOS.entitlements */,
 				F5E51EB42A98A0A600C53268 /* Info.plist */,
@@ -764,7 +752,6 @@
 			files = (
 				F53A8F9B2A6FBD66000C4568 /* 🌐VersionHistory.xcstrings in Resources */,
 				F531FA192A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings in Resources */,
-				16E0FD172B5DF90C00BA8482 /* AboutAppIcon.xcassets in Resources */,
 				12DDDDAD288BF2E40055A073 /* Launch Screen.storyboard in Resources */,
 				127ECB2E28614C0200CB1BC3 /* Configuration.storekit in Resources */,
 				F583DC652A6D227900F02006 /* 🌐AD&InAppPurchase.xcstrings in Resources */,
@@ -789,7 +776,6 @@
 				16E0FD152B5DF8C300BA8482 /* Developer_Publisher.xcassets in Resources */,
 				16EF41592B5D39D4002312FA /* 🌐VersionHistory.xcstrings in Resources */,
 				16EF415A2B5D39D4002312FA /* 🌐AppStoreDescription.xcstrings in Resources */,
-				16E0FD1D2B5DF98800BA8482 /* AboutAppIcon.xcassets in Resources */,
 				16EF41572B5D39D4002312FA /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -802,7 +788,6 @@
 				F5DD10FC2A70E6FE00428A16 /* 🌐AboutApp.xcstrings in Resources */,
 				F539EA392A70BA1A00A3C80E /* InfoPlist.xcstrings in Resources */,
 				F567E39429F2A09C0026E12D /* Assets.xcassets in Resources */,
-				16E0FD1B2B5DF97100BA8482 /* AboutAppIcon.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,7 +801,6 @@
 				F5D521552A6DFEB600BE4D12 /* InfoPlist.xcstrings in Resources */,
 				F5DD10FD2A70E70000428A16 /* 🌐AboutApp.xcstrings in Resources */,
 				F5A8805F2A693B0F00D534EC /* Assets.xcassets in Resources */,
-				16E0FD192B5DF96200BA8482 /* AboutAppIcon.xcassets in Resources */,
 				F53A8F992A6FBD11000C4568 /* 🌐VersionHistory.xcstrings in Resources */,
 				16E0FD142B5DF8C200BA8482 /* Developer_Publisher.xcassets in Resources */,
 				F531FA1D2A71E962004BBFE0 /* 🌐ADAppName.xcstrings in Resources */,
