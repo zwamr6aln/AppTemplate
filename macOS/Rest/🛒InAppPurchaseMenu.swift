@@ -139,9 +139,11 @@ private extension 🛒InAppPurchaseMenu {
             }
             .disabled(self.restoringInProgress)
             .alert(isPresented: self.$showAlert) {
-                Alert(title: .init(self.syncSuccess ? "Done" : "Error", tableName: "🌐AD&InAppPurchase"),
-                      message: .init(LocalizedStringKey(self.alertMessage)),
-                      dismissButton: .default(.init("OK", tableName: "🌐AD&InAppPurchase")))
+                Alert(
+                    title: self.syncSuccess ? Text("Done", tableName: "🌐AD&InAppPurchase") : Text("Error", tableName: "🌐AD&InAppPurchase"),
+                    message: Text(LocalizedStringKey(self.alertMessage)),
+                    dismissButton: .default(Text("OK", tableName: "🌐AD&InAppPurchase"))
+                )
             }
         }
     }
