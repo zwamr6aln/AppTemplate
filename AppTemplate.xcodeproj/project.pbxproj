@@ -434,6 +434,7 @@
 		16267B4B2B57965C000CA8AD /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
 				16EF414A2B5D2D47002312FA /* Assets */,
 				F583DC592A6D222B00F02006 /* 🌐Localization */,
 				F567AE462AAD526600A404F8 /* README assets */,
@@ -509,7 +510,6 @@
 				12E4A74B285027F700B2380B /* Assets.xcassets */,
 				F567E36929F278B10026E12D /* Info.plist */,
 				12DDDDAC288BF2E40055A073 /* Launch Screen.storyboard */,
-				127ECB2D28614C0200CB1BC3 /* Configuration.storekit */,
 				12E4A76828502EA600B2380B /* 🌐Localization */,
 			);
 			path = "Supporting files";
