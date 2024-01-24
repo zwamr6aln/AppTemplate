@@ -24,6 +24,7 @@
 		166C356C2B5DFC3F00F2498D /* 🌐Timeline.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 166C356B2B5DFC3F00F2498D /* 🌐Timeline.xcstrings */; };
 		166C356D2B5DFC3F00F2498D /* 🌐Timeline.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 166C356B2B5DFC3F00F2498D /* 🌐Timeline.xcstrings */; };
 		166C356E2B5DFC3F00F2498D /* 🌐Timeline.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 166C356B2B5DFC3F00F2498D /* 🌐Timeline.xcstrings */; };
+		16703FEC2B60FF41002824E8 /* PurchaseTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16703FEB2B60FF41002824E8 /* PurchaseTab.swift */; };
 		167C50362B4A46A200531BC5 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167C50352B4A46A200531BC5 /* App.swift */; };
 		167C50382B4A46A200531BC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167C50372B4A46A200531BC5 /* ContentView.swift */; };
 		167C503A2B4A46A400531BC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167C50392B4A46A400531BC5 /* Assets.xcassets */; };
@@ -271,6 +272,7 @@
 		164915FA2AB9B2F1009F94E3 /* ℹ️HelpCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ℹ️HelpCommands.swift"; sourceTree = "<group>"; };
 		164915FC2AB9B391009F94E3 /* 🛒InAppPurchaseCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛒InAppPurchaseCommand.swift"; sourceTree = "<group>"; };
 		166C356B2B5DFC3F00F2498D /* 🌐Timeline.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "🌐Timeline.xcstrings"; sourceTree = "<group>"; };
+		16703FEB2B60FF41002824E8 /* PurchaseTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTab.swift; sourceTree = "<group>"; };
 		167C502F2B4A46A200531BC5 /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167C50352B4A46A200531BC5 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		167C50372B4A46A200531BC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 				167C50352B4A46A200531BC5 /* App.swift */,
 				167C50372B4A46A200531BC5 /* ContentView.swift */,
 				16EF413F2B5D1D47002312FA /* ℹ️AboutAppMenu+Tab.swift */,
+				16703FEB2B60FF41002824E8 /* PurchaseTab.swift */,
 				16EF415B2B5D39E3002312FA /* Supporting files */,
 			);
 			path = visionOS;
@@ -850,6 +853,7 @@
 				167C50422B4A47DC00531BC5 /* 🗒️StaticInfo.swift in Sources */,
 				16EF413E2B5D1D29002312FA /* ℹ️AboutApp.swift in Sources */,
 				167C50452B4A47DC00531BC5 /* 📱AppModel.swift in Sources */,
+				16703FEC2B60FF41002824E8 /* PurchaseTab.swift in Sources */,
 				167C50382B4A46A200531BC5 /* ContentView.swift in Sources */,
 				16EF415C2B5D3D9B002312FA /* ℹ️AboutAppMenu+Tab.swift in Sources */,
 				167C50362B4A46A200531BC5 /* App.swift in Sources */,
