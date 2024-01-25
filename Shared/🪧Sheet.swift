@@ -19,7 +19,8 @@ struct 🪧Sheet: ViewModifier {
                             .environmentObject(self.inAppPurchaseModel)
                 }
             }
-            .onAppear {
+            .task {
+                try? await Task.sleep(for: .seconds(1))
                 if self.inAppPurchaseModel.checkToShowADSheet() { self.model.presentedSheet = .ad }
             }
     }

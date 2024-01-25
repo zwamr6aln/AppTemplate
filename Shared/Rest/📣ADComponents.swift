@@ -162,6 +162,7 @@ private extension 📣ADView {
                 Image(systemName: "hand.point.up.left")
             }
             .foregroundColor(.primary)
+            .padding(8)
         }
         .accessibilityLabel(Text("Open App Store page", tableName: "🌐AD&InAppPurchase"))
         .disabled(self.model.purchased)
