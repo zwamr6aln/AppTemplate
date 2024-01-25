@@ -29,7 +29,6 @@
 		165DACBD2B627190009E3B2C /* 🌐AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* 🌐AD&InAppPurchase.xcstrings */; };
 		165DACBE2B627190009E3B2C /* 🌐ADAppDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA182A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings */; };
 		165DACBF2B627190009E3B2C /* 🌐ADAppName.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA1B2A71E962004BBFE0 /* 🌐ADAppName.xcstrings */; };
-		165DACC02B627261009E3B2C /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
 		165DACC12B627261009E3B2C /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
 		165DACC22B627261009E3B2C /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
 		165DACC32B62728F009E3B2C /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
@@ -890,7 +889,6 @@
 				F5936C1A2A6A90B10044B939 /* 📣ADModel.swift in Sources */,
 				F567E39229F2A09A0026E12D /* ContentView.swift in Sources */,
 				F5936C1E2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
-				165DACC02B627261009E3B2C /* 🪧Sheet.swift in Sources */,
 				F539EA3D2A70D31900A3C80E /* 📱AppModel.swift in Sources */,
 				F567E39029F2A09A0026E12D /* App.swift in Sources */,
 				F501E9C82A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */,

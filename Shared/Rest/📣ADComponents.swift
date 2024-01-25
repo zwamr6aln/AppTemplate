@@ -121,6 +121,7 @@ private extension 📣ADView {
         }
         .accessibilityHidden(true)
         .disabled(self.model.purchased)
+        .modifier(Self.HoverEffectDisabledForVisionOS())
     }
     private func appIcon() -> some View {
         Link(destination: self.targetApp.url) {
@@ -135,6 +136,7 @@ private extension 📣ADView {
         }
         .accessibilityHidden(true)
         .disabled(self.model.purchased)
+        .modifier(Self.HoverEffectDisabledForVisionOS())
     }
     private func appName() -> some View {
         Link(destination: self.targetApp.url) {
@@ -144,12 +146,14 @@ private extension 📣ADView {
         .buttonStyle(.plain)
         .accessibilityHidden(true)
         .disabled(self.model.purchased)
+        .modifier(Self.HoverEffectDisabledForVisionOS())
     }
     private func appDescription() -> some View {
         Text(self.targetApp.localizationKey, tableName: "🌐ADAppDescription")
             .font(.subheadline)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 8)
+            .modifier(Self.HoverEffectDisabledForVisionOS())
     }
     private func appStoreBadge() -> some View {
         Link(destination: self.targetApp.url) {
@@ -183,7 +187,10 @@ private extension 📣ADView {
             if self.disableDismiss {
                 Image(systemName: "\(self.countDown).circle")
                     .foregroundStyle(.tertiary)
-#if !os(visionOS)
+#if os(visionOS)
+                    .font(.largeTitle.weight(.light))
+                    .padding(.horizontal, 12)
+#else
                     .padding(12)
 #endif
             } else {
@@ -227,6 +234,15 @@ private extension 📣ADView {
             } else {
                 content
             }
+        }
+    }
+    private struct HoverEffectDisabledForVisionOS: ViewModifier {
+        func body(content: Content) -> some View {
+#if os(visionOS)
+            content.hoverEffectDisabled()
+#else
+            content
+#endif
         }
     }
 }
