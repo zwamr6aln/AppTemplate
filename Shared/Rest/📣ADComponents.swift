@@ -39,7 +39,9 @@ struct 📣ADView: View {
                     self.disableDismiss = false
                 }
             }
+#if os(iOS)
             .overlay(alignment: .top) { self.header() }
+#endif
     }
     init(_ app: 📣ADTargetApp, second: Int) {
         self.targetApp = app
@@ -71,6 +73,12 @@ private extension 📣ADView {
         }
         .modifier(Self.PurchasedEffect())
         .navigationTitle(.init("AD", tableName: "🌐AD&InAppPurchase"))
+        #if os(visionOS)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) { self.dismissButton() }
+            ToolbarItem(placement: .topBarTrailing) { self.menuLink() }
+        }
+        #endif
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: self.$showMenu) { 🛒InAppPurchaseMenu() }
     }
@@ -158,10 +166,16 @@ private extension 📣ADView {
         Button {
             self.showMenu = true
         } label: {
+#if os(visionOS)
+            Image(systemName: "questionmark")
+#else
             Image(systemName: "questionmark.circle")
                 .padding(12)
+#endif
         }
+#if os(iOS)
         .tint(.primary)
+#endif
         .accessibilityLabel(.init("About AD", tableName: "🌐AD&InAppPurchase"))
     }
     private func dismissButton() -> some View {
@@ -169,7 +183,9 @@ private extension 📣ADView {
             if self.disableDismiss {
                 Image(systemName: "\(self.countDown).circle")
                     .foregroundStyle(.tertiary)
+#if !os(visionOS)
                     .padding(12)
+#endif
             } else {
                 Button {
                     self.dismiss()
@@ -177,12 +193,18 @@ private extension 📣ADView {
                     UIImpactFeedbackGenerator(style: .light).impactOccurred()
                     #endif
                 } label: {
+#if os(visionOS)
+                    Image(systemName: "xmark")
+#else
                     Image(systemName: "xmark.circle.fill")
                         .fontWeight(.medium)
                         .padding(12)
+#endif
                 }
                 .keyboardShortcut(.cancelAction)
+#if os(iOS)
                 .tint(.primary)
+#endif
                 .accessibilityLabel(.init("Dismiss", tableName: "🌐AD&InAppPurchase"))
             }
         }
