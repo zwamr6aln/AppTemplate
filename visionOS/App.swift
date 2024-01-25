@@ -7,6 +7,7 @@ struct VisionOSApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(self.model)
+                .environmentObject(self.model.inAppPurchaseModel)
         }
     }
 }

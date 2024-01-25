@@ -22,10 +22,19 @@
         }
       }
     },
+    "Done" : {
+
+    },
+    "Error" : {
+
+    },
     "Help Content" : {
 
     },
     "Home" : {
+
+    },
+    "iap" : {
 
     },
     "iPhone, iPad, Apple Watch,\nMac, Apple TV, Apple Vision Pro" : {

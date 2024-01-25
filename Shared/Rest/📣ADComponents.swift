@@ -170,7 +170,9 @@ private extension 📣ADView {
             } else {
                 Button {
                     self.dismiss()
+                    #if !os(visionOS)
                     UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                    #endif
                 } label: {
                     Image(systemName: "xmark.circle.fill")
                         .fontWeight(.medium)

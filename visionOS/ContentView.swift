@@ -5,6 +5,8 @@ struct ContentView: View {
     @State private var presentAboutApp: Bool = false
     var body: some View {
         TabView {
+            NavigationStack { 🛒InAppPurchaseMenu() }
+                .tabItem { Label("iap", systemImage: "cart") }
             ℹ️AboutAppTab()
                 .tabItem {
                     Label(String(localized: "About App", table: "🌐AboutApp"),
