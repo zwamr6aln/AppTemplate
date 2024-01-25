@@ -63,5 +63,7 @@ struct ContentView: View {
             .tabItem { Label("Home", systemImage: "house") }
             PurchaseTab()
         }
+        .modifier(🪧Sheet())
+        .environmentObject(self.model.inAppPurchaseModel)
     }
 }

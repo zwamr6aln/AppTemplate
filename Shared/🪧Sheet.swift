@@ -7,7 +7,12 @@ struct 🪧Sheet: ViewModifier {
         content
             .sheet(item: self.$model.presentedSheet) {
                 switch $0 {
-                    case .menu: NavigationStack { MenuPane() }
+                    case .menu:
+#if os(iOS)
+                        NavigationStack { MenuPane() }
+#elseif os(visionOS)
+                        Text(verbatim: "MENU")
+#endif
                     case .placeholder: Text("Placeholder")
                     case .ad:
                         📣ADContent()

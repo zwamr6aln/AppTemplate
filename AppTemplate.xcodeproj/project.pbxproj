@@ -26,6 +26,13 @@
 		165DACBA2B626E71009E3B2C /* 📣ADComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB2B28614B8B00CB1BC3 /* 📣ADComponents.swift */; };
 		165DACBB2B626E71009E3B2C /* 🛒InAppPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */; };
 		165DACBC2B626EC3009E3B2C /* AD+InAppPurchase.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EF414D2B5D2DC6002312FA /* AD+InAppPurchase.xcassets */; };
+		165DACBD2B627190009E3B2C /* 🌐AD&InAppPurchase.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F583DC642A6D227900F02006 /* 🌐AD&InAppPurchase.xcstrings */; };
+		165DACBE2B627190009E3B2C /* 🌐ADAppDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA182A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings */; };
+		165DACBF2B627190009E3B2C /* 🌐ADAppName.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA1B2A71E962004BBFE0 /* 🌐ADAppName.xcstrings */; };
+		165DACC02B627261009E3B2C /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
+		165DACC12B627261009E3B2C /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
+		165DACC22B627261009E3B2C /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
+		165DACC32B62728F009E3B2C /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		166C356C2B5DFC3F00F2498D /* 🌐Timeline.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 166C356B2B5DFC3F00F2498D /* 🌐Timeline.xcstrings */; };
 		166C356D2B5DFC3F00F2498D /* 🌐Timeline.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 166C356B2B5DFC3F00F2498D /* 🌐Timeline.xcstrings */; };
 		166C356E2B5DFC3F00F2498D /* 🌐Timeline.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 166C356B2B5DFC3F00F2498D /* 🌐Timeline.xcstrings */; };
@@ -418,7 +425,6 @@
 				12E4A749285027F600B2380B /* ContentView.swift */,
 				F539EA3F2A70D33300A3C80E /* 📱AppModel(extension).swift */,
 				16A5131C2AF4A4FD0010B780 /* 🏢NavigationView.swift */,
-				F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */,
 				16A5131E2AF4A6040010B780 /* MenuPane.swift */,
 				168E36222B1EA6EC00067F9C /* FixWidthForIPad.swift */,
 				F5936C162A6A81DE0044B939 /* Rest */,
@@ -495,6 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				12E4A75628502A2D00B2380B /* 📱AppModel.swift */,
+				F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */,
 				F5397F572AA209DB002C90F2 /* Rest */,
 				16267B4B2B57965C000CA8AD /* Supporting files */,
 			);
@@ -508,6 +515,7 @@
 				12E4A76028502C9F00B2380B /* ℹ️AboutApp.swift */,
 				F5936C182A6A90B10044B939 /* 📣ADModel.swift */,
 				127ECB2B28614B8B00CB1BC3 /* 📣ADComponents.swift */,
+				F57B37F129726CE300F0BB91 /* 📣ADContent.swift */,
 				F5936C1C2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift */,
 				127ECB28286149EF00CB1BC3 /* 🛒InAppPurchaseView.swift */,
 			);
@@ -599,7 +607,6 @@
 		F5936C162A6A81DE0044B939 /* Rest */ = {
 			isa = PBXGroup;
 			children = (
-				F57B37F129726CE300F0BB91 /* 📣ADContent.swift */,
 				F557299629A08E4100C918C1 /* 💬RequestUserReview.swift */,
 				F567E38729F27E180026E12D /* 🩹Workaround.swift */,
 			);
@@ -786,12 +793,15 @@
 				167C503A2B4A46A400531BC5 /* Assets.xcassets in Resources */,
 				16EF41582B5D39D4002312FA /* InfoPlist.xcstrings in Resources */,
 				166C356E2B5DFC3F00F2498D /* 🌐Timeline.xcstrings in Resources */,
+				165DACBF2B627190009E3B2C /* 🌐ADAppName.xcstrings in Resources */,
 				167C50462B4A47E700531BC5 /* 🌐AboutApp.xcstrings in Resources */,
 				16E0FD152B5DF8C300BA8482 /* Developer_Publisher.xcassets in Resources */,
+				165DACBE2B627190009E3B2C /* 🌐ADAppDescription.xcstrings in Resources */,
 				16EF41592B5D39D4002312FA /* 🌐VersionHistory.xcstrings in Resources */,
 				16EF415A2B5D39D4002312FA /* 🌐AppStoreDescription.xcstrings in Resources */,
 				16EF41572B5D39D4002312FA /* Localizable.xcstrings in Resources */,
 				165DACBC2B626EC3009E3B2C /* AD+InAppPurchase.xcassets in Resources */,
+				165DACBD2B627190009E3B2C /* 🌐AD&InAppPurchase.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -865,7 +875,9 @@
 				167C50452B4A47DC00531BC5 /* 📱AppModel.swift in Sources */,
 				16703FEC2B60FF41002824E8 /* PurchaseTab.swift in Sources */,
 				167C50382B4A46A200531BC5 /* ContentView.swift in Sources */,
+				165DACC32B62728F009E3B2C /* 📣ADContent.swift in Sources */,
 				16EF415C2B5D3D9B002312FA /* ℹ️AboutAppMenu+Tab.swift in Sources */,
+				165DACC12B627261009E3B2C /* 🪧Sheet.swift in Sources */,
 				167C50362B4A46A200531BC5 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -878,6 +890,7 @@
 				F5936C1A2A6A90B10044B939 /* 📣ADModel.swift in Sources */,
 				F567E39229F2A09A0026E12D /* ContentView.swift in Sources */,
 				F5936C1E2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
+				165DACC02B627261009E3B2C /* 🪧Sheet.swift in Sources */,
 				F539EA3D2A70D31900A3C80E /* 📱AppModel.swift in Sources */,
 				F567E39029F2A09A0026E12D /* App.swift in Sources */,
 				F501E9C82A6A2FF500E9F9A6 /* 🗒️StaticInfo.swift in Sources */,
@@ -893,6 +906,7 @@
 				164915FB2AB9B2F1009F94E3 /* ℹ️HelpCommands.swift in Sources */,
 				F5936C1B2A6A90B10044B939 /* 📣ADModel.swift in Sources */,
 				F539EA422A70D37300A3C80E /* 📱AppModel(extension).swift in Sources */,
+				165DACC22B627261009E3B2C /* 🪧Sheet.swift in Sources */,
 				F5936C1F2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
 				164915FD2AB9B391009F94E3 /* 🛒InAppPurchaseCommand.swift in Sources */,
 				F539EA3E2A70D31A00A3C80E /* 📱AppModel.swift in Sources */,

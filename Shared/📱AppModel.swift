@@ -1,7 +1,7 @@
 import SwiftUI
 
 class 📱AppModel: NSObject, ObservableObject {
-#if os(iOS)
+#if os(iOS) || os(visionOS)
     @Published var presentedSheet: 🪧Sheet.Source? = nil
 #endif
     
