@@ -197,9 +197,9 @@ private extension 📣ADView {
             } else {
                 Button {
                     self.dismiss()
-                    #if !os(visionOS)
+#if os(iOS)
                     UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    #endif
+#endif
                 } label: {
 #if os(visionOS)
                     Image(systemName: "xmark")
