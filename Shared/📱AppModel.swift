@@ -6,6 +6,6 @@ class 📱AppModel: NSObject, ObservableObject {
 #endif
     
 #if os(iOS) || os(macOS) || os(visionOS)
-    let inAppPurchaseModel: 🛒InAppPurchaseModel = .init(id: "PLACEHOLDER.adfree")
+    let inAppPurchaseModel: 🛒InAppPurchaseModel = .init(id: "PLACEHOLDER2.adfree")
 #endif
 }
