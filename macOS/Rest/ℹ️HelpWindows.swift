@@ -207,6 +207,7 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
                     GroupBox {
                         LabeledContent("山下 亮" as String, value: "Yamashita Ryo")
                             .padding(4)
+                            .modifier(Self.TypeSettingLanguage())
                     }
                     .listRowSeparator(.hidden)
                 } header: {
@@ -261,6 +262,15 @@ private struct 🧑‍💻DeveloperPublisherWindow: Scene {
             .frame(width: 540, height: 540)
         }
         .windowResizability(.contentSize)
+    }
+    private struct TypeSettingLanguage: ViewModifier {
+        func body(content: Content) -> some View {
+            if #available(macOS 14.0, *) {
+                content.typesettingLanguage(.init(languageCode: .japanese))
+            } else {
+                content
+            }
+        }
     }
     private struct TimelineSection: View {
         private static var localizedStringResources: [LocalizedStringResource] {

@@ -29,7 +29,6 @@
 		165DACBE2B627190009E3B2C /* 🌐ADAppDescription.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA182A71E670004BBFE0 /* 🌐ADAppDescription.xcstrings */; };
 		165DACBF2B627190009E3B2C /* 🌐ADAppName.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F531FA1B2A71E962004BBFE0 /* 🌐ADAppName.xcstrings */; };
 		165DACC12B627261009E3B2C /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
-		165DACC22B627261009E3B2C /* 🪧Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2272029FE6B1900891C69 /* 🪧Sheet.swift */; };
 		165DACC32B62728F009E3B2C /* 📣ADContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B37F129726CE300F0BB91 /* 📣ADContent.swift */; };
 		166C356C2B5DFC3F00F2498D /* 🌐Timeline.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 166C356B2B5DFC3F00F2498D /* 🌐Timeline.xcstrings */; };
 		166C356D2B5DFC3F00F2498D /* 🌐Timeline.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 166C356B2B5DFC3F00F2498D /* 🌐Timeline.xcstrings */; };
@@ -900,7 +899,6 @@
 				164915FB2AB9B2F1009F94E3 /* ℹ️HelpCommands.swift in Sources */,
 				F5936C1B2A6A90B10044B939 /* 📣ADModel.swift in Sources */,
 				F539EA422A70D37300A3C80E /* 📱AppModel(extension).swift in Sources */,
-				165DACC22B627261009E3B2C /* 🪧Sheet.swift in Sources */,
 				F5936C1F2A6A90C30044B939 /* 🛒InAppPurchaseModel.swift in Sources */,
 				164915FD2AB9B391009F94E3 /* 🛒InAppPurchaseCommand.swift in Sources */,
 				F539EA3E2A70D31A00A3C80E /* 📱AppModel.swift in Sources */,

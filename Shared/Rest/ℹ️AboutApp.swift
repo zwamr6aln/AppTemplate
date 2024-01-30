@@ -310,6 +310,7 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
                 }
                 Section {
                     LabeledContent(String("山下 亮"), value: "Yamashita Ryo")
+                        .modifier(Self.TypeSettingLanguage())
                 } header: {
                     Text("Name", tableName: "🌐AboutApp")
                 }
@@ -344,6 +345,15 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
         } label: {
             Label(String(localized: "Developer / Publisher", table: "🌐AboutApp"),
                   systemImage: "person")
+        }
+    }
+    private struct TypeSettingLanguage: ViewModifier {
+        func body(content: Content) -> some View {
+            if #available(iOS 17.0, *) {
+                content.typesettingLanguage(.init(languageCode: .japanese))
+            } else {
+                content
+            }
         }
     }
     private struct TimelineSection: View {
