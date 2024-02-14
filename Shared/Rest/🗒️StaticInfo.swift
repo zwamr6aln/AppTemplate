@@ -15,7 +15,7 @@ enum 🗒️StaticInfo {
     static var contactAddress: String { "sear_pandora_0x@icloud.com" }
     
     static let privacyPolicyDescription = """
-        2022-❓-❓
+        2024-❓-❓
         
         
         English
