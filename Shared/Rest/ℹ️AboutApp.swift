@@ -179,8 +179,8 @@ private struct 📓SourceCodeLink: View {
             List {
                 Self.DebugView()
                 ForEach(🗒️StaticInfo.SourceCodeCategory.allCases) { Self.CodeSection($0) }
-                self.bundleMainInfoDictionary()
-                self.repositoryLinks()
+                Self.bundleMainInfoDictionary()
+                Self.RepositoryLinks()
             }
             .navigationTitle(.init("Source code", tableName: "🌐AboutApp"))
         } label: {
@@ -247,7 +247,7 @@ private struct 📓SourceCodeLink: View {
             .textSelection(.enabled)
         }
     }
-    private func bundleMainInfoDictionary() -> some View {
+    private static func bundleMainInfoDictionary() -> some View {
         Section {
             NavigationLink(String("Bundle.main.infoDictionary")) {
                 List {
@@ -262,10 +262,13 @@ private struct 📓SourceCodeLink: View {
             }
         }
     }
-    private func repositoryLinks() -> some View {
-        Group {
+    private struct RepositoryLinks: View {
+        @Environment(\.openURL) var openURL
+        var body: some View {
             Section {
-                Link(destination: 🗒️StaticInfo.webRepositoryURL) {
+                Button {
+                    self.openURL(🗒️StaticInfo.webRepositoryURL)
+                } label: {
                     LabeledContent {
                         Image(systemName: "arrow.up.forward.app")
                     } label: {
@@ -277,7 +280,9 @@ private struct 📓SourceCodeLink: View {
                 Text(verbatim: "\(🗒️StaticInfo.webRepositoryURL)")
             }
             Section {
-                Link(destination: 🗒️StaticInfo.webMirrorRepositoryURL) {
+                Button {
+                    self.openURL(🗒️StaticInfo.webMirrorRepositoryURL)
+                } label: {
                     LabeledContent {
                         Image(systemName: "arrow.up.forward.app")
                     } label: {
