@@ -5,11 +5,13 @@ import SwiftUI
 struct ℹ️AboutAppContent: View {
     var body: some View {
         📰AppStoreDescriptionSection()
+            .navigationTitle(String(localized: "About App", table: "🌐AboutApp"))
         📜VersionHistoryLink()
         👤PrivacyPolicySection()
         🏬AppStoreSection()
         📓SourceCodeLink()
         🧑‍💻AboutDeveloperPublisherLink()
+        📧FeedbackSection()
     }
 }
 
@@ -408,6 +410,52 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
             }
             .padding(12)
             .frame(maxWidth: .infinity)
+        }
+    }
+}
+
+private struct 📧FeedbackSection: View {
+    @State private var copied: Bool = false
+    @Environment(\.openURL) var openURL
+    var body: some View {
+        Section {
+            Button {
+                var ⓤrlString = "mailto:" + 🗒️StaticInfo.contactAddress
+                ⓤrlString += "?subject="
+                ⓤrlString += "SpatialClock feedback".addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
+                ⓤrlString += "&body=Input%20here"
+                self.openURL(.init(string: ⓤrlString)!)
+            } label: {
+                Label(String(localized: "Feedback from mail app", table: "🌐AboutApp"),
+                      systemImage: "envelope")
+                .badge(Text(Image(systemName: "arrow.up.forward.app")))
+            }
+            VStack {
+                HStack {
+                    Spacer()
+                    Text(🗒️StaticInfo.contactAddress)
+                        .textSelection(.enabled)
+                        .italic()
+                    Spacer()
+                }
+                Button(String(localized: "Copy", table: "🌐AboutApp")) {
+                    UIPasteboard.general.string = 🗒️StaticInfo.contactAddress
+                    withAnimation { self.copied = true }
+                }
+                .opacity(self.copied ? 0.3 : 1)
+                .buttonStyle(.bordered)
+                .overlay {
+                    if self.copied {
+                        Image(systemName: "checkmark")
+                            .bold()
+                    }
+                }
+            }
+            .padding(.vertical)
+        } header: {
+            Text("Feedback", tableName: "🌐AboutApp")
+        } footer: {
+            Text("bug report, feature request, impression...", tableName: "🌐AboutApp")
         }
     }
 }
