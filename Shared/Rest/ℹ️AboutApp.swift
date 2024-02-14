@@ -11,7 +11,7 @@ struct ℹ️AboutAppContent: View {
         🏬AppStoreSection()
         📓SourceCodeLink()
         🧑‍💻AboutDeveloperPublisherLink()
-        📧FeedbackSection()
+        📧FeedbackLink()
     }
 }
 
@@ -204,7 +204,7 @@ private struct 📓SourceCodeLink: View {
                         Text(verbatim: "⚠️ mismatch fileCounts")
                         LabeledContent(String("fileCounts"),
                                        value: self.fileCounts.debugDescription)
-                        LabeledContent(String("caseCounts"), 
+                        LabeledContent(String("caseCounts"),
                                        value: self.caseCounts.description)
                     }
                 }
@@ -419,48 +419,61 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
     }
 }
 
-private struct 📧FeedbackSection: View {
-    @State private var copied: Bool = false
-    @Environment(\.openURL) var openURL
+private struct 📧FeedbackLink: View {
     var body: some View {
         Section {
-            Button {
-                var ⓤrlString = "mailto:" + 🗒️StaticInfo.contactAddress
-                ⓤrlString += "?subject="
-                ⓤrlString += "SpatialClock feedback".addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
-                ⓤrlString += "&body=Input%20here"
-                self.openURL(.init(string: ⓤrlString)!)
+            NavigationLink {
+                Self.Destination()
             } label: {
-                Label(String(localized: "Feedback from mail app", table: "🌐AboutApp"),
+                Label(String(localized: "Feedback", table: "🌐AboutApp"),
                       systemImage: "envelope")
-                .badge(Text(Image(systemName: "arrow.up.forward.app")))
             }
-            VStack {
-                HStack {
-                    Spacer()
-                    Text(🗒️StaticInfo.contactAddress)
-                        .textSelection(.enabled)
-                        .italic()
-                    Spacer()
-                }
-                Button(String(localized: "Copy", table: "🌐AboutApp")) {
-                    UIPasteboard.general.string = 🗒️StaticInfo.contactAddress
-                    withAnimation { self.copied = true }
-                }
-                .opacity(self.copied ? 0.3 : 1)
-                .buttonStyle(.bordered)
-                .overlay {
-                    if self.copied {
-                        Image(systemName: "checkmark")
-                            .bold()
+        }
+    }
+    private struct Destination: View {
+        @State private var copied: Bool = false
+        @Environment(\.openURL) var openURL
+        var body: some View {
+            List {
+                Section {
+                    Button {
+                        var ⓤrlString = "mailto:" + 🗒️StaticInfo.contactAddress
+                        ⓤrlString += "?subject="
+                        ⓤrlString += "SpatialClock feedback".addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
+                        ⓤrlString += "&body=Input%20here"
+                        self.openURL(.init(string: ⓤrlString)!)
+                    } label: {
+                        Label(String(localized: "Feedback from mail app", table: "🌐AboutApp"),
+                              systemImage: "envelope")
+                        .badge(Text(Image(systemName: "arrow.up.forward.app")))
                     }
+                    VStack {
+                        HStack {
+                            Spacer()
+                            Text(🗒️StaticInfo.contactAddress)
+                                .textSelection(.enabled)
+                                .italic()
+                            Spacer()
+                        }
+                        Button(String(localized: "Copy", table: "🌐AboutApp")) {
+                            UIPasteboard.general.string = 🗒️StaticInfo.contactAddress
+                            withAnimation { self.copied = true }
+                        }
+                        .opacity(self.copied ? 0.3 : 1)
+                        .buttonStyle(.bordered)
+                        .overlay {
+                            if self.copied {
+                                Image(systemName: "checkmark")
+                                    .bold()
+                            }
+                        }
+                    }
+                    .padding(.vertical)
+                } footer: {
+                    Text("bug report, feature request, impression...", tableName: "🌐AboutApp")
                 }
             }
-            .padding(.vertical)
-        } header: {
-            Text("Feedback", tableName: "🌐AboutApp")
-        } footer: {
-            Text("bug report, feature request, impression...", tableName: "🌐AboutApp")
+            .navigationBarTitle(String(localized: "Feedback", table: "🌐AboutApp"))
         }
     }
 }
