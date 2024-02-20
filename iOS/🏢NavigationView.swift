@@ -8,7 +8,6 @@ struct 🏢NavigationView: View {
         if self.horizontalSizeClass == .compact {
             NavigationStack {
                 List {
-                    FeedbackSection()
                     Text(verbatim: "Placeholder").redacted(reason: .placeholder)
                     Button("Show menu sheet") { self.model.presentedSheet = .menu }
                 }

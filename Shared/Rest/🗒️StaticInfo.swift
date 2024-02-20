@@ -1,8 +1,8 @@
 import SwiftUI
 
 enum 🗒️StaticInfo {
-    static let appName: LocalizedStringKey = "AppTemplate"
-    static var appSubTitle: LocalizedStringKey {
+    static let appName: LocalizedStringResource = "AppTemplate"
+    static var appSubTitle: LocalizedStringResource {
         """
         iPhone, iPad, Apple Watch,
         Mac, Apple TV, Apple Vision Pro

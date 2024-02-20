@@ -439,9 +439,11 @@ private struct 📧FeedbackLink: View {
                     Button {
                         var ⓤrlString = "mailto:" + 🗒️StaticInfo.contactAddress
                         ⓤrlString += "?subject="
-                        let ⓣitle = "\(🗒️StaticInfo.appName) feedback"
-                        ⓤrlString += ⓣitle.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
-                        ⓤrlString += "&body=Input%20here"
+                        let ⓣitle = String(localized: 🗒️StaticInfo.appName)
+                        ⓤrlString += ⓣitle
+                        ⓤrlString += String(localized: " feedback", table: "🌐AboutApp")
+                        ⓤrlString += "&body="
+                        ⓤrlString += String(localized: "(Input here)", table: "🌐AboutApp")
                         self.openURL(.init(string: ⓤrlString)!)
                     } label: {
                         Label(String(localized: "Feedback from mail app", table: "🌐AboutApp"),

@@ -11,7 +11,7 @@ struct ContentView: View {
                     Label("About App", systemImage: "questionmark")
                 }
             }
-            .navigationTitle(🗒️StaticInfo.appName)
+            .navigationTitle(String(localized: 🗒️StaticInfo.appName))
         }
     }
 }
