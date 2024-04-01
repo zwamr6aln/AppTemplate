@@ -67,7 +67,7 @@ private struct 📰AppStoreDescriptionSection: View {
             NavigationLink {
                 ScrollView {
                     Text("current", tableName: "🌐AppStoreDescription")
-                        .padding(UIDevice.current.userInterfaceIdiom == .pad ? 32 : 16)
+                        .padding(Self.padding)
                         .frame(maxWidth: .infinity)
                 }
                 .navigationBarTitle(.init("Description", tableName: "🌐AboutApp"))
@@ -83,6 +83,13 @@ private struct 📰AppStoreDescriptionSection: View {
         } header: {
             Text("Description", tableName: "🌐AboutApp")
         }
+    }
+    private static var padding: Double {
+#if os(iOS)
+        UIDevice.current.userInterfaceIdiom == .pad ? 32 : 16
+#elseif os(visionOS)
+        40
+#endif
     }
     private var textWithoutEmptyLines: String {
         String(localized: "current", table: "🌐AppStoreDescription")
@@ -118,7 +125,7 @@ private struct 👤PrivacyPolicySection: View {
             NavigationLink {
                 ScrollView {
                     Text(🗒️StaticInfo.privacyPolicyDescription)
-                        .padding(24)
+                        .padding(Self.padding)
                         .textSelection(.enabled)
                         .frame(maxWidth: .infinity)
                 }
@@ -128,6 +135,13 @@ private struct 👤PrivacyPolicySection: View {
                       systemImage: "person.text.rectangle")
             }
         }
+    }
+    private static var padding: Double {
+#if os(iOS)
+        UIDevice.current.userInterfaceIdiom == .pad ? 32 : 24
+#elseif os(visionOS)
+        40
+#endif
     }
 }
 
