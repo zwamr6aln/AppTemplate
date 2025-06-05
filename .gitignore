@@ -1,1 +1,6 @@
 UserInterfaceState.xcuserstate
+
+# Android
+Android/.gradle/
+Android/build/
+Android/app/build/
