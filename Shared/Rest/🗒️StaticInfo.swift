@@ -39,7 +39,7 @@ extension 🗒️StaticInfo {
                                                                   ("1.0", "2021-01-01")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Rest, Widget
+        case main, Rest
         var id: Self { self }
         var fileNames: [String] {
             switch self {
@@ -61,9 +61,6 @@ extension 🗒️StaticInfo {
                     "🛒InAppPurchaseModel.swift",
                     "🛒InAppPurchaseView.swift"
                 ]
-                case .Widget: [
-                    "Widget.swift"
-                ]
             }
         }
     }
@@ -72,7 +69,7 @@ extension 🗒️StaticInfo {
 #elseif os(watchOS)
 extension 🗒️StaticInfo {
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Rest, Widget
+        case main, Rest
         var id: Self { self }
         var fileNames: [String] {
             switch self {
@@ -86,9 +83,6 @@ extension 🗒️StaticInfo {
                     "🗒️StaticInfo.swift",
                     "ℹ️AboutApp.swift"
                 ]
-                case .Widget: [
-                    "Widget.swift"
-                ]
             }
         }
     }
@@ -101,7 +95,7 @@ extension 🗒️StaticInfo {
                                                                   ("1.0", "2021-01-01")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
-        case main, Rest, Widget
+        case main, Rest
         var id: Self { self }
         var fileNames: [String] {
             switch self {
@@ -125,9 +119,6 @@ extension 🗒️StaticInfo {
                     "🛒InAppPurchaseWindow.swift",
                     "🛒InAppPurchaseMenu.swift",
                     "🛒InAppPurchaseCommand.swift"
-                ]
-                case .Widget: [
-                    "Widget.swift"
                 ]
             }
         }

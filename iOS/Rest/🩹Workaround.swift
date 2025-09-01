@@ -1,12 +1,12 @@
 import SwiftUI
 
 enum 🩹Workaround {
-    struct CloseMenePopup: ViewModifier {
+    struct CloseMenuPopup: ViewModifier {
         @Environment(\.scenePhase) var scenePhase
         func body(content: Content) -> some View {
             content
-                .onChange(of: self.scenePhase) { [scenePhase] ⓝewValue in
-                    if scenePhase == .active, ⓝewValue == .inactive {
+                .onChange(of: self.scenePhase) { oldValue, newValue in
+                    if oldValue == .active, newValue == .inactive {
                         self.closeMenuPopup()
                     }
                 }

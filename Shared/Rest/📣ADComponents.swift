@@ -25,8 +25,8 @@ struct 📣ADView: View {
         NavigationStack { self.appADContent() }
             .presentationDetents([.height(640)])
 #if os(iOS)
-            .onChange(of: self.scenePhase) { if $0 == .background { self.dismiss() } }
-            .onChange(of: self.model.purchased) { if $0 { self.disableDismiss = false } }
+            .onChange(of: self.scenePhase) { if $1 == .background { self.dismiss() } }
+            .onChange(of: self.model.purchased) { if $1 { self.disableDismiss = false } }
 #else
             .onChange(of: self.scenePhase) { _, newValue in if newValue == .background { self.dismiss() } }
             .onChange(of: self.model.purchased) { _, newValue in if newValue { self.disableDismiss = false } }

@@ -28,7 +28,7 @@ struct 📣ADContent: View {
             .modifier(Self.PurchasedEffect())
         }
         .frame(width: 700, height: 430)
-        .onChange(of: self.model.purchased) { if $0 { self.disableDismiss = false } }
+        .onChange(of: self.model.purchased) { if $1 { self.disableDismiss = false } }
         .onReceive(self.timer) { _ in
             if self.countDown > 1 {
                 self.countDown -= 1
