@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppTemplate</string>
+    <string name="about_app">About App</string>
+    <string name="placeholder">Placeholder</string>
+</resources>
